@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Runtime files
+*.log
+state.json
+pending_notifications.json
+
+# OS
+.DS_Store
+Thumbs.db.claude/

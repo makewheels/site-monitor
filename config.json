@@ -1,0 +1,26 @@
+{
+  "sites": [
+    {
+      "name": "Anthropic Engineering",
+      "url": "https://www.anthropic.com/engineering",
+      "article_selector": "article[class*=\"ArticleList\"]",
+      "title_selector": "h2, h3",
+      "link_selector": "a[href*=\"/engineering/\"]",
+      "check_interval": 3600,
+      "enabled": true
+    },
+    {
+      "name": "Claude Code Changelog",
+      "url": "https://github.com/anthropics/claude-code/releases",
+      "article_selector": ".release",
+      "title_selector": "a.release-link",
+      "link_selector": "a.release-link",
+      "check_interval": 3600,
+      "enabled": true
+    }
+  ],
+  "check_interval": 3600,
+  "notifier": {
+    "type": "console"
+  }
+}
