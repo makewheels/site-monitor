@@ -2,8 +2,6 @@
 __pycache__/
 *.py[cod]
 *$py.class
-*.so
-.Python
 .venv/
 venv/
 ENV/
@@ -14,11 +12,23 @@ ENV/
 *.swp
 *.swo
 
-# Runtime files
+# Runtime files (state + notification logs)
+*_state.json
+*_pending.txt
+*_launchd.err
+*_launchd.log
 *.log
 state.json
 pending_notifications.json
 
+# Env
+.env
+.env.local
+
 # OS
 .DS_Store
-Thumbs.db.claude/
+Thumbs.db
+
+# Claude
+.claude/
+openspec/

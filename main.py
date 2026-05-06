@@ -67,6 +67,7 @@ def parse_articles(html, site_config):
     article_selector = site_config.get('article_selector', 'article')
     title_selector = site_config.get('title_selector', 'h2, h3')
     link_selector = site_config.get('link_selector', 'a')
+    description_selector = site_config.get('description_selector')
     
     article_elements = soup.select(article_selector)
     
@@ -76,6 +77,8 @@ def parse_articles(html, site_config):
         
         if title_elem:
             title = title_elem.get_text(strip=True)
+            # 清理标题中的多余空白和换行
+            title = ' '.join(title.split())
             link = None
             
             if link_elem and link_elem.get('href'):
@@ -87,12 +90,22 @@ def parse_articles(html, site_config):
                     from urllib.parse import urljoin
                     link = urljoin(site_config['url'], link)
             
+            # 获取描述（如果有）
+            description = None
+            if description_selector:
+                desc_elem = article_elem.select_one(description_selector)
+                if desc_elem:
+                    description = desc_elem.get_text(strip=True)
+            
             if title and link:
-                articles.append({
+                article = {
                     'title': title,
                     'link': link,
                     'site': site_config['name']
-                })
+                }
+                if description:
+                    article['description'] = description
+                articles.append(article)
     
     return articles
 
@@ -147,6 +160,30 @@ def check_all_sites():
         site_name = site['name']
         articles = check_site(site)
         
+        # GitHub Trending 每日汇总模式
+        if site.get('daily_summary'):
+            today = datetime.now().strftime('%Y-%m-%d')
+            last_trending_day = state.get('last_trending_day', {})
+            
+            if last_trending_day.get(site_name) != today:
+                # 新的一天，发送 trending 汇总
+                if articles:
+                    import notifier
+                    notifier.add_notification({
+                        'type': 'trending',
+                        'site': site_name,
+                        'count': len(articles),
+                        'articles': articles[:10],  # 最多显示10个项目
+                        'date': today
+                    })
+                    # 记录到历史
+                    for article in articles[:10]:
+                        add_to_history(state, article)
+                    state['last_trending_day'] = state.get('last_trending_day', {})
+                    state['last_trending_day'][site_name] = today
+            continue
+        
+        # 普通网站监控逻辑
         if site_name not in state['notified_articles']:
             state['notified_articles'][site_name] = []
         

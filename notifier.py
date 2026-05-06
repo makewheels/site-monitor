@@ -3,6 +3,23 @@ import os
 from datetime import datetime
 
 NOTIFICATION_FILE = "pending_notifications.json"
+TRENDING_HISTORY_FILE = "trending_history.json"
+
+def get_trending_history():
+    """获取历史 trending 项目"""
+    if os.path.exists(TRENDING_HISTORY_FILE):
+        with open(TRENDING_HISTORY_FILE, 'r') as f:
+            return json.load(f)
+    return []
+
+def save_trending_history(projects):
+    """保存 trending 项目历史（保留最近 100 个）"""
+    with open(TRENDING_HISTORY_FILE, 'w') as f:
+        json.dump(projects[-100:], f, indent=2)
+
+def is_new_project(project_name, history):
+    """判断是否是新项目"""
+    return project_name not in history
 
 def add_notification(article):
     """添加待发送的通知"""
@@ -18,6 +35,17 @@ def add_notification(article):
             'site': article['site'],
             'count': article['count'],
             'articles': article['articles'],
+            'time': datetime.now().isoformat(),
+            'sent': False
+        })
+    # GitHub Trending 每日汇总
+    elif article.get('type') == 'trending':
+        notifications.append({
+            'type': 'trending',
+            'site': article['site'],
+            'count': article['count'],
+            'articles': article['articles'],
+            'date': article.get('date'),
             'time': datetime.now().isoformat(),
             'sent': False
         })
@@ -53,6 +81,56 @@ def mark_all_sent():
 
 def format_notification(notification):
     """格式化通知消息"""
+    # GitHub Trending 每日汇总
+    if notification.get('type') == 'trending':
+        articles = notification.get('articles', [])
+        date = notification.get('date', '')
+        
+        # 只取前 5 个
+        top5 = articles[:5]
+        
+        # 获取历史记录，判断哪些是新项目
+        history = get_trending_history()
+        new_projects = []
+        
+        lines = [f"🔥 **GitHub Trending** ({date})\n"]
+        lines.append("今日 Top 5 热门项目：\n")
+        
+        for i, article in enumerate(top5, 1):
+            title = article['title']
+            link = article['link']
+            desc = article.get('description', '')
+            
+            # 简化描述：最多 60 字符
+            if desc:
+                desc = desc[:60] + '...' if len(desc) > 60 else desc
+            else:
+                desc = '暂无描述'
+            
+            # 提取项目名
+            project_name = title.strip()
+            
+            # 判断是否新项目
+            is_new = is_new_project(project_name, history)
+            new_marker = " 🆕" if is_new else ""
+            
+            lines.append(f"**{i}. {project_name}**{new_marker}")
+            lines.append(f"   {desc}")
+            lines.append(f"   [GitHub]({link})\n")
+            
+            if is_new:
+                new_projects.append(project_name)
+        
+        # 更新历史
+        all_projects = history + [a['title'].strip() for a in top5]
+        save_trending_history(list(set(all_projects)))
+        
+        # 如果有新项目，加个提示
+        if new_projects:
+            lines.append(f"💡 {len(new_projects)} 个新上榜项目")
+        
+        return '\n'.join(lines)
+    
     # 汇总通知
     if notification.get('type') == 'summary':
         site = notification['site']

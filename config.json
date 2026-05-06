@@ -1,6 +1,15 @@
 {
   "sites": [
     {
+      "name": "Claude Blog",
+      "url": "https://claude.com/blog",
+      "article_selector": "[role=\"tabpanel\"] li",
+      "title_selector": "h2, h3, a",
+      "link_selector": "a[href^=\"/blog/\"]",
+      "check_interval": 3600,
+      "enabled": true
+    },
+    {
       "name": "Anthropic Engineering",
       "url": "https://www.anthropic.com/engineering",
       "article_selector": "article[class*=\"ArticleList\"]",
@@ -17,6 +26,17 @@
       "link_selector": "a.release-link",
       "check_interval": 3600,
       "enabled": true
+    },
+    {
+      "name": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "article_selector": "article.Box-row",
+      "title_selector": "h2 a",
+      "link_selector": "h2 a",
+      "description_selector": "p.col-9",
+      "check_interval": 86400,
+      "enabled": true,
+      "daily_summary": true
     }
   ],
   "check_interval": 3600,
