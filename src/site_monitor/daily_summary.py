@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """
 每日监控汇总 - 运行所有监控脚本并生成汇总报告
-由 cron job 调用，stdout 输出会作为微信消息发送
+由 cron job 调用；本程序会按 config.json 的 delivery 配置发送微信消息
 """
 import subprocess
 import os
 import sys
 from datetime import datetime
 from .monitor_config import PROJECT_ROOT, runtime_path
+from .delivery import is_enabled, send_report
 
 SCRIPTS_DIR = PROJECT_ROOT
 
@@ -47,50 +48,56 @@ def read_pending(filename):
     except:
         return ""
 
-def main():
+def build_report():
     today = datetime.now().strftime('%Y-%m-%d')
 
     # 运行所有监控脚本
     for module_name in CHECK_MODULES:
         run_script(module_name)
 
-    # 汇总报告
-    print(f"📊 **每日 AI 监控汇总** — {today}\n")
+    sections = [f"📊 **每日 AI 监控汇总** — {today}"]
 
     # GitHub Trending
     trending = read_pending("github_trending_pending.txt")
     if trending:
-        print(trending)
-        print()
+        sections.append(trending)
 
     # Anthropic Engineering
     anthropic = read_pending("anthropic_pending.txt")
     if anthropic:
-        print(anthropic)
-        print()
+        sections.append(anthropic)
 
     # OpenAI Engineering
     openai = read_pending("openai_engineering_pending.txt")
     if openai:
-        print(openai)
-        print()
+        sections.append(openai)
 
     # LangChain Blog
     langchain = read_pending("langchain_blog_pending.txt")
     if langchain:
-        print(langchain)
-        print()
+        sections.append(langchain)
 
     # Claude Code
     claude = read_pending("claude_code_pending.txt")
     if claude:
-        print(claude)
-        print()
+        sections.append(claude)
 
     # Copilot CLI
     copilot = read_pending("copilot_cli_pending.txt")
     if copilot:
-        print(copilot)
+        sections.append(copilot)
+
+    return "\n\n".join(sections).strip()
+
+def main():
+    report = build_report()
+    print(report)
+    if is_enabled():
+        result = send_report(report)
+        if result.get("skipped"):
+            print(f"\n发送跳过: {result.get('reason')}", file=sys.stderr)
+        else:
+            print("\n微信发送成功", file=sys.stderr)
 
 if __name__ == "__main__":
     main()

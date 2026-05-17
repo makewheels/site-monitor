@@ -1,6 +1,6 @@
 # Agent Workflow
 
-This repository backs the local daily AI monitor that Hermes sends each morning.
+This repository backs the local daily AI monitor. Hermes runs the schedule; this project owns report delivery.
 
 ## Monitor Sources
 
@@ -11,6 +11,20 @@ This repository backs the local daily AI monitor that Hermes sends each morning.
 - Prefer RSS/Atom sources when available. Keep a direct page/API fallback when public RSSHub instances can fail.
 - Public RSSHub instances are acceptable for now, but order them with `https://rsshub.app/...` first and a working public fallback second.
 - Do not write API keys, cookies, or private tokens into `config.json`.
+- Claude Code should use only the RSSHub changelog route unless the user asks to add another source.
+
+## Postprocessors
+
+- Keep configurable postprocessing under `config.json` in `postprocessors`.
+- A postprocessor is a Python function addressed by `module` and `function`; it receives a payload dict plus `options` and returns a payload dict.
+- Use postprocessors for filtering, section splitting, translation, or future AI cleanup instead of embedding that behavior directly in feed fetchers.
+- For changelogs, split important feature changes from fix/docs/chore items so the daily report is scannable.
+
+## Delivery
+
+- Daily report delivery is owned by this project through `src/site_monitor/delivery.py`.
+- The current delivery backend is `hermes_weixin`; it reuses the local Hermes Weixin credentials from `~/.hermes/.env` but sends from this project.
+- Keep Hermes cron delivery set to `local` when this project sends directly, otherwise the same report can be delivered twice.
 
 ## Runtime Files
 
@@ -38,5 +52,5 @@ python3 -m pytest
 ## Daily Report Behavior
 
 - Monitor scripts write their user-facing output to `*_pending.txt`.
-- `daily_summary.py` runs the individual monitor scripts and prints non-empty pending files for Hermes delivery.
-- For Claude Code, keep filtering noisy patch-only bugfixes unless the change is security, permissions, data loss, breaking behavior, or a major/minor version change.
+- `daily_summary.py` runs the individual monitor scripts, prints non-empty pending files, and sends the assembled report via configured delivery.
+- For Claude Code, keep the changelog visible but separate feature changes from fix/docs/chore items through the configured postprocessor.

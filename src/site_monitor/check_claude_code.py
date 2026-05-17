@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""检查 Claude Code (Anthropic) 重要版本更新 - 通过 RSSHub、npm 和 GitHub Releases"""
+"""检查 Claude Code changelog 更新。"""
 import json
-import subprocess
 import os
 import re
 import html
 from datetime import datetime
 from .monitor_config import get_monitor_source, runtime_path
+from .postprocess import apply_postprocessors
 
 try:
     import feedparser
@@ -16,12 +16,6 @@ except ImportError:
 STATE_FILE = runtime_path("state", "claude_code_state.json")
 PENDING_FILE = runtime_path("pending", "claude_code_pending.txt")
 SOURCE_CONFIG = get_monitor_source("claude_code_changelog")
-RELEASES_URL = SOURCE_CONFIG.get("github_releases_url", "https://github.com/anthropics/claude-code/releases")
-GITHUB_RELEASES_API = SOURCE_CONFIG.get(
-    "github_releases_api",
-    "https://api.github.com/repos/anthropics/claude-code/releases?per_page=5",
-)
-NPM_PACKAGE = SOURCE_CONFIG.get("npm_package", "@anthropic-ai/claude-code")
 RSSHUB_CHANGELOG_URLS = SOURCE_CONFIG.get("rsshub_urls") or [
     "https://rsshub.app/claude/code/changelog",
     "https://rsshub.ktachibana.party/claude/code/changelog",
@@ -55,50 +49,11 @@ def load_state():
     if os.path.exists(STATE_FILE):
         with open(STATE_FILE, 'r') as f:
             return json.load(f)
-    return {"npm_version": None, "github_tag": None, "last_check": None}
+    return {"github_tag": None, "last_check": None}
 
 def save_state(state):
     with open(STATE_FILE, 'w') as f:
         json.dump(state, f, indent=2)
-
-def check_npm():
-    """通过 npm 检查最新版本"""
-    try:
-        result = subprocess.run(
-            ["npm", "view", NPM_PACKAGE, "version", "--json"],
-            capture_output=True, text=True, timeout=20
-        )
-        if result.returncode == 0:
-            versions = json.loads(result.stdout)
-            if isinstance(versions, list):
-                return versions[-1]
-            return versions
-    except Exception as e:
-        print(f"  npm 检查失败: {e}")
-    return None
-
-def check_github():
-    """通过 GitHub API 检查最新 release"""
-    import urllib.request
-    try:
-        req = urllib.request.Request(GITHUB_RELEASES_API, headers={
-            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36',
-            'Accept': 'application/vnd.github.v3+json'
-        })
-        with urllib.request.urlopen(req, timeout=15) as resp:
-            releases = json.loads(resp.read().decode('utf-8'))
-        if releases:
-            latest = releases[0]
-            return {
-                "tag": latest.get("tag_name", ""),
-                "name": latest.get("name", ""),
-                "body": latest.get("body", ""),
-                "url": latest.get("html_url", ""),
-                "published": latest.get("published_at", ""),
-            }
-    except Exception as e:
-        print(f"  GitHub 检查失败: {e}")
-    return None
 
 def check_rsshub_changelog():
     """通过 RSSHub 检查 Claude Code 官方 changelog。"""
@@ -179,7 +134,7 @@ def meaningful_release_lines(body):
     return lines
 
 def is_important_release(release, old_tag=None):
-    """只汇报重要功能更新；纯 bugfix/docs/deps/chore 版本不进晨报。"""
+    """判断 changelog 是否包含重要功能更新或重要风险项。"""
     tag = release.get("tag", "")
     if old_tag and major_or_minor_changed(old_tag, tag):
         return True
@@ -215,64 +170,55 @@ def release_summary(body, max_chars=500):
         return summary[:max_chars].rstrip() + "..."
     return summary
 
+def processed_release_summary(release):
+    processed = apply_postprocessors(
+        "claude_code_changelog",
+        {
+            "title": release.get("name") or release.get("tag", ""),
+            "body": release.get("body", ""),
+            "url": release.get("url", ""),
+            "published": release.get("published", ""),
+        },
+    )
+    summary = processed.get("summary") or release_summary(release.get("body", ""))
+    return summary, processed
+
 def main():
     state = load_state()
-    old_npm = state.get("npm_version")
     old_tag = state.get("github_tag")
 
-    # 检查 npm 版本
-    npm_ver = check_npm()
-    # 优先检查 Claude Code 官方 changelog 的 RSSHub route
-    changelog_release = check_rsshub_changelog()
-    # 检查 GitHub release
-    gh_release = check_github()
-    release = changelog_release or gh_release
+    release = check_rsshub_changelog()
 
     has_update = False
-    important_release = bool(
-        release and old_tag and release["tag"] != old_tag
-        and is_important_release(release, old_tag)
-    )
 
     with open(PENDING_FILE, 'w') as f:
-        if important_release:
-            f.write(f"## {datetime.now().strftime('%Y-%m-%d')} Claude Code\n\n")
-
-        if npm_ver:
-            if important_release and old_npm and npm_ver != old_npm:
-                f.write(f"🆕 **npm 新版本**: `{npm_ver}` (之前: `{old_npm}`)\n")
-                f.write(f"安装: `npm i -g @anthropic-ai/claude-code@{npm_ver}`\n\n")
-                has_update = True
-                print(f"npm 新版本: {npm_ver}")
+        if release and old_tag and release["tag"] != old_tag:
+            summary, processed = processed_release_summary(release)
+            if not processed.get("should_notify", True):
+                print(f"忽略 Claude Code changelog 更新: {release['tag']}")
             else:
-                print(f"npm 版本: {npm_ver}")
-            state["npm_version"] = npm_ver
-
+                important_release = is_important_release(release, old_tag)
+                label = "功能更新" if important_release else "changelog 更新"
+                tag = release["tag"]
+                f.write(f"## {datetime.now().strftime('%Y-%m-%d')} Claude Code\n\n")
+                f.write(f"🆕 **Claude Code {label}**: `{tag}`\n")
+                f.write(f"[查看详情]({release['url']})\n")
+                if release["published"]:
+                    f.write(f"发布时间: {release['published'][:10]}\n")
+                if summary:
+                    f.write(f"\n{summary}\n")
+                has_update = True
+                print(f"Claude Code changelog 更新: {tag}")
         if release:
             tag = release["tag"]
-            if old_tag and tag != old_tag:
-                if important_release:
-                    source_name = "Claude Code Changelog" if changelog_release else "GitHub Release"
-                    f.write(f"\n🆕 **{source_name} 重要更新**: `{tag}`\n")
-                    f.write(f"[查看详情]({release['url'] or RELEASES_URL})\n")
-                    if release["published"]:
-                        f.write(f"发布时间: {release['published'][:10]}\n")
-                    summary = release_summary(release["body"])
-                    if summary:
-                        f.write(f"\n{summary}\n")
-                    has_update = True
-                    print(f"Claude Code 重要更新: {tag}")
-                else:
-                    print(f"忽略 Claude Code 普通/bugfix 更新: {tag}")
-            else:
+            if not old_tag or tag == old_tag:
                 print(f"Claude Code 最新版本: {tag}")
             state["github_tag"] = tag
-            if changelog_release:
-                state["changelog_source"] = changelog_release["source"]
+            state["changelog_source"] = release["source"]
 
         if not has_update:
             f.truncate(0)
-            print("无重要功能更新，不写入晨报")
+            print("无 Claude Code changelog 更新，不写入晨报")
 
     state["last_check"] = datetime.now().isoformat()
     save_state(state)

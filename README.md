@@ -61,6 +61,10 @@ python3 main.py
 
 监控源统一放在 `config.json` 的 `monitor_sources`。新增 RSSHub、Atom、API、raw changelog 地址时先改这里，再通过 `src/site_monitor/monitor_config.py` 读取。
 
+后处理统一放在 `config.json` 的 `postprocessors`。每个条目指定 `module`、`function` 和 `options`，函数接收 payload dict 并返回 payload dict。Claude Code changelog 当前会按“功能更新”和“修复/其他”拆分。
+
+日报发送统一放在 `config.json` 的 `delivery`。当前 provider 是 `hermes_weixin`，复用本机 Hermes 的微信账号和 token，但由本项目主动调用发送。
+
 运行验证：
 
 ```bash

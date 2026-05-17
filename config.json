@@ -51,15 +51,34 @@
       "rsshub_urls": [
         "https://rsshub.app/claude/code/changelog",
         "https://rsshub.ktachibana.party/claude/code/changelog"
-      ],
-      "github_releases_url": "https://github.com/anthropics/claude-code/releases",
-      "github_releases_api": "https://api.github.com/repos/anthropics/claude-code/releases?per_page=5",
-      "npm_package": "@anthropic-ai/claude-code"
+      ]
     },
     "github_copilot_cli_changelog": {
       "atom_url": "https://github.com/github/copilot-cli/commits/main/changelog.md.atom",
       "raw_url": "https://raw.githubusercontent.com/github/copilot-cli/main/changelog.md"
     }
+  },
+  "postprocessors": {
+    "claude_code_changelog": [
+      {
+        "enabled": true,
+        "module": "site_monitor.postprocessors.changelog",
+        "function": "split_changelog_sections",
+        "options": {
+          "include_fixes": true,
+          "notify_only_feature_updates": false,
+          "feature_heading": "功能更新",
+          "fix_heading": "修复/其他"
+        }
+      }
+    ]
+  },
+  "delivery": {
+    "enabled": true,
+    "provider": "hermes_weixin",
+    "target": "weixin:o9cq80wGLn7BiEU1BUf0CL3RrS10@im.wechat",
+    "hermes_home": "/Users/mint/.hermes",
+    "hermes_agent_path": "/Users/mint/.hermes/hermes-agent"
   },
   "runtime": {
     "state_dir": "runtime/state",
