@@ -39,6 +39,28 @@
       "daily_summary": true
     }
   ],
+  "monitor_sources": {
+    "anthropic_engineering": {
+      "rsshub_urls": [
+        "https://rsshub.app/anthropic/engineering",
+        "https://rsshub.ktachibana.party/anthropic/engineering"
+      ],
+      "fallback_url": "https://www.anthropic.com/engineering"
+    },
+    "claude_code_changelog": {
+      "rsshub_urls": [
+        "https://rsshub.app/claude/code/changelog",
+        "https://rsshub.ktachibana.party/claude/code/changelog"
+      ],
+      "github_releases_url": "https://github.com/anthropics/claude-code/releases",
+      "github_releases_api": "https://api.github.com/repos/anthropics/claude-code/releases?per_page=5",
+      "npm_package": "@anthropic-ai/claude-code"
+    },
+    "github_copilot_cli_changelog": {
+      "atom_url": "https://github.com/github/copilot-cli/commits/main/changelog.md.atom",
+      "raw_url": "https://raw.githubusercontent.com/github/copilot-cli/main/changelog.md"
+    }
+  },
   "check_interval": 3600,
   "notifier": {
     "type": "console"
