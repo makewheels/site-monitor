@@ -1,5 +1,5 @@
 import json
-import monitor_config
+from site_monitor import monitor_config
 
 
 def test_get_monitor_source_reads_config(tmp_path, monkeypatch):
@@ -15,7 +15,7 @@ def test_get_monitor_source_reads_config(tmp_path, monkeypatch):
             }
         )
     )
-    monkeypatch.setattr(monitor_config, "CONFIG_FILE", str(config_file))
+    monkeypatch.setattr(monitor_config, "CONFIG_FILE", config_file)
 
     assert monitor_config.get_monitor_source("example") == {
         "atom_url": "https://example.com/feed.atom",

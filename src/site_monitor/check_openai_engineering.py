@@ -5,14 +5,15 @@ import urllib.request
 import re
 import os
 from datetime import datetime
+from .monitor_config import runtime_path
 
 try:
     from bs4 import BeautifulSoup
 except ImportError:
     BeautifulSoup = None
 
-STATE_FILE = os.path.expanduser("~/PythonProjects/site_monitor/openai_engineering_state.json")
-PENDING_FILE = os.path.expanduser("~/PythonProjects/site_monitor/openai_engineering_pending.txt")
+STATE_FILE = runtime_path("state", "openai_engineering_state.json")
+PENDING_FILE = runtime_path("pending", "openai_engineering_pending.txt")
 BLOG_URLS = [
     "https://openai.com/blog/engineering/",
     "https://openai.com/index/engineering/",

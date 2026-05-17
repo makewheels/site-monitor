@@ -5,6 +5,7 @@ import urllib.request
 import re
 import os
 from datetime import datetime
+from .monitor_config import runtime_path
 
 try:
     import feedparser
@@ -16,8 +17,8 @@ try:
 except ImportError:
     BeautifulSoup = None
 
-STATE_FILE = os.path.expanduser("~/PythonProjects/site_monitor/langchain_blog_state.json")
-PENDING_FILE = os.path.expanduser("~/PythonProjects/site_monitor/langchain_blog_pending.txt")
+STATE_FILE = runtime_path("state", "langchain_blog_state.json")
+PENDING_FILE = runtime_path("pending", "langchain_blog_pending.txt")
 FEED_URLS = [
     "https://blog.langchain.dev/rss",
     "https://blog.langchain.dev/feed/",

@@ -61,6 +61,12 @@
       "raw_url": "https://raw.githubusercontent.com/github/copilot-cli/main/changelog.md"
     }
   },
+  "runtime": {
+    "state_dir": "runtime/state",
+    "pending_dir": "runtime/pending",
+    "logs_dir": "runtime/logs",
+    "tmp_dir": "runtime/tmp"
+  },
   "check_interval": 3600,
   "notifier": {
     "type": "console"

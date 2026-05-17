@@ -1,6 +1,6 @@
 from types import SimpleNamespace
 
-import check_anthropic
+from site_monitor import check_anthropic
 
 
 class FakeResponse:

@@ -1,4 +1,4 @@
-import check_claude_code
+from site_monitor import check_claude_code
 
 
 def test_feature_release_is_important():

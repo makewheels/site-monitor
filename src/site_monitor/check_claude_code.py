@@ -6,15 +6,15 @@ import os
 import re
 import html
 from datetime import datetime
-from monitor_config import get_monitor_source
+from .monitor_config import get_monitor_source, runtime_path
 
 try:
     import feedparser
 except ImportError:
     feedparser = None
 
-STATE_FILE = os.path.expanduser("~/PythonProjects/site_monitor/claude_code_state.json")
-PENDING_FILE = os.path.expanduser("~/PythonProjects/site_monitor/claude_code_pending.txt")
+STATE_FILE = runtime_path("state", "claude_code_state.json")
+PENDING_FILE = runtime_path("pending", "claude_code_pending.txt")
 SOURCE_CONFIG = get_monitor_source("claude_code_changelog")
 RELEASES_URL = SOURCE_CONFIG.get("github_releases_url", "https://github.com/anthropics/claude-code/releases")
 GITHUB_RELEASES_API = SOURCE_CONFIG.get(

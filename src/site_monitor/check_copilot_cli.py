@@ -5,15 +5,15 @@ import urllib.request
 import os
 import re
 from datetime import datetime
-from monitor_config import get_monitor_source
+from .monitor_config import get_monitor_source, runtime_path
 
 try:
     import feedparser
 except ImportError:
     feedparser = None
 
-STATE_FILE = os.path.expanduser("~/PythonProjects/site_monitor/copilot_cli_state.json")
-PENDING_FILE = os.path.expanduser("~/PythonProjects/site_monitor/copilot_cli_pending.txt")
+STATE_FILE = runtime_path("state", "copilot_cli_state.json")
+PENDING_FILE = runtime_path("pending", "copilot_cli_pending.txt")
 SOURCE_CONFIG = get_monitor_source("github_copilot_cli_changelog")
 ATOM_URL = SOURCE_CONFIG.get(
     "atom_url",

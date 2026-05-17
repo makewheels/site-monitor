@@ -5,15 +5,15 @@ import urllib.request
 import re
 import os
 from datetime import datetime
-from monitor_config import get_monitor_source
+from .monitor_config import get_monitor_source, runtime_path
 
 try:
     import feedparser
 except ImportError:
     feedparser = None
 
-STATE_FILE = os.path.expanduser("~/PythonProjects/site_monitor/anthropic_state.json")
-PENDING_FILE = os.path.expanduser("~/PythonProjects/site_monitor/anthropic_pending.txt")
+STATE_FILE = runtime_path("state", "anthropic_state.json")
+PENDING_FILE = runtime_path("pending", "anthropic_pending.txt")
 SOURCE_CONFIG = get_monitor_source("anthropic_engineering")
 RSSHUB_URLS = SOURCE_CONFIG.get("rsshub_urls") or [
     "https://rsshub.app/anthropic/engineering",

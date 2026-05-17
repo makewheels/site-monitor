@@ -5,14 +5,15 @@ import urllib.request
 import re
 import os
 from datetime import datetime
+from .monitor_config import runtime_path
 
 try:
     from bs4 import BeautifulSoup
 except ImportError:
     BeautifulSoup = None
 
-STATE_FILE = os.path.expanduser("~/PythonProjects/site_monitor/github_trending_state.json")
-PENDING_FILE = os.path.expanduser("~/PythonProjects/site_monitor/github_trending_pending.txt")
+STATE_FILE = runtime_path("state", "github_trending_state.json")
+PENDING_FILE = runtime_path("pending", "github_trending_pending.txt")
 
 # 中文化词典
 ZH_DICT = [

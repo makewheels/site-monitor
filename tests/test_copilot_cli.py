@@ -1,6 +1,6 @@
 from types import SimpleNamespace
 
-import check_copilot_cli
+from site_monitor import check_copilot_cli
 
 
 class FakeResponse:
