@@ -1,0 +1,734 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Monitor Android App Mockup</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #eef1f3;
+      --surface: #ffffff;
+      --surface-2: #f7f8f8;
+      --text: #17201d;
+      --muted: #64706b;
+      --line: #d9dfdc;
+      --green: #17725c;
+      --github: #24292f;
+      --claude: #64546c;
+      --openai: #17725c;
+      --anthropic: #a35e24;
+      --langchain: #1d7782;
+      --copilot: #3169b0;
+      --warn: #b7791f;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .page {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 28px;
+    }
+
+    .header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+
+    h1, h2, h3, p { margin: 0; }
+
+    h1 {
+      font-size: 30px;
+      line-height: 1.15;
+      letter-spacing: 0;
+    }
+
+    .sub {
+      color: var(--muted);
+      margin-top: 8px;
+      font-size: 15px;
+    }
+
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: flex-end;
+      max-width: 520px;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      height: 30px;
+      padding: 0 10px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--surface);
+      color: var(--muted);
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--green);
+      flex: 0 0 auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(250px, 1fr));
+      gap: 20px;
+      align-items: start;
+    }
+
+    .phone {
+      background: #101614;
+      border-radius: 30px;
+      padding: 12px;
+      box-shadow: 0 14px 34px rgba(23, 32, 29, 0.18);
+      min-width: 0;
+    }
+
+    .screen {
+      height: 760px;
+      overflow: hidden;
+      background: var(--surface);
+      border-radius: 22px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .statusbar {
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 18px;
+      color: var(--muted);
+      font-size: 12px;
+      background: var(--surface);
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 12px 16px 8px;
+      border-bottom: 1px solid var(--line);
+      flex: 0 0 auto;
+    }
+
+    .title {
+      font-size: 21px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .iconrow {
+      display: flex;
+      gap: 8px;
+      flex: 0 0 auto;
+    }
+
+    .iconbtn {
+      width: 34px;
+      height: 34px;
+      border-radius: 6px;
+      border: 1px solid var(--line);
+      background: var(--surface-2);
+      display: grid;
+      place-items: center;
+      color: var(--text);
+      font-size: 16px;
+    }
+
+    .content {
+      overflow: hidden;
+      padding: 14px 14px 0;
+      flex: 1 1 auto;
+      background: #fbfbfa;
+    }
+
+    .metricbar {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .metric {
+      border: 1px solid var(--line);
+      background: var(--surface);
+      border-radius: 8px;
+      padding: 9px 10px;
+      min-height: 58px;
+    }
+
+    .label {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.2;
+    }
+
+    .value {
+      margin-top: 5px;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.15;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 8px;
+      overflow: hidden;
+      margin-bottom: 12px;
+    }
+
+    .tab {
+      height: 32px;
+      padding: 0 11px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--surface);
+      color: var(--muted);
+      font-size: 13px;
+      display: inline-flex;
+      align-items: center;
+      flex: 0 0 auto;
+    }
+
+    .tab.active {
+      color: #fff;
+      background: var(--green);
+      border-color: var(--green);
+    }
+
+    .section {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface);
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 11px 8px;
+      border-left: 4px solid var(--green);
+      background: var(--surface);
+    }
+
+    .section-title {
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    .count {
+      color: var(--muted);
+      font-size: 12px;
+      white-space: nowrap;
+    }
+
+    .item {
+      padding: 9px 11px 10px;
+      border-top: 1px solid var(--line);
+    }
+
+    .item-title {
+      font-size: 14px;
+      font-weight: 650;
+      line-height: 1.28;
+    }
+
+    .item-desc {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.35;
+      margin-top: 5px;
+    }
+
+    .meta {
+      display: flex;
+      gap: 10px;
+      margin-top: 7px;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .bottomnav {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border-top: 1px solid var(--line);
+      background: var(--surface);
+      flex: 0 0 auto;
+    }
+
+    .navitem {
+      height: 56px;
+      display: grid;
+      place-items: center;
+      color: var(--muted);
+      font-size: 11px;
+      gap: 2px;
+    }
+
+    .navitem strong {
+      color: var(--green);
+      font-size: 16px;
+      line-height: 1;
+    }
+
+    .navitem span:first-child {
+      font-size: 16px;
+      line-height: 1;
+    }
+
+    .history-row {
+      display: grid;
+      grid-template-columns: 62px 1fr auto;
+      gap: 10px;
+      align-items: center;
+      padding: 11px;
+      border-bottom: 1px solid var(--line);
+      background: var(--surface);
+    }
+
+    .datebox {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 7px 0;
+      text-align: center;
+      background: var(--surface-2);
+    }
+
+    .datebox b {
+      display: block;
+      font-size: 18px;
+      line-height: 1;
+    }
+
+    .datebox span {
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .tagline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-top: 6px;
+    }
+
+    .mini {
+      display: inline-flex;
+      align-items: center;
+      height: 21px;
+      padding: 0 7px;
+      border-radius: 5px;
+      color: #fff;
+      font-size: 11px;
+    }
+
+    .detail-title {
+      font-size: 18px;
+      font-weight: 750;
+      line-height: 1.25;
+      padding: 2px 2px 10px;
+    }
+
+    .detail-block {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface);
+      padding: 12px;
+      margin-bottom: 10px;
+    }
+
+    .detail-block h3 {
+      font-size: 15px;
+      margin-bottom: 8px;
+    }
+
+    .detail-block p {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.48;
+      margin-bottom: 8px;
+    }
+
+    .linkrow {
+      min-height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid var(--line);
+      color: var(--green);
+      font-size: 13px;
+    }
+
+    .collapsed {
+      border: 1px dashed #c6ccc9;
+      color: var(--muted);
+      background: #fafafa;
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-size: 13px;
+    }
+
+    .setting {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface);
+      padding: 12px;
+      margin-bottom: 10px;
+    }
+
+    .setting .value {
+      font-size: 13px;
+      color: var(--muted);
+      font-weight: 500;
+      word-break: break-all;
+    }
+
+    .primary {
+      width: 100%;
+      height: 42px;
+      border: 0;
+      border-radius: 8px;
+      background: var(--green);
+      color: #fff;
+      font-size: 15px;
+      font-weight: 700;
+      margin-top: 4px;
+    }
+
+    .flow {
+      margin-top: 26px;
+      border: 1px solid var(--line);
+      background: var(--surface);
+      border-radius: 8px;
+      padding: 18px;
+    }
+
+    .flow h2 {
+      font-size: 20px;
+      margin-bottom: 14px;
+    }
+
+    .flowgrid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(150px, 1fr));
+      gap: 10px;
+    }
+
+    .flowbox {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface-2);
+      padding: 12px;
+      min-height: 98px;
+    }
+
+    .flowbox b {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 7px;
+    }
+
+    .flowbox span {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.4;
+    }
+
+    .github { border-left-color: var(--github); }
+    .claude { border-left-color: var(--claude); }
+    .openai { border-left-color: var(--openai); }
+    .anthropic { border-left-color: var(--anthropic); }
+    .langchain { border-left-color: var(--langchain); }
+    .copilot { border-left-color: var(--copilot); }
+    .bg-github { background: var(--github); }
+    .bg-claude { background: var(--claude); }
+    .bg-openai { background: var(--openai); }
+    .bg-anthropic { background: var(--anthropic); }
+    .bg-langchain { background: var(--langchain); }
+    .bg-copilot { background: var(--copilot); }
+
+    @media (max-width: 1160px) {
+      .grid { grid-template-columns: repeat(2, minmax(260px, 1fr)); }
+      .flowgrid { grid-template-columns: repeat(2, minmax(180px, 1fr)); }
+    }
+
+    @media (max-width: 680px) {
+      .page { padding: 16px; }
+      .header { display: block; }
+      .legend { justify-content: flex-start; margin-top: 16px; }
+      .grid { grid-template-columns: 1fr; }
+      .screen { height: 720px; }
+      .flowgrid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <div>
+        <h1>AI Monitor Android App 原型</h1>
+        <p class="sub">第一版：主动打开查看。总历史统一存储，按 topic 分类筛选。</p>
+      </div>
+      <div class="legend" aria-label="topic 色彩说明">
+        <span class="chip"><i class="dot bg-claude"></i>Claude</span>
+        <span class="chip"><i class="dot bg-github"></i>GitHub</span>
+        <span class="chip"><i class="dot bg-openai"></i>OpenAI</span>
+        <span class="chip"><i class="dot bg-anthropic"></i>Anthropic</span>
+        <span class="chip"><i class="dot bg-langchain"></i>LangChain</span>
+        <span class="chip"><i class="dot bg-copilot"></i>Copilot</span>
+      </div>
+    </header>
+
+    <section class="grid">
+      <article class="phone" aria-label="今日页">
+        <div class="screen">
+          <div class="statusbar"><span>09:41</span><span>5G 87%</span></div>
+          <div class="topbar">
+            <div>
+              <div class="title">今日</div>
+              <div class="label">2026-05-18 07:15 已同步</div>
+            </div>
+            <div class="iconrow">
+              <div class="iconbtn">↻</div>
+              <div class="iconbtn">⚙</div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="metricbar">
+              <div class="metric">
+                <div class="label">今日分类</div>
+                <div class="value">6 个 topic</div>
+              </div>
+              <div class="metric">
+                <div class="label">云端状态</div>
+                <div class="value">正常</div>
+              </div>
+            </div>
+            <div class="tabs">
+              <span class="tab active">全部</span>
+              <span class="tab">Claude</span>
+              <span class="tab">GitHub</span>
+              <span class="tab">OpenAI</span>
+            </div>
+
+            <section class="section">
+              <div class="section-head claude">
+                <h2 class="section-title">Claude Code</h2>
+                <span class="count">3 条</span>
+              </div>
+              <div class="item">
+                <div class="item-title">新增终端集成与权限提示优化</div>
+                <div class="item-desc">功能更新优先展示，修复/文档项在详情页折叠。</div>
+                <div class="meta"><span>功能更新</span><span>2 个链接</span></div>
+              </div>
+            </section>
+
+            <section class="section">
+              <div class="section-head github">
+                <h2 class="section-title">GitHub Trending</h2>
+                <span class="count">5 条</span>
+              </div>
+              <div class="item">
+                <div class="item-title">今日 Top 项目变化</div>
+                <div class="item-desc">显示项目名、简短描述、新上榜标记和 GitHub 链接。</div>
+                <div class="meta"><span>日报</span><span>5 个链接</span></div>
+              </div>
+            </section>
+
+            <section class="section">
+              <div class="section-head openai">
+                <h2 class="section-title">OpenAI Engineering</h2>
+                <span class="count">1 条</span>
+              </div>
+              <div class="item">
+                <div class="item-title">工程博客新文章</div>
+                <div class="item-desc">列表只放摘要，点进详情看完整文本。</div>
+                <div class="meta"><span>文章</span><span>1 个链接</span></div>
+              </div>
+            </section>
+          </div>
+          <nav class="bottomnav">
+            <div class="navitem"><strong>⌂</strong><span>今日</span></div>
+            <div class="navitem"><span>≡</span><span>历史</span></div>
+            <div class="navitem"><span>↻</span><span>同步</span></div>
+            <div class="navitem"><span>⚙</span><span>设置</span></div>
+          </nav>
+        </div>
+      </article>
+
+      <article class="phone" aria-label="历史页">
+        <div class="screen">
+          <div class="statusbar"><span>09:41</span><span>5G 87%</span></div>
+          <div class="topbar">
+            <div>
+              <div class="title">历史</div>
+              <div class="label">总历史，可按 topic 筛选</div>
+            </div>
+            <div class="iconbtn">⌕</div>
+          </div>
+          <div class="content">
+            <div class="tabs">
+              <span class="tab active">全部</span>
+              <span class="tab">Claude</span>
+              <span class="tab">GitHub</span>
+              <span class="tab">OpenAI</span>
+            </div>
+            <div class="section">
+              <div class="history-row">
+                <div class="datebox"><b>18</b><span>5月</span></div>
+                <div>
+                  <div class="item-title">每日 AI 监控汇总</div>
+                  <div class="item-desc">6 个 topic，14 条内容</div>
+                  <div class="tagline">
+                    <span class="mini bg-claude">Claude</span>
+                    <span class="mini bg-github">GitHub</span>
+                    <span class="mini bg-openai">OpenAI</span>
+                  </div>
+                </div>
+                <span class="count">›</span>
+              </div>
+              <div class="history-row">
+                <div class="datebox"><b>17</b><span>5月</span></div>
+                <div>
+                  <div class="item-title">每日 AI 监控汇总</div>
+                  <div class="item-desc">4 个 topic，9 条内容</div>
+                  <div class="tagline">
+                    <span class="mini bg-claude">Claude</span>
+                    <span class="mini bg-anthropic">Anthropic</span>
+                  </div>
+                </div>
+                <span class="count">›</span>
+              </div>
+              <div class="history-row">
+                <div class="datebox"><b>16</b><span>5月</span></div>
+                <div>
+                  <div class="item-title">每日 AI 监控汇总</div>
+                  <div class="item-desc">5 个 topic，11 条内容</div>
+                  <div class="tagline">
+                    <span class="mini bg-github">GitHub</span>
+                    <span class="mini bg-langchain">LangChain</span>
+                    <span class="mini bg-copilot">Copilot</span>
+                  </div>
+                </div>
+                <span class="count">›</span>
+              </div>
+            </div>
+          </div>
+          <nav class="bottomnav">
+            <div class="navitem"><span>⌂</span><span>今日</span></div>
+            <div class="navitem"><strong>≡</strong><span>历史</span></div>
+            <div class="navitem"><span>↻</span><span>同步</span></div>
+            <div class="navitem"><span>⚙</span><span>设置</span></div>
+          </nav>
+        </div>
+      </article>
+
+      <article class="phone" aria-label="详情页">
+        <div class="screen">
+          <div class="statusbar"><span>09:41</span><span>5G 87%</span></div>
+          <div class="topbar">
+            <div class="iconbtn">‹</div>
+            <div>
+              <div class="title">Claude Code</div>
+              <div class="label">2026-05-18</div>
+            </div>
+            <div class="iconbtn">↗</div>
+          </div>
+          <div class="content">
+            <h2 class="detail-title">新增终端集成与权限提示优化</h2>
+            <div class="detail-block">
+              <h3>功能更新</h3>
+              <p>这里展示 postprocessor 分出来的重要功能更新。正文会按手机宽度重新排版，不直接塞一整段日报。</p>
+              <p>如果某个 topic 有多个条目，详情页继续按小节显示，方便扫读。</p>
+              <div class="linkrow"><span>查看 changelog 原文</span><span>↗</span></div>
+              <div class="linkrow"><span>相关文档</span><span>↗</span></div>
+            </div>
+            <div class="collapsed">修复/文档/其他 4 条，点击展开</div>
+          </div>
+          <nav class="bottomnav">
+            <div class="navitem"><strong>⌂</strong><span>今日</span></div>
+            <div class="navitem"><span>≡</span><span>历史</span></div>
+            <div class="navitem"><span>↻</span><span>同步</span></div>
+            <div class="navitem"><span>⚙</span><span>设置</span></div>
+          </nav>
+        </div>
+      </article>
+
+      <article class="phone" aria-label="设置页">
+        <div class="screen">
+          <div class="statusbar"><span>09:41</span><span>5G 87%</span></div>
+          <div class="topbar">
+            <div>
+              <div class="title">设置</div>
+              <div class="label">个人使用，无账号系统</div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="setting">
+              <div class="label">云端 API</div>
+              <div class="value">https://monitor.example.com/api/v1</div>
+            </div>
+            <div class="setting">
+              <div class="label">本地缓存</div>
+              <div class="value">最近 30 天，约 1.8 MB</div>
+            </div>
+            <div class="setting">
+              <div class="label">同步方式</div>
+              <div class="value">打开 App 自动同步，下拉手动刷新</div>
+            </div>
+            <button class="primary">立即同步</button>
+            <div class="setting" style="margin-top: 10px;">
+              <div class="label">版本</div>
+              <div class="value">AI Monitor 0.1.0</div>
+            </div>
+          </div>
+          <nav class="bottomnav">
+            <div class="navitem"><span>⌂</span><span>今日</span></div>
+            <div class="navitem"><span>≡</span><span>历史</span></div>
+            <div class="navitem"><span>↻</span><span>同步</span></div>
+            <div class="navitem"><strong>⚙</strong><span>设置</span></div>
+          </nav>
+        </div>
+      </article>
+    </section>
+
+    <section class="flow">
+      <h2>数据流</h2>
+      <div class="flowgrid">
+        <div class="flowbox"><b>Mac 定时任务</b><span>Hermes cron 调用 daily_summary.py，继续生成原有日报文本。</span></div>
+        <div class="flowbox"><b>结构化日报</b><span>按 topic 生成 report 和 report_items，不再只是一整段文本。</span></div>
+        <div class="flowbox"><b>腾讯云 API</b><span>Mac 上传到 HTTPS API，API 写入你自己的 MongoDB。</span></div>
+        <div class="flowbox"><b>Android App</b><span>打开后拉取 latest/history/detail，离线时读本地缓存。</span></div>
+        <div class="flowbox"><b>微信保留</b><span>Hermes 微信发送先不切断，云端同步失败也不影响微信日报。</span></div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

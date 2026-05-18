@@ -1,0 +1,46 @@
+name: Deploy cloud API to Tencent Cloud
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "src/site_monitor/**"
+      - "requirements.txt"
+      - "deploy/**"
+      - ".github/workflows/deploy-tencent-cloud.yml"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure SSH
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s\n' "${{ secrets.TENCENT_CLOUD_SSH_KEY }}" > ~/.ssh/tencent_cloud_key
+          chmod 600 ~/.ssh/tencent_cloud_key
+          ssh-keyscan -H "${{ secrets.TENCENT_CLOUD_HOST }}" >> ~/.ssh/known_hosts
+
+      - name: Sync code
+        run: |
+          rsync -az --delete \
+            --exclude '.git' \
+            --exclude 'runtime' \
+            --exclude '.venv' \
+            --exclude 'android/**/build' \
+            -e "ssh -i ~/.ssh/tencent_cloud_key" \
+            ./ "${{ secrets.TENCENT_CLOUD_USER }}@${{ secrets.TENCENT_CLOUD_HOST }}:${{ secrets.TENCENT_CLOUD_DEPLOY_PATH }}/"
+
+      - name: Install and restart
+        run: |
+          ssh -i ~/.ssh/tencent_cloud_key "${{ secrets.TENCENT_CLOUD_USER }}@${{ secrets.TENCENT_CLOUD_HOST }}" <<'EOF'
+          set -euo pipefail
+          cd "${{ secrets.TENCENT_CLOUD_DEPLOY_PATH }}"
+          python3 -m venv .venv
+          . .venv/bin/activate
+          pip install -r requirements.txt
+          sudo systemctl restart site-monitor-cloud
+          curl -fsS http://127.0.0.1:5011/healthz
+          EOF

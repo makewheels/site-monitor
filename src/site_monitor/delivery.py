@@ -6,8 +6,11 @@ import os
 import sys
 from pathlib import Path
 from typing import Any
+from datetime import datetime
 
+import requests
 from .monitor_config import load_config
+from .monitor_config import runtime_path
 
 
 def _load_env_file(path: Path) -> None:
@@ -35,15 +38,73 @@ def is_enabled(config: dict[str, Any] | None = None) -> bool:
     return bool(config.get("enabled", False))
 
 
-def send_report(message: str, config: dict[str, Any] | None = None) -> dict[str, Any]:
+def send_report(
+    message: str,
+    config: dict[str, Any] | None = None,
+    payload: dict[str, Any] | None = None,
+) -> dict[str, Any]:
     config = config or get_delivery_config()
     if not is_enabled(config):
         return {"success": True, "skipped": True, "reason": "delivery_disabled"}
 
+    providers = config.get("providers")
+    if providers:
+        return _send_fanout(message, payload or {"full_text": message}, providers)
+
     provider = config.get("provider")
-    if provider != "hermes_weixin":
-        raise ValueError(f"Unsupported delivery provider: {provider}")
-    return _send_via_hermes_weixin(message, config)
+    return _send_provider(provider, message, payload or {"full_text": message}, config)
+
+
+def _send_fanout(
+    message: str,
+    payload: dict[str, Any],
+    providers: list[dict[str, Any]],
+) -> dict[str, Any]:
+    results: list[dict[str, Any]] = []
+    for provider_config in providers:
+        if provider_config.get("enabled", True) is False:
+            results.append(
+                {
+                    "provider": provider_config.get("provider", "unknown"),
+                    "success": True,
+                    "skipped": True,
+                    "reason": "provider_disabled",
+                }
+            )
+            continue
+        provider = provider_config.get("provider")
+        try:
+            result = _send_provider(provider, message, payload, provider_config)
+            result.setdefault("provider", provider)
+            result.setdefault("success", True)
+            results.append(result)
+        except Exception as exc:
+            failure = {
+                "provider": provider,
+                "success": False,
+                "error": str(exc),
+            }
+            if provider == "cloud_api":
+                _save_cloud_sync_failure(payload, provider_config, str(exc))
+            results.append(failure)
+
+    return {
+        "success": all(result.get("success", False) for result in results),
+        "results": results,
+    }
+
+
+def _send_provider(
+    provider: str | None,
+    message: str,
+    payload: dict[str, Any],
+    config: dict[str, Any],
+) -> dict[str, Any]:
+    if provider == "hermes_weixin":
+        return _send_via_hermes_weixin(message, config)
+    if provider == "cloud_api":
+        return _send_via_cloud_api(payload, config)
+    raise ValueError(f"Unsupported delivery provider: {provider}")
 
 
 def _send_via_hermes_weixin(message: str, config: dict[str, Any]) -> dict[str, Any]:
@@ -71,3 +132,47 @@ def _send_via_hermes_weixin(message: str, config: dict[str, Any]) -> dict[str, A
     if result.get("error"):
         raise RuntimeError(result["error"])
     return result
+
+
+def _send_via_cloud_api(payload: dict[str, Any], config: dict[str, Any]) -> dict[str, Any]:
+    base_url = config.get("base_url") or os.getenv("SITE_MONITOR_CLOUD_API_URL")
+    token = config.get("upload_token") or os.getenv("SITE_MONITOR_UPLOAD_TOKEN")
+    timeout = float(config.get("timeout", 20))
+
+    if not base_url:
+        raise ValueError("cloud_api.base_url is required")
+    if not token:
+        raise ValueError("cloud_api upload token is required")
+
+    url = base_url.rstrip("/") + "/api/v1/reports"
+    response = requests.post(
+        url,
+        json=payload,
+        headers={"X-Site-Monitor-Upload-Token": token},
+        timeout=timeout,
+    )
+    response.raise_for_status()
+    result = response.json()
+    result.setdefault("success", True)
+    return result
+
+
+def _save_cloud_sync_failure(
+    payload: dict[str, Any],
+    config: dict[str, Any],
+    error: str,
+) -> None:
+    timestamp = datetime.now().strftime("%Y%m%d%H%M%S")
+    report_id = payload.get("report_id", "unknown")
+    path = Path(runtime_path("pending", f"cloud_sync/{timestamp}-{report_id}.json"))
+    path.parent.mkdir(parents=True, exist_ok=True)
+    body = {
+        "payload": payload,
+        "config": {
+            "base_url": config.get("base_url"),
+            "provider": config.get("provider"),
+        },
+        "error": error,
+        "created_at": datetime.now().isoformat(timespec="seconds"),
+    }
+    path.write_text(json.dumps(body, ensure_ascii=False, indent=2), encoding="utf-8")

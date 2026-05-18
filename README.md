@@ -72,3 +72,55 @@ python3 -m json.tool config.json >/dev/null
 python3 -m py_compile src/site_monitor/*.py scripts/*.py daily_summary.py main.py notifier.py
 python3 -m pytest
 ```
+
+## Android App 第一版
+
+仓库内新增了一个最小 Android App 工程：`android/`。第一版不做推送，打开 App 后主动从云端 API 拉取最新日报和历史。
+
+本地演示 API 不依赖 MongoDB：
+
+```bash
+cd ~/PythonProjects/site_monitor
+PYTHONPATH=src python3 -m site_monitor.demo_cloud_api
+```
+
+真机测试时让手机访问 Mac 的局域网地址：
+
+```bash
+cd ~/PythonProjects/site_monitor
+PYTHONPATH=src SITE_MONITOR_DEMO_HOST=0.0.0.0 python3 -m site_monitor.demo_cloud_api
+```
+
+Android debug 构建：
+
+```bash
+cd ~/PythonProjects/site_monitor/android
+ANDROID_HOME=/Users/mint/Library/Android/sdk \
+SITE_MONITOR_ANDROID_API_URL=http://10.0.2.2:5001 \
+SITE_MONITOR_ANDROID_APP_TOKEN=dev-token \
+gradle :app:assembleDebug
+```
+
+真机本地测试时把 `SITE_MONITOR_ANDROID_API_URL` 改成 Mac 局域网地址：
+
+```bash
+ANDROID_HOME=/Users/mint/Library/Android/sdk \
+SITE_MONITOR_ANDROID_API_URL=http://<Mac局域网IP>:5001 \
+SITE_MONITOR_ANDROID_APP_TOKEN=dev-token \
+gradle :app:assembleDebug
+```
+
+生成的 APK 在：
+
+```bash
+android/app/build/outputs/apk/debug/app-debug.apk
+```
+
+正式云端 API 入口是 `site_monitor.cloud_api:app`，部署模板在 `deploy/`，GitHub Actions workflow 在 `.github/workflows/deploy-tencent-cloud.yml`。正式环境需要在服务器 env 中配置：
+
+```bash
+SITE_MONITOR_MONGO_URI=
+SITE_MONITOR_DB_NAME=site_monitor
+SITE_MONITOR_UPLOAD_TOKEN=
+SITE_MONITOR_APP_TOKEN=
+```

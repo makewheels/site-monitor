@@ -1,0 +1,14 @@
+[Unit]
+Description=Site Monitor Cloud API
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/site_monitor
+EnvironmentFile=/etc/site-monitor-cloud.env
+ExecStart=/opt/site_monitor/.venv/bin/gunicorn -w 2 -b 127.0.0.1:5011 site_monitor.cloud_api:app
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,28 @@
+plugins {
+    id "com.android.application"
+}
+
+android {
+    namespace "com.example.aimonitor"
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.example.aimonitor"
+        minSdk 24
+        targetSdk 35
+        versionCode 1
+        versionName "0.1.0"
+
+        buildConfigField "String", "API_BASE_URL", "\"${System.getenv("SITE_MONITOR_ANDROID_API_URL") ?: "http://10.0.2.2:5001"}\""
+        buildConfigField "String", "APP_TOKEN", "\"${System.getenv("SITE_MONITOR_ANDROID_APP_TOKEN") ?: ""}\""
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}

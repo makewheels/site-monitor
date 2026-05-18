@@ -9,6 +9,7 @@ import sys
 from datetime import datetime
 from .monitor_config import PROJECT_ROOT, runtime_path
 from .delivery import is_enabled, send_report
+from .report_payload import TOPICS, build_payload
 
 SCRIPTS_DIR = PROJECT_ROOT
 
@@ -48,52 +49,29 @@ def read_pending(filename):
     except:
         return ""
 
-def build_report():
+def build_report_payload():
     today = datetime.now().strftime('%Y-%m-%d')
 
     # 运行所有监控脚本
     for module_name in CHECK_MODULES:
         run_script(module_name)
 
-    sections = [f"📊 **每日 AI 监控汇总** — {today}"]
+    sections = {
+        topic.key: read_pending(topic.pending_file)
+        for topic in TOPICS
+    }
+    return build_payload(sections, date=today)
 
-    # GitHub Trending
-    trending = read_pending("github_trending_pending.txt")
-    if trending:
-        sections.append(trending)
 
-    # Anthropic Engineering
-    anthropic = read_pending("anthropic_pending.txt")
-    if anthropic:
-        sections.append(anthropic)
-
-    # OpenAI Engineering
-    openai = read_pending("openai_engineering_pending.txt")
-    if openai:
-        sections.append(openai)
-
-    # LangChain Blog
-    langchain = read_pending("langchain_blog_pending.txt")
-    if langchain:
-        sections.append(langchain)
-
-    # Claude Code
-    claude = read_pending("claude_code_pending.txt")
-    if claude:
-        sections.append(claude)
-
-    # Copilot CLI
-    copilot = read_pending("copilot_cli_pending.txt")
-    if copilot:
-        sections.append(copilot)
-
-    return "\n\n".join(sections).strip()
+def build_report():
+    return build_report_payload()["full_text"]
 
 def main():
-    report = build_report()
+    payload = build_report_payload()
+    report = payload["full_text"]
     print(report)
     if is_enabled():
-        result = send_report(report)
+        result = send_report(report, payload=payload)
         if result.get("skipped"):
             print(f"\n发送跳过: {result.get('reason')}", file=sys.stderr)
         else:

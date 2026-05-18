@@ -44,3 +44,10 @@ Thumbs.db
 # Claude
 .claude/
 openspec/
+
+# Android
+android/.gradle/
+android/**/build/
+android/local.properties
+*.apk
+*.aab
