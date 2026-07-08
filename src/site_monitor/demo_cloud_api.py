@@ -23,9 +23,9 @@ class DemoStore:
                     "1. example/agent-runtime\n"
                     "   多代理运行时样例 https://github.com/example/agent-runtime"
                 ),
-                "openai_engineering": (
-                    "OpenAI Engineering 新文章\n"
-                    "[工程博客](https://openai.com/index/engineering/)"
+                "openai_news": (
+                    "OpenAI News 新文章\n"
+                    "[官方 RSS](https://openai.com/news/rss.xml)"
                 ),
             },
             date="2026-05-18",

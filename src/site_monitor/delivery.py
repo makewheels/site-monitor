@@ -8,6 +8,7 @@ from pathlib import Path
 from typing import Any
 from datetime import datetime
 
+import time
 import requests
 from .monitor_config import load_config
 from .monitor_config import runtime_path
@@ -120,18 +121,32 @@ def _send_via_hermes_weixin(message: str, config: dict[str, Any]) -> dict[str, A
     if str(hermes_agent_path) not in sys.path:
         sys.path.insert(0, str(hermes_agent_path))
 
-    noise = io.StringIO()
-    with contextlib.redirect_stdout(noise):
-        from tools.send_message_tool import _handle_send
-        raw_result = _handle_send({"target": target, "message": message})
-    try:
-        result = json.loads(raw_result)
-    except json.JSONDecodeError as exc:
-        raise RuntimeError(f"Hermes send returned non-JSON result: {raw_result}") from exc
+    max_retries = 3
+    last_error = None
+    for attempt in range(1, max_retries + 1):
+        try:
+            noise = io.StringIO()
+            with contextlib.redirect_stdout(noise):
+                from tools.send_message_tool import _handle_send
+                raw_result = _handle_send({"target": target, "message": message})
+            try:
+                result = json.loads(raw_result)
+            except json.JSONDecodeError as exc:
+                raise RuntimeError(f"Hermes send returned non-JSON result: {raw_result}") from exc
 
-    if result.get("error"):
-        raise RuntimeError(result["error"])
-    return result
+            if result.get("error"):
+                raise RuntimeError(result["error"])
+            return result
+        except RuntimeError as exc:
+            last_error = exc
+            if "iLink" in str(exc) and attempt < max_retries:
+                delay = 2 ** attempt  # 2s, 4s, 8s
+                print(f"  ⚠️ WeChat iLink error (attempt {attempt}/{max_retries}), retrying in {delay}s...",
+                      file=sys.stderr)
+                time.sleep(delay)
+                continue
+            raise
+    raise last_error  # type: ignore[misc]
 
 
 def _send_via_cloud_api(payload: dict[str, Any], config: dict[str, Any]) -> dict[str, Any]:

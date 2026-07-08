@@ -16,7 +16,7 @@ SCRIPTS_DIR = PROJECT_ROOT
 CHECK_MODULES = [
     "site_monitor.check_github_trending",
     "site_monitor.check_anthropic",
-    "site_monitor.check_openai_engineering",
+    "site_monitor.check_rss_feeds",
     "site_monitor.check_langchain_blog",
     "site_monitor.check_claude_code",
     "site_monitor.check_copilot_cli",
@@ -71,11 +71,15 @@ def main():
     report = payload["full_text"]
     print(report)
     if is_enabled():
-        result = send_report(report, payload=payload)
-        if result.get("skipped"):
-            print(f"\n发送跳过: {result.get('reason')}", file=sys.stderr)
-        else:
-            print("\n微信发送成功", file=sys.stderr)
+        try:
+            result = send_report(report, payload=payload)
+            if result.get("skipped"):
+                print(f"\n发送跳过: {result.get('reason')}", file=sys.stderr)
+            else:
+                print("\n微信发送成功", file=sys.stderr)
+        except Exception as e:
+            print(f"\n⚠️ 发送失败: {e}", file=sys.stderr)
+            # Don't crash — cron system will handle delivery as fallback
 
 if __name__ == "__main__":
     main()

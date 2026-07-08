@@ -21,6 +21,11 @@ def get_monitor_source(name):
     return load_config().get("monitor_sources", {}).get(name, {})
 
 
+def get_rss_feeds():
+    """返回 config.json 的 rss_feeds 列表,每项形如 {key, name, urls, limit}。"""
+    return load_config().get("rss_feeds", [])
+
+
 def runtime_path(kind, filename):
     configured = load_config().get("runtime", {})
     dirname = configured.get(f"{kind}_dir", f"runtime/{kind}")

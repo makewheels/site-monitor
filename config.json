@@ -58,6 +58,15 @@
       "raw_url": "https://raw.githubusercontent.com/github/copilot-cli/main/changelog.md"
     }
   },
+  "rss_feeds": [
+    {"key": "huggingface_blog", "name": "Hugging Face Blog", "urls": ["https://huggingface.co/blog/feed.xml"], "limit": 20},
+    {"key": "openai_news", "name": "OpenAI News", "urls": ["https://openai.com/news/rss.xml"], "limit": 20},
+    {"key": "google_research", "name": "Google Research", "urls": ["https://research.google/blog/rss/"], "limit": 20},
+    {"key": "metr", "name": "METR", "urls": ["https://metr.org/feed.xml"], "limit": 20},
+    {"key": "swe_bench", "name": "SWE-bench", "urls": ["https://github.com/swe-bench/SWE-bench/releases.atom"], "limit": 20},
+    {"key": "trail_of_bits", "name": "Trail of Bits", "urls": ["https://blog.trailofbits.com/feed/"], "limit": 20},
+    {"key": "owasp_llm_top10", "name": "OWASP LLM Top 10", "urls": ["https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/releases.atom"], "limit": 20}
+  ],
   "postprocessors": {
     "claude_code_changelog": [
       {
@@ -74,7 +83,7 @@
     ]
   },
   "delivery": {
-    "enabled": true,
+    "enabled": false,
     "provider": "hermes_weixin",
     "target": "weixin:o9cq80wGLn7BiEU1BUf0CL3RrS10@im.wechat",
     "hermes_home": "/Users/mint/.hermes",
