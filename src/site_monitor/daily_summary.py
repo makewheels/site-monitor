@@ -76,7 +76,8 @@ def main():
             if result.get("skipped"):
                 print(f"\n发送跳过: {result.get('reason')}", file=sys.stderr)
             else:
-                print("\n微信发送成功", file=sys.stderr)
+                provider = result.get("provider", "未知")
+                print(f"\n发送成功 ({provider})", file=sys.stderr)
         except Exception as e:
             print(f"\n⚠️ 发送失败: {e}", file=sys.stderr)
             # Don't crash — cron system will handle delivery as fallback

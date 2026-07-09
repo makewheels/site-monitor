@@ -6,11 +6,14 @@ import re
 import os
 from datetime import datetime
 from .monitor_config import runtime_path
+from .postprocess import apply_postprocessors
 
 try:
     from bs4 import BeautifulSoup
 except ImportError:
     BeautifulSoup = None
+
+MAX_REPOS = 5  # 每天只推送 Top N 个 trending 项目
 
 STATE_FILE = runtime_path("state", "github_trending_state.json")
 PENDING_FILE = runtime_path("pending", "github_trending_pending.txt")
@@ -424,7 +427,7 @@ def main():
     if not html:
         return
 
-    repos = parse_trending(html)
+    repos = parse_trending(html)[:MAX_REPOS]
     current_names = [r["full_name"] for r in repos]
 
     today = datetime.now().strftime("%Y-%m-%d")
@@ -459,9 +462,11 @@ def main():
                 f.write(f"今日 trending 共 {len(repos)} 个项目:\n\n")
 
             project_blocks = []
+            processed = apply_postprocessors("github_trending", {"repos": repos})
+            repos = processed.get("repos", repos)
             for r in repos:
                 desc_en = r.get("description", "")
-                desc_zh = zh(desc_en) if desc_en else ""
+                desc_zh = r.get("zh_summary") or (zh(desc_en) if desc_en else "")
                 is_new = r["full_name"] in new_names if has_new else False
                 tag = "🆕 " if is_new else ""
                 block = f"**{tag}{r['full_name']}**\n"

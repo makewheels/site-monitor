@@ -3,6 +3,7 @@ import contextlib
 import io
 import json
 import os
+import subprocess
 import sys
 from pathlib import Path
 from typing import Any
@@ -12,6 +13,7 @@ import time
 import requests
 from .monitor_config import load_config
 from .monitor_config import runtime_path
+from .monitor_config import PROJECT_ROOT
 
 
 def _load_env_file(path: Path) -> None:
@@ -103,9 +105,50 @@ def _send_provider(
 ) -> dict[str, Any]:
     if provider == "hermes_weixin":
         return _send_via_hermes_weixin(message, config)
+    if provider == "feishu":
+        return _send_via_feishu(message, config)
     if provider == "cloud_api":
         return _send_via_cloud_api(payload, config)
     raise ValueError(f"Unsupported delivery provider: {provider}")
+
+
+def _send_via_feishu(message: str, config: dict[str, Any]) -> dict[str, Any]:
+    """通过 lark-cli 把报告发到飞书。优先私聊(FEISHU_USER_ID),否则发群(FEISHU_CHAT_ID)。
+    凭证走 .env,不进 config。"""
+    _load_env_file(PROJECT_ROOT / ".env")
+    cli = config.get("lark_cli") or os.getenv("LARK_CLI", "lark-cli")
+    user_id = config.get("user_id") or os.getenv("FEISHU_USER_ID", "")
+    chat_id = config.get("chat_id") or os.getenv("FEISHU_CHAT_ID", "")
+    if not Path(cli).exists():
+        raise ValueError(f"lark-cli 不存在: {cli}")
+    if user_id:
+        target_args = ["--user-id", user_id]
+    elif chat_id:
+        target_args = ["--chat-id", chat_id]
+    else:
+        raise ValueError("FEISHU_USER_ID 或 FEISHU_CHAT_ID 未配置(写 site_monitor/.env)")
+
+    env = dict(os.environ)
+    env["PATH"] = env.get("PATH", "") + ":" + str(Path(cli).parent)
+    env.pop("HERMES_HOME", None)
+    flag = "--markdown" if config.get("markdown", True) else "--text"
+
+    last = ""
+    for attempt in range(3):
+        try:
+            r = subprocess.run(
+                [cli, "im", "+messages-send", "--as", "bot",
+                 *target_args, flag, message],
+                capture_output=True, timeout=60, env=env,
+            )
+            out = r.stdout.decode("utf-8", "replace")
+            if '"ok": true' in out or '"ok":true' in out:
+                return {"success": True, "provider": "feishu"}
+            last = (out or r.stderr.decode("utf-8", "replace"))[:200]
+        except Exception as exc:
+            last = str(exc)
+        time.sleep(1.5 * (attempt + 1))
+    raise RuntimeError(f"feishu send failed: {last}")
 
 
 def _send_via_hermes_weixin(message: str, config: dict[str, Any]) -> dict[str, Any]:

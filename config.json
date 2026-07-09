@@ -68,6 +68,13 @@
     {"key": "owasp_llm_top10", "name": "OWASP LLM Top 10", "urls": ["https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/releases.atom"], "limit": 20}
   ],
   "postprocessors": {
+    "github_trending": [
+      {
+        "enabled": true,
+        "module": "site_monitor.postprocessors.trending_summary",
+        "function": "summarize"
+      }
+    ],
     "claude_code_changelog": [
       {
         "enabled": true,
@@ -83,11 +90,9 @@
     ]
   },
   "delivery": {
-    "enabled": false,
-    "provider": "hermes_weixin",
-    "target": "weixin:o9cq80wGLn7BiEU1BUf0CL3RrS10@im.wechat",
-    "hermes_home": "/Users/mint/.hermes",
-    "hermes_agent_path": "/Users/mint/.hermes/hermes-agent"
+    "enabled": true,
+    "provider": "feishu",
+    "markdown": true
   },
   "runtime": {
     "state_dir": "runtime/state",
