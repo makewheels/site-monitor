@@ -1,0 +1,28 @@
+name: Daily site monitor
+
+on:
+  schedule:
+    - cron: '7 1 * * *'
+  workflow_dispatch:
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v3
+
+      - name: Install dependencies
+        run: uv sync --frozen
+
+      - name: Run daily summary
+        env:
+          SITE_MONITOR_MONGO_URI: ${{ secrets.SITE_MONITOR_MONGO_URI }}
+          SITE_MONITOR_DB_NAME: ${{ secrets.SITE_MONITOR_DB_NAME }}
+          SITE_MONITOR_SKIP_DELIVERY: '1'
+        run: |
+          set -o pipefail
+          uv run python daily_summary.py 2>&1 | tee /tmp/monitor.log
+          grep -q "MongoDB 写入成功" /tmp/monitor.log

@@ -45,9 +45,10 @@ class MongoReportStore:
             item_doc = dict(item)
             item_doc.setdefault("report_id", report_id)
             item_doc.setdefault("item_id", f"{report_id}:{item_doc.get('topic')}")
+            created_at = item_doc.pop("created_at", now)
             self.items.update_one(
                 {"item_id": item_doc["item_id"]},
-                {"$set": item_doc, "$setOnInsert": {"created_at": now}},
+                {"$set": item_doc, "$setOnInsert": {"created_at": created_at}},
                 upsert=True,
             )
         return {"report_id": report_id, "item_count": len(items)}

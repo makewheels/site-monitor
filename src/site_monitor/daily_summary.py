@@ -70,6 +70,20 @@ def main():
     payload = build_report_payload()
     report = payload["full_text"]
     print(report)
+
+    mongo_uri = os.environ.get("SITE_MONITOR_MONGO_URI")
+    if mongo_uri:
+        try:
+            from .cloud_api import create_store
+            result = create_store().upsert_report(payload)
+            print(
+                f"\n📦 MongoDB 写入成功: report_id={result.get('report_id')} "
+                f"items={result.get('item_count')}",
+                file=sys.stderr,
+            )
+        except Exception as e:
+            print(f"\n⚠️ MongoDB 写入失败: {e}", file=sys.stderr)
+
     if is_enabled():
         try:
             result = send_report(report, payload=payload)
