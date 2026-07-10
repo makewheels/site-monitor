@@ -14,16 +14,17 @@ ENV/
 *.swo
 
 # Runtime files (state + notification logs)
-runtime/*
-!runtime/.gitkeep
-!runtime/state/
-!runtime/state/.gitkeep
-!runtime/pending/
-!runtime/pending/.gitkeep
-!runtime/logs/
-!runtime/logs/.gitkeep
-!runtime/tmp/
-!runtime/tmp/.gitkeep
+/runtime/
+monitor/runtime/*
+!monitor/runtime/.gitkeep
+!monitor/runtime/state/
+!monitor/runtime/state/.gitkeep
+!monitor/runtime/pending/
+!monitor/runtime/pending/.gitkeep
+!monitor/runtime/logs/
+!monitor/runtime/logs/.gitkeep
+!monitor/runtime/tmp/
+!monitor/runtime/tmp/.gitkeep
 *_state.json
 *_pending.txt
 *_launchd.err
@@ -49,5 +50,12 @@ openspec/
 android/.gradle/
 android/**/build/
 android/local.properties
+android/**/.classpath
+android/**/.project
+android/**/.settings/
 *.apk
 *.aab
+
+# Cloud build artifacts
+cloud/.build/
+cloud/dist/

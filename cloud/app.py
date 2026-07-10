@@ -1,0 +1,6 @@
+"""Function Compute web entrypoint."""
+from site_monitor_cloud.api import app
+
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=9000, threaded=True)

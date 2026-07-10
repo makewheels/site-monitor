@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-07-11T07:14:46+08:00",
+  "releases": [
+    {
+      "version_code": 2,
+      "version_name": "0.2.0",
+      "published_at": "2026-07-11T07:14:46+08:00",
+      "apk_url": "https://production-bucket.oss.aliyun.a4.fit/site-monitor/releases/ai-monitor-0.2.0.apk",
+      "sha256": "52234685dafc6fc66d5d45da57e256c09438279def7c23872b498779531883b5",
+      "release_notes": "新增栏目历史、文章级排版、应用内浏览和启动更新检查"
+    }
+  ]
+}

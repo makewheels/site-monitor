@@ -1,20 +1,49 @@
+import groovy.json.JsonSlurper
+
 plugins {
     id "com.android.application"
 }
 
+def releaseConfig = new JsonSlurper().parse(rootProject.file("release-config.json"))
+
 android {
-    namespace "com.example.aimonitor"
+    namespace "com.makewheels.aimonitor"
     compileSdk 35
 
     defaultConfig {
-        applicationId "com.example.aimonitor"
+        applicationId releaseConfig.application_id
         minSdk 24
         targetSdk 35
-        versionCode 1
-        versionName "0.1.0"
+        versionCode releaseConfig.version_code as int
+        versionName releaseConfig.version_name
 
-        buildConfigField "String", "API_BASE_URL", "\"${System.getenv("SITE_MONITOR_ANDROID_API_URL") ?: "http://10.0.2.2:5001"}\""
+        buildConfigField "String", "API_BASE_URL", "\"${System.getenv("SITE_MONITOR_ANDROID_API_URL") ?: releaseConfig.api_base_url}\""
         buildConfigField "String", "APP_TOKEN", "\"${System.getenv("SITE_MONITOR_ANDROID_APP_TOKEN") ?: ""}\""
+    }
+
+    def keystorePath = System.getenv("SITE_MONITOR_ANDROID_KEYSTORE")
+    def keystorePassword = System.getenv("SITE_MONITOR_ANDROID_KEYSTORE_PASSWORD")
+    def keyAliasValue = System.getenv("SITE_MONITOR_ANDROID_KEY_ALIAS")
+    def keyPasswordValue = System.getenv("SITE_MONITOR_ANDROID_KEY_PASSWORD")
+
+    signingConfigs {
+        if (keystorePath && keystorePassword && keyAliasValue && keyPasswordValue) {
+            release {
+                storeFile file(keystorePath)
+                storePassword keystorePassword
+                keyAlias keyAliasValue
+                keyPassword keyPasswordValue
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            if (signingConfigs.findByName("release") != null) {
+                signingConfig signingConfigs.release
+            }
+        }
     }
 
     buildFeatures {
@@ -25,4 +54,8 @@ android {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
     }
+}
+
+dependencies {
+    testImplementation "junit:junit:4.13.2"
 }

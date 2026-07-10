@@ -1,0 +1,28 @@
+{
+  "region": "cn-beijing",
+  "function_name": "site-monitor-api",
+  "runtime": "custom.debian10",
+  "code": {
+    "bucket": "ai-tools-prod",
+    "object": "site-monitor/fc/site-monitor-cloud.zip"
+  },
+  "custom_runtime": {
+    "command": [
+      "/var/fc/lang/python3.10/bin/python3"
+    ],
+    "args": [
+      "-m",
+      "gunicorn",
+      "--bind",
+      "0.0.0.0:9000",
+      "--workers",
+      "1",
+      "--threads",
+      "4",
+      "--timeout",
+      "0",
+      "site_monitor_cloud.api:app"
+    ],
+    "port": 9000
+  }
+}
