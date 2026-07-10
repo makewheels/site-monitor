@@ -56,6 +56,12 @@
     "github_copilot_cli_changelog": {
       "atom_url": "https://github.com/github/copilot-cli/commits/main/changelog.md.atom",
       "raw_url": "https://raw.githubusercontent.com/github/copilot-cli/main/changelog.md"
+    },
+    "langchain_blog": {
+      "feed_urls": [
+        "https://www.langchain.com/blog/rss.xml"
+      ],
+      "fallback_url": "https://www.langchain.com/blog"
     }
   },
   "rss_feeds": [

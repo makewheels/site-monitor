@@ -5,7 +5,9 @@ import urllib.request
 import re
 import os
 from datetime import datetime
-from .monitor_config import runtime_path
+from urllib.parse import urljoin
+
+from .monitor_config import get_monitor_source, runtime_path
 
 try:
     import feedparser
@@ -19,12 +21,11 @@ except ImportError:
 
 STATE_FILE = runtime_path("state", "langchain_blog_state.json")
 PENDING_FILE = runtime_path("pending", "langchain_blog_pending.txt")
-FEED_URLS = [
-    "https://blog.langchain.dev/rss",
-    "https://blog.langchain.dev/feed/",
-    "https://blog.langchain.dev/atom.xml",
+SOURCE_CONFIG = get_monitor_source("langchain_blog")
+FEED_URLS = SOURCE_CONFIG.get("feed_urls") or [
+    "https://www.langchain.com/blog/rss.xml",
 ]
-BLOG_URL = "https://blog.langchain.dev/"
+BLOG_URL = SOURCE_CONFIG.get("fallback_url", "https://www.langchain.com/blog")
 
 def load_state():
     if os.path.exists(STATE_FILE):
@@ -51,10 +52,13 @@ def fetch_via_rss():
             feed = feedparser.parse(content)
             if feed.entries:
                 articles = []
-                for e in feed.entries:
+                for e in feed.entries[:20]:
+                    link = e.get("link", "")
+                    slug = link.rstrip("/").rsplit("/", 1)[-1]
+                    fallback_title = slug.replace("-", " ").strip().title()
                     articles.append({
-                        "title": e.get("title", "Untitled"),
-                        "url": e.get("link", ""),
+                        "title": e.get("title", "").strip() or fallback_title or "Untitled",
+                        "url": link,
                         "published": e.get("published", ""),
                     })
                 return articles
@@ -89,7 +93,7 @@ def fetch_via_scrape():
                 continue
             if href not in seen:
                 seen.add(href)
-                articles.append({"title": title, "url": href})
+                articles.append({"title": title, "url": urljoin(BLOG_URL, href)})
 
         return articles[:20]
     except Exception as e:
@@ -106,6 +110,7 @@ def main():
         print("RSS 不可用，回退到爬取...")
         articles = fetch_via_scrape()
 
+    first_success = not known and not state.get("initialized")
     new_articles = []
     for article in articles:
         if article["url"] not in known:
@@ -113,12 +118,16 @@ def main():
 
     if articles:
         state["known_urls"] = [a["url"] for a in articles]
+        state["initialized"] = True
     state["last_check"] = datetime.now().isoformat()
     save_state(state)
 
     with open(PENDING_FILE, 'w') as f:
         f.write(f"## {datetime.now().strftime('%Y-%m-%d')} LangChain Blog\n\n")
-        if new_articles:
+        if first_success and articles:
+            f.write(f"首次成功抓取，已记录 {len(articles)} 篇历史文章\n")
+            print(f"首次成功抓取，记录 {len(articles)} 篇历史文章")
+        elif new_articles:
             f.write(f"发现 {len(new_articles)} 篇新文章:\n\n")
             for a in new_articles:
                 pub = f" ({a.get('published', '')[:10]})" if a.get('published') else ""
