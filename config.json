@@ -6,7 +6,7 @@
       "article_selector": "[role=\"tabpanel\"] li",
       "title_selector": "h2, h3, a",
       "link_selector": "a[href^=\"/blog/\"]",
-      "check_interval": 3600,
+      "check_interval": 86400,
       "enabled": true
     },
     {
@@ -15,7 +15,7 @@
       "article_selector": "article[class*=\"ArticleList\"]",
       "title_selector": "h2, h3",
       "link_selector": "a[href*=\"/engineering/\"]",
-      "check_interval": 3600,
+      "check_interval": 86400,
       "enabled": true
     },
     {
@@ -24,7 +24,7 @@
       "article_selector": ".release",
       "title_selector": "a.release-link",
       "link_selector": "a.release-link",
-      "check_interval": 3600,
+      "check_interval": 86400,
       "enabled": true
     },
     {
@@ -92,7 +92,8 @@
   "delivery": {
     "enabled": true,
     "provider": "feishu",
-    "markdown": true
+    "markdown": true,
+    "max_chars": 12000
   },
   "runtime": {
     "state_dir": "runtime/state",
@@ -100,7 +101,7 @@
     "logs_dir": "runtime/logs",
     "tmp_dir": "runtime/tmp"
   },
-  "check_interval": 3600,
+  "check_interval": 86400,
   "notifier": {
     "type": "console"
   }

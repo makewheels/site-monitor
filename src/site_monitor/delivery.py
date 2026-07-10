@@ -113,9 +113,139 @@ def _send_provider(
 
 
 def _send_via_feishu(message: str, config: dict[str, Any]) -> dict[str, Any]:
-    """通过 lark-cli 把报告发到飞书。优先私聊(FEISHU_USER_ID),否则发群(FEISHU_CHAT_ID)。
-    凭证走 .env,不进 config。"""
+    """Send a report to Feishu using Open API or the local lark-cli fallback."""
     _load_env_file(PROJECT_ROOT / ".env")
+    app_id = config.get("app_id") or os.getenv("FEISHU_APP_ID", "")
+    app_secret = config.get("app_secret") or os.getenv("FEISHU_APP_SECRET", "")
+    if app_id and app_secret:
+        return _send_via_feishu_api(message, config, app_id, app_secret)
+
+    return _send_via_feishu_cli(message, config)
+
+
+def _send_via_feishu_api(
+    message: str,
+    config: dict[str, Any],
+    app_id: str,
+    app_secret: str,
+) -> dict[str, Any]:
+    base_url = (config.get("base_url") or os.getenv("FEISHU_BASE_URL") or "https://open.feishu.cn").rstrip("/")
+    user_id = config.get("user_id") or os.getenv("FEISHU_USER_ID", "")
+    chat_id = config.get("chat_id") or os.getenv("FEISHU_CHAT_ID", "")
+    if user_id:
+        receive_id_type = "open_id"
+        receive_id = user_id
+    elif chat_id:
+        receive_id_type = "chat_id"
+        receive_id = chat_id
+    else:
+        raise ValueError("FEISHU_USER_ID or FEISHU_CHAT_ID is required")
+
+    token_result = _feishu_post_json(
+        f"{base_url}/open-apis/auth/v3/tenant_access_token/internal",
+        json_body={"app_id": app_id, "app_secret": app_secret},
+        timeout=30,
+    )
+    access_token = token_result.get("tenant_access_token")
+    if not access_token:
+        raise RuntimeError("Feishu token response did not include tenant_access_token")
+
+    chunks = _split_message(message, int(config.get("max_chars", 12_000)))
+    markdown = config.get("markdown", True)
+    for index, chunk in enumerate(chunks, 1):
+        if markdown:
+            title = "每日 AI 监控"
+            if len(chunks) > 1:
+                title += f" ({index}/{len(chunks)})"
+            content = json.dumps(
+                {
+                    "config": {"wide_screen_mode": True},
+                    "header": {
+                        "template": "blue",
+                        "title": {"tag": "plain_text", "content": title},
+                    },
+                    "elements": [{"tag": "markdown", "content": chunk}],
+                },
+                ensure_ascii=False,
+            )
+            msg_type = "interactive"
+        else:
+            content = json.dumps({"text": chunk}, ensure_ascii=False)
+            msg_type = "text"
+
+        _feishu_post_json(
+            f"{base_url}/open-apis/im/v1/messages",
+            params={"receive_id_type": receive_id_type},
+            headers={"Authorization": f"Bearer {access_token}"},
+            json_body={
+                "receive_id": receive_id,
+                "msg_type": msg_type,
+                "content": content,
+            },
+            timeout=30,
+        )
+
+    return {"success": True, "provider": "feishu", "message_count": len(chunks)}
+
+
+def _feishu_post_json(
+    url: str,
+    *,
+    json_body: dict[str, Any],
+    timeout: float,
+    headers: dict[str, str] | None = None,
+    params: dict[str, str] | None = None,
+) -> dict[str, Any]:
+    last_error: Exception | None = None
+    for attempt in range(3):
+        try:
+            response = requests.post(
+                url,
+                params=params,
+                headers=headers,
+                json=json_body,
+                timeout=timeout,
+            )
+            response.raise_for_status()
+            result = response.json()
+            if result.get("code", 0) != 0:
+                raise RuntimeError(
+                    f"Feishu API error {result.get('code')}: {result.get('msg', 'unknown error')}"
+                )
+            return result
+        except Exception as exc:
+            last_error = exc
+            if attempt < 2:
+                time.sleep(1.5 * (attempt + 1))
+    raise RuntimeError(f"Feishu API request failed: {last_error}") from last_error
+
+
+def _split_message(message: str, max_chars: int) -> list[str]:
+    if max_chars < 1:
+        raise ValueError("max_chars must be positive")
+    if len(message) <= max_chars:
+        return [message]
+
+    chunks: list[str] = []
+    current = ""
+    for paragraph in message.split("\n\n"):
+        candidate = paragraph if not current else f"{current}\n\n{paragraph}"
+        if len(candidate) <= max_chars:
+            current = candidate
+            continue
+        if current:
+            chunks.append(current)
+        while len(paragraph) > max_chars:
+            chunks.append(paragraph[:max_chars])
+            paragraph = paragraph[max_chars:]
+        current = paragraph
+    if current:
+        chunks.append(current)
+    return chunks
+
+
+def _send_via_feishu_cli(message: str, config: dict[str, Any]) -> dict[str, Any]:
+    """Use the workstation lark-cli when Open API credentials are unavailable."""
     cli = config.get("lark_cli") or os.getenv("LARK_CLI", "lark-cli")
     user_id = config.get("user_id") or os.getenv("FEISHU_USER_ID", "")
     chat_id = config.get("chat_id") or os.getenv("FEISHU_CHAT_ID", "")

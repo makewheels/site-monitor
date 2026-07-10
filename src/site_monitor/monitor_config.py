@@ -26,9 +26,17 @@ def get_rss_feeds():
     return load_config().get("rss_feeds", [])
 
 
-def runtime_path(kind, filename):
-    configured = load_config().get("runtime", {})
-    dirname = configured.get(f"{kind}_dir", f"runtime/{kind}")
-    directory = PROJECT_ROOT / dirname
+def runtime_dir(kind):
+    override = os.environ.get("SITE_MONITOR_RUNTIME_DIR")
+    if override:
+        directory = Path(override).expanduser() / kind
+    else:
+        configured = load_config().get("runtime", {})
+        dirname = configured.get(f"{kind}_dir", f"runtime/{kind}")
+        directory = PROJECT_ROOT / dirname
     directory.mkdir(parents=True, exist_ok=True)
-    return str(directory / filename)
+    return directory
+
+
+def runtime_path(kind, filename):
+    return str(runtime_dir(kind) / filename)

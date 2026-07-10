@@ -39,6 +39,60 @@ def test_hermes_weixin_delivery_calls_send_tool(monkeypatch, tmp_path):
     assert calls == [{"target": "weixin:filehelper", "message": "hello"}]
 
 
+def test_feishu_open_api_delivery(monkeypatch):
+    calls = []
+
+    class FakeResponse:
+        def __init__(self, body):
+            self.body = body
+
+        def raise_for_status(self):
+            return None
+
+        def json(self):
+            return self.body
+
+    def fake_post(url, params=None, headers=None, json=None, timeout=None):
+        calls.append(
+            {
+                "url": url,
+                "params": params,
+                "headers": headers,
+                "json": json,
+                "timeout": timeout,
+            }
+        )
+        if url.endswith("/tenant_access_token/internal"):
+            return FakeResponse({"code": 0, "tenant_access_token": "tenant-token"})
+        return FakeResponse({"code": 0, "data": {"message_id": "m1"}})
+
+    monkeypatch.setenv("FEISHU_APP_ID", "cli-test")
+    monkeypatch.setenv("FEISHU_APP_SECRET", "app-secret")
+    monkeypatch.setenv("FEISHU_USER_ID", "ou-test")
+    monkeypatch.setattr(delivery.requests, "post", fake_post)
+
+    result = delivery.send_report(
+        "# Daily report\n\nHello",
+        {"enabled": True, "provider": "feishu", "markdown": True},
+    )
+
+    assert result == {"success": True, "provider": "feishu", "message_count": 1}
+    assert calls[1]["params"] == {"receive_id_type": "open_id"}
+    assert calls[1]["headers"] == {"Authorization": "Bearer tenant-token"}
+    assert calls[1]["json"]["receive_id"] == "ou-test"
+    assert calls[1]["json"]["msg_type"] == "interactive"
+    card = json.loads(calls[1]["json"]["content"])
+    assert card["elements"][0]["content"] == "# Daily report\n\nHello"
+
+
+def test_split_message_preserves_content():
+    message = "first paragraph\n\nsecond paragraph"
+
+    chunks = delivery._split_message(message, 18)
+
+    assert chunks == ["first paragraph", "second paragraph"]
+
+
 def test_fanout_cloud_api_posts_payload(monkeypatch):
     calls = []
 

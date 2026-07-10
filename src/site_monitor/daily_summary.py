@@ -7,7 +7,9 @@ import subprocess
 import os
 import sys
 from datetime import datetime
-from .monitor_config import PROJECT_ROOT, runtime_path
+from pathlib import Path
+
+from .monitor_config import PROJECT_ROOT, runtime_dir, runtime_path
 from .delivery import is_enabled, send_report
 from .report_payload import TOPICS, build_payload
 
@@ -52,6 +54,9 @@ def read_pending(filename):
 def build_report_payload():
     today = datetime.now().strftime('%Y-%m-%d')
 
+    for topic in TOPICS:
+        Path(runtime_path("pending", topic.pending_file)).unlink(missing_ok=True)
+
     # 运行所有监控脚本
     for module_name in CHECK_MODULES:
         run_script(module_name)
@@ -67,34 +72,49 @@ def build_report():
     return build_report_payload()["full_text"]
 
 def main():
+    store = None
+    mongo_uri = os.environ.get("SITE_MONITOR_MONGO_URI")
+    if mongo_uri:
+        from .cloud_api import create_store
+
+        store = create_store()
+        restored = store.restore_monitor_state(runtime_dir("state"))
+        print(f"MongoDB 状态恢复完成: files={restored}", file=sys.stderr)
+
     payload = build_report_payload()
     report = payload["full_text"]
     print(report)
 
-    mongo_uri = os.environ.get("SITE_MONITOR_MONGO_URI")
-    if mongo_uri:
+    errors = []
+    if store is not None:
         try:
-            from .cloud_api import create_store
-            result = create_store().upsert_report(payload)
+            saved = store.save_monitor_state(runtime_dir("state"))
+            result = store.upsert_report(payload)
             print(
                 f"\n📦 MongoDB 写入成功: report_id={result.get('report_id')} "
-                f"items={result.get('item_count')}",
+                f"items={result.get('item_count')} state_files={saved}",
                 file=sys.stderr,
             )
         except Exception as e:
             print(f"\n⚠️ MongoDB 写入失败: {e}", file=sys.stderr)
+            errors.append(f"MongoDB: {e}")
 
     if is_enabled():
         try:
             result = send_report(report, payload=payload)
             if result.get("skipped"):
                 print(f"\n发送跳过: {result.get('reason')}", file=sys.stderr)
+            elif not result.get("success", False):
+                errors.append(f"delivery: {result}")
             else:
                 provider = result.get("provider", "未知")
                 print(f"\n发送成功 ({provider})", file=sys.stderr)
         except Exception as e:
             print(f"\n⚠️ 发送失败: {e}", file=sys.stderr)
-            # Don't crash — cron system will handle delivery as fallback
+            errors.append(f"delivery: {e}")
+
+    if errors:
+        raise RuntimeError("; ".join(errors))
 
 if __name__ == "__main__":
     main()

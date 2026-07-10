@@ -1,6 +1,6 @@
 # Agent Workflow
 
-This repository backs the local AI monitor. Run `daily_summary.py` manually when you want a report; there is no scheduler. Delivery is disabled—output goes to the terminal.
+This repository backs the daily AI monitor. GitHub Actions runs the full monitor at 07:00 Asia/Shanghai, persists monitor state and reports to MongoDB, and delivers the digest to Feishu.
 
 ## Monitor Sources
 
@@ -24,13 +24,21 @@ This repository backs the local AI monitor. Run `daily_summary.py` manually when
 ## Delivery
 
 - Delivery is owned by this project through `src/site_monitor/delivery.py`, controlled by `config.json` `delivery.enabled`.
-- Currently `delivery.enabled` is `false`: `daily_summary.py` prints the report to the terminal only. Re-enable by setting `enabled: true` (backend `hermes_weixin` reuses local Hermes Weixin credentials from `~/.hermes/.env`).
-- There is no longer a Hermes cron schedule or fallback delivery; run `daily_summary.py` manually.
+- The production backend is `feishu`. CI uses `FEISHU_APP_ID`, `FEISHU_APP_SECRET`, and one of `FEISHU_USER_ID` / `FEISHU_CHAT_ID` from GitHub variables and secrets.
+- The workstation-only `lark-cli` path remains a fallback when Open API credentials are absent.
+- Never put Feishu credentials, MongoDB URIs, server addresses, or API keys in tracked files.
+
+## Schedule
+
+- `.github/workflows/daily-monitor.yml` is the only production scheduler.
+- Keep the schedule timezone explicit as `Asia/Shanghai`; all feeds are collected once per day for the 07:00 digest.
+- Monitor state is restored from and saved to the MongoDB `monitor_state` collection so ephemeral CI runners do not resend old entries.
 
 ## Runtime Files
 
 - Runtime output belongs under `runtime/`, not the repository root.
 - Use `monitor_config.runtime_path(kind, filename)` for state, pending, logs, and temporary files.
+- Set `SITE_MONITOR_RUNTIME_DIR` to move runtime files to a persistent external directory.
 - Current runtime directories:
   - `runtime/state/` for durable local state such as seen article IDs.
   - `runtime/pending/` for files consumed by `daily_summary.py`.
@@ -45,13 +53,13 @@ This repository backs the local AI monitor. Run `daily_summary.py` manually when
 - Before committing, run:
 
 ```bash
-python3 -m json.tool config.json >/dev/null
-python3 -m py_compile src/site_monitor/*.py scripts/*.py daily_summary.py main.py notifier.py
-python3 -m pytest
+uv run python -m json.tool config.json >/dev/null
+uv run python -m py_compile src/site_monitor/*.py scripts/*.py daily_summary.py main.py notifier.py
+uv run pytest
 ```
 
 ## Daily Report Behavior
 
 - Monitor scripts write their user-facing output to `*_pending.txt`.
-- `daily_summary.py` runs the individual monitor scripts, prints non-empty pending files, and prints the assembled report to the terminal (sends via configured delivery only if `delivery.enabled` is true).
+- `daily_summary.py` restores monitor state, runs all monitor scripts, writes the report and updated state to MongoDB, then sends the assembled report through configured delivery.
 - For Claude Code, keep the changelog visible but separate feature changes from fix/docs/chore items through the configured postprocessor.
