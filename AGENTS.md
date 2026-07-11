@@ -31,6 +31,7 @@ Use `uv` for Python and `pnpm` for Node. Do not use pip, venv, Poetry, npm, or Y
 
 - Keep API code in `cloud/src/site_monitor_cloud/` and offline tests in `cloud/tests/`.
 - Public FC deployment settings live in `cloud/deploy/fc-config.json`.
+- Root `s.yaml` is the Serverless Devs description for associating the existing function with Alibaba Cloud Serverless Application Center. Keep secrets out of it.
 - FC secrets and release metadata are environment variables; `cloud/deploy/fc-env.example` contains names only.
 - `cloud/scripts/deploy_fc.sh` updates code without replacing FC environment variables.
 - Android authenticates with a read-only app token and never connects directly to MongoDB.

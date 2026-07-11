@@ -22,6 +22,7 @@ android/   Android App、版本配置、发布历史及测试
 
 - 监控源、后处理、推送格式：`monitor/config.json`
 - FC 区域、函数名、代码包位置：`cloud/deploy/fc-config.json`
+- Serverless Application Center 资源描述：`s.yaml`
 - Android 版本、FC API 地址、OSS 地址：`android/release-config.json`
 - 已发布 APK 历史：`android/releases.json`
 
@@ -64,6 +65,8 @@ PYTHONPATH=src uv run python -m site_monitor_cloud.demo
 Android 只拿到只读 Token，不直接访问 MongoDB。历史接口按日期倒序；同一天有重复演示或重跑时，优先展示包含新内容最多的一份，再按生成时间排序。
 
 当前 FC 是通过 API/CLI 直接创建的独立 Web Function `site-monitor-api`，区域为华北 2（北京），不是 Serverless Application Center 的 Application。因此它显示在阿里云控制台的“函数管理 > 函数”，不会显示在“应用”列表。FC 只负责鉴权和读取 API；日报、文章翻译、摘要、去重状态与历史正文保存在 MongoDB。
+
+仓库根目录的 `s.yaml` 描述同一个线上函数，可用于把 GitHub 仓库导入 Serverless Application Center。敏感环境变量不写入 YAML，继续由现有 FC 环境变量管理。
 
 ## Android
 

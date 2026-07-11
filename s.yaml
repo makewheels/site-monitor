@@ -1,0 +1,51 @@
+edition: 3.0.0
+name: site-monitor
+
+resources:
+  site-monitor-api:
+    component: fc3
+    props:
+      region: cn-beijing
+      functionName: site-monitor-api
+      description: AI 日报 Android 历史与版本 API
+      runtime: custom.debian10
+      handler: index.handler
+      timeout: 30
+      cpu: 0.5
+      memorySize: 512
+      diskSize: 512
+      instanceConcurrency: 20
+      internetAccess: true
+      disableInjectCredentials: All
+      code:
+        src: cloud/dist/site-monitor-cloud.zip
+        ossBucketName: ai-tools-prod
+        ossObjectName: site-monitor/fc/site-monitor-cloud.zip
+      customRuntimeConfig:
+        command:
+          - /var/fc/lang/python3.10/bin/python3
+        args:
+          - -m
+          - gunicorn
+          - --bind
+          - 0.0.0.0:9000
+          - --workers
+          - "1"
+          - --threads
+          - "4"
+          - --timeout
+          - "0"
+          - site_monitor_cloud.api:app
+        port: 9000
+      triggers:
+        - triggerName: http
+          triggerType: http
+          description: Android and monitor HTTPS API
+          qualifier: LATEST
+          triggerConfig:
+            authType: anonymous
+            disableURLInternet: false
+            methods:
+              - GET
+              - POST
+              - HEAD

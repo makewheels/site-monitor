@@ -2,7 +2,7 @@
 
 阿里云 Function Compute 3.0 Web Function，给 Android 客户端提供只读历史 API和 APK 版本信息。
 
-This is a standalone function created through the FC API/CLI, not a Serverless Application Center application. In the Alibaba Cloud console, select `cn-beijing` and open Function Management > Functions > `site-monitor-api`.
+The function was originally created through the FC API/CLI. The repository root now contains `s.yaml`, which describes the same resource for importing this GitHub repository into Serverless Application Center. In the Alibaba Cloud console, select `cn-beijing` and open Function Management > Functions > `site-monitor-api`.
 
 ## Local verification
 
