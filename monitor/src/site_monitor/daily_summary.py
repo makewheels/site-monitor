@@ -9,6 +9,7 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
+from .article_enrichment import enrich_report_payload
 from .monitor_config import PROJECT_ROOT, runtime_dir, runtime_path
 from .delivery import is_enabled, send_report
 from .report_payload import TOPICS, build_payload
@@ -53,6 +54,11 @@ def read_pending(filename):
 
 def build_report_payload():
     today = datetime.now().strftime('%Y-%m-%d')
+    state_directory = runtime_dir("state")
+    state_snapshot = {
+        path.name: path.read_bytes()
+        for path in state_directory.glob("*.json")
+    }
 
     for topic in TOPICS:
         Path(runtime_path("pending", topic.pending_file)).unlink(missing_ok=True)
@@ -65,7 +71,24 @@ def build_report_payload():
         topic.key: read_pending(topic.pending_file)
         for topic in TOPICS
     }
-    return build_payload(sections, date=today)
+    payload = build_payload(sections, date=today)
+    try:
+        payload = enrich_report_payload(payload)
+    except Exception:
+        for path in state_directory.glob("*.json"):
+            path.unlink(missing_ok=True)
+        for filename, content in state_snapshot.items():
+            (state_directory / filename).write_bytes(content)
+        raise
+    metadata = payload.get("ai_enrichment", {})
+    print(
+        "AI 摘要翻译: "
+        f"status={metadata.get('status', 'disabled')} "
+        f"articles={metadata.get('enriched_count', 0)}/{metadata.get('requested_count', 0)} "
+        f"model={metadata.get('model', '-')}",
+        file=sys.stderr,
+    )
+    return payload
 
 
 def build_report():

@@ -128,7 +128,14 @@ def test_feishu_structured_card_uses_trending_header_and_visible_urls(monkeypatc
                 "topic_name": "OpenAI News",
                 "status": "content",
                 "entries": [
-                    {"title": "New model", "url": "https://openai.com/new-model"}
+                    {
+                        "title": "新模型",
+                        "translated_title": "新模型",
+                        "original_title": "New model",
+                        "summary": "文章介绍新模型的主要能力。",
+                        "summary_zh": "文章介绍新模型的主要能力。",
+                        "url": "https://openai.com/new-model",
+                    }
                 ],
             },
         ],
@@ -150,6 +157,8 @@ def test_feishu_structured_card_uses_trending_header_and_visible_urls(monkeypatc
     )
     assert "https://github.com/owner/project" in markdown
     assert "OpenAI News" in markdown
+    assert "原题：New model" in markdown
+    assert "AI 摘要：文章介绍新模型的主要能力。" in markdown
     assert "https://openai.com/new-model" in markdown
 
 

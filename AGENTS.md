@@ -14,7 +14,8 @@ Use `uv` for Python and `pnpm` for Node. Do not use pip, venv, Poetry, npm, or Y
 - Read source configuration through `site_monitor.monitor_config`; do not hardcode source URLs in collectors.
 - Keep collector code under `monitor/src/site_monitor/` and offline tests under `monitor/tests/`.
 - Add ordinary RSS/Atom sources through `rss_feeds` plus a `Topic` entry; do not create a new collector unless the source needs custom parsing.
-- Keep model access provider-neutral through `DASHSCOPE_API_KEY`, `LLM_BASE_URL`, and `LLM_MODEL`.
+- Keep model access provider-neutral through `LLM_API_KEY`, `LLM_BASE_URL`, and `LLM_MODEL`; `DASHSCOPE_API_KEY` is a compatibility fallback only.
+- Enrich only newly discovered blog articles. Persist both `translated_title` and `summary_zh`, plus the original title/excerpt and model metadata, before MongoDB and Feishu delivery.
 - Claude Code notifications contain feature changes only. Omit fix/docs/test/chore-only releases.
 - Runtime files belong under `monitor/runtime/` and must not be committed.
 

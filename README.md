@@ -25,7 +25,7 @@ android/   Android App、版本配置、发布历史及测试
 - Android 版本、FC API 地址、OSS 地址：`android/release-config.json`
 - 已发布 APK 历史：`android/releases.json`
 
-模型通过 `DASHSCOPE_API_KEY`、`LLM_BASE_URL`、`LLM_MODEL` 切换，不绑定特定厂商实现。MongoDB URI、飞书凭据、Android API Token、上传 Token 和签名密码只能放在 GitHub Secrets、FC 环境变量、本机环境变量或系统钥匙串中。
+模型通过 `LLM_API_KEY`、`LLM_BASE_URL`、`LLM_MODEL` 切换，不绑定特定厂商实现。每篇新博客文章会先提取正文，再分别生成中文标题翻译和中文摘要；原文、翻译、摘要、URL 与模型元数据一起存入 MongoDB，飞书和 Android 使用同一份结构化结果。MongoDB URI、飞书凭据、Android API Token、上传 Token 和签名密码只能放在 GitHub Secrets、FC 环境变量、本机环境变量或系统钥匙串中。
 
 ## Monitor
 
@@ -39,6 +39,13 @@ uv run python daily_summary.py
 ```
 
 Claude Code 只推送功能更新，fix/docs/test/chore 不进入日报。当前来源与日报都是每天抓取一次；提高为每小时不会增加 07:00 日报的完整性，只会增加请求与重复去重工作。
+
+推送规则：
+
+- GitHub Trending 每天生成 Top 5 和中文项目简介。
+- Blog/RSS 通过 URL 去重，只在首次发现新文章时进入飞书；首次接入订阅源只建立基线，不补发整批历史文章。
+- 新文章先提取 feed 摘要和正文，再用大模型分别生成 `translated_title` 与 `summary_zh`。模型处理失败时本次任务失败，旧 MongoDB 状态不会被覆盖，下一次可重新处理。
+- Claude Code 只保留功能更新；纯 fix/docs/test/chore 不推送。
 
 ## Cloud API
 
@@ -54,7 +61,9 @@ PYTHONPATH=src uv run python -m site_monitor_cloud.demo
 ./scripts/deploy_fc.sh
 ```
 
-Android 只拿到只读 Token，不直接访问 MongoDB。历史接口按日期和生成时间倒序，同一天的重复演示/重跑只显示最新一份。
+Android 只拿到只读 Token，不直接访问 MongoDB。历史接口按日期倒序；同一天有重复演示或重跑时，优先展示包含新内容最多的一份，再按生成时间排序。
+
+当前 FC 是通过 API/CLI 直接创建的独立 Web Function `site-monitor-api`，区域为华北 2（北京），不是 Serverless Application Center 的 Application。因此它显示在阿里云控制台的“函数管理 > 函数”，不会显示在“应用”列表。FC 只负责鉴权和读取 API；日报、文章翻译、摘要、去重状态与历史正文保存在 MongoDB。
 
 ## Android
 

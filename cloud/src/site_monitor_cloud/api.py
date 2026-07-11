@@ -13,7 +13,7 @@ def newest_per_date(
     *,
     limit: int,
 ) -> list[dict[str, Any]]:
-    """Keep the newest document for each report date from an ordered cursor."""
+    """Keep the preferred document for each date from an ordered cursor."""
     results: list[dict[str, Any]] = []
     seen: set[str] = set()
     for document in documents:
@@ -31,6 +31,7 @@ def newest_per_date(
             break
     return results
 
+
 class MongoReportStore:
     def __init__(self, mongo_uri: str, db_name: str):
         from pymongo import MongoClient
@@ -43,14 +44,20 @@ class MongoReportStore:
         self.db = self.client[db_name]
         self.reports = self.db["reports"]
         self.items = self.db["report_items"]
-        self.reports.create_index("date")
-        self.items.create_index([("topic", 1), ("date", -1)])
+        self.reports.create_index(
+            [("date", -1), ("content_count", -1), ("generated_at", -1)]
+        )
+        self.items.create_index(
+            [("topic", 1), ("date", -1), ("entry_count", -1)]
+        )
         self.items.create_index("report_id")
 
     def upsert_report(self, payload: dict[str, Any]) -> dict[str, Any]:
         now = datetime.now().isoformat(timespec="seconds")
         report_id = payload["report_id"]
         items = payload.get("items", [])
+        content_count = sum(len(item.get("entries") or []) for item in items)
+        content_item_count = sum(1 for item in items if item.get("entries"))
         report_doc = {
             "report_id": report_id,
             "date": payload.get("date"),
@@ -58,7 +65,10 @@ class MongoReportStore:
             "full_text": payload.get("full_text"),
             "generated_at": payload.get("generated_at"),
             "topics": payload.get("topics", []),
+            "ai_enrichment": payload.get("ai_enrichment", {}),
             "item_count": len(items),
+            "content_count": content_count,
+            "content_item_count": content_item_count,
             "updated_at": now,
         }
         self.reports.update_one(
@@ -68,6 +78,7 @@ class MongoReportStore:
         )
         for item in items:
             item_doc = dict(item)
+            item_doc["entry_count"] = len(item_doc.get("entries") or [])
             item_doc.setdefault("report_id", report_id)
             item_doc.setdefault("item_id", f"{report_id}:{item_doc.get('topic')}")
             created_at = item_doc.pop("created_at", now)
@@ -82,7 +93,12 @@ class MongoReportStore:
         report = self.reports.find_one(
             {},
             {"_id": 0},
-            sort=[("date", -1), ("generated_at", -1), ("updated_at", -1)],
+            sort=[
+                ("date", -1),
+                ("content_count", -1),
+                ("generated_at", -1),
+                ("updated_at", -1),
+            ],
         )
         if not report:
             return None
@@ -95,12 +111,18 @@ class MongoReportStore:
         limit = min(max(limit, 1), 100)
         if topic:
             item_docs = self.items.find({"topic": topic}, {"_id": 0}).sort(
-                [("date", -1), ("created_at", -1), ("item_id", -1)]
+                [
+                    ("date", -1),
+                    ("entry_count", -1),
+                    ("created_at", -1),
+                    ("item_id", -1),
+                ]
             )
             return newest_per_date(item_docs, limit=limit)
         report_docs = self.reports.find({}, {"_id": 0, "full_text": 0}).sort(
             [
                 ("date", -1),
+                ("content_count", -1),
                 ("generated_at", -1),
                 ("updated_at", -1),
                 ("report_id", -1),

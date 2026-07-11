@@ -98,6 +98,9 @@ def _entry_summary(lines: list[str], *, title: str, url: str) -> str:
             continue
         if plain.startswith(("发布时间:", "📅")):
             continue
+        for prefix in ("原文摘要：", "原文摘要:"):
+            if plain.startswith(prefix):
+                plain = plain[len(prefix) :].strip()
         summary.append(plain)
     return " ".join(summary).strip()
 

@@ -9,6 +9,7 @@ import os
 import urllib.request
 from datetime import datetime
 
+from .article_enrichment import feed_entry_excerpt
 from .monitor_config import get_rss_feeds, runtime_path
 
 try:
@@ -55,11 +56,15 @@ def fetch_feed(urls):
                     link = e.get("link", "")
                     if not link:
                         continue
-                    articles.append({
+                    article = {
                         "title": e.get("title", "").strip() or link,
                         "url": link,
                         "published": e.get("published", e.get("updated", "")),
-                    })
+                    }
+                    excerpt = feed_entry_excerpt(e)
+                    if excerpt:
+                        article["excerpt"] = excerpt
+                    articles.append(article)
                 print(f"RSS 获取成功: {url} ({len(articles)} 篇)")
                 return articles
             print(f"RSS 未返回文章: {url}")
@@ -100,6 +105,8 @@ def run_feed(feed):
                 f.write(f"**{a['title']}**\n")
                 if a.get("published"):
                     f.write(f"📅 {a['published'][:10]}\n")
+                if a.get("excerpt"):
+                    f.write(f"原文摘要：{a['excerpt']}\n")
                 f.write(f"🔗 {a['url']}\n")
             print(f"[{name}] 发现 {len(new_articles)} 篇新文章")
         elif articles:

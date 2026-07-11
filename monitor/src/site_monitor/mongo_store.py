@@ -20,8 +20,12 @@ class MongoMonitorStore:
         self.reports = self.db["reports"]
         self.items = self.db["report_items"]
         self.monitor_state = self.db["monitor_state"]
-        self.reports.create_index("date")
-        self.items.create_index([("topic", 1), ("date", -1)])
+        self.reports.create_index(
+            [("date", -1), ("content_count", -1), ("generated_at", -1)]
+        )
+        self.items.create_index(
+            [("topic", 1), ("date", -1), ("entry_count", -1)]
+        )
         self.items.create_index("report_id")
         self.monitor_state.create_index("filename", unique=True)
 
@@ -29,6 +33,8 @@ class MongoMonitorStore:
         now = datetime.now().isoformat(timespec="seconds")
         report_id = payload["report_id"]
         items = payload.get("items", [])
+        content_count = sum(len(item.get("entries") or []) for item in items)
+        content_item_count = sum(1 for item in items if item.get("entries"))
         report_doc = {
             "report_id": report_id,
             "date": payload.get("date"),
@@ -36,7 +42,10 @@ class MongoMonitorStore:
             "full_text": payload.get("full_text"),
             "generated_at": payload.get("generated_at"),
             "topics": payload.get("topics", []),
+            "ai_enrichment": payload.get("ai_enrichment", {}),
             "item_count": len(items),
+            "content_count": content_count,
+            "content_item_count": content_item_count,
             "updated_at": now,
         }
         self.reports.update_one(
@@ -46,6 +55,7 @@ class MongoMonitorStore:
         )
         for item in items:
             item_doc = dict(item)
+            item_doc["entry_count"] = len(item_doc.get("entries") or [])
             item_doc.setdefault("report_id", report_id)
             item_doc.setdefault("item_id", f"{report_id}:{item_doc.get('topic')}")
             created_at = item_doc.pop("created_at", now)

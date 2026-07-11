@@ -1,4 +1,12 @@
-from site_monitor_cloud.api import create_app, newest_per_date
+from site_monitor_cloud.api import MongoReportStore, create_app, newest_per_date
+
+
+class RecordingCollection:
+    def __init__(self):
+        self.calls = []
+
+    def update_one(self, query, update, upsert=False):
+        self.calls.append((query, update, upsert))
 
 
 class FakeStore:
@@ -108,3 +116,34 @@ def test_newest_per_date_removes_daily_demo_duplicates():
         {"date": "2026-07-11", "report_id": "latest"},
         {"date": "2026-07-10", "report_id": "previous-day"},
     ]
+
+
+def test_cloud_upsert_records_article_content_count():
+    store = object.__new__(MongoReportStore)
+    store.reports = RecordingCollection()
+    store.items = RecordingCollection()
+
+    store.upsert_report(
+        {
+            "report_id": "2026-07-11-test",
+            "items": [
+                {
+                    "topic": "langchain_blog",
+                    "entries": [
+                        {
+                            "translated_title": "译文",
+                            "summary_zh": "摘要",
+                            "url": "https://example.com/article",
+                        }
+                    ],
+                },
+                {"topic": "openai_news", "entries": []},
+            ],
+        }
+    )
+
+    report_doc = store.reports.calls[0][1]["$set"]
+    assert report_doc["content_count"] == 1
+    assert report_doc["content_item_count"] == 1
+    assert store.items.calls[0][1]["$set"]["entry_count"] == 1
+    assert store.items.calls[1][1]["$set"]["entry_count"] == 0

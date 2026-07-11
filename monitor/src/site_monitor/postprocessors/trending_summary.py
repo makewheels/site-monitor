@@ -19,13 +19,13 @@ def summarize(payload: dict, options: dict) -> dict:
         return payload
 
     _load_env()
-    key = os.environ.get("DASHSCOPE_API_KEY")
+    key = os.environ.get("LLM_API_KEY") or os.environ.get("DASHSCOPE_API_KEY")
     base_url = options.get("base_url") or os.environ.get(
         "LLM_BASE_URL", "https://dashscope.aliyuncs.com/compatible-mode/v1"
     )
     model = options.get("model") or os.environ.get("LLM_MODEL", "qwen3.7-plus")
     if not key:
-        print("trending 中文总结跳过: 未配置 DASHSCOPE_API_KEY")
+        print("trending 中文总结跳过: 未配置 LLM_API_KEY")
         return payload
 
     items = [

@@ -5,6 +5,7 @@ import urllib.request
 import re
 import os
 from datetime import datetime
+from .article_enrichment import feed_entry_excerpt
 from .monitor_config import get_monitor_source, runtime_path
 
 try:
@@ -52,11 +53,15 @@ def fetch_via_rsshub():
                 url = entry.get("link", "")
                 title = entry.get("title", "").strip() or url
                 if url:
-                    articles.append({
+                    article = {
                         "title": title,
                         "url": url,
                         "published": entry.get("published", ""),
-                    })
+                    }
+                    excerpt = feed_entry_excerpt(entry)
+                    if excerpt:
+                        article["excerpt"] = excerpt
+                    articles.append(article)
 
             if articles:
                 print(f"RSSHub 获取成功: {rsshub_url} ({len(articles)} 篇)")
@@ -105,6 +110,7 @@ def fetch_articles():
 def main():
     state = load_state()
     known = set(state["known_articles"])
+    first_success = not known and not state.get("initialized")
     
     articles = fetch_articles()
     new_articles = []
@@ -116,13 +122,17 @@ def main():
     # 总是更新状态
     if articles:
         state["known_articles"] = [a["url"] for a in articles]
+        state["initialized"] = True
     state["last_check"] = datetime.now().isoformat()
     save_state(state)
     
     # 总是写入汇报文件
     with open(PENDING_FILE, 'w') as f:
         f.write(f"## {datetime.now().strftime('%Y-%m-%d')} Anthropic Engineering\n\n")
-        if new_articles:
+        if first_success and articles:
+            f.write(f"首次成功抓取，已记录 {len(articles)} 篇历史文章\n")
+            print(f"首次成功抓取，记录 {len(articles)} 篇历史文章")
+        elif new_articles:
             f.write(f"发现 {len(new_articles)} 篇新文章:\n\n")
             for index, a in enumerate(new_articles):
                 if index:
@@ -130,6 +140,8 @@ def main():
                 f.write(f"**{a['title']}**\n")
                 if a.get("published"):
                     f.write(f"📅 {a['published'][:10]}\n")
+                if a.get("excerpt"):
+                    f.write(f"原文摘要：{a['excerpt']}\n")
                 f.write(f"🔗 {a['url']}\n")
             print(f"发现 {len(new_articles)} 篇新文章:")
             for a in new_articles:

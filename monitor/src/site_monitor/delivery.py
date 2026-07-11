@@ -225,9 +225,14 @@ def _topic_markdown(item: dict[str, Any], *, show_heading: bool = True) -> str:
     for index, entry in enumerate(entries, 1):
         if lines:
             lines.append("")
-        lines.append(f"**{index}. {entry.get('title', '未命名')}**")
+        title = entry.get("translated_title") or entry.get("title", "未命名")
+        lines.append(f"**{index}. {title}**")
+        original_title = entry.get("original_title")
+        if original_title and original_title != title:
+            lines.append(f"原题：{original_title}")
         if entry.get("summary"):
-            lines.append(str(entry["summary"]))
+            prefix = "AI 摘要：" if entry.get("summary_zh") else ""
+            lines.append(prefix + str(entry["summary"]))
         if entry.get("meta"):
             lines.append(f"{entry['meta']}")
         if entry.get("url"):

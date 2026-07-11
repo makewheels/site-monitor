@@ -7,6 +7,7 @@ import os
 from datetime import datetime
 from urllib.parse import urljoin
 
+from .article_enrichment import feed_entry_excerpt
 from .monitor_config import get_monitor_source, runtime_path
 
 try:
@@ -56,11 +57,15 @@ def fetch_via_rss():
                     link = e.get("link", "")
                     slug = link.rstrip("/").rsplit("/", 1)[-1]
                     fallback_title = slug.replace("-", " ").strip().title()
-                    articles.append({
+                    article = {
                         "title": e.get("title", "").strip() or fallback_title or "Untitled",
                         "url": link,
                         "published": e.get("published", ""),
-                    })
+                    }
+                    excerpt = feed_entry_excerpt(e)
+                    if excerpt:
+                        article["excerpt"] = excerpt
+                    articles.append(article)
                 return articles
         except Exception as e:
             print(f"  RSS {feed_url} 失败: {e}")
@@ -135,6 +140,8 @@ def main():
                 f.write(f"**{a['title']}**\n")
                 if a.get("published"):
                     f.write(f"📅 {a['published'][:10]}\n")
+                if a.get("excerpt"):
+                    f.write(f"原文摘要：{a['excerpt']}\n")
                 f.write(f"🔗 {a['url']}\n")
             print(f"发现 {len(new_articles)} 篇新文章:")
             for a in new_articles:

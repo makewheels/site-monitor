@@ -72,3 +72,21 @@ def test_build_payload_marks_no_update_sections():
     )
 
     assert payload["items"][0]["status"] == "no_update"
+
+
+def test_extract_entries_keeps_feed_excerpt_without_label():
+    entries = extract_entries(
+        "## OpenAI News\n\n"
+        "**A new article**\n"
+        "📅 2026-07-11\n"
+        "原文摘要：A detailed description from the feed.\n"
+        "🔗 https://example.com/article\n"
+    )
+
+    assert entries == [
+        {
+            "title": "A new article",
+            "url": "https://example.com/article",
+            "summary": "A detailed description from the feed.",
+        }
+    ]

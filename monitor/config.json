@@ -95,6 +95,25 @@
       }
     ]
   },
+  "article_enrichment": {
+    "enabled": true,
+    "required": true,
+    "topics": [
+      "anthropic_engineering",
+      "openai_news",
+      "langchain_blog",
+      "huggingface_blog",
+      "google_research",
+      "metr",
+      "trail_of_bits"
+    ],
+    "batch_size": 4,
+    "fetch_workers": 4,
+    "fetch_timeout": 15,
+    "max_source_chars": 6000,
+    "request_timeout": 120,
+    "retries": 3
+  },
   "delivery": {
     "enabled": true,
     "provider": "feishu",
