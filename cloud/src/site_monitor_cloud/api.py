@@ -3,9 +3,10 @@ from __future__ import annotations
 
 import os
 from datetime import datetime
+from pathlib import Path
 from typing import Any, Iterable
 
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, send_from_directory
 
 
 def newest_per_date(
@@ -184,6 +185,37 @@ def app_release_payload() -> dict[str, Any] | None:
 def create_app(store: Any | None = None) -> Flask:
     app = Flask(__name__)
     app.config["REPORT_STORE"] = store
+    web_dir = Path(__file__).with_name("web")
+
+    @app.after_request
+    def add_web_security_headers(response):
+        if request.path == "/" or request.path.startswith("/web"):
+            response.headers["Content-Security-Policy"] = (
+                "default-src 'self'; "
+                "connect-src 'self'; "
+                "img-src 'self' data:; "
+                "style-src 'self'; "
+                "script-src 'self'; "
+                "object-src 'none'; "
+                "base-uri 'self'; "
+                "frame-ancestors 'none'"
+            )
+            response.headers["Referrer-Policy"] = "strict-origin-when-cross-origin"
+            response.headers["X-Content-Type-Options"] = "nosniff"
+            response.headers["X-Frame-Options"] = "DENY"
+        return response
+
+    @app.get("/")
+    @app.get("/web")
+    @app.get("/web/")
+    def web_app():
+        response = send_from_directory(web_dir, "index.html")
+        response.headers["Cache-Control"] = "no-cache"
+        return response
+
+    @app.get("/web/assets/<path:filename>")
+    def web_asset(filename: str):
+        return send_from_directory(web_dir / "assets", filename)
 
     def get_store() -> Any:
         if app.config["REPORT_STORE"] is None:

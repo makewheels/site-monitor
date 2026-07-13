@@ -5,14 +5,14 @@
 1. GitHub Actions 在北京时间每天 07:00 运行 `monitor/`。
 2. 抓取 GitHub Trending、Anthropic、OpenAI、LangChain、Claude Code 等来源。
 3. 报告与去重状态写入腾讯云轻量服务器中的 MongoDB。
-4. 飞书收到交互卡片；Android 从阿里云 Function Compute 读取历史。
+4. 飞书收到交互卡片；网页和 Android 从阿里云 Function Compute 读取历史。
 5. Android APK 和版本索引发布到阿里云 OSS。
 
 ## 目录
 
 ```text
 monitor/   Python 采集、格式化、MongoDB、飞书投递及测试
-cloud/     阿里云 Function Compute API、部署配置及测试
+cloud/     阿里云 Function Compute API、响应式网页、部署配置及测试
 android/   Android App、版本配置、发布历史及测试
 ```
 
@@ -79,6 +79,18 @@ cd android
 ```
 
 App 支持今日栏目、按栏目筛选、历史日报、文章级卡片、应用内浏览器、外部浏览器跳转、离线缓存和启动更新检查。第一个正式版本为 `0.2.0`；以后发布新版本时保留旧的版本化 APK，同时覆盖 `ai-monitor-latest.apk`。
+
+## Web
+
+FC 根路径 `/`（也可使用 `/web`）提供响应式网页，复用现有日报 API，支持今日、栏目筛选、历史日报和文章原文跳转。网页不会嵌入只读 Token；用户首次打开时输入 Token，凭据仅保存在当前标签页的 `sessionStorage`，关闭标签页后清除。
+
+本地预览：
+
+```bash
+cd cloud
+PYTHONPATH=src uv run python -m site_monitor_cloud.demo
+# 浏览器打开 http://127.0.0.1:5001，演示 Token 为 dev-token
+```
 
 ## Secrets
 

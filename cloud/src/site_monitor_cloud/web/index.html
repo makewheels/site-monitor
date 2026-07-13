@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b6b57">
+  <meta name="description" content="每天一页，浏览值得关注的 AI 新闻与产品更新。">
+  <title>AI 日报</title>
+  <link rel="stylesheet" href="/web/assets/app.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="AI 日报首页">
+      <span class="brand-mark" aria-hidden="true">AI</span>
+      <span>AI 日报</span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <button class="nav-button is-active" type="button" data-view="today">今日</button>
+      <button class="nav-button" type="button" data-view="history">历史</button>
+    </nav>
+    <button class="token-button" id="token-button" type="button">访问凭据</button>
+  </header>
+
+  <main class="shell">
+    <section id="today-view" aria-labelledby="page-title">
+      <div class="hero">
+        <div>
+          <p class="eyebrow" id="report-date">每日 AI 情报</p>
+          <h1 id="page-title">今天值得关注什么？</h1>
+          <p class="hero-copy" id="report-subtitle">从一手来源整理产品更新、工程文章与热门项目。</p>
+        </div>
+        <div class="metrics" aria-label="日报统计">
+          <div class="metric"><strong id="content-count">—</strong><span>条内容</span></div>
+          <div class="metric"><strong id="topic-count">—</strong><span>个栏目</span></div>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <div class="topics" id="topic-filter" aria-label="栏目筛选"></div>
+        <button class="refresh-button" id="refresh-button" type="button">刷新</button>
+      </div>
+
+      <div class="notice is-hidden" id="notice" role="status"></div>
+      <div class="report-grid" id="report-grid" aria-live="polite"></div>
+    </section>
+
+    <section class="is-hidden" id="history-view" aria-labelledby="history-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">往期归档</p>
+          <h1 id="history-title">历史日报</h1>
+        </div>
+        <p>按日期查看过去的完整日报。</p>
+      </div>
+      <div class="history-list" id="history-list" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <dialog class="token-dialog" id="token-dialog">
+    <form id="token-form">
+      <button class="dialog-close" id="dialog-close" type="button" aria-label="关闭">×</button>
+      <p class="eyebrow">安全访问</p>
+      <h2>输入只读访问凭据</h2>
+      <p class="dialog-copy">凭据只保存在当前浏览器标签页，关闭标签页后会自动清除。</p>
+      <label for="token-input">访问 Token</label>
+      <input id="token-input" name="token" type="password" autocomplete="off" required>
+      <p class="form-error is-hidden" id="form-error" role="alert"></p>
+      <button class="primary-button" type="submit">进入日报</button>
+    </form>
+  </dialog>
+
+  <div class="toast is-hidden" id="toast" role="status"></div>
+  <script src="/web/assets/app.js" defer></script>
+</body>
+</html>

@@ -78,6 +78,24 @@ def test_api_rejects_missing_or_wrong_token(monkeypatch):
     assert response.status_code == 401
 
 
+def test_web_app_and_assets_are_served_without_embedding_token(monkeypatch):
+    monkeypatch.setenv("SITE_MONITOR_APP_TOKEN", "do-not-embed-this-token")
+    app = create_app(FakeStore())
+    client = app.test_client()
+
+    page = client.get("/")
+    script = client.get("/web/assets/app.js")
+
+    assert page.status_code == 200
+    assert page.content_type.startswith("text/html")
+    assert b"AI \xe6\x97\xa5\xe6\x8a\xa5" in page.data
+    assert b"do-not-embed-this-token" not in page.data
+    assert "default-src 'self'" in page.headers["Content-Security-Policy"]
+    assert script.status_code == 200
+    assert script.content_type.startswith(("text/javascript", "application/javascript"))
+    assert b"do-not-embed-this-token" not in script.data
+
+
 def test_latest_app_release_uses_environment_config(monkeypatch):
     monkeypatch.setenv("SITE_MONITOR_APP_TOKEN", "app-token")
     monkeypatch.setenv("SITE_MONITOR_ANDROID_VERSION_CODE", "2")
