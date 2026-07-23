@@ -1,0 +1,37 @@
+name: Codex radar
+
+on:
+  schedule:
+    - cron: '7 * * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: codex-radar
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: monitor
+    env:
+      TZ: Asia/Shanghai
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v8.3.2
+
+      - name: Install dependencies
+        run: uv sync --frozen
+
+      - name: Run codex radar
+        env:
+          SITE_MONITOR_MONGO_URI: ${{ secrets.SITE_MONITOR_MONGO_URI }}
+          SITE_MONITOR_DB_NAME: ${{ secrets.SITE_MONITOR_DB_NAME }}
+          FEISHU_APP_ID: ${{ vars.FEISHU_APP_ID }}
+          FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
+          FEISHU_USER_ID: ${{ secrets.FEISHU_USER_ID }}
+          FEISHU_CHAT_ID: ${{ secrets.FEISHU_CHAT_ID }}
+        run: uv run python codex_radar.py
