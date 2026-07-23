@@ -2,7 +2,7 @@ name: Daily site monitor
 
 on:
   schedule:
-    - cron: '53 6 * * *'
+    - cron: '23 5 * * *'
       timezone: Asia/Shanghai
   workflow_dispatch:
 
