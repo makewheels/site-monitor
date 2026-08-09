@@ -227,7 +227,15 @@ def main():
         if is_enabled():
             message = build_message(to_send)
             try:
-                result = send_report(message, payload={"full_text": message})
+                result = send_report(
+                    message,
+                    payload={
+                        "full_text": message,
+                        "delivery_source": "codex_radar",
+                        "date": datetime.now().astimezone().strftime("%Y-%m-%d"),
+                        "item_count": len(to_send),
+                    },
+                )
                 if result.get("skipped"):
                     _log(f"发送跳过: {result.get('reason')}")
                 elif not result.get("success", False):

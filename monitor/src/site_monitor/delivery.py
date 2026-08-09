@@ -8,6 +8,7 @@ import sys
 from pathlib import Path
 from typing import Any
 from datetime import datetime
+from uuid import uuid4
 
 import time
 import requests
@@ -47,15 +48,99 @@ def send_report(
     payload: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     config = config or get_delivery_config()
+    payload = payload or {"full_text": message}
+    batch_id = str(uuid4())
     if not is_enabled(config):
-        return {"success": True, "skipped": True, "reason": "delivery_disabled"}
+        result = {"success": True, "skipped": True, "reason": "delivery_disabled"}
+        _record_delivery_events(payload, config, result, batch_id=batch_id)
+        return result
 
-    providers = config.get("providers")
-    if providers:
-        return _send_fanout(message, payload or {"full_text": message}, providers)
+    try:
+        providers = config.get("providers")
+        if providers:
+            result = _send_fanout(message, payload, providers)
+        else:
+            provider = config.get("provider")
+            result = _send_provider(provider, message, payload, config)
+    except Exception as exc:
+        failure = {
+            "success": False,
+            "provider": config.get("provider", "unknown"),
+            "error_type": type(exc).__name__,
+        }
+        _record_delivery_events(payload, config, failure, batch_id=batch_id)
+        raise
+    _record_delivery_events(payload, config, result, batch_id=batch_id)
+    return result
 
-    provider = config.get("provider")
-    return _send_provider(provider, message, payload or {"full_text": message}, config)
+
+def _record_delivery_events(
+    payload: dict[str, Any],
+    config: dict[str, Any],
+    result: dict[str, Any],
+    *,
+    batch_id: str,
+) -> None:
+    """Persist privacy-safe delivery metadata without message or credential data."""
+    mongo_uri = os.environ.get("SITE_MONITOR_MONGO_URI", "")
+    if not mongo_uri:
+        return
+    provider_results = result.get("results")
+    if not isinstance(provider_results, list):
+        provider_results = [result]
+    now = datetime.now().astimezone().isoformat(timespec="seconds")
+    items = payload.get("items") if isinstance(payload.get("items"), list) else []
+    entry_count = sum(
+        len(item.get("entries") or []) for item in items if isinstance(item, dict)
+    )
+    events = []
+    for provider_result in provider_results:
+        if not isinstance(provider_result, dict):
+            continue
+        if provider_result.get("skipped"):
+            status = "skipped"
+        elif provider_result.get("success"):
+            status = "success"
+        else:
+            status = "failed"
+        provider = provider_result.get("provider")
+        if not provider:
+            provider = config.get("provider") or "delivery"
+        event = {
+            "event_id": str(uuid4()),
+            "batch_id": batch_id,
+            "delivered_at": now,
+            "source": str(payload.get("delivery_source") or "site_monitor")[:80],
+            "report_id": str(payload.get("report_id") or "")[:160],
+            "report_date": str(payload.get("date") or "")[:32],
+            "provider": str(provider)[:80],
+            "status": status,
+            "message_count": max(int(provider_result.get("message_count") or 0), 0),
+            "item_count": len(items),
+            "entry_count": entry_count,
+        }
+        reason = str(provider_result.get("reason") or "")
+        if reason in {"delivery_disabled", "provider_disabled"}:
+            event["reason"] = reason
+        error_type = str(provider_result.get("error_type") or "")
+        if error_type:
+            event["error_type"] = error_type[:120]
+        events.append(event)
+    if not events:
+        return
+    try:
+        from .mongo_store import create_store
+
+        store = create_store(
+            mongo_uri,
+            os.environ.get("SITE_MONITOR_DB_NAME", "site_monitor"),
+        )
+        store.record_delivery_events(events)
+    except Exception as exc:
+        print(
+            f"delivery audit write failed: {type(exc).__name__}",
+            file=sys.stderr,
+        )
 
 
 def _send_fanout(
@@ -86,6 +171,7 @@ def _send_fanout(
                 "provider": provider,
                 "success": False,
                 "error": str(exc),
+                "error_type": type(exc).__name__,
             }
             if provider == "cloud_api":
                 _save_cloud_sync_failure(payload, provider_config, str(exc))

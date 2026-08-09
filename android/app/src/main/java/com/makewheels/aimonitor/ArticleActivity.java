@@ -81,7 +81,7 @@ public class ArticleActivity extends Activity {
 
         TextView title = new TextView(this);
         title.setText(titleValue);
-        title.setTextSize(17);
+        title.setTextSize(18);
         title.setTextColor(TEXT);
         title.setTypeface(android.graphics.Typeface.DEFAULT_BOLD);
         title.setMaxLines(1);
@@ -108,7 +108,7 @@ public class ArticleActivity extends Activity {
         settings.setJavaScriptEnabled(!projectBrief);
         settings.setDomStorageEnabled(true);
         settings.setLoadsImagesAutomatically(true);
-        settings.setTextZoom(115);
+        settings.setTextZoom(120);
         settings.setMixedContentMode(WebSettings.MIXED_CONTENT_NEVER_ALLOW);
         settings.setBuiltInZoomControls(false);
         settings.setDisplayZoomControls(false);

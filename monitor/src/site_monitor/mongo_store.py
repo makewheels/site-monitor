@@ -21,6 +21,7 @@ class MongoMonitorStore:
         self.items = self.db["report_items"]
         self.monitor_state = self.db["monitor_state"]
         self.project_intros = self.db["project_intros"]
+        self.delivery_events = self.db["delivery_events"]
         self.reports.create_index(
             [("date", -1), ("content_count", -1), ("generated_at", -1)]
         )
@@ -30,6 +31,17 @@ class MongoMonitorStore:
         self.items.create_index("report_id")
         self.monitor_state.create_index("filename", unique=True)
         self.project_intros.create_index("slug", unique=True)
+        self.delivery_events.create_index("event_id", unique=True)
+        self.delivery_events.create_index([("delivered_at", -1), ("source", 1)])
+        self.delivery_events.create_index([("status", 1), ("delivered_at", -1)])
+
+    def record_delivery_events(self, events: list[dict[str, Any]]) -> int:
+        """Append sanitized delivery metadata; callers never pass message content."""
+        documents = [dict(event) for event in events if event.get("event_id")]
+        if not documents:
+            return 0
+        self.delivery_events.insert_many(documents, ordered=False)
+        return len(documents)
 
     def upsert_report(self, payload: dict[str, Any]) -> dict[str, Any]:
         now = datetime.now().isoformat(timespec="seconds")

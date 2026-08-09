@@ -16,9 +16,8 @@ from ..monitor_config import runtime_path
 
 
 CACHE_FILE = runtime_path("state", "github_project_intros_state.json")
-DEFAULT_PAGE_BASE_URL = (
-    "https://site-moitor-api-rhlrnacrhr.cn-beijing.fcapp.run/projects"
-)
+INTRO_SCHEMA_VERSION = 2
+DEFAULT_PAGE_BASE_URL = "https://site-monitor.a4.fit/projects"
 FULL_NAME_PATTERN = re.compile(r"^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$")
 
 
@@ -61,6 +60,33 @@ def _fetch_metadata(full_name: str, *, timeout: float) -> dict[str, Any]:
     )
     response.raise_for_status()
     data = response.json()
+    language_distribution: list[dict[str, Any]] = []
+    try:
+        languages_response = requests.get(
+            f"https://api.github.com/repos/{full_name}/languages",
+            headers=_github_headers(),
+            timeout=timeout,
+        )
+        languages_response.raise_for_status()
+        language_bytes = languages_response.json()
+        total_bytes = sum(
+            int(value)
+            for value in language_bytes.values()
+            if isinstance(value, (int, float)) and value > 0
+        )
+        if total_bytes:
+            language_distribution = [
+                {
+                    "name": str(name)[:80],
+                    "percent": round(int(value) * 100 / total_bytes, 1),
+                }
+                for name, value in sorted(
+                    language_bytes.items(), key=lambda item: item[1], reverse=True
+                )[:5]
+                if isinstance(value, (int, float)) and value > 0
+            ]
+    except (requests.RequestException, ValueError, TypeError, AttributeError):
+        pass
     license_data = data.get("license") or {}
     return {
         "full_name": full_name,
@@ -72,6 +98,7 @@ def _fetch_metadata(full_name: str, *, timeout: float) -> dict[str, Any]:
         "forks": int(data.get("forks_count") or 0),
         "open_issues": int(data.get("open_issues_count") or 0),
         "topics": data.get("topics") or [],
+        "language_distribution": language_distribution,
         "created_at": data.get("created_at") or "",
         "pushed_at": data.get("pushed_at") or "",
         "default_branch": data.get("default_branch") or "main",
@@ -108,11 +135,11 @@ def _string_list(value: Any, *, limit: int = 6) -> list[str]:
     return [str(item).strip()[:500] for item in value if str(item).strip()][:limit]
 
 
-def _architecture(value: Any) -> list[dict[str, str]]:
+def _named_cards(value: Any, *, limit: int = 6) -> list[dict[str, str]]:
     if not isinstance(value, list):
         return []
     result = []
-    for item in value[:6]:
+    for item in value[:limit]:
         if isinstance(item, dict):
             name = str(item.get("name") or "").strip()[:100]
             description = str(item.get("description") or "").strip()[:600]
@@ -124,20 +151,43 @@ def _architecture(value: Any) -> list[dict[str, str]]:
     return result
 
 
+def _alternatives(value: Any) -> list[dict[str, str]]:
+    if not isinstance(value, list):
+        return []
+    result = []
+    for item in value[:4]:
+        if not isinstance(item, dict):
+            continue
+        name = str(item.get("name") or "").strip()[:100]
+        when_choose = str(item.get("when_choose") or "").strip()[:400]
+        tradeoff = str(item.get("tradeoff") or "").strip()[:400]
+        if name and (when_choose or tradeoff):
+            result.append(
+                {"name": name, "when_choose": when_choose, "tradeoff": tradeoff}
+            )
+    return result
+
+
 def _normalise_intro(data: dict[str, Any], metadata: dict[str, Any]) -> dict[str, Any]:
     full_name = metadata["full_name"]
     repository_url = metadata["repository_url"]
     return {
+        "schema_version": INTRO_SCHEMA_VERSION,
         "full_name": full_name,
         "title": str(data.get("title") or full_name).strip()[:180],
         "tagline": str(data.get("tagline") or metadata.get("description") or "").strip()[:500],
         "problem": str(data.get("problem") or "").strip()[:1_200],
-        "architecture": _architecture(data.get("architecture")),
+        "audience": _string_list(data.get("audience"), limit=4),
+        "workflow": _named_cards(data.get("workflow"), limit=5),
+        "core_concepts": _named_cards(data.get("core_concepts"), limit=6),
+        "architecture": _named_cards(data.get("architecture"), limit=6),
         "why_choose": _string_list(data.get("why_choose")),
         "avoid_when": _string_list(data.get("avoid_when")),
         "use_cases": _string_list(data.get("use_cases")),
         "getting_started": _string_list(data.get("getting_started")),
         "risks": _string_list(data.get("risks")),
+        "alternatives": _alternatives(data.get("alternatives")),
+        "questions": _string_list(data.get("questions"), limit=5),
         "facts": {
             "language": metadata.get("language"),
             "license": metadata.get("license"),
@@ -146,6 +196,8 @@ def _normalise_intro(data: dict[str, Any], metadata: dict[str, Any]) -> dict[str
             "open_issues": metadata.get("open_issues"),
             "created_at": metadata.get("created_at"),
             "pushed_at": metadata.get("pushed_at"),
+            "topics": _string_list(metadata.get("topics"), limit=8),
+            "language_distribution": metadata.get("language_distribution") or [],
         },
         "source_urls": list(
             dict.fromkeys(
@@ -167,11 +219,16 @@ def _fallback_intro(repo: dict[str, Any], metadata: dict[str, Any]) -> dict[str,
             "tagline": description,
             "problem": "模型暂未完成深度解读，请先根据项目简介和源代码判断用途。",
             "architecture": [],
+            "audience": ["第一次评估这个开源项目的开发者或技术负责人"],
+            "workflow": [],
+            "core_concepts": [],
             "why_choose": [],
             "avoid_when": ["需要完整技术评估时，不要只依赖当前简版介绍"],
             "use_cases": [],
             "getting_started": ["先阅读 README，再在隔离环境中试用"],
             "risks": ["当前页面仅包含公开仓库元数据，架构细节尚未由模型确认"],
+            "alternatives": [],
+            "questions": ["README 是否覆盖你的实际部署环境？", "许可证是否符合使用场景？"],
         },
         metadata,
     )
@@ -190,9 +247,13 @@ def _request_intro(
         "你是资深软件架构师和技术编辑。只根据给定 GitHub 元数据与 README，"
         "为第一次看到该项目的中文读者写一份可核验的项目解读。重点讲清它解决什么问题、"
         "核心架构/工作原理、为什么选择、何时不要选择、真实场景、上手步骤与风险。"
+        "还要帮助读者在 3 分钟内完成是否值得继续研究的判断：目标用户、端到端工作流、"
+        "核心概念、同类方案取舍，以及评估前应该追问的问题。每条描述要具体、简洁并基于证据。"
         "不要写营销套话，不确定就明确说未确认。严格返回 JSON 对象，字段为："
-        "title(string), tagline(string), problem(string), "
-        "architecture([{name,description}]), why_choose([string]), "
+        "title(string), tagline(string), problem(string), audience([string]), "
+        "workflow([{name,description}]), core_concepts([{name,description}]), "
+        "architecture([{name,description}]), alternatives([{name,when_choose,tradeoff}]), "
+        "questions([string]), why_choose([string]), "
         "avoid_when([string]), use_cases([string]), getting_started([string]), "
         "risks([string])。\n\n"
         f"项目元数据：\n{json.dumps(metadata, ensure_ascii=False)}\n\n"
@@ -253,7 +314,11 @@ def enrich(payload: dict[str, Any], options: dict[str, Any]) -> dict[str, Any]:
             return result
 
         intro = None
-        if cached.get("pushed_at") == metadata.get("pushed_at") and cached.get("intro"):
+        if (
+            cached.get("schema_version") == INTRO_SCHEMA_VERSION
+            and cached.get("pushed_at") == metadata.get("pushed_at")
+            and cached.get("intro")
+        ):
             intro = _normalise_intro(cached["intro"], metadata)
         elif api_key:
             try:
@@ -292,6 +357,7 @@ def enrich(payload: dict[str, Any], options: dict[str, Any]) -> dict[str, Any]:
         if not intro or not full_name:
             continue
         updated_cache[full_name.lower()] = {
+            "schema_version": INTRO_SCHEMA_VERSION,
             "pushed_at": intro.get("facts", {}).get("pushed_at"),
             "intro": intro,
             "updated_at": datetime.now().astimezone().isoformat(timespec="seconds"),

@@ -15,6 +15,49 @@ def test_delivery_disabled_by_env(monkeypatch):
     assert result["reason"] == "delivery_disabled"
 
 
+def test_delivery_records_sanitized_event_without_message_or_credentials(monkeypatch):
+    recorded = []
+
+    class FakeStore:
+        def record_delivery_events(self, events):
+            recorded.extend(events)
+
+    monkeypatch.setenv("SITE_MONITOR_MONGO_URI", "mongodb://private-host/private")
+    monkeypatch.setattr("site_monitor.mongo_store.create_store", lambda *args: FakeStore())
+    monkeypatch.setattr(
+        delivery,
+        "_send_provider",
+        lambda *args: {"success": True, "provider": "feishu", "message_count": 2},
+    )
+
+    result = delivery.send_report(
+        "secret message body",
+        {
+            "enabled": True,
+            "provider": "feishu",
+            "app_secret": "must-not-be-stored",
+            "user_id": "must-not-be-stored",
+        },
+        payload={
+            "report_id": "r1",
+            "date": "2026-08-09",
+            "delivery_source": "daily_summary",
+            "full_text": "secret message body",
+            "items": [{"entries": [{"title": "public"}]}],
+        },
+    )
+
+    assert result["success"] is True
+    assert recorded[0]["provider"] == "feishu"
+    assert recorded[0]["status"] == "success"
+    assert recorded[0]["message_count"] == 2
+    assert recorded[0]["entry_count"] == 1
+    serialized = json.dumps(recorded, ensure_ascii=False)
+    assert "secret message body" not in serialized
+    assert "must-not-be-stored" not in serialized
+    assert "private-host" not in serialized
+
+
 def test_hermes_weixin_delivery_calls_send_tool(monkeypatch, tmp_path):
     calls = []
 

@@ -44,6 +44,13 @@ def test_enrich_generates_and_reuses_cached_project_intro(monkeypatch, tmp_path)
             "tagline": "一句话定位",
             "problem": "解决复杂任务的问题",
             "architecture": [{"name": "Core", "description": "处理任务"}],
+            "audience": ["平台工程师"],
+            "workflow": [{"name": "输入", "description": "接收任务"}],
+            "core_concepts": [{"name": "队列", "description": "调度任务"}],
+            "alternatives": [
+                {"name": "简单脚本", "when_choose": "一次性任务", "tradeoff": "缺少治理"}
+            ],
+            "questions": ["能否自托管？"],
             "why_choose": ["需要自动化"],
             "avoid_when": ["只需要简单脚本"],
             "use_cases": ["批量处理"],
@@ -69,4 +76,6 @@ def test_enrich_generates_and_reuses_cached_project_intro(monkeypatch, tmp_path)
         {"name": "Core", "description": "处理任务"}
     ]
     assert repo["project_intro"]["facts"]["stars"] == 123
+    assert repo["project_intro"]["schema_version"] == 2
+    assert repo["project_intro"]["workflow"][0]["name"] == "输入"
     assert repo["project_intro"]["model"] == "test-model"

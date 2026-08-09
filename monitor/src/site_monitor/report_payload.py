@@ -191,6 +191,35 @@ def make_report_id(date: str, full_text: str) -> str:
     return f"{date}-{digest}"
 
 
+def project_digest(project: dict[str, Any], limit: int = 420) -> str:
+    """Build a compact but decision-useful Chinese summary for chat delivery."""
+    intro = project.get("project_intro")
+    intro = intro if isinstance(intro, dict) else {}
+    candidates = [
+        intro.get("tagline"),
+        intro.get("problem"),
+    ]
+    why_choose = intro.get("why_choose")
+    if isinstance(why_choose, list) and why_choose:
+        candidates.append("适合选择：" + "；".join(str(value) for value in why_choose[:2]))
+    if not any(str(value or "").strip() for value in candidates):
+        candidates = [project.get("zh_summary"), project.get("description")]
+
+    sentences: list[str] = []
+    seen: set[str] = set()
+    for value in candidates:
+        sentence = " ".join(str(value or "").split()).strip(" 。；")
+        identity = sentence.casefold()
+        if not sentence or identity in seen:
+            continue
+        seen.add(identity)
+        sentences.append(sentence + ("。" if not sentence.endswith(("。", "！", "？")) else ""))
+    digest = "".join(sentences)
+    if len(digest) <= limit:
+        return digest
+    return digest[: limit - 1].rstrip("，；。 ") + "…"
+
+
 def build_payload(
     sections: dict[str, str],
     *,
@@ -241,6 +270,7 @@ def build_payload(
         "topics": topics_payload(),
         "items": items,
         "item_count": len(items),
+        "delivery_source": "daily_summary",
     }
 
 
@@ -268,7 +298,7 @@ def attach_trending_projects(
             entry = {
                 "full_name": full_name,
                 "title": full_name,
-                "summary": project.get("zh_summary") or project.get("description") or "",
+                "summary": project_digest(project),
                 "url": intro_url or source_url,
                 "intro_url": intro_url,
                 "source_url": source_url,

@@ -23,6 +23,14 @@ public class DisplayFormatterTest {
     }
 
     @Test
+    public void updaterRequiresHttpsAndFullSha256() {
+        assertTrue(DisplayFormatter.isHttpsUrl("https://downloads.example.com/app.apk"));
+        assertFalse(DisplayFormatter.isHttpsUrl("http://downloads.example.com/app.apk"));
+        assertTrue(DisplayFormatter.isSha256("a".repeat(64)));
+        assertFalse(DisplayFormatter.isSha256("abc123"));
+    }
+
+    @Test
     public void hostLabelHidesPathAndCredentials() {
         assertEquals("monitor.example.com", DisplayFormatter.hostLabel("https://monitor.example.com/api"));
     }
