@@ -22,6 +22,9 @@ class RecordingCollection:
     def update_one(self, query, update, upsert=False):
         self.calls.append((query, update, upsert))
 
+    def insert_many(self, documents, ordered=False):
+        self.calls.append((documents, ordered))
+
 
 def test_monitor_state_round_trip(tmp_path):
     collection = FakeStateCollection(
@@ -83,3 +86,34 @@ def test_report_upsert_persists_ai_enrichment_fields():
     assert item_doc["entry_count"] == 1
     assert item_doc["entries"][0]["translated_title"] == "译文"
     assert item_doc["entries"][0]["summary_zh"] == "中文摘要"
+
+
+def test_delivery_event_append_is_metadata_only():
+    store = object.__new__(MongoMonitorStore)
+    store.delivery_events = RecordingCollection()
+
+    saved = store.record_delivery_events(
+        [
+            {
+                "event_id": "e1",
+                "source": "weekly_trending",
+                "provider": "feishu",
+                "status": "success",
+            }
+        ]
+    )
+
+    assert saved == 1
+    assert store.delivery_events.calls == [
+        (
+            [
+                {
+                    "event_id": "e1",
+                    "source": "weekly_trending",
+                    "provider": "feishu",
+                    "status": "success",
+                }
+            ],
+            False,
+        )
+    ]

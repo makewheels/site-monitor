@@ -1,9 +1,28 @@
 from site_monitor.report_payload import (
     attach_trending_projects,
+    project_digest,
     build_payload,
     extract_entries,
     extract_links,
 )
+
+
+def test_project_digest_uses_intro_for_richer_chat_summary():
+    digest = project_digest(
+        {
+            "description": "short",
+            "project_intro": {
+                "tagline": "把重复任务编排成可观测流程",
+                "problem": "解决脚本散落且失败难追踪的问题",
+                "why_choose": ["需要失败重试", "需要运行历史"],
+            },
+        }
+    )
+
+    assert digest == (
+        "把重复任务编排成可观测流程。解决脚本散落且失败难追踪的问题。"
+        "适合选择：需要失败重试；需要运行历史。"
+    )
 
 
 def test_build_payload_groups_pending_sections_by_topic():

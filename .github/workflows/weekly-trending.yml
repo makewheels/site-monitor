@@ -2,6 +2,12 @@ name: Weekly GitHub Trending
 
 on:
   workflow_dispatch:
+    inputs:
+      force:
+        description: "忽略本周已发送状态，用于修正后补发"
+        required: false
+        default: false
+        type: boolean
 
 concurrency:
   group: weekly-github-trending
@@ -37,4 +43,5 @@ jobs:
           DASHSCOPE_API_KEY: ${{ secrets.DASHSCOPE_API_KEY }}
           LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
           LLM_MODEL: ${{ vars.LLM_MODEL }}
+          SITE_MONITOR_FORCE_WEEKLY: ${{ inputs.force && 'true' || 'false' }}
         run: uv run python weekly_trending.py

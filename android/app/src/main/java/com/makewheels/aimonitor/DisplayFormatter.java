@@ -29,6 +29,14 @@ final class DisplayFormatter {
         return lowered.startsWith("https://") || lowered.startsWith("http://");
     }
 
+    static boolean isHttpsUrl(String value) {
+        return value != null && value.toLowerCase().startsWith("https://");
+    }
+
+    static boolean isSha256(String value) {
+        return value != null && value.matches("(?i)^[0-9a-f]{64}$");
+    }
+
     static boolean releaseAvailable(int latestVersionCode, int installedVersionCode) {
         return latestVersionCode > installedVersionCode;
     }

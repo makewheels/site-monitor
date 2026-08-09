@@ -2,7 +2,7 @@
 
 一个项目完成 AI 信息采集、飞书日报、历史 API 和 Android 阅读。生产流程为：
 
-1. Multica Autopilot 在北京时间每天 05:30 调度 GitHub Actions 运行 `monitor/`。
+1. 服务器 systemd timer 在北京时间每天 05:30 直接调度 GitHub Actions 运行 `monitor/`，不启动 AI Agent。
 2. 抓取 GitHub Trending、Anthropic、OpenAI、LangChain、Claude Code 等来源。
 3. 报告与去重状态写入腾讯云轻量服务器中的 MongoDB。
 4. 飞书收到交互卡片；网页和 Android 从阿里云 Function Compute 读取历史。
@@ -26,7 +26,7 @@ android/   Android App、版本配置、发布历史及测试
 - Android 版本、FC API 地址、OSS 地址：`android/release-config.json`
 - 已发布 APK 历史：`android/releases.json`
 
-模型通过 `LLM_API_KEY`、`LLM_BASE_URL`、`LLM_MODEL` 切换，不绑定特定厂商实现。每篇新博客文章会先提取正文，再分别生成中文标题翻译和中文摘要；原文、翻译、摘要、URL 与模型元数据一起存入 MongoDB，飞书和 Android 使用同一份结构化结果。MongoDB URI、飞书凭据、Android API Token、上传 Token 和签名密码只能放在 GitHub Secrets、FC 环境变量、本机环境变量或系统钥匙串中。
+模型通过 `LLM_API_KEY`、`LLM_BASE_URL`、`LLM_MODEL` 切换，不绑定特定厂商实现；当前生产配置使用阿里云百炼兼容接口。生成 HTML 只需要监控任务直接调用模型，不依赖 Multica 或 Codex。每篇新博客文章会先提取正文，再分别生成中文标题翻译和中文摘要；原文、翻译、摘要、URL 与模型元数据一起存入 MongoDB，飞书和 Android 使用同一份结构化结果。MongoDB URI、飞书凭据、Android API Token、上传 Token 和签名密码只能放在 GitHub Secrets、FC 环境变量、本机环境变量或系统钥匙串中。
 
 ## Monitor
 
@@ -44,7 +44,7 @@ Claude Code 只推送功能更新，fix/docs/test/chore 不进入日报。当前
 推送规则：
 
 - GitHub Trending 日榜每天生成 Top 5；周榜使用 GitHub 独立的 rolling weekly 榜单生成 Top 10，并在周六 09:00 单独推送。
-- 每个 Trending 项目都会生成适合手机阅读的“大字 HTML PowerPoint”，覆盖问题、架构原理、选择理由、适用/不适用场景、上手步骤、风险和来源。
+- 每个 Trending 项目都会生成适合手机阅读的“大字可视化 HTML 简报”，覆盖问题、目标用户、端到端工作流、架构积木、语言构成、选择理由、同类取舍、场景、上手步骤、尽调问题、风险和来源。
 - Blog/RSS 通过 URL 去重，只在首次发现新文章时进入飞书；首次接入订阅源只建立基线，不补发整批历史文章。
 - 新文章先提取 feed 摘要和正文，再用大模型分别生成 `translated_title` 与 `summary_zh`。模型处理失败时本次任务失败，旧 MongoDB 状态不会被覆盖，下一次可重新处理。
 - Claude Code 只保留功能更新；纯 fix/docs/test/chore 不推送。
@@ -79,11 +79,13 @@ cd android
 ./scripts/release.sh
 ```
 
-App 支持今日栏目、按栏目筛选、历史日报、文章级卡片、应用内浏览器、外部浏览器跳转、离线缓存和启动更新检查。Trending 项目卡片优先打开手机项目解读页，并保留 GitHub 源码入口；列表与网页字体已针对手机放大。以后发布新版本时保留旧的版本化 APK，同时覆盖 `ai-monitor-latest.apk`。
+App 支持今日栏目、按栏目筛选、历史日报、文章级卡片、应用内浏览器、外部浏览器跳转、离线缓存和启动更新检查。Trending 项目卡片优先打开手机项目解读页，并保留 GitHub 源码入口；列表与网页字体已针对手机放大。0.4.0 起，新版本会在应用内通过系统 DownloadManager 下载并显示进度，SHA-256 校验通过后再打开系统安装界面。以后发布新版本时保留旧的版本化 APK，同时覆盖 `ai-monitor-latest.apk`。
 
 ## Web
 
-FC 根路径 `/`（也可使用 `/web`）提供响应式网页，复用现有日报 API，支持今日、栏目筛选、历史日报和文章原文跳转。公开路径 `/projects/<owner>/<repo>` 提供无需登录的手机项目解读页，供飞书和 Android 打开。网页不会嵌入只读 Token；用户首次打开时输入 Token，凭据仅保存在当前标签页的 `sessionStorage`，关闭标签页后清除。
+自定义域名 `site-monitor.a4.fit` 代理 FC 并移除默认域名强加的附件响应头。根路径 `/`（也可使用 `/web`）提供响应式网页，复用现有日报 API，支持今日、栏目筛选、历史日报和文章原文跳转。公开路径 `/projects/<owner>/<repo>` 提供无需登录的手机项目解读页，供飞书和 Android 打开。公开页采用字段白名单，不返回数据库地址、服务器 IP、API 密钥或收件人信息。网页不会嵌入只读 Token；用户首次打开时输入 Token，凭据仅保存在当前标签页的 `sessionStorage`，关闭标签页后清除。
+
+每次实际投递都会追加一条 `delivery_events` 审计记录，只保存来源、报告 ID、时间、渠道、状态和数量；不保存消息正文、收件人、连接串、密钥或原始异常。
 
 本地预览：
 

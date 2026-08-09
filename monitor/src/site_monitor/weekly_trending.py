@@ -17,6 +17,7 @@ from .check_github_trending import (
 from .delivery import is_enabled, send_report
 from .monitor_config import runtime_dir, runtime_path
 from .postprocess import apply_postprocessors
+from .report_payload import project_digest
 
 
 STATE_FILE = runtime_path("state", "github_trending_weekly_state.json")
@@ -56,7 +57,9 @@ def build_weekly_payload(repos: list[dict], *, now: datetime | None = None) -> d
         full_name = str(repo.get("full_name") or "")
         source_url = str(repo.get("source_url") or repo.get("url") or f"https://github.com/{full_name}")
         intro_url = str(repo.get("intro_url") or "")
-        summary = str(repo.get("zh_summary") or (zh(repo.get("description", "")) if repo.get("description") else ""))
+        summary = project_digest(repo)
+        if not summary and repo.get("description"):
+            summary = zh(repo.get("description", ""))
         entries.append(
             {
                 "full_name": full_name,
@@ -87,6 +90,7 @@ def build_weekly_payload(repos: list[dict], *, now: datetime | None = None) -> d
             }
         ],
         "item_count": 1,
+        "delivery_source": "weekly_trending",
     }
 
 

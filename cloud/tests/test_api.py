@@ -180,6 +180,13 @@ def test_project_page_is_public_mobile_slide_deck_and_escapes_content():
         "tagline": "项目一句话简介",
         "problem": "解决复杂任务",
         "architecture": [{"name": "Core", "description": "处理任务"}],
+        "audience": ["平台工程师"],
+        "workflow": [{"name": "输入", "description": "读取任务"}],
+        "core_concepts": [{"name": "调度器", "description": "编排执行"}],
+        "alternatives": [
+            {"name": "脚本", "when_choose": "一次性任务", "tradeoff": "缺少治理"}
+        ],
+        "questions": ["是否支持自托管？"],
         "why_choose": ["需要自动化"],
         "avoid_when": ["只需简单脚本"],
         "use_cases": ["研究", "开发", "评测"],
@@ -199,6 +206,9 @@ def test_project_page_is_public_mobile_slide_deck_and_escapes_content():
     assert b"Project &lt;unsafe&gt;" in response.data
     assert b"Project <unsafe>" not in response.data
     assert b"GitHub" in response.data
+    assert "端到端工作流".encode() in response.data
+    assert "同类方案怎么取舍".encode() in response.data
+    assert b"site-moitor-api" not in response.data
     assert response.headers["Cache-Control"] == "public, max-age=300"
 
 

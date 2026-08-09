@@ -2,14 +2,20 @@ package com.makewheels.aimonitor;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.DownloadManager;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.ColorStateList;
+import android.database.Cursor;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.drawable.GradientDrawable;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
+import android.os.Handler;
+import android.os.Looper;
+import android.provider.Settings;
 import android.view.Gravity;
 import android.view.View;
 import android.view.Window;
@@ -17,6 +23,7 @@ import android.view.WindowManager;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -30,12 +37,19 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
+import java.security.MessageDigest;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class MainActivity extends Activity {
+    private static final int REQUEST_UNKNOWN_APP_SOURCE = 901;
+    private static final String PREF_DOWNLOAD_ID = "update_download_id";
+    private static final String PREF_DOWNLOAD_SHA256 = "update_download_sha256";
+    private static final String PREF_DOWNLOAD_VERSION = "update_download_version";
+    private static final String PREF_DOWNLOAD_VERSION_CODE = "update_download_version_code";
+    private static final String PREF_DOWNLOAD_FORCE = "update_download_force";
     private static final int ACCENT = Color.rgb(23, 114, 92);
     private static final int ACCENT_SOFT = Color.rgb(231, 242, 238);
     private static final int BG = Color.rgb(246, 247, 246);
@@ -45,8 +59,15 @@ public class MainActivity extends Activity {
     private static final int LINE = Color.rgb(219, 225, 222);
 
     private final ExecutorService executor = Executors.newSingleThreadExecutor();
+    private final Handler mainHandler = new Handler(Looper.getMainLooper());
     private final List<NavRef> navRefs = new ArrayList<>();
     private SharedPreferences prefs;
+    private DownloadManager downloadManager;
+    private AlertDialog downloadDialog;
+    private ProgressBar downloadProgress;
+    private TextView downloadStatus;
+    private long activeDownloadId = -1;
+    private Uri pendingInstallUri;
     private LinearLayout root;
     private LinearLayout topicRow;
     private LinearLayout content;
@@ -66,13 +87,17 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         configureWindow();
         prefs = getSharedPreferences("ai_monitor", MODE_PRIVATE);
+        downloadManager = (DownloadManager) getSystemService(DOWNLOAD_SERVICE);
         buildShell();
         loadToday(false);
-        checkForUpdate(false);
+        if (!restoreUpdateDownload()) {
+            checkForUpdate(false);
+        }
     }
 
     @Override
     protected void onDestroy() {
+        mainHandler.removeCallbacksAndMessages(null);
         executor.shutdownNow();
         super.onDestroy();
     }
@@ -635,11 +660,19 @@ public class MainActivity extends Activity {
         String version = release.optString("version_name", "新版本");
         String notes = release.optString("release_notes", "有新的应用版本可用");
         String apkUrl = release.optString("apk_url", "");
+        String sha256 = release.optString("sha256", "");
         boolean force = release.optBoolean("force_update", false);
         AlertDialog.Builder builder = new AlertDialog.Builder(this)
                 .setTitle("发现新版本 " + version)
                 .setMessage(notes)
-                .setPositiveButton("更新", (dialog, which) -> openExternal(apkUrl));
+                .setPositiveButton("在应用内更新", (dialog, which) ->
+                        startUpdateDownload(
+                                release.optInt("version_code", 0),
+                                version,
+                                apkUrl,
+                                sha256,
+                                force
+                        ));
         if (!force) {
             builder.setNegativeButton("稍后", null);
         }
@@ -647,6 +680,280 @@ public class MainActivity extends Activity {
         dialog.setCancelable(!force);
         dialog.setCanceledOnTouchOutside(!force);
         dialog.show();
+    }
+
+    private void startUpdateDownload(
+            int versionCode,
+            String version,
+            String apkUrl,
+            String expectedSha256,
+            boolean force
+    ) {
+        if (!DisplayFormatter.isHttpsUrl(apkUrl) || !DisplayFormatter.isSha256(expectedSha256)) {
+            Toast.makeText(this, "更新信息校验失败，已停止下载", Toast.LENGTH_LONG).show();
+            return;
+        }
+        cancelActiveDownload(false);
+        try {
+            String safeVersion = version.replaceAll("[^A-Za-z0-9._-]", "-");
+            String filename = "ai-monitor-" + safeVersion + "-" + System.currentTimeMillis() + ".apk";
+            DownloadManager.Request request = new DownloadManager.Request(Uri.parse(apkUrl))
+                    .setTitle("AI 日报 " + version)
+                    .setDescription("正在下载应用更新")
+                    .setMimeType("application/vnd.android.package-archive")
+                    .setNotificationVisibility(
+                            DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED
+                    )
+                    .setAllowedOverMetered(true)
+                    .setAllowedOverRoaming(false)
+                    .setDestinationInExternalFilesDir(this, Environment.DIRECTORY_DOWNLOADS, filename);
+            activeDownloadId = downloadManager.enqueue(request);
+            prefs.edit()
+                    .putLong(PREF_DOWNLOAD_ID, activeDownloadId)
+                    .putString(PREF_DOWNLOAD_SHA256, expectedSha256.toLowerCase())
+                    .putString(PREF_DOWNLOAD_VERSION, version)
+                    .putInt(PREF_DOWNLOAD_VERSION_CODE, versionCode)
+                    .putBoolean(PREF_DOWNLOAD_FORCE, force)
+                    .apply();
+            showDownloadProgress(version, force);
+            pollDownloadProgress();
+        } catch (Exception ignored) {
+            clearDownloadState();
+            Toast.makeText(this, "无法启动应用内下载", Toast.LENGTH_LONG).show();
+        }
+    }
+
+    private boolean restoreUpdateDownload() {
+        long downloadId = prefs.getLong(PREF_DOWNLOAD_ID, -1);
+        int versionCode = prefs.getInt(PREF_DOWNLOAD_VERSION_CODE, 0);
+        if (downloadId < 0) {
+            return false;
+        }
+        if (versionCode <= BuildConfig.VERSION_CODE) {
+            downloadManager.remove(downloadId);
+            clearDownloadState();
+            return false;
+        }
+        activeDownloadId = downloadId;
+        showDownloadProgress(
+                prefs.getString(PREF_DOWNLOAD_VERSION, "新版本"),
+                prefs.getBoolean(PREF_DOWNLOAD_FORCE, false)
+        );
+        pollDownloadProgress();
+        return true;
+    }
+
+    private void showDownloadProgress(String version, boolean force) {
+        if (downloadDialog != null && downloadDialog.isShowing()) {
+            return;
+        }
+        LinearLayout box = new LinearLayout(this);
+        box.setOrientation(LinearLayout.VERTICAL);
+        box.setPadding(dp(24), dp(8), dp(24), 0);
+        downloadStatus = text("准备下载…", 15, false, TEXT);
+        downloadProgress = new ProgressBar(this, null, android.R.attr.progressBarStyleHorizontal);
+        downloadProgress.setMax(100);
+        downloadProgress.setProgressTintList(ColorStateList.valueOf(ACCENT));
+        LinearLayout.LayoutParams progressParams = new LinearLayout.LayoutParams(-1, dp(12));
+        progressParams.setMargins(0, dp(18), 0, dp(8));
+        box.addView(downloadStatus);
+        box.addView(downloadProgress, progressParams);
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this)
+                .setTitle("更新到 " + version)
+                .setView(box);
+        if (!force) {
+            builder.setNegativeButton("取消下载", null);
+        }
+        downloadDialog = builder.create();
+        downloadDialog.setCancelable(false);
+        downloadDialog.setCanceledOnTouchOutside(false);
+        downloadDialog.setOnShowListener(ignored -> {
+            if (!force) {
+                downloadDialog.getButton(AlertDialog.BUTTON_NEGATIVE).setOnClickListener(
+                        view -> cancelActiveDownload(true)
+                );
+            }
+        });
+        downloadDialog.show();
+    }
+
+    private void pollDownloadProgress() {
+        mainHandler.removeCallbacksAndMessages(null);
+        mainHandler.post(new Runnable() {
+            @Override
+            public void run() {
+                if (activeDownloadId < 0 || downloadDialog == null) {
+                    return;
+                }
+                try (Cursor cursor = downloadManager.query(
+                        new DownloadManager.Query().setFilterById(activeDownloadId)
+                )) {
+                    if (cursor == null || !cursor.moveToFirst()) {
+                        failDownload("下载记录已失效，请重新检查更新");
+                        return;
+                    }
+                    int state = cursor.getInt(cursor.getColumnIndexOrThrow(DownloadManager.COLUMN_STATUS));
+                    long done = cursor.getLong(cursor.getColumnIndexOrThrow(
+                            DownloadManager.COLUMN_BYTES_DOWNLOADED_SO_FAR
+                    ));
+                    long total = cursor.getLong(cursor.getColumnIndexOrThrow(
+                            DownloadManager.COLUMN_TOTAL_SIZE_BYTES
+                    ));
+                    int percent = total > 0 ? (int) Math.min(100, done * 100 / total) : 0;
+                    downloadProgress.setIndeterminate(total <= 0);
+                    if (total > 0) {
+                        downloadProgress.setProgress(percent);
+                    }
+                    if (state == DownloadManager.STATUS_SUCCESSFUL) {
+                        downloadProgress.setIndeterminate(false);
+                        downloadProgress.setProgress(100);
+                        downloadStatus.setText("下载完成，正在验证安装包…");
+                        verifyAndInstall(activeDownloadId);
+                        return;
+                    }
+                    if (state == DownloadManager.STATUS_FAILED) {
+                        failDownload("下载失败，请检查网络后重试");
+                        return;
+                    }
+                    String stateLabel = state == DownloadManager.STATUS_PAUSED ? "已暂停，等待网络" : "正在下载";
+                    downloadStatus.setText(total > 0 ? stateLabel + " · " + percent + "%" : stateLabel + "…");
+                    mainHandler.postDelayed(this, 500);
+                } catch (Exception ignored) {
+                    failDownload("无法读取下载进度，请重新检查更新");
+                }
+            }
+        });
+    }
+
+    private void verifyAndInstall(long downloadId) {
+        final String expected = prefs.getString(PREF_DOWNLOAD_SHA256, "");
+        executor.execute(() -> {
+            Uri uri = downloadManager.getUriForDownloadedFile(downloadId);
+            String actual = uri == null ? "" : sha256(uri);
+            runOnUiThread(() -> {
+                if (uri == null || !expected.equalsIgnoreCase(actual)) {
+                    downloadManager.remove(downloadId);
+                    failDownload("安装包校验失败，文件已删除");
+                    return;
+                }
+                pendingInstallUri = uri;
+                downloadStatus.setText("校验通过，准备打开系统安装界面");
+                requestPackageInstall();
+            });
+        });
+    }
+
+    private String sha256(Uri uri) {
+        try (InputStream input = getContentResolver().openInputStream(uri)) {
+            if (input == null) {
+                return "";
+            }
+            MessageDigest digest = MessageDigest.getInstance("SHA-256");
+            byte[] buffer = new byte[8192];
+            int length;
+            while ((length = input.read(buffer)) >= 0) {
+                if (length > 0) {
+                    digest.update(buffer, 0, length);
+                }
+            }
+            StringBuilder value = new StringBuilder();
+            for (byte item : digest.digest()) {
+                value.append(String.format("%02x", item));
+            }
+            return value.toString();
+        } catch (Exception ignored) {
+            return "";
+        }
+    }
+
+    private void requestPackageInstall() {
+        if (pendingInstallUri == null) {
+            pendingInstallUri = downloadManager.getUriForDownloadedFile(activeDownloadId);
+        }
+        if (pendingInstallUri == null) {
+            failDownload("安装包已不可用，请重新下载");
+            return;
+        }
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O
+                && !getPackageManager().canRequestPackageInstalls()) {
+            Intent permission = new Intent(
+                    Settings.ACTION_MANAGE_UNKNOWN_APP_SOURCES,
+                    Uri.parse("package:" + getPackageName())
+            );
+            if (permission.resolveActivity(getPackageManager()) == null) {
+                failDownload("系统未提供安装来源授权页面");
+                return;
+            }
+            startActivityForResult(permission, REQUEST_UNKNOWN_APP_SOURCE);
+            return;
+        }
+        Intent install = new Intent(Intent.ACTION_INSTALL_PACKAGE)
+                .setDataAndType(pendingInstallUri, "application/vnd.android.package-archive")
+                .addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION | Intent.FLAG_ACTIVITY_NEW_TASK);
+        if (install.resolveActivity(getPackageManager()) == null) {
+            failDownload("系统未找到安装程序");
+            return;
+        }
+        startActivity(install);
+        if (downloadDialog != null) {
+            downloadDialog.dismiss();
+        }
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode != REQUEST_UNKNOWN_APP_SOURCE) {
+            return;
+        }
+        if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.O
+                || getPackageManager().canRequestPackageInstalls()) {
+            requestPackageInstall();
+        } else {
+            Toast.makeText(this, "需要允许 AI 日报安装更新", Toast.LENGTH_LONG).show();
+        }
+    }
+
+    private void failDownload(String message) {
+        mainHandler.removeCallbacksAndMessages(null);
+        if (activeDownloadId >= 0 && downloadManager != null) {
+            downloadManager.remove(activeDownloadId);
+        }
+        clearDownloadState();
+        if (downloadDialog != null) {
+            downloadDialog.dismiss();
+        }
+        Toast.makeText(this, message, Toast.LENGTH_LONG).show();
+    }
+
+    private void cancelActiveDownload(boolean notify) {
+        mainHandler.removeCallbacksAndMessages(null);
+        long downloadId = prefs == null ? -1 : prefs.getLong(PREF_DOWNLOAD_ID, -1);
+        if (downloadId >= 0 && downloadManager != null) {
+            downloadManager.remove(downloadId);
+        }
+        clearDownloadState();
+        if (downloadDialog != null) {
+            downloadDialog.dismiss();
+        }
+        if (notify) {
+            Toast.makeText(this, "已取消下载", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private void clearDownloadState() {
+        activeDownloadId = -1;
+        pendingInstallUri = null;
+        if (prefs != null) {
+            prefs.edit()
+                    .remove(PREF_DOWNLOAD_ID)
+                    .remove(PREF_DOWNLOAD_SHA256)
+                    .remove(PREF_DOWNLOAD_VERSION)
+                    .remove(PREF_DOWNLOAD_VERSION_CODE)
+                    .remove(PREF_DOWNLOAD_FORCE)
+                    .apply();
+        }
     }
 
     private void openExternal(String url) {
@@ -736,7 +1043,7 @@ public class MainActivity extends Activity {
     private TextView text(String value, int sp, boolean bold, int color) {
         TextView view = new TextView(this);
         view.setText(value);
-        view.setTextSize(sp);
+        view.setTextSize(sp + 1);
         view.setTextColor(color);
         view.setLineSpacing(0, 1.14f);
         view.setLetterSpacing(0f);

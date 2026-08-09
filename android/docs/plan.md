@@ -17,7 +17,7 @@
 - Articles: title, summary, visible URL, in-app WebView, and external-browser action.
 - Offline: latest successful responses are cached locally.
 - Settings: API status, last sync, manual update check, cache cleanup, and installed version.
-- Updates: startup checks `/api/v1/app/releases/latest` and opens the OSS APK when a newer version exists.
+- Updates: startup checks `/api/v1/app/releases/latest`, downloads the OSS APK in-app with visible progress, verifies SHA-256, then opens the system package installer.
 
 ## API Contract
 
