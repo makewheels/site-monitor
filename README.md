@@ -44,6 +44,7 @@ Claude Code 只推送功能更新，fix/docs/test/chore 不进入日报。当前
 推送规则：
 
 - GitHub Trending 日榜每天生成 Top 5；周榜使用 GitHub 独立的 rolling weekly 榜单生成 Top 10，并在周六 09:00 单独推送。
+- Codex 重置窗口每小时第 07 分钟由服务器直接触发检测；它只监控开放状态，不调用 Codex 模型。
 - 每个 Trending 项目都会生成适合手机阅读的“大字可视化 HTML 简报”，覆盖问题、目标用户、端到端工作流、架构积木、语言构成、选择理由、同类取舍、场景、上手步骤、尽调问题、风险和来源。
 - Blog/RSS 通过 URL 去重，只在首次发现新文章时进入飞书；首次接入订阅源只建立基线，不补发整批历史文章。
 - 新文章先提取 feed 摘要和正文，再用大模型分别生成 `translated_title` 与 `summary_zh`。模型处理失败时本次任务失败，旧 MongoDB 状态不会被覆盖，下一次可重新处理。
