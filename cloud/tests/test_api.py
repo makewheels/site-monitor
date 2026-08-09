@@ -12,6 +12,7 @@ class RecordingCollection:
 class FakeStore:
     def __init__(self):
         self.payloads = {}
+        self.project_intros = {}
 
     def upsert_report(self, payload):
         self.payloads[payload["report_id"]] = payload
@@ -38,6 +39,9 @@ class FakeStore:
 
     def topics(self):
         return [{"key": "claude_code", "name": "Claude Code", "order": 50}]
+
+    def project_intro(self, owner, repo):
+        return self.project_intros.get(f"{owner}/{repo}".lower())
 
 
 def test_upload_and_read_latest_report(monkeypatch):
@@ -140,6 +144,7 @@ def test_cloud_upsert_records_article_content_count():
     store = object.__new__(MongoReportStore)
     store.reports = RecordingCollection()
     store.items = RecordingCollection()
+    store.project_intros = RecordingCollection()
 
     store.upsert_report(
         {
@@ -165,3 +170,40 @@ def test_cloud_upsert_records_article_content_count():
     assert report_doc["content_item_count"] == 1
     assert store.items.calls[0][1]["$set"]["entry_count"] == 1
     assert store.items.calls[1][1]["$set"]["entry_count"] == 0
+
+
+def test_project_page_is_public_mobile_slide_deck_and_escapes_content():
+    store = FakeStore()
+    store.project_intros["owner/project"] = {
+        "full_name": "owner/project",
+        "title": "Project <unsafe>",
+        "tagline": "项目一句话简介",
+        "problem": "解决复杂任务",
+        "architecture": [{"name": "Core", "description": "处理任务"}],
+        "why_choose": ["需要自动化"],
+        "avoid_when": ["只需简单脚本"],
+        "use_cases": ["研究", "开发", "评测"],
+        "getting_started": ["阅读 README"],
+        "risks": ["需要审查"],
+        "facts": {"stars": 1234, "language": "Python", "license": "MIT", "pushed_at": "2026-08-09"},
+        "source_urls": ["https://github.com/owner/project"],
+    }
+    app = create_app(store)
+    client = app.test_client()
+
+    response = client.get("/projects/owner/project")
+
+    assert response.status_code == 200
+    assert response.content_type.startswith("text/html")
+    assert b"scroll-snap-type:y mandatory" in response.data
+    assert b"Project &lt;unsafe&gt;" in response.data
+    assert b"Project <unsafe>" not in response.data
+    assert b"GitHub" in response.data
+    assert response.headers["Cache-Control"] == "public, max-age=300"
+
+
+def test_project_page_returns_404_when_not_generated():
+    app = create_app(FakeStore())
+    response = app.test_client().get("/projects/owner/missing")
+
+    assert response.status_code == 404

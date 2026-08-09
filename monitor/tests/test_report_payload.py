@@ -1,4 +1,9 @@
-from site_monitor.report_payload import build_payload, extract_entries, extract_links
+from site_monitor.report_payload import (
+    attach_trending_projects,
+    build_payload,
+    extract_entries,
+    extract_links,
+)
 
 
 def test_build_payload_groups_pending_sections_by_topic():
@@ -90,3 +95,28 @@ def test_extract_entries_keeps_feed_excerpt_without_label():
             "summary": "A detailed description from the feed.",
         }
     ]
+
+
+def test_attach_trending_projects_prefers_intro_page_and_keeps_source():
+    payload = build_payload(
+        {"github_trending": "**owner/project**\nhttps://github.com/owner/project"},
+        date="2026-08-09",
+    )
+
+    result = attach_trending_projects(
+        payload,
+        [
+            {
+                "full_name": "owner/project",
+                "zh_summary": "中文简介",
+                "intro_url": "https://monitor.example.com/projects/owner/project",
+                "source_url": "https://github.com/owner/project",
+                "project_intro": {"problem": "解决问题"},
+            }
+        ],
+    )
+
+    entry = result["items"][0]["entries"][0]
+    assert entry["url"] == "https://monitor.example.com/projects/owner/project"
+    assert entry["source_url"] == "https://github.com/owner/project"
+    assert entry["project_intro"]["problem"] == "解决问题"

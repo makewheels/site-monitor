@@ -119,7 +119,9 @@ def test_feishu_structured_card_uses_trending_header_and_visible_urls(monkeypatc
                     {
                         "title": "owner/project",
                         "summary": "Useful project",
-                        "url": "https://github.com/owner/project",
+                        "url": "https://monitor.example.com/projects/owner/project",
+                        "intro_url": "https://monitor.example.com/projects/owner/project",
+                        "source_url": "https://github.com/owner/project",
                     }
                 ],
             },
@@ -149,13 +151,15 @@ def test_feishu_structured_card_uses_trending_header_and_visible_urls(monkeypatc
 
     assert result["message_count"] == 1
     card = json.loads(calls[1]["content"])
-    assert card["header"]["title"]["content"] == "🔥 GitHub Trending · 1 个项目"
+    assert card["header"]["title"]["content"] == "🔥 今日 GitHub Trending · 1 个项目"
     markdown = "\n".join(
         element.get("content", "")
         for element in card["elements"]
         if element.get("tag") == "markdown"
     )
     assert "https://github.com/owner/project" in markdown
+    assert "https://monitor.example.com/projects/owner/project" in markdown
+    assert "手机项目解读" in markdown
     assert "OpenAI News" in markdown
     assert "原题：New model" in markdown
     assert "AI 摘要：文章介绍新模型的主要能力。" in markdown

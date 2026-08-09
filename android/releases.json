@@ -1,6 +1,14 @@
 {
-  "generated_at": "2026-07-11T07:14:46+08:00",
+  "generated_at": "2026-08-09T11:12:25+08:00",
   "releases": [
+    {
+      "version_code": 3,
+      "version_name": "0.3.0",
+      "published_at": "2026-08-09T11:12:25+08:00",
+      "apk_url": "https://production-bucket.oss.aliyun.a4.fit/site-monitor/releases/ai-monitor-0.3.0.apk",
+      "sha256": "dd82a566f5b16b9c4f6551f74e8fc34cabf16b3e245a8f22083fdf04a8836de7",
+      "release_notes": "新增手机 PPT 式项目解读，放大列表与网页字体，并保留 GitHub 源码入口"
+    },
     {
       "version_code": 2,
       "version_name": "0.2.0",

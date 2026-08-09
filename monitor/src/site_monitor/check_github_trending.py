@@ -17,6 +17,7 @@ MAX_REPOS = 5  # 每天只推送 Top N 个 trending 项目
 
 STATE_FILE = runtime_path("state", "github_trending_state.json")
 PENDING_FILE = runtime_path("pending", "github_trending_pending.txt")
+PROJECTS_FILE = runtime_path("pending", "github_trending_projects.json")
 
 # 中文化词典（按顺序应用，先匹配先生效）
 ZH_DICT = [
@@ -320,10 +321,8 @@ def save_state(state):
         json.dump(state, f, indent=2)
 
 
-def fetch_trending():
+def fetch_trending(url="https://github.com/trending"):
     """获取 GitHub Trending 页面"""
-    url = "https://github.com/trending"
-
     try:
         req = urllib.request.Request(url, headers={
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36',
@@ -465,6 +464,17 @@ def main():
             project_blocks = []
             processed = apply_postprocessors("github_trending", {"repos": repos})
             repos = processed.get("repos", repos)
+            with open(PROJECTS_FILE, "w", encoding="utf-8") as projects_file:
+                json.dump(
+                    {
+                        "date": today,
+                        "period": "daily",
+                        "repos": repos,
+                    },
+                    projects_file,
+                    ensure_ascii=False,
+                    indent=2,
+                )
             for r in repos:
                 desc_en = r.get("description", "")
                 desc_zh = r.get("zh_summary") or (zh(desc_en) if desc_en else "")

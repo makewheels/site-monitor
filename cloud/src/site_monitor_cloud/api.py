@@ -6,7 +6,9 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any, Iterable
 
-from flask import Flask, jsonify, request, send_from_directory
+from flask import Flask, Response, jsonify, request, send_from_directory
+
+from .project_page import render_project_page
 
 
 def newest_per_date(
@@ -45,6 +47,7 @@ class MongoReportStore:
         self.db = self.client[db_name]
         self.reports = self.db["reports"]
         self.items = self.db["report_items"]
+        self.project_intros = self.db["project_intros"]
         self.reports.create_index(
             [("date", -1), ("content_count", -1), ("generated_at", -1)]
         )
@@ -52,6 +55,7 @@ class MongoReportStore:
             [("topic", 1), ("date", -1), ("entry_count", -1)]
         )
         self.items.create_index("report_id")
+        self.project_intros.create_index("slug", unique=True)
 
     def upsert_report(self, payload: dict[str, Any]) -> dict[str, Any]:
         now = datetime.now().isoformat(timespec="seconds")
@@ -88,7 +92,42 @@ class MongoReportStore:
                 {"$set": item_doc, "$setOnInsert": {"created_at": created_at}},
                 upsert=True,
             )
+            if item.get("topic") == "github_trending":
+                self.upsert_project_intros(item.get("entries") or [], now=now)
         return {"report_id": report_id, "item_count": len(items)}
+
+    def upsert_project_intros(
+        self,
+        entries: list[dict[str, Any]],
+        *,
+        now: str | None = None,
+    ) -> int:
+        now = now or datetime.now().isoformat(timespec="seconds")
+        saved = 0
+        for entry in entries:
+            intro = entry.get("project_intro")
+            full_name = str(entry.get("full_name") or "").strip()
+            if not isinstance(intro, dict) or not intro or "/" not in full_name:
+                continue
+            document = dict(intro)
+            document["full_name"] = full_name
+            document["slug"] = full_name.lower()
+            document["intro_url"] = entry.get("intro_url")
+            document["source_url"] = entry.get("source_url")
+            document["updated_at"] = now
+            self.project_intros.update_one(
+                {"slug": document["slug"]},
+                {"$set": document, "$setOnInsert": {"created_at": now}},
+                upsert=True,
+            )
+            saved += 1
+        return saved
+
+    def project_intro(self, owner: str, repo: str) -> dict[str, Any] | None:
+        return self.project_intros.find_one(
+            {"slug": f"{owner}/{repo}".lower()},
+            {"_id": 0},
+        )
 
     def latest(self) -> dict[str, Any] | None:
         report = self.reports.find_one(
@@ -216,6 +255,23 @@ def create_app(store: Any | None = None) -> Flask:
     @app.get("/web/assets/<path:filename>")
     def web_asset(filename: str):
         return send_from_directory(web_dir / "assets", filename)
+
+    @app.get("/projects/<owner>/<repo>")
+    def project_page(owner: str, repo: str):
+        project = get_store().project_intro(owner, repo)
+        if project is None:
+            return Response("项目解读尚未生成", status=404, content_type="text/plain; charset=utf-8")
+        response = Response(
+            render_project_page(project),
+            content_type="text/html; charset=utf-8",
+        )
+        response.headers["Cache-Control"] = "public, max-age=300"
+        response.headers["Content-Security-Policy"] = (
+            "default-src 'none'; style-src 'unsafe-inline'; "
+            "base-uri 'none'; form-action 'none'; frame-ancestors 'self'"
+        )
+        response.headers["X-Content-Type-Options"] = "nosniff"
+        return response
 
     def get_store() -> Any:
         if app.config["REPORT_STORE"] is None:

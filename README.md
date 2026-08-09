@@ -2,7 +2,7 @@
 
 一个项目完成 AI 信息采集、飞书日报、历史 API 和 Android 阅读。生产流程为：
 
-1. GitHub Actions 在北京时间每天 07:00 运行 `monitor/`。
+1. Multica Autopilot 在北京时间每天 05:30 调度 GitHub Actions 运行 `monitor/`。
 2. 抓取 GitHub Trending、Anthropic、OpenAI、LangChain、Claude Code 等来源。
 3. 报告与去重状态写入腾讯云轻量服务器中的 MongoDB。
 4. 飞书收到交互卡片；网页和 Android 从阿里云 Function Compute 读取历史。
@@ -43,7 +43,8 @@ Claude Code 只推送功能更新，fix/docs/test/chore 不进入日报。当前
 
 推送规则：
 
-- GitHub Trending 每天生成 Top 5 和中文项目简介。
+- GitHub Trending 日榜每天生成 Top 5；周榜使用 GitHub 独立的 rolling weekly 榜单生成 Top 10，并在周六 09:00 单独推送。
+- 每个 Trending 项目都会生成适合手机阅读的“大字 HTML PowerPoint”，覆盖问题、架构原理、选择理由、适用/不适用场景、上手步骤、风险和来源。
 - Blog/RSS 通过 URL 去重，只在首次发现新文章时进入飞书；首次接入订阅源只建立基线，不补发整批历史文章。
 - 新文章先提取 feed 摘要和正文，再用大模型分别生成 `translated_title` 与 `summary_zh`。模型处理失败时本次任务失败，旧 MongoDB 状态不会被覆盖，下一次可重新处理。
 - Claude Code 只保留功能更新；纯 fix/docs/test/chore 不推送。
@@ -78,11 +79,11 @@ cd android
 ./scripts/release.sh
 ```
 
-App 支持今日栏目、按栏目筛选、历史日报、文章级卡片、应用内浏览器、外部浏览器跳转、离线缓存和启动更新检查。第一个正式版本为 `0.2.0`；以后发布新版本时保留旧的版本化 APK，同时覆盖 `ai-monitor-latest.apk`。
+App 支持今日栏目、按栏目筛选、历史日报、文章级卡片、应用内浏览器、外部浏览器跳转、离线缓存和启动更新检查。Trending 项目卡片优先打开手机项目解读页，并保留 GitHub 源码入口；列表与网页字体已针对手机放大。以后发布新版本时保留旧的版本化 APK，同时覆盖 `ai-monitor-latest.apk`。
 
 ## Web
 
-FC 根路径 `/`（也可使用 `/web`）提供响应式网页，复用现有日报 API，支持今日、栏目筛选、历史日报和文章原文跳转。网页不会嵌入只读 Token；用户首次打开时输入 Token，凭据仅保存在当前标签页的 `sessionStorage`，关闭标签页后清除。
+FC 根路径 `/`（也可使用 `/web`）提供响应式网页，复用现有日报 API，支持今日、栏目筛选、历史日报和文章原文跳转。公开路径 `/projects/<owner>/<repo>` 提供无需登录的手机项目解读页，供飞书和 Android 打开。网页不会嵌入只读 Token；用户首次打开时输入 Token，凭据仅保存在当前标签页的 `sessionStorage`，关闭标签页后清除。
 
 本地预览：
 

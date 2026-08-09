@@ -510,32 +510,44 @@ public class MainActivity extends Activity {
         LinearLayout titleRow = new LinearLayout(this);
         titleRow.setOrientation(LinearLayout.HORIZONTAL);
         titleRow.setGravity(Gravity.TOP);
-        TextView title = text(entry.optString("title", "未命名"), 15, true, TEXT);
+        TextView title = text(entry.optString("title", "未命名"), 17, true, TEXT);
         title.setPadding(0, 0, dp(8), 0);
         titleRow.addView(title, new LinearLayout.LayoutParams(0, -2, 1));
-        ImageButton open = iconButton(R.drawable.ic_open, "打开文章");
+        String introUrl = entry.optString("intro_url", "");
+        String sourceUrl = entry.optString("source_url", entry.optString("url", ""));
+        String url = DisplayFormatter.primaryContentUrl(introUrl, sourceUrl);
+        boolean hasProjectIntro = DisplayFormatter.isHttpUrl(introUrl);
+        ImageButton open = iconButton(
+                R.drawable.ic_open,
+                hasProjectIntro ? "打开项目解读" : "打开文章"
+        );
         titleRow.addView(open, new LinearLayout.LayoutParams(dp(36), dp(36)));
         card.addView(titleRow);
 
         String summaryValue = entry.optString("summary", "");
         if (!summaryValue.isEmpty()) {
-            TextView summary = text(summaryValue, 13, false, MUTED);
+            TextView summary = text(summaryValue, 15, false, MUTED);
             summary.setPadding(0, dp(5), 0, dp(6));
             card.addView(summary);
         }
         String metaValue = entry.optString("meta", "");
         if (!metaValue.isEmpty()) {
-            TextView meta = text(metaValue, 11, false, MUTED);
+            TextView meta = text(metaValue, 13, false, MUTED);
             meta.setPadding(0, 0, 0, dp(5));
             card.addView(meta);
         }
-        String url = entry.optString("url", "");
         if (DisplayFormatter.isHttpUrl(url)) {
-            TextView link = text(url, 11, false, topicColor);
+            String linkLabel = hasProjectIntro
+                    ? "打开手机项目解读 · 可在页面内查看 GitHub 源码"
+                    : url;
+            TextView link = text(linkLabel, 13, true, topicColor);
             link.setTextIsSelectable(true);
             link.setMaxLines(2);
             card.addView(link);
-            View.OnClickListener listener = v -> openArticle(entry.optString("title", "文章"), url);
+            View.OnClickListener listener = v -> openArticle(
+                    entry.optString("title", "文章"),
+                    url
+            );
             card.setOnClickListener(listener);
             open.setOnClickListener(listener);
         } else {

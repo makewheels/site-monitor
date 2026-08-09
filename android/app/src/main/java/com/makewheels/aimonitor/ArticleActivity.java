@@ -81,7 +81,7 @@ public class ArticleActivity extends Activity {
 
         TextView title = new TextView(this);
         title.setText(titleValue);
-        title.setTextSize(15);
+        title.setTextSize(17);
         title.setTextColor(TEXT);
         title.setTypeface(android.graphics.Typeface.DEFAULT_BOLD);
         title.setMaxLines(1);
@@ -104,9 +104,11 @@ public class ArticleActivity extends Activity {
 
         webView = new WebView(this);
         WebSettings settings = webView.getSettings();
-        settings.setJavaScriptEnabled(true);
+        boolean projectBrief = initialUrl.contains("/projects/");
+        settings.setJavaScriptEnabled(!projectBrief);
         settings.setDomStorageEnabled(true);
         settings.setLoadsImagesAutomatically(true);
+        settings.setTextZoom(115);
         settings.setMixedContentMode(WebSettings.MIXED_CONTENT_NEVER_ALLOW);
         settings.setBuiltInZoomControls(false);
         settings.setDisplayZoomControls(false);

@@ -3,8 +3,9 @@
 每日监控汇总 - 运行所有监控脚本并生成汇总报告
 由 GitHub Actions 调用；本程序会按 config.json 的 delivery 配置发送飞书消息
 """
-import subprocess
+import json
 import os
+import subprocess
 import sys
 from datetime import datetime
 from pathlib import Path
@@ -12,7 +13,7 @@ from pathlib import Path
 from .article_enrichment import enrich_report_payload
 from .monitor_config import PROJECT_ROOT, runtime_dir, runtime_path
 from .delivery import is_enabled, send_report
-from .report_payload import TOPICS, build_payload
+from .report_payload import TOPICS, attach_trending_projects, build_payload
 
 SCRIPTS_DIR = PROJECT_ROOT
 
@@ -25,6 +26,11 @@ CHECK_MODULES = [
     "site_monitor.check_copilot_cli",
 ]
 
+SCRIPT_TIMEOUTS = {
+    "site_monitor.check_github_trending": 420,
+}
+
+
 def run_script(module_name):
     """运行监控模块"""
     try:
@@ -32,7 +38,9 @@ def run_script(module_name):
         env["PYTHONPATH"] = str(PROJECT_ROOT / "src")
         result = subprocess.run(
             [sys.executable, "-m", module_name],
-            capture_output=True, text=True, timeout=120,
+            capture_output=True,
+            text=True,
+            timeout=SCRIPT_TIMEOUTS.get(module_name, 120),
             cwd=SCRIPTS_DIR,
             env=env,
         )
@@ -43,6 +51,7 @@ def run_script(module_name):
         print(f"⚠️ {module_name} 异常: {e}")
         return ""
 
+
 def read_pending(filename):
     """读取 pending 文件内容"""
     filepath = runtime_path("pending", filename)
@@ -51,6 +60,7 @@ def read_pending(filename):
             return f.read().strip()
     except:
         return ""
+
 
 def build_report_payload():
     today = datetime.now().strftime('%Y-%m-%d')
@@ -62,6 +72,8 @@ def build_report_payload():
 
     for topic in TOPICS:
         Path(runtime_path("pending", topic.pending_file)).unlink(missing_ok=True)
+    projects_file = Path(runtime_path("pending", "github_trending_projects.json"))
+    projects_file.unlink(missing_ok=True)
 
     # 运行所有监控脚本
     for module_name in CHECK_MODULES:
@@ -72,6 +84,12 @@ def build_report_payload():
         for topic in TOPICS
     }
     payload = build_payload(sections, date=today)
+    if projects_file.exists():
+        try:
+            projects_data = json.loads(projects_file.read_text(encoding="utf-8"))
+            payload = attach_trending_projects(payload, projects_data.get("repos") or [])
+        except (OSError, json.JSONDecodeError):
+            pass
     try:
         payload = enrich_report_payload(payload)
     except Exception:

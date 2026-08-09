@@ -1,18 +1,18 @@
 {
   "application_id": "com.makewheels.aimonitor",
-  "version_code": 2,
-  "version_name": "0.2.0",
+  "version_code": 3,
+  "version_name": "0.3.0",
   "api_base_url": "https://site-moitor-api-rhlrnacrhr.cn-beijing.fcapp.run",
   "update_endpoint_path": "/api/v1/app/releases/latest",
-  "published_at": "2026-07-11T07:14:46+08:00",
-  "release_notes": "新增栏目历史、文章级排版、应用内浏览和启动更新检查",
+  "published_at": "2026-08-09T11:12:25+08:00",
+  "release_notes": "新增手机 PPT 式项目解读，放大列表与网页字体，并保留 GitHub 源码入口",
   "distribution": {
     "provider": "aliyun_oss",
     "region": "cn-beijing",
     "bucket": "production-bucket",
     "object_prefix": "site-monitor/releases",
     "public_base_url": "https://production-bucket.oss.aliyun.a4.fit/site-monitor/releases",
-    "versioned_apk_url": "https://production-bucket.oss.aliyun.a4.fit/site-monitor/releases/ai-monitor-0.2.0.apk",
+    "versioned_apk_url": "https://production-bucket.oss.aliyun.a4.fit/site-monitor/releases/ai-monitor-0.3.0.apk",
     "latest_apk_url": "https://production-bucket.oss.aliyun.a4.fit/site-monitor/releases/ai-monitor-latest.apk",
     "release_index_url": "https://production-bucket.oss.aliyun.a4.fit/site-monitor/releases/releases.json"
   }

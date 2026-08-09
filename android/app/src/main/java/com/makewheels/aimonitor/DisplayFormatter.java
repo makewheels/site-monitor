@@ -33,6 +33,13 @@ final class DisplayFormatter {
         return latestVersionCode > installedVersionCode;
     }
 
+    static String primaryContentUrl(String introUrl, String sourceUrl) {
+        if (isHttpUrl(introUrl)) {
+            return introUrl;
+        }
+        return isHttpUrl(sourceUrl) ? sourceUrl : "";
+    }
+
     static String hostLabel(String value) {
         try {
             URI uri = URI.create(value);
