@@ -79,6 +79,18 @@
         "enabled": true,
         "module": "site_monitor.postprocessors.trending_summary",
         "function": "summarize"
+      },
+      {
+        "enabled": true,
+        "module": "site_monitor.postprocessors.trending_project_intro",
+        "function": "enrich",
+        "options": {
+          "page_base_url": "https://site-moitor-api-rhlrnacrhr.cn-beijing.fcapp.run/projects",
+          "workers": 2,
+          "max_readme_chars": 8000,
+          "fetch_timeout": 20,
+          "request_timeout": 120
+        }
       }
     ],
     "claude_code_changelog": [

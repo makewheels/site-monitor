@@ -8,6 +8,7 @@
 去重 state 走 runtime/state/codex_radar_state.json,有 Mongo 时自动随
 mongo_store 的 save/restore 机制持久化,跨 CI 运行保持去重。
 """
+import hashlib
 import json
 import os
 import sys
@@ -15,10 +16,13 @@ import urllib.request
 from datetime import datetime
 from pathlib import Path
 
+from bs4 import BeautifulSoup
+
 from .delivery import is_enabled, send_report
 from .monitor_config import PROJECT_ROOT, runtime_dir, runtime_path
 
 FEED_URL = "https://codexradar.com/feed.xml"
+PAGE_URL = "https://codexradar.com/"
 STATE_FILE = runtime_path("state", "codex_radar_state.json")
 FEED_HEADERS = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
@@ -66,6 +70,65 @@ def fetch_feed(url=FEED_URL):
             "summary": summary,
         })
     return entries
+
+
+def _text(element):
+    return element.get_text(" ", strip=True) if element else ""
+
+
+def fetch_page_event(url=PAGE_URL):
+    """读取首页当前窗口状态，弥补长期不更新的 RSS。"""
+    try:
+        req = urllib.request.Request(url, headers=FEED_HEADERS)
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            content = resp.read()
+        soup = BeautifulSoup(content, "html.parser")
+    except Exception as exc:
+        _log(f"网页状态抓取失败: {exc}")
+        return None
+
+    announcement = soup.select_one("[data-speed-window]")
+    if announcement is None:
+        _log("网页状态解析失败: 缺少 data-speed-window")
+        return None
+
+    state = str(announcement.get("data-speed-window") or "").strip().lower()
+    headline = _text(announcement.select_one(".site-announcement-headline"))
+    announcement_text = _text(announcement.select_one("p"))
+    source = announcement.select_one(".site-announcement-source[href]")
+    source_url = str(source.get("href") or "").strip() if source else ""
+    source_kicker = _text(soup.select_one(".window-source-kicker"))
+    source_title = _text(soup.select_one(".window-source-title"))
+    time_cards = [_text(card) for card in soup.select(".window-time-card")]
+    evidence = _text(soup.select_one(".window-source-evidence"))
+
+    signature_data = {
+        "state": state,
+        "headline": headline,
+        "announcement": announcement_text,
+        "source_kicker": source_kicker,
+        "source_title": source_title,
+        "times": time_cards,
+        "evidence": evidence,
+        "source_url": source_url,
+    }
+    if not state or not headline:
+        _log("网页状态解析失败: 状态或标题为空")
+        return None
+    signature = hashlib.sha256(
+        json.dumps(signature_data, ensure_ascii=False, sort_keys=True).encode("utf-8")
+    ).hexdigest()
+    details = [announcement_text, *time_cards, evidence]
+    summary = "\n".join(value for value in details if value)
+    title_parts = [headline, source_kicker, source_title]
+    return {
+        "title": " · ".join(dict.fromkeys(value for value in title_parts if value)),
+        "link": source_url or url,
+        "guid": f"page-status:{signature}",
+        "published": "",
+        "summary": summary,
+        "window_state": state,
+    }
 
 
 def load_state():
@@ -123,8 +186,9 @@ def main():
             store = None
 
     entries = fetch_feed()
-    if not entries:
-        _log("feed 无条目或抓取失败,退出")
+    page_event = fetch_page_event()
+    if not entries and page_event is None:
+        _log("RSS 与网页状态均不可用,退出")
         return 0
 
     state = load_state()
@@ -141,6 +205,23 @@ def main():
     else:
         to_send = new_open
         _log(f"feed {len(entries)} 条,新 {len(new_entries)} 条,新开启 {len(new_open)} 条")
+
+    previous_page_signature = state.get("page_signature")
+    if page_event is not None:
+        page_changed = page_event["guid"] != previous_page_signature
+        page_open = (
+            page_event.get("window_state") == "open"
+            or is_open_event(page_event.get("title", ""))
+        )
+        if page_changed and page_open:
+            if page_event["guid"] not in {item["guid"] for item in to_send}:
+                to_send.append(page_event)
+            _log("网页检测到新的窗口开启状态")
+        else:
+            _log(
+                "网页状态未触发: "
+                f"state={page_event.get('window_state') or '-'} changed={page_changed}"
+            )
 
     if to_send:
         if is_enabled():
@@ -163,6 +244,9 @@ def main():
 
     all_guids = [e["guid"] for e in entries]
     state["known_guids"] = all_guids[-MAX_KNOWN:]
+    if page_event is not None:
+        state["page_signature"] = page_event["guid"]
+        state["page_window_state"] = page_event.get("window_state")
     state["last_check"] = datetime.now().isoformat()
     save_state(state)
 

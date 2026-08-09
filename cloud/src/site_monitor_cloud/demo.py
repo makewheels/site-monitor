@@ -39,7 +39,10 @@ class DemoStore:
                         {
                             "title": "example/agent-runtime",
                             "summary": "多代理运行时与工具编排示例",
-                            "url": "https://github.com/example/agent-runtime",
+                            "full_name": "example/agent-runtime",
+                            "url": "/projects/example/agent-runtime",
+                            "intro_url": "/projects/example/agent-runtime",
+                            "source_url": "https://github.com/example/agent-runtime",
                         }
                     ],
                     "links": [
@@ -73,6 +76,25 @@ class DemoStore:
         }
         payload["item_count"] = len(payload["items"])
         self.payloads = {payload["report_id"]: payload}
+        self.project_intros = {
+            "example/agent-runtime": {
+                "full_name": "example/agent-runtime",
+                "title": "Agent Runtime：多代理任务编排示例",
+                "tagline": "用独立执行单元并行处理复杂工程任务。",
+                "problem": "减少复杂任务中人工拆分、跟进和汇总多个执行单元的成本。",
+                "architecture": [
+                    {"name": "调度器", "description": "拆分任务并管理执行顺序。"},
+                    {"name": "工作代理", "description": "在独立上下文中处理子任务。"},
+                ],
+                "why_choose": ["任务可并行拆解", "需要保留执行记录"],
+                "avoid_when": ["问题只需要一个短脚本"],
+                "use_cases": ["并行代码审查", "长时间资料研究", "自动化回归检查"],
+                "getting_started": ["阅读 README", "先在测试仓库运行"],
+                "risks": ["执行代理拥有真实系统权限，需要隔离和审查"],
+                "facts": {"stars": 1024, "language": "Python", "license": "MIT", "pushed_at": "2026-07-10"},
+                "source_urls": ["https://github.com/example/agent-runtime"],
+            }
+        }
 
     def upsert_report(self, payload: dict[str, Any]) -> dict[str, Any]:
         self.payloads[payload["report_id"]] = payload
@@ -106,6 +128,9 @@ class DemoStore:
 
     def topics(self) -> list[dict[str, Any]]:
         return TOPICS
+
+    def project_intro(self, owner: str, repo: str) -> dict[str, Any] | None:
+        return self.project_intros.get(f"{owner}/{repo}".lower())
 
 
 def main() -> None:

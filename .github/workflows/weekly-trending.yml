@@ -1,14 +1,14 @@
-name: Daily site monitor
+name: Weekly GitHub Trending
 
 on:
   workflow_dispatch:
 
 concurrency:
-  group: daily-site-monitor
+  group: weekly-github-trending
   cancel-in-progress: false
 
 jobs:
-  monitor:
+  weekly:
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -24,21 +24,17 @@ jobs:
       - name: Install dependencies
         run: uv sync --frozen
 
-      - name: Run daily summary
+      - name: Send weekly Trending
         env:
+          GITHUB_TOKEN: ${{ github.token }}
           SITE_MONITOR_MONGO_URI: ${{ secrets.SITE_MONITOR_MONGO_URI }}
           SITE_MONITOR_DB_NAME: ${{ secrets.SITE_MONITOR_DB_NAME }}
           FEISHU_APP_ID: ${{ vars.FEISHU_APP_ID }}
           FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
           FEISHU_USER_ID: ${{ secrets.FEISHU_USER_ID }}
           FEISHU_CHAT_ID: ${{ secrets.FEISHU_CHAT_ID }}
-          GITHUB_TOKEN: ${{ github.token }}
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
           DASHSCOPE_API_KEY: ${{ secrets.DASHSCOPE_API_KEY }}
           LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
           LLM_MODEL: ${{ vars.LLM_MODEL }}
-        run: |
-          set -o pipefail
-          uv run python daily_summary.py 2>&1 | tee /tmp/monitor.log
-          grep -q "MongoDB 写入成功" /tmp/monitor.log
-          grep -q "发送成功 (feishu)" /tmp/monitor.log
+        run: uv run python weekly_trending.py

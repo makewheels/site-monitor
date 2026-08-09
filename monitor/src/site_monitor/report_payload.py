@@ -242,3 +242,45 @@ def build_payload(
         "items": items,
         "item_count": len(items),
     }
+
+
+def attach_trending_projects(
+    payload: dict[str, Any],
+    projects: list[dict[str, Any]],
+) -> dict[str, Any]:
+    """Replace parsed Trending text rows with their structured project data."""
+    result = dict(payload)
+    items = [dict(item) for item in payload.get("items") or []]
+    for item in items:
+        if item.get("topic") != "github_trending":
+            continue
+        entries = []
+        for project in projects:
+            full_name = str(project.get("full_name") or "").strip()
+            source_url = str(
+                project.get("source_url")
+                or project.get("url")
+                or (f"https://github.com/{full_name}" if full_name else "")
+            )
+            intro_url = str(project.get("intro_url") or "")
+            if not full_name or not source_url:
+                continue
+            entry = {
+                "full_name": full_name,
+                "title": full_name,
+                "summary": project.get("zh_summary") or project.get("description") or "",
+                "url": intro_url or source_url,
+                "intro_url": intro_url,
+                "source_url": source_url,
+                "project_intro": project.get("project_intro") or {},
+            }
+            entries.append(entry)
+        if entries:
+            item["entries"] = entries
+            item["links"] = [
+                {"title": entry["title"], "url": entry["url"]}
+                for entry in entries
+            ]
+            item["status"] = "content"
+    result["items"] = items
+    return result

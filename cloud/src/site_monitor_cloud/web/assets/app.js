@@ -104,9 +104,10 @@ function renderEntry(entry) {
   const article = node("article", "entry");
   const translatedTitle = entry.translated_title || entry.title || "未命名内容";
   const heading = node("h3", "entry-title");
-  if (isHttpUrl(entry.url)) {
+  const primaryUrl = entry.intro_url || entry.url;
+  if (isHttpUrl(primaryUrl)) {
     const link = node("a", "", translatedTitle);
-    link.href = entry.url;
+    link.href = primaryUrl;
     link.target = "_blank";
     link.rel = "noopener noreferrer";
     heading.append(link);
@@ -120,6 +121,19 @@ function renderEntry(entry) {
   }
   const summary = entry.summary_zh || entry.summary || entry.description || "";
   if (summary) article.append(node("p", "entry-summary", summary));
+  if (isHttpUrl(entry.intro_url) && isHttpUrl(entry.source_url)) {
+    const actions = node("div", "entry-actions");
+    const intro = node("a", "entry-action entry-action-primary", "打开项目解读");
+    intro.href = entry.intro_url;
+    intro.target = "_blank";
+    intro.rel = "noopener noreferrer";
+    const source = node("a", "entry-action", "GitHub 源码");
+    source.href = entry.source_url;
+    source.target = "_blank";
+    source.rel = "noopener noreferrer";
+    actions.append(intro, source);
+    article.append(actions);
+  }
   return article;
 }
 

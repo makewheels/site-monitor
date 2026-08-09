@@ -8,6 +8,21 @@ APK_FILE="$ROOT_DIR/app/build/outputs/apk/release/app-release.apk"
 KEYSTORE="${SITE_MONITOR_ANDROID_KEYSTORE:-$HOME/.config/site-monitor/android-release.jks}"
 KEY_ALIAS="${SITE_MONITOR_ANDROID_KEY_ALIAS:-ai-monitor}"
 
+TASK_TMP_ROOT="${TMPDIR:-/tmp}"
+TASK_TMP_ROOT=$(cd "$TASK_TMP_ROOT" && pwd -P)
+TASK_TMP_DIR=$(mktemp -d "$TASK_TMP_ROOT/site-monitor-android-release.XXXXXX")
+cleanup_task_tmp() {
+  local resolved=""
+  resolved=$(cd "$TASK_TMP_DIR" 2>/dev/null && pwd -P) || return 0
+  case "$resolved" in
+    "$TASK_TMP_ROOT"/site-monitor-android-release.*) ;;
+    *) printf 'Refusing to clean unexpected temp path: %s\n' "$resolved" >&2; return 1 ;;
+  esac
+  [[ ! -L "$resolved" ]] || return 1
+  find "$resolved" -xdev -depth -delete
+}
+trap cleanup_task_tmp EXIT INT TERM
+
 version_code=$(jq -r '.version_code' "$CONFIG_FILE")
 version_name=$(jq -r '.version_name' "$CONFIG_FILE")
 api_url=$(jq -r '.api_base_url' "$CONFIG_FILE")
@@ -31,7 +46,7 @@ SITE_MONITOR_ANDROID_KEY_PASSWORD="$keystore_password" \
   "$ROOT_DIR/gradlew" -p "$ROOT_DIR" clean testReleaseUnitTest assembleRelease
 
 sha256=$(shasum -a 256 "$APK_FILE" | awk '{print $1}')
-tmp_config=$(mktemp)
+tmp_config="$TASK_TMP_DIR/release-config.json"
 jq \
   --arg published_at "$published_at" \
   --arg apk_url "$apk_url" \
@@ -39,7 +54,7 @@ jq \
   "$CONFIG_FILE" > "$tmp_config"
 mv "$tmp_config" "$CONFIG_FILE"
 
-tmp_index=$(mktemp)
+tmp_index="$TASK_TMP_DIR/releases.json"
 jq \
   --argjson version_code "$version_code" \
   --arg version_name "$version_name" \

@@ -26,4 +26,19 @@ public class DisplayFormatterTest {
     public void hostLabelHidesPathAndCredentials() {
         assertEquals("monitor.example.com", DisplayFormatter.hostLabel("https://monitor.example.com/api"));
     }
+
+    @Test
+    public void projectIntroTakesPriorityOverSourceUrl() {
+        assertEquals(
+                "https://monitor.example.com/projects/owner/repo",
+                DisplayFormatter.primaryContentUrl(
+                        "https://monitor.example.com/projects/owner/repo",
+                        "https://github.com/owner/repo"
+                )
+        );
+        assertEquals(
+                "https://github.com/owner/repo",
+                DisplayFormatter.primaryContentUrl("", "https://github.com/owner/repo")
+        );
+    }
 }

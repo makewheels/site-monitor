@@ -226,7 +226,12 @@ def _topic_markdown(item: dict[str, Any], *, show_heading: bool = True) -> str:
         if lines:
             lines.append("")
         title = entry.get("translated_title") or entry.get("title", "未命名")
-        lines.append(f"**{index}. {title}**")
+        intro_url = entry.get("intro_url")
+        source_url = entry.get("source_url")
+        if intro_url:
+            lines.append(f"**{index}. [{title}]({intro_url})**")
+        else:
+            lines.append(f"**{index}. {title}**")
         original_title = entry.get("original_title")
         if original_title and original_title != title:
             lines.append(f"原题：{original_title}")
@@ -235,7 +240,12 @@ def _topic_markdown(item: dict[str, Any], *, show_heading: bool = True) -> str:
             lines.append(prefix + str(entry["summary"]))
         if entry.get("meta"):
             lines.append(f"{entry['meta']}")
-        if entry.get("url"):
+        if intro_url:
+            links = [f"📖 [手机项目解读]({intro_url})"]
+            if source_url:
+                links.append(f"💻 [GitHub 源码]({source_url})")
+            lines.append(" · ".join(links))
+        elif entry.get("url"):
             lines.append(f"🔗 {entry['url']}")
     if not entries:
         body_lines = [
@@ -283,8 +293,9 @@ def _build_feishu_cards(payload: dict[str, Any], max_chars: int) -> list[dict[st
     for group_index, group in enumerate(groups, 1):
         first_item = group[0][0]
         entries = first_item.get("entries") or []
-        if group_index == 1 and first_item.get("topic") == "github_trending":
-            title = f"🔥 GitHub Trending · {len(entries)} 个项目"
+        if group_index == 1 and str(first_item.get("topic", "")).startswith("github_trending"):
+            period = "本周" if first_item.get("topic") == "github_trending_weekly" else "今日"
+            title = f"🔥 {period} GitHub Trending · {len(entries)} 个项目"
             template = "green"
         else:
             title = f"AI 早报 · {payload.get('date', '')}"

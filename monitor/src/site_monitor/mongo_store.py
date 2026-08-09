@@ -20,6 +20,7 @@ class MongoMonitorStore:
         self.reports = self.db["reports"]
         self.items = self.db["report_items"]
         self.monitor_state = self.db["monitor_state"]
+        self.project_intros = self.db["project_intros"]
         self.reports.create_index(
             [("date", -1), ("content_count", -1), ("generated_at", -1)]
         )
@@ -28,6 +29,7 @@ class MongoMonitorStore:
         )
         self.items.create_index("report_id")
         self.monitor_state.create_index("filename", unique=True)
+        self.project_intros.create_index("slug", unique=True)
 
     def upsert_report(self, payload: dict[str, Any]) -> dict[str, Any]:
         now = datetime.now().isoformat(timespec="seconds")
@@ -64,7 +66,36 @@ class MongoMonitorStore:
                 {"$set": item_doc, "$setOnInsert": {"created_at": created_at}},
                 upsert=True,
             )
+            if item.get("topic") == "github_trending":
+                self.upsert_project_intros(item.get("entries") or [], now=now)
         return {"report_id": report_id, "item_count": len(items)}
+
+    def upsert_project_intros(
+        self,
+        entries: list[dict[str, Any]],
+        *,
+        now: str | None = None,
+    ) -> int:
+        now = now or datetime.now().isoformat(timespec="seconds")
+        saved = 0
+        for entry in entries:
+            intro = entry.get("project_intro")
+            full_name = str(entry.get("full_name") or "").strip()
+            if not isinstance(intro, dict) or not intro or "/" not in full_name:
+                continue
+            document = dict(intro)
+            document["full_name"] = full_name
+            document["slug"] = full_name.lower()
+            document["intro_url"] = entry.get("intro_url")
+            document["source_url"] = entry.get("source_url")
+            document["updated_at"] = now
+            self.project_intros.update_one(
+                {"slug": document["slug"]},
+                {"$set": document, "$setOnInsert": {"created_at": now}},
+                upsert=True,
+            )
+            saved += 1
+        return saved
 
     def restore_monitor_state(self, state_dir: Path) -> int:
         state_dir.mkdir(parents=True, exist_ok=True)
