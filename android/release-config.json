@@ -4,7 +4,7 @@
   "version_name": "0.4.0",
   "api_base_url": "https://site-monitor.a4.fit",
   "update_endpoint_path": "/api/v1/app/releases/latest",
-  "published_at": "2026-08-09T11:12:25+08:00",
+  "published_at": "2026-08-09T12:08:19+08:00",
   "release_notes": "新增应用内 APK 下载进度、SHA-256 校验与安装引导；项目解读改为更丰富的可视化简报，并修复飞书链接下载问题",
   "distribution": {
     "provider": "aliyun_oss",
