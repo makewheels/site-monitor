@@ -191,19 +191,16 @@ def make_report_id(date: str, full_text: str) -> str:
     return f"{date}-{digest}"
 
 
-def project_digest(project: dict[str, Any], limit: int = 420) -> str:
-    """Build a compact but decision-useful Chinese summary for chat delivery."""
+def project_digest(project: dict[str, Any], limit: int = 120) -> str:
+    """Build a short chat summary without depending on a generated project deck."""
     intro = project.get("project_intro")
     intro = intro if isinstance(intro, dict) else {}
-    candidates = [
-        intro.get("tagline"),
-        intro.get("problem"),
-    ]
-    why_choose = intro.get("why_choose")
-    if isinstance(why_choose, list) and why_choose:
-        candidates.append("适合选择：" + "；".join(str(value) for value in why_choose[:2]))
-    if not any(str(value or "").strip() for value in candidates):
-        candidates = [project.get("zh_summary"), project.get("description")]
+    if str(project.get("zh_summary") or "").strip():
+        candidates = [project.get("zh_summary")]
+    elif str(project.get("description") or "").strip():
+        candidates = [project.get("description")]
+    else:
+        candidates = [intro.get("tagline"), intro.get("problem")]
 
     sentences: list[str] = []
     seen: set[str] = set()
@@ -214,6 +211,8 @@ def project_digest(project: dict[str, Any], limit: int = 420) -> str:
             continue
         seen.add(identity)
         sentences.append(sentence + ("。" if not sentence.endswith(("。", "！", "？")) else ""))
+        if len(sentences) >= 2:
+            break
     digest = "".join(sentences)
     if len(digest) <= limit:
         return digest
