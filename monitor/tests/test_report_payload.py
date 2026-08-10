@@ -7,10 +7,11 @@ from site_monitor.report_payload import (
 )
 
 
-def test_project_digest_uses_intro_for_richer_chat_summary():
+def test_project_digest_prefers_one_line_summary_over_project_deck():
     digest = project_digest(
         {
             "description": "short",
+            "zh_summary": "把重复任务编排成可观测流程",
             "project_intro": {
                 "tagline": "把重复任务编排成可观测流程",
                 "problem": "解决脚本散落且失败难追踪的问题",
@@ -19,10 +20,7 @@ def test_project_digest_uses_intro_for_richer_chat_summary():
         }
     )
 
-    assert digest == (
-        "把重复任务编排成可观测流程。解决脚本散落且失败难追踪的问题。"
-        "适合选择：需要失败重试；需要运行历史。"
-    )
+    assert digest == "把重复任务编排成可观测流程。"
 
 
 def test_build_payload_groups_pending_sections_by_topic():

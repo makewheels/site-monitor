@@ -58,6 +58,25 @@ def test_feed_entry_excerpt_cleans_html():
     assert article_enrichment.feed_entry_excerpt(entry) == "A useful article."
 
 
+def test_model_summary_is_hard_limited_for_delivery():
+    parsed = article_enrichment._parse_model_json(
+        json.dumps(
+            {
+                "items": [
+                    {
+                        "id": "article:0",
+                        "translated_title": "标题",
+                        "summary_zh": "长" * 300,
+                    }
+                ]
+            },
+            ensure_ascii=False,
+        )
+    )
+
+    assert len(parsed["article:0"]["summary_zh"]) == 140
+
+
 def test_enrich_report_adds_translation_summary_and_provenance(monkeypatch):
     prompts = []
     monkeypatch.setenv("LLM_API_KEY", "test-key")
@@ -112,6 +131,8 @@ def test_enrich_report_adds_translation_summary_and_provenance(monkeypatch):
     assert len(prompts) == 1
     assert "translated_title" in prompts[0]
     assert "summary_zh" in prompts[0]
+    assert "最多 2 句" in prompts[0]
+    assert "不超过 120 个汉字" in prompts[0]
     assert result["items"][1]["entries"][0]["title"] == "owner/project"
 
 

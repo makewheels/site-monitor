@@ -1,4 +1,16 @@
 from site_monitor.postprocessors import trending_project_intro
+from site_monitor.postprocess import get_postprocessor_specs
+
+
+def test_project_deck_generation_is_disabled_in_production_config():
+    specs = get_postprocessor_specs("github_trending")
+    project_deck = next(
+        spec
+        for spec in specs
+        if spec.get("module", "").endswith("trending_project_intro")
+    )
+
+    assert project_deck["enabled"] is False
 
 
 def test_enrich_generates_and_reuses_cached_project_intro(monkeypatch, tmp_path):

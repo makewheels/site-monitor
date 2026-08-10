@@ -26,7 +26,7 @@ android/   Android App、版本配置、发布历史及测试
 - Android 版本、FC API 地址、OSS 地址：`android/release-config.json`
 - 已发布 APK 历史：`android/releases.json`
 
-模型通过 `LLM_API_KEY`、`LLM_BASE_URL`、`LLM_MODEL` 切换，不绑定特定厂商实现；当前生产配置使用阿里云百炼兼容接口。生成 HTML 只需要监控任务直接调用模型，不依赖 Multica 或 Codex。每篇新博客文章会先提取正文，再分别生成中文标题翻译和中文摘要；原文、翻译、摘要、URL 与模型元数据一起存入 MongoDB，飞书和 Android 使用同一份结构化结果。MongoDB URI、飞书凭据、Android API Token、上传 Token 和签名密码只能放在 GitHub Secrets、FC 环境变量、本机环境变量或系统钥匙串中。
+模型通过 `LLM_API_KEY`、`LLM_BASE_URL`、`LLM_MODEL` 切换，不绑定特定厂商实现；当前生产配置使用阿里云百炼兼容接口。Trending 只批量生成一句短中文概括，不再生成逐项目 HTML/PPT 深度解读。每篇新博客文章会先提取正文，再分别生成中文标题和不超过两句的中文摘要；原文、翻译、摘要、URL 与模型元数据一起存入 MongoDB，飞书和 Android 使用同一份结构化结果。MongoDB URI、飞书凭据、Android API Token、上传 Token 和签名密码只能放在 GitHub Secrets、FC 环境变量、本机环境变量或系统钥匙串中。
 
 ## Monitor
 
@@ -45,7 +45,7 @@ Claude Code 只推送功能更新，fix/docs/test/chore 不进入日报。当前
 
 - GitHub Trending 日榜每天生成 Top 5；周榜使用 GitHub 独立的 rolling weekly 榜单生成 Top 10，并在周六 09:00 单独推送。
 - Codex 重置窗口每小时第 07 分钟由服务器直接触发检测；它只监控开放状态，不调用 Codex 模型。
-- 每个 Trending 项目都会生成适合手机阅读的“大字可视化 HTML 简报”，覆盖问题、目标用户、端到端工作流、架构积木、语言构成、选择理由、同类取舍、场景、上手步骤、尽调问题、风险和来源。
+- Trending 项目只保留一句“它做什么/核心亮点”的中文概括并链接 GitHub；旧的项目解读页继续保留，但不再新增或刷新。
 - Blog/RSS 通过 URL 去重，只在首次发现新文章时进入飞书；首次接入订阅源只建立基线，不补发整批历史文章。
 - 新文章先提取 feed 摘要和正文，再用大模型分别生成 `translated_title` 与 `summary_zh`。模型处理失败时本次任务失败，旧 MongoDB 状态不会被覆盖，下一次可重新处理。
 - Claude Code 只保留功能更新；纯 fix/docs/test/chore 不推送。
@@ -80,7 +80,7 @@ cd android
 ./scripts/release.sh
 ```
 
-App 支持今日栏目、按栏目筛选、历史日报、文章级卡片、应用内浏览器、外部浏览器跳转、离线缓存和启动更新检查。Trending 项目卡片优先打开手机项目解读页，并保留 GitHub 源码入口；列表与网页字体已针对手机放大。0.4.0 起，新版本会在应用内通过系统 DownloadManager 下载并显示进度，SHA-256 校验通过后再打开系统安装界面。以后发布新版本时保留旧的版本化 APK，同时覆盖 `ai-monitor-latest.apk`。
+App 支持今日栏目、按栏目筛选、历史日报、文章级卡片、应用内浏览器、外部浏览器跳转、离线缓存和启动更新检查。新的 Trending 项目卡片直接打开 GitHub；历史报告中已有的项目解读链接仍可访问。0.4.0 起，新版本会在应用内通过系统 DownloadManager 下载并显示进度，SHA-256 校验通过后再打开系统安装界面。以后发布新版本时保留旧的版本化 APK，同时覆盖 `ai-monitor-latest.apk`。
 
 ## Web
 

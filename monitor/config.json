@@ -81,7 +81,7 @@
         "function": "summarize"
       },
       {
-        "enabled": true,
+        "enabled": false,
         "module": "site_monitor.postprocessors.trending_project_intro",
         "function": "enrich",
         "options": {
