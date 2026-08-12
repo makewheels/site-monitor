@@ -12,7 +12,6 @@ TOPICS = [
     {"key": "anthropic_engineering", "name": "Anthropic Engineering", "color": "#a35e24", "order": 20},
     {"key": "openai_news", "name": "OpenAI News", "color": "#17725c", "order": 30},
     {"key": "langchain_blog", "name": "LangChain Blog", "color": "#1d7782", "order": 40},
-    {"key": "claude_code", "name": "Claude Code", "color": "#64546c", "order": 50},
 ]
 
 

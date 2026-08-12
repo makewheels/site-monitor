@@ -22,8 +22,6 @@ TOPICS: tuple[Topic, ...] = (
     Topic("anthropic_engineering", "Anthropic Engineering", "anthropic_pending.txt", "#a35e24", 20),
     Topic("openai_news", "OpenAI News", "openai_news_pending.txt", "#17725c", 30),
     Topic("langchain_blog", "LangChain Blog", "langchain_blog_pending.txt", "#1d7782", 40),
-    Topic("claude_code", "Claude Code", "claude_code_pending.txt", "#64546c", 50),
-    Topic("github_copilot_cli", "GitHub Copilot CLI", "copilot_cli_pending.txt", "#3169b0", 60),
     Topic("huggingface_blog", "Hugging Face Blog", "huggingface_blog_pending.txt", "#d97706", 70),
     Topic("google_research", "Google Research", "google_research_pending.txt", "#4285f4", 80),
     Topic("metr", "METR", "metr_pending.txt", "#6d28d9", 90),

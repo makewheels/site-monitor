@@ -38,7 +38,7 @@ class FakeStore:
         return self.payloads.get(report_id)
 
     def topics(self):
-        return [{"key": "claude_code", "name": "Claude Code", "order": 50}]
+        return [{"key": "openai_news", "name": "OpenAI News", "order": 30}]
 
     def project_intro(self, owner, repo):
         return self.project_intros.get(f"{owner}/{repo}".lower())
@@ -53,7 +53,7 @@ def test_upload_and_read_latest_report(monkeypatch):
     payload = {
         "report_id": "2026-05-18-test",
         "date": "2026-05-18",
-        "items": [{"topic": "claude_code", "title": "Claude Code"}],
+        "items": [{"topic": "openai_news", "title": "OpenAI News"}],
     }
 
     upload = client.post(

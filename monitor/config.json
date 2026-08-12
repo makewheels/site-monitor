@@ -19,15 +19,6 @@
       "enabled": true
     },
     {
-      "name": "Claude Code Changelog",
-      "url": "https://github.com/anthropics/claude-code/releases",
-      "article_selector": ".release",
-      "title_selector": "a.release-link",
-      "link_selector": "a.release-link",
-      "check_interval": 86400,
-      "enabled": true
-    },
-    {
       "name": "GitHub Trending",
       "url": "https://github.com/trending",
       "article_selector": "article.Box-row",
@@ -46,16 +37,6 @@
         "https://rsshub.ktachibana.party/anthropic/engineering"
       ],
       "fallback_url": "https://www.anthropic.com/engineering"
-    },
-    "claude_code_changelog": {
-      "rsshub_urls": [
-        "https://rsshub.app/claude/code/changelog",
-        "https://rsshub.ktachibana.party/claude/code/changelog"
-      ]
-    },
-    "github_copilot_cli_changelog": {
-      "atom_url": "https://github.com/github/copilot-cli/commits/main/changelog.md.atom",
-      "raw_url": "https://raw.githubusercontent.com/github/copilot-cli/main/changelog.md"
     },
     "langchain_blog": {
       "feed_urls": [
@@ -90,19 +71,6 @@
           "max_readme_chars": 8000,
           "fetch_timeout": 20,
           "request_timeout": 120
-        }
-      }
-    ],
-    "claude_code_changelog": [
-      {
-        "enabled": true,
-        "module": "site_monitor.postprocessors.changelog",
-        "function": "split_changelog_sections",
-        "options": {
-          "include_fixes": false,
-          "notify_only_feature_updates": true,
-          "feature_heading": "功能更新",
-          "fix_heading": "修复/其他"
         }
       }
     ]

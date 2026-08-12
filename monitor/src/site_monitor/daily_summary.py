@@ -22,8 +22,6 @@ CHECK_MODULES = [
     "site_monitor.check_anthropic",
     "site_monitor.check_rss_feeds",
     "site_monitor.check_langchain_blog",
-    "site_monitor.check_claude_code",
-    "site_monitor.check_copilot_cli",
 ]
 
 SCRIPT_TIMEOUTS = {

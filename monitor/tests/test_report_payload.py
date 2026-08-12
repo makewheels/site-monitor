@@ -26,7 +26,7 @@ def test_project_digest_prefers_one_line_summary_over_project_deck():
 def test_build_payload_groups_pending_sections_by_topic():
     payload = build_payload(
         {
-            "claude_code": "## Claude Code\n- 新增功能 [详情](https://example.com/claude)",
+            "openai_news": "## OpenAI News\n- 新增功能 [详情](https://example.com/openai)",
             "github_trending": "Repo A\nhttps://github.com/example/repo-a",
         },
         date="2026-05-18",
@@ -37,10 +37,10 @@ def test_build_payload_groups_pending_sections_by_topic():
     assert payload["item_count"] == 2
     assert [item["topic"] for item in payload["items"]] == [
         "github_trending",
-        "claude_code",
+        "openai_news",
     ]
     assert payload["items"][1]["links"] == [
-        {"title": "详情", "url": "https://example.com/claude"}
+        {"title": "详情", "url": "https://example.com/openai"}
     ]
     assert payload["items"][0]["entries"] == [
         {"title": "Repo A", "url": "https://github.com/example/repo-a"}

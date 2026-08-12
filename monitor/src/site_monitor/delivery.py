@@ -290,8 +290,6 @@ _TOPIC_ICONS = {
     "anthropic_engineering": "A",
     "openai_news": "O",
     "langchain_blog": "L",
-    "claude_code": "C",
-    "github_copilot_cli": "⌘",
     "huggingface_blog": "HF",
     "google_research": "G",
     "metr": "M",
