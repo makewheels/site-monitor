@@ -48,6 +48,12 @@ Use `uv` for Python and `pnpm` for Node. Do not use pip, venv, Poetry, npm, or Y
 
 Never commit or print MongoDB URIs, passwords, server addresses, API keys, Feishu secrets, app/upload tokens, or Android signing credentials. Public FC and OSS HTTPS endpoints may be tracked in their designated JSON configuration files.
 
+- Store monitor, Feishu, MongoDB, app, and upload credentials in Infisical `tools/dev/site-monitor`.
+- Store the shared model credential in `common/dev/llm/site-monitor`; consumers load it after the app project so it overrides compatibility aliases.
+- GitHub Actions authenticates with repository/ref/audience-bound OIDC and must not retain business GitHub Secrets.
+- FC environment variables are runtime mirrors, not an independent source of truth. Verify them against Infisical after every rotation.
+- Local development uses `infisical run`; do not recreate `monitor/.env` with real values.
+
 ## Verification
 
 Run all module checks before committing:
