@@ -26,7 +26,7 @@ android/   Android App、版本配置、发布历史及测试
 - Android 版本、FC API 地址、OSS 地址：`android/release-config.json`
 - 已发布 APK 历史：`android/releases.json`
 
-模型通过 `LLM_API_KEY`、`LLM_BASE_URL`、`LLM_MODEL` 切换，不绑定特定厂商实现；当前生产配置使用阿里云百炼兼容接口。Trending 只批量生成一句短中文概括，不再生成逐项目 HTML/PPT 深度解读。每篇新博客文章会先提取正文，再分别生成中文标题和不超过两句的中文摘要；原文、翻译、摘要、URL 与模型元数据一起存入 MongoDB，飞书和 Android 使用同一份结构化结果。MongoDB URI、飞书凭据、Android API Token、上传 Token 和签名密码只能放在 GitHub Secrets、FC 环境变量、本机环境变量或系统钥匙串中。
+模型通过 `LLM_API_KEY`、`LLM_BASE_URL`、`LLM_MODEL` 切换，不绑定特定厂商实现；当前生产配置使用阿里云百炼兼容接口。Trending 只批量生成一句短中文概括，不再生成逐项目 HTML/PPT 深度解读。每篇新博客文章会先提取正文，再分别生成中文标题和不超过两句的中文摘要；原文、翻译、摘要、URL 与模型元数据一起存入 MongoDB，飞书和 Android 使用同一份结构化结果。MongoDB URI、飞书凭据、Android API Token 和上传 Token 的真相源是 Infisical；FC 环境变量只保留运行时副本，签名密码继续放系统钥匙串。
 
 ## Monitor
 
@@ -36,7 +36,11 @@ uv sync --frozen
 uv run pytest
 
 # 手动执行一次真实日报，会写 MongoDB 并发送飞书
-uv run python daily_summary.py
+# 先按 infra 运维文档设置 INFISICAL_API_URL，并完成 infisical login
+infisical run --env=dev --path=/site-monitor -- \
+  infisical run --projectId=944d9216-7c11-4174-a39c-d0b339147a99 \
+    --env=dev --path=/llm/site-monitor -- \
+    uv run python daily_summary.py
 ```
 
 当前来源与日报都是每天抓取一次；提高为每小时不会增加 07:00 日报的完整性，只会增加请求与重复去重工作。
@@ -67,7 +71,7 @@ Android 只拿到只读 Token，不直接访问 MongoDB。历史接口按日期�
 
 当前 FC 是通过 API/CLI 直接创建的独立 Web Function `site-monitor-api`，区域为华北 2（北京），不是 Serverless Application Center 的 Application。因此它显示在阿里云控制台的“函数管理 > 函数”，不会显示在“应用”列表。FC 只负责鉴权和读取 API；日报、文章翻译、摘要、去重状态与历史正文保存在 MongoDB。
 
-仓库根目录的 `s.yaml` 描述同一个线上函数，可用于把 GitHub 仓库导入 Serverless Application Center。敏感环境变量不写入 YAML，继续由现有 FC 环境变量管理。
+仓库根目录的 `s.yaml` 描述同一个线上函数，可用于把 GitHub 仓库导入 Serverless Application Center。敏感环境变量不写入 YAML；其真相源在 Infisical，FC 环境变量是部署消费方的运行时副本，轮换时必须同步更新并做 `/healthz` 验证。
 
 ## Android
 
@@ -97,4 +101,4 @@ PYTHONPATH=src uv run python -m site_monitor_cloud.demo
 
 ## Secrets
 
-变量名示例见 `monitor/.env.example` 和 `cloud/deploy/fc-env.example`。不要把真实密码、Token、MongoDB 地址或服务器 IP 写入仓库。
+GitHub Actions 通过受仓库、master 分支和 audience 约束的 OIDC 身份，先读取 `tools/dev/site-monitor`，再用 `common/dev/llm/site-monitor` 覆盖共享 LLM key；仓库不保存业务 GitHub Secrets。变量名示例见 `monitor/.env.example` 和 `cloud/deploy/fc-env.example`。不要把真实密码、Token、MongoDB 地址或服务器 IP 写入仓库。
