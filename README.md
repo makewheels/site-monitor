@@ -3,7 +3,7 @@
 一个项目完成 AI 信息采集、飞书日报、历史 API 和 Android 阅读。生产流程为：
 
 1. 服务器 systemd timer 在北京时间每天 05:30 直接调度 GitHub Actions 运行 `monitor/`，不启动 AI Agent。
-2. 抓取 GitHub Trending、Anthropic、OpenAI、LangChain 等来源。
+2. 只抓取 GitHub Trending 和 Anthropic Engineering 两个来源。
 3. 报告与去重状态写入腾讯云轻量服务器中的 MongoDB。
 4. 飞书收到交互卡片；网页和 Android 从阿里云 Function Compute 读取历史。
 5. Android APK 和版本索引发布到阿里云 OSS。
@@ -43,14 +43,14 @@ infisical run --env=dev --path=/site-monitor -- \
     uv run python daily_summary.py
 ```
 
-当前来源与日报都是每天抓取一次；提高为每小时不会增加 07:00 日报的完整性，只会增加请求与重复去重工作。
+当前只剩 GitHub Trending 和 Anthropic Engineering 两个来源，都是每天抓取一次；提高为每小时不会增加 05:30 日报的完整性，只会增加请求与重复去重工作。
 
 推送规则：
 
 - GitHub Trending 日榜每天生成 Top 5；周榜使用 GitHub 独立的 rolling weekly 榜单生成 Top 10，并在周六 09:00 单独推送。
-- Codex 重置窗口每小时第 07 分钟由服务器直接触发检测；它只监控开放状态，不调用 Codex 模型。
+- Anthropic Engineering 通过 URL 去重，只在首次发现新文章时进入飞书；首次接入只建立基线，不补发历史文章。
+- 除 GitHub Trending 和 Anthropic Engineering 外没有其他来源；Codex 雷达及 OpenAI、Google、Hugging Face、METR、SWE-bench、Trail of Bits、OWASP LLM Top 10、LangChain 等推送已移除。
 - Trending 项目只保留一句“它做什么/核心亮点”的中文概括并链接 GitHub；旧的项目解读页继续保留，但不再新增或刷新。
-- Blog/RSS 通过 URL 去重，只在首次发现新文章时进入飞书；首次接入订阅源只建立基线，不补发整批历史文章。
 - 新文章先提取 feed 摘要和正文，再用大模型分别生成 `translated_title` 与 `summary_zh`。模型处理失败时本次任务失败，旧 MongoDB 状态不会被覆盖，下一次可重新处理。
 
 ## Cloud API

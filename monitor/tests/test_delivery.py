@@ -169,7 +169,7 @@ def test_feishu_structured_card_uses_trending_header_and_visible_urls(monkeypatc
                 ],
             },
             {
-                "topic": "openai_news",
+                "topic": "anthropic_engineering",
                 "topic_name": "OpenAI News",
                 "status": "content",
                 "entries": [

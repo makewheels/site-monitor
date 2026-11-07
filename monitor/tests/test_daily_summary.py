@@ -14,7 +14,7 @@ def test_article_enrichment_failure_rolls_back_monitor_state(monkeypatch, tmp_pa
         path.parent.mkdir(parents=True, exist_ok=True)
         return str(path)
 
-    state_file = fake_runtime_dir("state") / "openai_news_state.json"
+    state_file = fake_runtime_dir("state") / "anthropic_engineering_state.json"
     state_file.write_text('{"known_urls": ["old"]}')
 
     def fake_run_script(module_name):

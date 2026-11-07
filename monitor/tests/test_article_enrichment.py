@@ -25,7 +25,7 @@ def _payload():
         "report_id": "2026-07-11-test",
         "items": [
             {
-                "topic": "openai_news",
+                "topic": "anthropic_engineering",
                 "status": "content",
                 "entries": [
                     {
@@ -91,7 +91,7 @@ def test_enrich_report_adds_translation_summary_and_provenance(monkeypatch):
             {
                 "items": [
                     {
-                        "id": "openai_news:0",
+                        "id": "anthropic_engineering:0",
                         "translated_title": "构建可靠的智能体",
                         "summary_zh": "文章介绍如何通过评测、重试和链路追踪提升智能体可靠性。",
                     }
@@ -104,7 +104,7 @@ def test_enrich_report_adds_translation_summary_and_provenance(monkeypatch):
         {
             "enabled": True,
             "required": True,
-            "topics": ["openai_news"],
+            "topics": ["anthropic_engineering"],
             "batch_size": 4,
             "retries": 1,
             "model": "test-model",
@@ -141,7 +141,7 @@ def test_no_new_articles_does_not_call_model_or_fetch(monkeypatch):
     payload = {
         "items": [
             {
-                "topic": "openai_news",
+                "topic": "anthropic_engineering",
                 "status": "no_update",
                 "entries": [],
             }
@@ -150,7 +150,7 @@ def test_no_new_articles_does_not_call_model_or_fetch(monkeypatch):
 
     result = article_enrichment.enrich_report_payload(
         payload,
-        {"enabled": True, "required": True, "topics": ["openai_news"]},
+        {"enabled": True, "required": True, "topics": ["anthropic_engineering"]},
         content_fetcher=lambda *args, **kwargs: pytest.fail("must not fetch"),
         http_post=lambda *args, **kwargs: pytest.fail("must not call model"),
     )
@@ -170,7 +170,7 @@ def test_required_enrichment_rejects_missing_api_key(monkeypatch):
             {
                 "enabled": True,
                 "required": True,
-                "topics": ["openai_news"],
+                "topics": ["anthropic_engineering"],
             },
             content_fetcher=lambda *args, **kwargs: "article body",
         )

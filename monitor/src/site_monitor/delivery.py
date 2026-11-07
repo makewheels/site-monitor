@@ -288,14 +288,6 @@ def _send_via_feishu_api(
 _TOPIC_ICONS = {
     "github_trending": "🔥",
     "anthropic_engineering": "A",
-    "openai_news": "O",
-    "langchain_blog": "L",
-    "huggingface_blog": "HF",
-    "google_research": "G",
-    "metr": "M",
-    "swe_bench": "SWE",
-    "trail_of_bits": "ToB",
-    "owasp_llm_top10": "OWASP",
 }
 
 

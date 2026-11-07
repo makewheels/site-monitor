@@ -62,8 +62,8 @@ def test_report_upsert_persists_ai_enrichment_fields():
         },
         "items": [
             {
-                "item_id": "2026-07-11-test:openai_news",
-                "topic": "openai_news",
+                "item_id": "2026-07-11-test:anthropic_engineering",
+                "topic": "anthropic_engineering",
                 "entries": [
                     {
                         "original_title": "Original",

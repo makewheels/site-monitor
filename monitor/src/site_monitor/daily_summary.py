@@ -20,8 +20,6 @@ SCRIPTS_DIR = PROJECT_ROOT
 CHECK_MODULES = [
     "site_monitor.check_github_trending",
     "site_monitor.check_anthropic",
-    "site_monitor.check_rss_feeds",
-    "site_monitor.check_langchain_blog",
 ]
 
 SCRIPT_TIMEOUTS = {

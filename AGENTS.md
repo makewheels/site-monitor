@@ -10,10 +10,11 @@ Use `uv` for Python and `pnpm` for Node. Do not use pip, venv, Poetry, npm, or Y
 
 ## Monitor
 
-- Keep feed, API, Atom, RSSHub, and changelog URLs in `monitor/config.json`.
+- Only two sources exist: GitHub Trending and Anthropic Engineering. Do not re-add RSS feeds, blog sources, or the Codex radar without an explicit request.
+- Keep feed, API, and RSSHub URLs in `monitor/config.json`.
 - Read source configuration through `site_monitor.monitor_config`; do not hardcode source URLs in collectors.
 - Keep collector code under `monitor/src/site_monitor/` and offline tests under `monitor/tests/`.
-- Add ordinary RSS/Atom sources through `rss_feeds` plus a `Topic` entry; do not create a new collector unless the source needs custom parsing.
+- Every new source needs a `Topic` entry in `report_payload.py` and a matching collector in `daily_summary.CHECK_MODULES`.
 - Keep model access provider-neutral through `LLM_API_KEY`, `LLM_BASE_URL`, and `LLM_MODEL`; `DASHSCOPE_API_KEY` is a compatibility fallback only.
 - Enrich only newly discovered blog articles. Persist both `translated_title` and `summary_zh`, plus the original title/excerpt and model metadata, before MongoDB and Feishu delivery.
 - Runtime files belong under `monitor/runtime/` and must not be committed.
@@ -21,7 +22,9 @@ Use `uv` for Python and `pnpm` for Node. Do not use pip, venv, Poetry, npm, or Y
 ## Delivery And Schedule
 
 - `.github/workflows/daily-monitor.yml` is the production scheduler.
-- The schedule is 07:00 `Asia/Shanghai`; all current sources are collected once per day.
+- The schedule is 05:30 `Asia/Shanghai`; both remaining sources are collected once per day.
+- `weekly-trending.yml` runs on Saturday 09:00 `Asia/Shanghai` and pushes the weekly Trending top 10.
+- Workflows are dispatched by the server-side systemd timers; the repository keeps no cron trigger.
 - Production delivery uses the Feishu Open API from `monitor/src/site_monitor/delivery.py`.
 - Monitor state and structured reports are persisted to MongoDB before delivery.
 - The application connects through the dedicated `site_monitor_app` account. Root credentials are administration-only.

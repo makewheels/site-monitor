@@ -18,15 +18,7 @@ from .monitor_config import load_config
 from .postprocessors import _load_env
 
 
-DEFAULT_ARTICLE_TOPICS = (
-    "anthropic_engineering",
-    "openai_news",
-    "langchain_blog",
-    "huggingface_blog",
-    "google_research",
-    "metr",
-    "trail_of_bits",
-)
+DEFAULT_ARTICLE_TOPICS = ("anthropic_engineering",)
 
 
 def clean_text(value: Any, *, limit: int = 4_000) -> str:
