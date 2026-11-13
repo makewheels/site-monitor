@@ -16,6 +16,7 @@ import requests
 
 from .monitor_config import load_config
 from .postprocessors import _load_env
+from . import llm
 
 
 DEFAULT_ARTICLE_TOPICS = ("anthropic_engineering",)
@@ -130,20 +131,16 @@ def _request_batch(
     last_error: Exception | None = None
     for attempt in range(retries):
         try:
-            request_body: dict[str, Any] = {
-                "model": model,
-                "messages": [{"role": "user", "content": prompt}],
-            }
-            if attempt == 0:
-                request_body["response_format"] = {"type": "json_object"}
-            response = http_post(
-                f"{base_url.rstrip('/')}/chat/completions",
-                headers={"Authorization": f"Bearer {api_key}"},
-                json=request_body,
+            data = llm.chat(
+                [{"role": "user", "content": prompt}],
+                api_key=api_key,
+                base_url=base_url,
+                model=model,
                 timeout=timeout,
+                response_format={"type": "json_object"} if attempt == 0 else None,
+                http_post=http_post,
             )
-            response.raise_for_status()
-            content = response.json()["choices"][0]["message"]["content"]
+            content = data["choices"][0]["message"]["content"]
             return _parse_model_json(content)
         except Exception as exc:
             last_error = exc

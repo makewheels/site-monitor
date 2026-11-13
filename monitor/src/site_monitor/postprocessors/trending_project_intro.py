@@ -12,6 +12,7 @@ from typing import Any
 import requests
 
 from . import _load_env
+from .. import llm
 from ..monitor_config import runtime_path
 
 
@@ -259,18 +260,15 @@ def _request_intro(
         f"项目元数据：\n{json.dumps(metadata, ensure_ascii=False)}\n\n"
         f"README：\n{readme or 'README 暂不可获取'}"
     )
-    response = requests.post(
-        f"{base_url.rstrip('/')}/chat/completions",
-        headers={"Authorization": f"Bearer {api_key}"},
-        json={
-            "model": model,
-            "messages": [{"role": "user", "content": prompt}],
-            "response_format": {"type": "json_object"},
-        },
+    data = llm.chat(
+        [{"role": "user", "content": prompt}],
+        api_key=api_key,
+        base_url=base_url,
+        model=model,
         timeout=timeout,
+        response_format={"type": "json_object"},
     )
-    response.raise_for_status()
-    content = response.json()["choices"][0]["message"]["content"]
+    content = data["choices"][0]["message"]["content"]
     return _extract_json(content)
 
 

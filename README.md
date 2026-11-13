@@ -26,7 +26,7 @@ android/   Android App、版本配置、发布历史及测试
 - Android 版本、FC API 地址、OSS 地址：`android/release-config.json`
 - 已发布 APK 历史：`android/releases.json`
 
-模型通过 `LLM_API_KEY`、`LLM_BASE_URL`、`LLM_MODEL` 切换，不绑定特定厂商实现；当前生产配置使用阿里云百炼兼容接口。Trending 只批量生成一句短中文概括，不再生成逐项目 HTML/PPT 深度解读。每篇新博客文章会先提取正文，再分别生成中文标题和不超过两句的中文摘要；原文、翻译、摘要、URL 与模型元数据一起存入 MongoDB，飞书和 Android 使用同一份结构化结果。MongoDB URI、飞书凭据、Android API Token 和上传 Token 的真相源是 Infisical；FC 环境变量只保留运行时副本，签名密码继续放系统钥匙串。
+模型通过 `LLM_API_KEY`、`LLM_BASE_URL`、`LLM_MODEL` 切换，不绑定特定厂商实现；当前生产配置使用阿里云百炼兼容接口。需要多厂商自动降级时设置 `LLM_PROVIDER_ORDER`（例如 `baidu,aliyun`），由 `site_monitor/llm.py` 按顺序尝试，前一个报错/超时/非 2xx 自动切下一个；未设置时行为不变。Trending 只批量生成一句短中文概括，不再生成逐项目 HTML/PPT 深度解读。每篇新博客文章会先提取正文，再分别生成中文标题和不超过两句的中文摘要；原文、翻译、摘要、URL 与模型元数据一起存入 MongoDB，飞书和 Android 使用同一份结构化结果。MongoDB URI、飞书凭据、Android API Token 和上传 Token 的真相源是 Infisical；FC 环境变量只保留运行时副本，签名密码继续放系统钥匙串。
 
 ## Monitor
 

@@ -11,6 +11,7 @@ from pathlib import Path
 import requests
 
 from . import _load_env  # type: ignore
+from .. import llm
 
 
 def summarize(payload: dict, options: dict) -> dict:
@@ -24,8 +25,8 @@ def summarize(payload: dict, options: dict) -> dict:
         "LLM_BASE_URL", "https://dashscope.aliyuncs.com/compatible-mode/v1"
     )
     model = options.get("model") or os.environ.get("LLM_MODEL", "qwen3.7-plus")
-    if not key:
-        print("trending 中文总结跳过: 未配置 LLM_API_KEY")
+    if not llm.has_provider():
+        print("trending 中文总结跳过: 未配置任何 LLM provider")
         return payload
 
     items = [
@@ -40,17 +41,15 @@ def summarize(payload: dict, options: dict) -> dict:
     )
 
     try:
-        resp = requests.post(
-            f"{base_url}/chat/completions",
-            headers={"Authorization": f"Bearer {key}"},
-            json={
-                "model": model,
-                "messages": [{"role": "user", "content": prompt}],
-                "response_format": {"type": "json_object"},
-            },
+        data = llm.chat(
+            [{"role": "user", "content": prompt}],
+            api_key=key or "",
+            base_url=base_url,
+            model=model,
             timeout=90,
+            response_format={"type": "json_object"},
         )
-        summaries = json.loads(resp.json()["choices"][0]["message"]["content"])
+        summaries = json.loads(data["choices"][0]["message"]["content"])
     except Exception as e:
         print(f"trending 中文总结失败,回退词典翻译: {e}")
         return payload
