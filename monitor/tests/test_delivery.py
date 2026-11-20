@@ -293,3 +293,48 @@ def test_fanout_cloud_api_failure_is_saved(monkeypatch, tmp_path):
     assert result["success"] is False
     saved = list(Path(tmp_path / "cloud_sync").glob("*.json"))
     assert len(saved) == 1
+
+
+
+def test_feishu_trending_routes_daily_and_weekly_to_group(monkeypatch):
+    calls = []
+
+    def post(url, **kwargs):
+        if url.endswith("/tenant_access_token/internal"):
+            return {"tenant_access_token": "test-token"}
+        calls.append((kwargs["params"], kwargs["json_body"]))
+        return {"code": 0}
+
+    monkeypatch.delenv("SITE_MONITOR_SKIP_DELIVERY", raising=False)
+    monkeypatch.delenv("SITE_MONITOR_MONGO_URI", raising=False)
+    monkeypatch.setenv("FEISHU_APP_ID", "test-app")
+    monkeypatch.setenv("FEISHU_APP_SECRET", "test-secret")
+    monkeypatch.setenv("FEISHU_USER_ID", "ou-existing")
+    monkeypatch.setenv("FEISHU_TRENDING_CHAT_ID", "oc-trending")
+    monkeypatch.setattr(delivery, "_feishu_post_json", post)
+    config = {"enabled": True, "provider": "feishu", "markdown": True}
+    daily = {"topic": "github_trending", "status": "content",
+             "entries": [{"title": "owner/daily-fixture"}]}
+    other = {"topic": "anthropic_engineering", "status": "content",
+             "entries": [{"title": "other-source-fixture"}]}
+    weekly = {"topic": "github_trending_weekly", "status": "content",
+              "entries": [{"title": "owner/weekly-fixture"}]}
+
+    result = delivery.send_report("combined report", config, {"items": [daily, other]})
+    assert result["message_count"] == 2
+    delivery.send_report("weekly report", config, {"items": [weekly]})
+    assert [
+        (params["receive_id_type"], body["receive_id"])
+        for params, body in calls
+    ] == [("chat_id", "oc-trending"), ("open_id", "ou-existing"), ("chat_id", "oc-trending")]
+    assert "owner/daily-fixture" in calls[0][1]["content"]
+    assert "other-source-fixture" not in calls[0][1]["content"]
+    assert "other-source-fixture" in calls[1][1]["content"]
+    assert "owner/daily-fixture" not in calls[1][1]["content"]
+    assert "owner/weekly-fixture" in calls[2][1]["content"]
+
+    calls.clear()
+    other["status"] = "no_update"
+    result = delivery.send_report("combined report", config, {"items": [daily, other]})
+    assert result["message_count"] == 1
+    assert calls[0][1]["receive_id"] == "oc-trending"

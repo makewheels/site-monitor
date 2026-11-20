@@ -207,10 +207,30 @@ def _send_via_feishu(
     _load_env_file(PROJECT_ROOT / ".env")
     app_id = config.get("app_id") or os.getenv("FEISHU_APP_ID", "")
     app_secret = config.get("app_secret") or os.getenv("FEISHU_APP_SECRET", "")
-    if app_id and app_secret:
-        return _send_via_feishu_api(message, config, app_id, app_secret, payload)
+    def send(text, report, *, chat_override=None):
+        if app_id and app_secret:
+            return _send_via_feishu_api(text, config, app_id, app_secret, report,
+                                       chat_override=chat_override)
+        return _send_via_feishu_cli(text, config, chat_override=chat_override)
 
-    return _send_via_feishu_cli(message, config)
+    trending_chat = config.get("trending_chat_id") or os.getenv("FEISHU_TRENDING_CHAT_ID", "")
+    items = payload.get("items") or []
+    trending_topics = {"github_trending", "github_trending_weekly"}
+    trending = [item for item in items if item.get("topic") in trending_topics]
+    if not trending_chat or not trending:
+        return send(message, payload)
+
+    remaining = [item for item in items if item.get("topic") not in trending_topics]
+    trending_text = message if not remaining else "\n\n".join(_topic_markdown(item) for item in trending)
+    results = [send(trending_text, {**payload, "items": trending}, chat_override=trending_chat)]
+    if any(item.get("status") != "no_update" for item in remaining):
+        remaining_text = "\n\n".join(_topic_markdown(item) for item in remaining)
+        results.append(send(remaining_text, {**payload, "items": remaining}))
+    return {
+        "success": all(result["success"] for result in results),
+        "provider": "feishu",
+        "message_count": sum(result.get("message_count", 1) for result in results),
+    }
 
 
 def _send_via_feishu_api(
@@ -219,11 +239,16 @@ def _send_via_feishu_api(
     app_id: str,
     app_secret: str,
     payload: dict[str, Any],
+    *,
+    chat_override: str | None = None,
 ) -> dict[str, Any]:
     base_url = (config.get("base_url") or os.getenv("FEISHU_BASE_URL") or "https://open.feishu.cn").rstrip("/")
     user_id = config.get("user_id") or os.getenv("FEISHU_USER_ID", "")
     chat_id = config.get("chat_id") or os.getenv("FEISHU_CHAT_ID", "")
-    if user_id:
+    if chat_override:
+        receive_id_type = "chat_id"
+        receive_id = chat_override
+    elif user_id:
         receive_id_type = "open_id"
         receive_id = user_id
     elif chat_id:
@@ -476,14 +501,18 @@ def _split_message(message: str, max_chars: int) -> list[str]:
     return chunks
 
 
-def _send_via_feishu_cli(message: str, config: dict[str, Any]) -> dict[str, Any]:
+def _send_via_feishu_cli(
+    message: str, config: dict[str, Any], *, chat_override: str | None = None,
+) -> dict[str, Any]:
     """Use the workstation lark-cli when Open API credentials are unavailable."""
     cli = config.get("lark_cli") or os.getenv("LARK_CLI", "lark-cli")
     user_id = config.get("user_id") or os.getenv("FEISHU_USER_ID", "")
     chat_id = config.get("chat_id") or os.getenv("FEISHU_CHAT_ID", "")
     if not Path(cli).exists():
         raise ValueError(f"lark-cli 不存在: {cli}")
-    if user_id:
+    if chat_override:
+        target_args = ["--chat-id", chat_override]
+    elif user_id:
         target_args = ["--user-id", user_id]
     elif chat_id:
         target_args = ["--chat-id", chat_id]
