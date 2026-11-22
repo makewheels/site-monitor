@@ -139,18 +139,13 @@ def main():
     report = payload["full_text"]
     print(report)
 
-    errors = []
-    try:
-            saved = store.save_monitor_state(runtime_dir("state"))
-            result = store.upsert_report(payload)
-            print(
-                f"\n📦 JSON 数据更新完成: report_id={result.get('report_id')} "
-                f"items={result.get('item_count')} state_files={saved}",
-                file=sys.stderr,
-            )
-except Exception as e:
-        print(f"\n⚠️ JSON 数据写入失败: {e}", file=sys.stderr)
-        errors.append(f"JSON: {e}")
+    saved = store.save_monitor_state(runtime_dir("state"))
+    result = store.upsert_report(payload)
+    print(
+        f"\n📦 JSON 数据更新完成: report_id={result.get('report_id')} "
+        f"items={result.get('item_count')} state_files={saved}",
+        file=sys.stderr,
+    )
 
     if is_enabled():
         try:
@@ -162,18 +157,15 @@ except Exception as e:
             if result.get("skipped"):
                 print(f"\n发送跳过: {result.get('reason')}", file=sys.stderr)
             elif not result.get("success", False):
-                errors.append(f"delivery: {result}")
+                raise RuntimeError(f"delivery: {result}")
             else:
-                provider = result.get("provider", "未知")
                 if any(item["topic"] == GEEKBANG_TOPIC for item in delivery_payload["items"]):
                     acknowledge_delivery()
-                print(f"\n发送成功 ({provider})", file=sys.stderr)
-        except Exception as e:
-            print(f"\n⚠️ 发送失败: {e}", file=sys.stderr)
-            errors.append(f"delivery: {e}")
+                print(f"\n发送成功 ({result.get('provider', '未知')})", file=sys.stderr)
+        except Exception as exc:
+            print(f"\n⚠️ 发送失败: {exc}", file=sys.stderr)
+            raise
 
-    if errors:
-        raise RuntimeError("; ".join(errors))
 
 if __name__ == "__main__":
     main()
