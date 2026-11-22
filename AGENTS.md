@@ -10,7 +10,7 @@ Use `uv` for Python and `pnpm` for Node. Do not use pip, venv, Poetry, npm, or Y
 
 ## Monitor
 
-- Only two sources exist: GitHub Trending and Anthropic Engineering. Do not re-add RSS feeds, blog sources, or the Codex radar without an explicit request.
+- The configured sources are GitHub Trending, Anthropic Engineering, and Geekbang AI curriculum courses. Do not re-add RSS feeds, blog sources, or the Codex radar without an explicit request.
 - Keep feed, API, and RSSHub URLs in `monitor/config.json`.
 - Read source configuration through `site_monitor.monitor_config`; do not hardcode source URLs in collectors.
 - Keep collector code under `monitor/src/site_monitor/` and offline tests under `monitor/tests/`.
@@ -22,7 +22,7 @@ Use `uv` for Python and `pnpm` for Node. Do not use pip, venv, Poetry, npm, or Y
 ## Delivery And Schedule
 
 - `.github/workflows/daily-monitor.yml` is the production scheduler.
-- The schedule is 05:30 `Asia/Shanghai`; both remaining sources are collected once per day.
+- The schedule is 05:30 `Asia/Shanghai`; all configured sources are collected once per day.
 - `weekly-trending.yml` runs on Saturday 09:00 `Asia/Shanghai` and pushes the weekly Trending top 10.
 - Workflows are dispatched by the server-side systemd timers; the repository keeps no cron trigger.
 - Production delivery uses the Feishu Open API from `monitor/src/site_monitor/delivery.py`.

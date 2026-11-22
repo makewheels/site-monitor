@@ -313,6 +313,7 @@ def _send_via_feishu_api(
 _TOPIC_ICONS = {
     "github_trending": "🔥",
     "anthropic_engineering": "A",
+    "geekbang_ai_courses": "📚",
 }
 
 

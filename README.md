@@ -3,7 +3,7 @@
 一个项目完成 AI 信息采集、飞书日报、历史 API 和 Android 阅读。生产流程为：
 
 1. 服务器 systemd timer 在北京时间每天 05:30 直接调度 GitHub Actions 运行 `monitor/`，不启动 AI Agent。
-2. 只抓取 GitHub Trending 和 Anthropic Engineering 两个来源。
+2. 抓取 GitHub Trending、Anthropic Engineering 和极客时间人工智能体系课目录。极客时间首次成功抓取只建立基线，之后有新课程才推送飞书。
 3. 报告与去重状态写入腾讯云轻量服务器中的 MongoDB。
 4. GitHub Trending 日榜每两天推送飞书，以北京时间 2026-11-22 为基准。周榜每周六 09:00 推送。网页和 Android 从阿里云 Function Compute 读取每日历史。
 5. Android APK 和版本索引发布到阿里云 OSS。

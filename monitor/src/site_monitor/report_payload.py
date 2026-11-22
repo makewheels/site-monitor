@@ -20,6 +20,7 @@ class Topic:
 TOPICS: tuple[Topic, ...] = (
     Topic("github_trending", "GitHub Trending", "github_trending_pending.txt", "#24292f", 10),
     Topic("anthropic_engineering", "Anthropic Engineering", "anthropic_pending.txt", "#a35e24", 20),
+    Topic("geekbang_ai_courses", "极客时间人工智能体系课", "geekbang_ai_courses_pending.txt", "#de6512", 30),
 )
 
 
@@ -223,7 +224,7 @@ def build_payload(
         body = sections.get(topic.key, "").strip()
         if not body:
             continue
-        entries = extract_entries(body)
+        entries = extract_links(body) if topic.key == "geekbang_ai_courses" else extract_entries(body)
         items.append(
             {
                 "topic": topic.key,

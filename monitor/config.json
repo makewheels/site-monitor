@@ -22,6 +22,13 @@
     }
   ],
   "monitor_sources": {
+    "geekbang_ai_courses": {
+      "api_url": "https://time.geekbang.org/serv/v4/pvip/product_list",
+      "catalog_url": "https://time.geekbang.org/resource?m=0&d=101&c=101&pt=1",
+      "course_base_url": "https://time.geekbang.org/{course_path}/intro/{course_id}",
+      "tag_id": 101,
+      "product_type": 1
+    },
     "anthropic_engineering": {
       "rsshub_urls": [
         "https://rsshub.app/anthropic/engineering",

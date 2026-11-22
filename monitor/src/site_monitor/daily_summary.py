@@ -11,6 +11,7 @@ from datetime import date, datetime
 from pathlib import Path
 
 from .article_enrichment import enrich_report_payload
+from .check_geekbang_courses import PENDING_IDS, TOPIC as GEEKBANG_TOPIC, acknowledge_delivery
 from .monitor_config import PROJECT_ROOT, runtime_dir, runtime_path
 from .delivery import is_enabled, send_report
 from .report_payload import TOPICS, attach_trending_projects, build_payload
@@ -21,6 +22,7 @@ TRENDING_PUSH_START = date(2026, 11, 22)
 CHECK_MODULES = [
     "site_monitor.check_github_trending",
     "site_monitor.check_anthropic",
+    "site_monitor.check_geekbang_courses",
 ]
 
 SCRIPT_TIMEOUTS = {
@@ -69,12 +71,15 @@ def build_report_payload():
 
     for topic in TOPICS:
         Path(runtime_path("pending", topic.pending_file)).unlink(missing_ok=True)
+    Path(runtime_path("pending", PENDING_IDS)).unlink(missing_ok=True)
     projects_file = Path(runtime_path("pending", "github_trending_projects.json"))
     projects_file.unlink(missing_ok=True)
 
     # 运行所有监控脚本
     for module_name in CHECK_MODULES:
-        run_script(module_name)
+        output = run_script(module_name)
+        if module_name == "site_monitor.check_geekbang_courses" and output:
+            print(output, file=sys.stderr)
 
     sections = {
         topic.key: read_pending(topic.pending_file)
@@ -167,6 +172,9 @@ def main():
                 errors.append(f"delivery: {result}")
             else:
                 provider = result.get("provider", "未知")
+                if any(item["topic"] == GEEKBANG_TOPIC for item in delivery_payload["items"]):
+                    if acknowledge_delivery() and store is not None:
+                        store.save_monitor_state(runtime_dir("state"))
                 print(f"\n发送成功 ({provider})", file=sys.stderr)
         except Exception as e:
             print(f"\n⚠️ 发送失败: {e}", file=sys.stderr)
