@@ -35,161 +35,98 @@ def newest_per_date(
     return results
 
 
-class MongoReportStore:
-    def __init__(self, mongo_uri: str, db_name: str):
-        from pymongo import MongoClient
+class JsonReportStore:
+    """Read report history from the committed MongoDB JSON export."""
 
-        self.client = MongoClient(
-            mongo_uri,
-            serverSelectionTimeoutMS=5_000,
-            connectTimeoutMS=5_000,
+    def __init__(self, archive_dir: Path | None = None):
+        self.archive_dir = archive_dir or (
+            Path(__file__).resolve().parents[3]
+            / "monitor"
+            / "data"
+            / "mongodb_archive"
         )
-        self.db = self.client[db_name]
-        self.reports = self.db["reports"]
-        self.items = self.db["report_items"]
-        self.project_intros = self.db["project_intros"]
-        self.reports.create_index(
-            [("date", -1), ("content_count", -1), ("generated_at", -1)]
-        )
-        self.items.create_index(
-            [("topic", 1), ("date", -1), ("entry_count", -1)]
-        )
-        self.items.create_index("report_id")
-        self.project_intros.create_index("slug", unique=True)
 
-    def upsert_report(self, payload: dict[str, Any]) -> dict[str, Any]:
-        now = datetime.now().isoformat(timespec="seconds")
-        report_id = payload["report_id"]
-        items = payload.get("items", [])
-        content_count = sum(len(item.get("entries") or []) for item in items)
-        content_item_count = sum(1 for item in items if item.get("entries"))
-        report_doc = {
-            "report_id": report_id,
-            "date": payload.get("date"),
-            "title": payload.get("title"),
-            "full_text": payload.get("full_text"),
-            "generated_at": payload.get("generated_at"),
-            "topics": payload.get("topics", []),
-            "ai_enrichment": payload.get("ai_enrichment", {}),
-            "item_count": len(items),
-            "content_count": content_count,
-            "content_item_count": content_item_count,
-            "updated_at": now,
-        }
-        self.reports.update_one(
-            {"report_id": report_id},
-            {"$set": report_doc, "$setOnInsert": {"created_at": now}},
-            upsert=True,
-        )
-        for item in items:
-            item_doc = dict(item)
-            item_doc["entry_count"] = len(item_doc.get("entries") or [])
-            item_doc.setdefault("report_id", report_id)
-            item_doc.setdefault("item_id", f"{report_id}:{item_doc.get('topic')}")
-            created_at = item_doc.pop("created_at", now)
-            self.items.update_one(
-                {"item_id": item_doc["item_id"]},
-                {"$set": item_doc, "$setOnInsert": {"created_at": created_at}},
-                upsert=True,
-            )
-            if item.get("topic") == "github_trending":
-                self.upsert_project_intros(item.get("entries") or [], now=now)
-        return {"report_id": report_id, "item_count": len(items)}
+    def _read(self, filename: str) -> list[dict[str, Any]]:
+        import json
 
-    def upsert_project_intros(
-        self,
-        entries: list[dict[str, Any]],
-        *,
-        now: str | None = None,
-    ) -> int:
-        now = now or datetime.now().isoformat(timespec="seconds")
-        saved = 0
-        for entry in entries:
-            intro = entry.get("project_intro")
-            full_name = str(entry.get("full_name") or "").strip()
-            if not isinstance(intro, dict) or not intro or "/" not in full_name:
-                continue
-            document = dict(intro)
-            document["full_name"] = full_name
-            document["slug"] = full_name.lower()
-            document["intro_url"] = entry.get("intro_url")
-            document["source_url"] = entry.get("source_url")
-            document["updated_at"] = now
-            self.project_intros.update_one(
-                {"slug": document["slug"]},
-                {"$set": document, "$setOnInsert": {"created_at": now}},
-                upsert=True,
-            )
-            saved += 1
-        return saved
+        path = self.archive_dir / filename
+        try:
+            documents = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            return []
+        for document in documents:
+            document.pop("_id", None)
+        return documents
 
     def project_intro(self, owner: str, repo: str) -> dict[str, Any] | None:
-        return self.project_intros.find_one(
-            {"slug": f"{owner}/{repo}".lower()},
-            {"_id": 0},
+        slug = f"{owner}/{repo}".lower()
+        return next(
+            (item for item in self._read("project_intros.json") if item.get("slug") == slug),
+            None,
         )
 
     def latest(self) -> dict[str, Any] | None:
-        report = self.reports.find_one(
-            {},
-            {"_id": 0},
-            sort=[
-                ("date", -1),
-                ("content_count", -1),
-                ("generated_at", -1),
-                ("updated_at", -1),
-            ],
+        reports = sorted(
+            self._read("reports.json"),
+            key=lambda item: (
+                item.get("date", ""),
+                item.get("content_count", 0),
+                item.get("generated_at", ""),
+                item.get("updated_at", ""),
+            ),
+            reverse=True,
         )
-        if not report:
+        if not reports:
             return None
-        report["items"] = list(
-            self.items.find({"report_id": report["report_id"]}, {"_id": 0}).sort("order", 1)
-        )
-        return report
+        return self.detail(reports[0]["report_id"])
 
     def list_reports(self, *, limit: int = 30, topic: str | None = None) -> list[dict[str, Any]]:
         limit = min(max(limit, 1), 100)
         if topic:
-            item_docs = self.items.find({"topic": topic}, {"_id": 0}).sort(
-                [
-                    ("date", -1),
-                    ("entry_count", -1),
-                    ("created_at", -1),
-                    ("item_id", -1),
-                ]
+            documents = [item for item in self._read("report_items.json") if item.get("topic") == topic]
+            documents.sort(
+                key=lambda item: (
+                    item.get("date", ""),
+                    item.get("entry_count", 0),
+                    item.get("created_at", ""),
+                    item.get("item_id", ""),
+                ),
+                reverse=True,
             )
-            return newest_per_date(item_docs, limit=limit)
-        report_docs = self.reports.find({}, {"_id": 0, "full_text": 0}).sort(
-            [
-                ("date", -1),
-                ("content_count", -1),
-                ("generated_at", -1),
-                ("updated_at", -1),
-                ("report_id", -1),
-            ]
-        )
-        return newest_per_date(report_docs, limit=limit)
+        else:
+            documents = self._read("reports.json")
+            documents.sort(
+                key=lambda item: (
+                    item.get("date", ""),
+                    item.get("content_count", 0),
+                    item.get("generated_at", ""),
+                    item.get("updated_at", ""),
+                    item.get("report_id", ""),
+                ),
+                reverse=True,
+            )
+        return newest_per_date(documents, limit=limit)
 
     def detail(self, report_id: str) -> dict[str, Any] | None:
-        report = self.reports.find_one({"report_id": report_id}, {"_id": 0})
-        if not report:
+        report = next(
+            (item for item in self._read("reports.json") if item.get("report_id") == report_id),
+            None,
+        )
+        if report is None:
             return None
-        report["items"] = list(
-            self.items.find({"report_id": report_id}, {"_id": 0}).sort("order", 1)
+        report["items"] = sorted(
+            (item for item in self._read("report_items.json") if item.get("report_id") == report_id),
+            key=lambda item: item.get("order", 0),
         )
         return report
 
     def topics(self) -> list[dict[str, Any]]:
-        report = self.reports.find_one({}, {"_id": 0, "topics": 1}, sort=[("date", -1)])
-        return report.get("topics", []) if report else []
+        reports = sorted(self._read("reports.json"), key=lambda item: item.get("date", ""), reverse=True)
+        return reports[0].get("topics", []) if reports else []
 
 
-def create_store() -> MongoReportStore:
-    mongo_uri = os.environ.get("SITE_MONITOR_MONGO_URI")
-    db_name = os.environ.get("SITE_MONITOR_DB_NAME", "site_monitor")
-    if not mongo_uri:
-        raise RuntimeError("SITE_MONITOR_MONGO_URI is required")
-    return MongoReportStore(mongo_uri, db_name)
+def create_store() -> JsonReportStore:
+    return JsonReportStore()
 
 
 def _require_header(header_name: str, expected: str | None) -> tuple[bool, Any]:
@@ -293,8 +230,7 @@ def create_app(store: Any | None = None) -> Flask:
         payload = request.get_json(silent=True) or {}
         if not payload.get("report_id"):
             return jsonify({"error": "report_id is required"}), 400
-        result = get_store().upsert_report(payload)
-        return jsonify({"success": True, **result})
+        return jsonify({"error": "report_archive_is_read_only"}), 409
 
     @app.get("/api/v1/reports/latest")
     def latest_report():
