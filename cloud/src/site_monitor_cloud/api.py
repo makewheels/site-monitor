@@ -36,20 +36,17 @@ def newest_per_date(
 
 
 class JsonReportStore:
-    """Read report history from the committed MongoDB JSON export."""
+    """Read report history from the repository JSON files."""
 
-    def __init__(self, archive_dir: Path | None = None):
-        self.archive_dir = archive_dir or (
-            Path(__file__).resolve().parents[3]
-            / "monitor"
-            / "data"
-            / ""
+    def __init__(self, data_dir: Path | None = None):
+        self.data_dir = data_dir or (
+            Path(__file__).resolve().parents[3] / "monitor" / "data"
         )
 
     def _read(self, filename: str) -> list[dict[str, Any]]:
         import json
 
-        path = self.archive_dir / filename
+        path = self.data_dir / filename
         try:
             documents = json.loads(path.read_text(encoding="utf-8"))
         except (OSError, json.JSONDecodeError):
