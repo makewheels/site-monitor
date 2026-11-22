@@ -1,4 +1,4 @@
-"""MongoDB persistence for scheduled monitor reports and state."""
+"""JSON-file persistence for reports, delivery events, and monitor state."""
 from __future__ import annotations
 
 import json
@@ -6,50 +6,55 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
+from .monitor_config import PROJECT_ROOT
 
-class MongoMonitorStore:
-    def __init__(self, mongo_uri: str, db_name: str):
-        from pymongo import MongoClient
 
-        self.client = MongoClient(
-            mongo_uri,
-            serverSelectionTimeoutMS=5_000,
-            connectTimeoutMS=5_000,
+DATA_DIR = PROJECT_ROOT / "data"
+
+
+class JsonMonitorStore:
+    def __init__(self, data_dir: Path = DATA_DIR):
+        self.data_dir = data_dir
+
+    def _read(self, filename: str) -> list[dict[str, Any]]:
+        path = self.data_dir / filename
+        try:
+            value = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            return []
+        return value if isinstance(value, list) else []
+
+    def _write(self, filename: str, documents: list[dict[str, Any]]) -> None:
+        self.data_dir.mkdir(parents=True, exist_ok=True)
+        path = self.data_dir / filename
+        temporary = path.with_suffix(".tmp")
+        temporary.write_text(
+            json.dumps(documents, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
         )
-        self.db = self.client[db_name]
-        self.reports = self.db["reports"]
-        self.items = self.db["report_items"]
-        self.monitor_state = self.db["monitor_state"]
-        self.project_intros = self.db["project_intros"]
-        self.delivery_events = self.db["delivery_events"]
-        self.reports.create_index(
-            [("date", -1), ("content_count", -1), ("generated_at", -1)]
-        )
-        self.items.create_index(
-            [("topic", 1), ("date", -1), ("entry_count", -1)]
-        )
-        self.items.create_index("report_id")
-        self.monitor_state.create_index("filename", unique=True)
-        self.project_intros.create_index("slug", unique=True)
-        self.delivery_events.create_index("event_id", unique=True)
-        self.delivery_events.create_index([("delivered_at", -1), ("source", 1)])
-        self.delivery_events.create_index([("status", 1), ("delivered_at", -1)])
+        temporary.replace(path)
+
+    def _upsert(self, filename: str, key: str, documents: list[dict[str, Any]]) -> int:
+        current = self._read(filename)
+        indexed = {item.get(key): item for item in current}
+        for item in documents:
+            indexed[item[key]] = item
+        self._write(filename, list(indexed.values()))
+        return len(documents)
 
     def record_delivery_events(self, events: list[dict[str, Any]]) -> int:
-        """Append sanitized delivery metadata; callers never pass message content."""
-        documents = [dict(event) for event in events if event.get("event_id")]
-        if not documents:
-            return 0
-        self.delivery_events.insert_many(documents, ordered=False)
-        return len(documents)
+        return self._upsert(
+            "delivery_events.json",
+            "event_id",
+            [dict(event) for event in events if event.get("event_id")],
+        )
 
     def upsert_report(self, payload: dict[str, Any]) -> dict[str, Any]:
         now = datetime.now().isoformat(timespec="seconds")
         report_id = payload["report_id"]
         items = payload.get("items", [])
         content_count = sum(len(item.get("entries") or []) for item in items)
-        content_item_count = sum(1 for item in items if item.get("entries"))
-        report_doc = {
+        report = {
             "report_id": report_id,
             "date": payload.get("date"),
             "title": payload.get("title"),
@@ -59,91 +64,81 @@ class MongoMonitorStore:
             "ai_enrichment": payload.get("ai_enrichment", {}),
             "item_count": len(items),
             "content_count": content_count,
-            "content_item_count": content_item_count,
+            "content_item_count": sum(bool(item.get("entries")) for item in items),
             "updated_at": now,
         }
-        self.reports.update_one(
-            {"report_id": report_id},
-            {"$set": report_doc, "$setOnInsert": {"created_at": now}},
-            upsert=True,
-        )
+        report.setdefault("created_at", now)
+        self._upsert("reports.json", "report_id", [report])
+        stored_items = []
         for item in items:
-            item_doc = dict(item)
-            item_doc["entry_count"] = len(item_doc.get("entries") or [])
-            item_doc.setdefault("report_id", report_id)
-            item_doc.setdefault("item_id", f"{report_id}:{item_doc.get('topic')}")
-            created_at = item_doc.pop("created_at", now)
-            self.items.update_one(
-                {"item_id": item_doc["item_id"]},
-                {"$set": item_doc, "$setOnInsert": {"created_at": created_at}},
-                upsert=True,
-            )
+            doc = dict(item)
+            doc["entry_count"] = len(doc.get("entries") or [])
+            doc.setdefault("report_id", report_id)
+            doc.setdefault("item_id", f"{report_id}:{doc.get('topic')}")
+            doc.setdefault("created_at", now)
+            stored_items.append(doc)
             if item.get("topic") == "github_trending":
                 self.upsert_project_intros(item.get("entries") or [], now=now)
+        self._upsert("report_items.json", "item_id", stored_items)
         return {"report_id": report_id, "item_count": len(items)}
 
     def upsert_project_intros(
-        self,
-        entries: list[dict[str, Any]],
-        *,
-        now: str | None = None,
+        self, entries: list[dict[str, Any]], *, now: str | None = None
     ) -> int:
         now = now or datetime.now().isoformat(timespec="seconds")
-        saved = 0
+        documents = []
         for entry in entries:
             intro = entry.get("project_intro")
             full_name = str(entry.get("full_name") or "").strip()
             if not isinstance(intro, dict) or not intro or "/" not in full_name:
                 continue
-            document = dict(intro)
-            document["full_name"] = full_name
-            document["slug"] = full_name.lower()
-            document["intro_url"] = entry.get("intro_url")
-            document["source_url"] = entry.get("source_url")
-            document["updated_at"] = now
-            self.project_intros.update_one(
-                {"slug": document["slug"]},
-                {"$set": document, "$setOnInsert": {"created_at": now}},
-                upsert=True,
+            doc = dict(intro)
+            doc.update(
+                full_name=full_name,
+                slug=full_name.lower(),
+                intro_url=entry.get("intro_url"),
+                source_url=entry.get("source_url"),
+                updated_at=now,
             )
-            saved += 1
-        return saved
+            doc.setdefault("created_at", now)
+            documents.append(doc)
+        return self._upsert("project_intros.json", "slug", documents)
 
     def restore_monitor_state(self, state_dir: Path) -> int:
         state_dir.mkdir(parents=True, exist_ok=True)
         restored = 0
-        for document in self.monitor_state.find({}, {"_id": 0}):
-            filename = document.get("filename", "")
-            if not filename.endswith(".json") or Path(filename).name != filename:
+        for doc in self._read("monitor_state.json"):
+            filename = doc.get("filename", "")
+            if Path(filename).name != filename or not filename.endswith(".json"):
                 continue
             (state_dir / filename).write_text(
-                json.dumps(document.get("data", {}), ensure_ascii=False, indent=2),
+                json.dumps(doc.get("data", {}), ensure_ascii=False, indent=2),
                 encoding="utf-8",
             )
             restored += 1
         return restored
 
     def save_monitor_state(self, state_dir: Path) -> int:
-        saved = 0
         now = datetime.now().isoformat(timespec="seconds")
+        docs = {item.get("filename"): item for item in self._read("monitor_state.json")}
+        saved = 0
         for path in sorted(state_dir.glob("*.json")):
             try:
                 data = json.loads(path.read_text(encoding="utf-8"))
             except (OSError, json.JSONDecodeError):
                 continue
-            self.monitor_state.update_one(
-                {"filename": path.name},
-                {
-                    "$set": {"data": data, "updated_at": now},
-                    "$setOnInsert": {"created_at": now},
-                },
-                upsert=True,
-            )
+            previous = docs.get(path.name, {})
+            docs[path.name] = {
+                **previous,
+                "filename": path.name,
+                "data": data,
+                "created_at": previous.get("created_at", now),
+                "updated_at": now,
+            }
             saved += 1
+        self._write("monitor_state.json", list(docs.values()))
         return saved
 
 
-def create_store(mongo_uri: str, db_name: str = "site_monitor") -> MongoMonitorStore:
-    if not mongo_uri:
-        raise RuntimeError("SITE_MONITOR_MONGO_URI is required")
-    return MongoMonitorStore(mongo_uri, db_name)
+def create_store(*_args: Any, **_kwargs: Any) -> JsonMonitorStore:
+    return JsonMonitorStore()

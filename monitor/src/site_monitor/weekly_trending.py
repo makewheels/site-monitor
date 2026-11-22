@@ -103,18 +103,15 @@ def main() -> int:
         _log(f"{week_key} 已推送，跳过")
         return 0
 
-    store = None
-    mongo_uri = os.environ.get("SITE_MONITOR_MONGO_URI")
-    if mongo_uri:
-        from .mongo_store import create_store
+    from .mongo_store import create_store
 
-        store = create_store(mongo_uri, os.environ.get("SITE_MONITOR_DB_NAME", "site_monitor"))
-        restored = store.restore_monitor_state(runtime_dir("state"))
-        _log(f"MongoDB 状态恢复完成: files={restored}")
-        state = _load_state()
-        if state.get("last_report_week") == week_key and not force:
-            _log(f"{week_key} 已推送，跳过")
-            return 0
+    store = create_store()
+    restored = store.restore_monitor_state(runtime_dir("state"))
+    _log(f"JSON 状态恢复完成: files={restored}")
+    state = _load_state()
+    if state.get("last_report_week") == week_key and not force:
+        _log(f"{week_key} 已推送，跳过")
+        return 0
 
     html = fetch_trending(WEEKLY_URL)
     if not html:
@@ -146,11 +143,10 @@ def main() -> int:
         }
     )
     _save_state(state)
-    if store is not None:
-        entries = payload["items"][0]["entries"]
-        intros = store.upsert_project_intros(entries)
-        saved = store.save_monitor_state(runtime_dir("state"))
-        _log(f"MongoDB 写入成功: project_intros={intros} state_files={saved}")
+    entries = payload["items"][0]["entries"]
+    intros = store.upsert_project_intros(entries)
+    saved = store.save_monitor_state(runtime_dir("state"))
+    _log(f"JSON 更新完成: project_intros={intros} state_files={saved}")
     return 0
 
 

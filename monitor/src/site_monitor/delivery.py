@@ -82,9 +82,6 @@ def _record_delivery_events(
     batch_id: str,
 ) -> None:
     """Persist privacy-safe delivery metadata without message or credential data."""
-    mongo_uri = os.environ.get("SITE_MONITOR_MONGO_URI", "")
-    if not mongo_uri:
-        return
     provider_results = result.get("results")
     if not isinstance(provider_results, list):
         provider_results = [result]
@@ -131,10 +128,7 @@ def _record_delivery_events(
     try:
         from .mongo_store import create_store
 
-        store = create_store(
-            mongo_uri,
-            os.environ.get("SITE_MONITOR_DB_NAME", "site_monitor"),
-        )
+        store = create_store()
         store.record_delivery_events(events)
     except Exception as exc:
         print(

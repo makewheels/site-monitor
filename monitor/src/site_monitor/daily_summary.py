@@ -129,17 +129,11 @@ def daily_delivery_payload(payload):
 
 
 def main():
-    store = None
-    mongo_uri = os.environ.get("SITE_MONITOR_MONGO_URI")
-    if mongo_uri:
-        from .mongo_store import create_store
+    from .mongo_store import create_store
 
-        store = create_store(
-            mongo_uri,
-            os.environ.get("SITE_MONITOR_DB_NAME", "site_monitor"),
-        )
-        restored = store.restore_monitor_state(runtime_dir("state"))
-        print(f"MongoDB 状态恢复完成: files={restored}", file=sys.stderr)
+    store = create_store()
+    restored = store.restore_monitor_state(runtime_dir("state"))
+    print(f"JSON 状态恢复完成: files={restored}", file=sys.stderr)
 
     payload = build_report_payload()
     report = payload["full_text"]
@@ -151,13 +145,13 @@ def main():
             saved = store.save_monitor_state(runtime_dir("state"))
             result = store.upsert_report(payload)
             print(
-                f"\n📦 MongoDB 写入成功: report_id={result.get('report_id')} "
+                f"\n📦 JSON 数据更新完成: report_id={result.get('report_id')} "
                 f"items={result.get('item_count')} state_files={saved}",
                 file=sys.stderr,
             )
         except Exception as e:
-            print(f"\n⚠️ MongoDB 写入失败: {e}", file=sys.stderr)
-            print("MongoDB 写入失败，继续执行飞书通知", file=sys.stderr)
+            print(f"\n⚠️ JSON 数据写入失败: {e}", file=sys.stderr)
+            print("JSON 数据写入失败，继续执行飞书通知", file=sys.stderr)
 
     if is_enabled():
         try:
