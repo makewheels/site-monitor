@@ -1,0 +1,2735 @@
+[
+  {
+    "_id": "6a77f397ecea1b95c0469c3b",
+    "slug": "zhaoxuya520/reverse-skill",
+    "architecture": [
+      {
+        "name": "路由核心（Routing Core）",
+        "description": "由skills/config/routing.json驱动，包含41条路由规则，是系统的单一事实来源"
+      },
+      {
+        "name": "技能模块（Skill Modules）",
+        "description": "42个核心技能模块，覆盖APK逆向、二进制分析、JS解密、渗透测试、CTF、恶意软件分析等场景"
+      },
+      {
+        "name": "工具索引（Tool Index）",
+        "description": "自动生成的skills/tool-index.md，记录本地工具状态，支持跨平台刷新脚本"
+      },
+      {
+        "name": "案例管理（Case Management）",
+        "description": "通过case-init脚本创建标准化案例目录，包含scope、timeline、work-in-progress等结构化文件"
+      },
+      {
+        "name": "CI验证（CI Validation）",
+        "description": "跨平台CI（Windows + Ubuntu）验证路由规则和回归测试（163个测试用例）"
+      },
+      {
+        "name": "AI引导（AI Bootstrap）",
+        "description": "README_AI.md提供AI代理的启动指南，确保AI客户端按规则执行而非自由发挥"
+      }
+    ],
+    "avoid_when": [
+      "只需要简单的代码补全或脚本生成，不需要复杂的安全工作流",
+      "团队已有成熟的安全工具链和工作流，且不愿意迁移",
+      "目标场景单一（如只做Web渗透），不需要多场景路由",
+      "AI客户端不支持读取外部规则文件或执行结构化工作流",
+      "不愿意投入时间学习和适配这套路由体系"
+    ],
+    "created_at": "2026-08-09T11:27:19",
+    "facts": {
+      "language": "PowerShell",
+      "license": "MIT",
+      "stars": 21641,
+      "forks": 2958,
+      "open_issues": 10,
+      "created_at": "2026-05-13T14:37:57Z",
+      "pushed_at": "2026-08-08T15:44:19Z",
+      "topics": [],
+      "language_distribution": [
+        {
+          "name": "PowerShell",
+          "percent": 41.8
+        },
+        {
+          "name": "Shell",
+          "percent": 25.7
+        },
+        {
+          "name": "Java",
+          "percent": 21.3
+        },
+        {
+          "name": "Python",
+          "percent": 6.4
+        },
+        {
+          "name": "JavaScript",
+          "percent": 4.2
+        }
+      ]
+    },
+    "full_name": "zhaoxuya520/reverse-skill",
+    "generated_at": "2026-08-09T12:12:23+08:00",
+    "getting_started": [
+      "克隆仓库：git clone https://github.com/zhaoxuya520/reverse-skill.git",
+      "安装依赖：Java/JDK（jadx/apktool）、Node.js 22.12+（JS工具链/MCP）、Python 3.x（Frida/脚本）",
+      "刷新工具索引：Windows执行refresh-tool-index.ps1，Linux/macOS执行refresh-tool-index.sh",
+      "阅读README_AI.md，配置AI客户端按规则执行",
+      "查看skills/MASTER-ROUTING.md了解路由规则，skills/routing.md查看完整路由矩阵",
+      "尝试一个简单任务（如APK分析），观察AI如何路由到对应技能模块"
+    ],
+    "intro_url": "https://site-monitor.a4.fit/projects/zhaoxuya520/reverse-skill",
+    "model": "qwen3.7-plus",
+    "problem": "AI代理（如Claude Code、Cursor、Cline等）在处理逆向工程、渗透测试或安全研究任务时，不知道该用jadx、apktool、Frida、IDA还是BurpSuite；不同目标类型（APK、ELF、JS、PCAP、CTF）需要不同的操作手册；工具、MCP服务器和脚本分散在不同机器上；同样的错误反复出现，因为经验无法复用。",
+    "risks": [
+      "学习曲线较陡：需要理解41条路由规则、42个技能模块和案例工作流",
+      "依赖AI客户端的规则执行能力：如果AI不严格按规则执行，可能退化为普通提示词",
+      "工具链依赖复杂：需要安装Java、Node.js、Python及多种安全工具，环境配置可能出问题",
+      "项目较新（2026年5月创建）：社区生态和文档可能不够完善，遇到问题需要自行排查",
+      "路由规则可能无法覆盖所有边缘场景：需要根据实际情况自定义规则",
+      "AI客户端兼容性：不同客户端对规则文件的支持程度不同，可能需要适配"
+    ],
+    "source_url": "https://github.com/zhaoxuya520/reverse-skill",
+    "source_urls": [
+      "https://github.com/zhaoxuya520/reverse-skill",
+      "https://github.com/zhaoxuya520/reverse-skill/blob/main/README.md"
+    ],
+    "tagline": "让AI代码客户端在面对APK、二进制、前端JS加密、CTF或渗透目标时，不再盲猜命令，而是自动路由到正确方法论、检查工具可用性并执行可复现工作流。",
+    "title": "reverse-skill：网络安全逆向与渗透测试的AI技能路由包",
+    "updated_at": "2026-08-09T12:18:29",
+    "use_cases": [
+      "APK逆向分析：自动路由到jadx/apktool/Frida，生成脱壳和Hook方案",
+      "前端JS加密解密：识别加密算法，路由到对应的解密脚本或MCP服务器",
+      "CTF竞赛：42个子技能覆盖Pwn、Web、Crypto、Reverse等方向",
+      "渗透测试：从信息收集到漏洞利用，标准化工作流和报告生成",
+      "恶意软件分析：YARA规则匹配、动态调试、行为分析一体化",
+      "案例复盘与报告：标准化证据收集和报告生成，支持团队协作"
+    ],
+    "why_choose": [
+      "解决AI代理在安全任务中的盲猜问题，提供结构化路由而非自由发挥",
+      "覆盖20+安全场景，从APK逆向到EDR绕过，从CTF到供应链安全",
+      "支持主流AI客户端（Claude Code、Cursor、Cline等），核心逻辑与客户端解耦",
+      "41条路由规则+163个回归测试用例，经过CI验证，可靠性有保障",
+      "自动化工具链检测和案例管理，减少重复劳动，提升效率",
+      "MIT开源协议，可自由修改和扩展"
+    ],
+    "alternatives": [
+      {
+        "name": "手动编写Prompt",
+        "when_choose": "任务简单且工具链固定",
+        "tradeoff": "无法复用经验，每次都要重新编写，容易遗漏关键步骤"
+      },
+      {
+        "name": "通用AI编程助手",
+        "when_choose": "只需要代码补全或简单脚本生成",
+        "tradeoff": "缺乏安全领域专业知识，不知道何时用Frida还是IDA，无法处理复杂逆向场景"
+      },
+      {
+        "name": "传统安全工具链",
+        "when_choose": "已有成熟的工作流和工具集",
+        "tradeoff": "无法与AI客户端深度集成，缺乏自动化路由和经验复用能力"
+      },
+      {
+        "name": "自建技能库",
+        "when_choose": "团队有特定需求且愿意投入维护成本",
+        "tradeoff": "开发周期长，需要持续维护路由规则和工具适配"
+      }
+    ],
+    "audience": [
+      "逆向工程师",
+      "渗透测试人员",
+      "安全研究员",
+      "CTF选手"
+    ],
+    "core_concepts": [
+      {
+        "name": "技能路由（Skill Routing）",
+        "description": "基于41条结构化规则（R0-R40），将任务自动分类并路由到对应的技能模块，避免AI盲猜命令"
+      },
+      {
+        "name": "按需自举工具链（On-demand Toolchain Bootstrapping）",
+        "description": "根据任务需求自动检测和调用本地可用工具，支持跨平台（Windows/Ubuntu/Kali/macOS）"
+      },
+      {
+        "name": "自动进化经验库（Self-evolving Knowledge Base）",
+        "description": "通过案例复盘和经验积累，持续更新技能模块和路由规则，避免重复犯错"
+      },
+      {
+        "name": "案例工作流（Case Workflow）",
+        "description": "标准化的案例处理流程：scope确认→工具准备→执行→证据收集→报告生成"
+      },
+      {
+        "name": "AI客户端适配（Client-neutral Adapter）",
+        "description": "支持Claude Code、Cursor、Cline、Kiro、Codex等多种AI代码客户端，核心路由逻辑与客户端解耦"
+      }
+    ],
+    "questions": [
+      "你的AI客户端是否支持读取外部规则文件并严格按规则执行？",
+      "你是否有跨平台（Windows/Linux/macOS）的逆向和渗透测试需求？",
+      "你是否希望将团队的安全经验结构化并复用到AI工作流中？",
+      "你的目标场景是否覆盖APK、二进制、JS加密、CTF、渗透测试等多种类型？",
+      "你是否愿意投入时间学习并适配这套路由体系？"
+    ],
+    "schema_version": 2,
+    "workflow": [
+      {
+        "name": "任务输入",
+        "description": "用户向AI客户端提交逆向、渗透或安全研究任务（如分析APK、解密前端JS、CTF题目等）"
+      },
+      {
+        "name": "规则匹配",
+        "description": "系统读取RULES.md和MASTER-ROUTING.md，根据任务类型匹配41条路由规则（R0-R40）"
+      },
+      {
+        "name": "场景初始化",
+        "description": "执行case-init脚本，创建案例目录，明确授权范围、网络配置和证据链，确保在ACT之前完成scope确认"
+      },
+      {
+        "name": "技能路由",
+        "description": "根据routing.json将任务路由到对应的技能模块（如apk-reverse、js-reverse、pentest-tools等）"
+      },
+      {
+        "name": "工具链执行",
+        "description": "检查本地工具可用性，调用对应的MCP服务器、脚本或工具（如jadx、Frida、radare2等）"
+      }
+    ]
+  },
+  {
+    "_id": "6a77f397ecea1b95c0469c3d",
+    "slug": "tencentcloud/tencentdb-agent-memory",
+    "architecture": [
+      {
+        "name": "Memory Core",
+        "description": "核心记忆引擎，负责资产提取、蒸馏、存储和检索，支持四类记忆资产的生命周期管理。"
+      },
+      {
+        "name": "Memory Hub",
+        "description": "团队级管理面板（运行于 localhost:8125），提供资产审查、共享、ACL、版本和 Agent 绑定等治理能力。"
+      },
+      {
+        "name": "Proxy 层",
+        "description": "作为 Agent 框架与 Memory Core 之间的代理，负责上下文注入、记忆检索路由和 LLM 调用代理。"
+      },
+      {
+        "name": "多 LLM 支持",
+        "description": "需配置两组 LLM 参数（memory group 用于记忆提取/蒸馏，proxy group 用于运行时推理），支持灵活切换模型。"
+      },
+      {
+        "name": "OpenClaw / Hermes 集成",
+        "description": "原生支持 OpenClaw 插件体系和 Hermes Gateway，可作为记忆后端接入多种 Agent 框架。"
+      }
+    ],
+    "avoid_when": [
+      "只需单用户、单会话的简单记忆，不需要团队治理和多 Agent 共享。",
+      "技术栈与 TypeScript/Node.js 不兼容，且不愿引入额外运行时依赖。",
+      "对记忆提取的准确性和可控性有极高要求，且无法接受黑盒式自动蒸馏。",
+      "项目处于快速 Beta 迭代期（默认分支为 feat/server_team），生产环境稳定性需自行验证。"
+    ],
+    "created_at": "2026-08-09T11:27:19",
+    "facts": {
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "stars": 18310,
+      "forks": 1647,
+      "open_issues": 574,
+      "created_at": "2026-04-07T06:34:26Z",
+      "pushed_at": "2026-08-06T12:07:09Z",
+      "topics": [
+        "agent",
+        "ai-agent",
+        "embedding",
+        "llm",
+        "local-first",
+        "long-term-memory",
+        "memory",
+        "openclaw-plugin"
+      ],
+      "language_distribution": [
+        {
+          "name": "TypeScript",
+          "percent": 91.6
+        },
+        {
+          "name": "Python",
+          "percent": 3.5
+        },
+        {
+          "name": "Shell",
+          "percent": 2.2
+        },
+        {
+          "name": "CSS",
+          "percent": 1.8
+        },
+        {
+          "name": "JavaScript",
+          "percent": 0.6
+        }
+      ]
+    },
+    "full_name": "TencentCloud/TencentDB-Agent-Memory",
+    "generated_at": "2026-08-09T12:12:27+08:00",
+    "getting_started": [
+      "克隆仓库：git clone https://github.com/Tencent/TencentDB-Agent-Memory.git",
+      "进入部署目录并配置环境变量：cd TencentDB-Agent-Memory/deploy/global-images && cp .env.example .env，填写两组 LLM 参数。",
+      "一键启动所有服务：./start-all.sh，启动后终端会打印可直接粘贴到 Claude 的连接指令。",
+      "访问 Memory Hub 面板：http://localhost:8125，创建团队和 Agent，导入初始资产。",
+      "参考 INSTALL.md（或 INSTALL_CN.md）了解独立部署、Proxy 集成、端口说明和清理步骤。"
+    ],
+    "intro_url": "https://site-monitor.a4.fit/projects/TencentCloud/TencentDB-Agent-Memory",
+    "model": "qwen3.7-plus",
+    "problem": "当前 AI Agent 在会话间、跨 Agent、跨框架使用时缺乏持久化和结构化的经验积累机制，导致重复解释上下文、重复阅读文档、重复探索工作流，造成大量重复劳动和不稳定输出。",
+    "risks": [
+      "项目处于 Beta 阶段，默认分支为 feat/server_team，API 和数据结构可能频繁变动。",
+      "License 元数据标注为 NOASSERTION，与 README 声明的 MIT 不一致，企业使用需法务确认。",
+      "依赖 Node.js >= 22.16，对运行环境版本有较高要求。",
+      "需配置两组 LLM 参数，记忆提取和运行时推理的 LLM 成本可能显著增加。",
+      "574 个 open issues 表明社区反馈积压较多，部分功能可能存在已知缺陷。",
+      "自动记忆蒸馏和提取的质量高度依赖底层 LLM 能力，不同模型效果差异未确认。"
+    ],
+    "source_url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+    "source_urls": [
+      "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+      "https://github.com/TencentCloud/TencentDB-Agent-Memory/blob/feat/server_team/README.md"
+    ],
+    "tagline": "面向 AI Agent 团队的团队级记忆中枢，将对话、文档和代码转化为可复用、可治理、可跨框架共享的四类记忆资产。",
+    "title": "TencentDB Agent Memory",
+    "updated_at": "2026-08-09T12:18:29",
+    "use_cases": [
+      "一人公司或小型团队使用多个 Agent 协作完成产品开发，通过 Skill 和 CodeGraph 积累工程经验。",
+      "客服或运维团队使用 Agent 处理重复性问题，通过 Chat Memory 和 Wiki 避免重复解释上下文。",
+      "代码审查和发布流程中，Agent 通过 Skill 加载标准化检查清单，确保流程一致性。",
+      "新成员入职时，Agent 团队通过导入历史对话和文档快速冷启动，减少培训成本。"
+    ],
+    "why_choose": [
+      "提供完整的团队级记忆治理闭环：从资产提取、蒸馏、审查、共享到装备，覆盖经验生命周期。",
+      "四类记忆资产抽象（对话、技能、文档、代码）覆盖了 Agent 工作中最主要的上下文来源，减少重复劳动。",
+      "冷启动友好：支持导入现有代码库、文档和历史对话，新 Agent 团队可立即继承已有经验。",
+      "记忆资产与 Agent 框架解耦，支持跨框架迁移，避免供应商锁定。",
+      "提供可视化 Memory Hub 面板，降低团队管理和资产审查的认知负担。"
+    ],
+    "alternatives": [
+      {
+        "name": "Mem0",
+        "when_choose": "需要轻量级、单用户级别的 Agent 记忆，且不强依赖团队治理和代码图谱能力。",
+        "tradeoff": "Mem0 更侧重通用记忆存储和检索，缺乏 TencentDB Agent Memory 的 Skill 版本管理、CodeGraph 影响分析和团队 ACL 治理。"
+      },
+      {
+        "name": "LangChain / LlamaIndex Memory 模块",
+        "when_choose": "已深度使用 LangChain 或 LlamaIndex 生态，且只需会话级或简单长期记忆。",
+        "tradeoff": "这些模块与特定框架强耦合，缺乏跨框架可移植性和独立的团队记忆治理面板。"
+      },
+      {
+        "name": "自建向量数据库 + 提示词工程",
+        "when_choose": "团队有强工程能力，需完全控制记忆提取和检索逻辑，且不需要现成的 Skill/Wiki/CodeGraph 抽象。",
+        "tradeoff": "自建方案需自行实现资产蒸馏、版本管理、ACL 和跨框架适配，开发和维护成本高。"
+      }
+    ],
+    "audience": [
+      "构建多 Agent 协作系统的开发者",
+      "使用 AI Agent 进行代码/文档密集型工作的团队",
+      "希望为 Agent 添加长期记忆能力的框架开发者",
+      "需要降低 Agent 冷启动成本的个人开发者或小团队"
+    ],
+    "core_concepts": [
+      {
+        "name": "Chat Memory（对话记忆）",
+        "description": "将原始对话逐层蒸馏为原子事实、场景和人设，保留用户偏好、决策和交互历史，使 Agent 无需重复自我介绍。"
+      },
+      {
+        "name": "Skill（技能）",
+        "description": "从复杂任务中提取的可复用工作流，包含版本、资源文件、触发边界、执行步骤和验证规则，支持私有和团队共享。"
+      },
+      {
+        "name": "Wiki（知识维基）",
+        "description": "将产品文档、设计规范和运维手册转化为带链接图谱的结构化页面，供 Agent 检索和引用。"
+      },
+      {
+        "name": "CodeGraph（代码图谱）",
+        "description": "索引代码符号、文件、调用关系和影响路径，支持 Agent 在修改代码前进行影响分析和调用链检查。"
+      },
+      {
+        "name": "Memory Hub（记忆中枢面板）",
+        "description": "提供团队和 Agent 管理、资产审查、共享、装备、ACL 控制和版本管理的可视化控制台。"
+      }
+    ],
+    "questions": [
+      "四类记忆资产（Chat Memory / Skill / Wiki / CodeGraph）的提取质量是否依赖特定 LLM？对不同模型的鲁棒性如何？",
+      "Memory Core 的存储后端是什么？是否支持持久化到外部数据库（如 PostgreSQL、TencentDB）？",
+      "跨框架迁移时，记忆资产的格式标准是什么？是否存在厂商锁定风险？",
+      "团队 ACL 和资产所有权机制是否支持与企业现有身份系统（如 LDAP、SSO）集成？",
+      "CodeGraph 的索引是否支持增量更新？大型代码库的索引性能和资源消耗如何？"
+    ],
+    "schema_version": 2,
+    "workflow": [
+      {
+        "name": "资产导入与冷启动",
+        "description": "将现有代码库、文档、历史对话会话导入 Memory Hub，系统自动索引为 CodeGraph、Wiki、Chat Memory 和 Skill 四类资产。"
+      },
+      {
+        "name": "记忆提取与蒸馏",
+        "description": "Agent 在对话和任务执行过程中，自动提取可复用资产：对话被逐层蒸馏为 L0 原始对话 → L1 原子事实 → L2 场景 → L3 人设；复杂任务被提取为带版本、触发条件和验证规则的 Skill。"
+      },
+      {
+        "name": "团队治理与共享",
+        "description": "通过 Memory Hub 面板对资产进行所有权、版本、可见性（private/team/restricted）、ACL 和 Agent 绑定管理，支持 System Admin 和 Team Admin/Member 两级角色。"
+      },
+      {
+        "name": "运行时检索与装备",
+        "description": "Agent 在执行任务时，通过 Memory Core 检索相关记忆资产（如代码影响路径、Wiki 页面、Skill 步骤），注入上下文以减少推理轮次。"
+      },
+      {
+        "name": "跨框架迁移",
+        "description": "记忆资产以标准化格式存储，可脱离特定 Agent 框架独立存在，支持在不同框架（如 OpenClaw、Hermes、Claude Code）间迁移和复用。"
+      }
+    ]
+  },
+  {
+    "_id": "6a77f397ecea1b95c0469c3f",
+    "slug": "lyogavin/airllm",
+    "architecture": [
+      {
+        "name": "AutoModel 入口",
+        "description": "自动识别模型类型（Llama/Qwen/DeepSeek/Mixtral/ChatGLM 等），统一 from_pretrained 接口。"
+      },
+      {
+        "name": "Layer sharding 缓存",
+        "description": "首次推理前将原始权重按层拆分并落盘，需保证 HF cache 目录有足够磁盘空间。"
+      },
+      {
+        "name": "Compute graph",
+        "description": "每层加载 → 前向 → 释放；KV cache 驻留显存；MoE 路径下仅加载激活 expert。"
+      },
+      {
+        "name": "后端适配",
+        "description": "支持 CUDA GPU、CPU（v2.10.1）、MacOS（v2.8.2）；FP8 模型（v3.0）。"
+      }
+    ],
+    "avoid_when": [
+      "需要高吞吐、低延迟的在线推理服务（逐层加载 I/O 是瓶颈）。",
+      "需要训练/微调/LoRA——README 未提供训练流程，topics 中的 lora/finetune 标签与实际推理定位不符，未确认是否可用。",
+      "生产级部署需要成熟 serving 框架（vLLM/TGI）的 batching、监控、权限控制等能力。",
+      "磁盘空间受限——首次运行需将模型按层切分并缓存。",
+      "需要严格复现的量化推理——AirLLM 的 block-wise compression 与主流 GPTQ/AWQ 生态不完全一致。"
+    ],
+    "created_at": "2026-08-09T11:27:19",
+    "facts": {
+      "language": "Jupyter Notebook",
+      "license": "Apache-2.0",
+      "stars": 30189,
+      "forks": 3211,
+      "open_issues": 133,
+      "created_at": "2023-06-12T16:28:41Z",
+      "pushed_at": "2026-08-08T06:54:20Z",
+      "topics": [
+        "chinese-llm",
+        "chinese-nlp",
+        "finetune",
+        "generative-ai",
+        "instruct-gpt",
+        "instruction-set",
+        "llama",
+        "llm"
+      ],
+      "language_distribution": [
+        {
+          "name": "Jupyter Notebook",
+          "percent": 95.6
+        },
+        {
+          "name": "Python",
+          "percent": 4.3
+        },
+        {
+          "name": "Shell",
+          "percent": 0.1
+        }
+      ]
+    },
+    "full_name": "lyogavin/airllm",
+    "generated_at": "2026-08-09T12:14:01+08:00",
+    "getting_started": [
+      "pip install airllm",
+      "可选：pip install -U bitsandbytes（启用 4bit/8bit 压缩加速）",
+      "Python 中：from airllm import AutoModel; model = AutoModel.from_pretrained('Qwen/Qwen3-32B')",
+      "准备 input_text → tokenizer → model.generate(input_ids.cuda(), max_new_tokens=20) → tokenizer.decode",
+      "确保 HF cache 目录有足够磁盘；首次运行会自动按层切分模型",
+      "参考仓库内 examples/ 目录的 Jupyter Notebook（如 run_llama3.1_405B.ipynb）"
+    ],
+    "intro_url": "https://site-monitor.a4.fit/projects/lyogavin/airllm",
+    "model": "qwen3.7-plus",
+    "problem": "70B 及以上模型完整加载需数十 GB 显存，普通开发者/研究者在无多卡 A100/H100 的环境下无法本地运行或调试这些模型。",
+    "risks": [
+      "推理速度受磁盘 I/O 限制，README 未给出 tokens/s 基准数据，高并发场景不可用。",
+      "首次运行需大量磁盘空间用于 layer shards 缓存，未说明具体倍率。",
+      "部分新模型（如 Kimi K3）有强版本依赖（transformers 4.56.x、CUDA 12、flash-attn），环境配置易踩坑。",
+      "README 中 topics 包含 finetune/lora，但正文未介绍训练流程——是否支持微调未确认。",
+      "pushed_at 显示 2026 年，时间戳异常，需自行核验仓库实际活跃度与 issue 处理情况（133 open issues）。",
+      "CPU/MacOS 支持为后续版本加入，性能和兼容性可能弱于 CUDA GPU 主路径。"
+    ],
+    "source_url": "https://github.com/lyogavin/airllm",
+    "source_urls": [
+      "https://github.com/lyogavin/airllm",
+      "https://github.com/lyogavin/airllm/blob/main/README.md"
+    ],
+    "tagline": "通过逐层流式加载，将超大 LLM 推理的显存需求降至消费级 GPU 可承受范围，无需量化/蒸馏/剪枝。",
+    "title": "AirLLM: 单卡 4GB 显存推理 70B 大模型",
+    "updated_at": "2026-08-09T12:18:29",
+    "use_cases": [
+      "个人开发者在单张 RTX 3060/4060（4–8GB）上本地体验 70B–405B 模型。",
+      "研究者快速验证最新开源大模型（DeepSeek-V3、Qwen3-235B、Kimi K3）的效果，无需排队云 GPU。",
+      "离线/边缘环境下的单次或少量 prompt 推理（对延迟不敏感）。",
+      "教学/演示场景中展示超大模型能力，硬件条件受限。"
+    ],
+    "why_choose": [
+      "显存门槛极低：70B/4GB、405B/8GB、DeepSeek-V3/12GB、Kimi K3 (2.8T)/<4GB（README 实测数据）。",
+      "无需预先量化/蒸馏/剪枝，保持原始权重精度。",
+      "接口与 HuggingFace transformers 高度一致，AutoModel 一行代码切换模型。",
+      "支持 MoE per-expert streaming，对稀疏模型显存收益更显著。",
+      "Apache-2.0 开源，社区活跃（30k+ stars）。"
+    ],
+    "alternatives": [],
+    "audience": [
+      "个人开发者/研究者，想在单张消费级 GPU（4–12GB）上跑 70B–2.8T 模型",
+      "希望本地验证开源大模型效果、做 prompt 实验而非训练的团队",
+      "对推理延迟不敏感、更在意'能不能跑起来'的离线/边缘场景用户"
+    ],
+    "core_concepts": [
+      {
+        "name": "Layer-wise streaming",
+        "description": "不整体加载模型，而是按层从磁盘/远端流式读取，每层计算完即释放，使峰值显存只容纳单层参数 + KV cache。"
+      },
+      {
+        "name": "Per-expert streaming (MoE)",
+        "description": "对 MoE 模型（如 Kimi K3、DeepSeek-V3）只加载 token 实际路由到的 expert，进一步压缩显存至 4–12GB。"
+      },
+      {
+        "name": "Block-wise compression",
+        "description": "区别于传统 W+A 量化，仅对权重做 block-wise 量化以减小 I/O 瓶颈，精度损失可忽略，主要收益是加载速度。"
+      },
+      {
+        "name": "Prefetching",
+        "description": "v2.5 起引入加载与计算重叠，约 10% 推理提速。"
+      }
+    ],
+    "questions": [
+      "你的目标模型是否在支持列表内（Llama 3.x/4、Qwen2.5/3、DeepSeek V2/V3、Mixtral、Kimi K3 等）？",
+      "你能接受多少 tokens/s 的延迟？逐层 I/O 决定了它不适合高并发在线服务。",
+      "HF cache 目录是否有足够磁盘存放按层切分后的权重？",
+      "是否需要训练/微调？AirLLM 聚焦推理，README 未提及训练支持。",
+      "目标模型是否强制 flash-attn / 特定 transformers 版本（如 Kimi K3 要求 4.56.x + CUDA 12）？"
+    ],
+    "schema_version": 2,
+    "workflow": [
+      {
+        "name": "安装",
+        "description": "pip install airllm；按需安装 bitsandbytes（压缩加速）、flash-attn（Kimi K3 等强制依赖）、transformers 4.56.x。"
+      },
+      {
+        "name": "加载模型",
+        "description": "AutoModel.from_pretrained('hf_repo_id' 或本地路径)；首次运行会把模型按层切分并缓存到 HF cache 目录。"
+      },
+      {
+        "name": "推理",
+        "description": "tokenizer 编码 → model.generate(input_ids.cuda(), max_new_tokens=...) → tokenizer.decode 输出。接口与 transformers 相似。"
+      },
+      {
+        "name": "可选压缩",
+        "description": "初始化时传 compression='4bit' 或 '8bit'，启用 block-wise 量化，主要减小磁盘读取体积，提速约 3x。"
+      }
+    ]
+  },
+  {
+    "_id": "6a77f398ecea1b95c0469c41",
+    "slug": "microsoft/ai-for-beginners",
+    "architecture": [
+      {
+        "name": "课程驱动型仓库（非软件库）",
+        "description": "主体为 Jupyter Notebook（100%），按 lessons/ 目录组织 24 课，无独立可安装包。"
+      },
+      {
+        "name": "双框架代码示例",
+        "description": "同一概念常同时给出 TensorFlow 与 PyTorch 实现，便于对比学习。"
+      },
+      {
+        "name": "多语言翻译层",
+        "description": "通过 GitHub Action + co-op-translator 自动维护 50+ 语言版本，位于 translations/ 目录。"
+      },
+      {
+        "name": "Binder 在线运行环境",
+        "description": "README 含 mybinder 徽章，允许零配置在浏览器执行 Notebook。"
+      }
+    ],
+    "avoid_when": [
+      "已具备深度学习基础、追求最新 SOTA（如 LLM/Diffusion/RLHF）——README 自承 SOTA 覆盖不足",
+      "目标是快速落地业务 AI 应用——课程明确不覆盖 Cognitive Services 与商业案例",
+      "需要经典机器学习（SVM/树模型/特征工程）——应转去 ML-For-Beginners",
+      "寻找可直接集成到生产环境的软件库——本仓库是课程而非库，100% Notebook，无可安装包",
+      "希望获得官方认证或学分——仅为开源课程，无证书机制"
+    ],
+    "created_at": "2026-08-09T11:27:19",
+    "facts": {
+      "language": "Jupyter Notebook",
+      "license": "MIT",
+      "stars": 63678,
+      "forks": 12334,
+      "open_issues": 26,
+      "created_at": "2021-03-03T16:27:36Z",
+      "pushed_at": "2026-07-21T11:11:48Z",
+      "topics": [
+        "ai",
+        "artificial-intelligence",
+        "cnn",
+        "computer-vision",
+        "deep-learning",
+        "gan",
+        "machine-learning",
+        "microsoft-for-beginners"
+      ],
+      "language_distribution": [
+        {
+          "name": "Jupyter Notebook",
+          "percent": 100.0
+        },
+        {
+          "name": "Python",
+          "percent": 0.0
+        },
+        {
+          "name": "HTML",
+          "percent": 0.0
+        },
+        {
+          "name": "Vue",
+          "percent": 0.0
+        },
+        {
+          "name": "JavaScript",
+          "percent": 0.0
+        }
+      ]
+    },
+    "full_name": "microsoft/AI-For-Beginners",
+    "generated_at": "2026-08-09T12:13:42+08:00",
+    "getting_started": [
+      "稀疏克隆仓库：git clone --filter=blob:none --sparse https://github.com/microsoft/AI-For-Beginners.git，然后 git sparse-checkout set --no-cone '/*' '!translations' '!translated_images'",
+      "安装 Python + Jupyter + TensorFlow + PyTorch（或使用 README 中的 Binder 徽章在浏览器直接打开）",
+      "从 lessons/ 目录按 12 周课表顺序打开第一课 Notebook",
+      "完成每课末尾的 quiz 与 lab",
+      "加入 Discord (nTYy5BXMWG) 或 Gitter 获取答疑"
+    ],
+    "intro_url": "https://site-monitor.a4.fit/projects/microsoft/AI-For-Beginners",
+    "model": "qwen3.7-plus",
+    "problem": "为零基础或转行学习者提供一套结构化、可动手实践的 AI 入门路径，弥补传统教材偏理论、缺代码实验的不足；同时覆盖经典符号 AI 与现代深度学习两条主线。",
+    "risks": [
+      "内容时效性风险：README 自承 SOTA 覆盖不足，且 pushed_at 显示 2026 年，需人工核验最新 commit 是否补充了 Transformer/LLM 章节",
+      "翻译质量风险：50+ 语言由 co-op-translator 自动维护，技术术语可能存在误译",
+      "框架双轨维护成本：TensorFlow 与 PyTorch 代码同步更新可能导致部分课时其中一版滞后或报错",
+      "环境配置门槛：尽管有 Binder，但本地运行仍需自行配置 CUDA / 依赖版本，对纯新手仍有摩擦",
+      "无自动评分与进度追踪：作为纯开源课程，缺少 LMS 式学习管理，依赖学习者自律",
+      "社区活跃度未确认：Discord / Gitter 的实际响应速度与质量需加入后自行评估"
+    ],
+    "source_url": "https://github.com/microsoft/AI-For-Beginners",
+    "source_urls": [
+      "https://github.com/microsoft/AI-For-Beginners",
+      "https://github.com/microsoft/AI-For-Beginners/blob/main/README.md"
+    ],
+    "tagline": "微软出品的 12 周 24 课 AI 入门课程（Jupyter Notebook 形式），涵盖符号 AI、神经网络、深度学习、CV/NLP、GAN、遗传算法与多智能体，并附带测验与实验。",
+    "title": "microsoft/AI-For-Beginners",
+    "updated_at": "2026-08-09T12:18:29",
+    "use_cases": [
+      "高校教师将 12 周课表直接用作 AI 导论课教材与实验素材",
+      "后端/前端工程师系统转岗 AI，用 3 个月完成从零到能跑通 CNN/RNN/GAN 的过渡",
+      "非英语母语学习者使用母语翻译版 + Binder 零配置环境入门",
+      "技术团队内部培训，统一符号 AI 与深度学习的基础概念与术语"
+    ],
+    "why_choose": [
+      "微软官方维护、63.7k star、MIT 协议，可信度与可商用性高",
+      "结构化 12 周课表 + 测验 + Lab，适合自学者按部就班",
+      "同时覆盖符号 AI 与深度学习，知识图谱比纯 DL 教程更完整",
+      "TensorFlow 与 PyTorch 双框架示例，降低框架锁定焦虑",
+      "50+ 语言翻译 + Binder 零配置运行，对非英语母语与环境配置困难者友好",
+      "明确声明不覆盖的内容（经典 ML、Cognitive Services、商业案例），边界清晰，便于与 ML-For-Beginners 等互补"
+    ],
+    "alternatives": [
+      {
+        "name": "fast.ai (Practical Deep Learning for Coders)",
+        "when_choose": "已有编程基础、希望自顶向下快速做出可用模型的学习者",
+        "tradeoff": "更实战、更新快，但缺乏符号 AI 与系统化课程结构，伦理覆盖较少"
+      },
+      {
+        "name": "Microsoft ML-For-Beginners",
+        "when_choose": "想先打牢经典机器学习（回归/树/聚类）基础再进入深度学习",
+        "tradeoff": "本仓库明确声明不覆盖经典 ML，两者互补而非替代"
+      },
+      {
+        "name": "Stanford CS231n / CS224n",
+        "when_choose": "追求学术深度与最新 SOTA（CV / NLP）",
+        "tradeoff": "难度更高、数学要求更重，不适合完全零基础；本仓库 README 自承 SOTA 覆盖不足"
+      },
+      {
+        "name": "Kaggle Learn / Google ML Crash Course",
+        "when_choose": "只想用碎片时间快速掌握某几个实用技能点",
+        "tradeoff": "模块化、轻量，但缺乏本仓库这种 12 周连贯课程与符号 AI 视角"
+      }
+    ],
+    "audience": [
+      "AI/ML 零基础的在校生或自学者",
+      "希望系统补全 AI 知识图谱的软件工程师",
+      "高校教师寻找可直接用于教学的课程素材",
+      "非英语母语者（仓库提供 50+ 语言翻译）"
+    ],
+    "core_concepts": [
+      {
+        "name": "符号 AI / GOFAI",
+        "description": "知识表示与推理，经典 AI 路线，课程明确纳入以区别于纯深度学习教程。"
+      },
+      {
+        "name": "神经网络与深度学习",
+        "description": "课程核心，使用 TensorFlow 与 PyTorch 双框架演示。"
+      },
+      {
+        "name": "图像与文本的神经架构",
+        "description": "覆盖 CNN、RNN、GAN 等（来自 topics），但 README 自承“可能缺乏最新 SOTA”。"
+      },
+      {
+        "name": "遗传算法与多智能体系统",
+        "description": "作为“较少见”的 AI 方法被纳入，拓宽视野。"
+      },
+      {
+        "name": "AI 伦理",
+        "description": "README 明确提及包含 ethics in AI 内容。"
+      }
+    ],
+    "questions": [
+      "课程最近一次实质性内容更新是何时？README 自承“may be a bit lacking in the state-of-the-art”，是否已补充 Transformer/LLM 相关章节？",
+      "24 课是否都同时提供 TensorFlow 与 PyTorch 双版本，还是部分仅单框架？",
+      "测验与 Lab 是否提供自动评分或参考答案？",
+      "课程是否依赖 Azure 服务或仅使用开源框架？（README 明确声明不覆盖 Cognitive Services，但需确认代码中是否仍有 Azure 依赖）",
+      "50+ 语言翻译的准确率与时效性如何？是否由社区自动翻译未经人工审校？"
+    ],
+    "schema_version": 2,
+    "workflow": [
+      {
+        "name": "克隆仓库（建议稀疏克隆以跳过翻译目录）",
+        "description": "使用 git sparse-checkout 排除 translations/ 与 translated_images/，显著减小下载体积。"
+      },
+      {
+        "name": "按 12 周课表顺序学习 24 课",
+        "description": "每课包含讲解、代码 Notebook、测验与小实验；先符号 AI（知识表示/推理），再神经网络与深度学习。"
+      },
+      {
+        "name": "在 Jupyter 中运行 TensorFlow / PyTorch 代码",
+        "description": "可直接本地运行，也可点击 Binder 徽章在浏览器中免安装体验。"
+      },
+      {
+        "name": "完成每课测验与 Lab",
+        "description": "巩固概念；仓库 README 提及含 quizzes 与 labs。"
+      },
+      {
+        "name": "加入 Discord / Gitter 社区答疑",
+        "description": "README 提供 Microsoft Foundry Discord 与 Gitter 链接。"
+      }
+    ]
+  },
+  {
+    "_id": "6a77f399ecea1b95c0469c43",
+    "slug": "esengine/deepseek-reasonix",
+    "architecture": [
+      {
+        "name": "单文件 Go 引擎",
+        "description": "核心为 CGO_ENABLED=0 的静态二进制（Go 占 71.1%），可一次交叉编译到 darwin/linux/windows × amd64/arm64 六个目标。"
+      },
+      {
+        "name": "多入口共享本地引擎",
+        "description": "CLI/TUI、桌面 App、浏览器、VS Code 扩展均调用同一本地 Reasonix 引擎，VS Code 通过 ACP 协议连本地后端。"
+      },
+      {
+        "name": "配置层 (reasonix.toml)",
+        "description": "Provider、模型、工具、插件全部声明式配置；DeepSeek 为预设，其他 OpenAI 兼容端点以配置接入。"
+      },
+      {
+        "name": "插件层 (MCP + Extension Protocol v1)",
+        "description": "MCP server 贡献工具/提示/资源；Extension Protocol v1 sidecar 拦截事件、扩展 Provider 与 UI。"
+      },
+      {
+        "name": "缓存感知上下文维护",
+        "description": "启动注入稳定环境摘要；过期工具输出在 summary compaction 前被裁剪/剪枝；内置工具 schema 契约用于回归审查。"
+      },
+      {
+        "name": "TypeScript UI 层",
+        "description": "TS 占 21.4%，用于 TUI/桌面/浏览器等前端入口（基于 ink 等终端 UI 技术，具体未确认）。"
+      }
+    ],
+    "avoid_when": [
+      "需要强绑定特定非 OpenAI 兼容模型或私有协议（README 仅明确 OpenAI 兼容端点）。",
+      "希望开箱即用的 GUI 优先体验而不碰配置（仍需 reasonix.toml 或 setup）。",
+      "对开源项目的长期维护与 975 个 open issues 的处理节奏有严格要求。",
+      "需要生产级企业支持、SLA 或官方商业背书（README 未提及）。",
+      "对 TypeScript UI 层（ink 等）的终端兼容性有特殊要求且不愿自行验证。"
+    ],
+    "created_at": "2026-08-09T11:27:19",
+    "facts": {
+      "language": "Go",
+      "license": "MIT",
+      "stars": 33206,
+      "forks": 2144,
+      "open_issues": 975,
+      "created_at": "2026-04-21T08:27:02Z",
+      "pushed_at": "2026-08-09T04:08:05Z",
+      "topics": [
+        "agent",
+        "agent-framework",
+        "ai-agent",
+        "ai-coding",
+        "cli",
+        "coding-agent",
+        "deepseek",
+        "developer-tools"
+      ],
+      "language_distribution": [
+        {
+          "name": "Go",
+          "percent": 71.1
+        },
+        {
+          "name": "TypeScript",
+          "percent": 21.4
+        },
+        {
+          "name": "CSS",
+          "percent": 4.0
+        },
+        {
+          "name": "JavaScript",
+          "percent": 0.9
+        },
+        {
+          "name": "Shell",
+          "percent": 0.8
+        }
+      ]
+    },
+    "full_name": "esengine/DeepSeek-Reasonix",
+    "generated_at": "2026-08-09T12:15:09+08:00",
+    "getting_started": [
+      "npm i -g reasonix 或 brew install esengine/reasonix/reasonix 安装 CLI/TUI。",
+      "运行 reasonix setup 配置 Provider 与模型（DeepSeek 为内置预设）。",
+      "运行 reasonix 进入交互会话，或 reasonix run \"implement the TODOs in main.go\" 执行一次性任务。",
+      "在交互会话中运行 /init 生成项目指令。",
+      "可选：安装 VS Code 扩展 SivanLiu.reasonix-agent，通过本地 reasonix acp 后端接入编辑器。",
+      "可选：从官网下载桌面 App（macOS / Windows / Linux），在 App 内配置 Provider 与模型。"
+    ],
+    "intro_url": "https://site-monitor.a4.fit/projects/esengine/DeepSeek-Reasonix",
+    "model": "qwen3.7-plus",
+    "problem": "现有 AI 编码 Agent 在长会话中容易因上下文膨胀、缓存失效、权限失控而变得昂贵、不可读、不可逆；同时多模型/多入口（终端、桌面、浏览器、编辑器）往往需要重复接入与定制。",
+    "risks": [
+      "README 截断，ACP、Extensions、Spec 等文档细节未完整展示，部分机制（如 Extension Protocol v1 的具体 API）需查阅外部文档确认。",
+      "975 个 open issues 数量较高，需评估其中阻塞性 bug 与维护响应速度。",
+      "项目创建于 2026-04，最近 push 在 2026-08，长期维护节奏与路线图未明确。",
+      "TypeScript UI 层（占 21.4%，topics 含 ink）的终端兼容性与稳定性需自行验证。",
+      "前缀缓存稳定性的实际收益依赖 Provider 端是否支持并正确计费，README 未给出量化数据。",
+      "双模型组合的提示词与上下文隔离策略细节未在 README 中展开。"
+    ],
+    "source_url": "https://github.com/esengine/DeepSeek-Reasonix",
+    "source_urls": [
+      "https://github.com/esengine/DeepSeek-Reasonix",
+      "https://github.com/esengine/DeepSeek-Reasonix/blob/main-v2/README.md"
+    ],
+    "tagline": "为终端打造的 DeepSeek 原生 AI 编码 Agent，围绕前缀缓存稳定性设计，可长时间自主运行。",
+    "title": "DeepSeek-Reasonix",
+    "updated_at": "2026-08-09T12:18:29",
+    "use_cases": [
+      "在终端中运行长自主编码任务（如批量实现 TODO、跨文件重构），依赖缓存稳定降低成本。",
+      "使用 DeepSeek-R1 等推理模型，结合 executor + planner 双模型分工。",
+      "通过 MCP 把内部工具/文档接入 Agent，扩展其能力边界。",
+      "在 CI 或远程机器上部署单文件二进制，无需额外运行时。",
+      "通过 ACP 把同一本地引擎接入 VS Code，保持 CLI 与编辑器体验一致。"
+    ],
+    "why_choose": [
+      "围绕前缀缓存稳定性设计，长会话成本更可控。",
+      "单文件 Go 二进制，零依赖部署，交叉编译覆盖六大目标平台。",
+      "配置驱动、模型无关：DeepSeek 为预设，任何 OpenAI 兼容端点以配置接入。",
+      "同一本地引擎支持 CLI/TUI、桌面、浏览器、VS Code（ACP）四种入口。",
+      "可选双模型组合（executor + planner）在独立缓存稳定会话中运行。",
+      "MCP + Extension Protocol v1 提供可扩展的工具、Provider 与 UI 插件机制。"
+    ],
+    "alternatives": [
+      {
+        "name": "Claude Code / Codex CLI 等官方终端 Agent",
+        "when_choose": "更看重官方模型集成与生态，不介意厂商绑定。",
+        "tradeoff": "通常与特定模型/生态强绑定；Reasonix 以配置驱动、模型无关（OpenAI 兼容）且强调缓存稳定与长运行可控。"
+      },
+      {
+        "name": "Cursor / Windsurf 等编辑器内 Agent",
+        "when_choose": "希望深度嵌入编辑器体验，接受闭源与订阅。",
+        "tradeoff": "闭源、入口单一；Reasonix 开源 MIT、单二进制，且通过 ACP 把同一引擎接入 VS Code，入口更灵活。"
+      },
+      {
+        "name": "Aider 等开源终端编码 Agent",
+        "when_choose": "偏好成熟社区与多模型默认支持。",
+        "tradeoff": "Reasonix 的差异化在于前缀缓存稳定性、双模型组合、Extension Protocol v1 与多入口共享本地引擎；但社区规模与生态成熟度需自行评估。"
+      }
+    ],
+    "audience": [
+      "习惯在终端工作的 Go / TypeScript 开发者",
+      "需要长时间自主运行 Agent 的工程师（如批量 TODO、重构）",
+      "关注 LLM 调用成本、希望利用前缀缓存的团队",
+      "希望把同一本地引擎接入 CLI、桌面、VS Code 的用户"
+    ],
+    "core_concepts": [
+      {
+        "name": "前缀缓存稳定性 (prefix-cache stability)",
+        "description": "启动时注入小而稳定的环境摘要，工具输出在压缩前被裁剪/剪枝，以保持 prompt 前缀稳定，最大化缓存命中、降低长会话成本。"
+      },
+      {
+        "name": "Config-driven 引擎",
+        "description": "Provider、Agent、工具、插件均在 reasonix.toml 声明，无硬编码模型；新增模型或端点只改配置不改代码。"
+      },
+      {
+        "name": "双模型组合 (executor + planner)",
+        "description": "可选在两个独立、缓存稳定的会话中同时运行执行模型与规划模型。"
+      },
+      {
+        "name": "插件与扩展协议",
+        "description": "MCP server 提供工具/提示/资源；Extension Protocol v1 sidecar 可拦截运行时事件、贡献 Provider 与结构化 UI，并支持版本化插件包。"
+      },
+      {
+        "name": "ACP (Agent Communication Protocol)",
+        "description": "用于把本地 Reasonix 引擎接入编辑器的协议，VS Code 扩展通过 reasonix acp 后端接入。"
+      },
+      {
+        "name": "Plan mode / 权限 / 沙箱 / 检查点",
+        "description": "长自主运行的安全与可控机制：先规划、再审批、在沙箱中执行、逐轮可回滚。"
+      }
+    ],
+    "questions": [
+      "reasonix.toml 中可声明哪些 Provider 与工具？DeepSeek 预设的具体模型版本是什么？",
+      "Extension Protocol v1 sidecar 的 API 稳定性与版本策略如何？",
+      "Plan mode / 权限 / 沙箱 / 检查点的默认行为与可配置粒度是什么？",
+      "缓存感知上下文维护的具体策略（何时剪枝、如何压缩）是否有可观测指标？",
+      "VS Code 扩展与本地引擎的版本绑定关系与升级路径？"
+    ],
+    "schema_version": 2,
+    "workflow": [
+      {
+        "name": "安装引擎",
+        "description": "通过 npm 全局安装、Homebrew 或下载预编译二进制（单文件、CGO_ENABLED=0）。"
+      },
+      {
+        "name": "配置 Provider 与模型",
+        "description": "运行 reasonix setup 或在 reasonix.toml 中声明 Provider、模型、启用的工具与插件；DeepSeek 为内置预设，其他 OpenAI 兼容端点以配置方式接入。"
+      },
+      {
+        "name": "启动会话",
+        "description": "交互模式运行 reasonix，或一次性任务运行 reasonix run \"...\"；可用 /init 生成项目指令。"
+      },
+      {
+        "name": "选择入口",
+        "description": "同一本地引擎支持 CLI/TUI、桌面 App、浏览器、VS Code（通过 ACP 协议连接本地 reasonix acp 后端）。"
+      },
+      {
+        "name": "自主运行与检查点",
+        "description": "在 Plan mode、权限审批、工作区沙箱、逐轮检查点下运行长任务，可随时阅读与回滚。"
+      }
+    ]
+  },
+  {
+    "_id": "6a77f399ecea1b95c0469c45",
+    "slug": "usekaneo/kaneo",
+    "architecture": [
+      {
+        "name": "前端",
+        "description": "React + TypeScript，提供简洁的看板界面和任务管理界面"
+      },
+      {
+        "name": "后端",
+        "description": "Hono 框架（TypeScript），提供 RESTful API 和 MCP 端点"
+      },
+      {
+        "name": "数据库",
+        "description": "PostgreSQL 16，存储项目、任务、用户等核心数据"
+      },
+      {
+        "name": "部署方案",
+        "description": "支持 Docker Compose 一键部署、Kubernetes Helm Chart、drim CLI 工具"
+      },
+      {
+        "name": "MCP Server",
+        "description": "内置 HTTP 端点 `/api/mcp`，支持 stdio 客户端，实现 AI 工具集成"
+      }
+    ],
+    "avoid_when": [
+      "需要复杂敏捷报表和高级工作流定制的大型企业",
+      "依赖 Atlassian 生态（Confluence、Bitbucket）深度集成的团队",
+      "需要移动端原生应用或离线功能的场景",
+      "期望开箱即用的 SaaS 服务，不愿投入运维资源的团队",
+      "需要高级权限管理、审计日志等企业级功能的组织"
+    ],
+    "created_at": "2026-08-09T11:27:19",
+    "facts": {
+      "language": "TypeScript",
+      "license": "MIT",
+      "stars": 7772,
+      "forks": 621,
+      "open_issues": 56,
+      "created_at": "2024-12-31T08:25:09Z",
+      "pushed_at": "2026-08-09T03:28:11Z",
+      "topics": [
+        "hacktoberfest",
+        "hono",
+        "issue-management",
+        "issue-tracker",
+        "jira-alternative",
+        "kanban",
+        "linear-alternative",
+        "project-management"
+      ],
+      "language_distribution": [
+        {
+          "name": "TypeScript",
+          "percent": 94.1
+        },
+        {
+          "name": "MDX",
+          "percent": 3.8
+        },
+        {
+          "name": "CSS",
+          "percent": 1.2
+        },
+        {
+          "name": "JavaScript",
+          "percent": 0.4
+        },
+        {
+          "name": "Shell",
+          "percent": 0.2
+        }
+      ]
+    },
+    "full_name": "usekaneo/kaneo",
+    "generated_at": "2026-08-09T12:15:12+08:00",
+    "getting_started": [
+      "安装 drim CLI：`curl -fsSL https://assets.kaneo.app/install.sh | sh`",
+      "运行 `drim setup` 完成一键部署（自动配置 HTTPS、数据库）",
+      "或使用 Docker Compose：复制 `compose.yml`，配置 `.env` 文件",
+      "设置 `POSTGRES_PASSWORD` 和 `AUTH_SECRET`（通过 `openssl rand -hex 32` 生成）",
+      "运行 `docker compose up -d`，访问 `http://localhost:5173`",
+      "查看完整文档：https://kaneo.app/docs/core"
+    ],
+    "intro_url": "https://site-monitor.a4.fit/projects/usekaneo/kaneo",
+    "model": "qwen3.7-plus",
+    "problem": "现有项目管理工具（如 Jira、Linear）功能过于臃肿复杂，过多的通知、按钮和工作流分散团队对核心产品开发的注意力，导致工具本身成为负担而非助力",
+    "risks": [
+      "项目较新（2024年12月创建），生态和插件支持可能不完善",
+      "社区规模有限（7772 stars），遇到问题时获取帮助可能较慢",
+      "功能相对基础，复杂项目管理需求可能需要额外工具补充",
+      "自托管需要一定运维能力，需自行处理备份、升级和安全问题",
+      "文档和教程可能不够详尽，学习曲线存在"
+    ],
+    "source_url": "https://github.com/usekaneo/kaneo",
+    "source_urls": [
+      "https://github.com/usekaneo/kaneo",
+      "https://github.com/usekaneo/kaneo/blob/main/README.md"
+    ],
+    "tagline": "极简、自托管的开源项目管理工具，聚焦核心任务管理，去除冗余功能",
+    "title": "Kaneo",
+    "updated_at": "2026-08-09T12:18:29",
+    "use_cases": [
+      "10-50 人规模的开发团队，追求高效协作和极简工具",
+      "初创公司快速迭代产品，需要轻量级项目管理",
+      "数据敏感行业（金融、医疗）需要自托管解决方案",
+      "技术驱动型团队希望将 AI 工具融入日常工作流",
+      "厌倦 Jira 复杂性，寻求更简洁替代品的团队"
+    ],
+    "why_choose": [
+      "极简设计：去除冗余功能，专注核心任务管理，降低团队学习成本",
+      "完全自托管：数据主权在握，适合数据敏感型企业和合规要求",
+      "高性能：基于 TypeScript 全栈开发，响应速度快，用户体验流畅",
+      "AI 原生：内置 MCP Server，可与 Claude、Cursor 等 AI 工具无缝集成",
+      "开源免费：MIT 许可证，可自由修改和分发，无厂商锁定风险",
+      "部署灵活：支持 Docker Compose、Kubernetes、drim CLI 等多种部署方式"
+    ],
+    "alternatives": [
+      {
+        "name": "Jira",
+        "when_choose": "大型企业需要复杂工作流、敏捷报表、与 Atlassian 生态深度集成",
+        "tradeoff": "功能强大但学习曲线陡峭，界面复杂，价格较高"
+      },
+      {
+        "name": "Linear",
+        "when_choose": "追求现代 UI 和流畅体验的中小团队，接受 SaaS 模式",
+        "tradeoff": "界面优秀但不可自托管，数据在第三方，定制性有限"
+      },
+      {
+        "name": "Taiga",
+        "when_choose": "需要开源、自托管且支持敏捷开发（Scrum/Kanban）的团队",
+        "tradeoff": "功能相对完整但界面较老旧，社区活跃度不如 Kaneo"
+      },
+      {
+        "name": "Plane",
+        "when_choose": "需要开源 Jira 替代品，功能较全面且支持自托管",
+        "tradeoff": "功能丰富但可能仍显复杂，资源消耗较大"
+      }
+    ],
+    "audience": [
+      "追求极简工作流的小型开发团队",
+      "需要自托管方案的数据敏感型企业",
+      "厌倦 Jira/Linear 复杂性的技术团队",
+      "偏好开源和可控性的初创公司"
+    ],
+    "core_concepts": [
+      {
+        "name": "极简主义",
+        "description": "只保留解决真实问题的功能，拒绝为演示效果添加冗余特性"
+      },
+      {
+        "name": "自托管优先",
+        "description": "数据完全掌控在用户手中，支持本地部署和私有云"
+      },
+      {
+        "name": "性能导向",
+        "description": "基于 TypeScript 全栈开发，注重响应速度和用户体验"
+      },
+      {
+        "name": "AI 原生集成",
+        "description": "内置 MCP Server，支持 AI 工具直接操作项目数据"
+      }
+    ],
+    "questions": [
+      "项目是否支持多团队/多工作空间隔离？",
+      "是否有移动端应用或响应式设计？",
+      "是否支持 Webhook、API 集成或第三方工具对接（如 Slack、GitHub）？",
+      "权限管理粒度如何？是否支持细粒度的角色和访问控制？",
+      "数据备份和迁移方案是否完善？"
+    ],
+    "schema_version": 2,
+    "workflow": [
+      {
+        "name": "项目创建",
+        "description": "创建项目并定义基础结构（看板、任务、标签）"
+      },
+      {
+        "name": "任务管理",
+        "description": "创建 Issue，分配给团队成员，设置优先级和状态"
+      },
+      {
+        "name": "看板视图",
+        "description": "通过可视化看板跟踪任务进度，拖拽调整状态"
+      },
+      {
+        "name": "团队协作",
+        "description": "团队成员更新任务状态，添加评论，管理依赖"
+      },
+      {
+        "name": "AI 集成",
+        "description": "通过 MCP Server 让 AI 工具（Claude、Cursor）直接管理任务和项目"
+      }
+    ]
+  },
+  {
+    "_id": "6a77f399ecea1b95c0469c47",
+    "slug": "virgiliojr94/book-to-skill",
+    "architecture": [
+      {
+        "name": "Extractor",
+        "description": "Python 确定性模块，支持 PDF/EPUB/DOCX/MD/HTML/RTF/MOBI，按格式自动选择提取工具"
+      },
+      {
+        "name": "Generator",
+        "description": "规范驱动的生成器，代理遵循 SKILL.md 将提取内容转化为结构化技能包"
+      },
+      {
+        "name": "Skill Directory",
+        "description": "输出目录包含 SKILL.md（核心心智模型+章节索引）、chapters/（分章节）、glossary.md（术语表）、patterns.md（模式）、cheatsheet.md（速查表）"
+      }
+    ],
+    "avoid_when": [
+      "文档主要为代码/表格/图表而非散文",
+      "仅需一次性查询无需复用",
+      "代理不支持 Agent Skills 标准",
+      "文档结构极度混乱无法提取目录"
+    ],
+    "created_at": "2026-08-09T11:27:19",
+    "facts": {
+      "language": "Python",
+      "license": "MIT",
+      "stars": 18989,
+      "forks": 2042,
+      "open_issues": 22,
+      "created_at": "2026-05-01T02:09:39Z",
+      "pushed_at": "2026-08-07T15:34:15Z",
+      "topics": [],
+      "language_distribution": [
+        {
+          "name": "Python",
+          "percent": 98.7
+        },
+        {
+          "name": "HTML",
+          "percent": 1.3
+        }
+      ]
+    },
+    "full_name": "virgiliojr94/book-to-skill",
+    "generated_at": "2026-08-09T12:16:29+08:00",
+    "getting_started": [
+      "git clone https://github.com/virgiliojr94/book-to-skill.git ~/.claude/skills/book-to-skill",
+      "python3 scripts/extract.py --check 验证提取工具安装状态",
+      "/book-to-skill ./my-book.pdf 执行首次转换",
+      "/my-book <topic> 测试按需查询"
+    ],
+    "intro_url": "https://site-monitor.a4.fit/projects/virgiliojr94/book-to-skill",
+    "model": "qwen3.7-plus",
+    "problem": "技术书籍读完即忘；传统 PDF 搜索只返回页码而非答案；将整本书塞进 LLM 上下文会导致幻觉和 token 浪费；手动笔记难以复用",
+    "risks": [
+      "转换阶段消耗大量 token（未确认具体数值）",
+      "依赖外部提取工具（如 PDF 解析器）的可用性",
+      "非结构化文档可能导致提取质量下降",
+      "代理需支持 Agent Skills 标准才能加载生成的技能"
+    ],
+    "source_url": "https://github.com/virgiliojr94/book-to-skill",
+    "source_urls": [
+      "https://github.com/virgiliojr94/book-to-skill",
+      "https://github.com/virgiliojr94/book-to-skill/blob/master/README.md"
+    ],
+    "tagline": "将技术书籍 PDF/文档转化为 AI 代理可按需加载的结构化技能包，实现 24×–51× 的 token 节省",
+    "title": "book-to-skill",
+    "updated_at": "2026-08-09T12:18:29",
+    "use_cases": [
+      "将技术书籍转化为编程助手的可查询知识库",
+      "将内部 runbook/架构决策记录转化为团队共享技能",
+      "将品牌指南/设计系统转化为设计师的即时参考",
+      "将 RFC/API 规范转化为开发时的合规检查工具",
+      "将研究论文集群转化为统一的研究助手"
+    ],
+    "why_choose": [
+      "24×–51× token 节省，查询成本与答案规模成正比",
+      "跨代理兼容，一次转换多处使用",
+      "按需加载章节，避免上下文污染",
+      "支持 PDF/EPUB/DOCX/MD/HTML/RTF/MOBI 多格式",
+      "MIT 开源，可本地部署保护隐私"
+    ],
+    "alternatives": [
+      {
+        "name": "直接 PDF 全文塞入上下文",
+        "when_choose": "仅需一次性问答且不在意 token 成本",
+        "tradeoff": "24×–51× 更多 token，易产生幻觉，无法复用"
+      },
+      {
+        "name": "PDF 搜索工具",
+        "when_choose": "只需定位关键词所在页码",
+        "tradeoff": "返回页码列表而非答案，需人工阅读"
+      },
+      {
+        "name": "手动笔记/摘要",
+        "when_choose": "希望深度理解并建立个人知识体系",
+        "tradeoff": "耗时且笔记易被遗忘，无法直接被代理调用"
+      }
+    ],
+    "audience": [
+      "使用 Claude Code/GitHub Copilot CLI/Amp 等 AI 编程助手的开发者",
+      "需要频繁查阅技术文档、RFC、内部 runbook 的工程师",
+      "希望将知识资产转化为可查询技能的技术团队负责人"
+    ],
+    "core_concepts": [
+      {
+        "name": "Agent Skills 标准",
+        "description": "开放的 SKILL.md 格式规范，支持跨代理（Claude Code/Copilot CLI/Amp）统一加载"
+      },
+      {
+        "name": "按需加载章节",
+        "description": "每章独立为 ~1000 token 文件，仅在查询时加载，不占用技能基础预算"
+      },
+      {
+        "name": "Discovery Loop Tax",
+        "description": "PDF 阅读代理每次查询需重新解析目录和回溯，book-to-skill 将结构化成本前置到转换阶段"
+      },
+      {
+        "name": "确定性提取器",
+        "description": "Python 脚本按格式优先级尝试提取工具，输出干净文本和元数据"
+      }
+    ],
+    "questions": [
+      "你的代理是否支持 Agent Skills 标准？",
+      "文档是否为结构化散文（非代码/表格为主）？",
+      "是否需要频繁查阅同一文档的多个章节？",
+      "是否接受转换阶段的 token 成本以换取查询阶段的节省？",
+      "文档是否包含敏感内容需本地处理？"
+    ],
+    "schema_version": 2,
+    "workflow": [
+      {
+        "name": "安装技能",
+        "description": "将 book-to-skill 克隆到 ~/.claude/skills/ 或对应代理的 skills 目录"
+      },
+      {
+        "name": "转换文档",
+        "description": "执行 /book-to-skill ./my-book.pdf，提取器解析文档结构，生成器创建 SKILL.md 和分章节文件"
+      },
+      {
+        "name": "按需查询",
+        "description": "在代理中输入 /my-book replication，代理仅加载相关章节文件回答，避免全量上下文加载"
+      }
+    ]
+  },
+  {
+    "_id": "6a77f39aecea1b95c0469c49",
+    "slug": "iv-org/invidious",
+    "architecture": [
+      {
+        "name": "Crystal 后端服务",
+        "description": "核心服务使用 Crystal 语言编写（占代码量 73.6%），负责抓取 YouTube 页面数据、解析视频流地址、提供 Web 界面和 REST API。Crystal 的静态编译特性使其运行效率高、资源占用低。"
+      },
+      {
+        "name": "服务端渲染 HTML 前端",
+        "description": "Web 界面以服务端渲染的 HTML 为主（HTML 占 12.8%），辅以少量 JavaScript（7.9%）和 CSS（2.5%）实现交互和主题切换，确保无 JS 环境下的基本可用性。"
+      },
+      {
+        "name": "视频流代理",
+        "description": "Invidious 实例可作为代理中转视频流，隐藏用户的真实 IP 地址，防止 YouTube 直接追踪观看者。"
+      },
+      {
+        "name": "REST API 层",
+        "description": "提供结构化的开发者 API，输出视频信息、频道数据、搜索结果等 JSON 数据，供第三方应用（如 NewPipe、FreeTube）调用。"
+      }
+    ],
+    "avoid_when": [
+      "你需要 YouTube 推荐算法、社区帖子、直播聊天、会员专属内容等官方功能时",
+      "你需要高可靠性保证——Invidious 依赖抓取 YouTube 数据，YouTube 的反制措施可能导致实例频繁失效",
+      "你无法接受 AGPL-3.0 许可证对网络服务场景的源码公开要求时",
+      "你的网络环境无法让 Invidious 实例访问 YouTube 服务器时",
+      "你需要离线缓存或下载视频的功能时（Invidious 本身不提供下载功能）",
+      "你需要观看需要登录 Google 账户才能访问的内容（如年龄限制视频、付费内容）时"
+    ],
+    "created_at": "2026-08-09T11:27:19",
+    "facts": {
+      "language": "Crystal",
+      "license": "AGPL-3.0",
+      "stars": 22485,
+      "forks": 2511,
+      "open_issues": 471,
+      "created_at": "2018-02-07T00:43:42Z",
+      "pushed_at": "2026-08-08T01:27:35Z",
+      "topics": [
+        "agplv3",
+        "hacktoberfest",
+        "invidious",
+        "libre",
+        "video",
+        "watch",
+        "youtube",
+        "youtube-video"
+      ],
+      "language_distribution": [
+        {
+          "name": "Crystal",
+          "percent": 73.6
+        },
+        {
+          "name": "HTML",
+          "percent": 12.8
+        },
+        {
+          "name": "JavaScript",
+          "percent": 7.9
+        },
+        {
+          "name": "CSS",
+          "percent": 2.5
+        },
+        {
+          "name": "Python",
+          "percent": 1.5
+        }
+      ]
+    },
+    "full_name": "iv-org/invidious",
+    "generated_at": "2026-08-09T12:16:52+08:00",
+    "getting_started": [
+      "访问 instances.invidious.io，选择一个公共实例，直接搜索和观看视频，无需注册",
+      "安装 Privacy Redirect 浏览器扩展（支持 Firefox/Chrome），配置自动将 YouTube URL 重定向到你偏好的 Invidious 实例",
+      "在 Invidious 中注册本地账户（仅在当前实例有效），导入你在 YouTube 的订阅数据（通过 YouTube 订阅管理器导出 OPML/JSON）",
+      "如需自建实例，参考 docs.invidious.io/installation/ 的部署文档，推荐使用 Docker Compose 方式部署",
+      "查阅 docs.invidious.io/api/ 了解 API 端点和参数，用于自定义集成"
+    ],
+    "intro_url": "https://site-monitor.a4.fit/projects/iv-org/invidious",
+    "model": "qwen3.7-plus",
+    "problem": "YouTube 官方前端存在大量广告、追踪行为、强制 JavaScript 执行、与 Google 账户深度绑定的订阅体系，以及高资源消耗等问题。Invidious 通过抓取/解析 YouTube 数据并提供轻量替代界面，让用户在不依赖 Google 基础设施的前提下观看 YouTube 内容。",
+    "risks": [
+      "YouTube 反抓取风险：Invidious 依赖非官方方式抓取 YouTube 数据，YouTube 随时可能更改页面结构或加强反爬措施，导致实例失效或需要频繁更新（当前有 471 个 open issues，部分可能与此相关）",
+      "法律合规风险：README 明确声明开发团队不对使用行为负责，用户需自行确保遵守所在国家/地区的法律法规；在某些司法管辖区，绕过平台技术措施可能涉及法律问题",
+      "公共实例信任风险：使用第三方公共实例时，实例运营者可以看到你的请求数据（包括观看记录），隐私保障取决于实例运营者的可信度",
+      "功能缺失风险：无法使用 YouTube 推荐算法、社区互动、直播聊天、会员内容等功能，用户体验与官方前端有显著差距",
+      "维护成本风险：自建实例需要持续维护，Crystal 语言生态相对小众，遇到问题时排查和修复的社区资源不如主流语言丰富",
+      "AGPL-3.0 许可证约束：如果你修改代码并通过网络提供服务，必须向用户公开修改后的完整源码，这对商业使用场景构成限制"
+    ],
+    "source_url": "https://github.com/iv-org/invidious",
+    "source_urls": [
+      "https://github.com/iv-org/invidious",
+      "https://github.com/iv-org/invidious/blob/master/README.md"
+    ],
+    "tagline": "基于 Crystal 构建的开源 YouTube 替代前端，无需 JavaScript、无广告、无追踪，支持订阅与数据导入导出。",
+    "title": "Invidious",
+    "updated_at": "2026-08-09T12:18:29",
+    "use_cases": [
+      "隐私优先的 YouTube 日常观看：通过公共实例或自建实例，在无广告无追踪的环境下观看视频",
+      "低配设备/受限网络环境：利用无 JS、轻量级特性，在老旧硬件或慢速网络下流畅浏览和播放",
+      "教育与研究场景：在禁用 JavaScript 的受控环境中访问 YouTube 视频内容",
+      "开发者集成：通过 Invidious API 获取 YouTube 视频元数据，构建自定义应用或数据分析工具",
+      "去中心化订阅管理：建立独立于 Google 的频道订阅体系，通过导入导出与 NewPipe/FreeTube 互通",
+      "企业/组织内部视频代理：自建实例作为内部访问 YouTube 内容的受控网关"
+    ],
+    "why_choose": [
+      "无需 JavaScript 即可使用核心功能，适合隐私敏感环境和低带宽场景",
+      "完全无广告、无追踪，不依赖 Google 账户体系",
+      "Crystal 语言实现，服务端渲染，资源占用低，响应速度快",
+      "成熟的实例网络和社区生态（22k+ stars，2018 年至今持续维护）",
+      "提供开发者 API，可作为其他应用（NewPipe、FreeTube 等）的数据源",
+      "支持从 YouTube/NewPipe/FreeTube 导入导出数据，迁移成本低"
+    ],
+    "alternatives": [
+      {
+        "name": "Piped",
+        "when_choose": "如果你更喜欢基于代理的架构（前端与后端分离）、SponsorBlock 集成、以及基于 Vue.js 的现代 SPA 体验。",
+        "tradeoff": "Piped 依赖 SponsorBlock 等外部服务，架构更复杂；Invidious 更成熟（2018 年创建 vs Piped 2021 年），社区和实例网络更稳定，但 UI 相对传统。"
+      },
+      {
+        "name": "NewPipe",
+        "when_choose": "如果你主要在 Android 设备上使用，需要一个原生客户端而非 Web 前端。",
+        "tradeoff": "NewPipe 是 Android 原生应用，无法在桌面浏览器中使用；Invidious 是跨平台 Web 应用，可在任何有浏览器的设备上使用，且两者订阅数据可互通。"
+      },
+      {
+        "name": "YouTube 官方前端",
+        "when_choose": "如果你需要完整的 YouTube 功能（如社区帖子、直播聊天、会员内容、精确的推荐算法），且不在意广告和追踪。",
+        "tradeoff": "官方前端功能最全，但伴随广告、追踪、高资源消耗和 Google 账户绑定；Invidious 牺牲了部分功能（如推荐算法、社区互动）换取隐私和轻量。"
+      },
+      {
+        "name": "FreeTube",
+        "when_choose": "如果你需要一个桌面端本地应用，数据完全存储在本地，不依赖任何远程实例。",
+        "tradeoff": "FreeTube 是 Electron 桌面应用，资源占用高于 Invidious Web 前端；Invidious 可通过公共实例零配置使用，也可自建，灵活性更高。"
+      }
+    ],
+    "audience": [
+      "注重隐私、希望无追踪观看 YouTube 视频的用户",
+      "在低配设备或受限网络环境下需要轻量视频前端的用户",
+      "希望脱离 Google 账户管理订阅的 YouTube 用户",
+      "需要 YouTube 数据 API 但不想使用官方 API 的开发者"
+    ],
+    "core_concepts": [
+      {
+        "name": "替代前端（Alternative Front-end）",
+        "description": "Invidious 不托管任何视频内容，而是作为 YouTube 的中间层，抓取并重新呈现 YouTube 的页面数据，用户通过 Invidious 界面间接观看 YouTube 视频。"
+      },
+      {
+        "name": "无 JavaScript 优先",
+        "description": "核心观看和浏览功能不依赖 JavaScript 即可运行，适合禁用 JS 的环境（如 Tor Browser 安全级别较高时），同时仍提供可选的 JS 增强功能。"
+      },
+      {
+        "name": "实例网络（Instance Network）",
+        "description": "社区运营的多个公共实例构成分布式网络，用户可自由选择或自建实例，避免单点故障和单点审查。"
+      },
+      {
+        "name": "独立订阅体系",
+        "description": "订阅数据存储在 Invidious 实例本地（或用户本地），与 Google/YouTube 账户完全解耦，支持导入导出至 NewPipe、FreeTube 等兼容工具。"
+      },
+      {
+        "name": "非官方 API 访问",
+        "description": "Invidious 不使用 YouTube 官方 Data API，而是通过内部抓取机制获取数据，因此不受官方 API 配额限制，但也面临被 YouTube 反制的风险。"
+      }
+    ],
+    "questions": [
+      "你所在的地区是否有访问 YouTube 的网络限制？Invidious 实例本身也需要能访问 YouTube 才能抓取数据。",
+      "你是否接受 Invidious 可能随时因 YouTube 的反抓取措施而部分或完全失效？",
+      "你是否需要 YouTube 的推荐算法、社区帖子、直播聊天等高级功能？Invidious 不提供这些。",
+      "你打算使用公共实例还是自建？自建需要维护 Crystal 运行环境和数据库。",
+      "你是否了解 AGPL-3.0 许可证的要求？如果你修改代码并提供网络服务，必须公开修改后的源码。"
+    ],
+    "schema_version": 2,
+    "workflow": [
+      {
+        "name": "使用公共实例",
+        "description": "从 instances.invidious.io 列表选择一个公共实例，直接在其网页上搜索和观看 YouTube 视频，无需注册或安装。"
+      },
+      {
+        "name": "浏览器自动重定向",
+        "description": "安装 Privacy Redirect 等浏览器扩展，将所有 YouTube URL 自动重定向到你选择的 Invidious 实例，并替换第三方网站中的 YouTube 嵌入视频。"
+      },
+      {
+        "name": "导入数据并建立独立订阅",
+        "description": "从 YouTube、NewPipe 或 FreeTube 导入订阅和观看历史，在 Invidious 中建立独立于 Google 账户的订阅体系，接收频道更新通知。"
+      },
+      {
+        "name": "自建实例",
+        "description": "按照官方文档的部署指南，使用 Docker 或手动方式搭建自己的 Invidious 实例，完全掌控数据和访问权限。"
+      },
+      {
+        "name": "通过 API 集成",
+        "description": "使用 Invidious 提供的开发者 API 获取视频、频道、搜索等数据，构建自定义应用或与其他工具集成。"
+      }
+    ]
+  },
+  {
+    "_id": "6a77f39aecea1b95c0469c4b",
+    "slug": "different-ai/openwork",
+    "architecture": [
+      {
+        "name": "Electron 桌面应用",
+        "description": "基于 Electron 的跨平台（macOS/Windows/Linux）桌面客户端，提供本地工作区和系统级集成（如 keychain）。"
+      },
+      {
+        "name": "远程 MCP 服务端",
+        "description": "托管于 api.openworklabs.com/mcp/agent，通过 HTTP 传输和 OAuth 认证向客户端代理提供能力发现与执行。"
+      },
+      {
+        "name": "OpenWork Den 控制平面",
+        "description": "Web 管理界面，集中管理组织成员、团队、推理配额、桌面策略和插件市场。"
+      },
+      {
+        "name": "TypeScript 为主的技术栈",
+        "description": "代码库 74.6% TypeScript、22.1% JavaScript，使用 pnpm、Vite 和 Electron 构建。"
+      }
+    ],
+    "avoid_when": [
+      "需要完全离线或私有化部署且无法接受远程 MCP 端点（api.openworklabs.com）时。",
+      "团队已深度绑定单一 AI 代理生态且无跨代理复用需求时。",
+      "对开源许可合规性有严格要求（当前许可证标注为 NOASSERTION，未确认）。",
+      "需要生产级 SLA 保障或企业级支持（项目处于早期阶段，298 个 open issues）。"
+    ],
+    "created_at": "2026-08-09T11:27:19",
+    "facts": {
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "stars": 21619,
+      "forks": 2120,
+      "open_issues": 298,
+      "created_at": "2026-01-14T01:39:31Z",
+      "pushed_at": "2026-08-08T09:13:52Z",
+      "topics": [],
+      "language_distribution": [
+        {
+          "name": "TypeScript",
+          "percent": 74.6
+        },
+        {
+          "name": "JavaScript",
+          "percent": 22.1
+        },
+        {
+          "name": "MDX",
+          "percent": 1.0
+        },
+        {
+          "name": "CSS",
+          "percent": 0.9
+        },
+        {
+          "name": "Shell",
+          "percent": 0.6
+        }
+      ]
+    },
+    "full_name": "different-ai/openwork",
+    "generated_at": "2026-08-09T12:17:36+08:00",
+    "getting_started": [
+      "从 https://openworklabs.com/download 下载桌面应用，或向现有 AI 代理粘贴 README 中的安装提示。",
+      "将 OpenWork MCP 端点（https://api.openworklabs.com/mcp/agent）添加到 Codex、Claude Code 或任意 MCP 客户端。",
+      "通过浏览器完成 OAuth 登录并选择所属组织。",
+      "在代理中使用 search_capabilities 发现能力，用 execute_capability 执行。",
+      "本地开发：克隆仓库后运行 pnpm dev；多 worktree 场景使用 pnpm dev:worktree。"
+    ],
+    "intro_url": "https://site-monitor.a4.fit/projects/different-ai/openwork",
+    "model": "qwen3.7-plus",
+    "problem": "团队和个人在使用多个 AI 代理（Claude Code、Cursor、Codex、ChatGPT 等）时，技能、插件、MCP 连接和第三方服务（Google Workspace、Microsoft 365）无法统一共享、复用和管理，导致重复配置、能力孤岛和权限失控。",
+    "risks": [
+      "许可证未明确（NOASSERTION），企业使用存在合规风险。",
+      "远程 MCP 服务端点依赖第三方托管，数据流经 api.openworklabs.com，敏感场景需评估。",
+      "项目创建于 2026-01-14，处于早期阶段，298 个 open issues 可能影响稳定性。",
+      "Electron 桌面应用的系统 keychain 集成在非 macOS 平台行为未确认，可能影响本地开发体验。",
+      "Anthropic 兼容插件的导入范围和实际可用性文档不足，可能存在功能缺口。"
+    ],
+    "source_url": "https://github.com/different-ai/openwork",
+    "source_urls": [
+      "https://github.com/different-ai/openwork",
+      "https://github.com/different-ai/openwork/blob/dev/README.md"
+    ],
+    "tagline": "开源桌面应用，用于跨 AI 代理共享和复用工作流、技能与 MCP 连接",
+    "title": "OpenWork",
+    "updated_at": "2026-08-09T12:18:29",
+    "use_cases": [
+      "开发团队统一分发和复用内部 AI 技能/插件，避免每人重复配置 MCP 连接。",
+      "组织管理员集中控制模型访问权限、桌面策略和推理成本。",
+      "个人开发者在多台机器间同步 AI 工作流和第三方服务连接。",
+      "跨职能团队共享 Google Workspace / Microsoft 365 等第三方服务能力。"
+    ],
+    "why_choose": [
+      "跨代理统一能力层：一次配置，在 Claude Code、Cursor、Codex、ChatGPT 等任意 MCP 客户端复用。",
+      "组织级管控：通过 Den 集中管理成员、团队、推理配额和桌面策略。",
+      "开源免费：替代闭源商业方案，可自托管或审计代码。",
+      "快速上手：向现有代理粘贴一行提示即可完成安装和工作区初始化。"
+    ],
+    "alternatives": [
+      {
+        "name": "Claude Cowork",
+        "when_choose": "",
+        "tradeoff": "闭源商业产品，与 Anthropic 生态深度绑定；OpenWork 开源免费但生态成熟度和稳定性未确认。"
+      },
+      {
+        "name": "Codex",
+        "when_choose": "",
+        "tradeoff": "OpenAI 官方代理，原生集成 OpenAI 模型；OpenWork 代理无关，可接入多家但需额外配置 MCP。"
+      },
+      {
+        "name": "Cursor / Claude Code 原生插件",
+        "when_choose": "",
+        "tradeoff": "与特定 IDE/代理绑定，无法跨工具复用；OpenWork 通过 MCP 标准实现跨代理共享，但依赖 MCP 协议兼容性。"
+      }
+    ],
+    "audience": [
+      "使用多个 AI 代理的开发者",
+      "希望统一 AI 工作流的团队负责人",
+      "需要集中管控模型访问与插件分发的组织管理员",
+      "希望跨机器/同事复用 AI 技能的个体用户"
+    ],
+    "core_concepts": [
+      {
+        "name": "OpenWork MCP",
+        "description": "远程 MCP 服务端点，向兼容代理暴露 search_capabilities 和 execute_capability 两个工具，统一接入技能、插件和第三方服务。"
+      },
+      {
+        "name": "Skills / Plugins",
+        "description": "可复用的 AI 能力单元，可导入 Anthropic 兼容插件，并通过市场发布和分配给组织、团队或个人。"
+      },
+      {
+        "name": "OpenWork Den",
+        "description": "组织控制平面，用于推理资源调配、成员/团队管理、桌面策略、版本控制及插件市场管理。"
+      },
+      {
+        "name": "Workspace",
+        "description": "本地工作区，承载用户的技能、连接和配置；桌面应用提供专用界面，但非必需。"
+      }
+    ],
+    "questions": [
+      "OpenWork MCP 的 OAuth 流程和远程服务端点是否满足企业数据安全与合规要求？",
+      "Anthropic 兼容插件的导入范围和实际可用性是否有明确文档？",
+      "OpenWork Den 的推理资源调配是否支持自定义模型端点或仅限特定提供商？",
+      "桌面应用的系统 keychain 集成在 Linux 上的行为是否与 macOS 一致？",
+      "项目许可证标注为 NOASSERTION，实际开源许可条款是什么？"
+    ],
+    "schema_version": 2,
+    "workflow": [
+      {
+        "name": "安装与初始化",
+        "description": "通过桌面应用下载或向现有 AI 代理粘贴安装提示，自动完成安装、创建工作区并打开就绪环境。"
+      },
+      {
+        "name": "连接 MCP",
+        "description": "将 OpenWork MCP 添加到 Codex、Claude Code、Cursor 或任意 MCP 客户端，通过 OAuth 登录并绑定组织。"
+      },
+      {
+        "name": "发现与执行能力",
+        "description": "代理调用 search_capabilities 查找可用技能/插件/MCP 连接，再调用 execute_capability 执行。"
+      },
+      {
+        "name": "组织管控（Den）",
+        "description": "管理员在 OpenWork Den 中配置推理资源、邀请成员、设置桌面策略、发布技能/插件到市场并分配权限。"
+      }
+    ]
+  },
+  {
+    "_id": "6a77f39aecea1b95c0469c4e",
+    "slug": "unclebob/swarm-forge",
+    "architecture": [
+      {
+        "name": "tmux 会话层",
+        "description": "每个角色一个 tmux session/window，提供实时可观察的终端表面；支持 macOS caffeinate / Linux systemd-inhibit 防休眠。"
+      },
+      {
+        "name": "Shell 编排层",
+        "description": "swarmforge/scripts/ 下的 Bash/Zsh 脚本负责启动、handoff、PATH 注入、worktree 初始化与清理。"
+      },
+      {
+        "name": "Clojure/Babashka 逻辑层",
+        "description": "仓库 89.7% 为 Clojure，使用 Babashka (bb) 作为运行时，承担配置解析与流程控制等较复杂逻辑。"
+      },
+      {
+        "name": "Git Worktree 数据层",
+        "description": ".worktrees/ 下为每个角色提供独立工作目录；.swarmforge/ 保存全部本地状态，完全项目本地、无外部依赖。"
+      },
+      {
+        "name": "Constitution 规则层",
+        "description": "constitution.prompt + articles/*.prompt 以分层文本形式向所有代理注入统一行为约束，可被各分支本地文章覆盖或扩展。"
+      }
+    ],
+    "avoid_when": [
+      "需要 Windows 原生支持或希望有图形化编排 UI 时。",
+      "任务规模小到单代理即可胜任，不愿承担多角色 prompt 与 worktree 维护成本。",
+      "对 license 合规有严格要求而本项目未标注 license 时。",
+      "需要云端托管、团队协作 UI、审计日志或企业级权限控制时。",
+      "不熟悉 tmux / git worktree / Babashka / zsh 等 Unix 工具链的团队。",
+      "预算敏感且无法承受六代理流水线带来的高额 token 消耗时。"
+    ],
+    "created_at": "2026-08-09T11:27:19",
+    "facts": {
+      "language": "Clojure",
+      "license": "未标注",
+      "stars": 1988,
+      "forks": 210,
+      "open_issues": 18,
+      "created_at": "2026-04-17T15:18:26Z",
+      "pushed_at": "2026-08-08T18:02:22Z",
+      "topics": [],
+      "language_distribution": [
+        {
+          "name": "Clojure",
+          "percent": 89.7
+        },
+        {
+          "name": "Shell",
+          "percent": 10.3
+        }
+      ]
+    },
+    "full_name": "unclebob/swarm-forge",
+    "generated_at": "2026-08-09T12:18:23+08:00",
+    "getting_started": [
+      "安装依赖：zsh、git、tmux、Babashka (bb)，并配置至少一个代理后端（codex / claude / copilot / grok）。",
+      "选择分支并下载：BRANCH=four-pack; curl -L \"https://github.com/unclebob/swarm-forge/archive/refs/heads/${BRANCH}.tar.gz\" | tar -xz --strip-components=1",
+      "在目标项目目录执行 ./swarm 启动；首次运行会自动从 main 拉取共享脚本与 constitution。",
+      "观察 tmux 窗口中各角色的实时执行；需要停止时关闭 swarmforge.conf 中列出的第一个窗口。",
+      "如需禁用防休眠行为，在启动前设置 SWARMFORGE_PREVENT_SLEEP=0。"
+    ],
+    "intro_url": "https://site-monitor.a4.fit/projects/unclebob/swarm-forge",
+    "model": "qwen3.7-plus",
+    "problem": "单个 AI 代理在长任务中容易丢失上下文、越权修改、缺乏质量门禁；而现有多代理框架往往依赖云端编排、黑盒消息总线，难以观察、难以约束职责边界，导致多代理协作时互相踩踏、产出不可靠。",
+    "risks": [
+      "License 未标注：企业或商业使用前存在合规不确定性，需向作者确认。",
+      "README 末尾 constitution 章节被截断，完整规则与覆盖机制未确认，可能影响对约束能力的判断。",
+      "强依赖 tmux / git worktree / Babashka / zsh，跨平台（尤其 Windows）可用性未确认。",
+      "多代理流水线的 token 成本与延迟在 six-pack 下可能显著，需提前评估预算。",
+      "多 worktree 并行写同一仓库，handoff 与合并策略若不足可能产生冲突或覆盖。",
+      "项目创建于 2026-04、最近推送 2026-08，尚处早期阶段，API 与分支结构可能频繁变动。"
+    ],
+    "source_url": "https://github.com/unclebob/swarm-forge",
+    "source_urls": [
+      "https://github.com/unclebob/swarm-forge",
+      "https://github.com/unclebob/swarm-forge/blob/main/README.md"
+    ],
+    "tagline": "基于 tmux 与 git worktree 的本地多 AI 代理协同开发平台，将 AI 集群组织为可观察、分角色、分阶段的专业软件工程流水线。",
+    "title": "SwarmForge",
+    "updated_at": "2026-08-09T12:18:29",
+    "use_cases": [
+      "中小型后端服务的快速实现 + 重构闭环（two-pack：coder ↔ cleaner）。",
+      "需要 Gherkin 验收规格与架构审查的中等项目（four-pack：specifier→coder→refactorer→architect）。",
+      "大型项目的全流程质量门禁：规格、实现、清理、架构、变异加固、端到端 QA 全部分角色执行（six-pack）。",
+      "希望在本地用 tmux 实时观看多个 AI 代理并行工作、随时介入调试的教学或演示场景。",
+      "对 AI 输出有严格工程纪律要求（TDD、DRY、CRAP、变异测试）的团队，用 constitution 统一约束多代理行为。"
+    ],
+    "why_choose": [
+      "完全本地、基于 tmux + git worktree，所有代理行为可在终端实时观察与审计。",
+      "通过 constitution + role prompt 分层注入工程纪律（TDD、Gherkin、CRAP/DRY、变异测试），约束 AI 输出质量。",
+      "三种预设拓扑（two/four/six-pack）覆盖从快速实现到完整 QA 的不同项目规模，开箱即用。",
+      "每个角色可独立选择 LLM 后端，灵活混搭 claude/codex/copilot/grok。",
+      "项目本地状态（.swarmforge/、.worktrees/），不污染全局环境，易于在多个项目间复用。",
+      "由 unclebob（Robert C. Martin）关联仓库发布，强调 Clean Code / 软件工程纪律的价值观。"
+    ],
+    "alternatives": [
+      {
+        "name": "CrewAI / AutoGen / LangGraph",
+        "when_choose": "需要云端/Python 生态、复杂图状状态机、向量记忆或现成 UI 时。",
+        "tradeoff": "更强大但更重、更黑盒；SwarmForge 胜在本地、可观察、shell 可审计，但缺乏高级编排原语。"
+      },
+      {
+        "name": "Aider / Claude Code 单代理",
+        "when_choose": "任务小到单代理足够，或不愿维护多角色 prompt 与 worktree。",
+        "tradeoff": "更简单但失去职责分离与质量门禁；SwarmForge 适合需要 TDD/Gherkin/变异测试纪律的中大型任务。"
+      },
+      {
+        "name": "Devin / Factory / 商业 AI 工程平台",
+        "when_choose": "愿意付费换取托管、UI、审计与合规能力时。",
+        "tradeoff": "SwarmForge 完全本地免费但需自行维护 tmux/git/bb 环境，且 license 未标注，企业使用需先确认合规。"
+      },
+      {
+        "name": "OpenHands / SWE-agent",
+        "when_choose": "侧重单任务 SWE benchmark 式求解而非长期多角色协作时。",
+        "tradeoff": "SwarmForge 强调持续协作流水线与工程纪律，而非一次性解题。"
+      }
+    ],
+    "audience": [
+      "需要让多个 AI 代理在同一代码仓库中分工协作的独立开发者或小团队",
+      "希望用 TDD、Gherkin、变异测试等工程纪律约束 AI 输出的工程负责人",
+      "偏好本地、可观察、基于 shell/tmux 工具链而非 SaaS 编排平台的 Clojure/Unix 用户",
+      "想尝试多代理流水线（specifier→coder→refactorer→architect→QA）但拒绝黑盒框架的实践者"
+    ],
+    "core_concepts": [
+      {
+        "name": "Runnable Branch",
+        "description": "two-pack / four-pack / six-pack 各自是完整可运行配置，包含 swarmforge.conf、本地 constitution 与角色 prompt；main 仅承载共享脚本与文档。"
+      },
+      {
+        "name": "Role",
+        "description": "由 swarmforge/roles/<role>.prompt 定义的具体职责（如 coder、cleaner、architect、QA），每个角色对应一个 tmux 会话与一个 git worktree。"
+      },
+      {
+        "name": "Constitution",
+        "description": "swarmforge/constitution.prompt 与 constitution/articles/ 下的分层规则文件，约束所有代理的通用行为与工程纪律。"
+      },
+      {
+        "name": "Git Worktree 隔离",
+        "description": "代理在 .worktrees/ 下的独立 worktree 中工作，避免多代理同时修改同一工作目录造成冲突。"
+      },
+      {
+        "name": "Per-Role Backend",
+        "description": "每个角色可独立选择 claude / codex / copilot / grok 等后端，混合使用不同模型。"
+      },
+      {
+        "name": "Config-Driven Topology",
+        "description": "swarm 的形状（角色、顺序、worktree 分配）由 swarmforge.conf 声明，而非硬编码 shell 变量。"
+      }
+    ],
+    "questions": [
+      "README 末尾 constitution 章节被截断，完整的 constitution 分层机制与覆盖规则是什么？",
+      "仓库 license 未标注，商业或团队使用是否存在合规风险？",
+      "handoff 脚本具体如何保证多 worktree 间的代码合并与冲突解决？",
+      "各角色 prompt 是否公开可审计，还是仅以编译/打包形式提供？",
+      "对非 macOS/Linux（如 Windows）的支持情况如何？README 仅提到 caffeinate 与 systemd-inhibit。"
+    ],
+    "schema_version": 2,
+    "workflow": [
+      {
+        "name": "拉取可运行分支",
+        "description": "用 curl 下载 two-pack / four-pack / six-pack 分支 tar 包并解压到目标项目目录，不创建 Git remote。"
+      },
+      {
+        "name": "启动 swarm",
+        "description": "执行 ./swarm，首次运行时自动从 main 下载共享脚本与 constitution 文章，然后启动 tmux 会话。"
+      },
+      {
+        "name": "角色分工执行",
+        "description": "每个角色（coder、cleaner、specifier 等）在独立 tmux 窗口与独立 git worktree 中运行，按 constitution 与 role prompt 行事。"
+      },
+      {
+        "name": "阶段流转与交接",
+        "description": "按分支定义的顺序（如 specifier→coder→refactorer→architect→QA）通过共享脚本进行 handoff，避免并发写冲突。"
+      },
+      {
+        "name": "可观察与终止",
+        "description": "所有窗口在 tmux 中实时可见；关闭 swarmforge.conf 中列出的第一个窗口即可触发清理、关闭其余会话。"
+      }
+    ]
+  },
+  {
+    "_id": "6a78f2a5ecea1b95c04751b9",
+    "slug": "primeintellect-ai/prime-agent",
+    "alternatives": [
+      {
+        "name": "Cursor / Windsurf / GitHub Copilot",
+        "when_choose": "需要 IDE 内即时补全与短任务辅助，重视编辑器集成与低延迟。",
+        "tradeoff": "缺乏后台长时运行、持久 REPL、跨会话自我改进与多 Agent 编排能力。"
+      },
+      {
+        "name": "Aider",
+        "when_choose": "偏好轻量 CLI、Git 友好的交互式编码助手，任务周期较短。",
+        "tradeoff": "无 daemon 后台、无 RLM 递归子 Agent、无 Continual Harness 自我改进机制。"
+      },
+      {
+        "name": "Devin / Factory AI",
+        "when_choose": "需要完全托管的端到端自主软件工程 Agent，不愿自建基础设施。",
+        "tradeoff": "闭源、成本高、不可本地定制；Prime Agent 开源、可本地运行、可嵌入研究管线。"
+      },
+      {
+        "name": "OpenHands / SWE-agent",
+        "when_choose": "侧重 SWE-bench 等基准评估、单次任务求解的研究场景。",
+        "tradeoff": "通常无持久会话、无后台 daemon、无会话级自我改进与技能封装。"
+      }
+    ],
+    "architecture": [
+      {
+        "name": "Daemon",
+        "description": "后台服务，托管活跃会话、IPython 状态、调度与子 Agent，支持 detach/attach 与 resume。"
+      },
+      {
+        "name": "Worker",
+        "description": "执行具体任务的进程，提供生命周期隔离与故障恢复（非安全沙箱）。"
+      },
+      {
+        "name": "Kernel (持久 IPython)",
+        "description": "内置模型工具，所有代码执行、工具调用、子 Agent 派生 rlm(...) 均在此 REPL 中发生。"
+      },
+      {
+        "name": "Continual Harness State",
+        "description": "会话本地的持久状态层，存储补充 prompt、记忆、技能、子 Agent 规格与 /refine 快照历史。"
+      },
+      {
+        "name": "Agent-to-Agent Communication",
+        "description": "运行中的 Agent 与保留的子 Agent 可直接消息交换与编排，无需用户中转。"
+      }
+    ],
+    "audience": [
+      "需要长时间自主执行编码/研究任务的研究者",
+      "希望 Agent 在后台持续运行并跨会话保留上下文的开发者",
+      "构建多 Agent 协作工作流的 AI 工程师",
+      "评估与训练 Agent 的 RL/LLM 研究团队（关联 PRIME-RL、Verifiers）"
+    ],
+    "avoid_when": [
+      "需要 IDE 内实时补全或轻量级短任务辅助时（应选 Cursor/Copilot）。",
+      "对安全性要求极高、需要严格沙箱隔离执行不可信代码时（README 明确声明非沙箱）。",
+      "任务为简单一次性问答或短脚本生成，无需持久状态与后台运行。",
+      "团队无 Python/IPython 基础，难以适应“一切皆代码”的交互范式。",
+      "需要完全托管、零运维的 SaaS 方案（Prime Agent 需自建 daemon 与基础设施）。",
+      "对 token 成本极度敏感且无法接受长任务持续消耗。"
+    ],
+    "core_concepts": [
+      {
+        "name": "Recursive Language Model (RLM)",
+        "description": "将上下文视为变量（prompt-as-a-variable）、工具与子 Agent 视为函数调用，在持久 REPL 中递归执行。"
+      },
+      {
+        "name": "Continual Harness",
+        "description": "持久化的补充 prompt、记忆、技能描述、子 Agent 规格集合；可通过 /refine 进行小步、可审查、可回滚的更新，不修改不可变的 base system prompt。"
+      },
+      {
+        "name": "Programmatic Everything",
+        "description": "一切操作（文件、Shell、工具、子 Agent、上下文管理）通过持久 IPython 中的代码完成。"
+      },
+      {
+        "name": "Executable Skills",
+        "description": "技能是可导入的 Python 包，内置 skill creator 可将重复工作流封装为项目/个人技能。"
+      },
+      {
+        "name": "Daemon-backed Sessions",
+        "description": "会话由 daemon 托管，终端断开后仍持续运行，可重新 attach 或 resume。"
+      },
+      {
+        "name": "Bounded Autonomous Mode",
+        "description": "/autonomous 在 turn/token/time 预算与用户定义质量门内运行；通过门仅表示该门验证通过，不代表任务成功。"
+      }
+    ],
+    "created_at": "2026-08-10T05:35:32",
+    "facts": {
+      "language": "TypeScript",
+      "license": "MIT",
+      "stars": 10844,
+      "forks": 1127,
+      "open_issues": 447,
+      "created_at": "2026-05-08T01:42:41Z",
+      "pushed_at": "2026-08-09T01:55:56Z",
+      "topics": [],
+      "language_distribution": [
+        {
+          "name": "TypeScript",
+          "percent": 96.0
+        },
+        {
+          "name": "JavaScript",
+          "percent": 1.8
+        },
+        {
+          "name": "Python",
+          "percent": 1.4
+        },
+        {
+          "name": "Shell",
+          "percent": 0.5
+        },
+        {
+          "name": "CSS",
+          "percent": 0.2
+        }
+      ]
+    },
+    "full_name": "PrimeIntellect-ai/prime-agent",
+    "generated_at": "2026-08-10T05:32:20+08:00",
+    "getting_started": [
+      "在 macOS/Linux 执行 curl -fsSL https://app.primeintellect.ai/prime-agent/install.sh | sh 安装。",
+      "cd 进入目标项目目录，运行 prime-agent 启动 TUI。",
+      "首次运行执行 /login 选择订阅或 API Key 提供商完成认证。",
+      "建议在一次性克隆、干净 worktree 或可检查/恢复的 checkpoint 中运行。",
+      "使用 prime-agent agents 查看会话，prime-agent attach <agent> 重新接入后台会话。",
+      "阅读官方 Quickstart 与 Usage 文档了解命令、自主模式限制与输出模式。"
+    ],
+    "intro_url": "https://site-monitor.a4.fit/projects/PrimeIntellect-ai/prime-agent",
+    "model": "qwen3.7-plus",
+    "problem": "传统 LLM 编码助手受限于单轮上下文、无持久工作记忆、无法后台运行、难以在长任务中保留并复用经验，导致复杂/长周期任务频繁中断、重复犯错、难以并行。",
+    "questions": [
+      "Continual Harness 的 /refine 更新是否会意外污染后续会话？快照回滚粒度如何？",
+      "daemon/worker/kernel 的隔离边界具体是什么？README 明确声明不是安全沙箱，生产环境如何加固？",
+      "rlm(...) 子 Agent 的并发上限、资源配额与失败重试策略是什么？",
+      "自主模式下的质量门（quality gates）如何定义与验证？误判代价如何控制？",
+      "技能作为可导入 Python 包，其依赖管理、版本兼容与跨项目复用机制是什么？"
+    ],
+    "risks": [
+      "安全风险：以用户权限执行模型生成的 Python 与项目命令，README 明确声明 worker/kernel 不是安全沙箱。",
+      "长任务成本失控：自主模式依赖 turn/token/time 预算与质量门，配置不当可能导致高 token 消耗或误判成功。",
+      "自我改进污染：/refine 对 harness state 的更新若缺乏审查，可能累积错误记忆或技能。",
+      "生态成熟度：项目创建于 2026-05，README 中 arXiv 链接（2605.09998）与日期一致，属较新项目，447 个 open issues 提示稳定性/文档待完善。",
+      "平台限制：安装脚本仅支持 macOS/Linux，Windows 用户需 WSL 或替代方案。",
+      "依赖外部服务：需 Prime Intellect 订阅或第三方 API Key，存在供应商锁定与成本风险。"
+    ],
+    "schema_version": 2,
+    "source_url": "https://github.com/PrimeIntellect-ai/prime-agent",
+    "source_urls": [
+      "https://github.com/PrimeIntellect-ai/prime-agent",
+      "https://github.com/PrimeIntellect-ai/prime-agent/blob/main/README.md"
+    ],
+    "tagline": "基于递归语言模型（RLM）与 Continual Harness 的开源编码/研究 Agent，支持后台长时运行、子 Agent 编排与会话级自我改进。",
+    "title": "Prime Agent：面向编码与长时任务的自改进 RLM Agent",
+    "updated_at": "2026-08-10T05:35:32",
+    "use_cases": [
+      "跨数小时的自主代码重构或大规模迁移任务，通过 /autonomous 与质量门控制进度。",
+      "AI/ML 研究中的长周期实验编排：调度、心跳、子 Agent 并行跑实验、结果汇总。",
+      "构建可复用技能库，将团队常见工作流（如 PR 审查、数据清洗）封装为 Python 包。",
+      "多 Agent 协作的复杂研究项目：主 Agent 调度多个保留子 Agent 并行探索不同假设。",
+      "需要跨终端会话保留上下文的持续开发任务，通过 daemon 与 resume 实现无缝续接。",
+      "Agent 评估与训练闭环：结合 PRIME-RL 与 Verifiers 进行自我改进实验。"
+    ],
+    "why_choose": [
+      "原生支持后台长时运行与 detach/attach，适合数小时级编码/研究任务。",
+      "RLM 编程模型将子 Agent 作为函数调用，便于构建递归/并行工作流。",
+      "Continual Harness + /refine 提供会话级、证据驱动、可回滚的自我改进。",
+      "技能系统可封装可复用工作流为可导入 Python 包，沉淀团队知识。",
+      "完全开源 MIT，可本地部署，适合研究与定制化场景。",
+      "Agent-to-agent 直接通信，支持复杂多 Agent 编排而无需用户中转。"
+    ],
+    "workflow": [
+      {
+        "name": "安装与启动",
+        "description": "通过官方 install.sh 安装 prime-agent 二进制，进入目标项目目录执行 prime-agent 启动 TUI。"
+      },
+      {
+        "name": "认证与配置",
+        "description": "首次运行 /login 选择订阅或 API Key 提供商，完成模型接入。"
+      },
+      {
+        "name": "交互式编码",
+        "description": "在持久 IPython REPL 中通过代码调用文件操作、Shell、子 Agent（rlm(...)）等工具。"
+      },
+      {
+        "name": "后台长时运行",
+        "description": "使用 /autonomous、/goal、/heartbeat 或 prime-agent schedule 让任务在 daemon 中持续运行，可 detach/attach。"
+      },
+      {
+        "name": "自我改进",
+        "description": "通过 /refine 基于当前轨迹对 supplemental harness state（记忆、技能、子 Agent 规格）做小步证据驱动的更新，支持快照回滚。"
+      }
+    ]
+  },
+  {
+    "_id": "6a78f2a5ecea1b95c04751bb",
+    "slug": "vitali87/code-graph-rag",
+    "alternatives": [
+      {
+        "name": "纯向量 RAG（如 Cursor、Sourcegraph Cody）",
+        "when_choose": "代码库较小或只需语义相似度检索，不需要精确结构关系。",
+        "tradeoff": "无法准确回答调用链、依赖关系、死代码等结构化问题；编辑能力弱。"
+      },
+      {
+        "name": "静态分析工具（如 SonarQube、CodeQL）",
+        "when_choose": "只需代码质量扫描、漏洞检测，不需要自然语言交互。",
+        "tradeoff": "不支持自然语言查询与 AI 编辑；学习曲线陡峭，查询语言复杂。"
+      },
+      {
+        "name": "GitHub Copilot / Claude Code 原生能力",
+        "when_choose": "单文件或小范围上下文编辑，无需全局代码库理解。",
+        "tradeoff": "缺乏跨文件/跨语言的全局结构感知；无法做数据流追踪或死代码发现。"
+      }
+    ],
+    "architecture": [
+      {
+        "name": "Multi-language Parser",
+        "description": "基于 Tree-sitter 的解析层，读取源码并提取函数、类、方法、模块及其关系，按语言无关 schema 写入 Memgraph。"
+      },
+      {
+        "name": "Memgraph 图数据库",
+        "description": "存储代码知识图谱，支持 Cypher 查询；通过 Docker 容器运行，多项目共享同一图实例。"
+      },
+      {
+        "name": "RAG CLI（codebase_rag/）",
+        "description": "交互式命令行工具，负责自然语言到 Cypher 的转换、代码检索、AI 驱动的编辑与优化。"
+      },
+      {
+        "name": "Qdrant 向量存储",
+        "description": "用于语义搜索，与图结构检索互补，支持按意图查找代码。"
+      },
+      {
+        "name": "ast-grep 结构化搜索",
+        "description": "提供 AST 模式匹配能力，支持跨代码库的结构化搜索与替换，作为 agent 工具暴露。"
+      }
+    ],
+    "audience": [
+      "维护大型 monorepo 的后端/平台工程师",
+      "需要跨语言代码理解与重构的架构师",
+      "构建 AI 编程助手或 MCP 工具链的开发者",
+      "希望用自然语言查询和修改代码的团队"
+    ],
+    "avoid_when": [
+      "代码库仅单一语言且规模较小，无需图结构查询。",
+      "团队无法接受 Docker + Memgraph 的运维依赖。",
+      "主要需求是代码质量扫描或安全漏洞检测，而非自然语言交互。",
+      "对 AI 生成查询的准确率要求极高，无法容忍幻觉风险。"
+    ],
+    "core_concepts": [
+      {
+        "name": "知识图谱（Knowledge Graph）",
+        "description": "将代码结构建模为节点（函数、类、模块等）和边（调用、导入、继承等）的图，存储于 Memgraph，支持 Cypher 查询。"
+      },
+      {
+        "name": "Tree-sitter 多语言解析",
+        "description": "使用 Tree-sitter 作为主解析器，支持 Python、TS/JS、Rust、Go、Java、C/C++/C#、PHP 等十余种语言，生成统一 AST。"
+      },
+      {
+        "name": "ast-grep 插件层",
+        "description": "对尚未完全支持的语言（如 Ruby），可通过 YAML 模式文件快速添加结构节点与边，无需手写解析器。"
+      },
+      {
+        "name": "RAG + Cypher 生成",
+        "description": "将自然语言问题转化为 Cypher 查询，从图中检索真实代码结构，避免 LLM 幻觉。"
+      },
+      {
+        "name": "MCP Server",
+        "description": "作为 Model Context Protocol 服务器运行，允许 Claude Code 等 MCP 客户端直接查询和编辑代码库。"
+      }
+    ],
+    "created_at": "2026-08-10T05:35:32",
+    "facts": {
+      "language": "Python",
+      "license": "MIT",
+      "stars": 2933,
+      "forks": 518,
+      "open_issues": 28,
+      "created_at": "2025-06-16T14:31:57Z",
+      "pushed_at": "2026-08-09T10:25:04Z",
+      "topics": [
+        "ai",
+        "ast",
+        "claude-code",
+        "code-analysis",
+        "code-understanding",
+        "codebase-search",
+        "developer-tools",
+        "graph-database"
+      ],
+      "language_distribution": [
+        {
+          "name": "Python",
+          "percent": 98.8
+        },
+        {
+          "name": "C#",
+          "percent": 0.4
+        },
+        {
+          "name": "JavaScript",
+          "percent": 0.2
+        },
+        {
+          "name": "Rust",
+          "percent": 0.2
+        },
+        {
+          "name": "Java",
+          "percent": 0.1
+        }
+      ]
+    },
+    "full_name": "vitali87/code-graph-rag",
+    "generated_at": "2026-08-10T05:32:10+08:00",
+    "getting_started": [
+      "安装：uv tool install \"code-graph-rag[treesitter-full,semantic]\"",
+      "启动图数据库：cgr daemon up（自动拉起 Memgraph + Qdrant）",
+      "索引代码库：cgr start --repo-path /path/to/repo --update-graph",
+      "交互查询：cgr start --repo-path /path/to/repo",
+      "集成 MCP：参考 docs/guide/mcp-server.md 配置 Claude Code 等客户端"
+    ],
+    "intro_url": "https://site-monitor.a4.fit/projects/vitali87/code-graph-rag",
+    "model": "qwen3.7-plus",
+    "problem": "大型多语言 monorepo 中，传统文本/向量检索难以准确回答代码结构、调用关系、死代码、数据流等问题；开发者需要一种能理解函数、类、模块及其跨语言关系，并支持自然语言查询与 AST 级编辑的统一方案。",
+    "questions": [
+      "Memgraph 的运维成本与许可证是否适合你的生产环境？",
+      "对尚未完全支持的语言（如 Scala），当前结构支持是否满足需求？",
+      "AI 模型生成 Cypher 的准确率在复杂查询场景下如何保证？",
+      "多项目共享图实例时，--clean 操作的误删风险如何管控？",
+      "ast-grep 插件层的 YAML 模式维护成本是否可控？"
+    ],
+    "risks": [
+      "Memgraph 为外部依赖，需 Docker 环境，增加运维复杂度。",
+      "AI 生成 Cypher 可能存在准确率问题，复杂查询需人工校验。",
+      "--clean 操作会删除共享图中所有项目数据，误操作风险高。",
+      "部分语言（如 Scala）支持仍在开发中，功能可能不完整。",
+      "项目较新（2025年6月创建），社区生态与文档成熟度待观察。"
+    ],
+    "schema_version": 2,
+    "source_url": "https://github.com/vitali87/code-graph-rag",
+    "source_urls": [
+      "https://github.com/vitali87/code-graph-rag",
+      "https://github.com/vitali87/code-graph-rag/blob/main/README.md"
+    ],
+    "tagline": "基于知识图谱与 RAG 的多语言 monorepo 代码理解与编辑工具",
+    "title": "Code-Graph-RAG",
+    "updated_at": "2026-08-10T05:35:32",
+    "use_cases": [
+      "在大型 monorepo 中用自然语言查询某函数的所有调用者或被依赖模块。",
+      "发现并清理跨语言项目中的死代码。",
+      "按 AST 模式批量重构某类函数签名或导入路径。",
+      "追踪敏感数据从入口到 I/O 出口的完整流向。",
+      "为 AI 编程助手提供全局代码结构上下文，提升编辑准确性。"
+    ],
+    "why_choose": [
+      "跨语言统一图谱：十余种语言共享同一 schema，适合真实 monorepo。",
+      "结构 + 语义双检索：图查询保证精确性，向量搜索补充意图匹配。",
+      "AST 级编辑：基于 ast-grep 的结构化替换，比文本/正则更可靠。",
+      "MCP 原生支持：可直接集成到 Claude Code 等 AI 编程工具链。",
+      "数据流追踪：FLOWS_TO 边支持跨函数、跨 I/O 的污点分析。"
+    ],
+    "workflow": [
+      {
+        "name": "索引代码库",
+        "description": "使用 Tree-sitter 解析源码，提取函数、类、模块及关系，写入 Memgraph 图数据库，形成跨语言统一 schema 的知识图谱。"
+      },
+      {
+        "name": "自然语言查询",
+        "description": "用户用自然语言提问，AI 模型将其转为 Cypher 查询，从图中检索匹配的代码结构或源码片段。"
+      },
+      {
+        "name": "代码编辑与重构",
+        "description": "通过 AST 模式匹配（ast-grep）进行结构化搜索与替换，生成 diff 预览后应用补丁。"
+      },
+      {
+        "name": "数据流与死代码分析",
+        "description": "利用 FLOWS_TO 污点边追踪值流向，或从入口点遍历调用边发现未使用代码。"
+      }
+    ]
+  },
+  {
+    "_id": "6a78f2a5ecea1b95c04751bd",
+    "slug": "msitarzewski/agency-agents",
+    "alternatives": [
+      {
+        "name": "手写系统提示 / 团队内部 Prompt 库",
+        "when_choose": "团队有成熟流程、希望完全掌控提示词演进与版本，且不需要多工具适配。",
+        "tradeoff": "维护与多工具适配成本全自担，但定制化程度最高、无外部依赖。"
+      },
+      {
+        "name": "Cursor Rules / .cursorrules 社区集合",
+        "when_choose": "团队主要使用 Cursor，希望规则与项目强绑定、随仓库分发。",
+        "tradeoff": "更贴近单工具生态，但跨工具复用与角色流程化程度通常不如 The Agency。"
+      },
+      {
+        "name": "AutoGPT / CrewAI / LangGraph 等 Agent 框架",
+        "when_choose": "需要真正的多 Agent 编排、工具调用、状态机与长期记忆。",
+        "tradeoff": "The Agency 本质是“角色化提示词库”，不提供运行时编排；框架更重但能力更强。"
+      },
+      {
+        "name": "Claude Code 默认行为 / 普通 system prompt",
+        "when_choose": "任务简单、无需角色分工与流程化交付物。",
+        "tradeoff": "上手最快，但输出风格与质量随任务漂移，难以沉淀为团队资产。"
+      }
+    ],
+    "architecture": [
+      {
+        "name": "Markdown 驱动的 Agent 定义",
+        "description": "每个 Agent 是一个 .md 文件，按统一结构描述身份、流程、交付物与指标；仓库主体是这类静态资源。"
+      },
+      {
+        "name": "Shell 安装/转换管线",
+        "description": "language_distribution 显示 Shell 占 82.3%。scripts/install.sh 与 scripts/convert.sh 负责把 Markdown 复制/转换为各目标工具的配置目录与格式。"
+      },
+      {
+        "name": "多工具目标层",
+        "description": "安装器按 --tool 参数把同一份 Agent 落到不同工具的约定路径（如 Claude Code 的 ~/.claude/agents/），形成“一套内容、多端复用”的结构。"
+      },
+      {
+        "name": "可选桌面应用层",
+        "description": "agency-agents-app 作为独立仓库发布，提供图形化安装与自动更新；本仓库主要提供 Agent 内容与脚本。"
+      }
+    ],
+    "audience": [
+      "使用 Claude Code / Cursor / Codex / Gemini CLI 等 AI 编码工具的开发者",
+      "希望把 AI 助手按职能（前端/后端/DevOps/安全/网络/嵌入式等）分工的个人或小团队",
+      "需要可复用、可版本化管理的 AI 提示词资产的工程师",
+      "对 AI Agent 人格化与流程化感兴趣的提示词研究者"
+    ],
+    "avoid_when": [
+      "需要真正的多 Agent 编排、工具调用、状态管理或长期记忆时——本仓库只是提示词库，不提供运行时。",
+      "团队对提示词有严格合规/审计要求，无法接受外部社区内容直接进入工作流。",
+      "只使用单一工具且已有成熟 .cursorrules / CLAUDE.md 体系，引入全套 Agent 反而增加维护负担。",
+      "期望“装上就自动协作”的端到端 Agent 系统——这里需要用户在会话中手动激活角色。",
+      "对 README 中“battle-tested / proven deliverables”等表述需要可核验证据时——当前 README 未提供具体案例或评测数据（未确认）。"
+    ],
+    "core_concepts": [
+      {
+        "name": "Agent（角色）",
+        "description": "一个 Markdown 文件，包含身份/人格、核心任务、工作流、交付物示例与成功指标；不是通用 prompt，而是带流程与产出定义的角色包。"
+      },
+      {
+        "name": "Division（分部）",
+        "description": "按职能分组的 Agent 集合，例如 Engineering（前端/后端/DevOps/网络/嵌入式/智能合约等），便于按团队需要批量安装。"
+      },
+      {
+        "name": "Tool 集成",
+        "description": "通过 scripts/convert.sh 把同一套 Agent 转换为 Claude Code、Cursor、Codex、Gemini CLI、OpenCode、Copilot、Aider、Windsurf、Kimi 等工具的格式。"
+      },
+      {
+        "name": "Agency Agents App",
+        "description": "官方桌面应用，提供图形化浏览、一键安装与自动更新，避免手动克隆与脚本操作。"
+      }
+    ],
+    "created_at": "2026-08-10T05:35:32",
+    "facts": {
+      "language": "Shell",
+      "license": "MIT",
+      "stars": 140571,
+      "forks": 22971,
+      "open_issues": 110,
+      "created_at": "2025-10-13T12:12:29Z",
+      "pushed_at": "2026-08-06T13:29:47Z",
+      "topics": [],
+      "language_distribution": [
+        {
+          "name": "Shell",
+          "percent": 82.3
+        },
+        {
+          "name": "Python",
+          "percent": 16.5
+        },
+        {
+          "name": "PowerShell",
+          "percent": 1.2
+        }
+      ]
+    },
+    "full_name": "msitarzewski/agency-agents",
+    "generated_at": "2026-08-10T05:33:33+08:00",
+    "getting_started": [
+      "克隆仓库：git clone https://github.com/msitarzewski/agency-agents",
+      "交互式安装：./scripts/install.sh，按提示选择目标工具与分部/Agent。",
+      "或指定工具与分部：./scripts/install.sh --tool claude-code --division engineering。",
+      "在 Claude Code 中激活角色，例如“activate Frontend Developer mode and help me build a React component”。",
+      "如需图形化体验，下载 agency-agents-app（brew install --cask msitarzewski/agency-agents/agency-agents 或前往 agencyagents.app）。"
+    ],
+    "intro_url": "https://site-monitor.a4.fit/projects/msitarzewski/agency-agents",
+    "model": "qwen3.7-plus",
+    "problem": "通用 AI 编码助手缺乏明确角色边界、流程与交付物定义，导致输出风格飘忽、难以复用与协作。The Agency 通过把“专家角色 + 工作流程 + 交付物 + 成功指标”沉淀成可安装的 Markdown 文件，让同一套助手在 Claude Code、Cursor、Codex、Gemini 等工具中获得稳定、可预期的专家行为。",
+    "questions": [
+      "我主力使用的 AI 工具（Claude Code / Cursor / Codex / Gemini CLI 等）是否在支持列表中，且安装路径是否符合我的环境？",
+      "这些 Agent 的 Markdown 结构是否与我现有团队流程兼容，能否直接二次编辑？",
+      "仓库中 Agent 的“交付物示例”与“成功指标”是否经过真实项目验证，还是偏理想化描述？",
+      "OpenCode 等工具存在注册数量上限（README 提到约 119 个），我的选择是否会触发该限制？",
+      "桌面应用 agency-agents-app 与本体仓库的版本同步策略是什么，自动更新是否会覆盖我本地修改？"
+    ],
+    "risks": [
+      "本质是提示词集合，不改变底层模型能力；“专家行为”高度依赖具体模型对长 system prompt 的遵循度（效果未确认）。",
+      "README 中“battle-tested / proven deliverables / success metrics”等表述未在仓库内提供可核验案例或评测（未确认）。",
+      "部分工具存在 Agent 注册上限（README 明确提到 OpenCode 约 119 个），全量安装可能被静默丢弃。",
+      "桌面应用的自动更新可能覆盖本地对 Markdown 的二次修改，需要建立分支或覆盖策略。",
+      "仓库创建于 2025-10-13 且 README 声称 140571 stars，数据异常高，建议独立核验社区活跃度与真实采用情况（未确认）。",
+      "Shell 脚本会直接写入工具配置目录（如 ~/.claude/agents/），在共享机器上需注意权限与冲突。"
+    ],
+    "schema_version": 2,
+    "source_url": "https://github.com/msitarzewski/agency-agents",
+    "source_urls": [
+      "https://github.com/msitarzewski/agency-agents",
+      "https://github.com/msitarzewski/agency-agents/blob/main/README.md"
+    ],
+    "tagline": "一套可一键安装到多种 AI 编码工具中的、按职能划分的 AI Agent 人格/提示词库。",
+    "title": "The Agency (agency-agents)",
+    "updated_at": "2026-08-10T05:35:32",
+    "use_cases": [
+      "个人开发者在 Claude Code 中按需激活 Frontend Developer / Backend Architect，获得风格稳定的专家级输出。",
+      "小团队把 Engineering + Security 分部的 Agent 作为共享提示词资产，统一新人上手与代码审查风格。",
+      "网络工程师使用 Network Engineer Agent 辅助 Cisco/Juniper/Palo Alto 配置与排错（README 明确列出该角色）。",
+      "嵌入式团队用 Embedded Firmware Engineer Agent 辅助 ESP32/STM32/Nordic 的裸机与 RTOS 开发。",
+      "快速原型场景下用 Rapid Prototyper Agent 约束 MVP 范围与交付节奏。"
+    ],
+    "why_choose": [
+      "README 明确列出 14+ 工具支持（Claude Code、Cursor、Codex、Gemini CLI、OpenCode、Copilot、Aider、Windsurf、Kimi、Osaurus 等），一套内容多端复用。",
+      "Agent 不是空泛 prompt，而是包含身份、流程、交付物与成功指标的结构化 Markdown，便于团队维护与版本化。",
+      "提供桌面应用 + Shell 脚本两种安装方式，并支持按 division / agent 粒度安装，降低入门与噪音成本。",
+      "Engineering 分部覆盖前端/后端/移动端/DevOps/网络/嵌入式/智能合约/事件响应等细分角色，分工粒度较细。",
+      "MIT 协议 + 高星标（140571）与活跃更新（pushed_at 2026-08-06），社区基础与持续维护迹象明显。"
+    ],
+    "workflow": [
+      {
+        "name": "选择安装方式",
+        "description": "通过桌面应用 agency-agents-app（macOS/Linux/Windows）一键浏览并安装，或克隆仓库使用 scripts/install.sh。"
+      },
+      {
+        "name": "选择目标工具与分部",
+        "description": "指定 --tool（claude-code、cursor、codex、gemini-cli 等）与 --division（engineering、security 等）或具体 agent。"
+      },
+      {
+        "name": "生成/安装集成文件",
+        "description": "运行 scripts/convert.sh 生成目标工具格式，再运行 scripts/install.sh 将 Markdown 复制到对应工具的配置目录（如 ~/.claude/agents/）。"
+      },
+      {
+        "name": "在会话中激活角色",
+        "description": "在 Claude Code 等会话中用自然语言激活，例如“activate Frontend Developer mode”，让助手按对应角色流程输出。"
+      },
+      {
+        "name": "按需二次定制",
+        "description": "直接编辑 agent 的 Markdown 文件（身份、流程、交付物、指标），作为团队可维护的提示词资产。"
+      }
+    ]
+  },
+  {
+    "_id": "6a78f2a5ecea1b95c04751c0",
+    "slug": "pranshuparmar/witr",
+    "alternatives": [
+      {
+        "name": "ps + lsof + ss + systemctl + docker ps 组合",
+        "when_choose": "只需查看瞬时状态、环境受限无法安装新工具、或需要精确控制每一层输出。",
+        "tradeoff": "免费且 ubiquitous，但需要人工关联，排查耗时长、易遗漏 supervisor/容器层级。"
+      },
+      {
+        "name": "pstree",
+        "when_choose": "只关心进程父子关系、无需端口/容器/文件维度。",
+        "tradeoff": "轻量直观，但不覆盖端口、容器、systemd unit 等跨层因果。"
+      },
+      {
+        "name": "htop / btop",
+        "when_choose": "需要持续可视化监控与交互式 kill。",
+        "tradeoff": "侧重资源与进程列表，不回答 why/启动链。"
+      },
+      {
+        "name": "OSQuery",
+        "when_choose": "需要 SQL 式跨平台资产与进程查询、合规与取证。",
+        "tradeoff": "功能全面但学习曲线与部署成本更高，非专注于启动链可视化。"
+      }
+    ],
+    "architecture": [
+      {
+        "name": "Go 单二进制 CLI + TUI",
+        "description": "语言分布显示 98.7% Go，附带少量 Shell/PowerShell 安装脚本；输出 CLI 文本、JSON 与 TUI 三种形态。"
+      },
+      {
+        "name": "OS 原生状态采集层",
+        "description": "基于各平台原生机制读取进程树、端口绑定、容器运行时与 init 系统状态（README 未披露具体 API，如 /proc、sysctl、ETW 等，未确认）。"
+      },
+      {
+        "name": "跨层级关联引擎",
+        "description": "把进程、端口、容器、文件与 systemd / supervisor / shell / 容器编排等元数据关联成一条因果链（具体算法与数据源未在 README 中说明，未确认）。"
+      }
+    ],
+    "audience": [
+      "SRE / 运维工程师排查异常进程或端口占用",
+      "DevOps 调试容器与 Kubernetes 节点上的工作负载来源",
+      "安全 / 事件响应（incident response）人员溯源可疑进程",
+      "系统管理员排查 systemd、PM2、Docker 等 supervisor 的启动链"
+    ],
+    "avoid_when": [
+      "只需要简单查看进程列表或资源占用，pstree/htop 已足够。",
+      "运行在极度受限的嵌入式/容器内环境，无法安装额外二进制且不能接受 curl|bash 安装方式。",
+      "需要持续性能剖析、火焰图或 tracing，应选 perf / bpftrace / py-spy 等专用工具。",
+      "需要企业级资产查询语言与合规取证，OSQuery 更合适。",
+      "对启动链的 100% 准确性有合规级要求，而 witr 在复杂 supervisor/容器栈上的覆盖深度尚未在 README 中给出证据（未确认）。"
+    ],
+    "core_concepts": [
+      {
+        "name": "启动因果链（Causality chain）",
+        "description": "将进程追溯至其真正的发起者，跨越 shell、supervisor（如 PM2）、systemd、容器运行时等多层抽象。"
+      },
+      {
+        "name": "统一查询入口",
+        "description": "同一命令可接受 PID、端口、容器、文件作为输入，替代在 ps/lsof/ss/docker ps/systemctl 之间来回切换。"
+      },
+      {
+        "name": "多输出形态",
+        "description": "人类可读文本、机器可读 JSON、以及可交互探索的 TUI 仪表盘。"
+      },
+      {
+        "name": "跨平台单二进制",
+        "description": "Go 编写的静态二进制，覆盖 Linux / macOS / Windows / FreeBSD。"
+      }
+    ],
+    "created_at": "2026-08-10T05:35:32",
+    "facts": {
+      "language": "Go",
+      "license": "Apache-2.0",
+      "stars": 20553,
+      "forks": 722,
+      "open_issues": 8,
+      "created_at": "2025-12-20T17:26:59Z",
+      "pushed_at": "2026-08-08T03:33:55Z",
+      "topics": [
+        "cli",
+        "containers",
+        "devops",
+        "docker",
+        "freebsd",
+        "go",
+        "golang",
+        "incident-response"
+      ],
+      "language_distribution": [
+        {
+          "name": "Go",
+          "percent": 98.7
+        },
+        {
+          "name": "Shell",
+          "percent": 0.4
+        },
+        {
+          "name": "PowerShell",
+          "percent": 0.4
+        },
+        {
+          "name": "Nix",
+          "percent": 0.4
+        },
+        {
+          "name": "Makefile",
+          "percent": 0.1
+        }
+      ]
+    },
+    "full_name": "pranshuparmar/witr",
+    "generated_at": "2026-08-10T05:33:45+08:00",
+    "getting_started": [
+      "Unix 快速安装：curl -fsSL https://raw.githubusercontent.com/pranshuparmar/witr/main/install.sh | bash",
+      "Windows PowerShell：irm https://raw.githubusercontent.com/pranshuparmar/witr/main/install.ps1 | iex",
+      "或通过包管理器：brew install witr / sudo apt install witr / winget install -e --id PranshuParmar.witr / conda install -c conda-forge witr / yay -S witr-bin",
+      "浏览器试用：https://pranshuparmar.github.io/witr/ 提供模拟 Linux 环境的 guided tutorial 与 free-play sandbox，无需安装。",
+      "运行 witr 并传入 PID / 端口 / 容器 / 文件，查看 CLI 文本、JSON 或 TUI 输出（具体 flag 见 README 第 4 节，本次未完整给出）。"
+    ],
+    "intro_url": "https://site-monitor.a4.fit/projects/pranshuparmar/witr",
+    "model": "qwen3.7-plus",
+    "problem": "ps/top/lsof/ss/systemctl/docker ps 等工具只能展示当前状态（what），运维/SRE 必须手工在多个输出之间关联才能推断出 why（谁启动的、被哪个 supervisor、systemd unit、容器或 shell 拉起）。witr 把这种跨层级的因果关系显式化。",
+    "questions": [
+      "在目标 OS 上是否需要 root / 特殊权限才能读取其他用户或容器的启动链？",
+      "对 Kubernetes 节点上的 pod/container，witr 是查 cri-runtime 还是仅看 host 进程？",
+      "JSON 输出 schema 是否稳定，能否接入现有 SIEM / 告警管线？",
+      "对非 systemd 的 init（OpenRC、runit、launchd、Windows Services）覆盖深度如何？",
+      "TUI 是否支持远程 SSH 场景下的低带宽/无 Unicode 终端？"
+    ],
+    "risks": [
+      "README 未详述各平台底层采集机制（/proc、sysctl、ETW 等），对非 systemd / 非 Docker 环境的覆盖深度未确认。",
+      "项目 created_at 为 2025-12，相对年轻，长期维护与 API/JSON schema 稳定性需观察。",
+      "社区包（apt、AUR、conda 等）可能滞后于 GitHub Release，生产环境建议锁定版本。",
+      "curl | bash / irm | iex 安装方式在安全敏感环境中通常不被允许，需要走包管理器或内部镜像。",
+      "追溯深层 supervisor / 容器链时可能存在性能或权限问题，README 未给出基准或限制说明（未确认）。",
+      "Windows / FreeBSD 支持已列出，但具体功能对等性与边界未在 README 中说明（未确认）。"
+    ],
+    "schema_version": 2,
+    "source_url": "https://github.com/pranshuparmar/witr",
+    "source_urls": [
+      "https://github.com/pranshuparmar/witr",
+      "https://github.com/pranshuparmar/witr/blob/main/README.md"
+    ],
+    "tagline": "跨平台命令行 + TUI 工具，把任意进程、端口、容器或文件追溯到其启动因果链。",
+    "title": "witr (Why Is This Running?)",
+    "updated_at": "2026-08-10T05:35:32",
+    "use_cases": [
+      "排查 8080 端口被哪个进程占用，以及它是由哪个 systemd unit 或 supervisor 拉起的。",
+      "在 Kubernetes 节点上定位某容器的宿主机进程与其启动链。",
+      "事件响应中溯源可疑进程的完整父子与依赖关系。",
+      "排查 PM2 / supervisord 管理的 Node/Python 进程为何在重启后仍然存活。",
+      "定位某打开文件的进程，并追溯到触发它的 shell 脚本或 cron job。"
+    ],
+    "why_choose": [
+      "把 why 显式化：一条命令直接给出从发起者到当前进程的完整因果链，省去在 ps/lsof/ss/systemctl/docker ps 之间人工关联。",
+      "统一入口：PID、端口、容器、文件四种查询维度集中在同一工具。",
+      "多形态输出：CLI 文本便于快速查看，JSON 便于脚本/告警集成，TUI 便于交互式探索。",
+      "跨平台单二进制：Linux / macOS / Windows / FreeBSD 全覆盖，安装方式丰富（brew、apt、winget、conda、AUR、npm 等）。",
+      "Apache-2.0 开源，Go 实现便于审计与二次开发。",
+      "README 列出 incident-response、kubernetes、containers 等 topics，定位明确面向排障与溯源场景。"
+    ],
+    "workflow": [
+      {
+        "name": "识别目标",
+        "description": "用户已知一个 PID、监听端口、容器 ID 或文件句柄（例如 8080 端口被占用）。"
+      },
+      {
+        "name": "调用 witr",
+        "description": "运行 witr 并传入目标（PID / 端口 / 容器 / 文件），工具以 CLI 文本、JSON 或 TUI 形式返回启动链。"
+      },
+      {
+        "name": "查看因果链",
+        "description": "输出显示从最初触发源（systemd unit / shell / 容器编排 / supervisor）到当前进程的完整父子与依赖关系。"
+      },
+      {
+        "name": "定位根因并处置",
+        "description": "用户据此决定 kill、禁用 unit、调整 supervisor 配置或修复编排清单。"
+      }
+    ]
+  },
+  {
+    "_id": "6a78f2a5ecea1b95c04751c2",
+    "slug": "google-deepmind/weathernext",
+    "alternatives": [
+      {
+        "name": "ECMWF IFS HRES / ENS",
+        "when_choose": "需要业务级权威预报、完整物理一致性、超长预报（>15 天）或法规合规场景。",
+        "tradeoff": "精度上 WN2 已可比肩甚至超越（据 DeepMind 声明），但 IFS 物理可解释性更强、生态更成熟；WN2 依赖 HRES 初始场，本质上是数据驱动后处理。"
+      },
+      {
+        "name": "NVIDIA FourCastNet / Pangu-Weather (华为) / FengWu",
+        "when_choose": "需要开源可训练、可完全自定义架构、或 GPU 原生优化且不想依赖 Google 生态。",
+        "tradeoff": "这些模型多为学术基准，业务化验证和气旋专项能力不如 WN2 Cyclones；WN2 有 2025 飓风季业务运行证据。"
+      },
+      {
+        "name": "直接消费 OpenMeteo / Google Cloud 数据流",
+        "when_choose": "只需预报结果、不想维护 GPU/TPU 推理基础设施。",
+        "tradeoff": "放弃本地推理与微调能力；但节省大量算力与工程成本，是大多数应用的首选。"
+      }
+    ],
+    "architecture": [
+      {
+        "name": "FGN (WN2 核心架构)",
+        "description": "WN2 的底层神经网络架构，具体论文见 arXiv:2506.10772；针对 TPU 优化，GPU 运行需切换 attention 实现。"
+      },
+      {
+        "name": "Graph Neural Network (GraphCast 遗留)",
+        "description": "早期 WeatherNext Graph 使用的消息传递图网络，将地球表面建模为多图结构。"
+      },
+      {
+        "name": "Diffusion-based Ensemble (GenCast 遗留)",
+        "description": "基于扩散过程生成多成员集合预报，用于概率预测与极端事件风险评估。"
+      },
+      {
+        "name": "JAX + xarray 工具链",
+        "description": "utils/ 目录提供 JAX 兼容的 xarray 工具、输入归一化、图构建模块、loss 计算与自回归 rollout 基础设施。"
+      },
+      {
+        "name": "Direct Cyclone Tracker",
+        "description": "内置气旋追踪器，直接从模型输出场提取路径，无需外部追踪算法。"
+      }
+    ],
+    "audience": [
+      "气象研究机构与高校大气科学团队",
+      "需要全球中期预报数据的产品/能源/农业/保险行业数据科学家",
+      "AI for Science 研究者（图神经网络、扩散模型、自回归气象建模）",
+      "热带气旋预报业务单位（如 NHC 合作场景）"
+    ],
+    "avoid_when": [
+      "没有 H100 / v5p TPU 且需要完整版精度——Mini 版分辨率仅 1°，性能明确低于完整版。",
+      "需要物理可解释的数值模式（如用于气候归因、物理过程诊断）——WN2 是纯数据驱动模型。",
+      "需要 >15 天的季节内/季节预报——WN2 定位是中期（medium-range）。",
+      "期望生产级 API 稳定性——README 明确声明为研究代码，可能随时 breaking change。",
+      "无法获取 ECMWF HRES / ERA5 数据或受限于其许可证——模型强依赖这些初始场/训练数据。",
+      "需要短临（0–6h）高分辨率对流预报——WN2 不是 nowcasting 模型。"
+    ],
+    "core_concepts": [
+      {
+        "name": "WeatherNext 2 (WN2 / FGN)",
+        "description": "当前主力模型，0.25° 分辨率，确定性中期大气预报 + 100m 风速 + 气旋预测；基于 FGN 架构，在 HRES 初始场上微调，训练数据截至 2024。"
+      },
+      {
+        "name": "WeatherNext Cyclones",
+        "description": "专注热带气旋路径与强度的模型，与 WN2 算法相同但独立训练；2025 大西洋飓风季业务化运行（NHC 后处理版本称 GDMI）。"
+      },
+      {
+        "name": "GraphCast (WeatherNext Graph)",
+        "description": "基于图神经网络的确定性中期预报模型（前身，已发表于 DeepMind 博客）。"
+      },
+      {
+        "name": "GenCast (WeatherNext Gen)",
+        "description": "基于扩散模型的集合（ensemble）概率预报，用于量化极端天气风险。"
+      },
+      {
+        "name": "Mini 版本",
+        "description": "1° 分辨率的轻量版，可在 P100 / 单 TPU v5e-1 上推理，用于本地实验，精度低于完整版。"
+      },
+      {
+        "name": "自回归 rollout",
+        "description": "模型以单步 6h 预测为基础，迭代展开为多日预报序列。"
+      }
+    ],
+    "created_at": "2026-08-10T05:35:32",
+    "facts": {
+      "language": "Python",
+      "license": "Apache-2.0",
+      "stars": 7042,
+      "forks": 936,
+      "open_issues": 76,
+      "created_at": "2023-07-14T11:07:57Z",
+      "pushed_at": "2026-08-07T10:10:42Z",
+      "topics": [
+        "weather",
+        "weather-forecast"
+      ],
+      "language_distribution": [
+        {
+          "name": "Python",
+          "percent": 100.0
+        }
+      ]
+    },
+    "full_name": "google-deepmind/weathernext",
+    "generated_at": "2026-08-10T05:35:16+08:00",
+    "getting_started": [
+      "最快路径：打开 docs/weathernext2/wn2_demo.ipynb Colab notebook，使用免费 v5e-1 runtime 运行 Mini 版。",
+      "安装：pip install git+https://github.com/google-deepmind/weathernext.git@v0.3.0（强烈建议 pin 版本）。",
+      "下载权重：从 https://console.cloud.google.com/storage/browser/dm_graphcast 获取对应 .npz 文件。",
+      "准备初始场：通过 WeatherBench2 获取 ERA5（训练）或 HRES T-0 analysis（运营推理）Zarr 数据。",
+      "硬件选择：Mini 版可跑 P100 / v5e-1；完整版需 H100（GPU）或 v5p（TPU），GPU 需按 notebook 示例切换 attention 实现。",
+      "仅需预报数据：直接接入 OpenMeteo API 或 Google Cloud (Earth Engine / BigQuery / Vertex AI)，跳过本地推理。"
+    ],
+    "intro_url": "https://site-monitor.a4.fit/projects/google-deepmind/weathernext",
+    "model": "qwen3.7-plus",
+    "problem": "传统数值天气预报（NWP）在中期（3–15 天）预测精度、推理速度、气旋路径追踪以及概率集合预报方面存在瓶颈；需要一种能以更低计算成本提供高精度、全球尺度、0.25° 分辨率确定性 + 概率预报的方案。",
+    "questions": [
+      "我的场景需要本地推理 + 微调，还是直接消费每日预报数据流即可？（后者强烈推荐走 OpenMeteo / GCP）",
+      "我是否有 H100 或 v5p TPU 资源运行完整版 WN2？否则只能用 Mini 版（1° 分辨率，精度下降）。",
+      "初始场数据源：我能否稳定获取 ECMWF HRES 分析场？ERA5 再分析是否满足我的延迟与许可要求？",
+      "我关注的是确定性预报还是概率集合预报？（WN2 为确定性，GenCast 为集合；两者均在同一仓库但模型不同。）",
+      "气旋追踪是否是我的核心需求？如果是，WN Cyclones 专用权重是否已在我的目标海域验证？"
+    ],
+    "risks": [
+      "研究代码定位：无 API 稳定性保证，未来更新可能 breaking change，必须 pin 到特定 release。",
+      "硬件门槛高：完整版 WN2 需 H100 或 v5p TPU，普通 GPU 用户只能使用精度下降的 Mini 版。",
+      "数据依赖：强依赖 ECMWF HRES / ERA5，这些数据有独立许可证，商业使用需单独确认合规性（README 末尾条款被截断，未确认完整许可内容）。",
+      "黑盒模型：纯数据驱动，缺乏物理约束，极端罕见事件或气候漂移场景下的可靠性未确认。",
+      "仅支持中期尺度：不适合短临预报或季节以上尺度，误用场景会导致错误结论。",
+      "GPU 适配需手动切换 attention 实现：默认针对 TPU 优化，GPU 路径非一等公民，可能遇到性能或兼容问题。"
+    ],
+    "schema_version": 2,
+    "source_url": "https://github.com/google-deepmind/weathernext",
+    "source_urls": [
+      "https://github.com/google-deepmind/weathernext",
+      "https://github.com/google-deepmind/weathernext/blob/main/README.md"
+    ],
+    "tagline": "Google DeepMind 的全球中期大气与气旋预测 AI 模型家族，包含 WeatherNext 2 (WN2)、WeatherNext Cyclones，以及前身 GraphCast 与 GenCast。",
+    "title": "WeatherNext (Google DeepMind)",
+    "updated_at": "2026-08-10T05:35:32",
+    "use_cases": [
+      "全球中期（3–10 天）天气形势预判，用于能源负荷预测、航运路由、农业规划。",
+      "热带气旋路径与强度预报，辅助应急管理与保险定价（已有 2025 飓风季业务案例）。",
+      "AI 气象预报研究基准：对比 GraphCast → GenCast → WN2 的架构演进。",
+      "基于 GCP Earth Engine / BigQuery 的气象数据产品构建，直接消费 WN2 每日输出。",
+      "在 ERA5 / HRES 基础上微调 WN2，针对特定区域或变量做领域适配（仓库提供 loss + gradient step 示例）。"
+    ],
+    "why_choose": [
+      "2025 大西洋飓风季业务化运行，有 Nature 论文与 NHC 后处理版本（GDMI）背书，气旋预报能力经实战验证。",
+      "0.25° 全球分辨率，中期预报精度对标甚至超越 ECMWF HRES（据 DeepMind 公开声明）。",
+      "提供从 Mini（P100 可跑）到完整版（H100 / v5p）的多档模型，覆盖从本地实验到生产部署。",
+      "内置直接数据流分发（GCP / WeatherLab / OpenMeteo），大多数用户无需本地推理。",
+      "统一仓库托管 WN2、WN Cyclones、GraphCast、GenCast 四代模型，便于横向对比与迁移。",
+      "Apache-2.0 许可证，代码与权重开放。"
+    ],
+    "workflow": [
+      {
+        "name": "获取初始场",
+        "description": "下载 ECMWF HRES 初始条件或 ERA5 再分析数据（推荐通过 WeatherBench2 的 Zarr 格式）。"
+      },
+      {
+        "name": "加载预训练权重",
+        "description": "从 Google Cloud Bucket (dm_graphcast) 下载对应的 .npz 权重文件（如 WeatherNext2_<2025_model{1..4}.npz）。"
+      },
+      {
+        "name": "初始化模型",
+        "description": "在 JAX 中构建 FGN（WN2）架构，Mini 版可在单 TPU/GPU 上运行，完整版需 v5p TPU 或 H100。"
+      },
+      {
+        "name": "自回归 rollout",
+        "description": "以 6h 步长迭代推理，生成多日中期预报场（温度、风速、位势高度等）。"
+      },
+      {
+        "name": "气旋追踪",
+        "description": "对输出场运行内置 direct tracker，输出热带气旋路径数据。"
+      }
+    ]
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "database": "site_monitor",
+  "exported_at": "2026-11-22",
+  "collections": {
+    "delivery_events.json": {
+      "documents": 134,
+      "bytes": 57431,
+      "sha256": "801b00d90cd81ccdc314d4f78dac6f8294fa094b4600255171ad61d4c79ed325"
+    },
+    "monitor_state.json": {
+      "documents": 16,
+      "bytes": 179476,
+      "sha256": "1777165ba9d017b80d2a20e22f6563e159600ff065c3d27b79029b339b728503"
+    },
+    "project_intros.json": {
+      "documents": 15,
+      "bytes": 141093,
+      "sha256": "3144129bdb8c5c8f5fa7894cbad8ef0780deb1c0566e0d359871b1e474408bc4"
+    },
+    "report_items.json": {
+      "documents": 1205,
+      "bytes": 2497593,
+      "sha256": "fc18c54f9c6f82fed1fa229ba056852021c7b14cb0242a7fbc62af08536b488e"
+    },
+    "reports.json": {
+      "documents": 129,
+      "bytes": 791173,
+      "sha256": "6825f79b4d8b8aed384dae8f0e156a09f8c73ccd16d50547863baac13e85caff"
+    }
+  }
+}
