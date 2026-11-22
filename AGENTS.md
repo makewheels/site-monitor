@@ -26,7 +26,7 @@ Use `uv` for Python and `pnpm` for Node. Do not use pip, venv, Poetry, npm, or Y
 - `weekly-trending.yml` runs on Saturday 09:00 `Asia/Shanghai` and pushes the weekly Trending top 10.
 - Workflows are dispatched by the server-side systemd timers; the repository keeps no cron trigger.
 - The daily workflow has contents write permission to commit the Geekbang course ID state JSON after successful delivery. Production delivery uses the Feishu Open API from `monitor/src/site_monitor/delivery.py`.
-- Monitor state and structured reports are persisted to MongoDB before delivery.
+- Structured reports are persisted to MongoDB when configured. Geekbang course IDs are persisted in the repository JSON and committed by the workflow. MongoDB write failures do not block Feishu delivery.
 - The application connects through the dedicated `site_monitor_app` account. Root credentials are administration-only.
 
 ## Cloud

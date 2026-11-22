@@ -157,7 +157,7 @@ def main():
             )
         except Exception as e:
             print(f"\n⚠️ MongoDB 写入失败: {e}", file=sys.stderr)
-            errors.append(f"MongoDB: {e}")
+            print("MongoDB 写入失败，继续执行飞书通知", file=sys.stderr)
 
     if is_enabled():
         try:
@@ -173,8 +173,7 @@ def main():
             else:
                 provider = result.get("provider", "未知")
                 if any(item["topic"] == GEEKBANG_TOPIC for item in delivery_payload["items"]):
-                    if acknowledge_delivery() and store is not None:
-                        store.save_monitor_state(runtime_dir("state"))
+                    acknowledge_delivery()
                 print(f"\n发送成功 ({provider})", file=sys.stderr)
         except Exception as e:
             print(f"\n⚠️ 发送失败: {e}", file=sys.stderr)

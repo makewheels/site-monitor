@@ -63,7 +63,6 @@ jobs:
           }
           trap cleanup EXIT HUP INT TERM
           uv run python daily_summary.py 2>&1 | tee "$log_file"
-          grep -q "MongoDB 写入成功" "$log_file"
           grep -Eq '发送成功 [(]feishu[)]|^发送跳过: trending_off_day$' "$log_file"
           cd "$GITHUB_WORKSPACE"
           if ! git diff --quiet -- monitor/data/geekbang_ai_courses.json; then

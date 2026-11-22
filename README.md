@@ -4,7 +4,7 @@
 
 1. 服务器 systemd timer 在北京时间每天 05:30 直接调度 GitHub Actions 运行 `monitor/`，不启动 AI Agent。
 2. 抓取 GitHub Trending、Anthropic Engineering 和极客时间人工智能体系课目录。极客时间首次成功抓取会将课程 ID 基线保存到 `monitor/data/geekbang_ai_courses.json`，之后有新课程才推送飞书，成功后由 GitHub Actions 提交更新。
-3. 报告与去重状态写入腾讯云轻量服务器中的 MongoDB。
+3. 极客时间课程去重状态保存在仓库 JSON 中，由 GitHub Actions 提交。其他日报历史仍写入 MongoDB。
 4. GitHub Trending 日榜每两天推送飞书，以北京时间 2026-11-22 为基准。周榜每周六 09:00 推送。网页和 Android 从阿里云 Function Compute 读取每日历史。
 5. Android APK 和版本索引发布到阿里云 OSS。
 
