@@ -17,7 +17,7 @@ uv pip install \
 
 cp -R "$ROOT_DIR/src/site_monitor_cloud" "$BUILD_DIR/site_monitor_cloud"
 cp "$ROOT_DIR/app.py" "$BUILD_DIR/app.py"
-mkdir -p "$BUILD_DIR/monitor/data/mongodb_archive"
+mkdir -p "$BUILD_DIR/monitor/data"
 cp "$ROOT_DIR/../monitor/data/mongodb_archive/"*.json "$BUILD_DIR/monitor/data/mongodb_archive/"
 
 (

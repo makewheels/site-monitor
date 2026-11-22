@@ -43,7 +43,7 @@ class JsonReportStore:
             Path(__file__).resolve().parents[3]
             / "monitor"
             / "data"
-            / "mongodb_archive"
+            / ""
         )
 
     def _read(self, filename: str) -> list[dict[str, Any]]:
