@@ -26,6 +26,10 @@
       "documents": 129,
       "bytes": 791173,
       "sha256": "6825f79b4d8b8aed384dae8f0e156a09f8c73ccd16d50547863baac13e85caff"
+    },
+    "github_trending_weekly_state.json": {
+      "documents": 1,
+      "source": "monitor_state.json"
     }
   }
 }
