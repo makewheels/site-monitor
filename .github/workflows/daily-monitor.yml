@@ -65,10 +65,10 @@ jobs:
           uv run python daily_summary.py 2>&1 | tee "$log_file"
           grep -Eq '发送成功 [(]feishu[)]|^发送跳过: trending_off_day$' "$log_file"
           cd "$GITHUB_WORKSPACE"
-          if ! git diff --quiet -- monitor/data/geekbang_ai_courses.json; then
+          if ! git diff --quiet -- monitor/data/; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add monitor/data/geekbang_ai_courses.json
-            git commit -m "更新极客时间体系课去重状态"
+            git add monitor/data/
+            git commit -m "更新监控去重状态"
             git push
           fi

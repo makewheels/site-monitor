@@ -17,7 +17,7 @@ jobs:
   weekly:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
       id-token: write
     defaults:
       run:
@@ -60,3 +60,14 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
           SITE_MONITOR_FORCE_WEEKLY: ${{ inputs.force && 'true' || 'false' }}
         run: uv run python weekly_trending.py
+
+      - name: Commit monitor state
+        run: |
+          cd "$GITHUB_WORKSPACE"
+          if ! git diff --quiet -- monitor/data/; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add monitor/data/
+            git commit -m "更新 GitHub Trending 周榜状态"
+            git push
+          fi

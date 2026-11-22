@@ -5,7 +5,7 @@ import urllib.request
 import re
 import os
 from datetime import datetime
-from .monitor_config import runtime_path
+from .monitor_config import PROJECT_ROOT, runtime_path
 from .postprocess import apply_postprocessors
 
 try:
@@ -15,7 +15,7 @@ except ImportError:
 
 MAX_REPOS = 5  # 每天只推送 Top N 个 trending 项目
 
-STATE_FILE = runtime_path("state", "github_trending_state.json")
+STATE_FILE = str(PROJECT_ROOT / "data" / "github_trending_state.json")
 PENDING_FILE = runtime_path("pending", "github_trending_pending.txt")
 PROJECTS_FILE = runtime_path("pending", "github_trending_projects.json")
 

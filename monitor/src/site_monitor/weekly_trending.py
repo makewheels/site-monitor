@@ -15,12 +15,12 @@ from .check_github_trending import (
     zh,
 )
 from .delivery import is_enabled, send_report
-from .monitor_config import runtime_dir, runtime_path
+from .monitor_config import PROJECT_ROOT, runtime_dir, runtime_path
 from .postprocess import apply_postprocessors
 from .report_payload import project_digest
 
 
-STATE_FILE = runtime_path("state", "github_trending_weekly_state.json")
+STATE_FILE = str(PROJECT_ROOT / "data" / "github_trending_weekly_state.json")
 WEEKLY_URL = "https://github.com/trending?since=weekly"
 MAX_REPOS = 10
 
