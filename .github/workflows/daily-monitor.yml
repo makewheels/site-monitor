@@ -68,7 +68,7 @@ jobs:
           if ! git diff --quiet -- monitor/data/; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add monitor/data/
+            git add -f monitor/data/*.json
             git commit -m "更新监控去重状态"
             git push
           fi
