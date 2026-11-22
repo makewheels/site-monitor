@@ -103,7 +103,7 @@ def main() -> int:
         _log(f"{week_key} 已推送，跳过")
         return 0
 
-    from .mongo_store import create_store
+    from .json_store import create_store
 
     store = create_store()
     restored = store.restore_monitor_state(runtime_dir("state"))

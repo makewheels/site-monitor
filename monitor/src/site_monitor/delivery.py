@@ -126,7 +126,7 @@ def _record_delivery_events(
     if not events:
         return
     try:
-        from .mongo_store import create_store
+        from .json_store import create_store
 
         store = create_store()
         store.record_delivery_events(events)

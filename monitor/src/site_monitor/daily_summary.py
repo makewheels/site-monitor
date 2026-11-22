@@ -129,7 +129,7 @@ def daily_delivery_payload(payload):
 
 
 def main():
-    from .mongo_store import create_store
+    from .json_store import create_store
 
     store = create_store()
     restored = store.restore_monitor_state(runtime_dir("state"))
@@ -140,8 +140,7 @@ def main():
     print(report)
 
     errors = []
-    if store is not None:
-        try:
+    try:
             saved = store.save_monitor_state(runtime_dir("state"))
             result = store.upsert_report(payload)
             print(
@@ -149,9 +148,9 @@ def main():
                 f"items={result.get('item_count')} state_files={saved}",
                 file=sys.stderr,
             )
-        except Exception as e:
-            print(f"\n⚠️ JSON 数据写入失败: {e}", file=sys.stderr)
-            print("JSON 数据写入失败，继续执行飞书通知", file=sys.stderr)
+except Exception as e:
+        print(f"\n⚠️ JSON 数据写入失败: {e}", file=sys.stderr)
+        errors.append(f"JSON: {e}")
 
     if is_enabled():
         try:

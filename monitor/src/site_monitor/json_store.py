@@ -1,4 +1,4 @@
-"""JSON-file persistence for reports, delivery events, and monitor state."""
+"""JSON persistence for reports, delivery events, and monitor state."""
 from __future__ import annotations
 
 import json
