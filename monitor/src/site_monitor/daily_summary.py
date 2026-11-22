@@ -7,7 +7,7 @@ import json
 import os
 import subprocess
 import sys
-from datetime import datetime
+from datetime import date, datetime
 from pathlib import Path
 
 from .article_enrichment import enrich_report_payload
@@ -16,6 +16,7 @@ from .delivery import is_enabled, send_report
 from .report_payload import TOPICS, attach_trending_projects, build_payload
 
 SCRIPTS_DIR = PROJECT_ROOT
+TRENDING_PUSH_START = date(2026, 11, 22)
 
 CHECK_MODULES = [
     "site_monitor.check_github_trending",
@@ -108,6 +109,20 @@ def build_report_payload():
 def build_report():
     return build_report_payload()["full_text"]
 
+def daily_delivery_payload(payload):
+    report_date = date.fromisoformat(payload["date"])
+    if (report_date - TRENDING_PUSH_START).days % 2 == 0:
+        return payload
+
+    items = [item for item in payload["items"] if item["topic"] != "github_trending"]
+    if not any(item["status"] != "no_update" for item in items):
+        return None
+
+    heading = f'📊 **每日 AI 监控汇总** — {payload["date"]}'
+    full_text = "\n\n".join([heading, *(item["body"] for item in items)])
+    return {**payload, "items": items, "item_count": len(items), "full_text": full_text}
+
+
 def main():
     store = None
     mongo_uri = os.environ.get("SITE_MONITOR_MONGO_URI")
@@ -141,7 +156,11 @@ def main():
 
     if is_enabled():
         try:
-            result = send_report(report, payload=payload)
+            delivery_payload = daily_delivery_payload(payload)
+            if delivery_payload is None:
+                result = {"skipped": True, "reason": "trending_off_day"}
+            else:
+                result = send_report(delivery_payload["full_text"], payload=delivery_payload)
             if result.get("skipped"):
                 print(f"\n发送跳过: {result.get('reason')}", file=sys.stderr)
             elif not result.get("success", False):
