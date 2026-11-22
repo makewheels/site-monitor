@@ -17,7 +17,7 @@ Use `uv` for Python and `pnpm` for Node. Do not use pip, venv, Poetry, npm, or Y
 - Every new source needs a `Topic` entry in `report_payload.py` and a matching collector in `daily_summary.CHECK_MODULES`.
 - Keep model access provider-neutral through `LLM_API_KEY`, `LLM_BASE_URL`, and `LLM_MODEL`; `DASHSCOPE_API_KEY` is a compatibility fallback only.
 - Enrich only newly discovered blog articles. Persist both `translated_title` and `summary_zh`, plus the original title/excerpt and model metadata, before MongoDB and Feishu delivery.
-- Runtime files belong under `monitor/runtime/` and must not be committed.
+- Runtime files belong under `monitor/runtime/` and must not be committed. Geekbang course ID state is the exception and lives in the committed `monitor/data/geekbang_ai_courses.json`, updated by the daily workflow.
 
 ## Delivery And Schedule
 
@@ -25,7 +25,7 @@ Use `uv` for Python and `pnpm` for Node. Do not use pip, venv, Poetry, npm, or Y
 - The schedule is 05:30 `Asia/Shanghai`; all configured sources are collected once per day.
 - `weekly-trending.yml` runs on Saturday 09:00 `Asia/Shanghai` and pushes the weekly Trending top 10.
 - Workflows are dispatched by the server-side systemd timers; the repository keeps no cron trigger.
-- Production delivery uses the Feishu Open API from `monitor/src/site_monitor/delivery.py`.
+- The daily workflow has contents write permission to commit the Geekbang course ID state JSON after successful delivery. Production delivery uses the Feishu Open API from `monitor/src/site_monitor/delivery.py`.
 - Monitor state and structured reports are persisted to MongoDB before delivery.
 - The application connects through the dedicated `site_monitor_app` account. Root credentials are administration-only.
 
