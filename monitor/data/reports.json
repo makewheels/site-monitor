@@ -10692,5 +10692,46 @@
     "content_item_count": 2,
     "updated_at": "2026-11-24T05:30:38",
     "created_at": "2026-11-24T05:30:38"
+  },
+  {
+    "report_id": "2026-11-25-aaaa465424",
+    "date": "2026-11-25",
+    "title": "每日 AI 监控汇总 — 2026-11-25",
+    "full_text": "📊 **每日 AI 监控汇总** — 2026-11-25\n\n# 🔥 GitHub Trending\n\n2026-11-25\n\n今日 trending 共 5 个项目:\n\n**elementalsouls/Claude-BugHunter**\n  含84技能、15命令的漏洞挖掘红队技能包\n  🔗 https://github.com/elementalsouls/Claude-BugHunter\n\n---\n**obra/superpowers**\n  一套可落地的智能体技能框架与开发方法论\n  🔗 https://github.com/obra/superpowers\n\n---\n**HKUDS/CLI-Anything**\n  让所有软件都能被智能体原生调用的CLI枢纽\n  🔗 https://github.com/HKUDS/CLI-Anything\n\n---\n**jingyaogong/minimind**\n  两小时从零训出64M小模型\n  🔗 https://github.com/jingyaogong/minimind\n\n---\n**cursor/plugins**\n  Cursor插件规范与官方插件集合\n  🔗 https://github.com/cursor/plugins\n\n## 2026-11-25 Anthropic Engineering\n\n今日无新文章",
+    "generated_at": "2026-11-25T05:30:35",
+    "topics": [
+      {
+        "key": "github_trending",
+        "name": "GitHub Trending",
+        "color": "#24292f",
+        "order": 10
+      },
+      {
+        "key": "anthropic_engineering",
+        "name": "Anthropic Engineering",
+        "color": "#a35e24",
+        "order": 20
+      },
+      {
+        "key": "geekbang_ai_courses",
+        "name": "极客时间人工智能体系课",
+        "color": "#de6512",
+        "order": 30
+      }
+    ],
+    "ai_enrichment": {
+      "status": "no_new_articles",
+      "operations": [
+        "title_translation",
+        "article_summary"
+      ],
+      "requested_count": 0,
+      "enriched_count": 0
+    },
+    "item_count": 2,
+    "content_count": 5,
+    "content_item_count": 1,
+    "updated_at": "2026-11-25T05:30:35",
+    "created_at": "2026-11-25T05:30:35"
   }
 ]
