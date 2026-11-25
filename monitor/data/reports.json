@@ -10733,5 +10733,48 @@
     "content_item_count": 1,
     "updated_at": "2026-11-25T05:30:35",
     "created_at": "2026-11-25T05:30:35"
+  },
+  {
+    "report_id": "2026-11-26-93c117caf3",
+    "date": "2026-11-26",
+    "title": "每日 AI 监控汇总 — 2026-11-26",
+    "full_text": "📊 **每日 AI 监控汇总** — 2026-11-26\n\n# 🔥 GitHub Trending\n\n2026-11-26\n\n今日 trending 共 5 个项目:\n\n**elementalsouls/Claude-BugHunter**\n  Claude Code skill bundle for bug hunting、external red-team work - 84 skills, 15 slash commands, 681 disclosed-report patterns curated across 24\n  🔗 https://github.com/elementalsouls/Claude-BugHunter\n\n---\n**obra/superpowers**\n  智能体技能框架 & 软件开发方法论 that works.\n  🔗 https://github.com/obra/superpowers\n\n---\n**HKUDS/CLI-Anything**\n  \"CLI-Anything: Making ALL Software 智能体-Native\" -- CLI-Hub:https://clianything.cc/\n  🔗 https://github.com/HKUDS/CLI-Anything\n\n---\n**jingyaogong/minimind**\n  🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.\n  🔗 https://github.com/jingyaogong/minimind\n\n---\n**cursor/plugins**\n  提供插件规范与官方插件合集，方便扩展编辑器功能\n  🔗 https://github.com/cursor/plugins\n\n## 2026-11-26 Anthropic Engineering\n\n发现 1 篇新文章:\n\n**Migrating our Messages API to Rust**\n📅 Wed, 25 No\n原文摘要：Many problems have a generator–verifier gap: it’s often far easier to verify that a solution is correct than to come up with one. Sudoku is a classic example. It’s simple to check the solution (just count the numbers in each row, column, and box), but finding that solution can take a long time. Many ambitious Claude projects have relied on this gap: formalizing proofs in mathematics or migrating large, well-tested codebases are tasks Claude can take on as long as it has a reliable way to verify its work. But as Claude has become more capable, it’s begun to take on projects in live systems, where generating the work is easier than verifying it. In these systems, users often rely on edge cases and quirks that fall outside the test suite , and it’s hard to write a definition of “correct” that covers everything . Without a reliable way to check Claude’s work, the migration of a live system is hard to trust—however quickly Claude can generate the code for it. We ran into this problem when we migrated our Messages API from Python to Rust. This API is the primary way that customers—as well as our own apps, like Claude Code and Cowork—reach Claude. From early 2024 to fall 2026, API traffic grew roughly 1,800 times. Rust would allow us to use far less CPU per request. Claude wrote a first version of the API’s core request path in about a week. But building trust in the migration required us to find a way to verify that our Rust API was at parity with our production API. This proved hard for several reasons, including that the Python API continued changing throughout the migration, so parity was a moving target; Claude can reply nondeterministically to the same request, so a difference between two outputs didn’t necessarily mean a bug; and we couldn't read customer requests, so we weren't able to easily see where the two versions diverged. In this post, we share how we turned the production Messages API itself into a verifier—and how that helped us test the new Rust version o\n🔗 https://www.anthropic.com/research/migrating-api-to-rust",
+    "generated_at": "2026-11-26T05:30:34",
+    "topics": [
+      {
+        "key": "github_trending",
+        "name": "GitHub Trending",
+        "color": "#24292f",
+        "order": 10
+      },
+      {
+        "key": "anthropic_engineering",
+        "name": "Anthropic Engineering",
+        "color": "#a35e24",
+        "order": 20
+      },
+      {
+        "key": "geekbang_ai_courses",
+        "name": "极客时间人工智能体系课",
+        "color": "#de6512",
+        "order": 30
+      }
+    ],
+    "ai_enrichment": {
+      "status": "success",
+      "operations": [
+        "title_translation",
+        "article_summary"
+      ],
+      "model": "qwen3.7-plus",
+      "processed_at": "2026-11-26T05:30:38+08:00",
+      "requested_count": 1,
+      "enriched_count": 1
+    },
+    "item_count": 2,
+    "content_count": 6,
+    "content_item_count": 2,
+    "updated_at": "2026-11-26T05:30:38",
+    "created_at": "2026-11-26T05:30:38"
   }
 ]

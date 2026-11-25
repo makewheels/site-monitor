@@ -42594,5 +42594,127 @@
     "date": "2026-11-25",
     "created_at": "2026-11-25T05:30:35",
     "entry_count": 0
+  },
+  {
+    "topic": "github_trending",
+    "topic_name": "GitHub Trending",
+    "title": "GitHub Trending",
+    "summary": "🔥 GitHub Trending 2026-11-26 今日 trending 共 5 个项目: elementalsouls/Claude-BugHunter Claude Code s...",
+    "body": "# 🔥 GitHub Trending\n\n2026-11-26\n\n今日 trending 共 5 个项目:\n\n**elementalsouls/Claude-BugHunter**\n  Claude Code skill bundle for bug hunting、external red-team work - 84 skills, 15 slash commands, 681 disclosed-report patterns curated across 24\n  🔗 https://github.com/elementalsouls/Claude-BugHunter\n\n---\n**obra/superpowers**\n  智能体技能框架 & 软件开发方法论 that works.\n  🔗 https://github.com/obra/superpowers\n\n---\n**HKUDS/CLI-Anything**\n  \"CLI-Anything: Making ALL Software 智能体-Native\" -- CLI-Hub:https://clianything.cc/\n  🔗 https://github.com/HKUDS/CLI-Anything\n\n---\n**jingyaogong/minimind**\n  🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.\n  🔗 https://github.com/jingyaogong/minimind\n\n---\n**cursor/plugins**\n  提供插件规范与官方插件合集，方便扩展编辑器功能\n  🔗 https://github.com/cursor/plugins",
+    "links": [
+      {
+        "title": "elementalsouls/Claude-BugHunter",
+        "url": "https://github.com/elementalsouls/Claude-BugHunter"
+      },
+      {
+        "title": "obra/superpowers",
+        "url": "https://github.com/obra/superpowers"
+      },
+      {
+        "title": "HKUDS/CLI-Anything",
+        "url": "https://github.com/HKUDS/CLI-Anything"
+      },
+      {
+        "title": "jingyaogong/minimind",
+        "url": "https://github.com/jingyaogong/minimind"
+      },
+      {
+        "title": "cursor/plugins",
+        "url": "https://github.com/cursor/plugins"
+      }
+    ],
+    "entries": [
+      {
+        "full_name": "elementalsouls/Claude-BugHunter",
+        "title": "elementalsouls/Claude-BugHunter",
+        "summary": "A Claude Code skill bundle for bug hunting and external red-team work - 84 skills, 15 slash commands, 681 disclosed-rep…",
+        "url": "https://github.com/elementalsouls/Claude-BugHunter",
+        "intro_url": "",
+        "source_url": "https://github.com/elementalsouls/Claude-BugHunter",
+        "project_intro": {}
+      },
+      {
+        "full_name": "obra/superpowers",
+        "title": "obra/superpowers",
+        "summary": "An agentic skills framework & software development methodology that works.。",
+        "url": "https://github.com/obra/superpowers",
+        "intro_url": "",
+        "source_url": "https://github.com/obra/superpowers",
+        "project_intro": {}
+      },
+      {
+        "full_name": "HKUDS/CLI-Anything",
+        "title": "HKUDS/CLI-Anything",
+        "summary": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub:https://clianything.cc/。",
+        "url": "https://github.com/HKUDS/CLI-Anything",
+        "intro_url": "",
+        "source_url": "https://github.com/HKUDS/CLI-Anything",
+        "project_intro": {}
+      },
+      {
+        "full_name": "jingyaogong/minimind",
+        "title": "jingyaogong/minimind",
+        "summary": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.。",
+        "url": "https://github.com/jingyaogong/minimind",
+        "intro_url": "",
+        "source_url": "https://github.com/jingyaogong/minimind",
+        "project_intro": {}
+      },
+      {
+        "full_name": "cursor/plugins",
+        "title": "cursor/plugins",
+        "summary": "提供插件规范与官方插件合集，方便扩展编辑器功能。",
+        "url": "https://github.com/cursor/plugins",
+        "intro_url": "",
+        "source_url": "https://github.com/cursor/plugins",
+        "project_intro": {}
+      }
+    ],
+    "status": "content",
+    "color": "#24292f",
+    "order": 10,
+    "report_id": "2026-11-26-93c117caf3",
+    "item_id": "2026-11-26-93c117caf3:github_trending",
+    "date": "2026-11-26",
+    "created_at": "2026-11-26T05:30:34",
+    "entry_count": 5
+  },
+  {
+    "topic": "anthropic_engineering",
+    "topic_name": "Anthropic Engineering",
+    "title": "Anthropic Engineering",
+    "summary": "2026-11-26 Anthropic Engineering 发现 1 篇新文章: Migrating our Messages API to Rust 📅 Wed, 25 No 原文摘...",
+    "body": "## 2026-11-26 Anthropic Engineering\n\n发现 1 篇新文章:\n\n**Migrating our Messages API to Rust**\n📅 Wed, 25 No\n原文摘要：Many problems have a generator–verifier gap: it’s often far easier to verify that a solution is correct than to come up with one. Sudoku is a classic example. It’s simple to check the solution (just count the numbers in each row, column, and box), but finding that solution can take a long time. Many ambitious Claude projects have relied on this gap: formalizing proofs in mathematics or migrating large, well-tested codebases are tasks Claude can take on as long as it has a reliable way to verify its work. But as Claude has become more capable, it’s begun to take on projects in live systems, where generating the work is easier than verifying it. In these systems, users often rely on edge cases and quirks that fall outside the test suite , and it’s hard to write a definition of “correct” that covers everything . Without a reliable way to check Claude’s work, the migration of a live system is hard to trust—however quickly Claude can generate the code for it. We ran into this problem when we migrated our Messages API from Python to Rust. This API is the primary way that customers—as well as our own apps, like Claude Code and Cowork—reach Claude. From early 2024 to fall 2026, API traffic grew roughly 1,800 times. Rust would allow us to use far less CPU per request. Claude wrote a first version of the API’s core request path in about a week. But building trust in the migration required us to find a way to verify that our Rust API was at parity with our production API. This proved hard for several reasons, including that the Python API continued changing throughout the migration, so parity was a moving target; Claude can reply nondeterministically to the same request, so a difference between two outputs didn’t necessarily mean a bug; and we couldn't read customer requests, so we weren't able to easily see where the two versions diverged. In this post, we share how we turned the production Messages API itself into a verifier—and how that helped us test the new Rust version o\n🔗 https://www.anthropic.com/research/migrating-api-to-rust",
+    "links": [
+      {
+        "title": "https://www.anthropic.com/research/migrating-api-to-rust",
+        "url": "https://www.anthropic.com/research/migrating-api-to-rust"
+      }
+    ],
+    "entries": [
+      {
+        "title": "将我们的 Messages API 迁移到 Rust",
+        "url": "https://www.anthropic.com/research/migrating-api-to-rust",
+        "summary": "文章介绍 Anthropic 将 Messages API 从 Python 迁移到 Rust，并把生产 API 作为验证器，在生产流量上比对并自动派发代理修复差异。最终新 API 每请求 CPU 降低约 70%，首 token 中位时间缩短约 20%，且未停服或冻结功能开发。",
+        "original_title": "Migrating our Messages API to Rust",
+        "translated_title": "将我们的 Messages API 迁移到 Rust",
+        "original_summary": "Many problems have a generator–verifier gap: it’s often far easier to verify that a solution is correct than to come up with one. Sudoku is a classic example. It’s simple to check the solution (just count the numbers in each row, column, and box), but finding that solution can take a long time. Many ambitious Claude projects have relied on this gap: formalizing proofs in mathematics or migrating large, well-tested codebases are tasks Claude can take on as long as it has a reliable way to verify its work. But as Claude has become more capable, it’s begun to take on projects in live systems, where generating the work is easier than verifying it. In these systems, users often rely on edge cases and quirks that fall outside the test suite , and it’s hard to write a definition of “correct” that covers everything . Without a reliable way to check Claude’s work, the migration of a live system is hard to trust—however quickly Claude can generate the code for it. We ran into this problem when we migrated our Messages API from Python to Rust. This API is the primary way that customers—as well as our own apps, like Claude Code and Cowork—reach Claude. From early 2024 to fall 2026, API traffic grew roughly 1,800 times. Rust would allow us to use far less CPU per request. Claude wrote a first version of the API’s core request path in about a week. But building trust in the migration required us to find a way to verify that our Rust API was at parity with our production API. This proved hard for several reasons, including that the Python API continued changing throughout the migration, so parity was a moving target; Claude can reply nondeterministically to the same request, so a difference between two outputs didn’t necessarily mean a bug; and we couldn't read customer requests, so we weren't able to easily see where the two versions diverged. In this post, we share how we turned the production Messages API itself into a verifier—and how that helped us test the new Rust version o",
+        "summary_zh": "文章介绍 Anthropic 将 Messages API 从 Python 迁移到 Rust，并把生产 API 作为验证器，在生产流量上比对并自动派发代理修复差异。最终新 API 每请求 CPU 降低约 70%，首 token 中位时间缩短约 20%，且未停服或冻结功能开发。",
+        "ai_enrichment": {
+          "model": "qwen3.7-plus",
+          "processed_at": "2026-11-26T05:30:38+08:00",
+          "source_type": "article_page",
+          "source_chars": 6000
+        }
+      }
+    ],
+    "status": "content",
+    "color": "#a35e24",
+    "order": 20,
+    "report_id": "2026-11-26-93c117caf3",
+    "item_id": "2026-11-26-93c117caf3:anthropic_engineering",
+    "date": "2026-11-26",
+    "created_at": "2026-11-26T05:30:34",
+    "entry_count": 1
   }
 ]

@@ -5,6 +5,7 @@
     "created_at": "2026-07-10T12:06:44.096Z",
     "data": {
       "known_articles": [
+        "https://www.anthropic.com/research/migrating-api-to-rust",
         "https://www.anthropic.com/research/building-strong-safety-evaluations",
         "https://www.anthropic.com/research/components-of-agent-memory",
         "https://www.anthropic.com/research/redesigning-source-control",
@@ -23,13 +24,12 @@
         "https://www.anthropic.com/research/code-execution-with-mcp",
         "https://www.anthropic.com/research/claude-code-sandboxing",
         "https://www.anthropic.com/research/equipping-agents-for-the-real-world-with-agent-skills",
-        "https://www.anthropic.com/research/effective-context-engineering-for-ai-agents",
-        "https://www.anthropic.com/research/a-postmortem-of-three-recent-issues"
+        "https://www.anthropic.com/research/effective-context-engineering-for-ai-agents"
       ],
-      "last_check": "2026-11-25T05:30:27.944499",
+      "last_check": "2026-11-26T05:30:26.615109",
       "initialized": true
     },
-    "updated_at": "2026-11-25T05:30:35"
+    "updated_at": "2026-11-26T05:30:38"
   },
   {
     "_id": "6a50e0540fffd851d434677b",
@@ -41,7 +41,7 @@
       "last_check": "2026-08-11T05:31:10.127562",
       "changelog_source": "https://rsshub.ktachibana.party/claude/code/changelog"
     },
-    "updated_at": "2026-11-25T05:30:35"
+    "updated_at": "2026-11-26T05:30:38"
   },
   {
     "_id": "6a50e0540fffd851d434677d",
@@ -54,7 +54,7 @@
       "last_atom_updated": "2026-08-10T16:19:17Z",
       "last_atom_title": "Update changelog.md for version 1.0.79"
     },
-    "updated_at": "2026-11-25T05:30:35"
+    "updated_at": "2026-11-26T05:30:38"
   },
   {
     "_id": "6a50e0540fffd851d434677f",
@@ -71,7 +71,7 @@
       "last_check": "2026-11-22T05:30:27.374113",
       "last_report_date": "2026-11-22"
     },
-    "updated_at": "2026-11-25T05:30:35"
+    "updated_at": "2026-11-26T05:30:38"
   },
   {
     "_id": "6a50e0540fffd851d4346781",
@@ -102,7 +102,7 @@
       ],
       "last_check": "2026-11-07T05:31:12.383430"
     },
-    "updated_at": "2026-11-25T05:30:35"
+    "updated_at": "2026-11-26T05:30:38"
   },
   {
     "_id": "6a50e0540fffd851d4346783",
@@ -133,7 +133,7 @@
       ],
       "last_check": "2026-11-07T05:31:11.647211"
     },
-    "updated_at": "2026-11-25T05:30:35"
+    "updated_at": "2026-11-26T05:30:38"
   },
   {
     "_id": "6a50e0540fffd851d4346785",
@@ -165,7 +165,7 @@
       "last_check": "2026-11-07T05:31:16.401730",
       "initialized": true
     },
-    "updated_at": "2026-11-25T05:30:35"
+    "updated_at": "2026-11-26T05:30:38"
   },
   {
     "_id": "6a50e0540fffd851d4346787",
@@ -196,7 +196,7 @@
       ],
       "last_check": "2026-11-07T05:31:14.705844"
     },
-    "updated_at": "2026-11-25T05:30:35"
+    "updated_at": "2026-11-26T05:30:38"
   },
   {
     "_id": "6a50e0540fffd851d4346789",
@@ -206,7 +206,7 @@
       "known_articles": [],
       "last_check": "2026-07-08T07:16:29.674364"
     },
-    "updated_at": "2026-11-25T05:30:35"
+    "updated_at": "2026-11-26T05:30:38"
   },
   {
     "_id": "6a50e0540fffd851d434678b",
@@ -237,7 +237,7 @@
       ],
       "last_check": "2026-11-07T05:31:12.021486"
     },
-    "updated_at": "2026-11-25T05:30:35"
+    "updated_at": "2026-11-26T05:30:38"
   },
   {
     "_id": "6a50e0540fffd851d434678d",
@@ -251,7 +251,7 @@
       ],
       "last_check": "2026-11-07T05:31:16.099948"
     },
-    "updated_at": "2026-11-25T05:30:35"
+    "updated_at": "2026-11-26T05:30:38"
   },
   {
     "_id": "6a50e0540fffd851d434678f",
@@ -272,7 +272,7 @@
       ],
       "last_check": "2026-11-07T05:31:14.927515"
     },
-    "updated_at": "2026-11-25T05:30:35"
+    "updated_at": "2026-11-26T05:30:38"
   },
   {
     "_id": "6a50e0540fffd851d4346791",
@@ -303,7 +303,7 @@
       ],
       "last_check": "2026-11-07T05:31:15.843997"
     },
-    "updated_at": "2026-11-25T05:30:35"
+    "updated_at": "2026-11-26T05:30:38"
   },
   {
     "_id": "6a61698eecea1b95c0374126",
@@ -335,7 +335,7 @@
       "page_signature": "page-status:b6395cab019a3d63d26210a8f761568a1fa787252a22f405d2743295cee5145e",
       "page_window_state": "open"
     },
-    "updated_at": "2026-11-25T05:30:35"
+    "updated_at": "2026-11-26T05:30:38"
   },
   {
     "_id": "6a77f39decea1b95c0469c54",
@@ -3063,7 +3063,7 @@
         }
       }
     },
-    "updated_at": "2026-11-25T05:30:35"
+    "updated_at": "2026-11-26T05:30:38"
   },
   {
     "_id": "6a77f39decea1b95c0469c58",
@@ -3085,6 +3085,6 @@
         "pookjw/HermesEnabler"
       ]
     },
-    "updated_at": "2026-11-25T05:30:35"
+    "updated_at": "2026-11-26T05:30:38"
   }
 ]

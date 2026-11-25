@@ -1887,5 +1887,18 @@
     "message_count": 2,
     "item_count": 3,
     "entry_count": 6
+  },
+  {
+    "event_id": "578edbcc-b810-4ce3-a806-e5e070d1ee71",
+    "batch_id": "beb5971e-9e53-4002-86e3-375aee830a1c",
+    "delivered_at": "2026-11-26T05:30:42+08:00",
+    "source": "daily_summary",
+    "report_id": "2026-11-26-93c117caf3",
+    "report_date": "2026-11-26",
+    "provider": "feishu",
+    "status": "success",
+    "message_count": 2,
+    "item_count": 2,
+    "entry_count": 6
   }
 ]
