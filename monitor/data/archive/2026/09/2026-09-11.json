@@ -1,0 +1,173 @@
+{
+ "date": "2026-09-11",
+ "report_id": "2026-09-11-94ad419487",
+ "created_at": "2026-09-11T05:32:58",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-09-11\n\n# 🔥 GitHub Trending\n\n2026-09-11\n\n发现 2 个新项目（共 5 个项目）:\n\n**ayghri/i-have-adhd**\n  让编程助手的输出更聚焦，专治注意力分散\n  🔗 https://github.com/ayghri/i-have-adhd\n\n---\n**🆕 bilawalsidhu/gods-eye-view**\n  浏览器里的真实卫星视角，3D地球上实时展示开源空间情报\n  🔗 https://github.com/bilawalsidhu/gods-eye-view\n\n---\n**obra/superpowers**\n  一套真正能落地的AI代理技能框架与软件开发方法论\n  🔗 https://github.com/obra/superpowers\n\n---\n**🆕 alsk1992/CloddsBot**\n  开源AI交易代理，自主运行于上千个市场覆盖多链多平台\n  🔗 https://github.com/alsk1992/CloddsBot\n\n---\n**Tencent/teamai-cli**\n  让每个团队都拥抱AI原生工作流\n  🔗 https://github.com/Tencent/teamai-cli\n\n## 2026-09-11 Anthropic Engineering\n\n今日无新文章\n\n## 2026-09-11 OpenAI News\n\n发现 8 篇新文章:\n\n**How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules**\n📅 Thu, 10 Se\n原文摘要：César de la Fuente’s lab uses Codex and ChatGPT to search living and extinct genomes for antimicrobial candidates to fight drug-resistant infections.\n🔗 https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials\n\n---\n\n**Now everyone can put data to work**\n📅 Thu, 10 Se\n原文摘要：Meet the Data agent in ChatGPT Work. Connect company data, uncover insights, and build interactive dashboards with AI using natural language.\n🔗 https://openai.com/index/put-data-to-work\n\n---\n\n**Introducing ChatGPT for Financial Services**\n📅 Thu, 10 Se\n原文摘要：Introducing ChatGPT for Financial Services, combining built-in financial data and GPT-6 Astra for research, modeling, and client-ready materials.\n🔗 https://openai.com/index/introducing-chatgpt-financial-services\n\n---\n\n**Expanding AI access and cyber defense for federal, state, local, and tribal governments**\n📅 Thu, 10 Se\n原文摘要：OpenAI and GSA will offer eligible federal, state, local, and tribal governments $0 license fees, 50% off usage, and expanded cyber defense support.\n🔗 https://openai.com/index/expanding-ai-access-us-government\n\n---\n\n**Build more natural voice experiences with GPT‑Live‑1 in the API**\n📅 Thu, 10 Se\n原文摘要：GPT‑Live‑1 brings natural, full-duplex voice conversations to the API, with stronger instruction following, custom voices, and telephony support.\n🔗 https://openai.com/index/introducing-gpt-live-1-in-the-api\n\n---\n\n**Introducing the Agents API**\n📅 Thu, 10 Se\n原文摘要：Build and launch cloud agents with the Agents API, a managed service powered by the Codex harness for orchestration, long-running sessions, and tool use.\n🔗 https://openai.com/index/introducing-the-agents-api\n\n---\n\n**The AI policy window is open. We need to act.**\n📅 Wed, 09 Se\n原文摘要：Chris Lehane argues that stronger AI capabilities require stronger safety evidence, shared standards, and durable policy action while the policy window remains open.\n🔗 https://openai.com/index/ai-policy-window\n\n---\n\n**GPT-6 Astra: The next generation in intelligence for work**\n📅 Wed, 09 Se\n原文摘要：Meet GPT-6 Astra, OpenAI’s most capable model for business, with advanced reasoning, computer use, and stronger writing and design judgment.\n🔗 https://openai.com/index/gpt-6-astra-next-generation-work\n\n## 2026-09-11 LangChain Blog\n\n发现 1 篇新文章:\n\n**How Credit Genie keeps codebase docs fresh with OpenWiki**\n📅 Thu, 10 Se\n原文摘要：See how Credit Genie uses OpenWiki to automate repo documentation, reduce tribal knowledge, and give engineers and coding agents searchable codebase context.\n🔗 https://www.langchain.com/blog/how-credit-genie-uses-openwiki-to-keep-codebase-knowledge-fresh-searchable-and-automated\n\n## 2026-09-11 Hugging Face Blog\n\n发现 1 篇新文章:\n\n**Rebuilding AUTOMATIC1111 with Gradio Workflow**\n📅 Thu, 10 Se\n🔗 https://huggingface.co/blog/gradio-workflow-1111\n\n## 2026-09-11 Google Research\n\n今日无新文章(追踪 20 篇)\n\n## 2026-09-11 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-09-11 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-09-11 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-09-11 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 10,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-09-11 发现 2 个新项目（共 5 个项目）: ayghri/i-have-adhd 让编程助手的输出更聚焦，专治注意力分散 🔗 https...",
+   "body": "# 🔥 GitHub Trending\n\n2026-09-11\n\n发现 2 个新项目（共 5 个项目）:\n\n**ayghri/i-have-adhd**\n  让编程助手的输出更聚焦，专治注意力分散\n  🔗 https://github.com/ayghri/i-have-adhd\n\n---\n**🆕 bilawalsidhu/gods-eye-view**\n  浏览器里的真实卫星视角，3D地球上实时展示开源空间情报\n  🔗 https://github.com/bilawalsidhu/gods-eye-view\n\n---\n**obra/superpowers**\n  一套真正能落地的AI代理技能框架与软件开发方法论\n  🔗 https://github.com/obra/superpowers\n\n---\n**🆕 alsk1992/CloddsBot**\n  开源AI交易代理，自主运行于上千个市场覆盖多链多平台\n  🔗 https://github.com/alsk1992/CloddsBot\n\n---\n**Tencent/teamai-cli**\n  让每个团队都拥抱AI原生工作流\n  🔗 https://github.com/Tencent/teamai-cli",
+   "links": [
+    {
+     "title": "ayghri/i-have-adhd",
+     "url": "https://github.com/ayghri/i-have-adhd"
+    },
+    {
+     "title": "bilawalsidhu/gods-eye-view",
+     "url": "https://github.com/bilawalsidhu/gods-eye-view"
+    },
+    {
+     "title": "obra/superpowers",
+     "url": "https://github.com/obra/superpowers"
+    },
+    {
+     "title": "alsk1992/CloddsBot",
+     "url": "https://github.com/alsk1992/CloddsBot"
+    },
+    {
+     "title": "Tencent/teamai-cli",
+     "url": "https://github.com/Tencent/teamai-cli"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-09-11 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-09-11 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-09-11 OpenAI News 发现 8 篇新文章: How a researcher uses Codex and ChatGPT to search for new ant...",
+   "body": "## 2026-09-11 OpenAI News\n\n发现 8 篇新文章:\n\n**How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules**\n📅 Thu, 10 Se\n原文摘要：César de la Fuente’s lab uses Codex and ChatGPT to search living and extinct genomes for antimicrobial candidates to fight drug-resistant infections.\n🔗 https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials\n\n---\n\n**Now everyone can put data to work**\n📅 Thu, 10 Se\n原文摘要：Meet the Data agent in ChatGPT Work. Connect company data, uncover insights, and build interactive dashboards with AI using natural language.\n🔗 https://openai.com/index/put-data-to-work\n\n---\n\n**Introducing ChatGPT for Financial Services**\n📅 Thu, 10 Se\n原文摘要：Introducing ChatGPT for Financial Services, combining built-in financial data and GPT-6 Astra for research, modeling, and client-ready materials.\n🔗 https://openai.com/index/introducing-chatgpt-financial-services\n\n---\n\n**Expanding AI access and cyber defense for federal, state, local, and tribal governments**\n📅 Thu, 10 Se\n原文摘要：OpenAI and GSA will offer eligible federal, state, local, and tribal governments $0 license fees, 50% off usage, and expanded cyber defense support.\n🔗 https://openai.com/index/expanding-ai-access-us-government\n\n---\n\n**Build more natural voice experiences with GPT‑Live‑1 in the API**\n📅 Thu, 10 Se\n原文摘要：GPT‑Live‑1 brings natural, full-duplex voice conversations to the API, with stronger instruction following, custom voices, and telephony support.\n🔗 https://openai.com/index/introducing-gpt-live-1-in-the-api\n\n---\n\n**Introducing the Agents API**\n📅 Thu, 10 Se\n原文摘要：Build and launch cloud agents with the Agents API, a managed service powered by the Codex harness for orchestration, long-running sessions, and tool use.\n🔗 https://openai.com/index/introducing-the-agents-api\n\n---\n\n**The AI policy window is open. We need to act.**\n📅 Wed, 09 Se\n原文摘要：Chris Lehane argues that stronger AI capabilities require stronger safety evidence, shared standards, and durable policy action while the policy window remains open.\n🔗 https://openai.com/index/ai-policy-window\n\n---\n\n**GPT-6 Astra: The next generation in intelligence for work**\n📅 Wed, 09 Se\n原文摘要：Meet GPT-6 Astra, OpenAI’s most capable model for business, with advanced reasoning, computer use, and stronger writing and design judgment.\n🔗 https://openai.com/index/gpt-6-astra-next-generation-work",
+   "links": [
+    {
+     "title": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
+     "url": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials"
+    },
+    {
+     "title": "https://openai.com/index/put-data-to-work",
+     "url": "https://openai.com/index/put-data-to-work"
+    },
+    {
+     "title": "https://openai.com/index/introducing-chatgpt-financial-services",
+     "url": "https://openai.com/index/introducing-chatgpt-financial-services"
+    },
+    {
+     "title": "https://openai.com/index/expanding-ai-access-us-government",
+     "url": "https://openai.com/index/expanding-ai-access-us-government"
+    },
+    {
+     "title": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
+     "url": "https://openai.com/index/introducing-gpt-live-1-in-the-api"
+    },
+    {
+     "title": "https://openai.com/index/introducing-the-agents-api",
+     "url": "https://openai.com/index/introducing-the-agents-api"
+    },
+    {
+     "title": "https://openai.com/index/ai-policy-window",
+     "url": "https://openai.com/index/ai-policy-window"
+    },
+    {
+     "title": "https://openai.com/index/gpt-6-astra-next-generation-work",
+     "url": "https://openai.com/index/gpt-6-astra-next-generation-work"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "content",
+   "summary": "2026-09-11 LangChain Blog 发现 1 篇新文章: How Credit Genie keeps codebase docs fresh with OpenWiki 📅...",
+   "body": "## 2026-09-11 LangChain Blog\n\n发现 1 篇新文章:\n\n**How Credit Genie keeps codebase docs fresh with OpenWiki**\n📅 Thu, 10 Se\n原文摘要：See how Credit Genie uses OpenWiki to automate repo documentation, reduce tribal knowledge, and give engineers and coding agents searchable codebase context.\n🔗 https://www.langchain.com/blog/how-credit-genie-uses-openwiki-to-keep-codebase-knowledge-fresh-searchable-and-automated",
+   "links": [
+    {
+     "title": "https://www.langchain.com/blog/how-credit-genie-uses-openwiki-to-keep-codebase-knowledge-fresh-searchable-and-automated",
+     "url": "https://www.langchain.com/blog/how-credit-genie-uses-openwiki-to-keep-codebase-knowledge-fresh-searchable-and-automated"
+    }
+   ]
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "content",
+   "summary": "2026-09-11 Hugging Face Blog 发现 1 篇新文章: Rebuilding AUTOMATIC1111 with Gradio Workflow 📅 Thu, 10...",
+   "body": "## 2026-09-11 Hugging Face Blog\n\n发现 1 篇新文章:\n\n**Rebuilding AUTOMATIC1111 with Gradio Workflow**\n📅 Thu, 10 Se\n🔗 https://huggingface.co/blog/gradio-workflow-1111",
+   "links": [
+    {
+     "title": "https://huggingface.co/blog/gradio-workflow-1111",
+     "url": "https://huggingface.co/blog/gradio-workflow-1111"
+    }
+   ]
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "no_update",
+   "summary": "2026-09-11 Google Research 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-09-11 Google Research\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-09-11 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-09-11 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-09-11 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-09-11 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-09-11 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-09-11 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-09-11 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-09-11 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-09-11T05:33:03+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

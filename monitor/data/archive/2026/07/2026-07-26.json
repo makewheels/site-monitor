@@ -1,0 +1,142 @@
+{
+ "date": "2026-07-26",
+ "report_id": "2026-07-26-38a481a8d2",
+ "created_at": "2026-07-26T06:16:13",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-07-26\n\n# 🔥 GitHub Trending\n\n2026-07-26\n\n发现 3 个新项目（共 5 个项目）:\n\n**block/buzz**\n  群体智慧沟通平台，让多人像蜂群一样协作交流\n  🔗 https://github.com/block/buzz\n\n---\n**🆕 alibaba/open-code-review**\n  阿里开源的混合架构代码审查工具，结合确定性流水线与大模型智能体实现精准行级审查\n  🔗 https://github.com/alibaba/open-code-review\n\n---\n**🆕 citrolabs/ego-lite**\n  为AI智能体打造的最快浏览器，可共享登录状态给Codex或Claude Code执行网页自动化\n  🔗 https://github.com/citrolabs/ego-lite\n\n---\n**ComposioHQ/awesome-claude-skills**\n  精选Claude技能、资源与工具合集，帮你定制专属AI工作流\n  🔗 https://github.com/ComposioHQ/awesome-claude-skills\n\n---\n**🆕 anthropics/claude-cookbooks**\n  Claude官方食谱集，用笔记本和示例展示各种有趣高效的用法\n  🔗 https://github.com/anthropics/claude-cookbooks\n\n## 2026-07-26 Anthropic Engineering\n\n今日无新文章\n\n## 2026-07-26 OpenAI News\n\n今日无新文章(追踪 20 篇)\n\n## 2026-07-26 LangChain Blog\n\n发现 1 篇新文章:\n\n**Own Your Intelligence: The Key to Lasting AI Advantage**\n📅 Sat, 25 Ju\n原文摘要：Learn why companies must own their agent systems, governance, context, and feedback loops to turn generic AI into lasting business advantage.\n🔗 https://www.langchain.com/blog/own-your-intelligence\n\n## 2026-07-26 GitHub Copilot CLI\n\n无更新，当前版本: 1.0.75\n\n## 2026-07-26 Hugging Face Blog\n\n今日无新文章(追踪 20 篇)\n\n## 2026-07-26 Google Research\n\n今日无新文章(追踪 20 篇)\n\n## 2026-07-26 METR\n\n发现 1 篇新文章:\n\n**Metrics of Agent Ability**\n📅 Fri, 24 Ju\n原文摘要：This post reviews alternative metrics of agent capability. This post contains a fairly comprehensive taxonomy of capability metrics for the situation in which you observe score curves for an agent and a human. Every metric is based off the following two score functions: $s_A(x)$ = agent score as a function of expenditure $s_H(x)$ = human score as a function of expenditure Expenditure can be interpreted as money spent, or tokens, or time required. What I will not do. I will generally not give recommendations of which metric is the best for which situation. I will not give a deep discussion of how to measure the score curves, $s_H$ and $s_A$. There are many practical difficulties involved in this. I will generally address only scores on a single task; applications to collections of tasks (benchmark scores) can be a bit more complicated. I will mostly not discuss other desirable properties of metrics - e.g. whether it is understandable, whether it is generalizable. Some general observations. Some personal observations that I think are fairly natural: If score curves are very concave (meaning score is invariant to expenditure) then just reporting the raw score is fine, given some reasonable amount of expenditure. If score curves show high returns to expenditure then we need a metric that takes into account test-time scaling. Benchmarking against human abilities helps us generalize to entirely new tasks. As the models get very good then many of the human-relevant benchmarks become no longer useful. Setup and Definitions Each agent and each human is characterized by a function from expenditure to score, $s(x)$, and $s^{-1}(\\bar{s})$ represents the expenditure required to reach a score $\\bar{s}$. In general I interpret score as performance on a single task, e.g., the speedup on an optimization problem. We could also interpret score as the share of binary tasks completed, or the probability of completing a single task. 1 Expenditure will generally be treated as money, but i\n🔗 https://metr.org/notes/2026-07-24-metrics-of-model-ability/\n\n## 2026-07-26 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-07-26 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-07-26 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 11,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-07-26 发现 3 个新项目（共 5 个项目）: block/buzz 群体智慧沟通平台，让多人像蜂群一样协作交流 🔗 https://git...",
+   "body": "# 🔥 GitHub Trending\n\n2026-07-26\n\n发现 3 个新项目（共 5 个项目）:\n\n**block/buzz**\n  群体智慧沟通平台，让多人像蜂群一样协作交流\n  🔗 https://github.com/block/buzz\n\n---\n**🆕 alibaba/open-code-review**\n  阿里开源的混合架构代码审查工具，结合确定性流水线与大模型智能体实现精准行级审查\n  🔗 https://github.com/alibaba/open-code-review\n\n---\n**🆕 citrolabs/ego-lite**\n  为AI智能体打造的最快浏览器，可共享登录状态给Codex或Claude Code执行网页自动化\n  🔗 https://github.com/citrolabs/ego-lite\n\n---\n**ComposioHQ/awesome-claude-skills**\n  精选Claude技能、资源与工具合集，帮你定制专属AI工作流\n  🔗 https://github.com/ComposioHQ/awesome-claude-skills\n\n---\n**🆕 anthropics/claude-cookbooks**\n  Claude官方食谱集，用笔记本和示例展示各种有趣高效的用法\n  🔗 https://github.com/anthropics/claude-cookbooks",
+   "links": [
+    {
+     "title": "https://github.com/block/buzz",
+     "url": "https://github.com/block/buzz"
+    },
+    {
+     "title": "https://github.com/alibaba/open-code-review",
+     "url": "https://github.com/alibaba/open-code-review"
+    },
+    {
+     "title": "https://github.com/citrolabs/ego-lite",
+     "url": "https://github.com/citrolabs/ego-lite"
+    },
+    {
+     "title": "https://github.com/ComposioHQ/awesome-claude-skills",
+     "url": "https://github.com/ComposioHQ/awesome-claude-skills"
+    },
+    {
+     "title": "https://github.com/anthropics/claude-cookbooks",
+     "url": "https://github.com/anthropics/claude-cookbooks"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-07-26 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-07-26 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "no_update",
+   "summary": "2026-07-26 OpenAI News 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-07-26 OpenAI News\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "content",
+   "summary": "2026-07-26 LangChain Blog 发现 1 篇新文章: Own Your Intelligence: The Key to Lasting AI Advantage 📅 S...",
+   "body": "## 2026-07-26 LangChain Blog\n\n发现 1 篇新文章:\n\n**Own Your Intelligence: The Key to Lasting AI Advantage**\n📅 Sat, 25 Ju\n原文摘要：Learn why companies must own their agent systems, governance, context, and feedback loops to turn generic AI into lasting business advantage.\n🔗 https://www.langchain.com/blog/own-your-intelligence",
+   "links": [
+    {
+     "title": "https://www.langchain.com/blog/own-your-intelligence",
+     "url": "https://www.langchain.com/blog/own-your-intelligence"
+    }
+   ]
+  },
+  {
+   "topic": "github_copilot_cli",
+   "topic_name": "GitHub Copilot CLI",
+   "title": "GitHub Copilot CLI",
+   "status": "no_update",
+   "summary": "2026-07-26 GitHub Copilot CLI 无更新，当前版本: 1.0.75",
+   "body": "## 2026-07-26 GitHub Copilot CLI\n\n无更新，当前版本: 1.0.75",
+   "links": []
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "no_update",
+   "summary": "2026-07-26 Hugging Face Blog 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-07-26 Hugging Face Blog\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "no_update",
+   "summary": "2026-07-26 Google Research 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-07-26 Google Research\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "content",
+   "summary": "2026-07-26 METR 发现 1 篇新文章: Metrics of Agent Ability 📅 Fri, 24 Ju 原文摘要：This post reviews alterna...",
+   "body": "## 2026-07-26 METR\n\n发现 1 篇新文章:\n\n**Metrics of Agent Ability**\n📅 Fri, 24 Ju\n原文摘要：This post reviews alternative metrics of agent capability. This post contains a fairly comprehensive taxonomy of capability metrics for the situation in which you observe score curves for an agent and a human. Every metric is based off the following two score functions: $s_A(x)$ = agent score as a function of expenditure $s_H(x)$ = human score as a function of expenditure Expenditure can be interpreted as money spent, or tokens, or time required. What I will not do. I will generally not give recommendations of which metric is the best for which situation. I will not give a deep discussion of how to measure the score curves, $s_H$ and $s_A$. There are many practical difficulties involved in this. I will generally address only scores on a single task; applications to collections of tasks (benchmark scores) can be a bit more complicated. I will mostly not discuss other desirable properties of metrics - e.g. whether it is understandable, whether it is generalizable. Some general observations. Some personal observations that I think are fairly natural: If score curves are very concave (meaning score is invariant to expenditure) then just reporting the raw score is fine, given some reasonable amount of expenditure. If score curves show high returns to expenditure then we need a metric that takes into account test-time scaling. Benchmarking against human abilities helps us generalize to entirely new tasks. As the models get very good then many of the human-relevant benchmarks become no longer useful. Setup and Definitions Each agent and each human is characterized by a function from expenditure to score, $s(x)$, and $s^{-1}(\\bar{s})$ represents the expenditure required to reach a score $\\bar{s}$. In general I interpret score as performance on a single task, e.g., the speedup on an optimization problem. We could also interpret score as the share of binary tasks completed, or the probability of completing a single task. 1 Expenditure will generally be treated as money, but i\n🔗 https://metr.org/notes/2026-07-24-metrics-of-model-ability/",
+   "links": [
+    {
+     "title": "https://metr.org/notes/2026-07-24-metrics-of-model-ability/",
+     "url": "https://metr.org/notes/2026-07-24-metrics-of-model-ability/"
+    }
+   ]
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-07-26 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-07-26 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-07-26 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-07-26 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-07-26 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-07-26 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": []
+}

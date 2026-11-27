@@ -1,0 +1,234 @@
+{
+ "date": "2026-07-18",
+ "report_id": "2026-07-18-f79c9963a5",
+ "created_at": "2026-07-18T07:59:33",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-07-18\n\n# 🔥 GitHub Trending\n\n2026-07-18\n\n发现 4 个新项目（共 5 个项目）:\n\n**🆕 codecrafters-io/build-your-own-x**\n  从零复刻各种技术，动手学编程的宝藏教程合集\n  🔗 https://github.com/codecrafters-io/build-your-own-x\n\n---\n**🆕 PostHog/posthog**\n  一站式产品分析平台，集成AI可观测、会话回放与特性开关\n  🔗 https://github.com/PostHog/posthog\n\n---\n**🆕 HenryNdubuaku/maths-cs-ai-compendium**\n  AI/ML研究工程师必备的数学、计算机与AI知识速查手册\n  🔗 https://github.com/HenryNdubuaku/maths-cs-ai-compendium\n\n---\n**Nutlope/hallmark**\n  专治AI生成代码的审美灾难，让设计输出告别廉价感\n  🔗 https://github.com/Nutlope/hallmark\n\n---\n**🆕 github/copilot-sdk**\n  官方SDK，把Copilot智能体无缝嵌入你的应用和服务\n  🔗 https://github.com/github/copilot-sdk\n\n## 2026-07-18 Anthropic Engineering\n\n今日无新文章\n\n## 2026-07-18 OpenAI News\n\n发现 8 篇新文章:\n\n**A scorecard for the AI age**\n📅 Fri, 17 Ju\n原文摘要：Sarah Friar, CFO of OpenAI, introduces a practical AI scorecard to measure ROI through useful work, cost per successful task, dependability, and return on compute.\n🔗 https://openai.com/index/a-scorecard-for-the-ai-age\n\n---\n\n**Why teens deserve access to safe AI**\n📅 Thu, 16 Ju\n原文摘要：Learn how OpenAI is making ChatGPT safer for teens with age-appropriate protections, learning tools, parental controls, and expert partnerships.\n🔗 https://openai.com/index/why-teens-deserve-access-safe-ai\n\n---\n\n**How Cars24 scales conversations and builds faster with OpenAI**\n📅 Thu, 16 Ju\n原文摘要：Cars24 uses OpenAI-powered voice and chat agents to handle 1M+ monthly conversation minutes, recover 12% of lost leads, and bring agentic workflows to teams across the company.\n🔗 https://openai.com/index/cars24\n\n---\n\n**The US is advancing AI safety through state and federal action**\n📅 Wed, 15 Ju\n原文摘要：OpenAI outlines a “reverse federalism” approach to AI governance, where state laws help build a national framework for safe, democratic AI.\n🔗 https://openai.com/index/advancing-ai-safety-through-state-and-federal-action\n\n---\n\n**GPT-Red: Unlocking Self-Improvement for Robustness**\n📅 Wed, 15 Ju\n原文摘要：Explore GPT-Red, OpenAI’s automated red teaming system that uses self-play to improve AI safety, alignment, and prompt injection robustness.\n🔗 https://openai.com/index/unlocking-self-improvement-gpt-red\n\n---\n\n**How to manage AI investments in the agentic era**\n📅 Tue, 14 Ju\n原文摘要：Learn how enterprises can manage AI investments in the agentic era by measuring useful work per dollar, improving efficiency, and scaling high-value workflows.\n🔗 https://openai.com/index/managing-ai-investments-in-agentic-era\n\n---\n\n**How sales teams use ChatGPT Work**\n📅 Tue, 14 Ju\n原文摘要：See how sales teams can use ChatGPT Work to create pipeline briefs, meeting prep packets, forecast reviews, account plans, and stalled-deal diagnoses from real work inputs.\n🔗 https://openai.com/academy/codex-for-work/how-sales-teams-use-codex\n\n---\n\n**How data science teams use ChatGPT Work**\n📅 Tue, 14 Ju\n原文摘要：See how data science teams can use ChatGPT Work to build root-cause briefs, impact readouts, KPI memos, scoped analyses, and dashboard specs from real work inputs.\n🔗 https://openai.com/academy/codex-for-work/how-data-science-teams-use-codex\n\n## 2026-07-18 LangChain Blog\n\n发现 5 篇新文章:\n\n**Proving The Roi Of Agentic Ai In Financial Services**\n📅 Fri, 17 Ju\n🔗 https://www.langchain.com/blog/proving-the-roi-of-agentic-ai-in-financial-services\n\n---\n\n**OpenWiki 0.2 brings OKF to codebase documentation**\n📅 Thu, 16 Ju\n原文摘要：OpenWiki 0.2 generates codebase wikis in the OKF format, helping developers organize repo docs with metadata, changelogs, and agent-friendly retrieval.\n🔗 https://www.langchain.com/blog/openwiki-0-2-adds-okf-support\n\n---\n\n**New in Fleet: Deploy AI agents to Slack in one click**\n📅 Thu, 16 Ju\n原文摘要：Build custom AI agents in Fleet without code, then deploy them to Slack in one click. Give agents custom identities, use them in channels and threads, and keep work moving where your team already collaborates.\n🔗 https://www.langchain.com/blog/new-in-langsmith-fleet-bring-agents-into-slack-in-one-click\n\n---\n\n**Agents need their own computer. Here's how to give them one safely.**\n📅 Wed, 15 Ju\n原文摘要：For most of computing history, a developer environment meant a physical machine, then a VM, then a container, with each one shared across the work happening on it, each one requiring deliberate setup and teardown. The idea of giving every agent its own isolated computer, booting in under a second and cleaning up when done wasn't practical at scale. Sandboxes give you a safer way to run upgraded workflows, providing you an isolated environment to run tasks that require iteration, verification, and access to the tools a person would normally use, all without requiring human supervision. Every human developer gets a laptop. Every agent can get a computer.\n🔗 https://www.langchain.com/blog/agents-need-their-own-computer\n\n---\n\n**How to Debug Coding Agents with LangSmith Traces**\n📅 Wed, 15 Ju\n原文摘要：Use LangSmith to trace coding agents across Claude Code, Codex, Cursor, Copilot, and more. Inspect tool calls, subagents, errors, costs, and retries.\n🔗 https://www.langchain.com/blog/your-coding-agents-are-a-black-box-heres-how-to-crack-them-open\n\n## 2026-07-18 Claude Code\n\n🆕 **Claude Code 功能更新**: `v2.1.212`\n🔗 https://code.claude.com/docs/en/changelog#2-1-212\n发布时间: Thu, 16 Ju\n\n### 功能更新\n- /fork now copies your conversation into a new background session (its own row in claude agents) while you keep working; the in-session subagent it used to launch is now /subtask\n- Added claude auto-mode reset to restore the default auto-mode configuration, with a confirmation prompt (pass --yes to skip)\n- Added a session-wide limit on WebSearch tool calls (default 200, tunable via CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION) to stop runaway search loops\n- Added a per-session cap on subagent spawns (default 200, override with CLAUDE_CODE_MAX_SUBAGENTS_PER_SESSION) to stop runaway delegation loops; /clear resets the budget\n- MCP tool calls running longer than 2 minutes now move to the background automatically so the session stays usable; configure the threshold or disable with CLAUDE_CODE_MCP_AUTO_BACKGROUND_MS\n- Typing /resume in the agent view now opens a picker of past sessions — including sessions deleted from the list — and resumes your pick as a background session\n- Fixed plan mode auto-running file-modifying Bash commands (e.g. touch, rm) without a permission prompt or SDK canUseTool callback\n- Improved background agent attach: cold-attaching now instantly shows the formatted transcript while the session boots, instead of a blank wait\n\n## 2026-07-18 GitHub Copilot CLI\n\n## 1.0.71 - 2026-07-16\n\n- `copilot -p --autopilot` no longer hangs when a background shell or agent outlives the turn; it now honors the COPILOT_TASK_WAIT_TIMEOUT_SECONDS timeout the same way plain `-p` does.\n- Reopening the /subagents model picker keeps each agent's reasoning effort and context tier\n- Refresh memory context after 30 minutes in long-lived sessions\n- Keep MCP tool lists up to date when servers change\n- Avoid leaving long-running background git processes after exit\n- Add a configurable maximum for Ctrl+R command history\n- On startup, an invalid settings.json now shows a warning identifying the offending value instead of silently ignoring your settings\n- /terminal-setup no longer skips setup on terminals without real kitty keyboard support\n- Add /voice devices to choose and persist the microphone for voice mode\n- Limit which built-in agents are available to tasks and subagents\n- Add canvas support in the CLI for extension-driven interactions\n- Enforce the sandbox filesystem policy on LSP file reads and rename edits\n- Allow empty owner and author emails in marketplace metadata\n- Keep all MCP Server Type options visible on short terminals\n- Mark disabled skills in `copilot skill list` and its JSON output\n- Plan mode now hard-blocks built-in tool calls that would modify the workspace, so the agent can no longer edit files or run mutating shell commands while planning (built-in mutators like opening a pull request are blocked; MCP and external tools are still allowed)\n- Improve /chronicle cost-tips recommendations with richer cost profiles\n- Highlight standalone hex colors inline in Markdown\n- Persist GitHub MCP toolset/tool config via settings.json (githubMcpToolsets, githubMcpTools, etc.)\n- Add `plugins marketplace` subcommands to list, add, and remove plugin marketplaces\n- Persist sidebar sessions across restarts\n- Add plugins marketplace browse and update commands\n- Split /worktree and /move: /worktree now creates a new worktree and leaves your uncommitted changes behind, while the new /move carries them into the new worktree\n- Add local and cloud cost profiles to /chronicle cost-tips\n- Switching to autopilot mid-turn now auto-answers questions asked during that same turn\n- Custom agents that request a shell tool by alias now also receive the matching read, list, and stop shell tools\n- Slash commands and their autocomplete now match regardless of case (e.g. /SESSION works like /session)\n- Show repo-enabled plugins in /plugin list and skill pickers\n- Press ? twice to dismiss quick help and start a prompt with a literal ?\n- Shell completions suggest positional-argument choices\n- Show the /app launch message and download link immediately on Linux\n- Validate --max-autopilot-continues rejects NaN, negative, and fractional values\n- Honor NO_COLOR in the CLI even when chalk cached a color level\n- Apply updated session options (shell flags, streaming, custom agent defaults) immediately after /settings changes\n- Announce the focused /model row for screen readers\n- Announce the focused picker row to screen readers\n- Show selected custom agents once in /agent and keep their source label when the file name differs from the display name\n- Clear the /model pricing banner when no models match\n- Keep /share file session and /share html session from using the full-session selector as an output path\n- Honor --context in fresh interactive sessions\n- Fixed the model picker changing a hidden model's reasoning effort or context window when the search matched no results, and hid the inert key hints shown in that empty state\n- Display plugin root skills as /plugin instead of /plugin:plugin\n- Keep valid hooks in a config file when one hook entry is malformed\n- Denying write(path) now blocks only the specified path\n- Using --add-github-mcp-tool \"\\*\" now enables all GitHub MCP tools\n- Render empty untracked files without a phantom added line\n- Show clean failure messages when copilot skill add fails\n- Press Enter on a blank settings array item to show an error instead of saving an empty value\n- Press Enter once to toggle booleans with a registered default in /settings\n- Declining folder trust in /cwd keeps your live session open and returns to the previous folder\n- Show a warning when a workspace MCP config is malformed or cannot be loaded\n- Make bare `copilot mcp` and `copilot skill` print help and exit 0, matching `copilot plugin`. Consistent with `plugin`, the implicit `help <subcommand>` form is not supported for these groups; use `copilot mcp <subcommand> --help` (or `copilot skill <subcommand> --help`) instead.\n- Show malformed allowed_models.txt policy errors cleanly in -p mode\n- Resume synced sessions by name without a false multiple matches error\n- Show an error when --name is used with --session-id for an existing session\n- Show --plugin-dir plugins in copilot plugin list\n- Keep backgrounded sessions alive when you switch away from them\n- Link bare #number GitHub refs in -p --stream off output\n- Show the startup banner only on the first launch when set to once\n- Allow `copilot update` and `/update` to accept `stable` as a channel\n- Surface --plugin-dir warnings in the terminal\n- Surface the real load error for malformed custom agents\n- Reject --continue when used with --resume\n- Prompt mode now exits non-zero when a `--share` or `--share-gist` export fails\n- Server mode reconnects OAuth MCP servers from cached tokens\n- Keep stored Git credential helpers available for marketplace plugin installs\n- The /model picker shows the Auto model description as markdown with a clickable Learn More link\n- Keep sessions tied to their working directory across prompts, restarts, and workspace tools\n- Always offer a custom answer in ask_user choice prompts\n- Lower the default maximum sub-agent nesting depth from 6 to 4 to curb runaway recursive sub-agent delegation. Usage-based billing users can still adjust `subagents.maxDepth` (up to 128).\n- Add a pinned prompts setting in /settings to control prompt pinning\n- Add Repo and Repo (local) scope tabs to the /settings dashboard\n- Interactive shell commands now fail with a retryable \"reconfiguring\" message instead of an \"unknown shellManager handle\" error after the shell manager is disposed, and a detached command's completion notification is no longer lost when the shell context is reconfigured while a read is in progress\n- Reject custom-agent names that would create hidden files\n- Reject malformed --allow-tool and --deny-tool patterns with an error message\n- Show retained shell output in /tasks Shell Details for finished tasks\n- Remove duplicate Error: prefixes from plugin command failures\n- Shell completions stop suggesting subcommands as flag values\n- Show singular message counts in /usage activity graph\n- Keep /cd from switching to files or inaccessible directories\n- Dismissing the quick-help overlay with ? no longer leaves a stray ? in the prompt\n- --sandbox and --no-sandbox now show their \"ignored\" warning during interactive startup when the sandbox feature is unavailable (previously it was only visible in non-interactive mode)\n- Show the full command with its arguments (not just the wrapper) in the /mcp server detail view\n- Hide the inert navigate and view-log hints in the empty /lsp logs (LSP Services) panel\n- Exit non-interactive prompt runs with a failure code when a prompt is blocked before responding\n- Show the Auto discount in the redesigned inline model picker\n- New sessions start in the default directory instead of the active session's cwd\n- Fish completion only offers enum values for closed-choice flags\n- Use targeted validation commands and lighter install guidance by default\n- Use ctrl+x → x to close a session and ctrl+x → h to hide the split sidebar\n\n## 2026-07-18 Hugging Face Blog\n\n发现 7 篇新文章:\n\n**Fine-tune video and image models at scale with NVIDIA NeMo Automodel and 🤗 Diffusers**\n📅 Fri, 17 Ju\n🔗 https://huggingface.co/blog/nvidia/scale-diffusers-finetuning-nemo-automodel\n\n---\n\n**Newer Models, Same Advantage**\n📅 Thu, 16 Ju\n🔗 https://huggingface.co/blog/Dharma-AI/newer-models-same-advantages\n\n---\n\n**Security incident disclosure — July 2026**\n📅 Thu, 16 Ju\n🔗 https://huggingface.co/blog/security-incident-july-2026\n\n---\n\n**What building Shippy taught us about building agents**\n📅 Wed, 15 Ju\n🔗 https://huggingface.co/blog/allenai/shippy-tech-blog\n\n---\n\n**Model Routing Is Simple. Until It Isn’t.**\n📅 Wed, 15 Ju\n🔗 https://huggingface.co/blog/ibm-research/model-routing-is-simple-until-it-isnt\n\n---\n\n**Welcome Inkling by Thinking Machines**\n📅 Wed, 15 Ju\n🔗 https://huggingface.co/blog/thinkingmachines-inkling\n\n---\n\n**Introducing Real World VoiceEQ: Measuring the human quality of voice AI**\n📅 Wed, 15 Ju\n🔗 https://huggingface.co/blog/real-world-voiceeq\n\n## 2026-07-18 Google Research\n\n发现 1 篇新文章:\n\n**Towards demystifying the creativity of diffusion models**\n📅 Wed, 15 Ju\n原文摘要：Algorithms & Theory\n🔗 https://research.google/blog/towards-demystifying-the-creativity-of-diffusion-models/\n\n## 2026-07-18 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-07-18 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-07-18 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-07-18 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 12,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-07-18 发现 4 个新项目（共 5 个项目）: 🆕 codecrafters-io/build-your-own-x 从零复刻各种技术，动手...",
+   "body": "# 🔥 GitHub Trending\n\n2026-07-18\n\n发现 4 个新项目（共 5 个项目）:\n\n**🆕 codecrafters-io/build-your-own-x**\n  从零复刻各种技术，动手学编程的宝藏教程合集\n  🔗 https://github.com/codecrafters-io/build-your-own-x\n\n---\n**🆕 PostHog/posthog**\n  一站式产品分析平台，集成AI可观测、会话回放与特性开关\n  🔗 https://github.com/PostHog/posthog\n\n---\n**🆕 HenryNdubuaku/maths-cs-ai-compendium**\n  AI/ML研究工程师必备的数学、计算机与AI知识速查手册\n  🔗 https://github.com/HenryNdubuaku/maths-cs-ai-compendium\n\n---\n**Nutlope/hallmark**\n  专治AI生成代码的审美灾难，让设计输出告别廉价感\n  🔗 https://github.com/Nutlope/hallmark\n\n---\n**🆕 github/copilot-sdk**\n  官方SDK，把Copilot智能体无缝嵌入你的应用和服务\n  🔗 https://github.com/github/copilot-sdk",
+   "links": [
+    {
+     "title": "https://github.com/codecrafters-io/build-your-own-x",
+     "url": "https://github.com/codecrafters-io/build-your-own-x"
+    },
+    {
+     "title": "https://github.com/PostHog/posthog",
+     "url": "https://github.com/PostHog/posthog"
+    },
+    {
+     "title": "https://github.com/HenryNdubuaku/maths-cs-ai-compendium",
+     "url": "https://github.com/HenryNdubuaku/maths-cs-ai-compendium"
+    },
+    {
+     "title": "https://github.com/Nutlope/hallmark",
+     "url": "https://github.com/Nutlope/hallmark"
+    },
+    {
+     "title": "https://github.com/github/copilot-sdk",
+     "url": "https://github.com/github/copilot-sdk"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-07-18 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-07-18 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-07-18 OpenAI News 发现 8 篇新文章: A scorecard for the AI age 📅 Fri, 17 Ju 原文摘要：Sarah Friar, CFO...",
+   "body": "## 2026-07-18 OpenAI News\n\n发现 8 篇新文章:\n\n**A scorecard for the AI age**\n📅 Fri, 17 Ju\n原文摘要：Sarah Friar, CFO of OpenAI, introduces a practical AI scorecard to measure ROI through useful work, cost per successful task, dependability, and return on compute.\n🔗 https://openai.com/index/a-scorecard-for-the-ai-age\n\n---\n\n**Why teens deserve access to safe AI**\n📅 Thu, 16 Ju\n原文摘要：Learn how OpenAI is making ChatGPT safer for teens with age-appropriate protections, learning tools, parental controls, and expert partnerships.\n🔗 https://openai.com/index/why-teens-deserve-access-safe-ai\n\n---\n\n**How Cars24 scales conversations and builds faster with OpenAI**\n📅 Thu, 16 Ju\n原文摘要：Cars24 uses OpenAI-powered voice and chat agents to handle 1M+ monthly conversation minutes, recover 12% of lost leads, and bring agentic workflows to teams across the company.\n🔗 https://openai.com/index/cars24\n\n---\n\n**The US is advancing AI safety through state and federal action**\n📅 Wed, 15 Ju\n原文摘要：OpenAI outlines a “reverse federalism” approach to AI governance, where state laws help build a national framework for safe, democratic AI.\n🔗 https://openai.com/index/advancing-ai-safety-through-state-and-federal-action\n\n---\n\n**GPT-Red: Unlocking Self-Improvement for Robustness**\n📅 Wed, 15 Ju\n原文摘要：Explore GPT-Red, OpenAI’s automated red teaming system that uses self-play to improve AI safety, alignment, and prompt injection robustness.\n🔗 https://openai.com/index/unlocking-self-improvement-gpt-red\n\n---\n\n**How to manage AI investments in the agentic era**\n📅 Tue, 14 Ju\n原文摘要：Learn how enterprises can manage AI investments in the agentic era by measuring useful work per dollar, improving efficiency, and scaling high-value workflows.\n🔗 https://openai.com/index/managing-ai-investments-in-agentic-era\n\n---\n\n**How sales teams use ChatGPT Work**\n📅 Tue, 14 Ju\n原文摘要：See how sales teams can use ChatGPT Work to create pipeline briefs, meeting prep packets, forecast reviews, account plans, and stalled-deal diagnoses from real work inputs.\n🔗 https://openai.com/academy/codex-for-work/how-sales-teams-use-codex\n\n---\n\n**How data science teams use ChatGPT Work**\n📅 Tue, 14 Ju\n原文摘要：See how data science teams can use ChatGPT Work to build root-cause briefs, impact readouts, KPI memos, scoped analyses, and dashboard specs from real work inputs.\n🔗 https://openai.com/academy/codex-for-work/how-data-science-teams-use-codex",
+   "links": [
+    {
+     "title": "https://openai.com/index/a-scorecard-for-the-ai-age",
+     "url": "https://openai.com/index/a-scorecard-for-the-ai-age"
+    },
+    {
+     "title": "https://openai.com/index/why-teens-deserve-access-safe-ai",
+     "url": "https://openai.com/index/why-teens-deserve-access-safe-ai"
+    },
+    {
+     "title": "https://openai.com/index/cars24",
+     "url": "https://openai.com/index/cars24"
+    },
+    {
+     "title": "https://openai.com/index/advancing-ai-safety-through-state-and-federal-action",
+     "url": "https://openai.com/index/advancing-ai-safety-through-state-and-federal-action"
+    },
+    {
+     "title": "https://openai.com/index/unlocking-self-improvement-gpt-red",
+     "url": "https://openai.com/index/unlocking-self-improvement-gpt-red"
+    },
+    {
+     "title": "https://openai.com/index/managing-ai-investments-in-agentic-era",
+     "url": "https://openai.com/index/managing-ai-investments-in-agentic-era"
+    },
+    {
+     "title": "https://openai.com/academy/codex-for-work/how-sales-teams-use-codex",
+     "url": "https://openai.com/academy/codex-for-work/how-sales-teams-use-codex"
+    },
+    {
+     "title": "https://openai.com/academy/codex-for-work/how-data-science-teams-use-codex",
+     "url": "https://openai.com/academy/codex-for-work/how-data-science-teams-use-codex"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "content",
+   "summary": "2026-07-18 LangChain Blog 发现 5 篇新文章: Proving The Roi Of Agentic Ai In Financial Services 📅 Fri,...",
+   "body": "## 2026-07-18 LangChain Blog\n\n发现 5 篇新文章:\n\n**Proving The Roi Of Agentic Ai In Financial Services**\n📅 Fri, 17 Ju\n🔗 https://www.langchain.com/blog/proving-the-roi-of-agentic-ai-in-financial-services\n\n---\n\n**OpenWiki 0.2 brings OKF to codebase documentation**\n📅 Thu, 16 Ju\n原文摘要：OpenWiki 0.2 generates codebase wikis in the OKF format, helping developers organize repo docs with metadata, changelogs, and agent-friendly retrieval.\n🔗 https://www.langchain.com/blog/openwiki-0-2-adds-okf-support\n\n---\n\n**New in Fleet: Deploy AI agents to Slack in one click**\n📅 Thu, 16 Ju\n原文摘要：Build custom AI agents in Fleet without code, then deploy them to Slack in one click. Give agents custom identities, use them in channels and threads, and keep work moving where your team already collaborates.\n🔗 https://www.langchain.com/blog/new-in-langsmith-fleet-bring-agents-into-slack-in-one-click\n\n---\n\n**Agents need their own computer. Here's how to give them one safely.**\n📅 Wed, 15 Ju\n原文摘要：For most of computing history, a developer environment meant a physical machine, then a VM, then a container, with each one shared across the work happening on it, each one requiring deliberate setup and teardown. The idea of giving every agent its own isolated computer, booting in under a second and cleaning up when done wasn't practical at scale. Sandboxes give you a safer way to run upgraded workflows, providing you an isolated environment to run tasks that require iteration, verification, and access to the tools a person would normally use, all without requiring human supervision. Every human developer gets a laptop. Every agent can get a computer.\n🔗 https://www.langchain.com/blog/agents-need-their-own-computer\n\n---\n\n**How to Debug Coding Agents with LangSmith Traces**\n📅 Wed, 15 Ju\n原文摘要：Use LangSmith to trace coding agents across Claude Code, Codex, Cursor, Copilot, and more. Inspect tool calls, subagents, errors, costs, and retries.\n🔗 https://www.langchain.com/blog/your-coding-agents-are-a-black-box-heres-how-to-crack-them-open",
+   "links": [
+    {
+     "title": "https://www.langchain.com/blog/proving-the-roi-of-agentic-ai-in-financial-services",
+     "url": "https://www.langchain.com/blog/proving-the-roi-of-agentic-ai-in-financial-services"
+    },
+    {
+     "title": "https://www.langchain.com/blog/openwiki-0-2-adds-okf-support",
+     "url": "https://www.langchain.com/blog/openwiki-0-2-adds-okf-support"
+    },
+    {
+     "title": "https://www.langchain.com/blog/new-in-langsmith-fleet-bring-agents-into-slack-in-one-click",
+     "url": "https://www.langchain.com/blog/new-in-langsmith-fleet-bring-agents-into-slack-in-one-click"
+    },
+    {
+     "title": "https://www.langchain.com/blog/agents-need-their-own-computer",
+     "url": "https://www.langchain.com/blog/agents-need-their-own-computer"
+    },
+    {
+     "title": "https://www.langchain.com/blog/your-coding-agents-are-a-black-box-heres-how-to-crack-them-open",
+     "url": "https://www.langchain.com/blog/your-coding-agents-are-a-black-box-heres-how-to-crack-them-open"
+    }
+   ]
+  },
+  {
+   "topic": "claude_code",
+   "topic_name": "Claude Code",
+   "title": "Claude Code",
+   "status": "content",
+   "summary": "2026-07-18 Claude Code 🆕 **Claude Code 功能更新**: `v2.1.212` 🔗 https://code.claude.com/docs/en/cha...",
+   "body": "## 2026-07-18 Claude Code\n\n🆕 **Claude Code 功能更新**: `v2.1.212`\n🔗 https://code.claude.com/docs/en/changelog#2-1-212\n发布时间: Thu, 16 Ju\n\n### 功能更新\n- /fork now copies your conversation into a new background session (its own row in claude agents) while you keep working; the in-session subagent it used to launch is now /subtask\n- Added claude auto-mode reset to restore the default auto-mode configuration, with a confirmation prompt (pass --yes to skip)\n- Added a session-wide limit on WebSearch tool calls (default 200, tunable via CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION) to stop runaway search loops\n- Added a per-session cap on subagent spawns (default 200, override with CLAUDE_CODE_MAX_SUBAGENTS_PER_SESSION) to stop runaway delegation loops; /clear resets the budget\n- MCP tool calls running longer than 2 minutes now move to the background automatically so the session stays usable; configure the threshold or disable with CLAUDE_CODE_MCP_AUTO_BACKGROUND_MS\n- Typing /resume in the agent view now opens a picker of past sessions — including sessions deleted from the list — and resumes your pick as a background session\n- Fixed plan mode auto-running file-modifying Bash commands (e.g. touch, rm) without a permission prompt or SDK canUseTool callback\n- Improved background agent attach: cold-attaching now instantly shows the formatted transcript while the session boots, instead of a blank wait",
+   "links": [
+    {
+     "title": "https://code.claude.com/docs/en/changelog#2-1-212",
+     "url": "https://code.claude.com/docs/en/changelog#2-1-212"
+    }
+   ]
+  },
+  {
+   "topic": "github_copilot_cli",
+   "topic_name": "GitHub Copilot CLI",
+   "title": "GitHub Copilot CLI",
+   "status": "note",
+   "summary": "2026-07-18 GitHub Copilot CLI 1.0.71 - 2026-07-16 `copilot -p --autopilot` no longer hangs when...",
+   "body": "## 2026-07-18 GitHub Copilot CLI\n\n## 1.0.71 - 2026-07-16\n\n- `copilot -p --autopilot` no longer hangs when a background shell or agent outlives the turn; it now honors the COPILOT_TASK_WAIT_TIMEOUT_SECONDS timeout the same way plain `-p` does.\n- Reopening the /subagents model picker keeps each agent's reasoning effort and context tier\n- Refresh memory context after 30 minutes in long-lived sessions\n- Keep MCP tool lists up to date when servers change\n- Avoid leaving long-running background git processes after exit\n- Add a configurable maximum for Ctrl+R command history\n- On startup, an invalid settings.json now shows a warning identifying the offending value instead of silently ignoring your settings\n- /terminal-setup no longer skips setup on terminals without real kitty keyboard support\n- Add /voice devices to choose and persist the microphone for voice mode\n- Limit which built-in agents are available to tasks and subagents\n- Add canvas support in the CLI for extension-driven interactions\n- Enforce the sandbox filesystem policy on LSP file reads and rename edits\n- Allow empty owner and author emails in marketplace metadata\n- Keep all MCP Server Type options visible on short terminals\n- Mark disabled skills in `copilot skill list` and its JSON output\n- Plan mode now hard-blocks built-in tool calls that would modify the workspace, so the agent can no longer edit files or run mutating shell commands while planning (built-in mutators like opening a pull request are blocked; MCP and external tools are still allowed)\n- Improve /chronicle cost-tips recommendations with richer cost profiles\n- Highlight standalone hex colors inline in Markdown\n- Persist GitHub MCP toolset/tool config via settings.json (githubMcpToolsets, githubMcpTools, etc.)\n- Add `plugins marketplace` subcommands to list, add, and remove plugin marketplaces\n- Persist sidebar sessions across restarts\n- Add plugins marketplace browse and update commands\n- Split /worktree and /move: /worktree now creates a new worktree and leaves your uncommitted changes behind, while the new /move carries them into the new worktree\n- Add local and cloud cost profiles to /chronicle cost-tips\n- Switching to autopilot mid-turn now auto-answers questions asked during that same turn\n- Custom agents that request a shell tool by alias now also receive the matching read, list, and stop shell tools\n- Slash commands and their autocomplete now match regardless of case (e.g. /SESSION works like /session)\n- Show repo-enabled plugins in /plugin list and skill pickers\n- Press ? twice to dismiss quick help and start a prompt with a literal ?\n- Shell completions suggest positional-argument choices\n- Show the /app launch message and download link immediately on Linux\n- Validate --max-autopilot-continues rejects NaN, negative, and fractional values\n- Honor NO_COLOR in the CLI even when chalk cached a color level\n- Apply updated session options (shell flags, streaming, custom agent defaults) immediately after /settings changes\n- Announce the focused /model row for screen readers\n- Announce the focused picker row to screen readers\n- Show selected custom agents once in /agent and keep their source label when the file name differs from the display name\n- Clear the /model pricing banner when no models match\n- Keep /share file session and /share html session from using the full-session selector as an output path\n- Honor --context in fresh interactive sessions\n- Fixed the model picker changing a hidden model's reasoning effort or context window when the search matched no results, and hid the inert key hints shown in that empty state\n- Display plugin root skills as /plugin instead of /plugin:plugin\n- Keep valid hooks in a config file when one hook entry is malformed\n- Denying write(path) now blocks only the specified path\n- Using --add-github-mcp-tool \"\\*\" now enables all GitHub MCP tools\n- Render empty untracked files without a phantom added line\n- Show clean failure messages when copilot skill add fails\n- Press Enter on a blank settings array item to show an error instead of saving an empty value\n- Press Enter once to toggle booleans with a registered default in /settings\n- Declining folder trust in /cwd keeps your live session open and returns to the previous folder\n- Show a warning when a workspace MCP config is malformed or cannot be loaded\n- Make bare `copilot mcp` and `copilot skill` print help and exit 0, matching `copilot plugin`. Consistent with `plugin`, the implicit `help <subcommand>` form is not supported for these groups; use `copilot mcp <subcommand> --help` (or `copilot skill <subcommand> --help`) instead.\n- Show malformed allowed_models.txt policy errors cleanly in -p mode\n- Resume synced sessions by name without a false multiple matches error\n- Show an error when --name is used with --session-id for an existing session\n- Show --plugin-dir plugins in copilot plugin list\n- Keep backgrounded sessions alive when you switch away from them\n- Link bare #number GitHub refs in -p --stream off output\n- Show the startup banner only on the first launch when set to once\n- Allow `copilot update` and `/update` to accept `stable` as a channel\n- Surface --plugin-dir warnings in the terminal\n- Surface the real load error for malformed custom agents\n- Reject --continue when used with --resume\n- Prompt mode now exits non-zero when a `--share` or `--share-gist` export fails\n- Server mode reconnects OAuth MCP servers from cached tokens\n- Keep stored Git credential helpers available for marketplace plugin installs\n- The /model picker shows the Auto model description as markdown with a clickable Learn More link\n- Keep sessions tied to their working directory across prompts, restarts, and workspace tools\n- Always offer a custom answer in ask_user choice prompts\n- Lower the default maximum sub-agent nesting depth from 6 to 4 to curb runaway recursive sub-agent delegation. Usage-based billing users can still adjust `subagents.maxDepth` (up to 128).\n- Add a pinned prompts setting in /settings to control prompt pinning\n- Add Repo and Repo (local) scope tabs to the /settings dashboard\n- Interactive shell commands now fail with a retryable \"reconfiguring\" message instead of an \"unknown shellManager handle\" error after the shell manager is disposed, and a detached command's completion notification is no longer lost when the shell context is reconfigured while a read is in progress\n- Reject custom-agent names that would create hidden files\n- Reject malformed --allow-tool and --deny-tool patterns with an error message\n- Show retained shell output in /tasks Shell Details for finished tasks\n- Remove duplicate Error: prefixes from plugin command failures\n- Shell completions stop suggesting subcommands as flag values\n- Show singular message counts in /usage activity graph\n- Keep /cd from switching to files or inaccessible directories\n- Dismissing the quick-help overlay with ? no longer leaves a stray ? in the prompt\n- --sandbox and --no-sandbox now show their \"ignored\" warning during interactive startup when the sandbox feature is unavailable (previously it was only visible in non-interactive mode)\n- Show the full command with its arguments (not just the wrapper) in the /mcp server detail view\n- Hide the inert navigate and view-log hints in the empty /lsp logs (LSP Services) panel\n- Exit non-interactive prompt runs with a failure code when a prompt is blocked before responding\n- Show the Auto discount in the redesigned inline model picker\n- New sessions start in the default directory instead of the active session's cwd\n- Fish completion only offers enum values for closed-choice flags\n- Use targeted validation commands and lighter install guidance by default\n- Use ctrl+x → x to close a session and ctrl+x → h to hide the split sidebar",
+   "links": []
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "content",
+   "summary": "2026-07-18 Hugging Face Blog 发现 7 篇新文章: Fine-tune video and image models at scale with NVIDIA N...",
+   "body": "## 2026-07-18 Hugging Face Blog\n\n发现 7 篇新文章:\n\n**Fine-tune video and image models at scale with NVIDIA NeMo Automodel and 🤗 Diffusers**\n📅 Fri, 17 Ju\n🔗 https://huggingface.co/blog/nvidia/scale-diffusers-finetuning-nemo-automodel\n\n---\n\n**Newer Models, Same Advantage**\n📅 Thu, 16 Ju\n🔗 https://huggingface.co/blog/Dharma-AI/newer-models-same-advantages\n\n---\n\n**Security incident disclosure — July 2026**\n📅 Thu, 16 Ju\n🔗 https://huggingface.co/blog/security-incident-july-2026\n\n---\n\n**What building Shippy taught us about building agents**\n📅 Wed, 15 Ju\n🔗 https://huggingface.co/blog/allenai/shippy-tech-blog\n\n---\n\n**Model Routing Is Simple. Until It Isn’t.**\n📅 Wed, 15 Ju\n🔗 https://huggingface.co/blog/ibm-research/model-routing-is-simple-until-it-isnt\n\n---\n\n**Welcome Inkling by Thinking Machines**\n📅 Wed, 15 Ju\n🔗 https://huggingface.co/blog/thinkingmachines-inkling\n\n---\n\n**Introducing Real World VoiceEQ: Measuring the human quality of voice AI**\n📅 Wed, 15 Ju\n🔗 https://huggingface.co/blog/real-world-voiceeq",
+   "links": [
+    {
+     "title": "https://huggingface.co/blog/nvidia/scale-diffusers-finetuning-nemo-automodel",
+     "url": "https://huggingface.co/blog/nvidia/scale-diffusers-finetuning-nemo-automodel"
+    },
+    {
+     "title": "https://huggingface.co/blog/Dharma-AI/newer-models-same-advantages",
+     "url": "https://huggingface.co/blog/Dharma-AI/newer-models-same-advantages"
+    },
+    {
+     "title": "https://huggingface.co/blog/security-incident-july-2026",
+     "url": "https://huggingface.co/blog/security-incident-july-2026"
+    },
+    {
+     "title": "https://huggingface.co/blog/allenai/shippy-tech-blog",
+     "url": "https://huggingface.co/blog/allenai/shippy-tech-blog"
+    },
+    {
+     "title": "https://huggingface.co/blog/ibm-research/model-routing-is-simple-until-it-isnt",
+     "url": "https://huggingface.co/blog/ibm-research/model-routing-is-simple-until-it-isnt"
+    },
+    {
+     "title": "https://huggingface.co/blog/thinkingmachines-inkling",
+     "url": "https://huggingface.co/blog/thinkingmachines-inkling"
+    },
+    {
+     "title": "https://huggingface.co/blog/real-world-voiceeq",
+     "url": "https://huggingface.co/blog/real-world-voiceeq"
+    }
+   ]
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "content",
+   "summary": "2026-07-18 Google Research 发现 1 篇新文章: Towards demystifying the creativity of diffusion models 📅...",
+   "body": "## 2026-07-18 Google Research\n\n发现 1 篇新文章:\n\n**Towards demystifying the creativity of diffusion models**\n📅 Wed, 15 Ju\n原文摘要：Algorithms & Theory\n🔗 https://research.google/blog/towards-demystifying-the-creativity-of-diffusion-models/",
+   "links": [
+    {
+     "title": "https://research.google/blog/towards-demystifying-the-creativity-of-diffusion-models/",
+     "url": "https://research.google/blog/towards-demystifying-the-creativity-of-diffusion-models/"
+    }
+   ]
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-07-18 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-07-18 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-07-18 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-07-18 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-07-18 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-07-18 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-07-18 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-07-18 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": []
+}

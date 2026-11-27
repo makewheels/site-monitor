@@ -1,0 +1,63 @@
+{
+ "date": "2026-11-14",
+ "report_id": "2026-11-14-e936274ad4",
+ "created_at": "2026-11-14T05:30:50",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-11-14\n\n# 🔥 GitHub Trending\n\n2026-11-14\n\n发现 2 个新项目（共 5 个项目）:\n\n**🆕 alibaba/open-code-review**\n  阿里实战验证的混合架构代码审查工具，流水线结合LLM精准定位\n  🔗 https://github.com/alibaba/open-code-review\n\n---\n**GoogleChrome/modern-web-guidance-src**\n  帮编码助手跟进最新Web最佳实践，避免给出过时建议\n  🔗 https://github.com/GoogleChrome/modern-web-guidance-src\n\n---\n**openai/codex-security**\n  OpenAI安全工具，用命令行和TS包查找验证修复漏洞\n  🔗 https://github.com/openai/codex-security\n\n---\n**🆕 ZhuLinsen/daily_stock_analysis**\n  LLM驱动的多市场股票分析，聚合行情新闻并自动推送看板\n  🔗 https://github.com/ZhuLinsen/daily_stock_analysis\n\n---\n**we-promise/sure**\n  人人可用的个人财务应用，简单管好收支和预算\n  🔗 https://github.com/we-promise/sure\n\n## 2026-11-14 Anthropic Engineering\n\n发现 1 篇新文章:\n\n**Building strong safety evaluations**\n📅 Thu, 12 No\n原文摘要：Safety evaluations inform some of the most consequential decisions we make about an AI model, including whether it’s ready to deploy, which safeguards ship alongside it, and what our next round of safety training and research should focus on. When we say a model is “safer than its predecessor,” we mean that it scored better on a set of evals someone built. But a safety claim is only as sound as the eval behind it, and good ones are hard to build. A safety eval measures a model’s propensity to cause or contribute to harm, whether its response to a request makes harm more or less likely, and how severe that harm would be, rather than measuring specific capabilities. It can cover different types of harm. For example, a user may actively request harmful outputs (such as seeking instructions on how to harm themselves), or they may request outputs that are intended to be harmless, but that come with high risk of unintended harm (such as seeking information on the appropriate dose of a drug). Essentially, a safety eval asks, “Given a specific input, did the model do the right thing?” Like other types of evals, these can be tricky to get right: researchers have repeatedly found that AI evals are easy to game , don’t always measure what they claim to measure, and aren’t documented well enough to reproduce . The results can change depending on whether the questions are multiple-choice or open-ended , or even based on how answer options are ordered . Psychology faced similar issues a decade ago, when large-scale replication projects found that many published findings didn’t hold up, likely at least in part because many original studies relied on small samples and journals favored statistically significant results. In response, the field instituted reforms such as preregistration (writing down hypotheses and analysis plans before collecting or analyzing data), better measurement, and more rigorous statistics, which made measurements more trustworthy and results easier to replic\n🔗 https://www.anthropic.com/research/building-strong-safety-evaluations",
+ "item_count": 2,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-11-14 发现 2 个新项目（共 5 个项目）: 🆕 alibaba/open-code-review 阿里实战验证的混合架构代码审查工具，流...",
+   "body": "# 🔥 GitHub Trending\n\n2026-11-14\n\n发现 2 个新项目（共 5 个项目）:\n\n**🆕 alibaba/open-code-review**\n  阿里实战验证的混合架构代码审查工具，流水线结合LLM精准定位\n  🔗 https://github.com/alibaba/open-code-review\n\n---\n**GoogleChrome/modern-web-guidance-src**\n  帮编码助手跟进最新Web最佳实践，避免给出过时建议\n  🔗 https://github.com/GoogleChrome/modern-web-guidance-src\n\n---\n**openai/codex-security**\n  OpenAI安全工具，用命令行和TS包查找验证修复漏洞\n  🔗 https://github.com/openai/codex-security\n\n---\n**🆕 ZhuLinsen/daily_stock_analysis**\n  LLM驱动的多市场股票分析，聚合行情新闻并自动推送看板\n  🔗 https://github.com/ZhuLinsen/daily_stock_analysis\n\n---\n**we-promise/sure**\n  人人可用的个人财务应用，简单管好收支和预算\n  🔗 https://github.com/we-promise/sure",
+   "links": [
+    {
+     "title": "alibaba/open-code-review",
+     "url": "https://github.com/alibaba/open-code-review"
+    },
+    {
+     "title": "GoogleChrome/modern-web-guidance-src",
+     "url": "https://github.com/GoogleChrome/modern-web-guidance-src"
+    },
+    {
+     "title": "openai/codex-security",
+     "url": "https://github.com/openai/codex-security"
+    },
+    {
+     "title": "ZhuLinsen/daily_stock_analysis",
+     "url": "https://github.com/ZhuLinsen/daily_stock_analysis"
+    },
+    {
+     "title": "we-promise/sure",
+     "url": "https://github.com/we-promise/sure"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "content",
+   "summary": "2026-11-14 Anthropic Engineering 发现 1 篇新文章: Building strong safety evaluations 📅 Thu, 12 No 原文摘...",
+   "body": "## 2026-11-14 Anthropic Engineering\n\n发现 1 篇新文章:\n\n**Building strong safety evaluations**\n📅 Thu, 12 No\n原文摘要：Safety evaluations inform some of the most consequential decisions we make about an AI model, including whether it’s ready to deploy, which safeguards ship alongside it, and what our next round of safety training and research should focus on. When we say a model is “safer than its predecessor,” we mean that it scored better on a set of evals someone built. But a safety claim is only as sound as the eval behind it, and good ones are hard to build. A safety eval measures a model’s propensity to cause or contribute to harm, whether its response to a request makes harm more or less likely, and how severe that harm would be, rather than measuring specific capabilities. It can cover different types of harm. For example, a user may actively request harmful outputs (such as seeking instructions on how to harm themselves), or they may request outputs that are intended to be harmless, but that come with high risk of unintended harm (such as seeking information on the appropriate dose of a drug). Essentially, a safety eval asks, “Given a specific input, did the model do the right thing?” Like other types of evals, these can be tricky to get right: researchers have repeatedly found that AI evals are easy to game , don’t always measure what they claim to measure, and aren’t documented well enough to reproduce . The results can change depending on whether the questions are multiple-choice or open-ended , or even based on how answer options are ordered . Psychology faced similar issues a decade ago, when large-scale replication projects found that many published findings didn’t hold up, likely at least in part because many original studies relied on small samples and journals favored statistically significant results. In response, the field instituted reforms such as preregistration (writing down hypotheses and analysis plans before collecting or analyzing data), better measurement, and more rigorous statistics, which made measurements more trustworthy and results easier to replic\n🔗 https://www.anthropic.com/research/building-strong-safety-evaluations",
+   "links": [
+    {
+     "title": "https://www.anthropic.com/research/building-strong-safety-evaluations",
+     "url": "https://www.anthropic.com/research/building-strong-safety-evaluations"
+    }
+   ]
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-11-14T05:30:52+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

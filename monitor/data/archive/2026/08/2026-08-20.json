@@ -1,0 +1,152 @@
+{
+ "date": "2026-08-20",
+ "report_id": "2026-08-20-3c7e48794a",
+ "created_at": "2026-08-20T05:32:17",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-08-20\n\n# 🔥 GitHub Trending\n\n2026-08-20\n\n发现 1 个新项目（共 5 个项目）:\n\n**harry0703/MoneyPrinterTurbo**\n  AI一键生成高清短视频，自动化工作流省时省力\n  🔗 https://github.com/harry0703/MoneyPrinterTurbo\n\n---\n**volcengine/OpenViking**\n  为AI Agent打造的自进化上下文数据库，统一记忆、知识与技能\n  🔗 https://github.com/volcengine/OpenViking\n\n---\n**chaitanyagiri/munder-difflin**\n  本地多智能体协作框架\n  🔗 https://github.com/chaitanyagiri/munder-difflin\n\n---\n**mukul975/Anthropic-Cybersecurity-Skills**\n  817项结构化网安技能，覆盖六大主流框架\n  🔗 https://github.com/mukul975/Anthropic-Cybersecurity-Skills\n\n---\n**🆕 nautechsystems/nautilus_trader**\n  Rust原生生产级交易引擎，确定性事件驱动架构\n  🔗 https://github.com/nautechsystems/nautilus_trader\n\n## 2026-08-20 Anthropic Engineering\n\n今日无新文章\n\n## 2026-08-20 OpenAI News\n\n发现 4 篇新文章:\n\n**Offering Zero Data Retention for frontier models**\n📅 Wed, 19 Au\n原文摘要：OpenAI reaffirms Zero Data Retention for eligible API customers and previews Private Safety Processing for advanced AI safety without compromising data privacy.\n🔗 https://openai.com/index/offering-zero-data-retention-for-frontier-models\n\n---\n\n**Replit expands access to software creation with GPT-5.6 Luna**\n📅 Wed, 19 Au\n原文摘要：Replit introduces Free Mode, powered by GPT-5.6 Luna, so anyone can turn ideas into working software without worrying about token costs.\n🔗 https://openai.com/index/replit\n\n---\n\n**ChatGPT Ads expands across Europe**\n📅 Tue, 18 Au\n原文摘要：ChatGPT Ads is expanding to 31 European markets. Learn how advertisers can reach people as they explore, compare options, and make decisions.\n🔗 https://openai.com/index/chatgpt-ads-expands-across-europe\n\n---\n\n**How NVIDIA scales expertise with ChatGPT Work**\n📅 Tue, 18 Au\n原文摘要：NVIDIA teams use ChatGPT Work to reduce manual tasks, connect fast-moving signals, and scale successful workflows globally.\n🔗 https://openai.com/index/nvidia/chatgpt-work\n\n## 2026-08-20 LangChain Blog\n\n今日无新文章（追踪 20 篇）\n\n## 2026-08-20 Hugging Face Blog\n\n发现 1 篇新文章:\n\n**LFM2.5 Q4\\_0 Checkpoints from Quantization-Aware Distillation**\n📅 Wed, 19 Au\n🔗 https://huggingface.co/blog/LiquidAI/qad\n\n## 2026-08-20 Google Research\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-20 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-20 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-08-20 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-20 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 10,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-08-20 发现 1 个新项目（共 5 个项目）: harry0703/MoneyPrinterTurbo AI一键生成高清短视频，自动化工作流...",
+   "body": "# 🔥 GitHub Trending\n\n2026-08-20\n\n发现 1 个新项目（共 5 个项目）:\n\n**harry0703/MoneyPrinterTurbo**\n  AI一键生成高清短视频，自动化工作流省时省力\n  🔗 https://github.com/harry0703/MoneyPrinterTurbo\n\n---\n**volcengine/OpenViking**\n  为AI Agent打造的自进化上下文数据库，统一记忆、知识与技能\n  🔗 https://github.com/volcengine/OpenViking\n\n---\n**chaitanyagiri/munder-difflin**\n  本地多智能体协作框架\n  🔗 https://github.com/chaitanyagiri/munder-difflin\n\n---\n**mukul975/Anthropic-Cybersecurity-Skills**\n  817项结构化网安技能，覆盖六大主流框架\n  🔗 https://github.com/mukul975/Anthropic-Cybersecurity-Skills\n\n---\n**🆕 nautechsystems/nautilus_trader**\n  Rust原生生产级交易引擎，确定性事件驱动架构\n  🔗 https://github.com/nautechsystems/nautilus_trader",
+   "links": [
+    {
+     "title": "harry0703/MoneyPrinterTurbo",
+     "url": "https://github.com/harry0703/MoneyPrinterTurbo"
+    },
+    {
+     "title": "volcengine/OpenViking",
+     "url": "https://github.com/volcengine/OpenViking"
+    },
+    {
+     "title": "chaitanyagiri/munder-difflin",
+     "url": "https://github.com/chaitanyagiri/munder-difflin"
+    },
+    {
+     "title": "mukul975/Anthropic-Cybersecurity-Skills",
+     "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills"
+    },
+    {
+     "title": "nautechsystems/nautilus_trader",
+     "url": "https://github.com/nautechsystems/nautilus_trader"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-08-20 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-08-20 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-08-20 OpenAI News 发现 4 篇新文章: Offering Zero Data Retention for frontier models 📅 Wed, 19 Au...",
+   "body": "## 2026-08-20 OpenAI News\n\n发现 4 篇新文章:\n\n**Offering Zero Data Retention for frontier models**\n📅 Wed, 19 Au\n原文摘要：OpenAI reaffirms Zero Data Retention for eligible API customers and previews Private Safety Processing for advanced AI safety without compromising data privacy.\n🔗 https://openai.com/index/offering-zero-data-retention-for-frontier-models\n\n---\n\n**Replit expands access to software creation with GPT-5.6 Luna**\n📅 Wed, 19 Au\n原文摘要：Replit introduces Free Mode, powered by GPT-5.6 Luna, so anyone can turn ideas into working software without worrying about token costs.\n🔗 https://openai.com/index/replit\n\n---\n\n**ChatGPT Ads expands across Europe**\n📅 Tue, 18 Au\n原文摘要：ChatGPT Ads is expanding to 31 European markets. Learn how advertisers can reach people as they explore, compare options, and make decisions.\n🔗 https://openai.com/index/chatgpt-ads-expands-across-europe\n\n---\n\n**How NVIDIA scales expertise with ChatGPT Work**\n📅 Tue, 18 Au\n原文摘要：NVIDIA teams use ChatGPT Work to reduce manual tasks, connect fast-moving signals, and scale successful workflows globally.\n🔗 https://openai.com/index/nvidia/chatgpt-work",
+   "links": [
+    {
+     "title": "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
+     "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models"
+    },
+    {
+     "title": "https://openai.com/index/replit",
+     "url": "https://openai.com/index/replit"
+    },
+    {
+     "title": "https://openai.com/index/chatgpt-ads-expands-across-europe",
+     "url": "https://openai.com/index/chatgpt-ads-expands-across-europe"
+    },
+    {
+     "title": "https://openai.com/index/nvidia/chatgpt-work",
+     "url": "https://openai.com/index/nvidia/chatgpt-work"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "no_update",
+   "summary": "2026-08-20 LangChain Blog 今日无新文章（追踪 20 篇）",
+   "body": "## 2026-08-20 LangChain Blog\n\n今日无新文章（追踪 20 篇）",
+   "links": []
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "content",
+   "summary": "2026-08-20 Hugging Face Blog 发现 1 篇新文章: LFM2.5 Q4\\_0 Checkpoints from Quantization-Aware Distil...",
+   "body": "## 2026-08-20 Hugging Face Blog\n\n发现 1 篇新文章:\n\n**LFM2.5 Q4\\_0 Checkpoints from Quantization-Aware Distillation**\n📅 Wed, 19 Au\n🔗 https://huggingface.co/blog/LiquidAI/qad",
+   "links": [
+    {
+     "title": "https://huggingface.co/blog/LiquidAI/qad",
+     "url": "https://huggingface.co/blog/LiquidAI/qad"
+    }
+   ]
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "no_update",
+   "summary": "2026-08-20 Google Research 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-20 Google Research\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-08-20 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-20 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-08-20 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-08-20 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-08-20 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-20 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-08-20 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-08-20 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-08-20T05:32:22+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

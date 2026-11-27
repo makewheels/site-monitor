@@ -1,0 +1,135 @@
+{
+ "date": "2026-08-23",
+ "report_id": "2026-08-23-9bcc0cb972",
+ "created_at": "2026-08-23T05:31:35",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-08-23\n\n# 🔥 GitHub Trending\n\n2026-08-23\n\n发现 3 个新项目（共 5 个项目）:\n\n**🆕 openai/codex**\n  轻量级终端编程代理\n  🔗 https://github.com/openai/codex\n\n---\n**mattpocock/skills**\n  实战工程师技能集，直接来自 .agents 目录\n  🔗 https://github.com/mattpocock/skills\n\n---\n**🆕 affaan-m/ECC**\n  智能体性能优化系统，含技能、记忆与安全机制\n  🔗 https://github.com/affaan-m/ECC\n\n---\n**obra/superpowers**\n  智能体技能框架与软件开发方法论\n  🔗 https://github.com/obra/superpowers\n\n---\n**🆕 Wei-Shaw/sub2api**\n  订阅统一接入中转服务，支持拼车共享分摊成本\n  🔗 https://github.com/Wei-Shaw/sub2api\n\n## 2026-08-23 Anthropic Engineering\n\n今日无新文章\n\n## 2026-08-23 OpenAI News\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-23 LangChain Blog\n\n发现 1 篇新文章:\n\n**Building a 100x Cheaper Trace Judge with Fireworks**\n📅 Fri, 21 Au\n原文摘要：LangChain and Fireworks fine-tuned an open model to mine perceived error signals from production traces, matching frontier model performance at a fraction of the cost.\n🔗 https://www.langchain.com/blog/building-a-100x-cheaper-trace-judge-with-fireworks\n\n## 2026-08-23 Hugging Face Blog\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-23 Google Research\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-23 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-23 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-08-23 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-23 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 10,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-08-23 发现 3 个新项目（共 5 个项目）: 🆕 openai/codex 轻量级终端编程代理 🔗 https://github.com/...",
+   "body": "# 🔥 GitHub Trending\n\n2026-08-23\n\n发现 3 个新项目（共 5 个项目）:\n\n**🆕 openai/codex**\n  轻量级终端编程代理\n  🔗 https://github.com/openai/codex\n\n---\n**mattpocock/skills**\n  实战工程师技能集，直接来自 .agents 目录\n  🔗 https://github.com/mattpocock/skills\n\n---\n**🆕 affaan-m/ECC**\n  智能体性能优化系统，含技能、记忆与安全机制\n  🔗 https://github.com/affaan-m/ECC\n\n---\n**obra/superpowers**\n  智能体技能框架与软件开发方法论\n  🔗 https://github.com/obra/superpowers\n\n---\n**🆕 Wei-Shaw/sub2api**\n  订阅统一接入中转服务，支持拼车共享分摊成本\n  🔗 https://github.com/Wei-Shaw/sub2api",
+   "links": [
+    {
+     "title": "openai/codex",
+     "url": "https://github.com/openai/codex"
+    },
+    {
+     "title": "mattpocock/skills",
+     "url": "https://github.com/mattpocock/skills"
+    },
+    {
+     "title": "affaan-m/ECC",
+     "url": "https://github.com/affaan-m/ECC"
+    },
+    {
+     "title": "obra/superpowers",
+     "url": "https://github.com/obra/superpowers"
+    },
+    {
+     "title": "Wei-Shaw/sub2api",
+     "url": "https://github.com/Wei-Shaw/sub2api"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-08-23 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-08-23 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "no_update",
+   "summary": "2026-08-23 OpenAI News 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-23 OpenAI News\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "content",
+   "summary": "2026-08-23 LangChain Blog 发现 1 篇新文章: Building a 100x Cheaper Trace Judge with Fireworks 📅 Fri,...",
+   "body": "## 2026-08-23 LangChain Blog\n\n发现 1 篇新文章:\n\n**Building a 100x Cheaper Trace Judge with Fireworks**\n📅 Fri, 21 Au\n原文摘要：LangChain and Fireworks fine-tuned an open model to mine perceived error signals from production traces, matching frontier model performance at a fraction of the cost.\n🔗 https://www.langchain.com/blog/building-a-100x-cheaper-trace-judge-with-fireworks",
+   "links": [
+    {
+     "title": "https://www.langchain.com/blog/building-a-100x-cheaper-trace-judge-with-fireworks",
+     "url": "https://www.langchain.com/blog/building-a-100x-cheaper-trace-judge-with-fireworks"
+    }
+   ]
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "no_update",
+   "summary": "2026-08-23 Hugging Face Blog 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-23 Hugging Face Blog\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "no_update",
+   "summary": "2026-08-23 Google Research 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-23 Google Research\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-08-23 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-23 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-08-23 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-08-23 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-08-23 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-23 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-08-23 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-08-23 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-08-23T05:31:40+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

@@ -1,0 +1,174 @@
+{
+ "date": "2026-10-28",
+ "report_id": "2026-10-28-5bfa302d47",
+ "created_at": "2026-10-28T05:32:53",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-10-28\n\n# 🔥 GitHub Trending\n\n2026-10-28\n\n发现 4 个新项目（共 5 个项目）:\n\n**🆕 elayadesign/ai-design-skills**\n  提升AI设计能力的提示词与技能库。\n  🔗 https://github.com/elayadesign/ai-design-skills\n\n---\n**Nutlope/hallmark**\n  防AI生成劣质设计的规则，让编辑器审美在线。\n  🔗 https://github.com/Nutlope/hallmark\n\n---\n**🆕 nightly-labs/openbot**\n  本地优先的桌面AI协作工作区，支持多模型。\n  🔗 https://github.com/nightly-labs/openbot\n\n---\n**🆕 obra/superpowers**\n  一套真正好用的AI智能体技能框架与开发方法论。\n  🔗 https://github.com/obra/superpowers\n\n---\n**🆕 pbakaus/impeccable**\n  让AI工具更擅长做设计的设计语言规范。\n  🔗 https://github.com/pbakaus/impeccable\n\n## 2026-10-28 Anthropic Engineering\n\n今日无新文章\n\n## 2026-10-28 OpenAI News\n\n发现 6 篇新文章:\n\n**OpenAI expands partnership with Oracle to bring its apps to ChatGPT**\n📅 Tue, 27 Oc\n原文摘要：OpenAI and Oracle are expanding their partnership to bring business applications and AI agents into ChatGPT and power new Oracle offerings.\n🔗 https://openai.com/index/oracle-apps-in-chatgpt\n\n---\n\n**How Check Point accelerates vulnerability research with Daybreak**\n📅 Tue, 27 Oc\n原文摘要：With OpenAI Daybreak, Check Point speeds up the research behind new security protections, enabling its analysts to turn vulnerability intelligence into customer defenses faster.\n🔗 https://openai.com/index/check-point-daybreak\n\n---\n\n**Greptile takes bug detection beyond code review with GPT-6 Astra**\n📅 Mon, 26 Oc\n原文摘要：How Greptile uses GPT-6 Astra to test user workflows, Daybreak to strengthen security, and Codex to reduce rework.\n🔗 https://openai.com/index/greptile-code-review-codex-astra\n\n---\n\n**Working with academic communities to build scientific understanding**\n📅 Mon, 26 Oc\n原文摘要：OpenAI shares model results on the Kakeya conjecture, Exponential Time Hypothesis, and quantum chromodynamics—and how researchers can verify and build on them.\n🔗 https://openai.com/index/building-scientific-understanding-with-academic-communities\n\n---\n\n**GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases**\n📅 Mon, 26 Oc\n原文摘要：CodeRabbit uses GPT-6.1 Sol to investigate security risks across complex codebases. Its security agent helps developers review findings and proposed fixes.\n🔗 https://openai.com/index/gpt-6-1-sol-coderabbit-code-security\n\n---\n\n**Anima helps clinics cut call waits by 75% with GPT-6 and GPT-Live**\n📅 Fri, 23 Oc\n原文摘要：Anima expands what care teams can do with OpenAI models, giving them more capacity to respond to patients.\n🔗 https://openai.com/index/anima\n\n## 2026-10-28 LangChain Blog\n\n发现 1 篇新文章:\n\n**How We Built Our Design Agent**\n📅 Tue, 27 Oc\n原文摘要：How LangChain built Content Studio, an open-source design agent in Slack that makes on-brand videos, graphics and decks, and the harness that powers it.\n🔗 https://www.langchain.com/blog/design-agent\n\n## 2026-10-28 Hugging Face Blog\n\n发现 2 篇新文章:\n\n**Build specialized multimodal models with LFM3**\n📅 Tue, 27 Oc\n🔗 https://huggingface.co/blog/LiquidAI/lfm3\n\n---\n\n**Can we trust LLMs to judge whether a research idea is novel?**\n📅 Tue, 27 Oc\n🔗 https://huggingface.co/blog/allenai/novelty-bench\n\n## 2026-10-28 Google Research\n\n发现 1 篇新文章:\n\n**The sleep framework: A new way for LLMs to retain knowledge in continual learning**\n📅 Tue, 27 Oc\n原文摘要：Education Innovation\n🔗 https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/\n\n## 2026-10-28 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-10-28 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-10-28 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-10-28 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 10,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-10-28 发现 4 个新项目（共 5 个项目）: 🆕 elayadesign/ai-design-skills 提升AI设计能力的提示词与技能...",
+   "body": "# 🔥 GitHub Trending\n\n2026-10-28\n\n发现 4 个新项目（共 5 个项目）:\n\n**🆕 elayadesign/ai-design-skills**\n  提升AI设计能力的提示词与技能库。\n  🔗 https://github.com/elayadesign/ai-design-skills\n\n---\n**Nutlope/hallmark**\n  防AI生成劣质设计的规则，让编辑器审美在线。\n  🔗 https://github.com/Nutlope/hallmark\n\n---\n**🆕 nightly-labs/openbot**\n  本地优先的桌面AI协作工作区，支持多模型。\n  🔗 https://github.com/nightly-labs/openbot\n\n---\n**🆕 obra/superpowers**\n  一套真正好用的AI智能体技能框架与开发方法论。\n  🔗 https://github.com/obra/superpowers\n\n---\n**🆕 pbakaus/impeccable**\n  让AI工具更擅长做设计的设计语言规范。\n  🔗 https://github.com/pbakaus/impeccable",
+   "links": [
+    {
+     "title": "elayadesign/ai-design-skills",
+     "url": "https://github.com/elayadesign/ai-design-skills"
+    },
+    {
+     "title": "Nutlope/hallmark",
+     "url": "https://github.com/Nutlope/hallmark"
+    },
+    {
+     "title": "nightly-labs/openbot",
+     "url": "https://github.com/nightly-labs/openbot"
+    },
+    {
+     "title": "obra/superpowers",
+     "url": "https://github.com/obra/superpowers"
+    },
+    {
+     "title": "pbakaus/impeccable",
+     "url": "https://github.com/pbakaus/impeccable"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-10-28 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-10-28 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-10-28 OpenAI News 发现 6 篇新文章: OpenAI expands partnership with Oracle to bring its apps to C...",
+   "body": "## 2026-10-28 OpenAI News\n\n发现 6 篇新文章:\n\n**OpenAI expands partnership with Oracle to bring its apps to ChatGPT**\n📅 Tue, 27 Oc\n原文摘要：OpenAI and Oracle are expanding their partnership to bring business applications and AI agents into ChatGPT and power new Oracle offerings.\n🔗 https://openai.com/index/oracle-apps-in-chatgpt\n\n---\n\n**How Check Point accelerates vulnerability research with Daybreak**\n📅 Tue, 27 Oc\n原文摘要：With OpenAI Daybreak, Check Point speeds up the research behind new security protections, enabling its analysts to turn vulnerability intelligence into customer defenses faster.\n🔗 https://openai.com/index/check-point-daybreak\n\n---\n\n**Greptile takes bug detection beyond code review with GPT-6 Astra**\n📅 Mon, 26 Oc\n原文摘要：How Greptile uses GPT-6 Astra to test user workflows, Daybreak to strengthen security, and Codex to reduce rework.\n🔗 https://openai.com/index/greptile-code-review-codex-astra\n\n---\n\n**Working with academic communities to build scientific understanding**\n📅 Mon, 26 Oc\n原文摘要：OpenAI shares model results on the Kakeya conjecture, Exponential Time Hypothesis, and quantum chromodynamics—and how researchers can verify and build on them.\n🔗 https://openai.com/index/building-scientific-understanding-with-academic-communities\n\n---\n\n**GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases**\n📅 Mon, 26 Oc\n原文摘要：CodeRabbit uses GPT-6.1 Sol to investigate security risks across complex codebases. Its security agent helps developers review findings and proposed fixes.\n🔗 https://openai.com/index/gpt-6-1-sol-coderabbit-code-security\n\n---\n\n**Anima helps clinics cut call waits by 75% with GPT-6 and GPT-Live**\n📅 Fri, 23 Oc\n原文摘要：Anima expands what care teams can do with OpenAI models, giving them more capacity to respond to patients.\n🔗 https://openai.com/index/anima",
+   "links": [
+    {
+     "title": "https://openai.com/index/oracle-apps-in-chatgpt",
+     "url": "https://openai.com/index/oracle-apps-in-chatgpt"
+    },
+    {
+     "title": "https://openai.com/index/check-point-daybreak",
+     "url": "https://openai.com/index/check-point-daybreak"
+    },
+    {
+     "title": "https://openai.com/index/greptile-code-review-codex-astra",
+     "url": "https://openai.com/index/greptile-code-review-codex-astra"
+    },
+    {
+     "title": "https://openai.com/index/building-scientific-understanding-with-academic-communities",
+     "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities"
+    },
+    {
+     "title": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
+     "url": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security"
+    },
+    {
+     "title": "https://openai.com/index/anima",
+     "url": "https://openai.com/index/anima"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "content",
+   "summary": "2026-10-28 LangChain Blog 发现 1 篇新文章: How We Built Our Design Agent 📅 Tue, 27 Oc 原文摘要：How LangCh...",
+   "body": "## 2026-10-28 LangChain Blog\n\n发现 1 篇新文章:\n\n**How We Built Our Design Agent**\n📅 Tue, 27 Oc\n原文摘要：How LangChain built Content Studio, an open-source design agent in Slack that makes on-brand videos, graphics and decks, and the harness that powers it.\n🔗 https://www.langchain.com/blog/design-agent",
+   "links": [
+    {
+     "title": "https://www.langchain.com/blog/design-agent",
+     "url": "https://www.langchain.com/blog/design-agent"
+    }
+   ]
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "content",
+   "summary": "2026-10-28 Hugging Face Blog 发现 2 篇新文章: Build specialized multimodal models with LFM3 📅 Tue, 27...",
+   "body": "## 2026-10-28 Hugging Face Blog\n\n发现 2 篇新文章:\n\n**Build specialized multimodal models with LFM3**\n📅 Tue, 27 Oc\n🔗 https://huggingface.co/blog/LiquidAI/lfm3\n\n---\n\n**Can we trust LLMs to judge whether a research idea is novel?**\n📅 Tue, 27 Oc\n🔗 https://huggingface.co/blog/allenai/novelty-bench",
+   "links": [
+    {
+     "title": "https://huggingface.co/blog/LiquidAI/lfm3",
+     "url": "https://huggingface.co/blog/LiquidAI/lfm3"
+    },
+    {
+     "title": "https://huggingface.co/blog/allenai/novelty-bench",
+     "url": "https://huggingface.co/blog/allenai/novelty-bench"
+    }
+   ]
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "content",
+   "summary": "2026-10-28 Google Research 发现 1 篇新文章: The sleep framework: A new way for LLMs to retain knowled...",
+   "body": "## 2026-10-28 Google Research\n\n发现 1 篇新文章:\n\n**The sleep framework: A new way for LLMs to retain knowledge in continual learning**\n📅 Tue, 27 Oc\n原文摘要：Education Innovation\n🔗 https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+   "links": [
+    {
+     "title": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+     "url": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/"
+    }
+   ]
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-10-28 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-10-28 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-10-28 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-10-28 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-10-28 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-10-28 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-10-28 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-10-28 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-10-28T05:32:56+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

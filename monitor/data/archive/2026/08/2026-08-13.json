@@ -1,0 +1,203 @@
+{
+ "date": "2026-08-13",
+ "report_id": "2026-08-13-254a6ee807",
+ "created_at": "2026-08-13T05:35:06",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-08-13\n\n# 🔥 GitHub Trending\n\n2026-08-13\n\n发现 3 个新项目（共 5 个项目）:\n\n**🆕 cathrynlavery/diagram-design**\n  29种纯HTML+SVG编辑器图表模板，无阴影无Mermaid冗余\n  🔗 https://github.com/cathrynlavery/diagram-design\n\n---\n**🆕 macro-inc/macro**\n  邮件、聊天、文档、任务、AI代理一体化团队协作空间\n  🔗 https://github.com/macro-inc/macro\n\n---\n**semantica-agi/semantica**\n  面向上下文与可问责AI系统的图原生基础设施\n  🔗 https://github.com/semantica-agi/semantica\n\n---\n**🆕 stablyai/orca**\n  多并行AI编程代理开发环境，支持桌面、移动和VPS\n  🔗 https://github.com/stablyai/orca\n\n---\n**msitarzewski/agency-agents**\n  一站式AI代理团队，涵盖前端、社区运营、创意注入等角色\n  🔗 https://github.com/msitarzewski/agency-agents\n\n## 2026-08-13 Anthropic Engineering\n\n今日无新文章\n\n## 2026-08-13 OpenAI News\n\n发现 5 篇新文章:\n\n**From assistance to execution: How enterprises put AI to work**\n📅 Wed, 12 Au\n原文摘要：OpenAI research reveals how enterprises are adopting agentic AI, using ChatGPT and Codex, and how frontier firms are pulling ahead in AI adoption.\n🔗 https://openai.com/index/how-enterprises-put-ai-to-work\n\n---\n\n**Testing ads in ChatGPT**\n📅 Tue, 11 Au\n原文摘要：OpenAI begins testing ads in ChatGPT to support free access, with clear labeling, answer independence, strong privacy protections, and user control.\n🔗 https://openai.com/index/testing-ads-in-chatgpt\n\n---\n\n**Daybreak models are now available on AWS**\n📅 Tue, 11 Au\n原文摘要：OpenAI and AWS are making Daybreak cybersecurity capabilities available through Amazon Bedrock to support enterprise security workflows.\n🔗 https://openai.com/index/daybreak-models-are-now-available-on-aws\n\n---\n\n**How Zapier transformed core marketing processes with ChatGPT Work**\n📅 Mon, 10 Au\n原文摘要：The enterprise marketing team at Zapier uses ChatGPT Work to reduce the number of drop-offs in its lead funnel, build campaign assets, and automate reporting.\n🔗 https://openai.com/index/zapier\n\n---\n\n**Virgin Atlantic sharpens customer journeys with ChatGPT Work**\n📅 Mon, 10 Au\n原文摘要：Virgin Atlantic is accelerating research, product planning, and decision-making with ChatGPT Work, helping teams connect signals across the customer journey.\n🔗 https://openai.com/index/virgin-atlantic/chatgpt-work\n\n## 2026-08-13 LangChain Blog\n\n发现 6 篇新文章:\n\n**LangSmith BYOC on AWS is generally available**\n📅 Wed, 12 Au\n原文摘要：LangSmith Bring Your Own Cloud is now generally available on AWS, giving Enterprise teams managed observability, evaluation, and deployment inside their own VPC.\n🔗 https://www.langchain.com/blog/langsmith-byoc-is-now-generally-available-on-aws\n\n---\n\n**What is an AI agent?**\n📅 Wed, 12 Au\n原文摘要：Learn what AI agents are, how they work in an LLM loop, and where workflows fit so you can build reliable, production-ready autonomous systems.\n🔗 https://www.langchain.com/blog/what-is-an-agent\n\n---\n\n**Building Monday Com Sidekick Why Capable Agents Need More Than Just Tools**\n📅 Wed, 12 Au\n🔗 https://www.langchain.com/blog/building-monday-com-sidekick-why-capable-agents-need-more-than-just-tools\n\n---\n\n**How to Monitor AI Agents in Production**\n📅 Wed, 12 Au\n原文摘要：Production monitoring for LLM agents requires new observability tools. Learn how to trace, evaluate, and improve AI agents at scale.\n🔗 https://www.langchain.com/blog/production-monitoring\n\n---\n\n**How to Debug AI Agents**\n📅 Wed, 12 Au\n原文摘要：Learn how agent observability enables effective evaluation of AI agents. Understand tracing, debugging reasoning, and performance insights to iterate and improve agent behavior.\n🔗 https://www.langchain.com/blog/agent-observability-powers-agent-evaluation\n\n---\n\n**How many of your agent's calls actually need a frontier model?**\n📅 Tue, 11 Au\n原文摘要：We benchmarked NVIDIA NeMo Switchyard on 145 agent tasks. Only 7% of turns needed a frontier model, and routing cut cost 74% for six points of accuracy.\n🔗 https://www.langchain.com/blog/switchyard-agent-routing-benchmark\n\n## 2026-08-13 Hugging Face Blog\n\n发现 3 篇新文章:\n\n**Introducing OlmoEarth embeddings: Custom embedding exports from OlmoEarth Studio for downstream analysis**\n📅 Wed, 12 Au\n🔗 https://huggingface.co/blog/allenai/olmoearth-embeddings\n\n---\n\n**LFM2.5-VL-3B for Better and Faster Vision Capabilities for the Edge**\n📅 Wed, 12 Au\n🔗 https://huggingface.co/blog/LiquidAI/lfm2-5-vl-3b\n\n---\n\n**Thinking of ACE? We Can Do It with Fewer Tokens**\n📅 Tue, 11 Au\n🔗 https://huggingface.co/blog/ibm-research/altk-evolve-sldd\n\n## 2026-08-13 Google Research\n\n发现 2 篇新文章:\n\n**Empty shelves or lost keys? Recall is the bottleneck for parametric factuality**\n📅 Wed, 12 Au\n原文摘要：Generative AI\n🔗 https://research.google/blog/empty-shelves-or-lost-keys-recall-is-the-bottleneck-for-parametric-factuality/\n\n---\n\n**Advancing AMIE towards expert-level audio-visual clinical consultations**\n📅 Tue, 11 Au\n原文摘要：Health & Bioscience\n🔗 https://research.google/blog/advancing-amie-towards-expert-level-audio-visual-clinical-consultations/\n\n## 2026-08-13 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-13 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-08-13 Trail of Bits\n\n发现 1 篇新文章:\n\n**How Trail of Bits helps verify the integrity of your Signal chats**\n📅 Tue, 11 Au\n原文摘要：Every Signal chat starts the same way: the client asks the Signal server for the public key associated with your contact’s phone number. But how do you know the server gave you the right key? A compromised server could provide a false public key, allowing the client to encrypt messages to an attacker rather than the intended recipient. Until now, the only way to detect such malfeasance was to verify safety numbers with your contact in person or over a trusted channel. Signal recently launched an alternative: Automatic Key Verification , a feature that helps validate that your chats are secure without requiring direct safety number comparison . Trail of Bits built and operates one of the three auditors that make this system trustworthy. Our auditor, which is an independent implementation written from scratch, continuously checks that the Automatic Key Verification system behaves honestly. How key verification works Automatic Key Verification is a form of “key transparency” that makes mismatch attacks harder to hide by creating a globally consistent view of the set of public keys associated with each phone number. The Signal app now performs a periodic self-check to ensure that all keys stored in the global map for your account belong to your devices. If the app is unable to verify the log, or finds that not all keys are expected, the user is presented with a warning that “Automatic Key Verification is currently unavailable for your device.” Automatic Key Verification may also be unavailable for other reasons, as outlined in Signal’s documentation . What our auditor does Automatic Key Verification depends on external auditors. Trail of Bits helps this system function by providing external verification that the user ↔ public key map is globally consistent and well formed, and does not hide any entries. Each time a new entry is added, we update our local copy of the map, stored as a Merkle tree. Periodically, we sign the head of the tree using a signing key that only we\n🔗 https://blog.trailofbits.com/2026/08/11/how-trail-of-bits-helps-verify-the-integrity-of-your-signal-chats/\n\n## 2026-08-13 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 10,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-08-13 发现 3 个新项目（共 5 个项目）: 🆕 cathrynlavery/diagram-design 29种纯HTML+SVG编辑器...",
+   "body": "# 🔥 GitHub Trending\n\n2026-08-13\n\n发现 3 个新项目（共 5 个项目）:\n\n**🆕 cathrynlavery/diagram-design**\n  29种纯HTML+SVG编辑器图表模板，无阴影无Mermaid冗余\n  🔗 https://github.com/cathrynlavery/diagram-design\n\n---\n**🆕 macro-inc/macro**\n  邮件、聊天、文档、任务、AI代理一体化团队协作空间\n  🔗 https://github.com/macro-inc/macro\n\n---\n**semantica-agi/semantica**\n  面向上下文与可问责AI系统的图原生基础设施\n  🔗 https://github.com/semantica-agi/semantica\n\n---\n**🆕 stablyai/orca**\n  多并行AI编程代理开发环境，支持桌面、移动和VPS\n  🔗 https://github.com/stablyai/orca\n\n---\n**msitarzewski/agency-agents**\n  一站式AI代理团队，涵盖前端、社区运营、创意注入等角色\n  🔗 https://github.com/msitarzewski/agency-agents",
+   "links": [
+    {
+     "title": "cathrynlavery/diagram-design",
+     "url": "https://github.com/cathrynlavery/diagram-design"
+    },
+    {
+     "title": "macro-inc/macro",
+     "url": "https://github.com/macro-inc/macro"
+    },
+    {
+     "title": "semantica-agi/semantica",
+     "url": "https://github.com/semantica-agi/semantica"
+    },
+    {
+     "title": "stablyai/orca",
+     "url": "https://github.com/stablyai/orca"
+    },
+    {
+     "title": "msitarzewski/agency-agents",
+     "url": "https://github.com/msitarzewski/agency-agents"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-08-13 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-08-13 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-08-13 OpenAI News 发现 5 篇新文章: From assistance to execution: How enterprises put AI to work...",
+   "body": "## 2026-08-13 OpenAI News\n\n发现 5 篇新文章:\n\n**From assistance to execution: How enterprises put AI to work**\n📅 Wed, 12 Au\n原文摘要：OpenAI research reveals how enterprises are adopting agentic AI, using ChatGPT and Codex, and how frontier firms are pulling ahead in AI adoption.\n🔗 https://openai.com/index/how-enterprises-put-ai-to-work\n\n---\n\n**Testing ads in ChatGPT**\n📅 Tue, 11 Au\n原文摘要：OpenAI begins testing ads in ChatGPT to support free access, with clear labeling, answer independence, strong privacy protections, and user control.\n🔗 https://openai.com/index/testing-ads-in-chatgpt\n\n---\n\n**Daybreak models are now available on AWS**\n📅 Tue, 11 Au\n原文摘要：OpenAI and AWS are making Daybreak cybersecurity capabilities available through Amazon Bedrock to support enterprise security workflows.\n🔗 https://openai.com/index/daybreak-models-are-now-available-on-aws\n\n---\n\n**How Zapier transformed core marketing processes with ChatGPT Work**\n📅 Mon, 10 Au\n原文摘要：The enterprise marketing team at Zapier uses ChatGPT Work to reduce the number of drop-offs in its lead funnel, build campaign assets, and automate reporting.\n🔗 https://openai.com/index/zapier\n\n---\n\n**Virgin Atlantic sharpens customer journeys with ChatGPT Work**\n📅 Mon, 10 Au\n原文摘要：Virgin Atlantic is accelerating research, product planning, and decision-making with ChatGPT Work, helping teams connect signals across the customer journey.\n🔗 https://openai.com/index/virgin-atlantic/chatgpt-work",
+   "links": [
+    {
+     "title": "https://openai.com/index/how-enterprises-put-ai-to-work",
+     "url": "https://openai.com/index/how-enterprises-put-ai-to-work"
+    },
+    {
+     "title": "https://openai.com/index/testing-ads-in-chatgpt",
+     "url": "https://openai.com/index/testing-ads-in-chatgpt"
+    },
+    {
+     "title": "https://openai.com/index/daybreak-models-are-now-available-on-aws",
+     "url": "https://openai.com/index/daybreak-models-are-now-available-on-aws"
+    },
+    {
+     "title": "https://openai.com/index/zapier",
+     "url": "https://openai.com/index/zapier"
+    },
+    {
+     "title": "https://openai.com/index/virgin-atlantic/chatgpt-work",
+     "url": "https://openai.com/index/virgin-atlantic/chatgpt-work"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "content",
+   "summary": "2026-08-13 LangChain Blog 发现 6 篇新文章: LangSmith BYOC on AWS is generally available 📅 Wed, 12 Au...",
+   "body": "## 2026-08-13 LangChain Blog\n\n发现 6 篇新文章:\n\n**LangSmith BYOC on AWS is generally available**\n📅 Wed, 12 Au\n原文摘要：LangSmith Bring Your Own Cloud is now generally available on AWS, giving Enterprise teams managed observability, evaluation, and deployment inside their own VPC.\n🔗 https://www.langchain.com/blog/langsmith-byoc-is-now-generally-available-on-aws\n\n---\n\n**What is an AI agent?**\n📅 Wed, 12 Au\n原文摘要：Learn what AI agents are, how they work in an LLM loop, and where workflows fit so you can build reliable, production-ready autonomous systems.\n🔗 https://www.langchain.com/blog/what-is-an-agent\n\n---\n\n**Building Monday Com Sidekick Why Capable Agents Need More Than Just Tools**\n📅 Wed, 12 Au\n🔗 https://www.langchain.com/blog/building-monday-com-sidekick-why-capable-agents-need-more-than-just-tools\n\n---\n\n**How to Monitor AI Agents in Production**\n📅 Wed, 12 Au\n原文摘要：Production monitoring for LLM agents requires new observability tools. Learn how to trace, evaluate, and improve AI agents at scale.\n🔗 https://www.langchain.com/blog/production-monitoring\n\n---\n\n**How to Debug AI Agents**\n📅 Wed, 12 Au\n原文摘要：Learn how agent observability enables effective evaluation of AI agents. Understand tracing, debugging reasoning, and performance insights to iterate and improve agent behavior.\n🔗 https://www.langchain.com/blog/agent-observability-powers-agent-evaluation\n\n---\n\n**How many of your agent's calls actually need a frontier model?**\n📅 Tue, 11 Au\n原文摘要：We benchmarked NVIDIA NeMo Switchyard on 145 agent tasks. Only 7% of turns needed a frontier model, and routing cut cost 74% for six points of accuracy.\n🔗 https://www.langchain.com/blog/switchyard-agent-routing-benchmark",
+   "links": [
+    {
+     "title": "https://www.langchain.com/blog/langsmith-byoc-is-now-generally-available-on-aws",
+     "url": "https://www.langchain.com/blog/langsmith-byoc-is-now-generally-available-on-aws"
+    },
+    {
+     "title": "https://www.langchain.com/blog/what-is-an-agent",
+     "url": "https://www.langchain.com/blog/what-is-an-agent"
+    },
+    {
+     "title": "https://www.langchain.com/blog/building-monday-com-sidekick-why-capable-agents-need-more-than-just-tools",
+     "url": "https://www.langchain.com/blog/building-monday-com-sidekick-why-capable-agents-need-more-than-just-tools"
+    },
+    {
+     "title": "https://www.langchain.com/blog/production-monitoring",
+     "url": "https://www.langchain.com/blog/production-monitoring"
+    },
+    {
+     "title": "https://www.langchain.com/blog/agent-observability-powers-agent-evaluation",
+     "url": "https://www.langchain.com/blog/agent-observability-powers-agent-evaluation"
+    },
+    {
+     "title": "https://www.langchain.com/blog/switchyard-agent-routing-benchmark",
+     "url": "https://www.langchain.com/blog/switchyard-agent-routing-benchmark"
+    }
+   ]
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "content",
+   "summary": "2026-08-13 Hugging Face Blog 发现 3 篇新文章: Introducing OlmoEarth embeddings: Custom embedding expo...",
+   "body": "## 2026-08-13 Hugging Face Blog\n\n发现 3 篇新文章:\n\n**Introducing OlmoEarth embeddings: Custom embedding exports from OlmoEarth Studio for downstream analysis**\n📅 Wed, 12 Au\n🔗 https://huggingface.co/blog/allenai/olmoearth-embeddings\n\n---\n\n**LFM2.5-VL-3B for Better and Faster Vision Capabilities for the Edge**\n📅 Wed, 12 Au\n🔗 https://huggingface.co/blog/LiquidAI/lfm2-5-vl-3b\n\n---\n\n**Thinking of ACE? We Can Do It with Fewer Tokens**\n📅 Tue, 11 Au\n🔗 https://huggingface.co/blog/ibm-research/altk-evolve-sldd",
+   "links": [
+    {
+     "title": "https://huggingface.co/blog/allenai/olmoearth-embeddings",
+     "url": "https://huggingface.co/blog/allenai/olmoearth-embeddings"
+    },
+    {
+     "title": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-3b",
+     "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-3b"
+    },
+    {
+     "title": "https://huggingface.co/blog/ibm-research/altk-evolve-sldd",
+     "url": "https://huggingface.co/blog/ibm-research/altk-evolve-sldd"
+    }
+   ]
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "content",
+   "summary": "2026-08-13 Google Research 发现 2 篇新文章: Empty shelves or lost keys? Recall is the bottleneck for...",
+   "body": "## 2026-08-13 Google Research\n\n发现 2 篇新文章:\n\n**Empty shelves or lost keys? Recall is the bottleneck for parametric factuality**\n📅 Wed, 12 Au\n原文摘要：Generative AI\n🔗 https://research.google/blog/empty-shelves-or-lost-keys-recall-is-the-bottleneck-for-parametric-factuality/\n\n---\n\n**Advancing AMIE towards expert-level audio-visual clinical consultations**\n📅 Tue, 11 Au\n原文摘要：Health & Bioscience\n🔗 https://research.google/blog/advancing-amie-towards-expert-level-audio-visual-clinical-consultations/",
+   "links": [
+    {
+     "title": "https://research.google/blog/empty-shelves-or-lost-keys-recall-is-the-bottleneck-for-parametric-factuality/",
+     "url": "https://research.google/blog/empty-shelves-or-lost-keys-recall-is-the-bottleneck-for-parametric-factuality/"
+    },
+    {
+     "title": "https://research.google/blog/advancing-amie-towards-expert-level-audio-visual-clinical-consultations/",
+     "url": "https://research.google/blog/advancing-amie-towards-expert-level-audio-visual-clinical-consultations/"
+    }
+   ]
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-08-13 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-13 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-08-13 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-08-13 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "content",
+   "summary": "2026-08-13 Trail of Bits 发现 1 篇新文章: How Trail of Bits helps verify the integrity of your Signal...",
+   "body": "## 2026-08-13 Trail of Bits\n\n发现 1 篇新文章:\n\n**How Trail of Bits helps verify the integrity of your Signal chats**\n📅 Tue, 11 Au\n原文摘要：Every Signal chat starts the same way: the client asks the Signal server for the public key associated with your contact’s phone number. But how do you know the server gave you the right key? A compromised server could provide a false public key, allowing the client to encrypt messages to an attacker rather than the intended recipient. Until now, the only way to detect such malfeasance was to verify safety numbers with your contact in person or over a trusted channel. Signal recently launched an alternative: Automatic Key Verification , a feature that helps validate that your chats are secure without requiring direct safety number comparison . Trail of Bits built and operates one of the three auditors that make this system trustworthy. Our auditor, which is an independent implementation written from scratch, continuously checks that the Automatic Key Verification system behaves honestly. How key verification works Automatic Key Verification is a form of “key transparency” that makes mismatch attacks harder to hide by creating a globally consistent view of the set of public keys associated with each phone number. The Signal app now performs a periodic self-check to ensure that all keys stored in the global map for your account belong to your devices. If the app is unable to verify the log, or finds that not all keys are expected, the user is presented with a warning that “Automatic Key Verification is currently unavailable for your device.” Automatic Key Verification may also be unavailable for other reasons, as outlined in Signal’s documentation . What our auditor does Automatic Key Verification depends on external auditors. Trail of Bits helps this system function by providing external verification that the user ↔ public key map is globally consistent and well formed, and does not hide any entries. Each time a new entry is added, we update our local copy of the map, stored as a Merkle tree. Periodically, we sign the head of the tree using a signing key that only we\n🔗 https://blog.trailofbits.com/2026/08/11/how-trail-of-bits-helps-verify-the-integrity-of-your-signal-chats/",
+   "links": [
+    {
+     "title": "https://blog.trailofbits.com/2026/08/11/how-trail-of-bits-helps-verify-the-integrity-of-your-signal-chats/",
+     "url": "https://blog.trailofbits.com/2026/08/11/how-trail-of-bits-helps-verify-the-integrity-of-your-signal-chats/"
+    }
+   ]
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-08-13 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-08-13 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-08-13T05:35:12+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

@@ -1,0 +1,108 @@
+{
+ "date": "2026-08-15",
+ "report_id": "2026-08-15-aaef1df43f",
+ "created_at": "2026-08-15T12:34:07",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-08-15\n\n## 2026-08-15 Anthropic Engineering\n\n今日无新文章\n\n## 2026-08-15 OpenAI News\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-15 LangChain Blog\n\n今日无新文章（追踪 20 篇）\n\n## 2026-08-15 Hugging Face Blog\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-15 Google Research\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-15 METR\n\n发现 1 篇新文章:\n\n**Have We Seen an Acceleration in Discoveries?**\n📅 Fri, 14 Au\n原文摘要：Q: How much has discovery accelerated? LLMs have shown the ability to make novel discoveries across many domains. How much has this affected the aggregate discovery rate? In the figures below we plot all the data sources we can find, and make some very loose observations: Discovery of cyber vulnerabilities has accelerated sharply. Discovery of math results has accelerated somewhat. However this is harder to objectively measure. Discovery of optimizations has not shown a dramatic acceleration. These conclusions are based only on public discoveries. It is quite plausible that AI labs are making discoveries internally that they are not disclosing. Thanks. Thanks to Greg Burnham for extremely helpful comments. Overview We are just looking for slope changes. AI-assisted discoveries are often announced, but their significance is hard to assess. Here we look for slope changes in various metrics of discovery to see if we can detect an acceleration. For concreteness, we highlight January 2026 as a potential breakpoint at which the effects of AI might become observable. Some data sources record whether a discovery was AI-assisted or AI-contributed, but our primary focus is overall acceleration. We use the word “discovery” to refer to any advance in the state of public knowledge, including new inventions or rewriting algorithms to be more efficient. Monitoring aggregate discoveries is useful because it reflects real-world utility. Additionally aggregate discoveries can reflect either AI automation or augmentation. Note on the data. The analysis below plots time series of discoveries across many different problems. The data collection and analysis was all performed by agents. We have done our best to audit the results but mistakes likely remain. These are all difficult data series to interpret, we would love to get pointers on corrections. The source material is in this repository , and it is set up so we can keep updating them over time. Discovery of vulnerabilities: sharp acc\n🔗 https://metr.org/notes/2026-08-14-llm-contribution-to-discoveries/\n\n## 2026-08-15 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-08-15 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-15 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 9,
+ "same_day_reports": [
+  "2026-08-15-aaef1df43f",
+  "2026-08-15-03d5a60935"
+ ],
+ "items": [
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-08-15 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-08-15 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "no_update",
+   "summary": "2026-08-15 OpenAI News 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-15 OpenAI News\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "no_update",
+   "summary": "2026-08-15 LangChain Blog 今日无新文章（追踪 20 篇）",
+   "body": "## 2026-08-15 LangChain Blog\n\n今日无新文章（追踪 20 篇）",
+   "links": []
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "no_update",
+   "summary": "2026-08-15 Hugging Face Blog 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-15 Hugging Face Blog\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "no_update",
+   "summary": "2026-08-15 Google Research 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-15 Google Research\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "content",
+   "summary": "2026-08-15 METR 发现 1 篇新文章: Have We Seen an Acceleration in Discoveries? 📅 Fri, 14 Au 原文摘要：Q: Ho...",
+   "body": "## 2026-08-15 METR\n\n发现 1 篇新文章:\n\n**Have We Seen an Acceleration in Discoveries?**\n📅 Fri, 14 Au\n原文摘要：Q: How much has discovery accelerated? LLMs have shown the ability to make novel discoveries across many domains. How much has this affected the aggregate discovery rate? In the figures below we plot all the data sources we can find, and make some very loose observations: Discovery of cyber vulnerabilities has accelerated sharply. Discovery of math results has accelerated somewhat. However this is harder to objectively measure. Discovery of optimizations has not shown a dramatic acceleration. These conclusions are based only on public discoveries. It is quite plausible that AI labs are making discoveries internally that they are not disclosing. Thanks. Thanks to Greg Burnham for extremely helpful comments. Overview We are just looking for slope changes. AI-assisted discoveries are often announced, but their significance is hard to assess. Here we look for slope changes in various metrics of discovery to see if we can detect an acceleration. For concreteness, we highlight January 2026 as a potential breakpoint at which the effects of AI might become observable. Some data sources record whether a discovery was AI-assisted or AI-contributed, but our primary focus is overall acceleration. We use the word “discovery” to refer to any advance in the state of public knowledge, including new inventions or rewriting algorithms to be more efficient. Monitoring aggregate discoveries is useful because it reflects real-world utility. Additionally aggregate discoveries can reflect either AI automation or augmentation. Note on the data. The analysis below plots time series of discoveries across many different problems. The data collection and analysis was all performed by agents. We have done our best to audit the results but mistakes likely remain. These are all difficult data series to interpret, we would love to get pointers on corrections. The source material is in this repository , and it is set up so we can keep updating them over time. Discovery of vulnerabilities: sharp acc\n🔗 https://metr.org/notes/2026-08-14-llm-contribution-to-discoveries/",
+   "links": [
+    {
+     "title": "https://metr.org/notes/2026-08-14-llm-contribution-to-discoveries/",
+     "url": "https://metr.org/notes/2026-08-14-llm-contribution-to-discoveries/"
+    }
+   ]
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-08-15 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-08-15 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-08-15 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-15 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-08-15 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-08-15 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-08-15T12:34:13+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

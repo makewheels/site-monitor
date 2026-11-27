@@ -1,0 +1,178 @@
+{
+ "date": "2026-10-08",
+ "report_id": "2026-10-08-2517f81aaf",
+ "created_at": "2026-10-08T05:33:45",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-10-08\n\n# 🔥 GitHub Trending\n\n2026-10-08\n\n发现 3 个新项目（共 5 个项目）:\n\n**🆕 morluto/rea**\n  用智能体搞定从应用到二进制的各种逆向工程\n  🔗 https://github.com/morluto/rea\n\n---\n**mattpocock/skills**\n  作者私藏的 .agents 目录里的硬核编程提示词\n  🔗 https://github.com/mattpocock/skills\n\n---\n**boykopovar/AnyPS5**\n  自动把 PS5 程序移植到 Linux 和 Windows\n  🔗 https://github.com/boykopovar/AnyPS5\n\n---\n**🆕 ayghri/i-have-adhd**\n  让编程智能体少废话，直接给对注意力缺陷友好的结果\n  🔗 https://github.com/ayghri/i-have-adhd\n\n---\n**🆕 cathrynlavery/diagram-design**\n  给 AI 助手用的编辑级图表设计，42种类型，纯网页矢量图\n  🔗 https://github.com/cathrynlavery/diagram-design\n\n## 2026-10-08 Anthropic Engineering\n\n今日无新文章\n\n## 2026-10-08 OpenAI News\n\n发现 5 篇新文章:\n\n**Helping teens learn, plan, and shape the future of AI**\n📅 Wed, 07 Oc\n原文摘要：College Planner is coming to ChatGPT for Teens to help students manage college applications, alongside new flashcards, quizzes, and a teen AI council.\n🔗 https://openai.com/index/teens-learn-and-plan\n\n---\n\n**Radisson Hotel Group brings hotel discovery into ChatGPT**\n📅 Wed, 07 Oc\n原文摘要：Radisson partnered with Accenture to build a ChatGPT plugin using OpenAI technology, helping travelers find, compare, and book hotels while planning their trips.\n🔗 https://openai.com/index/radisson\n\n---\n\n**GPT-6 and Intelligent UI for everyone**\n📅 Wed, 07 Oc\n原文摘要：GPT‑6 is rolling out globally in ChatGPT with Intelligent UI, delivering faster responses with visuals and interactive experiences you can explore and use directly.\n🔗 https://openai.com/index/gpt-6-for-everyone\n\n---\n\n**How Jump Trading is scaling quant research with ChatGPT**\n📅 Tue, 06 Oc\n原文摘要：Jump Trading uses OpenAI to expand quantitative research. See how longer-running AI workflows combine multiple data sources with human review.\n🔗 https://openai.com/index/jump-trading\n\n---\n\n**Sharing AI progress in mathematics**\n📅 Tue, 06 Oc\n原文摘要：OpenAI publishes new results on open problems in mathematics from an internal frontier model and shares Lean proof formalizations and research details on GitHub.\n🔗 https://openai.com/index/sharing-ai-progress-in-mathematics\n\n## 2026-10-08 LangChain Blog\n\n发现 2 篇新文章:\n\n**Revamping Skills in Deep Agents**\n📅 Wed, 07 Oc\n原文摘要：Deep Agents now lets you bind tools to skills, pin skills at runtime, and reload skills mid-thread, so agents with expansive skill repositories stay context-efficient and effective.\n🔗 https://www.langchain.com/blog/revamping-skills-in-deep-agents\n\n---\n\n**What's New in Managed Deep Agents: schedules, per-run configuration, and Slack reactions**\n📅 Wed, 07 Oc\n原文摘要：LangChain just released new capabilities in Managed Deep Agents. Agents can now schedule follow-ups, reconfigure themselves on every run, and react to Slack messages.\n🔗 https://www.langchain.com/blog/managed-deep-agents-schedules-per-run-configuration-slack\n\n## 2026-10-08 Hugging Face Blog\n\n发现 3 篇新文章:\n\n**Multimodal open d1 decision models for the edge**\n📅 Wed, 07 Oc\n🔗 https://huggingface.co/blog/LiquidAI/open-d1\n\n---\n\n**One Model Family, Two Gold-Level Results: Fine-Tuning Nemotron for IOI and IMO**\n📅 Wed, 07 Oc\n🔗 https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026\n\n---\n\n**Training a coding model to paint watercolours with TRL and OpenEnv**\n📅 Thu, 03 Se\n🔗 https://huggingface.co/blog/train-to-paint-with-code\n\n## 2026-10-08 Google Research\n\n发现 1 篇新文章:\n\n**Does better work always mean better workers?**\n📅 Wed, 07 Oc\n🔗 https://research.google/blog/does-better-work-always-mean-better-workers/\n\n## 2026-10-08 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-10-08 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-10-08 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-10-08 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 10,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-10-08 发现 3 个新项目（共 5 个项目）: 🆕 morluto/rea 用智能体搞定从应用到二进制的各种逆向工程 🔗 https://g...",
+   "body": "# 🔥 GitHub Trending\n\n2026-10-08\n\n发现 3 个新项目（共 5 个项目）:\n\n**🆕 morluto/rea**\n  用智能体搞定从应用到二进制的各种逆向工程\n  🔗 https://github.com/morluto/rea\n\n---\n**mattpocock/skills**\n  作者私藏的 .agents 目录里的硬核编程提示词\n  🔗 https://github.com/mattpocock/skills\n\n---\n**boykopovar/AnyPS5**\n  自动把 PS5 程序移植到 Linux 和 Windows\n  🔗 https://github.com/boykopovar/AnyPS5\n\n---\n**🆕 ayghri/i-have-adhd**\n  让编程智能体少废话，直接给对注意力缺陷友好的结果\n  🔗 https://github.com/ayghri/i-have-adhd\n\n---\n**🆕 cathrynlavery/diagram-design**\n  给 AI 助手用的编辑级图表设计，42种类型，纯网页矢量图\n  🔗 https://github.com/cathrynlavery/diagram-design",
+   "links": [
+    {
+     "title": "morluto/rea",
+     "url": "https://github.com/morluto/rea"
+    },
+    {
+     "title": "mattpocock/skills",
+     "url": "https://github.com/mattpocock/skills"
+    },
+    {
+     "title": "boykopovar/AnyPS5",
+     "url": "https://github.com/boykopovar/AnyPS5"
+    },
+    {
+     "title": "ayghri/i-have-adhd",
+     "url": "https://github.com/ayghri/i-have-adhd"
+    },
+    {
+     "title": "cathrynlavery/diagram-design",
+     "url": "https://github.com/cathrynlavery/diagram-design"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-10-08 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-10-08 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-10-08 OpenAI News 发现 5 篇新文章: Helping teens learn, plan, and shape the future of AI 📅 Wed,...",
+   "body": "## 2026-10-08 OpenAI News\n\n发现 5 篇新文章:\n\n**Helping teens learn, plan, and shape the future of AI**\n📅 Wed, 07 Oc\n原文摘要：College Planner is coming to ChatGPT for Teens to help students manage college applications, alongside new flashcards, quizzes, and a teen AI council.\n🔗 https://openai.com/index/teens-learn-and-plan\n\n---\n\n**Radisson Hotel Group brings hotel discovery into ChatGPT**\n📅 Wed, 07 Oc\n原文摘要：Radisson partnered with Accenture to build a ChatGPT plugin using OpenAI technology, helping travelers find, compare, and book hotels while planning their trips.\n🔗 https://openai.com/index/radisson\n\n---\n\n**GPT-6 and Intelligent UI for everyone**\n📅 Wed, 07 Oc\n原文摘要：GPT‑6 is rolling out globally in ChatGPT with Intelligent UI, delivering faster responses with visuals and interactive experiences you can explore and use directly.\n🔗 https://openai.com/index/gpt-6-for-everyone\n\n---\n\n**How Jump Trading is scaling quant research with ChatGPT**\n📅 Tue, 06 Oc\n原文摘要：Jump Trading uses OpenAI to expand quantitative research. See how longer-running AI workflows combine multiple data sources with human review.\n🔗 https://openai.com/index/jump-trading\n\n---\n\n**Sharing AI progress in mathematics**\n📅 Tue, 06 Oc\n原文摘要：OpenAI publishes new results on open problems in mathematics from an internal frontier model and shares Lean proof formalizations and research details on GitHub.\n🔗 https://openai.com/index/sharing-ai-progress-in-mathematics",
+   "links": [
+    {
+     "title": "https://openai.com/index/teens-learn-and-plan",
+     "url": "https://openai.com/index/teens-learn-and-plan"
+    },
+    {
+     "title": "https://openai.com/index/radisson",
+     "url": "https://openai.com/index/radisson"
+    },
+    {
+     "title": "https://openai.com/index/gpt-6-for-everyone",
+     "url": "https://openai.com/index/gpt-6-for-everyone"
+    },
+    {
+     "title": "https://openai.com/index/jump-trading",
+     "url": "https://openai.com/index/jump-trading"
+    },
+    {
+     "title": "https://openai.com/index/sharing-ai-progress-in-mathematics",
+     "url": "https://openai.com/index/sharing-ai-progress-in-mathematics"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "content",
+   "summary": "2026-10-08 LangChain Blog 发现 2 篇新文章: Revamping Skills in Deep Agents 📅 Wed, 07 Oc 原文摘要：Deep Age...",
+   "body": "## 2026-10-08 LangChain Blog\n\n发现 2 篇新文章:\n\n**Revamping Skills in Deep Agents**\n📅 Wed, 07 Oc\n原文摘要：Deep Agents now lets you bind tools to skills, pin skills at runtime, and reload skills mid-thread, so agents with expansive skill repositories stay context-efficient and effective.\n🔗 https://www.langchain.com/blog/revamping-skills-in-deep-agents\n\n---\n\n**What's New in Managed Deep Agents: schedules, per-run configuration, and Slack reactions**\n📅 Wed, 07 Oc\n原文摘要：LangChain just released new capabilities in Managed Deep Agents. Agents can now schedule follow-ups, reconfigure themselves on every run, and react to Slack messages.\n🔗 https://www.langchain.com/blog/managed-deep-agents-schedules-per-run-configuration-slack",
+   "links": [
+    {
+     "title": "https://www.langchain.com/blog/revamping-skills-in-deep-agents",
+     "url": "https://www.langchain.com/blog/revamping-skills-in-deep-agents"
+    },
+    {
+     "title": "https://www.langchain.com/blog/managed-deep-agents-schedules-per-run-configuration-slack",
+     "url": "https://www.langchain.com/blog/managed-deep-agents-schedules-per-run-configuration-slack"
+    }
+   ]
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "content",
+   "summary": "2026-10-08 Hugging Face Blog 发现 3 篇新文章: Multimodal open d1 decision models for the edge 📅 Wed,...",
+   "body": "## 2026-10-08 Hugging Face Blog\n\n发现 3 篇新文章:\n\n**Multimodal open d1 decision models for the edge**\n📅 Wed, 07 Oc\n🔗 https://huggingface.co/blog/LiquidAI/open-d1\n\n---\n\n**One Model Family, Two Gold-Level Results: Fine-Tuning Nemotron for IOI and IMO**\n📅 Wed, 07 Oc\n🔗 https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026\n\n---\n\n**Training a coding model to paint watercolours with TRL and OpenEnv**\n📅 Thu, 03 Se\n🔗 https://huggingface.co/blog/train-to-paint-with-code",
+   "links": [
+    {
+     "title": "https://huggingface.co/blog/LiquidAI/open-d1",
+     "url": "https://huggingface.co/blog/LiquidAI/open-d1"
+    },
+    {
+     "title": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
+     "url": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026"
+    },
+    {
+     "title": "https://huggingface.co/blog/train-to-paint-with-code",
+     "url": "https://huggingface.co/blog/train-to-paint-with-code"
+    }
+   ]
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "content",
+   "summary": "2026-10-08 Google Research 发现 1 篇新文章: Does better work always mean better workers? 📅 Wed, 07 Oc...",
+   "body": "## 2026-10-08 Google Research\n\n发现 1 篇新文章:\n\n**Does better work always mean better workers?**\n📅 Wed, 07 Oc\n🔗 https://research.google/blog/does-better-work-always-mean-better-workers/",
+   "links": [
+    {
+     "title": "https://research.google/blog/does-better-work-always-mean-better-workers/",
+     "url": "https://research.google/blog/does-better-work-always-mean-better-workers/"
+    }
+   ]
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-10-08 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-10-08 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-10-08 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-10-08 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-10-08 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-10-08 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-10-08 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-10-08 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-10-08T05:33:51+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

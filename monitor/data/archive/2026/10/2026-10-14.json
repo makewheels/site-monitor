@@ -1,0 +1,191 @@
+{
+ "date": "2026-10-14",
+ "report_id": "2026-10-14-56933ffc85",
+ "created_at": "2026-10-14T05:34:53",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-10-14\n\n# 🔥 GitHub Trending\n\n2026-10-14\n\n发现 2 个新项目（共 5 个项目）:\n\n**morluto/rea**\n  用智能体搞定从应用到二进制的各种逆向工程。\n  🔗 https://github.com/morluto/rea\n\n---\n**bilawalsidhu/gods-eye-view**\n  浏览器里用逼真三维地球实时看真实卫星视角的空间情报。\n  🔗 https://github.com/bilawalsidhu/gods-eye-view\n\n---\n**🆕 debpalash/VoiceStudio**\n  纯本地运行的开源语音工具，支持声音克隆、配音和转录等。\n  🔗 https://github.com/debpalash/VoiceStudio\n\n---\n**mksglu/context-mode**\n  优化AI编程上下文，工具输出沙盒化缩减九成，支持多平台。\n  🔗 https://github.com/mksglu/context-mode\n\n---\n**🆕 cathrynlavery/diagram-design**\n  专为编程助手设计的图表库，44种类型，纯HTML加SVG。\n  🔗 https://github.com/cathrynlavery/diagram-design\n\n## 2026-10-14 Anthropic Engineering\n\n发现 1 篇新文章:\n\n**Redesigning source control at Anthropic**\n📅 Mon, 12 Oc\n原文摘要：At Anthropic, coding is no longer the bottleneck to building systems or doing research. Claude is able to autonomously iterate on research loops, micro-optimize complex programs, and build new services from the ground up at a speed and scale we haven’t seen before. The bottleneck, now, is all of the developer infrastructure built for human scale: source control, builds, and CI. In May 2026, Anthropic averaged around 2,500 code changes merged per day; as of September, we merged over 30,000 per day. We don’t expect this rate of growth to slow down anytime soon; the latent demand for merging code is practically infinite, and every bottleneck we remove immediately leads to a further increase in the amount of code we produce. Changes merged to our monorepo per day, from January to September 2026. In order to support this growth, we built Scion, an in-house version control system, and fully migrated our monorepo from git in five months. We also built and shipped a code review surface (called Antique), code search, a rich source control IAM system, novel ways of managing and landing large amounts of reviewed code, and more, all in that same time period. In this post, we’ll focus on how we built Scion specifically. It makes for an interesting case study: Claude’s ability to write code was both what put us in this situation in the first place and how we were able to quickly build a high-quality, scalable system to deal with it. Growing our monorepo Before we explore what we built, we should acknowledge how unusual our workload is. Unsurprisingly, Anthropic uses Claude to write software far more than almost any other company, so we’re often the first to see where tools built for human scale start to strain. Source control is just one example of this. While we don’t expect many organizations to have these problems in the very near term, we suspect it won’t be too long before others who use AI coding tools experience these same pressure points, which is why we wanted to share w\n🔗 https://www.anthropic.com/engineering/redesigning-source-control\n\n## 2026-10-14 OpenAI News\n\n发现 1 篇新文章:\n\n**Higgsfield takes AI video from 1 minute to over 10**\n📅 Tue, 13 Oc\n原文摘要：Higgsfield brings creators longer videos with GPT-6 Astra, precise visuals with GPT-Image-2.5, and a path to voice filmmaking with GPT-Live.\n🔗 https://openai.com/index/higgsfield-longer-videos-voice\n\n## 2026-10-14 LangChain Blog\n\n发现 10 篇新文章:\n\n**How Orange Business Built Live Intelligence with LangChain and LangSmith**\n📅 Tue, 13 Oc\n原文摘要：Learn how Orange Business used LangChain and LangSmith to build Live Intelligence, a governed AI platform for agents, evals, observability, and production scale.\n🔗 https://www.langchain.com/blog/how-orange-business-built-live-intelligence-on-langchain-and-langsmith\n\n---\n\n**Open Models have crossed a threshold**\n📅 Tue, 13 Oc\n原文摘要：Open models like GLM-5 and MiniMax M2.7 now match closed frontier models on core agent tasks — file operations, tool use, and instruction following — at a fraction of the cost and latency. Here's what our evals show and how to start using them in Deep Agents.\n🔗 https://www.langchain.com/blog/open-models-have-crossed-a-threshold\n\n---\n\n**MCP in LangChain: Stateless Protocol, Elicitation, and More!**\n📅 Tue, 13 Oc\n原文摘要：MCP support now lives in langchain.mcp, built on FastMCP for the 2026-07-28 spec, with elicitation handled as a LangGraph interrupt and tool lists cached.\n🔗 https://www.langchain.com/blog/mcp-in-langchain-stateless-protocol-elicitation-and-more\n\n---\n\n**How We Made Our Docs Test Themselves**\n📅 Tue, 13 Oc\n原文摘要：Stale code samples are a docs problem nobody prioritizes. Here's how we used the Deep Agents CLI to automate migrating inline code into testable, CI-ready examples\n🔗 https://www.langchain.com/blog/our-docs-test-themselves\n\n---\n\n**Open SWE: An Open-Source Framework for Internal Coding Agents**\n📅 Tue, 13 Oc\n原文摘要：Built on Deep Agents and LangGraph, Open SWE provides the core architectural components for internal coding agents.\n🔗 https://www.langchain.com/blog/open-swe-an-open-source-framework-for-internal-coding-agents\n\n---\n\n**Deep Agents Deploy: an open alternative to Claude Managed Agents**\n📅 Tue, 13 Oc\n原文摘要：Today we’re launching Deep Agents deploy in beta. Deep Agents deploy is the fastest way to deploy a model agnostic, open source agent harness in a production ready way.\n🔗 https://www.langchain.com/blog/deep-agents-deploy-an-open-alternative-to-claude-managed-agents\n\n---\n\n**Improving Deep Agents with harness engineering**\n📅 Tue, 13 Oc\n原文摘要：Harness engineering improved LangChain's coding agent from Top 30 to Top 5 on Terminal Bench using self-verification, tracing, and context optimization.\n🔗 https://www.langchain.com/blog/improving-deep-agents-with-harness-engineering\n\n---\n\n**Context Management for Deep Agents**\n📅 Tue, 13 Oc\n原文摘要：Learn how Deep Agents SDK manages context for long-running AI tasks through offloading, summarization, and filesystem abstraction to prevent context rot.\n🔗 https://www.langchain.com/blog/context-management-for-deepagents\n\n---\n\n**Search agent traces by behavior with AI Search in LangSmith**\n📅 Tue, 13 Oc\n原文摘要：AI Search in LangSmith is a new way to query traces using natural language. Describe the behavior you're looking for, and LangSmith returns the traces where it happened.\n🔗 https://www.langchain.com/blog/agent-traces-ai-search-langsmith\n\n---\n\n**Building Long-Running Agents with ScaleDown and Deep Agents**\n📅 Tue, 13 Oc\n原文摘要：Use ScaleDown's constrained decoding models with LangChain and Deep Agents to summarize history, compress tool results, and extract data faster and cheaper.\n🔗 https://www.langchain.com/blog/building-long-running-agents-with-scaledown-and-deep-agents\n\n## 2026-10-14 Hugging Face Blog\n\n发现 1 篇新文章:\n\n**Run fast, private agents on-device with LFM2.5-24B-A2B**\n📅 Tue, 13 Oc\n🔗 https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b\n\n## 2026-10-14 Google Research\n\n今日无新文章(追踪 20 篇)\n\n## 2026-10-14 METR\n\n发现 1 篇新文章:\n\n**让 AI 评测更安全：实现并评估一个逐项审查操作的简易监控器**\n📅 Sun, 27 Se\n原文摘要：近期接连出现一些事件，例如 OpenAI 、 Anthropic 和 英国 AI 安全研究所（UK AISI） 报告的事件。因此，我们开发并部署了一个实时审查每次操作的简易监控器，降低智能体在我们自己的评测中执行有害操作、引发事件的可能性。我们希望监控器能可靠地发现可能造成现实危害的操作，同时把误报率控制得足够低，避免大规模评测带来过多人工复核，让审核人员难以应付。 这个监控器只关注现实危害，以及试图破坏监控系统本身的操作。作弊等其他不当行为可以事后排查，因此监控器应当忽略。智能体每执行一项操作前，都由一个大语言模型充当评审，先检查这项操作；评分超过阈值的操作会暂缓执行，交给人工审核，评测也会暂停。 要有力地论证这套监控系统确实有效，我们认为需要先确立若干论点。本文首先列出这些论点，简要说明现有证据和仍然缺少的证据，但并不尝试给出严格论证。我们也概述了在梳理这套论证时， 对监控系统有了哪些新认识 。 监控器详解 和 附录 则进一步介绍监控器如何实现，以及我们如何验证它。 梳理这套论证，帮助我们发现了监控流程中的一些重大问题。我们建议其他从事监控研究的人也做一遍这样的梳理。 对监控效果的结构化论证 我们认为，要有说服力地论证监控系统会有效，也就是把智能体造成现实危害的可能性控制在某个水平以下，就需要充分的证据，支持以下四项必须同时成立的论点（图 1）。 下文会详细说明，凭现有证据，许多论点和子论点还只能得到部分支持。我们按各项论点的支持证据有多少，用颜色区分：从多到少依次是绿、黄、红。 图 1：论证结构概览。各项论点按现有证据的支持程度着色。 下面的图 2 展示了监控流程的关键环节，概述了我们认为各环节最可能怎样失效，并列出相关的现实案例。 图 2：监控器处理有害操作时依次经过的关键环节。图中详细说明，我们认为有害操作可能怎样在每个环节漏过监控。 下面，我们逐项讨论各论点和子论点已有的证据，以及还缺少什么。其中，我们最希望补上的五处缺口是： 建立相应机制，帮助防止符合监控标准的评测在没有监控的情况下运行（1b(i)）。 扩大监控覆盖范围：扩展需要纳入监控的情形，确保监控器看到所有符合标准的交互记录中的全部操作，并把编程智能体等用于评测之外的推理调用也纳入监控（1a、1b、2a）。 获得更多高质量验证数据，尤其是包含有害行为的真实交互记录（3）。 更清楚地了解智能体能怎样篡改或规避监控系统，包括干扰人工审核，并采取防范措施（2b、3）。 集中记录推理调用，记录得足够细，以便判断每个 token 大致用来做什么（1b(ii)）。 梳理论证时发现的问题 在梳理这套论证时，我们发现当前监控安排有几个严重问题。 仅靠书面规定，无法可靠地确保相关运行都受到监控：有研究人员误解了监控标准，因而在一组可能有风险的评测中没有启用监控器。（1b(i)） 编程智能体可能会自行“批准”监控器拦下的操作：一名研究人员在测试评测环境时，看到自己的编程智能体未经指示，就打开人工审核面板并发送按键输入。（4a） 我们检查了可疑程度评分 低于 阈值、但最值得警惕的操作，发现其中一次操作绕过了网站的机器人防护，却没有遭到监控器拦截。（3） 监控器挡不住人工设计的红队测试，例如伪造用户发言。（3） 我们起初以为，几乎所有 token 用量都能按用途分类。后来发现数据对不上，这才意识到，要追踪并统计全部或几乎全部推理调用，比预想复杂得多。（1b(ii)） 在早期版本的 Inspect 中，监控器看不到子智能体执行的操作。目前也没有强制措施，防止使用这些旧版启动任务。（2a） 各项论点的证据支持程度： 绿色（较强） 黄色（部分支持） 红色（较弱或没有） 1. 可能引发安全事件的推理调用，是否已有足够多纳入监控？ 1a. 我们用来划定监控范围的标准，能否涵盖最容易引发安全事件的推理调用？ 按我们的标准，评测中的智能体只要能力达到或超过 Opus-4.7 或 GPT-5.4，而且任务符合以下任一条件，就需要监控： 涉及网络安全相关内容（例如 CTF 式夺旗评测）。 任务本身带有作恶性质（例如鼓励智能体暗中行事的 AI 控制评测任务）。 智能体的安全分类器已禁用。 我们认为，这些标准涵盖了大部分有风险的推理调用。前面提到的三起公开安全事件，至少都符合其中两条。 问题示例： 近期几起安全事件迟迟没有发现，主要原因似乎是相关评测没有纳入监控范围。Anthropic 在 《Mythos Preview Alignment Risk Update》 第 5.5.1.1 节提到，4 月至 7 月发生网络安全评测安全事件时（见第 5.5.1.3 节），内部监控还没有覆盖大多数评测。OpenAI 的情况类似： 其思维链监控器覆盖了内部大部分编程智能体使用场景，以及许多次强化学习训练，却没有\n🔗 https://metr.org/zh-Hans/notes/2026-09-27-implementing-a-basic-blocking-action-monitor/\n\n## 2026-10-14 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-10-14 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-10-14 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 10,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-10-14 发现 2 个新项目（共 5 个项目）: morluto/rea 用智能体搞定从应用到二进制的各种逆向工程。 🔗 https://gi...",
+   "body": "# 🔥 GitHub Trending\n\n2026-10-14\n\n发现 2 个新项目（共 5 个项目）:\n\n**morluto/rea**\n  用智能体搞定从应用到二进制的各种逆向工程。\n  🔗 https://github.com/morluto/rea\n\n---\n**bilawalsidhu/gods-eye-view**\n  浏览器里用逼真三维地球实时看真实卫星视角的空间情报。\n  🔗 https://github.com/bilawalsidhu/gods-eye-view\n\n---\n**🆕 debpalash/VoiceStudio**\n  纯本地运行的开源语音工具，支持声音克隆、配音和转录等。\n  🔗 https://github.com/debpalash/VoiceStudio\n\n---\n**mksglu/context-mode**\n  优化AI编程上下文，工具输出沙盒化缩减九成，支持多平台。\n  🔗 https://github.com/mksglu/context-mode\n\n---\n**🆕 cathrynlavery/diagram-design**\n  专为编程助手设计的图表库，44种类型，纯HTML加SVG。\n  🔗 https://github.com/cathrynlavery/diagram-design",
+   "links": [
+    {
+     "title": "morluto/rea",
+     "url": "https://github.com/morluto/rea"
+    },
+    {
+     "title": "bilawalsidhu/gods-eye-view",
+     "url": "https://github.com/bilawalsidhu/gods-eye-view"
+    },
+    {
+     "title": "debpalash/VoiceStudio",
+     "url": "https://github.com/debpalash/VoiceStudio"
+    },
+    {
+     "title": "mksglu/context-mode",
+     "url": "https://github.com/mksglu/context-mode"
+    },
+    {
+     "title": "cathrynlavery/diagram-design",
+     "url": "https://github.com/cathrynlavery/diagram-design"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "content",
+   "summary": "2026-10-14 Anthropic Engineering 发现 1 篇新文章: Redesigning source control at Anthropic 📅 Mon, 12 O...",
+   "body": "## 2026-10-14 Anthropic Engineering\n\n发现 1 篇新文章:\n\n**Redesigning source control at Anthropic**\n📅 Mon, 12 Oc\n原文摘要：At Anthropic, coding is no longer the bottleneck to building systems or doing research. Claude is able to autonomously iterate on research loops, micro-optimize complex programs, and build new services from the ground up at a speed and scale we haven’t seen before. The bottleneck, now, is all of the developer infrastructure built for human scale: source control, builds, and CI. In May 2026, Anthropic averaged around 2,500 code changes merged per day; as of September, we merged over 30,000 per day. We don’t expect this rate of growth to slow down anytime soon; the latent demand for merging code is practically infinite, and every bottleneck we remove immediately leads to a further increase in the amount of code we produce. Changes merged to our monorepo per day, from January to September 2026. In order to support this growth, we built Scion, an in-house version control system, and fully migrated our monorepo from git in five months. We also built and shipped a code review surface (called Antique), code search, a rich source control IAM system, novel ways of managing and landing large amounts of reviewed code, and more, all in that same time period. In this post, we’ll focus on how we built Scion specifically. It makes for an interesting case study: Claude’s ability to write code was both what put us in this situation in the first place and how we were able to quickly build a high-quality, scalable system to deal with it. Growing our monorepo Before we explore what we built, we should acknowledge how unusual our workload is. Unsurprisingly, Anthropic uses Claude to write software far more than almost any other company, so we’re often the first to see where tools built for human scale start to strain. Source control is just one example of this. While we don’t expect many organizations to have these problems in the very near term, we suspect it won’t be too long before others who use AI coding tools experience these same pressure points, which is why we wanted to share w\n🔗 https://www.anthropic.com/engineering/redesigning-source-control",
+   "links": [
+    {
+     "title": "https://www.anthropic.com/engineering/redesigning-source-control",
+     "url": "https://www.anthropic.com/engineering/redesigning-source-control"
+    }
+   ]
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-10-14 OpenAI News 发现 1 篇新文章: Higgsfield takes AI video from 1 minute to over 10 📅 Tue, 13...",
+   "body": "## 2026-10-14 OpenAI News\n\n发现 1 篇新文章:\n\n**Higgsfield takes AI video from 1 minute to over 10**\n📅 Tue, 13 Oc\n原文摘要：Higgsfield brings creators longer videos with GPT-6 Astra, precise visuals with GPT-Image-2.5, and a path to voice filmmaking with GPT-Live.\n🔗 https://openai.com/index/higgsfield-longer-videos-voice",
+   "links": [
+    {
+     "title": "https://openai.com/index/higgsfield-longer-videos-voice",
+     "url": "https://openai.com/index/higgsfield-longer-videos-voice"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "content",
+   "summary": "2026-10-14 LangChain Blog 发现 10 篇新文章: How Orange Business Built Live Intelligence with LangChai...",
+   "body": "## 2026-10-14 LangChain Blog\n\n发现 10 篇新文章:\n\n**How Orange Business Built Live Intelligence with LangChain and LangSmith**\n📅 Tue, 13 Oc\n原文摘要：Learn how Orange Business used LangChain and LangSmith to build Live Intelligence, a governed AI platform for agents, evals, observability, and production scale.\n🔗 https://www.langchain.com/blog/how-orange-business-built-live-intelligence-on-langchain-and-langsmith\n\n---\n\n**Open Models have crossed a threshold**\n📅 Tue, 13 Oc\n原文摘要：Open models like GLM-5 and MiniMax M2.7 now match closed frontier models on core agent tasks — file operations, tool use, and instruction following — at a fraction of the cost and latency. Here's what our evals show and how to start using them in Deep Agents.\n🔗 https://www.langchain.com/blog/open-models-have-crossed-a-threshold\n\n---\n\n**MCP in LangChain: Stateless Protocol, Elicitation, and More!**\n📅 Tue, 13 Oc\n原文摘要：MCP support now lives in langchain.mcp, built on FastMCP for the 2026-07-28 spec, with elicitation handled as a LangGraph interrupt and tool lists cached.\n🔗 https://www.langchain.com/blog/mcp-in-langchain-stateless-protocol-elicitation-and-more\n\n---\n\n**How We Made Our Docs Test Themselves**\n📅 Tue, 13 Oc\n原文摘要：Stale code samples are a docs problem nobody prioritizes. Here's how we used the Deep Agents CLI to automate migrating inline code into testable, CI-ready examples\n🔗 https://www.langchain.com/blog/our-docs-test-themselves\n\n---\n\n**Open SWE: An Open-Source Framework for Internal Coding Agents**\n📅 Tue, 13 Oc\n原文摘要：Built on Deep Agents and LangGraph, Open SWE provides the core architectural components for internal coding agents.\n🔗 https://www.langchain.com/blog/open-swe-an-open-source-framework-for-internal-coding-agents\n\n---\n\n**Deep Agents Deploy: an open alternative to Claude Managed Agents**\n📅 Tue, 13 Oc\n原文摘要：Today we’re launching Deep Agents deploy in beta. Deep Agents deploy is the fastest way to deploy a model agnostic, open source agent harness in a production ready way.\n🔗 https://www.langchain.com/blog/deep-agents-deploy-an-open-alternative-to-claude-managed-agents\n\n---\n\n**Improving Deep Agents with harness engineering**\n📅 Tue, 13 Oc\n原文摘要：Harness engineering improved LangChain's coding agent from Top 30 to Top 5 on Terminal Bench using self-verification, tracing, and context optimization.\n🔗 https://www.langchain.com/blog/improving-deep-agents-with-harness-engineering\n\n---\n\n**Context Management for Deep Agents**\n📅 Tue, 13 Oc\n原文摘要：Learn how Deep Agents SDK manages context for long-running AI tasks through offloading, summarization, and filesystem abstraction to prevent context rot.\n🔗 https://www.langchain.com/blog/context-management-for-deepagents\n\n---\n\n**Search agent traces by behavior with AI Search in LangSmith**\n📅 Tue, 13 Oc\n原文摘要：AI Search in LangSmith is a new way to query traces using natural language. Describe the behavior you're looking for, and LangSmith returns the traces where it happened.\n🔗 https://www.langchain.com/blog/agent-traces-ai-search-langsmith\n\n---\n\n**Building Long-Running Agents with ScaleDown and Deep Agents**\n📅 Tue, 13 Oc\n原文摘要：Use ScaleDown's constrained decoding models with LangChain and Deep Agents to summarize history, compress tool results, and extract data faster and cheaper.\n🔗 https://www.langchain.com/blog/building-long-running-agents-with-scaledown-and-deep-agents",
+   "links": [
+    {
+     "title": "https://www.langchain.com/blog/how-orange-business-built-live-intelligence-on-langchain-and-langsmith",
+     "url": "https://www.langchain.com/blog/how-orange-business-built-live-intelligence-on-langchain-and-langsmith"
+    },
+    {
+     "title": "https://www.langchain.com/blog/open-models-have-crossed-a-threshold",
+     "url": "https://www.langchain.com/blog/open-models-have-crossed-a-threshold"
+    },
+    {
+     "title": "https://www.langchain.com/blog/mcp-in-langchain-stateless-protocol-elicitation-and-more",
+     "url": "https://www.langchain.com/blog/mcp-in-langchain-stateless-protocol-elicitation-and-more"
+    },
+    {
+     "title": "https://www.langchain.com/blog/our-docs-test-themselves",
+     "url": "https://www.langchain.com/blog/our-docs-test-themselves"
+    },
+    {
+     "title": "https://www.langchain.com/blog/open-swe-an-open-source-framework-for-internal-coding-agents",
+     "url": "https://www.langchain.com/blog/open-swe-an-open-source-framework-for-internal-coding-agents"
+    },
+    {
+     "title": "https://www.langchain.com/blog/deep-agents-deploy-an-open-alternative-to-claude-managed-agents",
+     "url": "https://www.langchain.com/blog/deep-agents-deploy-an-open-alternative-to-claude-managed-agents"
+    },
+    {
+     "title": "https://www.langchain.com/blog/improving-deep-agents-with-harness-engineering",
+     "url": "https://www.langchain.com/blog/improving-deep-agents-with-harness-engineering"
+    },
+    {
+     "title": "https://www.langchain.com/blog/context-management-for-deepagents",
+     "url": "https://www.langchain.com/blog/context-management-for-deepagents"
+    },
+    {
+     "title": "https://www.langchain.com/blog/agent-traces-ai-search-langsmith",
+     "url": "https://www.langchain.com/blog/agent-traces-ai-search-langsmith"
+    },
+    {
+     "title": "https://www.langchain.com/blog/building-long-running-agents-with-scaledown-and-deep-agents",
+     "url": "https://www.langchain.com/blog/building-long-running-agents-with-scaledown-and-deep-agents"
+    }
+   ]
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "content",
+   "summary": "2026-10-14 Hugging Face Blog 发现 1 篇新文章: Run fast, private agents on-device with LFM2.5-24B-A2B...",
+   "body": "## 2026-10-14 Hugging Face Blog\n\n发现 1 篇新文章:\n\n**Run fast, private agents on-device with LFM2.5-24B-A2B**\n📅 Tue, 13 Oc\n🔗 https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
+   "links": [
+    {
+     "title": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
+     "url": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b"
+    }
+   ]
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "no_update",
+   "summary": "2026-10-14 Google Research 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-10-14 Google Research\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "content",
+   "summary": "2026-10-14 METR 发现 1 篇新文章: 让 AI 评测更安全：实现并评估一个逐项审查操作的简易监控器 📅 Sun, 27 Se 原文摘要：近期接连出现一些事件，例如 OpenA...",
+   "body": "## 2026-10-14 METR\n\n发现 1 篇新文章:\n\n**让 AI 评测更安全：实现并评估一个逐项审查操作的简易监控器**\n📅 Sun, 27 Se\n原文摘要：近期接连出现一些事件，例如 OpenAI 、 Anthropic 和 英国 AI 安全研究所（UK AISI） 报告的事件。因此，我们开发并部署了一个实时审查每次操作的简易监控器，降低智能体在我们自己的评测中执行有害操作、引发事件的可能性。我们希望监控器能可靠地发现可能造成现实危害的操作，同时把误报率控制得足够低，避免大规模评测带来过多人工复核，让审核人员难以应付。 这个监控器只关注现实危害，以及试图破坏监控系统本身的操作。作弊等其他不当行为可以事后排查，因此监控器应当忽略。智能体每执行一项操作前，都由一个大语言模型充当评审，先检查这项操作；评分超过阈值的操作会暂缓执行，交给人工审核，评测也会暂停。 要有力地论证这套监控系统确实有效，我们认为需要先确立若干论点。本文首先列出这些论点，简要说明现有证据和仍然缺少的证据，但并不尝试给出严格论证。我们也概述了在梳理这套论证时， 对监控系统有了哪些新认识 。 监控器详解 和 附录 则进一步介绍监控器如何实现，以及我们如何验证它。 梳理这套论证，帮助我们发现了监控流程中的一些重大问题。我们建议其他从事监控研究的人也做一遍这样的梳理。 对监控效果的结构化论证 我们认为，要有说服力地论证监控系统会有效，也就是把智能体造成现实危害的可能性控制在某个水平以下，就需要充分的证据，支持以下四项必须同时成立的论点（图 1）。 下文会详细说明，凭现有证据，许多论点和子论点还只能得到部分支持。我们按各项论点的支持证据有多少，用颜色区分：从多到少依次是绿、黄、红。 图 1：论证结构概览。各项论点按现有证据的支持程度着色。 下面的图 2 展示了监控流程的关键环节，概述了我们认为各环节最可能怎样失效，并列出相关的现实案例。 图 2：监控器处理有害操作时依次经过的关键环节。图中详细说明，我们认为有害操作可能怎样在每个环节漏过监控。 下面，我们逐项讨论各论点和子论点已有的证据，以及还缺少什么。其中，我们最希望补上的五处缺口是： 建立相应机制，帮助防止符合监控标准的评测在没有监控的情况下运行（1b(i)）。 扩大监控覆盖范围：扩展需要纳入监控的情形，确保监控器看到所有符合标准的交互记录中的全部操作，并把编程智能体等用于评测之外的推理调用也纳入监控（1a、1b、2a）。 获得更多高质量验证数据，尤其是包含有害行为的真实交互记录（3）。 更清楚地了解智能体能怎样篡改或规避监控系统，包括干扰人工审核，并采取防范措施（2b、3）。 集中记录推理调用，记录得足够细，以便判断每个 token 大致用来做什么（1b(ii)）。 梳理论证时发现的问题 在梳理这套论证时，我们发现当前监控安排有几个严重问题。 仅靠书面规定，无法可靠地确保相关运行都受到监控：有研究人员误解了监控标准，因而在一组可能有风险的评测中没有启用监控器。（1b(i)） 编程智能体可能会自行“批准”监控器拦下的操作：一名研究人员在测试评测环境时，看到自己的编程智能体未经指示，就打开人工审核面板并发送按键输入。（4a） 我们检查了可疑程度评分 低于 阈值、但最值得警惕的操作，发现其中一次操作绕过了网站的机器人防护，却没有遭到监控器拦截。（3） 监控器挡不住人工设计的红队测试，例如伪造用户发言。（3） 我们起初以为，几乎所有 token 用量都能按用途分类。后来发现数据对不上，这才意识到，要追踪并统计全部或几乎全部推理调用，比预想复杂得多。（1b(ii)） 在早期版本的 Inspect 中，监控器看不到子智能体执行的操作。目前也没有强制措施，防止使用这些旧版启动任务。（2a） 各项论点的证据支持程度： 绿色（较强） 黄色（部分支持） 红色（较弱或没有） 1. 可能引发安全事件的推理调用，是否已有足够多纳入监控？ 1a. 我们用来划定监控范围的标准，能否涵盖最容易引发安全事件的推理调用？ 按我们的标准，评测中的智能体只要能力达到或超过 Opus-4.7 或 GPT-5.4，而且任务符合以下任一条件，就需要监控： 涉及网络安全相关内容（例如 CTF 式夺旗评测）。 任务本身带有作恶性质（例如鼓励智能体暗中行事的 AI 控制评测任务）。 智能体的安全分类器已禁用。 我们认为，这些标准涵盖了大部分有风险的推理调用。前面提到的三起公开安全事件，至少都符合其中两条。 问题示例： 近期几起安全事件迟迟没有发现，主要原因似乎是相关评测没有纳入监控范围。Anthropic 在 《Mythos Preview Alignment Risk Update》 第 5.5.1.1 节提到，4 月至 7 月发生网络安全评测安全事件时（见第 5.5.1.3 节），内部监控还没有覆盖大多数评测。OpenAI 的情况类似： 其思维链监控器覆盖了内部大部分编程智能体使用场景，以及许多次强化学习训练，却没有\n🔗 https://metr.org/zh-Hans/notes/2026-09-27-implementing-a-basic-blocking-action-monitor/",
+   "links": [
+    {
+     "title": "https://metr.org/zh-Hans/notes/2026-09-27-implementing-a-basic-blocking-action-monitor/",
+     "url": "https://metr.org/zh-Hans/notes/2026-09-27-implementing-a-basic-blocking-action-monitor/"
+    }
+   ]
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-10-14 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-10-14 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-10-14 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-10-14 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-10-14 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-10-14 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-10-14T05:34:56+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

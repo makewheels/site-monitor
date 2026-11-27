@@ -1,0 +1,153 @@
+{
+ "date": "2026-09-29",
+ "report_id": "2026-09-29-3079ab8601",
+ "created_at": "2026-09-29T05:33:30",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-09-29\n\n# 🔥 GitHub Trending\n\n2026-09-29\n\n发现 2 个新项目（共 5 个项目）:\n\n**debpalash/VoiceStudio**\n  VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook\n  🔗 https://github.com/debpalash/VoiceStudio\n\n---\n**paperclipai/paperclip**\n  开源应用 everyone 使用 to manage 智能体 at work\n  🔗 https://github.com/paperclipai/paperclip\n\n---\n**vectorize-io/hindsight**\n  Hindsight: 智能体 Memory That Learns\n  🔗 https://github.com/vectorize-io/hindsight\n\n---\n**🆕 NawfalMotii79/PLFM_RADAR**\n  Open-source, low-cost 10.5 GHz PLFM phased array RADAR system\n  🔗 https://github.com/NawfalMotii79/PLFM_RADAR\n\n---\n**🆕 cs341-illinois/coursebook**\n  开源Introductory Systems Programming Textbook for the University of Illinois\n  🔗 https://github.com/cs341-illinois/coursebook\n\n## 2026-09-29 Anthropic Engineering\n\n今日无新文章\n\n## 2026-09-29 OpenAI News\n\n发现 3 篇新文章:\n\n**The Lenfest Institute grows landmark program with expanded OpenAI support**\n📅 Mon, 28 Se\n原文摘要：OpenAI is expanding the Lenfest AI Collaborative and Fellowship Program with $5 million in funding and up to $5 million in software credits and engineering support.\n🔗 https://openai.com/index/lenfest-ai-collaborative-expansion\n\n---\n\n**Are you a Codex Original?**\n📅 Mon, 28 Se\n原文摘要：We’re collecting real stories of builders, tinkerers, researchers, and creators who are using Codex to do incredible things. If you want to be a part of the next chapter of the Codex Originals program, tell us more about your story and project below.\n🔗 https://openai.com/form/codex-originals\n\n---\n\n**Basis completes a tax workbook 2x faster with GPT-6 Astra**\n📅 Mon, 28 Se\n原文摘要：GPT-6 Astra completed a 50-tab tax workbook twice as fast as GPT-5.6 Sol, and its stronger understanding of user intent gives Basis more confidence in real-world use.\n🔗 https://openai.com/index/basis-tax-workbook-with-astra\n\n## 2026-09-29 LangChain Blog\n\n今日无新文章（追踪 20 篇）\n\n## 2026-09-29 Hugging Face Blog\n\n发现 1 篇新文章:\n\n**Holo4: powering generalist computer-use agents**\n📅 Mon, 28 Se\n🔗 https://huggingface.co/blog/Hcompany/holo4\n\n## 2026-09-29 Google Research\n\n今日无新文章(追踪 20 篇)\n\n## 2026-09-29 METR\n\n发现 1 篇新文章:\n\n**Implementing and Evaluating a Basic Per-Action Monitor for Safer Evals**\n📅 Sun, 27 Se\n原文摘要：In light of recent incidents (e.g. those from OpenAI , Anthropic , and UK AISI ), we developed and deployed a basic live per-action monitor to reduce the likelihood of incidents involving harmful actions from agents during our own evaluations. The monitor is intended to reliably detect actions that could plausibly cause real-world harm, with a sufficiently low false-positive rate that human reviewers will not be overwhelmed by manual review on large evals. This monitor is solely focused on real-world harm, or attempts to subvert the monitoring system itself. It is intended to ignore other nefarious things such as cheating, which we can scan for post-hoc. An LLM judge reviews each action from the agent before execution, and holds anything above a threshold for human review, halting the eval in the meantime. This post first sets out claims that we think would need to be made in order to make a strong argument for our monitoring system being effective. We give some notes on what evidence we have and what we’re missing, but do not attempt to make a rigorous argument. We also outline some of the things we learned about our monitoring system from doing this exercise. The Monitor Details section and appendices cover more detail about how the monitor is implemented and how we validated it. We found that working through this argument surfaced significant issues with our monitoring pipeline, and would recommend this exercise to others working on monitoring. A structured argument for monitoring effectiveness We believe a convincing argument that our monitoring system will be effective (that is, will keep the likelihood of real-world harm occurring from our agents below a certain level) would need sufficient evidence for four conjunctive claims which we outline below (Figure 1). As detailed below, many of the claims and subclaims are only partially supported under our current evidence. We color-code each claim according to how much evidence we believe we have (from most to leas\n🔗 https://metr.org/notes/2026-09-27-implementing-a-basic-blocking-action-monitor/\n\n## 2026-09-29 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-09-29 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-09-29 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 10,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-09-29 发现 2 个新项目（共 5 个项目）: debpalash/VoiceStudio VoiceStudio is the open-...",
+   "body": "# 🔥 GitHub Trending\n\n2026-09-29\n\n发现 2 个新项目（共 5 个项目）:\n\n**debpalash/VoiceStudio**\n  VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook\n  🔗 https://github.com/debpalash/VoiceStudio\n\n---\n**paperclipai/paperclip**\n  开源应用 everyone 使用 to manage 智能体 at work\n  🔗 https://github.com/paperclipai/paperclip\n\n---\n**vectorize-io/hindsight**\n  Hindsight: 智能体 Memory That Learns\n  🔗 https://github.com/vectorize-io/hindsight\n\n---\n**🆕 NawfalMotii79/PLFM_RADAR**\n  Open-source, low-cost 10.5 GHz PLFM phased array RADAR system\n  🔗 https://github.com/NawfalMotii79/PLFM_RADAR\n\n---\n**🆕 cs341-illinois/coursebook**\n  开源Introductory Systems Programming Textbook for the University of Illinois\n  🔗 https://github.com/cs341-illinois/coursebook",
+   "links": [
+    {
+     "title": "debpalash/VoiceStudio",
+     "url": "https://github.com/debpalash/VoiceStudio"
+    },
+    {
+     "title": "paperclipai/paperclip",
+     "url": "https://github.com/paperclipai/paperclip"
+    },
+    {
+     "title": "vectorize-io/hindsight",
+     "url": "https://github.com/vectorize-io/hindsight"
+    },
+    {
+     "title": "NawfalMotii79/PLFM_RADAR",
+     "url": "https://github.com/NawfalMotii79/PLFM_RADAR"
+    },
+    {
+     "title": "cs341-illinois/coursebook",
+     "url": "https://github.com/cs341-illinois/coursebook"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-09-29 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-09-29 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-09-29 OpenAI News 发现 3 篇新文章: The Lenfest Institute grows landmark program with expanded Op...",
+   "body": "## 2026-09-29 OpenAI News\n\n发现 3 篇新文章:\n\n**The Lenfest Institute grows landmark program with expanded OpenAI support**\n📅 Mon, 28 Se\n原文摘要：OpenAI is expanding the Lenfest AI Collaborative and Fellowship Program with $5 million in funding and up to $5 million in software credits and engineering support.\n🔗 https://openai.com/index/lenfest-ai-collaborative-expansion\n\n---\n\n**Are you a Codex Original?**\n📅 Mon, 28 Se\n原文摘要：We’re collecting real stories of builders, tinkerers, researchers, and creators who are using Codex to do incredible things. If you want to be a part of the next chapter of the Codex Originals program, tell us more about your story and project below.\n🔗 https://openai.com/form/codex-originals\n\n---\n\n**Basis completes a tax workbook 2x faster with GPT-6 Astra**\n📅 Mon, 28 Se\n原文摘要：GPT-6 Astra completed a 50-tab tax workbook twice as fast as GPT-5.6 Sol, and its stronger understanding of user intent gives Basis more confidence in real-world use.\n🔗 https://openai.com/index/basis-tax-workbook-with-astra",
+   "links": [
+    {
+     "title": "https://openai.com/index/lenfest-ai-collaborative-expansion",
+     "url": "https://openai.com/index/lenfest-ai-collaborative-expansion"
+    },
+    {
+     "title": "https://openai.com/form/codex-originals",
+     "url": "https://openai.com/form/codex-originals"
+    },
+    {
+     "title": "https://openai.com/index/basis-tax-workbook-with-astra",
+     "url": "https://openai.com/index/basis-tax-workbook-with-astra"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "no_update",
+   "summary": "2026-09-29 LangChain Blog 今日无新文章（追踪 20 篇）",
+   "body": "## 2026-09-29 LangChain Blog\n\n今日无新文章（追踪 20 篇）",
+   "links": []
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "content",
+   "summary": "2026-09-29 Hugging Face Blog 发现 1 篇新文章: Holo4: powering generalist computer-use agents 📅 Mon, 2...",
+   "body": "## 2026-09-29 Hugging Face Blog\n\n发现 1 篇新文章:\n\n**Holo4: powering generalist computer-use agents**\n📅 Mon, 28 Se\n🔗 https://huggingface.co/blog/Hcompany/holo4",
+   "links": [
+    {
+     "title": "https://huggingface.co/blog/Hcompany/holo4",
+     "url": "https://huggingface.co/blog/Hcompany/holo4"
+    }
+   ]
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "no_update",
+   "summary": "2026-09-29 Google Research 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-09-29 Google Research\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "content",
+   "summary": "2026-09-29 METR 发现 1 篇新文章: Implementing and Evaluating a Basic Per-Action Monitor for Safer Eva...",
+   "body": "## 2026-09-29 METR\n\n发现 1 篇新文章:\n\n**Implementing and Evaluating a Basic Per-Action Monitor for Safer Evals**\n📅 Sun, 27 Se\n原文摘要：In light of recent incidents (e.g. those from OpenAI , Anthropic , and UK AISI ), we developed and deployed a basic live per-action monitor to reduce the likelihood of incidents involving harmful actions from agents during our own evaluations. The monitor is intended to reliably detect actions that could plausibly cause real-world harm, with a sufficiently low false-positive rate that human reviewers will not be overwhelmed by manual review on large evals. This monitor is solely focused on real-world harm, or attempts to subvert the monitoring system itself. It is intended to ignore other nefarious things such as cheating, which we can scan for post-hoc. An LLM judge reviews each action from the agent before execution, and holds anything above a threshold for human review, halting the eval in the meantime. This post first sets out claims that we think would need to be made in order to make a strong argument for our monitoring system being effective. We give some notes on what evidence we have and what we’re missing, but do not attempt to make a rigorous argument. We also outline some of the things we learned about our monitoring system from doing this exercise. The Monitor Details section and appendices cover more detail about how the monitor is implemented and how we validated it. We found that working through this argument surfaced significant issues with our monitoring pipeline, and would recommend this exercise to others working on monitoring. A structured argument for monitoring effectiveness We believe a convincing argument that our monitoring system will be effective (that is, will keep the likelihood of real-world harm occurring from our agents below a certain level) would need sufficient evidence for four conjunctive claims which we outline below (Figure 1). As detailed below, many of the claims and subclaims are only partially supported under our current evidence. We color-code each claim according to how much evidence we believe we have (from most to leas\n🔗 https://metr.org/notes/2026-09-27-implementing-a-basic-blocking-action-monitor/",
+   "links": [
+    {
+     "title": "https://metr.org/notes/2026-09-27-implementing-a-basic-blocking-action-monitor/",
+     "url": "https://metr.org/notes/2026-09-27-implementing-a-basic-blocking-action-monitor/"
+    }
+   ]
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-09-29 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-09-29 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-09-29 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-09-29 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-09-29 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-09-29 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-09-29T05:33:36+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

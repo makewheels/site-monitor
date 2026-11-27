@@ -1,0 +1,170 @@
+{
+ "date": "2026-09-22",
+ "report_id": "2026-09-22-c087769896",
+ "created_at": "2026-09-22T05:32:27",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-09-22\n\n# 🔥 GitHub Trending\n\n2026-09-22\n\n发现 3 个新项目（共 5 个项目）:\n\n**BuilderIO/agent-native**\n  帮你快速搭建智能体应用的开发框架。\n  🔗 https://github.com/BuilderIO/agent-native\n\n---\n**trycua/cua**\n  自带跨系统驱动和评测基准，让AI轻松操控电脑。\n  🔗 https://github.com/trycua/cua\n\n---\n**🆕 Open-Dev-Society/OpenStock**\n  免费开源的股票盯盘神器，支持实时看盘和个性化提醒。\n  🔗 https://github.com/Open-Dev-Society/OpenStock\n\n---\n**🆕 akitaonrails/ai-memory**\n  给编程AI加上长期记忆，还能在不同工具间无缝交接。\n  🔗 https://github.com/akitaonrails/ai-memory\n\n---\n**🆕 coder/coder**\n  给程序员和AI智能体提供安全隔离的云端开发环境。\n  🔗 https://github.com/coder/coder\n\n## 2026-09-22 Anthropic Engineering\n\n今日无新文章\n\n## 2026-09-22 OpenAI News\n\n发现 5 篇新文章:\n\n**Advisory Group on Mathematics and Artificial Intelligence**\n📅 Mon, 21 Se\n原文摘要：OpenAI is working with an independent Advisory Group on Mathematics and Artificial Intelligence to guide the review and communication of emerging AI results.\n🔗 https://openai.com/index/advisory-group-on-mathematics-and-ai\n\n---\n\n**Higgsfield AI ships new video features in a day with GPT-6 Astra**\n📅 Mon, 21 Se\n原文摘要：With GPT-6 Astra, Higgsfield AI makes video ad creation easier for small businesses and brings new creative tools to market faster.\n🔗 https://openai.com/index/higgsfield-from-prompt-to-production-with-astra\n\n---\n\n**Building standards for the next phase of AI**\n📅 Mon, 21 Se\n原文摘要：OpenAI outlines a path to shared global AI standards, calling for coordinated evaluation, reporting, and governance to improve safety.\n🔗 https://openai.com/index/building-standards-next-phase-ai\n\n---\n\n**Expanding OpenAI Academy with new learning paths**\n📅 Mon, 21 Se\n原文摘要：Explore new OpenAI Academy learning paths for employees, developers, leaders, educators, and students to build and demonstrate practical AI skills.\n🔗 https://openai.com/index/expanding-openai-academy-with-new-learning-paths\n\n---\n\n**How V7 gives AI agents institutional memory**\n📅 Mon, 21 Se\n原文摘要：Using GPT-5.6, V7 turns scattered company files into context agents can use to complete complex, source-linked work.\n🔗 https://openai.com/index/v7\n\n## 2026-09-22 LangChain Blog\n\n发现 1 篇新文章:\n\n**Jev is now available in LangSmith Evals**\n📅 Mon, 21 Se\n原文摘要：Use Jev as a judge for LangSmith evals to evaluate agent traces with faster, cheaper structured feedback across production runs, datasets, and regression tests.\n🔗 https://www.langchain.com/blog/jev-is-now-available-in-langsmith-evals\n\n## 2026-09-22 Hugging Face Blog\n\n发现 2 篇新文章:\n\n**Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem**\n📅 Mon, 21 Se\n🔗 https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an\n\n---\n\n**tokenizers v1: encode, decode and scaling, measured**\n📅 Mon, 21 Se\n🔗 https://huggingface.co/blog/tokenizers-v1\n\n## 2026-09-22 Google Research\n\n今日无新文章(追踪 20 篇)\n\n## 2026-09-22 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-09-22 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-09-22 Trail of Bits\n\n发现 1 篇新文章:\n\n**SAML: A fractal of bad design**\n📅 Mon, 21 Se\n原文摘要：Born out of academia and raised in corporate IT departments, the Security Assertion Markup Language (SAML) authentication protocol continues to be a staple in these organizations. However, it’s time for it to retire. With the rise of software-as-a-service (SaaS) companies in the late aughts, IT departments needed a way for users to authenticate to many new web services. SAML and the burgeoning single sign-on (SSO) industry fulfilled this need. However, SAML is being crushed under the weight of its own complexity. It’s time to deprecate it and move on to modern alternatives like OpenID Connect (OIDC). In this post, I will explore the design-by-committee origin of SAML, its progression through the ranks in academic and corporate environments, its slow disintegration at the hands of the security research community, and its (hopeful) deprecation in favor of newer protocols. SAML 101 What’s insidious about SAML is that it really is mostly straightforward to understand, but it’s built on a foundation of sand, bone dust, and ash; it works … if you assume XML signature validation is reliable. But XML signature validation is deeply cursed, and is so complicated that most fielded SAML implementations are wrapping libxmlsec, a gnarly C codebase nobody reads. — Thomas Ptacek, 2023 SAML and the birth of the SSO industry Wikipedia tells me that “SAML is an XML-based markup language for security assertions.” It was created in 2002 by the Organization for the Advancement of Structured Information Standards (OASIS) Security Services Technical Committee (SSTC). Okay, we’re not off to a great start by modern standards. XML, despite having some redeeming qualities, is quite complex compared to newer alternatives like JSON, but we’ll get more into that later. Further, a committee of subcommittees having meetings is a recipe for “kitchen-sink” protocol design (e.g., waterfall methodology , big design up front , etc.). And sure enough, we’ve now jammed four (!) XML-based security protocol\n🔗 https://blog.trailofbits.com/2026/09/21/saml-a-fractal-of-bad-design/\n\n## 2026-09-22 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 10,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-09-22 发现 3 个新项目（共 5 个项目）: BuilderIO/agent-native 帮你快速搭建智能体应用的开发框架。 🔗 htt...",
+   "body": "# 🔥 GitHub Trending\n\n2026-09-22\n\n发现 3 个新项目（共 5 个项目）:\n\n**BuilderIO/agent-native**\n  帮你快速搭建智能体应用的开发框架。\n  🔗 https://github.com/BuilderIO/agent-native\n\n---\n**trycua/cua**\n  自带跨系统驱动和评测基准，让AI轻松操控电脑。\n  🔗 https://github.com/trycua/cua\n\n---\n**🆕 Open-Dev-Society/OpenStock**\n  免费开源的股票盯盘神器，支持实时看盘和个性化提醒。\n  🔗 https://github.com/Open-Dev-Society/OpenStock\n\n---\n**🆕 akitaonrails/ai-memory**\n  给编程AI加上长期记忆，还能在不同工具间无缝交接。\n  🔗 https://github.com/akitaonrails/ai-memory\n\n---\n**🆕 coder/coder**\n  给程序员和AI智能体提供安全隔离的云端开发环境。\n  🔗 https://github.com/coder/coder",
+   "links": [
+    {
+     "title": "BuilderIO/agent-native",
+     "url": "https://github.com/BuilderIO/agent-native"
+    },
+    {
+     "title": "trycua/cua",
+     "url": "https://github.com/trycua/cua"
+    },
+    {
+     "title": "Open-Dev-Society/OpenStock",
+     "url": "https://github.com/Open-Dev-Society/OpenStock"
+    },
+    {
+     "title": "akitaonrails/ai-memory",
+     "url": "https://github.com/akitaonrails/ai-memory"
+    },
+    {
+     "title": "coder/coder",
+     "url": "https://github.com/coder/coder"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-09-22 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-09-22 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-09-22 OpenAI News 发现 5 篇新文章: Advisory Group on Mathematics and Artificial Intelligence 📅 M...",
+   "body": "## 2026-09-22 OpenAI News\n\n发现 5 篇新文章:\n\n**Advisory Group on Mathematics and Artificial Intelligence**\n📅 Mon, 21 Se\n原文摘要：OpenAI is working with an independent Advisory Group on Mathematics and Artificial Intelligence to guide the review and communication of emerging AI results.\n🔗 https://openai.com/index/advisory-group-on-mathematics-and-ai\n\n---\n\n**Higgsfield AI ships new video features in a day with GPT-6 Astra**\n📅 Mon, 21 Se\n原文摘要：With GPT-6 Astra, Higgsfield AI makes video ad creation easier for small businesses and brings new creative tools to market faster.\n🔗 https://openai.com/index/higgsfield-from-prompt-to-production-with-astra\n\n---\n\n**Building standards for the next phase of AI**\n📅 Mon, 21 Se\n原文摘要：OpenAI outlines a path to shared global AI standards, calling for coordinated evaluation, reporting, and governance to improve safety.\n🔗 https://openai.com/index/building-standards-next-phase-ai\n\n---\n\n**Expanding OpenAI Academy with new learning paths**\n📅 Mon, 21 Se\n原文摘要：Explore new OpenAI Academy learning paths for employees, developers, leaders, educators, and students to build and demonstrate practical AI skills.\n🔗 https://openai.com/index/expanding-openai-academy-with-new-learning-paths\n\n---\n\n**How V7 gives AI agents institutional memory**\n📅 Mon, 21 Se\n原文摘要：Using GPT-5.6, V7 turns scattered company files into context agents can use to complete complex, source-linked work.\n🔗 https://openai.com/index/v7",
+   "links": [
+    {
+     "title": "https://openai.com/index/advisory-group-on-mathematics-and-ai",
+     "url": "https://openai.com/index/advisory-group-on-mathematics-and-ai"
+    },
+    {
+     "title": "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra",
+     "url": "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra"
+    },
+    {
+     "title": "https://openai.com/index/building-standards-next-phase-ai",
+     "url": "https://openai.com/index/building-standards-next-phase-ai"
+    },
+    {
+     "title": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths",
+     "url": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths"
+    },
+    {
+     "title": "https://openai.com/index/v7",
+     "url": "https://openai.com/index/v7"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "content",
+   "summary": "2026-09-22 LangChain Blog 发现 1 篇新文章: Jev is now available in LangSmith Evals 📅 Mon, 21 Se 原文摘要：...",
+   "body": "## 2026-09-22 LangChain Blog\n\n发现 1 篇新文章:\n\n**Jev is now available in LangSmith Evals**\n📅 Mon, 21 Se\n原文摘要：Use Jev as a judge for LangSmith evals to evaluate agent traces with faster, cheaper structured feedback across production runs, datasets, and regression tests.\n🔗 https://www.langchain.com/blog/jev-is-now-available-in-langsmith-evals",
+   "links": [
+    {
+     "title": "https://www.langchain.com/blog/jev-is-now-available-in-langsmith-evals",
+     "url": "https://www.langchain.com/blog/jev-is-now-available-in-langsmith-evals"
+    }
+   ]
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "content",
+   "summary": "2026-09-22 Hugging Face Blog 发现 2 篇新文章: Pruning LLMs Like a Physicist: Block Removal as an Isin...",
+   "body": "## 2026-09-22 Hugging Face Blog\n\n发现 2 篇新文章:\n\n**Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem**\n📅 Mon, 21 Se\n🔗 https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an\n\n---\n\n**tokenizers v1: encode, decode and scaling, measured**\n📅 Mon, 21 Se\n🔗 https://huggingface.co/blog/tokenizers-v1",
+   "links": [
+    {
+     "title": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an",
+     "url": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an"
+    },
+    {
+     "title": "https://huggingface.co/blog/tokenizers-v1",
+     "url": "https://huggingface.co/blog/tokenizers-v1"
+    }
+   ]
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "no_update",
+   "summary": "2026-09-22 Google Research 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-09-22 Google Research\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-09-22 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-09-22 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-09-22 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-09-22 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "content",
+   "summary": "2026-09-22 Trail of Bits 发现 1 篇新文章: SAML: A fractal of bad design 📅 Mon, 21 Se 原文摘要：Born out of...",
+   "body": "## 2026-09-22 Trail of Bits\n\n发现 1 篇新文章:\n\n**SAML: A fractal of bad design**\n📅 Mon, 21 Se\n原文摘要：Born out of academia and raised in corporate IT departments, the Security Assertion Markup Language (SAML) authentication protocol continues to be a staple in these organizations. However, it’s time for it to retire. With the rise of software-as-a-service (SaaS) companies in the late aughts, IT departments needed a way for users to authenticate to many new web services. SAML and the burgeoning single sign-on (SSO) industry fulfilled this need. However, SAML is being crushed under the weight of its own complexity. It’s time to deprecate it and move on to modern alternatives like OpenID Connect (OIDC). In this post, I will explore the design-by-committee origin of SAML, its progression through the ranks in academic and corporate environments, its slow disintegration at the hands of the security research community, and its (hopeful) deprecation in favor of newer protocols. SAML 101 What’s insidious about SAML is that it really is mostly straightforward to understand, but it’s built on a foundation of sand, bone dust, and ash; it works … if you assume XML signature validation is reliable. But XML signature validation is deeply cursed, and is so complicated that most fielded SAML implementations are wrapping libxmlsec, a gnarly C codebase nobody reads. — Thomas Ptacek, 2023 SAML and the birth of the SSO industry Wikipedia tells me that “SAML is an XML-based markup language for security assertions.” It was created in 2002 by the Organization for the Advancement of Structured Information Standards (OASIS) Security Services Technical Committee (SSTC). Okay, we’re not off to a great start by modern standards. XML, despite having some redeeming qualities, is quite complex compared to newer alternatives like JSON, but we’ll get more into that later. Further, a committee of subcommittees having meetings is a recipe for “kitchen-sink” protocol design (e.g., waterfall methodology , big design up front , etc.). And sure enough, we’ve now jammed four (!) XML-based security protocol\n🔗 https://blog.trailofbits.com/2026/09/21/saml-a-fractal-of-bad-design/",
+   "links": [
+    {
+     "title": "https://blog.trailofbits.com/2026/09/21/saml-a-fractal-of-bad-design/",
+     "url": "https://blog.trailofbits.com/2026/09/21/saml-a-fractal-of-bad-design/"
+    }
+   ]
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-09-22 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-09-22 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-09-22T05:32:31+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

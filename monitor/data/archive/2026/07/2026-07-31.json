@@ -1,0 +1,165 @@
+{
+ "date": "2026-07-31",
+ "report_id": "2026-07-31-03ee3d55bb",
+ "created_at": "2026-07-31T06:34:34",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-07-31\n\n# 🔥 GitHub Trending\n\n2026-07-31\n\n发现 4 个新项目（共 5 个项目）:\n\n**huggingface/speech-to-speech**\n  用开源模型搭建本地语音智能体\n  🔗 https://github.com/huggingface/speech-to-speech\n\n---\n**🆕 microsoft/AI-For-Beginners**\n  12周24课，面向所有人的AI入门教程\n  🔗 https://github.com/microsoft/AI-For-Beginners\n\n---\n**🆕 paperswithbacktest/awesome-systematic-trading**\n  系统化交易精选资源：库、策略、书籍、教程一站式汇总\n  🔗 https://github.com/paperswithbacktest/awesome-systematic-trading\n\n---\n**🆕 different-ai/openwork**\n  Claude Cowork的开源平替，基于opencode驱动\n  🔗 https://github.com/different-ai/openwork\n\n---\n**🆕 WhiskeySockets/Baileys**\n  基于Socket的WhatsApp Web TS/JS非官方API\n  🔗 https://github.com/WhiskeySockets/Baileys\n\n## 2026-07-31 Anthropic Engineering\n\n今日无新文章\n\n## 2026-07-31 OpenAI News\n\n发现 2 篇新文章:\n\n**Advancing the price-performance frontier with GPT-5.6**\n📅 Thu, 30 Ju\n原文摘要：Explore lower GPT‑5.6 pricing for Luna and Terra—and how OpenAI’s more efficient models help enterprises deploy AI workflows at scale.\n🔗 https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6\n\n---\n\n**How enabling two settings tripled our scores on the ARC-AGI-3 benchmark**\n📅 Wed, 29 Ju\n原文摘要：How two API settings improved GPT-5.6 performance on ARC-AGI-3, boosting scores and efficiency by retaining reasoning and enabling compaction.\n🔗 https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores\n\n## 2026-07-31 LangChain Blog\n\n发现 2 篇新文章:\n\n**LangSmith LLM Gateway: runtime governance built into the agent lifecycle**\n📅 Thu, 30 Ju\n原文摘要：Introducing LangSmith LLM Gateway: runtime governance for AI agents with spend limits, PII redaction, and trace continuity, built directly into LangSmith.\n🔗 https://www.langchain.com/blog/introducing-llm-gateway\n\n---\n\n**Langsmith Llm Gateway Runtime Controls For Production Agents**\n📅 Thu, 30 Ju\n🔗 https://www.langchain.com/blog/langsmith-llm-gateway-runtime-controls-for-production-agents\n\n## 2026-07-31 GitHub Copilot CLI\n\n## 1.0.76 - 2026-07-29\n\n- Add enable/disable controls in /plugins for plugins, instructions, agents, LSP servers, and hooks\n- Add support for the grok-4.5 model\n- Sandbox denied paths are enforced for relative and symlinked entries on macOS and Linux (Windows cannot deny per path)\n- Unsent prompt text now stays with the session it was typed for (for the rest of the CLI session) instead of following you to the session you switch to\n- Resuming a session now restores its autopilot or plan mode instead of reverting to interactive, so the autopilot-only `task_complete` tool stays available and the mode matches the session you left\n- URL permission prompts now keep their sandbox-bypass warning and the model's reason when a host integration rebuilds the prompt, so an elevated fetch is no longer shown as an ordinary one\n- When an update is auto-downloaded, the notification suggests /restart and drops the warning color\n- /diff scrolls and syntax-highlights large multi-file diffs faster\n- Split-view sidebar: hover-to-focus is now off by default (opt in with `sidebar.hoverFocus`), the active session card is accented by default (opt out with `sidebar.accentActiveSession`), and the closed-state `open sidebar` hint always renders in the neutral hint color\n- `web_fetch` now follows HTTP redirects instead of failing, asking permission for the redirect target when it is on a different origin and showing where the redirect came from\n- Add a directable queue manager (staff) to reorder, edit, remove, repeat, and immediately send queued messages\n- New Sessions sidebar for managing multiple concurrent sessions: switch between them, spawn new ones, and see their status at a glance. Turn it on with experimental mode (`/experimental on`).\n- Enterprise administrators can enforce a restrictive sandbox floor: managed settings tighten (but never loosen) the user's sandbox policy, and the `/sandbox` dialog surfaces the org-configured managed values with locked fields and managed filesystem paths so admins can confirm what is enforced.\n- Sessions no longer fail every turn with \"Holder terminated during creation\" after a subagent finishes\n- Startup tips only suggest /init in repositories that don't already have Copilot instructions\n- A `userPromptSubmitted` hook returning a non-string value for `modifiedPrompt`, `modifiedTransformedPrompt`, or a handled `responseContent` no longer corrupts the session; the value is ignored, a type-only warning naming the field is logged, an empty-string replacement is rejected instead of blanking the model-facing content, a hook that sets `handled` without a usable `responseContent` is now diagnosed instead of silently falling through to the model, and a `null` `additionalContext` is treated as absent instead of being injected as the literal text `null`; hook output is also bounded at 10 MiB per invocation, so an HTTP or command hook returning an unbounded response can no longer exhaust memory or leave an oversized session behind\n- Show recent shell output for large commands that write to a file\n- The /instructions picker now respects --no-custom-instructions.\n- Render inline images in Rio terminals that support Kitty graphics\n- Sandboxed searches now offer an immediate bypass prompt and avoid duplicate bypass prompts.\n- Voice mode pauses playing media before recording and resumes it afterward, where supported (macOS and Windows)\n- Show the number of active scheduled prompts in the footer\n- Add /limits predict to suggest a session AI-credit limit from similar sessions.\n- Add configurable timed refreshes for custom status-line commands\n- Queued messages list no longer shows a blank row or inflated count, and Ctrl+C removes your own newest queued message\n- Changing the `mouse` setting mid-session now takes effect immediately, from both `/settings mouse on|off` and the `/settings` dialog, instead of being saved but ignored until the CLI restarted\n- web_fetch routes through the configured sandbox proxy when outbound is allowed, and denies egress when network.allowOutbound is false (a proxy no longer overrides the user's outbound policy); when a proxied fetch fails it warns that curl/wget share the same proxy, and suggests requestSandboxBypass only when the sandbox proxy itself is unreachable\n- Improve subagent delegation for small tasks and parallel work\n- Queue mid-turn /model changes and apply them after the current response finishes\n- Restore the early warning when unreclaimable system and tool context nears the limit, before automatic compaction is blocked\n- Session working directory no longer reverts to the original checkout shortly after `/worktree` switches into a new worktree\n- MCP tools load faster from definition-scoped snapshots, with process-wide and per-server cache opt-outs.\n- Autopilot stays selected after task_complete by default; set stayInAutopilot to false to return to interactive mode after each task\n\n## 2026-07-31 Hugging Face Blog\n\n发现 1 篇新文章:\n\n**GPU Management: Why Idle GPUs Are the New Grounded Aircraft**\n📅 Thu, 30 Ju\n🔗 https://huggingface.co/blog/Dharma-AI/gpu-management\n\n## 2026-07-31 Google Research\n\n发现 1 篇新文章:\n\n**Science One Framework: A verifiable autonomous research framework via Chain-of-Evidence**\n📅 Thu, 30 Ju\n原文摘要：General Science\n🔗 https://research.google/blog/science-one-framework-a-verifiable-autonomous-research-framework-via-chain-of-evidence/\n\n## 2026-07-31 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-07-31 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-07-31 Trail of Bits\n\n发现 1 篇新文章:\n\n**Building secure Uniswap v4 hooks**\n📅 Thu, 30 Ju\n原文摘要：Uniswap v4 hooks let developers add custom behavior to pools, including dynamic fees, custom accounting, and external integrations. This flexibility moves some security responsibilities into application and hook code. The Cork and Bunni exploits are two app-level incidents that show what can go wrong in that code. Together, they account for more than $20M in losses. Neither incident stemmed from a flaw in the Uniswap v4 core protocol or the PoolManager; both arose from application-specific authorization and accounting logic built around hooks. After analyzing dozens of findings from Trail of Bits audits (including our Uniswap v4-core security review ), public reports from other firms, and the Solodit database, I’ve identified seven recurring failure patterns in application and hook code, including missing caller checks and accounting bugs that still satisfy the PoolManager’s settlement invariant. Builders can use these patterns as a secure-development checklist; auditors can use them to focus their review. What the PoolManager guarantees If you’re familiar with Uniswap v3, where each pool was a separate contract, v4 inverts the model. All pool state now lives in a singleton PoolManager contract, with each pool represented in its storage. Uniswap v4 adds hooks: independent contracts that execute custom logic at specific points in the swap and liquidity lifecycle. Figure 1: Pools live inside the singleton PoolManager, and multiple pools can use the same hook contract. Here’s what a pool looks like in v4: struct PoolKey { Currency currency0; Currency currency1; uint24 fee; int24 tickSpacing; IHooks hooks; } Figure 2: A pool's PoolKey includes both currencies, the fee, tick spacing, and the hook address ( v4-core/src/types/PoolKey.sol ). Notice that the hook address ( IHooks hooks; ) is part of the pool’s identity. If you change any of these fields, you’re talking to a different pool. This matters because trusting the wrong PoolKey means trusting the wrong pool. v4 also\n🔗 https://blog.trailofbits.com/2026/07/30/building-secure-uniswap-v4-hooks/\n\n## 2026-07-31 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 11,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-07-31 发现 4 个新项目（共 5 个项目）: huggingface/speech-to-speech 用开源模型搭建本地语音智能体 🔗...",
+   "body": "# 🔥 GitHub Trending\n\n2026-07-31\n\n发现 4 个新项目（共 5 个项目）:\n\n**huggingface/speech-to-speech**\n  用开源模型搭建本地语音智能体\n  🔗 https://github.com/huggingface/speech-to-speech\n\n---\n**🆕 microsoft/AI-For-Beginners**\n  12周24课，面向所有人的AI入门教程\n  🔗 https://github.com/microsoft/AI-For-Beginners\n\n---\n**🆕 paperswithbacktest/awesome-systematic-trading**\n  系统化交易精选资源：库、策略、书籍、教程一站式汇总\n  🔗 https://github.com/paperswithbacktest/awesome-systematic-trading\n\n---\n**🆕 different-ai/openwork**\n  Claude Cowork的开源平替，基于opencode驱动\n  🔗 https://github.com/different-ai/openwork\n\n---\n**🆕 WhiskeySockets/Baileys**\n  基于Socket的WhatsApp Web TS/JS非官方API\n  🔗 https://github.com/WhiskeySockets/Baileys",
+   "links": [
+    {
+     "title": "https://github.com/huggingface/speech-to-speech",
+     "url": "https://github.com/huggingface/speech-to-speech"
+    },
+    {
+     "title": "https://github.com/microsoft/AI-For-Beginners",
+     "url": "https://github.com/microsoft/AI-For-Beginners"
+    },
+    {
+     "title": "https://github.com/paperswithbacktest/awesome-systematic-trading",
+     "url": "https://github.com/paperswithbacktest/awesome-systematic-trading"
+    },
+    {
+     "title": "https://github.com/different-ai/openwork",
+     "url": "https://github.com/different-ai/openwork"
+    },
+    {
+     "title": "https://github.com/WhiskeySockets/Baileys",
+     "url": "https://github.com/WhiskeySockets/Baileys"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-07-31 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-07-31 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-07-31 OpenAI News 发现 2 篇新文章: Advancing the price-performance frontier with GPT-5.6 📅 Thu,...",
+   "body": "## 2026-07-31 OpenAI News\n\n发现 2 篇新文章:\n\n**Advancing the price-performance frontier with GPT-5.6**\n📅 Thu, 30 Ju\n原文摘要：Explore lower GPT‑5.6 pricing for Luna and Terra—and how OpenAI’s more efficient models help enterprises deploy AI workflows at scale.\n🔗 https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6\n\n---\n\n**How enabling two settings tripled our scores on the ARC-AGI-3 benchmark**\n📅 Wed, 29 Ju\n原文摘要：How two API settings improved GPT-5.6 performance on ARC-AGI-3, boosting scores and efficiency by retaining reasoning and enabling compaction.\n🔗 https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores",
+   "links": [
+    {
+     "title": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6",
+     "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6"
+    },
+    {
+     "title": "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores",
+     "url": "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "content",
+   "summary": "2026-07-31 LangChain Blog 发现 2 篇新文章: LangSmith LLM Gateway: runtime governance built into the a...",
+   "body": "## 2026-07-31 LangChain Blog\n\n发现 2 篇新文章:\n\n**LangSmith LLM Gateway: runtime governance built into the agent lifecycle**\n📅 Thu, 30 Ju\n原文摘要：Introducing LangSmith LLM Gateway: runtime governance for AI agents with spend limits, PII redaction, and trace continuity, built directly into LangSmith.\n🔗 https://www.langchain.com/blog/introducing-llm-gateway\n\n---\n\n**Langsmith Llm Gateway Runtime Controls For Production Agents**\n📅 Thu, 30 Ju\n🔗 https://www.langchain.com/blog/langsmith-llm-gateway-runtime-controls-for-production-agents",
+   "links": [
+    {
+     "title": "https://www.langchain.com/blog/introducing-llm-gateway",
+     "url": "https://www.langchain.com/blog/introducing-llm-gateway"
+    },
+    {
+     "title": "https://www.langchain.com/blog/langsmith-llm-gateway-runtime-controls-for-production-agents",
+     "url": "https://www.langchain.com/blog/langsmith-llm-gateway-runtime-controls-for-production-agents"
+    }
+   ]
+  },
+  {
+   "topic": "github_copilot_cli",
+   "topic_name": "GitHub Copilot CLI",
+   "title": "GitHub Copilot CLI",
+   "status": "note",
+   "summary": "2026-07-31 GitHub Copilot CLI 1.0.76 - 2026-07-29 Add enable/disable controls in /plugins for p...",
+   "body": "## 2026-07-31 GitHub Copilot CLI\n\n## 1.0.76 - 2026-07-29\n\n- Add enable/disable controls in /plugins for plugins, instructions, agents, LSP servers, and hooks\n- Add support for the grok-4.5 model\n- Sandbox denied paths are enforced for relative and symlinked entries on macOS and Linux (Windows cannot deny per path)\n- Unsent prompt text now stays with the session it was typed for (for the rest of the CLI session) instead of following you to the session you switch to\n- Resuming a session now restores its autopilot or plan mode instead of reverting to interactive, so the autopilot-only `task_complete` tool stays available and the mode matches the session you left\n- URL permission prompts now keep their sandbox-bypass warning and the model's reason when a host integration rebuilds the prompt, so an elevated fetch is no longer shown as an ordinary one\n- When an update is auto-downloaded, the notification suggests /restart and drops the warning color\n- /diff scrolls and syntax-highlights large multi-file diffs faster\n- Split-view sidebar: hover-to-focus is now off by default (opt in with `sidebar.hoverFocus`), the active session card is accented by default (opt out with `sidebar.accentActiveSession`), and the closed-state `open sidebar` hint always renders in the neutral hint color\n- `web_fetch` now follows HTTP redirects instead of failing, asking permission for the redirect target when it is on a different origin and showing where the redirect came from\n- Add a directable queue manager (staff) to reorder, edit, remove, repeat, and immediately send queued messages\n- New Sessions sidebar for managing multiple concurrent sessions: switch between them, spawn new ones, and see their status at a glance. Turn it on with experimental mode (`/experimental on`).\n- Enterprise administrators can enforce a restrictive sandbox floor: managed settings tighten (but never loosen) the user's sandbox policy, and the `/sandbox` dialog surfaces the org-configured managed values with locked fields and managed filesystem paths so admins can confirm what is enforced.\n- Sessions no longer fail every turn with \"Holder terminated during creation\" after a subagent finishes\n- Startup tips only suggest /init in repositories that don't already have Copilot instructions\n- A `userPromptSubmitted` hook returning a non-string value for `modifiedPrompt`, `modifiedTransformedPrompt`, or a handled `responseContent` no longer corrupts the session; the value is ignored, a type-only warning naming the field is logged, an empty-string replacement is rejected instead of blanking the model-facing content, a hook that sets `handled` without a usable `responseContent` is now diagnosed instead of silently falling through to the model, and a `null` `additionalContext` is treated as absent instead of being injected as the literal text `null`; hook output is also bounded at 10 MiB per invocation, so an HTTP or command hook returning an unbounded response can no longer exhaust memory or leave an oversized session behind\n- Show recent shell output for large commands that write to a file\n- The /instructions picker now respects --no-custom-instructions.\n- Render inline images in Rio terminals that support Kitty graphics\n- Sandboxed searches now offer an immediate bypass prompt and avoid duplicate bypass prompts.\n- Voice mode pauses playing media before recording and resumes it afterward, where supported (macOS and Windows)\n- Show the number of active scheduled prompts in the footer\n- Add /limits predict to suggest a session AI-credit limit from similar sessions.\n- Add configurable timed refreshes for custom status-line commands\n- Queued messages list no longer shows a blank row or inflated count, and Ctrl+C removes your own newest queued message\n- Changing the `mouse` setting mid-session now takes effect immediately, from both `/settings mouse on|off` and the `/settings` dialog, instead of being saved but ignored until the CLI restarted\n- web_fetch routes through the configured sandbox proxy when outbound is allowed, and denies egress when network.allowOutbound is false (a proxy no longer overrides the user's outbound policy); when a proxied fetch fails it warns that curl/wget share the same proxy, and suggests requestSandboxBypass only when the sandbox proxy itself is unreachable\n- Improve subagent delegation for small tasks and parallel work\n- Queue mid-turn /model changes and apply them after the current response finishes\n- Restore the early warning when unreclaimable system and tool context nears the limit, before automatic compaction is blocked\n- Session working directory no longer reverts to the original checkout shortly after `/worktree` switches into a new worktree\n- MCP tools load faster from definition-scoped snapshots, with process-wide and per-server cache opt-outs.\n- Autopilot stays selected after task_complete by default; set stayInAutopilot to false to return to interactive mode after each task",
+   "links": []
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "content",
+   "summary": "2026-07-31 Hugging Face Blog 发现 1 篇新文章: GPU Management: Why Idle GPUs Are the New Grounded Airc...",
+   "body": "## 2026-07-31 Hugging Face Blog\n\n发现 1 篇新文章:\n\n**GPU Management: Why Idle GPUs Are the New Grounded Aircraft**\n📅 Thu, 30 Ju\n🔗 https://huggingface.co/blog/Dharma-AI/gpu-management",
+   "links": [
+    {
+     "title": "https://huggingface.co/blog/Dharma-AI/gpu-management",
+     "url": "https://huggingface.co/blog/Dharma-AI/gpu-management"
+    }
+   ]
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "content",
+   "summary": "2026-07-31 Google Research 发现 1 篇新文章: Science One Framework: A verifiable autonomous research f...",
+   "body": "## 2026-07-31 Google Research\n\n发现 1 篇新文章:\n\n**Science One Framework: A verifiable autonomous research framework via Chain-of-Evidence**\n📅 Thu, 30 Ju\n原文摘要：General Science\n🔗 https://research.google/blog/science-one-framework-a-verifiable-autonomous-research-framework-via-chain-of-evidence/",
+   "links": [
+    {
+     "title": "https://research.google/blog/science-one-framework-a-verifiable-autonomous-research-framework-via-chain-of-evidence/",
+     "url": "https://research.google/blog/science-one-framework-a-verifiable-autonomous-research-framework-via-chain-of-evidence/"
+    }
+   ]
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-07-31 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-07-31 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-07-31 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-07-31 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "content",
+   "summary": "2026-07-31 Trail of Bits 发现 1 篇新文章: Building secure Uniswap v4 hooks 📅 Thu, 30 Ju 原文摘要：Uniswap...",
+   "body": "## 2026-07-31 Trail of Bits\n\n发现 1 篇新文章:\n\n**Building secure Uniswap v4 hooks**\n📅 Thu, 30 Ju\n原文摘要：Uniswap v4 hooks let developers add custom behavior to pools, including dynamic fees, custom accounting, and external integrations. This flexibility moves some security responsibilities into application and hook code. The Cork and Bunni exploits are two app-level incidents that show what can go wrong in that code. Together, they account for more than $20M in losses. Neither incident stemmed from a flaw in the Uniswap v4 core protocol or the PoolManager; both arose from application-specific authorization and accounting logic built around hooks. After analyzing dozens of findings from Trail of Bits audits (including our Uniswap v4-core security review ), public reports from other firms, and the Solodit database, I’ve identified seven recurring failure patterns in application and hook code, including missing caller checks and accounting bugs that still satisfy the PoolManager’s settlement invariant. Builders can use these patterns as a secure-development checklist; auditors can use them to focus their review. What the PoolManager guarantees If you’re familiar with Uniswap v3, where each pool was a separate contract, v4 inverts the model. All pool state now lives in a singleton PoolManager contract, with each pool represented in its storage. Uniswap v4 adds hooks: independent contracts that execute custom logic at specific points in the swap and liquidity lifecycle. Figure 1: Pools live inside the singleton PoolManager, and multiple pools can use the same hook contract. Here’s what a pool looks like in v4: struct PoolKey { Currency currency0; Currency currency1; uint24 fee; int24 tickSpacing; IHooks hooks; } Figure 2: A pool's PoolKey includes both currencies, the fee, tick spacing, and the hook address ( v4-core/src/types/PoolKey.sol ). Notice that the hook address ( IHooks hooks; ) is part of the pool’s identity. If you change any of these fields, you’re talking to a different pool. This matters because trusting the wrong PoolKey means trusting the wrong pool. v4 also\n🔗 https://blog.trailofbits.com/2026/07/30/building-secure-uniswap-v4-hooks/",
+   "links": [
+    {
+     "title": "https://blog.trailofbits.com/2026/07/30/building-secure-uniswap-v4-hooks/",
+     "url": "https://blog.trailofbits.com/2026/07/30/building-secure-uniswap-v4-hooks/"
+    }
+   ]
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-07-31 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-07-31 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": []
+}

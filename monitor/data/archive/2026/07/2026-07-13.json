@@ -1,0 +1,132 @@
+{
+ "date": "2026-07-13",
+ "report_id": "2026-07-13-0bf626e41e",
+ "created_at": "2026-07-13T07:58:10",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-07-13\n\n# 🔥 GitHub Trending\n\n2026-07-13\n\n发现 5 个新项目（共 5 个项目）:\n\n**🆕 Dicklesworthstone/destructive_command_guard**\n  拦截AI代理执行的危险git和shell命令，防止误操作\n  🔗 https://github.com/Dicklesworthstone/destructive_command_guard\n\n---\n**🆕 wonderwhy-er/DesktopCommanderMCP**\n  让Claude直接控制终端、搜索文件和编辑代码的MCP服务\n  🔗 https://github.com/wonderwhy-er/DesktopCommanderMCP\n\n---\n**🆕 HKUDS/Vibe-Trading**\n  你的私人AI交易代理，自动化投资策略执行\n  🔗 https://github.com/HKUDS/Vibe-Trading\n\n---\n**🆕 PrefectHQ/prefect**\n  Python工作流编排框架，构建高弹性数据管道\n  🔗 https://github.com/PrefectHQ/prefect\n\n---\n**🆕 Shubhamsaboo/awesome-llm-apps**\n  100+可运行的AI代理和RAG应用，开箱即用\n  🔗 https://github.com/Shubhamsaboo/awesome-llm-apps\n\n## 2026-07-13 Anthropic Engineering\n\n今日无新文章\n\n## 2026-07-13 OpenAI News\n\n今日无新文章(追踪 20 篇)\n\n## 2026-07-13 LangChain Blog\n\n今日无新文章（追踪 20 篇）\n\n## 2026-07-13 GitHub Copilot CLI\n\n无更新，当前版本: 1.0.70\n\n## 2026-07-13 Hugging Face Blog\n\n今日无新文章(追踪 20 篇)\n\n## 2026-07-13 Google Research\n\n今日无新文章(追踪 20 篇)\n\n## 2026-07-13 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-07-13 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-07-13 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-07-13 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 11,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-07-13 发现 5 个新项目（共 5 个项目）: 🆕 Dicklesworthstone/destructive_command_guard...",
+   "body": "# 🔥 GitHub Trending\n\n2026-07-13\n\n发现 5 个新项目（共 5 个项目）:\n\n**🆕 Dicklesworthstone/destructive_command_guard**\n  拦截AI代理执行的危险git和shell命令，防止误操作\n  🔗 https://github.com/Dicklesworthstone/destructive_command_guard\n\n---\n**🆕 wonderwhy-er/DesktopCommanderMCP**\n  让Claude直接控制终端、搜索文件和编辑代码的MCP服务\n  🔗 https://github.com/wonderwhy-er/DesktopCommanderMCP\n\n---\n**🆕 HKUDS/Vibe-Trading**\n  你的私人AI交易代理，自动化投资策略执行\n  🔗 https://github.com/HKUDS/Vibe-Trading\n\n---\n**🆕 PrefectHQ/prefect**\n  Python工作流编排框架，构建高弹性数据管道\n  🔗 https://github.com/PrefectHQ/prefect\n\n---\n**🆕 Shubhamsaboo/awesome-llm-apps**\n  100+可运行的AI代理和RAG应用，开箱即用\n  🔗 https://github.com/Shubhamsaboo/awesome-llm-apps",
+   "links": [
+    {
+     "title": "https://github.com/Dicklesworthstone/destructive_command_guard",
+     "url": "https://github.com/Dicklesworthstone/destructive_command_guard"
+    },
+    {
+     "title": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
+     "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP"
+    },
+    {
+     "title": "https://github.com/HKUDS/Vibe-Trading",
+     "url": "https://github.com/HKUDS/Vibe-Trading"
+    },
+    {
+     "title": "https://github.com/PrefectHQ/prefect",
+     "url": "https://github.com/PrefectHQ/prefect"
+    },
+    {
+     "title": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+     "url": "https://github.com/Shubhamsaboo/awesome-llm-apps"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-07-13 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-07-13 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "no_update",
+   "summary": "2026-07-13 OpenAI News 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-07-13 OpenAI News\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "no_update",
+   "summary": "2026-07-13 LangChain Blog 今日无新文章（追踪 20 篇）",
+   "body": "## 2026-07-13 LangChain Blog\n\n今日无新文章（追踪 20 篇）",
+   "links": []
+  },
+  {
+   "topic": "github_copilot_cli",
+   "topic_name": "GitHub Copilot CLI",
+   "title": "GitHub Copilot CLI",
+   "status": "no_update",
+   "summary": "2026-07-13 GitHub Copilot CLI 无更新，当前版本: 1.0.70",
+   "body": "## 2026-07-13 GitHub Copilot CLI\n\n无更新，当前版本: 1.0.70",
+   "links": []
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "no_update",
+   "summary": "2026-07-13 Hugging Face Blog 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-07-13 Hugging Face Blog\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "no_update",
+   "summary": "2026-07-13 Google Research 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-07-13 Google Research\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-07-13 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-07-13 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-07-13 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-07-13 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-07-13 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-07-13 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-07-13 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-07-13 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": []
+}

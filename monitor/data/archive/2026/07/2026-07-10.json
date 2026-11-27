@@ -1,0 +1,167 @@
+{
+ "date": "2026-07-10",
+ "report_id": "2026-07-10-e0a48bf879",
+ "created_at": "2026-07-10T22:00:52",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-07-10\n\n# 🔥 GitHub Trending\n\n2026-07-10\n\n今日 trending 共 5 个项目:\n\n**wonderwhy-er/DesktopCommanderMCP**\n  让Claude直接操控终端、搜索文件和编辑代码的MCP服务\n  🔗 https://github.com/wonderwhy-er/DesktopCommanderMCP\n\n---\n**oven-sh/bun**\n  超快的JS全家桶：运行时、打包器、测试器和包管理器合一\n  🔗 https://github.com/oven-sh/bun\n\n---\n**abseil/abseil-cpp**\n  Google出品的C++通用基础库，提供高质量常用工具集\n  🔗 https://github.com/abseil/abseil-cpp\n\n---\n**addyosmani/agent-skills**\n  给AI编程助手用的生产级工程技能包\n  🔗 https://github.com/addyosmani/agent-skills\n\n---\n**jbeder/yaml-cpp**\n  纯C++实现的YAML解析和生成库\n  🔗 https://github.com/jbeder/yaml-cpp\n\n## 2026-07-10 Anthropic Engineering\n\n今日无新文章\n\n## 2026-07-10 OpenAI News\n\n发现 4 篇新文章:\n\n**How Deutsche Telekom is rewiring telecommunications with AI**\n📅 Fri, 10 Ju\n🔗 https://openai.com/index/deutsche-telekom\n\n---\n\n**GPT-5.6 is now the preferred model in Microsoft 365 Copilot**\n📅 Thu, 09 Ju\n🔗 https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot\n\n---\n\n**GPT-5.6: Frontier intelligence that scales with your ambition**\n📅 Thu, 09 Ju\n🔗 https://openai.com/index/gpt-5-6\n\n---\n\n**ChatGPT is now a partner for your most ambitious work**\n📅 Thu, 09 Ju\n🔗 https://openai.com/index/chatgpt-for-your-most-ambitious-work\n\n## 2026-07-10 LangChain Blog\n\n发现 3 篇新文章:\n\n**Build An Auditable Vc Research Agent With The Perplexity Agent Api Langgraph And Langsmith**\n📅 Thu, 09 Ju\n🔗 https://www.langchain.com/blog/build-an-auditable-vc-research-agent-with-the-perplexity-agent-api-langgraph-and-langsmith\n\n---\n\n**Improving Agents is a Data Mining Problem**\n📅 Wed, 08 Ju\n🔗 https://www.langchain.com/blog/improving-agents-is-a-data-mining-problem\n\n---\n\n**Deep Agents Code on NVIDIA NemoClaw**\n📅 Wed, 08 Ju\n🔗 https://www.langchain.com/blog/deep-agents-code-on-nemoclaw-a-governed-blueprint-for-your-most-sensitive-code\n\n## 2026-07-10 GitHub Copilot CLI\n\n无更新，当前版本: 1.0.70\n\n## 2026-07-10 Hugging Face Blog\n\n今日无新文章(追踪 20 篇)\n\n## 2026-07-10 Google Research\n\n今日无新文章(追踪 20 篇)\n\n## 2026-07-10 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-07-10 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-07-10 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-07-10 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 11,
+ "same_day_reports": [
+  "2026-07-10-e0a48bf879",
+  "2026-07-10-690ebc1009",
+  "2026-07-10-ed5e9e07ab",
+  "2026-07-10-b3c8d3f811"
+ ],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-07-10 今日 trending 共 5 个项目: wonderwhy-er/DesktopCommanderMCP 让Claude直接操控终...",
+   "body": "# 🔥 GitHub Trending\n\n2026-07-10\n\n今日 trending 共 5 个项目:\n\n**wonderwhy-er/DesktopCommanderMCP**\n  让Claude直接操控终端、搜索文件和编辑代码的MCP服务\n  🔗 https://github.com/wonderwhy-er/DesktopCommanderMCP\n\n---\n**oven-sh/bun**\n  超快的JS全家桶：运行时、打包器、测试器和包管理器合一\n  🔗 https://github.com/oven-sh/bun\n\n---\n**abseil/abseil-cpp**\n  Google出品的C++通用基础库，提供高质量常用工具集\n  🔗 https://github.com/abseil/abseil-cpp\n\n---\n**addyosmani/agent-skills**\n  给AI编程助手用的生产级工程技能包\n  🔗 https://github.com/addyosmani/agent-skills\n\n---\n**jbeder/yaml-cpp**\n  纯C++实现的YAML解析和生成库\n  🔗 https://github.com/jbeder/yaml-cpp",
+   "links": [
+    {
+     "title": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
+     "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP"
+    },
+    {
+     "title": "https://github.com/oven-sh/bun",
+     "url": "https://github.com/oven-sh/bun"
+    },
+    {
+     "title": "https://github.com/abseil/abseil-cpp",
+     "url": "https://github.com/abseil/abseil-cpp"
+    },
+    {
+     "title": "https://github.com/addyosmani/agent-skills",
+     "url": "https://github.com/addyosmani/agent-skills"
+    },
+    {
+     "title": "https://github.com/jbeder/yaml-cpp",
+     "url": "https://github.com/jbeder/yaml-cpp"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-07-10 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-07-10 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-07-10 OpenAI News 发现 4 篇新文章: How Deutsche Telekom is rewiring telecommunications with AI 📅...",
+   "body": "## 2026-07-10 OpenAI News\n\n发现 4 篇新文章:\n\n**How Deutsche Telekom is rewiring telecommunications with AI**\n📅 Fri, 10 Ju\n🔗 https://openai.com/index/deutsche-telekom\n\n---\n\n**GPT-5.6 is now the preferred model in Microsoft 365 Copilot**\n📅 Thu, 09 Ju\n🔗 https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot\n\n---\n\n**GPT-5.6: Frontier intelligence that scales with your ambition**\n📅 Thu, 09 Ju\n🔗 https://openai.com/index/gpt-5-6\n\n---\n\n**ChatGPT is now a partner for your most ambitious work**\n📅 Thu, 09 Ju\n🔗 https://openai.com/index/chatgpt-for-your-most-ambitious-work",
+   "links": [
+    {
+     "title": "https://openai.com/index/deutsche-telekom",
+     "url": "https://openai.com/index/deutsche-telekom"
+    },
+    {
+     "title": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot",
+     "url": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot"
+    },
+    {
+     "title": "https://openai.com/index/gpt-5-6",
+     "url": "https://openai.com/index/gpt-5-6"
+    },
+    {
+     "title": "https://openai.com/index/chatgpt-for-your-most-ambitious-work",
+     "url": "https://openai.com/index/chatgpt-for-your-most-ambitious-work"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "content",
+   "summary": "2026-07-10 LangChain Blog 发现 3 篇新文章: Build An Auditable Vc Research Agent With The Perplexity A...",
+   "body": "## 2026-07-10 LangChain Blog\n\n发现 3 篇新文章:\n\n**Build An Auditable Vc Research Agent With The Perplexity Agent Api Langgraph And Langsmith**\n📅 Thu, 09 Ju\n🔗 https://www.langchain.com/blog/build-an-auditable-vc-research-agent-with-the-perplexity-agent-api-langgraph-and-langsmith\n\n---\n\n**Improving Agents is a Data Mining Problem**\n📅 Wed, 08 Ju\n🔗 https://www.langchain.com/blog/improving-agents-is-a-data-mining-problem\n\n---\n\n**Deep Agents Code on NVIDIA NemoClaw**\n📅 Wed, 08 Ju\n🔗 https://www.langchain.com/blog/deep-agents-code-on-nemoclaw-a-governed-blueprint-for-your-most-sensitive-code",
+   "links": [
+    {
+     "title": "https://www.langchain.com/blog/build-an-auditable-vc-research-agent-with-the-perplexity-agent-api-langgraph-and-langsmith",
+     "url": "https://www.langchain.com/blog/build-an-auditable-vc-research-agent-with-the-perplexity-agent-api-langgraph-and-langsmith"
+    },
+    {
+     "title": "https://www.langchain.com/blog/improving-agents-is-a-data-mining-problem",
+     "url": "https://www.langchain.com/blog/improving-agents-is-a-data-mining-problem"
+    },
+    {
+     "title": "https://www.langchain.com/blog/deep-agents-code-on-nemoclaw-a-governed-blueprint-for-your-most-sensitive-code",
+     "url": "https://www.langchain.com/blog/deep-agents-code-on-nemoclaw-a-governed-blueprint-for-your-most-sensitive-code"
+    }
+   ]
+  },
+  {
+   "topic": "github_copilot_cli",
+   "topic_name": "GitHub Copilot CLI",
+   "title": "GitHub Copilot CLI",
+   "status": "no_update",
+   "summary": "2026-07-10 GitHub Copilot CLI 无更新，当前版本: 1.0.70",
+   "body": "## 2026-07-10 GitHub Copilot CLI\n\n无更新，当前版本: 1.0.70",
+   "links": []
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "no_update",
+   "summary": "2026-07-10 Hugging Face Blog 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-07-10 Hugging Face Blog\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "no_update",
+   "summary": "2026-07-10 Google Research 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-07-10 Google Research\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-07-10 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-07-10 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-07-10 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-07-10 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-07-10 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-07-10 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-07-10 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-07-10 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": []
+}

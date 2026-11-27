@@ -1,0 +1,130 @@
+{
+ "date": "2026-08-17",
+ "report_id": "2026-08-17-49fa3d79cf",
+ "created_at": "2026-08-17T05:31:01",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-08-17\n\n# 🔥 GitHub Trending\n\n2026-08-17\n\n发现 3 个新项目（共 5 个项目）:\n\n**cordiverse/cordis**\n  时空可组合性的元框架\n  🔗 https://github.com/cordiverse/cordis\n\n---\n**🆕 basecamp/omarchy**\n  美观现代的Linux发行版\n  🔗 https://github.com/basecamp/omarchy\n\n---\n**unslothai/unsloth**\n  本地运行和训练大模型的UI工具\n  🔗 https://github.com/unslothai/unsloth\n\n---\n**🆕 OpenCut-app/OpenCut**\n  开源版剪映替代品\n  🔗 https://github.com/OpenCut-app/OpenCut\n\n---\n**🆕 public-apis/public-apis**\n  免费API资源合集\n  🔗 https://github.com/public-apis/public-apis\n\n## 2026-08-17 Anthropic Engineering\n\n今日无新文章\n\n## 2026-08-17 OpenAI News\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-17 LangChain Blog\n\n今日无新文章（追踪 20 篇）\n\n## 2026-08-17 Hugging Face Blog\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-17 Google Research\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-17 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-17 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-08-17 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-17 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 10,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-08-17 发现 3 个新项目（共 5 个项目）: cordiverse/cordis 时空可组合性的元框架 🔗 https://github....",
+   "body": "# 🔥 GitHub Trending\n\n2026-08-17\n\n发现 3 个新项目（共 5 个项目）:\n\n**cordiverse/cordis**\n  时空可组合性的元框架\n  🔗 https://github.com/cordiverse/cordis\n\n---\n**🆕 basecamp/omarchy**\n  美观现代的Linux发行版\n  🔗 https://github.com/basecamp/omarchy\n\n---\n**unslothai/unsloth**\n  本地运行和训练大模型的UI工具\n  🔗 https://github.com/unslothai/unsloth\n\n---\n**🆕 OpenCut-app/OpenCut**\n  开源版剪映替代品\n  🔗 https://github.com/OpenCut-app/OpenCut\n\n---\n**🆕 public-apis/public-apis**\n  免费API资源合集\n  🔗 https://github.com/public-apis/public-apis",
+   "links": [
+    {
+     "title": "cordiverse/cordis",
+     "url": "https://github.com/cordiverse/cordis"
+    },
+    {
+     "title": "basecamp/omarchy",
+     "url": "https://github.com/basecamp/omarchy"
+    },
+    {
+     "title": "unslothai/unsloth",
+     "url": "https://github.com/unslothai/unsloth"
+    },
+    {
+     "title": "OpenCut-app/OpenCut",
+     "url": "https://github.com/OpenCut-app/OpenCut"
+    },
+    {
+     "title": "public-apis/public-apis",
+     "url": "https://github.com/public-apis/public-apis"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-08-17 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-08-17 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "no_update",
+   "summary": "2026-08-17 OpenAI News 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-17 OpenAI News\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "no_update",
+   "summary": "2026-08-17 LangChain Blog 今日无新文章（追踪 20 篇）",
+   "body": "## 2026-08-17 LangChain Blog\n\n今日无新文章（追踪 20 篇）",
+   "links": []
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "no_update",
+   "summary": "2026-08-17 Hugging Face Blog 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-17 Hugging Face Blog\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "no_update",
+   "summary": "2026-08-17 Google Research 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-17 Google Research\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-08-17 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-17 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-08-17 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-08-17 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-08-17 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-17 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-08-17 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-08-17 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-08-17T05:31:05+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

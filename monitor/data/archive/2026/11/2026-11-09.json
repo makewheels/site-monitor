@@ -1,0 +1,58 @@
+{
+ "date": "2026-11-09",
+ "report_id": "2026-11-09-b698d4e6f8",
+ "created_at": "2026-11-09T05:30:53",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-11-09\n\n# 🔥 GitHub Trending\n\n2026-11-09\n\n发现 4 个新项目（共 5 个项目）:\n\n**🆕 sherlock-project/sherlock**\n  通过用户名全网搜罗社交账号，人肉搜索神器。\n  🔗 https://github.com/sherlock-project/sherlock\n\n---\n**🆕 dsx-ai-factory/nvke**\n  在裸金属上管理GPU集群的控制面板。\n  🔗 https://github.com/dsx-ai-factory/nvke\n\n---\n**🆕 milind-soni/OpenMausBot**\n  开源Grok替代品，自带虚拟机供机器人使用。\n  🔗 https://github.com/milind-soni/OpenMausBot\n\n---\n**🆕 anthropics/claude-quickstarts**\n  帮开发者快速上手用API做应用的项目示例集。\n  🔗 https://github.com/anthropics/claude-quickstarts\n\n---\n**vercel-labs/agent-browser**\n  专为AI智能体打造的浏览器自动化命令行工具。\n  🔗 https://github.com/vercel-labs/agent-browser\n\n## 2026-11-09 Anthropic Engineering\n\n今日无新文章",
+ "item_count": 2,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-11-09 发现 4 个新项目（共 5 个项目）: 🆕 sherlock-project/sherlock 通过用户名全网搜罗社交账号，人肉搜索...",
+   "body": "# 🔥 GitHub Trending\n\n2026-11-09\n\n发现 4 个新项目（共 5 个项目）:\n\n**🆕 sherlock-project/sherlock**\n  通过用户名全网搜罗社交账号，人肉搜索神器。\n  🔗 https://github.com/sherlock-project/sherlock\n\n---\n**🆕 dsx-ai-factory/nvke**\n  在裸金属上管理GPU集群的控制面板。\n  🔗 https://github.com/dsx-ai-factory/nvke\n\n---\n**🆕 milind-soni/OpenMausBot**\n  开源Grok替代品，自带虚拟机供机器人使用。\n  🔗 https://github.com/milind-soni/OpenMausBot\n\n---\n**🆕 anthropics/claude-quickstarts**\n  帮开发者快速上手用API做应用的项目示例集。\n  🔗 https://github.com/anthropics/claude-quickstarts\n\n---\n**vercel-labs/agent-browser**\n  专为AI智能体打造的浏览器自动化命令行工具。\n  🔗 https://github.com/vercel-labs/agent-browser",
+   "links": [
+    {
+     "title": "sherlock-project/sherlock",
+     "url": "https://github.com/sherlock-project/sherlock"
+    },
+    {
+     "title": "dsx-ai-factory/nvke",
+     "url": "https://github.com/dsx-ai-factory/nvke"
+    },
+    {
+     "title": "milind-soni/OpenMausBot",
+     "url": "https://github.com/milind-soni/OpenMausBot"
+    },
+    {
+     "title": "anthropics/claude-quickstarts",
+     "url": "https://github.com/anthropics/claude-quickstarts"
+    },
+    {
+     "title": "vercel-labs/agent-browser",
+     "url": "https://github.com/vercel-labs/agent-browser"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-11-09 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-11-09 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-11-09T05:30:57+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

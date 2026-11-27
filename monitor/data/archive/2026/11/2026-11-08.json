@@ -1,0 +1,58 @@
+{
+ "date": "2026-11-08",
+ "report_id": "2026-11-08-afd155a0b6",
+ "created_at": "2026-11-08T05:30:37",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-11-08\n\n# 🔥 GitHub Trending\n\n2026-11-08\n\n发现 5 个新项目（共 5 个项目）:\n\n**🆕 vercel-labs/agent-browser**\n  让AI代理像人一样自动操控浏览器\n  🔗 https://github.com/vercel-labs/agent-browser\n\n---\n**🆕 cloudflare/security-audit-skill**\n  多阶段安全审计技能，结果可机器验证\n  🔗 https://github.com/cloudflare/security-audit-skill\n\n---\n**🆕 google/skills**\n  谷歌官方产品专属的AI代理技能包\n  🔗 https://github.com/google/skills\n\n---\n**🆕 mattpocock/skills**\n  实战派工程师私藏的代理技能合集\n  🔗 https://github.com/mattpocock/skills\n\n---\n**🆕 anthropics/skills**\n  Anthropic官方开源的AI代理技能库\n  🔗 https://github.com/anthropics/skills\n\n## 2026-11-08 Anthropic Engineering\n\n今日无新文章",
+ "item_count": 2,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-11-08 发现 5 个新项目（共 5 个项目）: 🆕 vercel-labs/agent-browser 让AI代理像人一样自动操控浏览器 🔗...",
+   "body": "# 🔥 GitHub Trending\n\n2026-11-08\n\n发现 5 个新项目（共 5 个项目）:\n\n**🆕 vercel-labs/agent-browser**\n  让AI代理像人一样自动操控浏览器\n  🔗 https://github.com/vercel-labs/agent-browser\n\n---\n**🆕 cloudflare/security-audit-skill**\n  多阶段安全审计技能，结果可机器验证\n  🔗 https://github.com/cloudflare/security-audit-skill\n\n---\n**🆕 google/skills**\n  谷歌官方产品专属的AI代理技能包\n  🔗 https://github.com/google/skills\n\n---\n**🆕 mattpocock/skills**\n  实战派工程师私藏的代理技能合集\n  🔗 https://github.com/mattpocock/skills\n\n---\n**🆕 anthropics/skills**\n  Anthropic官方开源的AI代理技能库\n  🔗 https://github.com/anthropics/skills",
+   "links": [
+    {
+     "title": "vercel-labs/agent-browser",
+     "url": "https://github.com/vercel-labs/agent-browser"
+    },
+    {
+     "title": "cloudflare/security-audit-skill",
+     "url": "https://github.com/cloudflare/security-audit-skill"
+    },
+    {
+     "title": "google/skills",
+     "url": "https://github.com/google/skills"
+    },
+    {
+     "title": "mattpocock/skills",
+     "url": "https://github.com/mattpocock/skills"
+    },
+    {
+     "title": "anthropics/skills",
+     "url": "https://github.com/anthropics/skills"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-11-08 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-11-08 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-11-08T05:30:40+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

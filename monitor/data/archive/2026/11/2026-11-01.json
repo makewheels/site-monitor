@@ -1,0 +1,135 @@
+{
+ "date": "2026-11-01",
+ "report_id": "2026-11-01-946341cc08",
+ "created_at": "2026-11-01T05:31:34",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-11-01\n\n# 🔥 GitHub Trending\n\n2026-11-01\n\n发现 3 个新项目（共 5 个项目）:\n\n**thedotmack/claude-mem**\n  让智能体跨会话保持记忆，自动压缩并注入相关上下文。\n  🔗 https://github.com/thedotmack/claude-mem\n\n---\n**🆕 mattpocock/skills**\n  分享作者私藏的实用智能体技能，专为真实工程场景打造。\n  🔗 https://github.com/mattpocock/skills\n\n---\n**🆕 Donchitos/Claude-Code-Game-Studios**\n  用几十个智能体模拟真实游戏工作室的完整开发协作流程。\n  🔗 https://github.com/Donchitos/Claude-Code-Game-Studios\n\n---\n**🆕 pingdotgg/t3code**\n  Ping团队打造的基于T3技术栈的AI编程辅助工具。\n  🔗 https://github.com/pingdotgg/t3code\n\n---\n**Renhuai123/ziwei-doushu**\n  基于倪海厦体系的紫微斗数排盘引擎，含完整算法与古籍数据。\n  🔗 https://github.com/Renhuai123/ziwei-doushu\n\n## 2026-11-01 Anthropic Engineering\n\n今日无新文章\n\n## 2026-11-01 OpenAI News\n\n发现 1 篇新文章:\n\n**Fair use benefits everyone**\n📅 Fri, 30 Oc\n原文摘要：OpenAI shares excerpts from court briefs by creators, academics, accessibility advocates, and legal experts, among others, on how fair use supports AI training and innovation.\n🔗 https://openai.com/index/fair-use-benefits-everyone\n\n## 2026-11-01 LangChain Blog\n\n今日无新文章（追踪 20 篇）\n\n## 2026-11-01 Hugging Face Blog\n\n今日无新文章(追踪 20 篇)\n\n## 2026-11-01 Google Research\n\n今日无新文章(追踪 20 篇)\n\n## 2026-11-01 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-11-01 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-11-01 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-11-01 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 10,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-11-01 发现 3 个新项目（共 5 个项目）: thedotmack/claude-mem 让智能体跨会话保持记忆，自动压缩并注入相关上下文...",
+   "body": "# 🔥 GitHub Trending\n\n2026-11-01\n\n发现 3 个新项目（共 5 个项目）:\n\n**thedotmack/claude-mem**\n  让智能体跨会话保持记忆，自动压缩并注入相关上下文。\n  🔗 https://github.com/thedotmack/claude-mem\n\n---\n**🆕 mattpocock/skills**\n  分享作者私藏的实用智能体技能，专为真实工程场景打造。\n  🔗 https://github.com/mattpocock/skills\n\n---\n**🆕 Donchitos/Claude-Code-Game-Studios**\n  用几十个智能体模拟真实游戏工作室的完整开发协作流程。\n  🔗 https://github.com/Donchitos/Claude-Code-Game-Studios\n\n---\n**🆕 pingdotgg/t3code**\n  Ping团队打造的基于T3技术栈的AI编程辅助工具。\n  🔗 https://github.com/pingdotgg/t3code\n\n---\n**Renhuai123/ziwei-doushu**\n  基于倪海厦体系的紫微斗数排盘引擎，含完整算法与古籍数据。\n  🔗 https://github.com/Renhuai123/ziwei-doushu",
+   "links": [
+    {
+     "title": "thedotmack/claude-mem",
+     "url": "https://github.com/thedotmack/claude-mem"
+    },
+    {
+     "title": "mattpocock/skills",
+     "url": "https://github.com/mattpocock/skills"
+    },
+    {
+     "title": "Donchitos/Claude-Code-Game-Studios",
+     "url": "https://github.com/Donchitos/Claude-Code-Game-Studios"
+    },
+    {
+     "title": "pingdotgg/t3code",
+     "url": "https://github.com/pingdotgg/t3code"
+    },
+    {
+     "title": "Renhuai123/ziwei-doushu",
+     "url": "https://github.com/Renhuai123/ziwei-doushu"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-11-01 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-11-01 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-11-01 OpenAI News 发现 1 篇新文章: Fair use benefits everyone 📅 Fri, 30 Oc 原文摘要：OpenAI shares ex...",
+   "body": "## 2026-11-01 OpenAI News\n\n发现 1 篇新文章:\n\n**Fair use benefits everyone**\n📅 Fri, 30 Oc\n原文摘要：OpenAI shares excerpts from court briefs by creators, academics, accessibility advocates, and legal experts, among others, on how fair use supports AI training and innovation.\n🔗 https://openai.com/index/fair-use-benefits-everyone",
+   "links": [
+    {
+     "title": "https://openai.com/index/fair-use-benefits-everyone",
+     "url": "https://openai.com/index/fair-use-benefits-everyone"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "no_update",
+   "summary": "2026-11-01 LangChain Blog 今日无新文章（追踪 20 篇）",
+   "body": "## 2026-11-01 LangChain Blog\n\n今日无新文章（追踪 20 篇）",
+   "links": []
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "no_update",
+   "summary": "2026-11-01 Hugging Face Blog 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-11-01 Hugging Face Blog\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "no_update",
+   "summary": "2026-11-01 Google Research 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-11-01 Google Research\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-11-01 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-11-01 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-11-01 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-11-01 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-11-01 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-11-01 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-11-01 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-11-01 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-11-01T05:31:39+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

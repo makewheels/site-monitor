@@ -1,0 +1,149 @@
+{
+ "date": "2026-11-05",
+ "report_id": "2026-11-05-31d72341c0",
+ "created_at": "2026-11-05T05:32:06",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-11-05\n\n# 🔥 GitHub Trending\n\n2026-11-05\n\n发现 2 个新项目（共 5 个项目）:\n\n**🆕 NVIDIA/auto-ontology**\n  用Python建数据语义图推理层，让查询生成更精准。\n  🔗 https://github.com/NVIDIA/auto-ontology\n\n---\n**max-sixty/worktrunk**\n  并行AI工作流专用的Git worktree管理工具。\n  🔗 https://github.com/max-sixty/worktrunk\n\n---\n**mattpocock/skills**\n  作者私藏的实战级AI代理技能配置，直接抄作业就行。\n  🔗 https://github.com/mattpocock/skills\n\n---\n**🆕 floci-io/floci**\n  轻量免费的AWS本地模拟器平替，轻松在本地跑云服务。\n  🔗 https://github.com/floci-io/floci\n\n---\n**thedotmack/claude-mem**\n  让AI代理跨会话拥有记忆，自动压缩并精准注入上下文。\n  🔗 https://github.com/thedotmack/claude-mem\n\n## 2026-11-05 Anthropic Engineering\n\n今日无新文章\n\n## 2026-11-05 OpenAI News\n\n发现 2 篇新文章:\n\n**OpenAI to acquire Pierre Computer Company, Inc.**\n📅 Wed, 04 No\n原文摘要：OpenAI will acquire Pierre Computer Company, expanding Codex’s tools for building, understanding, and reviewing code.\n🔗 https://openai.com/index/openai-to-acquire-pierre\n\n---\n\n**Daybreak Red is now available in AWS GovCloud (US-East)**\n📅 Wed, 04 No\n原文摘要：Daybreak Red brings GPT-5.6 Cyber to approved customers in AWS GovCloud (US-East) through Amazon Bedrock for authorized cybersecurity work.\n🔗 https://openai.com/index/daybreak-red-aws-govcloud\n\n## 2026-11-05 LangChain Blog\n\n今日无新文章（追踪 20 篇）\n\n## 2026-11-05 Hugging Face Blog\n\n发现 1 篇新文章:\n\n**Dharma Field Extractor: Any Document In, Structured Fields in JSON Out**\n📅 Wed, 04 No\n🔗 https://huggingface.co/blog/Dharma-AI/dharma-field-extractor\n\n## 2026-11-05 Google Research\n\n发现 1 篇新文章:\n\n**Agile Deliberation: How AI helps humans define the gray areas**\n📅 Wed, 04 No\n原文摘要：Data Mining & Modeling\n🔗 https://research.google/blog/agile-deliberation-how-ai-helps-humans-define-the-gray-areas/\n\n## 2026-11-05 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-11-05 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-11-05 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-11-05 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 10,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-11-05 发现 2 个新项目（共 5 个项目）: 🆕 NVIDIA/auto-ontology 用Python建数据语义图推理层，让查询生成更...",
+   "body": "# 🔥 GitHub Trending\n\n2026-11-05\n\n发现 2 个新项目（共 5 个项目）:\n\n**🆕 NVIDIA/auto-ontology**\n  用Python建数据语义图推理层，让查询生成更精准。\n  🔗 https://github.com/NVIDIA/auto-ontology\n\n---\n**max-sixty/worktrunk**\n  并行AI工作流专用的Git worktree管理工具。\n  🔗 https://github.com/max-sixty/worktrunk\n\n---\n**mattpocock/skills**\n  作者私藏的实战级AI代理技能配置，直接抄作业就行。\n  🔗 https://github.com/mattpocock/skills\n\n---\n**🆕 floci-io/floci**\n  轻量免费的AWS本地模拟器平替，轻松在本地跑云服务。\n  🔗 https://github.com/floci-io/floci\n\n---\n**thedotmack/claude-mem**\n  让AI代理跨会话拥有记忆，自动压缩并精准注入上下文。\n  🔗 https://github.com/thedotmack/claude-mem",
+   "links": [
+    {
+     "title": "NVIDIA/auto-ontology",
+     "url": "https://github.com/NVIDIA/auto-ontology"
+    },
+    {
+     "title": "max-sixty/worktrunk",
+     "url": "https://github.com/max-sixty/worktrunk"
+    },
+    {
+     "title": "mattpocock/skills",
+     "url": "https://github.com/mattpocock/skills"
+    },
+    {
+     "title": "floci-io/floci",
+     "url": "https://github.com/floci-io/floci"
+    },
+    {
+     "title": "thedotmack/claude-mem",
+     "url": "https://github.com/thedotmack/claude-mem"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-11-05 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-11-05 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-11-05 OpenAI News 发现 2 篇新文章: OpenAI to acquire Pierre Computer Company, Inc. 📅 Wed, 04 No...",
+   "body": "## 2026-11-05 OpenAI News\n\n发现 2 篇新文章:\n\n**OpenAI to acquire Pierre Computer Company, Inc.**\n📅 Wed, 04 No\n原文摘要：OpenAI will acquire Pierre Computer Company, expanding Codex’s tools for building, understanding, and reviewing code.\n🔗 https://openai.com/index/openai-to-acquire-pierre\n\n---\n\n**Daybreak Red is now available in AWS GovCloud (US-East)**\n📅 Wed, 04 No\n原文摘要：Daybreak Red brings GPT-5.6 Cyber to approved customers in AWS GovCloud (US-East) through Amazon Bedrock for authorized cybersecurity work.\n🔗 https://openai.com/index/daybreak-red-aws-govcloud",
+   "links": [
+    {
+     "title": "https://openai.com/index/openai-to-acquire-pierre",
+     "url": "https://openai.com/index/openai-to-acquire-pierre"
+    },
+    {
+     "title": "https://openai.com/index/daybreak-red-aws-govcloud",
+     "url": "https://openai.com/index/daybreak-red-aws-govcloud"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "no_update",
+   "summary": "2026-11-05 LangChain Blog 今日无新文章（追踪 20 篇）",
+   "body": "## 2026-11-05 LangChain Blog\n\n今日无新文章（追踪 20 篇）",
+   "links": []
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "content",
+   "summary": "2026-11-05 Hugging Face Blog 发现 1 篇新文章: Dharma Field Extractor: Any Document In, Structured Fie...",
+   "body": "## 2026-11-05 Hugging Face Blog\n\n发现 1 篇新文章:\n\n**Dharma Field Extractor: Any Document In, Structured Fields in JSON Out**\n📅 Wed, 04 No\n🔗 https://huggingface.co/blog/Dharma-AI/dharma-field-extractor",
+   "links": [
+    {
+     "title": "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor",
+     "url": "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor"
+    }
+   ]
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "content",
+   "summary": "2026-11-05 Google Research 发现 1 篇新文章: Agile Deliberation: How AI helps humans define the gray a...",
+   "body": "## 2026-11-05 Google Research\n\n发现 1 篇新文章:\n\n**Agile Deliberation: How AI helps humans define the gray areas**\n📅 Wed, 04 No\n原文摘要：Data Mining & Modeling\n🔗 https://research.google/blog/agile-deliberation-how-ai-helps-humans-define-the-gray-areas/",
+   "links": [
+    {
+     "title": "https://research.google/blog/agile-deliberation-how-ai-helps-humans-define-the-gray-areas/",
+     "url": "https://research.google/blog/agile-deliberation-how-ai-helps-humans-define-the-gray-areas/"
+    }
+   ]
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-11-05 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-11-05 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-11-05 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-11-05 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-11-05 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-11-05 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-11-05 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-11-05 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-11-05T05:32:12+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

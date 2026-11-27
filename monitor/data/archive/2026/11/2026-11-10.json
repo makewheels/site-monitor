@@ -1,0 +1,58 @@
+{
+ "date": "2026-11-10",
+ "report_id": "2026-11-10-ec57851680",
+ "created_at": "2026-11-10T05:31:08",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-11-10\n\n# 🔥 GitHub Trending\n\n2026-11-10\n\n发现 3 个新项目（共 5 个项目）:\n\n**🆕 anthropics/skills**\n  官方开源的智能体技能库，方便开发者快速扩展能力。\n  🔗 https://github.com/anthropics/skills\n\n---\n**🆕 meta/astryx**\n  一套高度可定制、原生支持智能体的开源设计系统。\n  🔗 https://github.com/meta/astryx\n\n---\n**sherlock-project/sherlock**\n  输入用户名，就能跨各大社交平台全网追踪账号。\n  🔗 https://github.com/sherlock-project/sherlock\n\n---\n**🆕 google-deepmind/mujoco**\n  强大的通用物理引擎，擅长多关节动力学与接触仿真。\n  🔗 https://github.com/google-deepmind/mujoco\n\n---\n**anthropics/claude-quickstarts**\n  官方示例代码集，帮开发者调用接口快速上手构建应用。\n  🔗 https://github.com/anthropics/claude-quickstarts\n\n## 2026-11-10 Anthropic Engineering\n\n今日无新文章",
+ "item_count": 2,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-11-10 发现 3 个新项目（共 5 个项目）: 🆕 anthropics/skills 官方开源的智能体技能库，方便开发者快速扩展能力。 🔗...",
+   "body": "# 🔥 GitHub Trending\n\n2026-11-10\n\n发现 3 个新项目（共 5 个项目）:\n\n**🆕 anthropics/skills**\n  官方开源的智能体技能库，方便开发者快速扩展能力。\n  🔗 https://github.com/anthropics/skills\n\n---\n**🆕 meta/astryx**\n  一套高度可定制、原生支持智能体的开源设计系统。\n  🔗 https://github.com/meta/astryx\n\n---\n**sherlock-project/sherlock**\n  输入用户名，就能跨各大社交平台全网追踪账号。\n  🔗 https://github.com/sherlock-project/sherlock\n\n---\n**🆕 google-deepmind/mujoco**\n  强大的通用物理引擎，擅长多关节动力学与接触仿真。\n  🔗 https://github.com/google-deepmind/mujoco\n\n---\n**anthropics/claude-quickstarts**\n  官方示例代码集，帮开发者调用接口快速上手构建应用。\n  🔗 https://github.com/anthropics/claude-quickstarts",
+   "links": [
+    {
+     "title": "anthropics/skills",
+     "url": "https://github.com/anthropics/skills"
+    },
+    {
+     "title": "meta/astryx",
+     "url": "https://github.com/meta/astryx"
+    },
+    {
+     "title": "sherlock-project/sherlock",
+     "url": "https://github.com/sherlock-project/sherlock"
+    },
+    {
+     "title": "google-deepmind/mujoco",
+     "url": "https://github.com/google-deepmind/mujoco"
+    },
+    {
+     "title": "anthropics/claude-quickstarts",
+     "url": "https://github.com/anthropics/claude-quickstarts"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-11-10 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-11-10 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-11-10T05:31:10+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

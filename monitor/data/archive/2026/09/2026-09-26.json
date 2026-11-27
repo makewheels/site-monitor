@@ -1,0 +1,149 @@
+{
+ "date": "2026-09-26",
+ "report_id": "2026-09-26-f76e682e20",
+ "created_at": "2026-09-26T05:31:35",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-09-26\n\n# 🔥 GitHub Trending\n\n2026-09-26\n\n发现 4 个新项目（共 5 个项目）:\n\n**🆕 paperclipai/paperclip**\n  大家都在用的开源职场智能体管理神器。\n  🔗 https://github.com/paperclipai/paperclip\n\n---\n**🆕 anthropics/claude-plugins-official**\n  官方亲自下场维护的高质量 Claude 插件库。\n  🔗 https://github.com/anthropics/claude-plugins-official\n\n---\n**vectorize-io/hindsight**\n  让智能体边用边学的超强记忆系统。\n  🔗 https://github.com/vectorize-io/hindsight\n\n---\n**🆕 obra/superpowers**\n  一套真正管用的智能体技能框架与开发方法论。\n  🔗 https://github.com/obra/superpowers\n\n---\n**🆕 mattpocock/skills**\n  作者私藏的实战派工程师专属智能体技能。\n  🔗 https://github.com/mattpocock/skills\n\n## 2026-09-26 Anthropic Engineering\n\n今日无新文章\n\n## 2026-09-26 OpenAI News\n\n发现 1 篇新文章:\n\n**Proaction boosts sales 60% and saves 75+ hours with Codex**\n📅 Fri, 25 Se\n原文摘要：With Codex, GPT-Live-1, and GPT-6 Astra, Proaction builds, operates, and sells modern fleet management faster.\n🔗 https://openai.com/index/proaction\n\n## 2026-09-26 LangChain Blog\n\n发现 2 篇新文章:\n\n**Building Production Agents with Jev and LangGraph**\n📅 Fri, 25 Se\n原文摘要：See how LangGraph orchestrates Jev, TypeSafe AI's decision model, to build faster, cheaper production agents.\n🔗 https://www.langchain.com/blog/building-prod-with-jev-and-langgraph\n\n---\n\n**New in LangSmith: Engine v2, Managed Deep Agents, Fine-Tuning, and more**\n📅 Fri, 25 Se\n原文摘要：LangChain announced new updates to LangSmith. Updates include Engine v2 with red teaming and automatic testing, a new version of Managed Deep Agents, trajectories and more.\n🔗 https://www.langchain.com/blog/langsmith-engine-agents-fine-tuning-trajectories\n\n## 2026-09-26 Hugging Face Blog\n\n今日无新文章(追踪 20 篇)\n\n## 2026-09-26 Google Research\n\n今日无新文章(追踪 20 篇)\n\n## 2026-09-26 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-09-26 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-09-26 Trail of Bits\n\n发现 1 篇新文章:\n\n**Don't let TEEs break your MPC**\n📅 Fri, 25 Se\n原文摘要：Threshold signature schemes, a form of multi-party computation (MPC) that lets a set of parties sign together without any one of them holding the key, are increasingly deployed inside trusted execution environments (TEEs). The combination is intended to amplify security for sensitive computations: MPC distributes trust across multiple independent parties, while TEEs root trust in the hardware manufacturer and its attestation infrastructure. But subtle issues can arise when running an MPC protocol inside a TEE without accounting for the untrusted host: for example, a malicious host could roll back the filesystem state after a threshold signer deletes a used pre-signature, causing the signer to reuse their nonce share and disclose their private key share. So is this combination worth it? Provided you treat the TEE as a defense-in-depth layer rather than a substitute for a sound protocol, the answer is yes. This blog post discusses what TEE attestation can and can’t fix in MPC deployments, explores the pitfalls we see most often in audits, and covers best practices, such as incorporating strong attestation processes and binding them to the MPC parties’ identities. MPC: Security that depends on participant behavior Before diving into how TEEs and MPC interact, we need to understand what MPC means and what security guarantees it offers. MPC is a cryptographic technique that allows multiple parties to jointly compute a function over their private inputs without revealing those inputs to each other. The security of MPC protocols depends critically on assumptions about participant behavior. The cryptographic literature uses two primary security models: Semi-honest (honest-but-curious) security : In this model, all participants follow the protocol exactly as specified, but they may try to learn additional information from the messages they receive during the protocol execution. Participants can try to learn more than they should, but they don’t deviate from the protocol spec\n🔗 https://blog.trailofbits.com/2026/09/25/dont-let-tees-break-your-mpc/\n\n## 2026-09-26 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 10,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-09-26 发现 4 个新项目（共 5 个项目）: 🆕 paperclipai/paperclip 大家都在用的开源职场智能体管理神器。 🔗 h...",
+   "body": "# 🔥 GitHub Trending\n\n2026-09-26\n\n发现 4 个新项目（共 5 个项目）:\n\n**🆕 paperclipai/paperclip**\n  大家都在用的开源职场智能体管理神器。\n  🔗 https://github.com/paperclipai/paperclip\n\n---\n**🆕 anthropics/claude-plugins-official**\n  官方亲自下场维护的高质量 Claude 插件库。\n  🔗 https://github.com/anthropics/claude-plugins-official\n\n---\n**vectorize-io/hindsight**\n  让智能体边用边学的超强记忆系统。\n  🔗 https://github.com/vectorize-io/hindsight\n\n---\n**🆕 obra/superpowers**\n  一套真正管用的智能体技能框架与开发方法论。\n  🔗 https://github.com/obra/superpowers\n\n---\n**🆕 mattpocock/skills**\n  作者私藏的实战派工程师专属智能体技能。\n  🔗 https://github.com/mattpocock/skills",
+   "links": [
+    {
+     "title": "paperclipai/paperclip",
+     "url": "https://github.com/paperclipai/paperclip"
+    },
+    {
+     "title": "anthropics/claude-plugins-official",
+     "url": "https://github.com/anthropics/claude-plugins-official"
+    },
+    {
+     "title": "vectorize-io/hindsight",
+     "url": "https://github.com/vectorize-io/hindsight"
+    },
+    {
+     "title": "obra/superpowers",
+     "url": "https://github.com/obra/superpowers"
+    },
+    {
+     "title": "mattpocock/skills",
+     "url": "https://github.com/mattpocock/skills"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-09-26 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-09-26 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-09-26 OpenAI News 发现 1 篇新文章: Proaction boosts sales 60% and saves 75+ hours with Codex 📅 F...",
+   "body": "## 2026-09-26 OpenAI News\n\n发现 1 篇新文章:\n\n**Proaction boosts sales 60% and saves 75+ hours with Codex**\n📅 Fri, 25 Se\n原文摘要：With Codex, GPT-Live-1, and GPT-6 Astra, Proaction builds, operates, and sells modern fleet management faster.\n🔗 https://openai.com/index/proaction",
+   "links": [
+    {
+     "title": "https://openai.com/index/proaction",
+     "url": "https://openai.com/index/proaction"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "content",
+   "summary": "2026-09-26 LangChain Blog 发现 2 篇新文章: Building Production Agents with Jev and LangGraph 📅 Fri, 2...",
+   "body": "## 2026-09-26 LangChain Blog\n\n发现 2 篇新文章:\n\n**Building Production Agents with Jev and LangGraph**\n📅 Fri, 25 Se\n原文摘要：See how LangGraph orchestrates Jev, TypeSafe AI's decision model, to build faster, cheaper production agents.\n🔗 https://www.langchain.com/blog/building-prod-with-jev-and-langgraph\n\n---\n\n**New in LangSmith: Engine v2, Managed Deep Agents, Fine-Tuning, and more**\n📅 Fri, 25 Se\n原文摘要：LangChain announced new updates to LangSmith. Updates include Engine v2 with red teaming and automatic testing, a new version of Managed Deep Agents, trajectories and more.\n🔗 https://www.langchain.com/blog/langsmith-engine-agents-fine-tuning-trajectories",
+   "links": [
+    {
+     "title": "https://www.langchain.com/blog/building-prod-with-jev-and-langgraph",
+     "url": "https://www.langchain.com/blog/building-prod-with-jev-and-langgraph"
+    },
+    {
+     "title": "https://www.langchain.com/blog/langsmith-engine-agents-fine-tuning-trajectories",
+     "url": "https://www.langchain.com/blog/langsmith-engine-agents-fine-tuning-trajectories"
+    }
+   ]
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "no_update",
+   "summary": "2026-09-26 Hugging Face Blog 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-09-26 Hugging Face Blog\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "no_update",
+   "summary": "2026-09-26 Google Research 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-09-26 Google Research\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-09-26 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-09-26 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-09-26 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-09-26 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "content",
+   "summary": "2026-09-26 Trail of Bits 发现 1 篇新文章: Don't let TEEs break your MPC 📅 Fri, 25 Se 原文摘要：Threshold s...",
+   "body": "## 2026-09-26 Trail of Bits\n\n发现 1 篇新文章:\n\n**Don't let TEEs break your MPC**\n📅 Fri, 25 Se\n原文摘要：Threshold signature schemes, a form of multi-party computation (MPC) that lets a set of parties sign together without any one of them holding the key, are increasingly deployed inside trusted execution environments (TEEs). The combination is intended to amplify security for sensitive computations: MPC distributes trust across multiple independent parties, while TEEs root trust in the hardware manufacturer and its attestation infrastructure. But subtle issues can arise when running an MPC protocol inside a TEE without accounting for the untrusted host: for example, a malicious host could roll back the filesystem state after a threshold signer deletes a used pre-signature, causing the signer to reuse their nonce share and disclose their private key share. So is this combination worth it? Provided you treat the TEE as a defense-in-depth layer rather than a substitute for a sound protocol, the answer is yes. This blog post discusses what TEE attestation can and can’t fix in MPC deployments, explores the pitfalls we see most often in audits, and covers best practices, such as incorporating strong attestation processes and binding them to the MPC parties’ identities. MPC: Security that depends on participant behavior Before diving into how TEEs and MPC interact, we need to understand what MPC means and what security guarantees it offers. MPC is a cryptographic technique that allows multiple parties to jointly compute a function over their private inputs without revealing those inputs to each other. The security of MPC protocols depends critically on assumptions about participant behavior. The cryptographic literature uses two primary security models: Semi-honest (honest-but-curious) security : In this model, all participants follow the protocol exactly as specified, but they may try to learn additional information from the messages they receive during the protocol execution. Participants can try to learn more than they should, but they don’t deviate from the protocol spec\n🔗 https://blog.trailofbits.com/2026/09/25/dont-let-tees-break-your-mpc/",
+   "links": [
+    {
+     "title": "https://blog.trailofbits.com/2026/09/25/dont-let-tees-break-your-mpc/",
+     "url": "https://blog.trailofbits.com/2026/09/25/dont-let-tees-break-your-mpc/"
+    }
+   ]
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-09-26 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-09-26 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-09-26T05:31:39+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

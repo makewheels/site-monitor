@@ -1,0 +1,166 @@
+{
+ "date": "2026-09-25",
+ "report_id": "2026-09-25-09e2134672",
+ "created_at": "2026-09-25T05:32:08",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-09-25\n\n# 🔥 GitHub Trending\n\n2026-09-25\n\n发现 4 个新项目（共 5 个项目）:\n\n**🆕 rohitg00/ai-engineering-from-scratch**\n  从零手搓AI工程，涵盖学习、构建到部署全流程。\n  🔗 https://github.com/rohitg00/ai-engineering-from-scratch\n\n---\n**🆕 vectorize-io/hindsight**\n  赋予AI智能体自主学习与进化的记忆能力。\n  🔗 https://github.com/vectorize-io/hindsight\n\n---\n**🆕 dream-num/univer**\n  AI智能体专属办公套件，一个运行时搞定表格和文档。\n  🔗 https://github.com/dream-num/univer\n\n---\n**google/ax**\n  谷歌开源的智能体编排运行时，轻松搞定多智能体调度。\n  🔗 https://github.com/google/ax\n\n---\n**🆕 NVIDIA/Model-Optimizer**\n  英伟达开源的模型优化全家桶，集成量化剪枝等前沿技术。\n  🔗 https://github.com/NVIDIA/Model-Optimizer\n\n## 2026-09-25 Anthropic Engineering\n\n今日无新文章\n\n## 2026-09-25 OpenAI News\n\n发现 1 篇新文章:\n\n**ChatGPT Ads expands to Southeast Asia and Taiwan**\n📅 Wed, 23 Se\n原文摘要：ChatGPT Ads is expanding to Southeast Asia and Taiwan, giving eligible businesses new ways to reach people across more than 60 countries.\n🔗 https://openai.com/index/chatgpt-ads-expands-southeast-asia-taiwan\n\n## 2026-09-25 LangChain Blog\n\n发现 5 篇新文章:\n\n**New in LangSmith Engine: red teaming and automated testing**\n📅 Thu, 24 Se\n原文摘要：LangSmith Engine now includes Red Teaming to proactively detect agent issues and automated agent testing. Learn more about the Engine v2 release.\n🔗 https://www.langchain.com/blog/langsmith-engine-v2-redteam\n\n---\n\n**Introducing LangSmith Fine-Tuning**\n📅 Thu, 24 Se\n原文摘要：LangChain introduces LangSmith Fine-Tuning and SmithTune, a CLI built for post-training models. Train specialized models without building data pipelines by hand.\n🔗 https://www.langchain.com/blog/langsmith-fine-tuning\n\n---\n\n**Managed Deep Agents delivers a better user experience for agents in production**\n📅 Thu, 24 Se\n原文摘要：Managed Deep Agents is the simplest way to build, deploy, and run agents in production. The 0.8 release adds support for user-owned credentials, user-level memory, HTTP channels, file transfer in Slack and a pre-built tool for web search.\n🔗 https://www.langchain.com/blog/langsmith-managed-deep-agents-whats-new\n\n---\n\n**Trajectories now in LangSmith: A readable view of every agent session**\n📅 Thu, 24 Se\n原文摘要：Trajectories in LangSmith provide a conversational view of an agent session. Trajectories make trace data easy to navigate and speed up debugging for long-running agents.\n🔗 https://www.langchain.com/blog/langsmith-trajectories-tracing\n\n---\n\n**LangSmith Custom Apps: Build custom interfaces around your agent data**\n📅 Thu, 24 Se\n原文摘要：LangSmith Custom Apps lets you build the interface you want with your LangSmith data, publish it into your workspace, and skip the hosting, auth, and permissions work. Learn more.\n🔗 https://www.langchain.com/blog/langsmith-custom-apps\n\n## 2026-09-25 Hugging Face Blog\n\n发现 1 篇新文章:\n\n**Accelerating vision-language models with LFM2.5-VL-DSpark**\n📅 Thu, 24 Se\n🔗 https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark\n\n## 2026-09-25 Google Research\n\n发现 1 篇新文章:\n\n**Automating coherent long-form video generation**\n📅 Thu, 24 Se\n原文摘要：Generative AI\n🔗 https://research.google/blog/coherent-long-form-video-generation/\n\n## 2026-09-25 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-09-25 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-09-25 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-09-25 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 10,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-09-25 发现 4 个新项目（共 5 个项目）: 🆕 rohitg00/ai-engineering-from-scratch 从零手搓AI工...",
+   "body": "# 🔥 GitHub Trending\n\n2026-09-25\n\n发现 4 个新项目（共 5 个项目）:\n\n**🆕 rohitg00/ai-engineering-from-scratch**\n  从零手搓AI工程，涵盖学习、构建到部署全流程。\n  🔗 https://github.com/rohitg00/ai-engineering-from-scratch\n\n---\n**🆕 vectorize-io/hindsight**\n  赋予AI智能体自主学习与进化的记忆能力。\n  🔗 https://github.com/vectorize-io/hindsight\n\n---\n**🆕 dream-num/univer**\n  AI智能体专属办公套件，一个运行时搞定表格和文档。\n  🔗 https://github.com/dream-num/univer\n\n---\n**google/ax**\n  谷歌开源的智能体编排运行时，轻松搞定多智能体调度。\n  🔗 https://github.com/google/ax\n\n---\n**🆕 NVIDIA/Model-Optimizer**\n  英伟达开源的模型优化全家桶，集成量化剪枝等前沿技术。\n  🔗 https://github.com/NVIDIA/Model-Optimizer",
+   "links": [
+    {
+     "title": "rohitg00/ai-engineering-from-scratch",
+     "url": "https://github.com/rohitg00/ai-engineering-from-scratch"
+    },
+    {
+     "title": "vectorize-io/hindsight",
+     "url": "https://github.com/vectorize-io/hindsight"
+    },
+    {
+     "title": "dream-num/univer",
+     "url": "https://github.com/dream-num/univer"
+    },
+    {
+     "title": "google/ax",
+     "url": "https://github.com/google/ax"
+    },
+    {
+     "title": "NVIDIA/Model-Optimizer",
+     "url": "https://github.com/NVIDIA/Model-Optimizer"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-09-25 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-09-25 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-09-25 OpenAI News 发现 1 篇新文章: ChatGPT Ads expands to Southeast Asia and Taiwan 📅 Wed, 23 Se...",
+   "body": "## 2026-09-25 OpenAI News\n\n发现 1 篇新文章:\n\n**ChatGPT Ads expands to Southeast Asia and Taiwan**\n📅 Wed, 23 Se\n原文摘要：ChatGPT Ads is expanding to Southeast Asia and Taiwan, giving eligible businesses new ways to reach people across more than 60 countries.\n🔗 https://openai.com/index/chatgpt-ads-expands-southeast-asia-taiwan",
+   "links": [
+    {
+     "title": "https://openai.com/index/chatgpt-ads-expands-southeast-asia-taiwan",
+     "url": "https://openai.com/index/chatgpt-ads-expands-southeast-asia-taiwan"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "content",
+   "summary": "2026-09-25 LangChain Blog 发现 5 篇新文章: New in LangSmith Engine: red teaming and automated testing...",
+   "body": "## 2026-09-25 LangChain Blog\n\n发现 5 篇新文章:\n\n**New in LangSmith Engine: red teaming and automated testing**\n📅 Thu, 24 Se\n原文摘要：LangSmith Engine now includes Red Teaming to proactively detect agent issues and automated agent testing. Learn more about the Engine v2 release.\n🔗 https://www.langchain.com/blog/langsmith-engine-v2-redteam\n\n---\n\n**Introducing LangSmith Fine-Tuning**\n📅 Thu, 24 Se\n原文摘要：LangChain introduces LangSmith Fine-Tuning and SmithTune, a CLI built for post-training models. Train specialized models without building data pipelines by hand.\n🔗 https://www.langchain.com/blog/langsmith-fine-tuning\n\n---\n\n**Managed Deep Agents delivers a better user experience for agents in production**\n📅 Thu, 24 Se\n原文摘要：Managed Deep Agents is the simplest way to build, deploy, and run agents in production. The 0.8 release adds support for user-owned credentials, user-level memory, HTTP channels, file transfer in Slack and a pre-built tool for web search.\n🔗 https://www.langchain.com/blog/langsmith-managed-deep-agents-whats-new\n\n---\n\n**Trajectories now in LangSmith: A readable view of every agent session**\n📅 Thu, 24 Se\n原文摘要：Trajectories in LangSmith provide a conversational view of an agent session. Trajectories make trace data easy to navigate and speed up debugging for long-running agents.\n🔗 https://www.langchain.com/blog/langsmith-trajectories-tracing\n\n---\n\n**LangSmith Custom Apps: Build custom interfaces around your agent data**\n📅 Thu, 24 Se\n原文摘要：LangSmith Custom Apps lets you build the interface you want with your LangSmith data, publish it into your workspace, and skip the hosting, auth, and permissions work. Learn more.\n🔗 https://www.langchain.com/blog/langsmith-custom-apps",
+   "links": [
+    {
+     "title": "https://www.langchain.com/blog/langsmith-engine-v2-redteam",
+     "url": "https://www.langchain.com/blog/langsmith-engine-v2-redteam"
+    },
+    {
+     "title": "https://www.langchain.com/blog/langsmith-fine-tuning",
+     "url": "https://www.langchain.com/blog/langsmith-fine-tuning"
+    },
+    {
+     "title": "https://www.langchain.com/blog/langsmith-managed-deep-agents-whats-new",
+     "url": "https://www.langchain.com/blog/langsmith-managed-deep-agents-whats-new"
+    },
+    {
+     "title": "https://www.langchain.com/blog/langsmith-trajectories-tracing",
+     "url": "https://www.langchain.com/blog/langsmith-trajectories-tracing"
+    },
+    {
+     "title": "https://www.langchain.com/blog/langsmith-custom-apps",
+     "url": "https://www.langchain.com/blog/langsmith-custom-apps"
+    }
+   ]
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "content",
+   "summary": "2026-09-25 Hugging Face Blog 发现 1 篇新文章: Accelerating vision-language models with LFM2.5-VL-DSpa...",
+   "body": "## 2026-09-25 Hugging Face Blog\n\n发现 1 篇新文章:\n\n**Accelerating vision-language models with LFM2.5-VL-DSpark**\n📅 Thu, 24 Se\n🔗 https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
+   "links": [
+    {
+     "title": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
+     "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark"
+    }
+   ]
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "content",
+   "summary": "2026-09-25 Google Research 发现 1 篇新文章: Automating coherent long-form video generation 📅 Thu, 24...",
+   "body": "## 2026-09-25 Google Research\n\n发现 1 篇新文章:\n\n**Automating coherent long-form video generation**\n📅 Thu, 24 Se\n原文摘要：Generative AI\n🔗 https://research.google/blog/coherent-long-form-video-generation/",
+   "links": [
+    {
+     "title": "https://research.google/blog/coherent-long-form-video-generation/",
+     "url": "https://research.google/blog/coherent-long-form-video-generation/"
+    }
+   ]
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-09-25 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-09-25 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-09-25 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-09-25 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-09-25 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-09-25 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-09-25 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-09-25 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-09-25T05:32:12+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

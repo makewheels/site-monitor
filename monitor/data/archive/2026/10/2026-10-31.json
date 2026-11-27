@@ -1,0 +1,148 @@
+{
+ "date": "2026-10-31",
+ "report_id": "2026-10-31-97d7d9d1e9",
+ "created_at": "2026-10-31T05:31:58",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-10-31\n\n# 🔥 GitHub Trending\n\n2026-10-31\n\n发现 3 个新项目（共 5 个项目）:\n\n**🆕 thedotmack/claude-mem**\n  让智能体跨会话记住所有事，自动压缩并注入上下文。\n  🔗 https://github.com/thedotmack/claude-mem\n\n---\n**milind-soni/OpenMausBot**\n  开源Grok替代品，自带虚拟机让机器人随便折腾。\n  🔗 https://github.com/milind-soni/OpenMausBot\n\n---\n**pbakaus/impeccable**\n  给编程智能体定规矩，引导审查代码，拦截AI生成的垃圾。\n  🔗 https://github.com/pbakaus/impeccable\n\n---\n**🆕 CopilotKit/OpenBot**\n  开源AI同事，每人配台独立电脑，操作全记录且可预测。\n  🔗 https://github.com/CopilotKit/OpenBot\n\n---\n**🆕 Renhuai123/ziwei-doushu**\n  基于天纪体系的紫微斗数排盘引擎，自带完整算法和古籍。\n  🔗 https://github.com/Renhuai123/ziwei-doushu\n\n## 2026-10-31 Anthropic Engineering\n\n今日无新文章\n\n## 2026-10-31 OpenAI News\n\n发现 3 篇新文章:\n\n**Making it easier for websites to express AI training preferences**\n📅 Fri, 30 Oc\n原文摘要：OpenAI will honor a shared robots.txt signal to help website operators communicate their AI training preferences to participating providers.\n🔗 https://openai.com/index/helping-websites-express-ai-training-preferences\n\n---\n\n**Community safety report and new protections for teens**\n📅 Fri, 30 Oc\n原文摘要：OpenAI is strengthening violence prevention in ChatGPT with expanded safeguards, earlier interventions, and a new commitment to public safety reporting.\n🔗 https://openai.com/index/community-safety-report-and-new-protections-for-teens\n\n---\n\n**Credit Saison achieves 954% ROI in a ChatGPT Enterprise pilot**\n📅 Thu, 29 Oc\n原文摘要：Credit Saison’s ChatGPT Enterprise pilot delivered 954% ROI. See how leaders and employees helped turn the results into companywide adoption.\n🔗 https://openai.com/index/credit-saison\n\n## 2026-10-31 LangChain Blog\n\n今日无新文章（追踪 20 篇）\n\n## 2026-10-31 Hugging Face Blog\n\n发现 1 篇新文章:\n\n**nemotron-halloween**\n📅 Fri, 30 Oc\n🔗 https://huggingface.co/blog/nvidia/nemotron-halloween\n\n## 2026-10-31 Google Research\n\n今日无新文章(追踪 20 篇)\n\n## 2026-10-31 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-10-31 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-10-31 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-10-31 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 10,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-10-31 发现 3 个新项目（共 5 个项目）: 🆕 thedotmack/claude-mem 让智能体跨会话记住所有事，自动压缩并注入上下...",
+   "body": "# 🔥 GitHub Trending\n\n2026-10-31\n\n发现 3 个新项目（共 5 个项目）:\n\n**🆕 thedotmack/claude-mem**\n  让智能体跨会话记住所有事，自动压缩并注入上下文。\n  🔗 https://github.com/thedotmack/claude-mem\n\n---\n**milind-soni/OpenMausBot**\n  开源Grok替代品，自带虚拟机让机器人随便折腾。\n  🔗 https://github.com/milind-soni/OpenMausBot\n\n---\n**pbakaus/impeccable**\n  给编程智能体定规矩，引导审查代码，拦截AI生成的垃圾。\n  🔗 https://github.com/pbakaus/impeccable\n\n---\n**🆕 CopilotKit/OpenBot**\n  开源AI同事，每人配台独立电脑，操作全记录且可预测。\n  🔗 https://github.com/CopilotKit/OpenBot\n\n---\n**🆕 Renhuai123/ziwei-doushu**\n  基于天纪体系的紫微斗数排盘引擎，自带完整算法和古籍。\n  🔗 https://github.com/Renhuai123/ziwei-doushu",
+   "links": [
+    {
+     "title": "thedotmack/claude-mem",
+     "url": "https://github.com/thedotmack/claude-mem"
+    },
+    {
+     "title": "milind-soni/OpenMausBot",
+     "url": "https://github.com/milind-soni/OpenMausBot"
+    },
+    {
+     "title": "pbakaus/impeccable",
+     "url": "https://github.com/pbakaus/impeccable"
+    },
+    {
+     "title": "CopilotKit/OpenBot",
+     "url": "https://github.com/CopilotKit/OpenBot"
+    },
+    {
+     "title": "Renhuai123/ziwei-doushu",
+     "url": "https://github.com/Renhuai123/ziwei-doushu"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-10-31 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-10-31 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-10-31 OpenAI News 发现 3 篇新文章: Making it easier for websites to express AI training preferen...",
+   "body": "## 2026-10-31 OpenAI News\n\n发现 3 篇新文章:\n\n**Making it easier for websites to express AI training preferences**\n📅 Fri, 30 Oc\n原文摘要：OpenAI will honor a shared robots.txt signal to help website operators communicate their AI training preferences to participating providers.\n🔗 https://openai.com/index/helping-websites-express-ai-training-preferences\n\n---\n\n**Community safety report and new protections for teens**\n📅 Fri, 30 Oc\n原文摘要：OpenAI is strengthening violence prevention in ChatGPT with expanded safeguards, earlier interventions, and a new commitment to public safety reporting.\n🔗 https://openai.com/index/community-safety-report-and-new-protections-for-teens\n\n---\n\n**Credit Saison achieves 954% ROI in a ChatGPT Enterprise pilot**\n📅 Thu, 29 Oc\n原文摘要：Credit Saison’s ChatGPT Enterprise pilot delivered 954% ROI. See how leaders and employees helped turn the results into companywide adoption.\n🔗 https://openai.com/index/credit-saison",
+   "links": [
+    {
+     "title": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+     "url": "https://openai.com/index/helping-websites-express-ai-training-preferences"
+    },
+    {
+     "title": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+     "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens"
+    },
+    {
+     "title": "https://openai.com/index/credit-saison",
+     "url": "https://openai.com/index/credit-saison"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "no_update",
+   "summary": "2026-10-31 LangChain Blog 今日无新文章（追踪 20 篇）",
+   "body": "## 2026-10-31 LangChain Blog\n\n今日无新文章（追踪 20 篇）",
+   "links": []
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "content",
+   "summary": "2026-10-31 Hugging Face Blog 发现 1 篇新文章: nemotron-halloween 📅 Fri, 30 Oc 🔗 https://huggingface.c...",
+   "body": "## 2026-10-31 Hugging Face Blog\n\n发现 1 篇新文章:\n\n**nemotron-halloween**\n📅 Fri, 30 Oc\n🔗 https://huggingface.co/blog/nvidia/nemotron-halloween",
+   "links": [
+    {
+     "title": "https://huggingface.co/blog/nvidia/nemotron-halloween",
+     "url": "https://huggingface.co/blog/nvidia/nemotron-halloween"
+    }
+   ]
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "no_update",
+   "summary": "2026-10-31 Google Research 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-10-31 Google Research\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-10-31 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-10-31 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-10-31 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-10-31 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-10-31 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-10-31 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-10-31 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-10-31 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-10-31T05:32:03+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

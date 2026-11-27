@@ -1,0 +1,140 @@
+{
+ "date": "2026-09-21",
+ "report_id": "2026-09-21-1f67d7833d",
+ "created_at": "2026-09-21T05:31:21",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-09-21\n\n# 🔥 GitHub Trending\n\n2026-09-21\n\n发现 3 个新项目（共 5 个项目）:\n\n**🆕 affaan-m/ECC**\n  给编程智能体加技能、记忆和安全补丁的优化神器。\n  🔗 https://github.com/affaan-m/ECC\n\n---\n**🆕 BuilderIO/agent-native**\n  帮你快速搭建智能体应用的开发框架。\n  🔗 https://github.com/BuilderIO/agent-native\n\n---\n**cloudflare/security-audit-skill**\n  让编程智能体自动做多阶段安全审计并输出标准报告。\n  🔗 https://github.com/cloudflare/security-audit-skill\n\n---\n**trycua/cua**\n  搞定跨系统电脑操控的开源驱动、训练和评估平台。\n  🔗 https://github.com/trycua/cua\n\n---\n**🆕 anthropics/financial-services**\n  官方开源的金融服务行业大模型应用示例库。\n  🔗 https://github.com/anthropics/financial-services\n\n## 2026-09-21 Anthropic Engineering\n\n今日无新文章\n\n## 2026-09-21 OpenAI News\n\n今日无新文章(追踪 20 篇)\n\n## 2026-09-21 LangChain Blog\n\n发现 1 篇新文章:\n\n**Can Jev Be a Better Agent Evaluator?**\n📅 Sun, 20 Se\n原文摘要：We tested using Jev-as-a-Judge against LLM judges on accuracy, repeatability, latency, and cost to see whether System One models could offer a new approach to agent evaluation.\n🔗 https://www.langchain.com/blog/jev-agent-evals-langsmith\n\n## 2026-09-21 Hugging Face Blog\n\n今日无新文章(追踪 20 篇)\n\n## 2026-09-21 Google Research\n\n今日无新文章(追踪 20 篇)\n\n## 2026-09-21 METR\n\n发现 1 篇新文章:\n\n**独立研究人员如何在未对齐事件发生后调查 AI 的行为倾向**\n📅 Tue, 28 Ju\n原文摘要：更新（2026 年 9 月 5 日） ：我们更新了建议调查人员关注的问题，使其表述更加精确并纳入对局限性的考量。最初发布的问题见 更新日志 。 AI 智能体有时会自主实施一系列复杂且持续的行动，明显违背用户和开发者的意图。例如，OpenAI 报告称 ，其部分内部前沿 AI 智能体曾自主入侵 Hugging Face，试图在一项网络安全基准测试中作弊。Anthropic 也曾 报告过类似事件 ，包括智能体在训练期间突破沙箱限制、访问公共互联网并借此在任务中作弊，以及测试期间发生的类似事件。在我们近期发布的跨行业 《前沿 AI 风险报告》（Frontier Risk Report） 中，我们还 记录了 数十起涉及各主要 AI 公司智能体的其他事件。 为增进公众对 AI 行为倾向的理解，我们认为 AI 公司应系统地追踪此类事件 1 ，并定期对其中最严重的事件进行更深入的调查。尽管事件调查可以聚焦于许多有价值的问题， 2 但其中一个尤为重要的问题或许在于：理解 未对齐行为背后的深层“ 动机 ”，以及这些动机如何由训练和部署条件所塑造。 为增强公众信任并使相关情况更加清晰，这类调查最好由独立研究人员开展，或至少由他们进行深入审查，使其能够查阅公司不愿公开披露的证据。 本文将介绍针对某起事件背后的动机，全面的第三方调查可以如何开展，主要包括： 我们认为一项全面的动机调查应重点关注哪些核心 问题 ； 独立研究人员要充分开展这类调查，需要哪些 访问权限和资源 ； 应如何处理 删节和信息共享 ，以确保决策者和公众能够获得准确的信息，同时保护公司的敏感信息。 METR 很希望能够与 AI 公司合作，对影响尤为重大的事件开展调查；与此同时，我们目前也在建设相关能力，以便更加系统地开展此类调查，例如将其纳入未来版本的《前沿 AI 风险报告》。 3 AI 行为倾向调查应重点关注的问题 一项调查具体应关注哪些问题，很大程度上取决于事件本身的细节，以及其中出现了哪些类型的未对齐行为。尽管如此，对于我们近期 《前沿 AI 风险报告》 中所描述的几类事件——即智能体为了完成所接到的任务，以非预期方式规避安全防护措施并欺骗用户——以下这组问题可以作为确定深入调查范围时的参考框架： 未对齐事件 实际事件概览。 总体来看，在本次调查范围内，智能体在“实际运行中”出现未对齐行为的频率如何？这些行为具有哪些性质？ 我们已知有多少起此类事件？ 这些事件分别涉及哪些模型？各模型涉及的事件有多少？ 这些事件涉及到哪些使用场景（如训练、评估、内部使用）及适用的细分场景（如网络安全评估）？各场景涉及的事件有多少？ 总体而言，这些事件涉及哪些类型的未对齐行为（如入侵、窃取、社会工程攻击）？这些行为的严重程度如何？ 重点事件分析。 在我们发现的事件中，最严重或最值得关注的几起事件具体发生了什么？ 基本信息： 涉及哪些模型，以及这些模型与内部部署或公开部署的模型有何关系。 4 事件所属的使用场景（训练、评估、内部使用），以及适用的细分场景。 提示词、指令及其他上下文信息（如记忆）。 当时采取的安全防护措施，以及这些措施与通常使用模型时的情况有何不同。 相关智能体先后采取了哪些关键行动？ 对于智能体的推理过程，以及这一过程在事件中如何演变，我们掌握了哪些信息？ 事件中是否存在智能体之间未经授权的协作或串通？如果有，具体是如何发生的？ 事件中是否有智能体试图掩盖未对齐行为的证据或欺骗人类？如果有，具体采取了哪些手段？ 事件分析的局限性 事件排查的完整性。 我们有多大把握认为，已经掌握了所有发生过的严重未对齐事件？例如： 在本次调查范围内，是否有某些类型的智能体活动未被记录，或其记录因其他原因无法检索或批量检查？ 是否有证据表明，AI 智能体自身可能关闭过日志记录，或在事后删除、修改过日志？ 我们对智能体活动日志执行的查询，是否可能遗漏某些严重未对齐事件？ 是否有证据表明，用于扫描和筛选查询结果的 AI 工具可能漏报严重未对齐事件，无论是由于无意的失误，还是故意示弱（sandbagging）？ 事件分析的可信度。 我们有多大把握认为，已经准确刻画了这些事件中智能体的行为和推理过程？例如： 这些模型能在多大程度上，稳定、如实地在思维链中表达关键推理过程？ 模型是否在思维链中为不当行为寻找合理化解释，从而可能影响我们的分析？ 是否有理由认为，相关模型的训练方式或架构会使其思维链的可信度显著降低？ 模型是否操纵或篡改了我们审阅的轨迹记录，从而可能影响我们的分析？ 是否有证据表明，用于分析这些行为的 AI 工具可能给出具有误导性的分析，无论是由于无意的失误，还是蓄意串通？ 引发未对齐行为的情境 针对这些问题，调查人员可以开展采样实验，以了解智能体在什么条件下会出现严重未对齐行为，以及这类行为在合理可\n🔗 https://metr.org/zh-Hans/blog/2026-07-28-investigating-ai-propensities-after-incidents/\n\n## 2026-09-21 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-09-21 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-09-21 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 10,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-09-21 发现 3 个新项目（共 5 个项目）: 🆕 affaan-m/ECC 给编程智能体加技能、记忆和安全补丁的优化神器。 🔗 https...",
+   "body": "# 🔥 GitHub Trending\n\n2026-09-21\n\n发现 3 个新项目（共 5 个项目）:\n\n**🆕 affaan-m/ECC**\n  给编程智能体加技能、记忆和安全补丁的优化神器。\n  🔗 https://github.com/affaan-m/ECC\n\n---\n**🆕 BuilderIO/agent-native**\n  帮你快速搭建智能体应用的开发框架。\n  🔗 https://github.com/BuilderIO/agent-native\n\n---\n**cloudflare/security-audit-skill**\n  让编程智能体自动做多阶段安全审计并输出标准报告。\n  🔗 https://github.com/cloudflare/security-audit-skill\n\n---\n**trycua/cua**\n  搞定跨系统电脑操控的开源驱动、训练和评估平台。\n  🔗 https://github.com/trycua/cua\n\n---\n**🆕 anthropics/financial-services**\n  官方开源的金融服务行业大模型应用示例库。\n  🔗 https://github.com/anthropics/financial-services",
+   "links": [
+    {
+     "title": "affaan-m/ECC",
+     "url": "https://github.com/affaan-m/ECC"
+    },
+    {
+     "title": "BuilderIO/agent-native",
+     "url": "https://github.com/BuilderIO/agent-native"
+    },
+    {
+     "title": "cloudflare/security-audit-skill",
+     "url": "https://github.com/cloudflare/security-audit-skill"
+    },
+    {
+     "title": "trycua/cua",
+     "url": "https://github.com/trycua/cua"
+    },
+    {
+     "title": "anthropics/financial-services",
+     "url": "https://github.com/anthropics/financial-services"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-09-21 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-09-21 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "no_update",
+   "summary": "2026-09-21 OpenAI News 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-09-21 OpenAI News\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "content",
+   "summary": "2026-09-21 LangChain Blog 发现 1 篇新文章: Can Jev Be a Better Agent Evaluator? 📅 Sun, 20 Se 原文摘要：We...",
+   "body": "## 2026-09-21 LangChain Blog\n\n发现 1 篇新文章:\n\n**Can Jev Be a Better Agent Evaluator?**\n📅 Sun, 20 Se\n原文摘要：We tested using Jev-as-a-Judge against LLM judges on accuracy, repeatability, latency, and cost to see whether System One models could offer a new approach to agent evaluation.\n🔗 https://www.langchain.com/blog/jev-agent-evals-langsmith",
+   "links": [
+    {
+     "title": "https://www.langchain.com/blog/jev-agent-evals-langsmith",
+     "url": "https://www.langchain.com/blog/jev-agent-evals-langsmith"
+    }
+   ]
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "no_update",
+   "summary": "2026-09-21 Hugging Face Blog 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-09-21 Hugging Face Blog\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "no_update",
+   "summary": "2026-09-21 Google Research 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-09-21 Google Research\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "content",
+   "summary": "2026-09-21 METR 发现 1 篇新文章: 独立研究人员如何在未对齐事件发生后调查 AI 的行为倾向 📅 Tue, 28 Ju 原文摘要：更新（2026 年 9 月 5 日） ：我...",
+   "body": "## 2026-09-21 METR\n\n发现 1 篇新文章:\n\n**独立研究人员如何在未对齐事件发生后调查 AI 的行为倾向**\n📅 Tue, 28 Ju\n原文摘要：更新（2026 年 9 月 5 日） ：我们更新了建议调查人员关注的问题，使其表述更加精确并纳入对局限性的考量。最初发布的问题见 更新日志 。 AI 智能体有时会自主实施一系列复杂且持续的行动，明显违背用户和开发者的意图。例如，OpenAI 报告称 ，其部分内部前沿 AI 智能体曾自主入侵 Hugging Face，试图在一项网络安全基准测试中作弊。Anthropic 也曾 报告过类似事件 ，包括智能体在训练期间突破沙箱限制、访问公共互联网并借此在任务中作弊，以及测试期间发生的类似事件。在我们近期发布的跨行业 《前沿 AI 风险报告》（Frontier Risk Report） 中，我们还 记录了 数十起涉及各主要 AI 公司智能体的其他事件。 为增进公众对 AI 行为倾向的理解，我们认为 AI 公司应系统地追踪此类事件 1 ，并定期对其中最严重的事件进行更深入的调查。尽管事件调查可以聚焦于许多有价值的问题， 2 但其中一个尤为重要的问题或许在于：理解 未对齐行为背后的深层“ 动机 ”，以及这些动机如何由训练和部署条件所塑造。 为增强公众信任并使相关情况更加清晰，这类调查最好由独立研究人员开展，或至少由他们进行深入审查，使其能够查阅公司不愿公开披露的证据。 本文将介绍针对某起事件背后的动机，全面的第三方调查可以如何开展，主要包括： 我们认为一项全面的动机调查应重点关注哪些核心 问题 ； 独立研究人员要充分开展这类调查，需要哪些 访问权限和资源 ； 应如何处理 删节和信息共享 ，以确保决策者和公众能够获得准确的信息，同时保护公司的敏感信息。 METR 很希望能够与 AI 公司合作，对影响尤为重大的事件开展调查；与此同时，我们目前也在建设相关能力，以便更加系统地开展此类调查，例如将其纳入未来版本的《前沿 AI 风险报告》。 3 AI 行为倾向调查应重点关注的问题 一项调查具体应关注哪些问题，很大程度上取决于事件本身的细节，以及其中出现了哪些类型的未对齐行为。尽管如此，对于我们近期 《前沿 AI 风险报告》 中所描述的几类事件——即智能体为了完成所接到的任务，以非预期方式规避安全防护措施并欺骗用户——以下这组问题可以作为确定深入调查范围时的参考框架： 未对齐事件 实际事件概览。 总体来看，在本次调查范围内，智能体在“实际运行中”出现未对齐行为的频率如何？这些行为具有哪些性质？ 我们已知有多少起此类事件？ 这些事件分别涉及哪些模型？各模型涉及的事件有多少？ 这些事件涉及到哪些使用场景（如训练、评估、内部使用）及适用的细分场景（如网络安全评估）？各场景涉及的事件有多少？ 总体而言，这些事件涉及哪些类型的未对齐行为（如入侵、窃取、社会工程攻击）？这些行为的严重程度如何？ 重点事件分析。 在我们发现的事件中，最严重或最值得关注的几起事件具体发生了什么？ 基本信息： 涉及哪些模型，以及这些模型与内部部署或公开部署的模型有何关系。 4 事件所属的使用场景（训练、评估、内部使用），以及适用的细分场景。 提示词、指令及其他上下文信息（如记忆）。 当时采取的安全防护措施，以及这些措施与通常使用模型时的情况有何不同。 相关智能体先后采取了哪些关键行动？ 对于智能体的推理过程，以及这一过程在事件中如何演变，我们掌握了哪些信息？ 事件中是否存在智能体之间未经授权的协作或串通？如果有，具体是如何发生的？ 事件中是否有智能体试图掩盖未对齐行为的证据或欺骗人类？如果有，具体采取了哪些手段？ 事件分析的局限性 事件排查的完整性。 我们有多大把握认为，已经掌握了所有发生过的严重未对齐事件？例如： 在本次调查范围内，是否有某些类型的智能体活动未被记录，或其记录因其他原因无法检索或批量检查？ 是否有证据表明，AI 智能体自身可能关闭过日志记录，或在事后删除、修改过日志？ 我们对智能体活动日志执行的查询，是否可能遗漏某些严重未对齐事件？ 是否有证据表明，用于扫描和筛选查询结果的 AI 工具可能漏报严重未对齐事件，无论是由于无意的失误，还是故意示弱（sandbagging）？ 事件分析的可信度。 我们有多大把握认为，已经准确刻画了这些事件中智能体的行为和推理过程？例如： 这些模型能在多大程度上，稳定、如实地在思维链中表达关键推理过程？ 模型是否在思维链中为不当行为寻找合理化解释，从而可能影响我们的分析？ 是否有理由认为，相关模型的训练方式或架构会使其思维链的可信度显著降低？ 模型是否操纵或篡改了我们审阅的轨迹记录，从而可能影响我们的分析？ 是否有证据表明，用于分析这些行为的 AI 工具可能给出具有误导性的分析，无论是由于无意的失误，还是蓄意串通？ 引发未对齐行为的情境 针对这些问题，调查人员可以开展采样实验，以了解智能体在什么条件下会出现严重未对齐行为，以及这类行为在合理可\n🔗 https://metr.org/zh-Hans/blog/2026-07-28-investigating-ai-propensities-after-incidents/",
+   "links": [
+    {
+     "title": "https://metr.org/zh-Hans/blog/2026-07-28-investigating-ai-propensities-after-incidents/",
+     "url": "https://metr.org/zh-Hans/blog/2026-07-28-investigating-ai-propensities-after-incidents/"
+    }
+   ]
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-09-21 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-09-21 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-09-21 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-09-21 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-09-21 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-09-21 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-09-21T05:31:27+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

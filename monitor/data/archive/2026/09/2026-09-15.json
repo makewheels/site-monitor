@@ -1,0 +1,149 @@
+{
+ "date": "2026-09-15",
+ "report_id": "2026-09-15-fcd473370f",
+ "created_at": "2026-09-15T05:32:01",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-09-15\n\n# 🔥 GitHub Trending\n\n2026-09-15\n\n发现 4 个新项目（共 5 个项目）:\n\n**JustVugg/colibri**\n  纯C零依赖，用现有硬件跑前沿MoE大模型\n  🔗 https://github.com/JustVugg/colibri\n\n---\n**🆕 alibaba/open-code-review**\n  阿里级混合架构代码审查，确定性流水线加LLM精准行级批注\n  🔗 https://github.com/alibaba/open-code-review\n\n---\n**🆕 multimodal-art-projection/YuE**\n  前沿音乐生成，支持符号规划、零样本翻唱和智能编辑\n  🔗 https://github.com/multimodal-art-projection/YuE\n\n---\n**🆕 debpalash/VoiceStudio**\n  全本地开源语音工具，克隆、配音、转录、有声书一站式搞定\n  🔗 https://github.com/debpalash/VoiceStudio\n\n---\n**🆕 666ghj/MiroFish**\n  简洁通用的群体智能引擎，万物皆可预测\n  🔗 https://github.com/666ghj/MiroFish\n\n## 2026-09-15 Anthropic Engineering\n\n今日无新文章\n\n## 2026-09-15 OpenAI News\n\n发现 1 篇新文章:\n\n**How Fyxer built an AI executive assistant people trust**\n📅 Mon, 14 Se\n原文摘要：Fyxer uses OpenAI models, fine-tuning, memory, and real user feedback to organize inboxes and draft emails in each user’s voice.\n🔗 https://openai.com/index/fyxer\n\n## 2026-09-15 LangChain Blog\n\n发现 2 篇新文章:\n\n**How We Built LangChain’s Paid Media Agent**\n📅 Mon, 14 Se\n原文摘要：How LangChain built a paid media agent to analyze campaign performance, optimize ads, propose changes, and turn marketing data into action.\n🔗 https://www.langchain.com/blog/paid-media-agent\n\n---\n\n**How we built LangChain’s GTM Agent**\n📅 Mon, 14 Se\n原文摘要：Learn how we built a GTM agent that increased lead conversion by 250% while saving each sales rep 40 hours per month\n🔗 https://www.langchain.com/blog/how-we-built-langchains-gtm-agent\n\n## 2026-09-15 Hugging Face Blog\n\n发现 1 篇新文章:\n\n**Async GRPO with LoRA across HF Jobs: a bucket, a proxy, and no NCCL**\n📅 Thu, 10 Se\n🔗 https://huggingface.co/blog/asyncgrpo-lora-hfjobs\n\n## 2026-09-15 Google Research\n\n今日无新文章(追踪 20 篇)\n\n## 2026-09-15 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-09-15 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-09-15 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-09-15 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 10,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-09-15 发现 4 个新项目（共 5 个项目）: JustVugg/colibri 纯C零依赖，用现有硬件跑前沿MoE大模型 🔗 https:...",
+   "body": "# 🔥 GitHub Trending\n\n2026-09-15\n\n发现 4 个新项目（共 5 个项目）:\n\n**JustVugg/colibri**\n  纯C零依赖，用现有硬件跑前沿MoE大模型\n  🔗 https://github.com/JustVugg/colibri\n\n---\n**🆕 alibaba/open-code-review**\n  阿里级混合架构代码审查，确定性流水线加LLM精准行级批注\n  🔗 https://github.com/alibaba/open-code-review\n\n---\n**🆕 multimodal-art-projection/YuE**\n  前沿音乐生成，支持符号规划、零样本翻唱和智能编辑\n  🔗 https://github.com/multimodal-art-projection/YuE\n\n---\n**🆕 debpalash/VoiceStudio**\n  全本地开源语音工具，克隆、配音、转录、有声书一站式搞定\n  🔗 https://github.com/debpalash/VoiceStudio\n\n---\n**🆕 666ghj/MiroFish**\n  简洁通用的群体智能引擎，万物皆可预测\n  🔗 https://github.com/666ghj/MiroFish",
+   "links": [
+    {
+     "title": "JustVugg/colibri",
+     "url": "https://github.com/JustVugg/colibri"
+    },
+    {
+     "title": "alibaba/open-code-review",
+     "url": "https://github.com/alibaba/open-code-review"
+    },
+    {
+     "title": "multimodal-art-projection/YuE",
+     "url": "https://github.com/multimodal-art-projection/YuE"
+    },
+    {
+     "title": "debpalash/VoiceStudio",
+     "url": "https://github.com/debpalash/VoiceStudio"
+    },
+    {
+     "title": "666ghj/MiroFish",
+     "url": "https://github.com/666ghj/MiroFish"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-09-15 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-09-15 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-09-15 OpenAI News 发现 1 篇新文章: How Fyxer built an AI executive assistant people trust 📅 Mon,...",
+   "body": "## 2026-09-15 OpenAI News\n\n发现 1 篇新文章:\n\n**How Fyxer built an AI executive assistant people trust**\n📅 Mon, 14 Se\n原文摘要：Fyxer uses OpenAI models, fine-tuning, memory, and real user feedback to organize inboxes and draft emails in each user’s voice.\n🔗 https://openai.com/index/fyxer",
+   "links": [
+    {
+     "title": "https://openai.com/index/fyxer",
+     "url": "https://openai.com/index/fyxer"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "content",
+   "summary": "2026-09-15 LangChain Blog 发现 2 篇新文章: How We Built LangChain’s Paid Media Agent 📅 Mon, 14 Se 原文摘...",
+   "body": "## 2026-09-15 LangChain Blog\n\n发现 2 篇新文章:\n\n**How We Built LangChain’s Paid Media Agent**\n📅 Mon, 14 Se\n原文摘要：How LangChain built a paid media agent to analyze campaign performance, optimize ads, propose changes, and turn marketing data into action.\n🔗 https://www.langchain.com/blog/paid-media-agent\n\n---\n\n**How we built LangChain’s GTM Agent**\n📅 Mon, 14 Se\n原文摘要：Learn how we built a GTM agent that increased lead conversion by 250% while saving each sales rep 40 hours per month\n🔗 https://www.langchain.com/blog/how-we-built-langchains-gtm-agent",
+   "links": [
+    {
+     "title": "https://www.langchain.com/blog/paid-media-agent",
+     "url": "https://www.langchain.com/blog/paid-media-agent"
+    },
+    {
+     "title": "https://www.langchain.com/blog/how-we-built-langchains-gtm-agent",
+     "url": "https://www.langchain.com/blog/how-we-built-langchains-gtm-agent"
+    }
+   ]
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "content",
+   "summary": "2026-09-15 Hugging Face Blog 发现 1 篇新文章: Async GRPO with LoRA across HF Jobs: a bucket, a proxy,...",
+   "body": "## 2026-09-15 Hugging Face Blog\n\n发现 1 篇新文章:\n\n**Async GRPO with LoRA across HF Jobs: a bucket, a proxy, and no NCCL**\n📅 Thu, 10 Se\n🔗 https://huggingface.co/blog/asyncgrpo-lora-hfjobs",
+   "links": [
+    {
+     "title": "https://huggingface.co/blog/asyncgrpo-lora-hfjobs",
+     "url": "https://huggingface.co/blog/asyncgrpo-lora-hfjobs"
+    }
+   ]
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "no_update",
+   "summary": "2026-09-15 Google Research 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-09-15 Google Research\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-09-15 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-09-15 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-09-15 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-09-15 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-09-15 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-09-15 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-09-15 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-09-15 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-09-15T05:32:06+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

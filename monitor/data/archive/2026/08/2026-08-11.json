@@ -1,0 +1,182 @@
+{
+ "date": "2026-08-11",
+ "report_id": "2026-08-11-b790b2acf4",
+ "created_at": "2026-08-11T05:33:09",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-08-11\n\n# 🔥 GitHub Trending\n\n2026-08-11\n\n发现 4 个新项目（共 5 个项目）:\n\n**🆕 semantica-agi/semantica**\n  图原生基础设施，让AI系统具备上下文感知与可问责能力\n  🔗 https://github.com/semantica-agi/semantica\n\n---\n**msitarzewski/agency-agents**\n  一站式AI智能体团队，前端、社区运营、创意注入等角色随叫随到\n  🔗 https://github.com/msitarzewski/agency-agents\n\n---\n**🆕 NanmiCoder/MediaCrawler**\n  国内主流社交平台笔记、视频、评论、帖子爬虫全家桶\n  🔗 https://github.com/NanmiCoder/MediaCrawler\n\n---\n**🆕 addyosmani/agent-skills**\n  面向AI编程智能体的生产级工程技能集\n  🔗 https://github.com/addyosmani/agent-skills\n\n---\n**🆕 paperclipai/paperclip**\n  开源AI智能体工作管理平台，团队协作调度一把抓\n  🔗 https://github.com/paperclipai/paperclip\n\n## 2026-08-11 Anthropic Engineering\n\n今日无新文章\n\n## 2026-08-11 OpenAI News\n\n发现 6 篇新文章:\n\n**OpenAI’s letter to Governor Abbott on responsible AI infrastructure in Texas**\n📅 Mon, 10 Au\n原文摘要：OpenAI sent Governor Greg Abbott a letter outlining its commitment to responsible AI infrastructure in Texas. The letter supports reliable, transparent growth that benefits Texans.\n🔗 https://openai.com/index/responsible-ai-infrastructure-texas\n\n---\n\n**Model ML completes finance work more efficiently with GPT-5.6 Sol**\n📅 Mon, 10 Au\n原文摘要：Model ML uses GPT-5.6 Sol to carry finance work from research and analysis through editable, traceable PowerPoint decks and Excel workbooks.\n🔗 https://openai.com/index/model-ml\n\n---\n\n**What building an AI-native finance function taught me**\n📅 Mon, 10 Au\n原文摘要：OpenAI CFO Sarah Friar shares five lessons for building an AI-native finance function, from automated forecasting to stronger controls and AI ROI.\n🔗 https://openai.com/index/building-an-ai-native-finance-function\n\n---\n\n**Expanding Daybreak as the Cyber Defense Window Narrows**\n📅 Mon, 10 Au\n原文摘要：Meet GPT-5.6-Cyber, OpenAI’s cybersecurity-specific model available through Daybreak Red for authorized vulnerability research, exploit validation, and security testing.\n🔗 https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows\n\n---\n\n**Putting frontier cyber models in more trusted hands**\n📅 Mon, 10 Au\n原文摘要：Approved Daybreak partners can use OpenAI’s frontier cyber models to deliver authorized, governed cybersecurity services to customers.\n🔗 https://openai.com/index/putting-frontier-cyber-models-in-more-trusted-hands\n\n---\n\n**Premium seats are coming to ChatGPT Business**\n📅 Mon, 10 Au\n原文摘要：Premium seats are coming to ChatGPT Business. Sign up by August 20 to get $100 in workspace credits and unlock higher usage for your team's most demanding work.\n🔗 https://openai.com/index/premium-seats-chatgpt-business\n\n## 2026-08-11 LangChain Blog\n\n今日无新文章（追踪 20 篇）\n\n## 2026-08-11 GitHub Copilot CLI\n\n## 1.0.79 - 2026-08-10\n\n- The /sandbox configuration dialog shows where sandbox settings are stored in settings.json\n- Add support for enterprise allow-auto-only policy so /allow-all auto works while full allow-all remains blocked.\n- Allow enterprise-managed sandbox policy to enforce a proxy URL while credentials remain user-controlled\n- A tool directory inside your workspace that is on PATH (.venv/bin, node_modules/.bin, an in-repo GOPATH) no longer turns that part of the workspace read-only in the sandbox\n- The /sandbox configuration dialog groups the git, gh, and (on macOS) keychain settings under a new Auth tab, and the settings keys moved from `sandbox.gitAuth`/`sandbox.ghAuth` to `sandbox.auth.git`/`sandbox.auth.gh`. There is no migration: the old keys are ignored in settings files, and SDK requests that still send them are rejected as invalid rather than ignored\n- Added a `worktreeBaseRef` setting that controls whether `/worktree`, `/worktree new`, and `--worktree` start from HEAD or the remote default branch. All three now default to HEAD; previously `--worktree` started from the remote default branch.\n- Model picker groups models into Recent, Recommended, New, and other sections, and Shift+Tab switches grouping views.\n- Large monorepos now use tgrep ([trigram-indexed grep for fast regex search in large codebases](https://github.com/microsoft/tgrep)) instead of ripgrep\n- Agent Plugins spec plugins can now ship extensions under a com.github.copilot/extensions/ directory\n- Add support for the kimi-k3 model\n- Combine `--plan` with `--mode autopilot` to plan first and then implement without waiting for approval\n- The `/app` command now opens the current session in the GitHub Copilot desktop app instead of landing on Home with the wrong folder (requires GitHub Copilot app 1.1.3 or later)\n- On macOS, a sandbox read-only path nested inside a writable one now stays read-only instead of inheriting the write permission from the wider path\n- On macOS, sandboxed commands can use UNIX-domain sockets again, so tools that talk over a local IPC pipe (tsx, vite, esbuild, jest workers) no longer fail with `listen EPERM`\n- Sandboxed commands work when the working directory lives on a Windows Dev Drive\n- `/theme` now only shows its deprecation notice for a valid color mode, so a mistyped mode no longer suggests an invalid command or hides the notice from your next valid `/theme`.\n- Sandboxed git now authenticates to Azure DevOps, GitHub Enterprise Server, GitLab, and other non-GitHub remotes you have stored HTTPS credentials for\n- Ask user multi-select prompts include an Other option for free-text answers\n- Improve teleported subagent /tasks navigation with nested tree browsing, current/all and finished-task filters, and a live timeline you can steer\n- A rare internal delay no longer prints a diagnostic warning on top of the interactive UI\n- A failed session-history load no longer leaves the timeline permanently empty: the failure was silently discarded, so the transcript stayed blank for the rest of the session with nothing logged. It is now retried, and reported in the transcript and the log if it still fails\n- Resuming a long session no longer collapses the timeline's scroll range while history renders in the background: entries that had not finished rendering were published as if they did not exist, so the scrollbar and scroll position jumped until the background render caught up\n- Manage multiple concurrent sessions from the Sessions tab and sidebar\n- Sandboxed wrapper builds (make and friends) get the dev tool caches their recipes need, based on the build manifests in the working directory\n- Prompt pinning is off by default; set pinnedPrompts to true to enable it.\n- Sandboxed commands can reach the network again on recent Windows builds, where every outbound connection was blocked even with outbound access enabled and no proxy configured\n- Plugin custom agents honor deferred-tool-loading frontmatter\n- Use `/worktree new` to start a new session in a new worktree\n- A sandbox that cannot start an MCP server now fails in seconds instead of stalling the session, and sandbox startup failures for both MCP and language servers now say the sandbox was at fault and how to fix or opt out of it\n- Login links are clickable during web and device-code sign-in\n- Pin the current prompt one row higher, in the row the tab bar already reserves, so it keeps the shape of the prompt it copies while costing the timeline one row less\n- Leave the pinned prompt off by default on terminals under 30 rows, where it would crowd the output; set pinnedPrompts explicitly to override at any size\n- Compute /context attribution against the Auto-resolved model so token totals are accurate for Free/Student users\n- Disabling an extension no longer breaks elicitation, canvases, or tool permission prompts for other extensions\n- A prompt stashed with ctrl+s now stays with the session it was typed for, so switching away and back and pressing ctrl+s restores it instead of finding it gone\n- On Linux, searches and most shell commands blocked by the sandbox now offer to re-run outside it\n- BREAKING: the sandbox setting `allowDevToolCaches` is renamed `allowDevToolAccess`, since it grants dev-tool config and registries too, not just caches. The old key is no longer read and is ignored silently, so an existing `false` opt-out reverts to the default (on). Rename it in settings.json and in any managed/MDM policy.\n- Add /sandbox policy to show effective sandbox paths, denials, and network access\n- Queue prompts, shell commands, and supported slash commands in local sessions to run in order after the current task finishes\n- Set \"autoUpdate\": true on an extraKnownMarketplaces entry in your user settings to auto-update its plugins at session start\n- /sandbox tags inactive settings as (disabled) and explains why they are locked, and documents dev tool caches in copilot help sandbox\n- Show \"pending · ctrl+c to cancel\" for in-flight steering prompts\n- Make /model session-scoped by default, and use /config model to set defaults for future sessions.\n- Pin the current prompt as a single line instead of a three-row framed block, so it reads as chrome and returns rows to the timeline; with the tab bar on it sits directly below the tabs and costs the timeline nothing\n\n## 2026-08-11 Hugging Face Blog\n\n发现 3 篇新文章:\n\n**Build Low-Latency Multilingual Voice Agents: Open Weights & Full Deployment Control with NVIDIA Magpie TTS**\n📅 Mon, 10 Au\n🔗 https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents\n\n---\n\n**Making Knowledge Distillation Cheap Enough to Run at Scale**\n📅 Mon, 10 Au\n🔗 https://huggingface.co/blog/MultiverseComputingCAI/efficient-knowledge-distillation\n\n---\n\n**Meta is back with Muse Glimmer: local, agentic, multimodal, and open source**\n📅 Mon, 10 Au\n🔗 https://huggingface.co/blog/muse-glimmer\n\n## 2026-08-11 Google Research\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-11 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-11 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-08-11 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-11 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 11,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-08-11 发现 4 个新项目（共 5 个项目）: 🆕 semantica-agi/semantica 图原生基础设施，让AI系统具备上下文感知...",
+   "body": "# 🔥 GitHub Trending\n\n2026-08-11\n\n发现 4 个新项目（共 5 个项目）:\n\n**🆕 semantica-agi/semantica**\n  图原生基础设施，让AI系统具备上下文感知与可问责能力\n  🔗 https://github.com/semantica-agi/semantica\n\n---\n**msitarzewski/agency-agents**\n  一站式AI智能体团队，前端、社区运营、创意注入等角色随叫随到\n  🔗 https://github.com/msitarzewski/agency-agents\n\n---\n**🆕 NanmiCoder/MediaCrawler**\n  国内主流社交平台笔记、视频、评论、帖子爬虫全家桶\n  🔗 https://github.com/NanmiCoder/MediaCrawler\n\n---\n**🆕 addyosmani/agent-skills**\n  面向AI编程智能体的生产级工程技能集\n  🔗 https://github.com/addyosmani/agent-skills\n\n---\n**🆕 paperclipai/paperclip**\n  开源AI智能体工作管理平台，团队协作调度一把抓\n  🔗 https://github.com/paperclipai/paperclip",
+   "links": [
+    {
+     "title": "semantica-agi/semantica",
+     "url": "https://github.com/semantica-agi/semantica"
+    },
+    {
+     "title": "msitarzewski/agency-agents",
+     "url": "https://github.com/msitarzewski/agency-agents"
+    },
+    {
+     "title": "NanmiCoder/MediaCrawler",
+     "url": "https://github.com/NanmiCoder/MediaCrawler"
+    },
+    {
+     "title": "addyosmani/agent-skills",
+     "url": "https://github.com/addyosmani/agent-skills"
+    },
+    {
+     "title": "paperclipai/paperclip",
+     "url": "https://github.com/paperclipai/paperclip"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-08-11 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-08-11 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-08-11 OpenAI News 发现 6 篇新文章: OpenAI’s letter to Governor Abbott on responsible AI infrastr...",
+   "body": "## 2026-08-11 OpenAI News\n\n发现 6 篇新文章:\n\n**OpenAI’s letter to Governor Abbott on responsible AI infrastructure in Texas**\n📅 Mon, 10 Au\n原文摘要：OpenAI sent Governor Greg Abbott a letter outlining its commitment to responsible AI infrastructure in Texas. The letter supports reliable, transparent growth that benefits Texans.\n🔗 https://openai.com/index/responsible-ai-infrastructure-texas\n\n---\n\n**Model ML completes finance work more efficiently with GPT-5.6 Sol**\n📅 Mon, 10 Au\n原文摘要：Model ML uses GPT-5.6 Sol to carry finance work from research and analysis through editable, traceable PowerPoint decks and Excel workbooks.\n🔗 https://openai.com/index/model-ml\n\n---\n\n**What building an AI-native finance function taught me**\n📅 Mon, 10 Au\n原文摘要：OpenAI CFO Sarah Friar shares five lessons for building an AI-native finance function, from automated forecasting to stronger controls and AI ROI.\n🔗 https://openai.com/index/building-an-ai-native-finance-function\n\n---\n\n**Expanding Daybreak as the Cyber Defense Window Narrows**\n📅 Mon, 10 Au\n原文摘要：Meet GPT-5.6-Cyber, OpenAI’s cybersecurity-specific model available through Daybreak Red for authorized vulnerability research, exploit validation, and security testing.\n🔗 https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows\n\n---\n\n**Putting frontier cyber models in more trusted hands**\n📅 Mon, 10 Au\n原文摘要：Approved Daybreak partners can use OpenAI’s frontier cyber models to deliver authorized, governed cybersecurity services to customers.\n🔗 https://openai.com/index/putting-frontier-cyber-models-in-more-trusted-hands\n\n---\n\n**Premium seats are coming to ChatGPT Business**\n📅 Mon, 10 Au\n原文摘要：Premium seats are coming to ChatGPT Business. Sign up by August 20 to get $100 in workspace credits and unlock higher usage for your team's most demanding work.\n🔗 https://openai.com/index/premium-seats-chatgpt-business",
+   "links": [
+    {
+     "title": "https://openai.com/index/responsible-ai-infrastructure-texas",
+     "url": "https://openai.com/index/responsible-ai-infrastructure-texas"
+    },
+    {
+     "title": "https://openai.com/index/model-ml",
+     "url": "https://openai.com/index/model-ml"
+    },
+    {
+     "title": "https://openai.com/index/building-an-ai-native-finance-function",
+     "url": "https://openai.com/index/building-an-ai-native-finance-function"
+    },
+    {
+     "title": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
+     "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows"
+    },
+    {
+     "title": "https://openai.com/index/putting-frontier-cyber-models-in-more-trusted-hands",
+     "url": "https://openai.com/index/putting-frontier-cyber-models-in-more-trusted-hands"
+    },
+    {
+     "title": "https://openai.com/index/premium-seats-chatgpt-business",
+     "url": "https://openai.com/index/premium-seats-chatgpt-business"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "no_update",
+   "summary": "2026-08-11 LangChain Blog 今日无新文章（追踪 20 篇）",
+   "body": "## 2026-08-11 LangChain Blog\n\n今日无新文章（追踪 20 篇）",
+   "links": []
+  },
+  {
+   "topic": "github_copilot_cli",
+   "topic_name": "GitHub Copilot CLI",
+   "title": "GitHub Copilot CLI",
+   "status": "content",
+   "summary": "2026-08-11 GitHub Copilot CLI 1.0.79 - 2026-08-10 The /sandbox configuration dialog shows where...",
+   "body": "## 2026-08-11 GitHub Copilot CLI\n\n## 1.0.79 - 2026-08-10\n\n- The /sandbox configuration dialog shows where sandbox settings are stored in settings.json\n- Add support for enterprise allow-auto-only policy so /allow-all auto works while full allow-all remains blocked.\n- Allow enterprise-managed sandbox policy to enforce a proxy URL while credentials remain user-controlled\n- A tool directory inside your workspace that is on PATH (.venv/bin, node_modules/.bin, an in-repo GOPATH) no longer turns that part of the workspace read-only in the sandbox\n- The /sandbox configuration dialog groups the git, gh, and (on macOS) keychain settings under a new Auth tab, and the settings keys moved from `sandbox.gitAuth`/`sandbox.ghAuth` to `sandbox.auth.git`/`sandbox.auth.gh`. There is no migration: the old keys are ignored in settings files, and SDK requests that still send them are rejected as invalid rather than ignored\n- Added a `worktreeBaseRef` setting that controls whether `/worktree`, `/worktree new`, and `--worktree` start from HEAD or the remote default branch. All three now default to HEAD; previously `--worktree` started from the remote default branch.\n- Model picker groups models into Recent, Recommended, New, and other sections, and Shift+Tab switches grouping views.\n- Large monorepos now use tgrep ([trigram-indexed grep for fast regex search in large codebases](https://github.com/microsoft/tgrep)) instead of ripgrep\n- Agent Plugins spec plugins can now ship extensions under a com.github.copilot/extensions/ directory\n- Add support for the kimi-k3 model\n- Combine `--plan` with `--mode autopilot` to plan first and then implement without waiting for approval\n- The `/app` command now opens the current session in the GitHub Copilot desktop app instead of landing on Home with the wrong folder (requires GitHub Copilot app 1.1.3 or later)\n- On macOS, a sandbox read-only path nested inside a writable one now stays read-only instead of inheriting the write permission from the wider path\n- On macOS, sandboxed commands can use UNIX-domain sockets again, so tools that talk over a local IPC pipe (tsx, vite, esbuild, jest workers) no longer fail with `listen EPERM`\n- Sandboxed commands work when the working directory lives on a Windows Dev Drive\n- `/theme` now only shows its deprecation notice for a valid color mode, so a mistyped mode no longer suggests an invalid command or hides the notice from your next valid `/theme`.\n- Sandboxed git now authenticates to Azure DevOps, GitHub Enterprise Server, GitLab, and other non-GitHub remotes you have stored HTTPS credentials for\n- Ask user multi-select prompts include an Other option for free-text answers\n- Improve teleported subagent /tasks navigation with nested tree browsing, current/all and finished-task filters, and a live timeline you can steer\n- A rare internal delay no longer prints a diagnostic warning on top of the interactive UI\n- A failed session-history load no longer leaves the timeline permanently empty: the failure was silently discarded, so the transcript stayed blank for the rest of the session with nothing logged. It is now retried, and reported in the transcript and the log if it still fails\n- Resuming a long session no longer collapses the timeline's scroll range while history renders in the background: entries that had not finished rendering were published as if they did not exist, so the scrollbar and scroll position jumped until the background render caught up\n- Manage multiple concurrent sessions from the Sessions tab and sidebar\n- Sandboxed wrapper builds (make and friends) get the dev tool caches their recipes need, based on the build manifests in the working directory\n- Prompt pinning is off by default; set pinnedPrompts to true to enable it.\n- Sandboxed commands can reach the network again on recent Windows builds, where every outbound connection was blocked even with outbound access enabled and no proxy configured\n- Plugin custom agents honor deferred-tool-loading frontmatter\n- Use `/worktree new` to start a new session in a new worktree\n- A sandbox that cannot start an MCP server now fails in seconds instead of stalling the session, and sandbox startup failures for both MCP and language servers now say the sandbox was at fault and how to fix or opt out of it\n- Login links are clickable during web and device-code sign-in\n- Pin the current prompt one row higher, in the row the tab bar already reserves, so it keeps the shape of the prompt it copies while costing the timeline one row less\n- Leave the pinned prompt off by default on terminals under 30 rows, where it would crowd the output; set pinnedPrompts explicitly to override at any size\n- Compute /context attribution against the Auto-resolved model so token totals are accurate for Free/Student users\n- Disabling an extension no longer breaks elicitation, canvases, or tool permission prompts for other extensions\n- A prompt stashed with ctrl+s now stays with the session it was typed for, so switching away and back and pressing ctrl+s restores it instead of finding it gone\n- On Linux, searches and most shell commands blocked by the sandbox now offer to re-run outside it\n- BREAKING: the sandbox setting `allowDevToolCaches` is renamed `allowDevToolAccess`, since it grants dev-tool config and registries too, not just caches. The old key is no longer read and is ignored silently, so an existing `false` opt-out reverts to the default (on). Rename it in settings.json and in any managed/MDM policy.\n- Add /sandbox policy to show effective sandbox paths, denials, and network access\n- Queue prompts, shell commands, and supported slash commands in local sessions to run in order after the current task finishes\n- Set \"autoUpdate\": true on an extraKnownMarketplaces entry in your user settings to auto-update its plugins at session start\n- /sandbox tags inactive settings as (disabled) and explains why they are locked, and documents dev tool caches in copilot help sandbox\n- Show \"pending · ctrl+c to cancel\" for in-flight steering prompts\n- Make /model session-scoped by default, and use /config model to set defaults for future sessions.\n- Pin the current prompt as a single line instead of a three-row framed block, so it reads as chrome and returns rows to the timeline; with the tab bar on it sits directly below the tabs and costs the timeline nothing",
+   "links": [
+    {
+     "title": "trigram-indexed grep for fast regex search in large codebases",
+     "url": "https://github.com/microsoft/tgrep"
+    }
+   ]
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "content",
+   "summary": "2026-08-11 Hugging Face Blog 发现 3 篇新文章: Build Low-Latency Multilingual Voice Agents: Open Weigh...",
+   "body": "## 2026-08-11 Hugging Face Blog\n\n发现 3 篇新文章:\n\n**Build Low-Latency Multilingual Voice Agents: Open Weights & Full Deployment Control with NVIDIA Magpie TTS**\n📅 Mon, 10 Au\n🔗 https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents\n\n---\n\n**Making Knowledge Distillation Cheap Enough to Run at Scale**\n📅 Mon, 10 Au\n🔗 https://huggingface.co/blog/MultiverseComputingCAI/efficient-knowledge-distillation\n\n---\n\n**Meta is back with Muse Glimmer: local, agentic, multimodal, and open source**\n📅 Mon, 10 Au\n🔗 https://huggingface.co/blog/muse-glimmer",
+   "links": [
+    {
+     "title": "https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents",
+     "url": "https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents"
+    },
+    {
+     "title": "https://huggingface.co/blog/MultiverseComputingCAI/efficient-knowledge-distillation",
+     "url": "https://huggingface.co/blog/MultiverseComputingCAI/efficient-knowledge-distillation"
+    },
+    {
+     "title": "https://huggingface.co/blog/muse-glimmer",
+     "url": "https://huggingface.co/blog/muse-glimmer"
+    }
+   ]
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "no_update",
+   "summary": "2026-08-11 Google Research 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-11 Google Research\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-08-11 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-11 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-08-11 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-08-11 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-08-11 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-11 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-08-11 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-08-11 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-08-11T05:33:13+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

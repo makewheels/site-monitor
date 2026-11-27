@@ -1,0 +1,132 @@
+{
+ "date": "2026-07-12",
+ "report_id": "2026-07-12-cb316f2b76",
+ "created_at": "2026-07-12T07:58:31",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-07-12\n\n# 🔥 GitHub Trending\n\n2026-07-12\n\n发现 4 个新项目（共 5 个项目）:\n\n**🆕 catchorg/Catch2**\n  现代C++单元测试框架，支持TDD和BDD\n  🔗 https://github.com/catchorg/Catch2\n\n---\n**abseil/abseil-cpp**\n  谷歌开源的C++通用工具库集合\n  🔗 https://github.com/abseil/abseil-cpp\n\n---\n**🆕 davila7/claude-code-templates**\n  配置和监控Claude Code的CLI工具\n  🔗 https://github.com/davila7/claude-code-templates\n\n---\n**🆕 google-labs-code/stitch-skills**\n  配合Stitch MCP服务器使用的Agent技能库\n  🔗 https://github.com/google-labs-code/stitch-skills\n\n---\n**🆕 hashicorp/terraform**\n  用声明式配置安全管理基础设施的工具\n  🔗 https://github.com/hashicorp/terraform\n\n## 2026-07-12 Anthropic Engineering\n\n今日无新文章\n\n## 2026-07-12 OpenAI News\n\n今日无新文章(追踪 20 篇)\n\n## 2026-07-12 LangChain Blog\n\n今日无新文章（追踪 20 篇）\n\n## 2026-07-12 GitHub Copilot CLI\n\n无更新，当前版本: 1.0.70\n\n## 2026-07-12 Hugging Face Blog\n\n今日无新文章(追踪 20 篇)\n\n## 2026-07-12 Google Research\n\n今日无新文章(追踪 20 篇)\n\n## 2026-07-12 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-07-12 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-07-12 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-07-12 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 11,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-07-12 发现 4 个新项目（共 5 个项目）: 🆕 catchorg/Catch2 现代C++单元测试框架，支持TDD和BDD 🔗 http...",
+   "body": "# 🔥 GitHub Trending\n\n2026-07-12\n\n发现 4 个新项目（共 5 个项目）:\n\n**🆕 catchorg/Catch2**\n  现代C++单元测试框架，支持TDD和BDD\n  🔗 https://github.com/catchorg/Catch2\n\n---\n**abseil/abseil-cpp**\n  谷歌开源的C++通用工具库集合\n  🔗 https://github.com/abseil/abseil-cpp\n\n---\n**🆕 davila7/claude-code-templates**\n  配置和监控Claude Code的CLI工具\n  🔗 https://github.com/davila7/claude-code-templates\n\n---\n**🆕 google-labs-code/stitch-skills**\n  配合Stitch MCP服务器使用的Agent技能库\n  🔗 https://github.com/google-labs-code/stitch-skills\n\n---\n**🆕 hashicorp/terraform**\n  用声明式配置安全管理基础设施的工具\n  🔗 https://github.com/hashicorp/terraform",
+   "links": [
+    {
+     "title": "https://github.com/catchorg/Catch2",
+     "url": "https://github.com/catchorg/Catch2"
+    },
+    {
+     "title": "https://github.com/abseil/abseil-cpp",
+     "url": "https://github.com/abseil/abseil-cpp"
+    },
+    {
+     "title": "https://github.com/davila7/claude-code-templates",
+     "url": "https://github.com/davila7/claude-code-templates"
+    },
+    {
+     "title": "https://github.com/google-labs-code/stitch-skills",
+     "url": "https://github.com/google-labs-code/stitch-skills"
+    },
+    {
+     "title": "https://github.com/hashicorp/terraform",
+     "url": "https://github.com/hashicorp/terraform"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-07-12 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-07-12 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "no_update",
+   "summary": "2026-07-12 OpenAI News 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-07-12 OpenAI News\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "no_update",
+   "summary": "2026-07-12 LangChain Blog 今日无新文章（追踪 20 篇）",
+   "body": "## 2026-07-12 LangChain Blog\n\n今日无新文章（追踪 20 篇）",
+   "links": []
+  },
+  {
+   "topic": "github_copilot_cli",
+   "topic_name": "GitHub Copilot CLI",
+   "title": "GitHub Copilot CLI",
+   "status": "no_update",
+   "summary": "2026-07-12 GitHub Copilot CLI 无更新，当前版本: 1.0.70",
+   "body": "## 2026-07-12 GitHub Copilot CLI\n\n无更新，当前版本: 1.0.70",
+   "links": []
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "no_update",
+   "summary": "2026-07-12 Hugging Face Blog 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-07-12 Hugging Face Blog\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "no_update",
+   "summary": "2026-07-12 Google Research 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-07-12 Google Research\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-07-12 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-07-12 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-07-12 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-07-12 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-07-12 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-07-12 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-07-12 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-07-12 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": []
+}

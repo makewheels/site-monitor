@@ -1,0 +1,135 @@
+{
+ "date": "2026-09-08",
+ "report_id": "2026-09-08-4db0e2cbac",
+ "created_at": "2026-09-08T05:31:49",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-09-08\n\n# 🔥 GitHub Trending\n\n2026-09-08\n\n发现 5 个新项目（共 5 个项目）:\n\n**🆕 heygen-com/hyperframes**\n  用 HTML 写视频，专为 AI 智能体打造。\n  🔗 https://github.com/heygen-com/hyperframes\n\n---\n**🆕 microsoft/markitdown**\n  把各种文件和 Office 文档一键转成 Markdown。\n  🔗 https://github.com/microsoft/markitdown\n\n---\n**🆕 mksglu/context-mode**\n  给 AI 编程智能体瘦身上下文，工具输出压缩 98%，还能跨平台记忆。\n  🔗 https://github.com/mksglu/context-mode\n\n---\n**🆕 jo-inc/camofox-browser**\n  隐身无头浏览器，帮 AI 智能体绕过 Cloudflare 等反爬检测。\n  🔗 https://github.com/jo-inc/camofox-browser\n\n---\n**🆕 MoonTechLab/LunaTV**\n  非商用开源项目，衍生须保留原址并同协议开源。\n  🔗 https://github.com/MoonTechLab/LunaTV\n\n## 2026-09-08 Anthropic Engineering\n\n今日无新文章\n\n## 2026-09-08 OpenAI News\n\n发现 1 篇新文章:\n\n**Supporting independent journalism in Ukraine**\n📅 Mon, 07 Se\n原文摘要：OpenAI, AIRPPU and WAN-IFRA launch an AI program to help Ukrainian news organizations strengthen innovation, resilience, and independent journalism.\n🔗 https://openai.com/index/supporting-independent-journalism-in-ukraine\n\n## 2026-09-08 LangChain Blog\n\n今日无新文章（追踪 20 篇）\n\n## 2026-09-08 Hugging Face Blog\n\n今日无新文章(追踪 20 篇)\n\n## 2026-09-08 Google Research\n\n今日无新文章(追踪 20 篇)\n\n## 2026-09-08 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-09-08 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-09-08 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-09-08 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 10,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-09-08 发现 5 个新项目（共 5 个项目）: 🆕 heygen-com/hyperframes 用 HTML 写视频，专为 AI 智能体打...",
+   "body": "# 🔥 GitHub Trending\n\n2026-09-08\n\n发现 5 个新项目（共 5 个项目）:\n\n**🆕 heygen-com/hyperframes**\n  用 HTML 写视频，专为 AI 智能体打造。\n  🔗 https://github.com/heygen-com/hyperframes\n\n---\n**🆕 microsoft/markitdown**\n  把各种文件和 Office 文档一键转成 Markdown。\n  🔗 https://github.com/microsoft/markitdown\n\n---\n**🆕 mksglu/context-mode**\n  给 AI 编程智能体瘦身上下文，工具输出压缩 98%，还能跨平台记忆。\n  🔗 https://github.com/mksglu/context-mode\n\n---\n**🆕 jo-inc/camofox-browser**\n  隐身无头浏览器，帮 AI 智能体绕过 Cloudflare 等反爬检测。\n  🔗 https://github.com/jo-inc/camofox-browser\n\n---\n**🆕 MoonTechLab/LunaTV**\n  非商用开源项目，衍生须保留原址并同协议开源。\n  🔗 https://github.com/MoonTechLab/LunaTV",
+   "links": [
+    {
+     "title": "heygen-com/hyperframes",
+     "url": "https://github.com/heygen-com/hyperframes"
+    },
+    {
+     "title": "microsoft/markitdown",
+     "url": "https://github.com/microsoft/markitdown"
+    },
+    {
+     "title": "mksglu/context-mode",
+     "url": "https://github.com/mksglu/context-mode"
+    },
+    {
+     "title": "jo-inc/camofox-browser",
+     "url": "https://github.com/jo-inc/camofox-browser"
+    },
+    {
+     "title": "MoonTechLab/LunaTV",
+     "url": "https://github.com/MoonTechLab/LunaTV"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-09-08 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-09-08 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-09-08 OpenAI News 发现 1 篇新文章: Supporting independent journalism in Ukraine 📅 Mon, 07 Se 原文摘...",
+   "body": "## 2026-09-08 OpenAI News\n\n发现 1 篇新文章:\n\n**Supporting independent journalism in Ukraine**\n📅 Mon, 07 Se\n原文摘要：OpenAI, AIRPPU and WAN-IFRA launch an AI program to help Ukrainian news organizations strengthen innovation, resilience, and independent journalism.\n🔗 https://openai.com/index/supporting-independent-journalism-in-ukraine",
+   "links": [
+    {
+     "title": "https://openai.com/index/supporting-independent-journalism-in-ukraine",
+     "url": "https://openai.com/index/supporting-independent-journalism-in-ukraine"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "no_update",
+   "summary": "2026-09-08 LangChain Blog 今日无新文章（追踪 20 篇）",
+   "body": "## 2026-09-08 LangChain Blog\n\n今日无新文章（追踪 20 篇）",
+   "links": []
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "no_update",
+   "summary": "2026-09-08 Hugging Face Blog 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-09-08 Hugging Face Blog\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "no_update",
+   "summary": "2026-09-08 Google Research 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-09-08 Google Research\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-09-08 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-09-08 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-09-08 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-09-08 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-09-08 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-09-08 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-09-08 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-09-08 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-09-08T05:31:54+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

@@ -1,0 +1,140 @@
+{
+ "date": "2026-08-25",
+ "report_id": "2026-08-25-e83921e0f7",
+ "created_at": "2026-08-25T05:32:04",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-08-25\n\n# 🔥 GitHub Trending\n\n2026-08-25\n\n发现 4 个新项目（共 5 个项目）:\n\n**🆕 Alishahryar1/free-claude-code**\n  免费用多家AI编程工具，支持终端、手机和语音\n  🔗 https://github.com/Alishahryar1/free-claude-code\n\n---\n**openai/codex**\n  OpenAI官方轻量级终端编程代理\n  🔗 https://github.com/openai/codex\n\n---\n**🆕 MadsLorentzen/ai-job-search**\n  本地运行的AI求职框架，自动评估岗位、定制简历和求职信\n  🔗 https://github.com/MadsLorentzen/ai-job-search\n\n---\n**🆕 multica-ai/andrej-karpathy-skills**\n  基于Karpathy经验的CLAUDE.md配置，改善Claude Code编程行为\n  🔗 https://github.com/multica-ai/andrej-karpathy-skills\n\n---\n**🆕 makeplane/plane**\n  开源项目管理平台，替代Jira和Linear，支持任务、冲刺和文档管理\n  🔗 https://github.com/makeplane/plane\n\n## 2026-08-25 Anthropic Engineering\n\n今日无新文章\n\n## 2026-08-25 OpenAI News\n\n发现 1 篇新文章:\n\n**Advancing price-performance for developers with GPT‑5.6 in Kiro**\n📅 Mon, 24 Au\n原文摘要：GPT‑5.6 is now available in Kiro, helping developers plan, build, review, and test software with better price-performance.\n🔗 https://openai.com/index/gpt-5-6-in-kiro\n\n## 2026-08-25 LangChain Blog\n\n发现 1 篇新文章:\n\n**Toyota Scales Enterprise AI with Deep Agents and LangSmith**\n📅 Mon, 24 Au\n原文摘要：See how Toyota North America uses Deep Agents and LangSmith to run 50+ production agents, cut delivery from 6 months to 4 days, and track AI ROI.\n🔗 https://www.langchain.com/blog/how-toyota-north-america-put-enterprise-ai-on-the-balance-sheet-with-deep-agents-and-langsmith\n\n## 2026-08-25 Hugging Face Blog\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-25 Google Research\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-25 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-25 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-08-25 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-25 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 10,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-08-25 发现 4 个新项目（共 5 个项目）: 🆕 Alishahryar1/free-claude-code 免费用多家AI编程工具，支持...",
+   "body": "# 🔥 GitHub Trending\n\n2026-08-25\n\n发现 4 个新项目（共 5 个项目）:\n\n**🆕 Alishahryar1/free-claude-code**\n  免费用多家AI编程工具，支持终端、手机和语音\n  🔗 https://github.com/Alishahryar1/free-claude-code\n\n---\n**openai/codex**\n  OpenAI官方轻量级终端编程代理\n  🔗 https://github.com/openai/codex\n\n---\n**🆕 MadsLorentzen/ai-job-search**\n  本地运行的AI求职框架，自动评估岗位、定制简历和求职信\n  🔗 https://github.com/MadsLorentzen/ai-job-search\n\n---\n**🆕 multica-ai/andrej-karpathy-skills**\n  基于Karpathy经验的CLAUDE.md配置，改善Claude Code编程行为\n  🔗 https://github.com/multica-ai/andrej-karpathy-skills\n\n---\n**🆕 makeplane/plane**\n  开源项目管理平台，替代Jira和Linear，支持任务、冲刺和文档管理\n  🔗 https://github.com/makeplane/plane",
+   "links": [
+    {
+     "title": "Alishahryar1/free-claude-code",
+     "url": "https://github.com/Alishahryar1/free-claude-code"
+    },
+    {
+     "title": "openai/codex",
+     "url": "https://github.com/openai/codex"
+    },
+    {
+     "title": "MadsLorentzen/ai-job-search",
+     "url": "https://github.com/MadsLorentzen/ai-job-search"
+    },
+    {
+     "title": "multica-ai/andrej-karpathy-skills",
+     "url": "https://github.com/multica-ai/andrej-karpathy-skills"
+    },
+    {
+     "title": "makeplane/plane",
+     "url": "https://github.com/makeplane/plane"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-08-25 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-08-25 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-08-25 OpenAI News 发现 1 篇新文章: Advancing price-performance for developers with GPT‑5.6 in Ki...",
+   "body": "## 2026-08-25 OpenAI News\n\n发现 1 篇新文章:\n\n**Advancing price-performance for developers with GPT‑5.6 in Kiro**\n📅 Mon, 24 Au\n原文摘要：GPT‑5.6 is now available in Kiro, helping developers plan, build, review, and test software with better price-performance.\n🔗 https://openai.com/index/gpt-5-6-in-kiro",
+   "links": [
+    {
+     "title": "https://openai.com/index/gpt-5-6-in-kiro",
+     "url": "https://openai.com/index/gpt-5-6-in-kiro"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "content",
+   "summary": "2026-08-25 LangChain Blog 发现 1 篇新文章: Toyota Scales Enterprise AI with Deep Agents and LangSmith...",
+   "body": "## 2026-08-25 LangChain Blog\n\n发现 1 篇新文章:\n\n**Toyota Scales Enterprise AI with Deep Agents and LangSmith**\n📅 Mon, 24 Au\n原文摘要：See how Toyota North America uses Deep Agents and LangSmith to run 50+ production agents, cut delivery from 6 months to 4 days, and track AI ROI.\n🔗 https://www.langchain.com/blog/how-toyota-north-america-put-enterprise-ai-on-the-balance-sheet-with-deep-agents-and-langsmith",
+   "links": [
+    {
+     "title": "https://www.langchain.com/blog/how-toyota-north-america-put-enterprise-ai-on-the-balance-sheet-with-deep-agents-and-langsmith",
+     "url": "https://www.langchain.com/blog/how-toyota-north-america-put-enterprise-ai-on-the-balance-sheet-with-deep-agents-and-langsmith"
+    }
+   ]
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "no_update",
+   "summary": "2026-08-25 Hugging Face Blog 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-25 Hugging Face Blog\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "no_update",
+   "summary": "2026-08-25 Google Research 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-25 Google Research\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-08-25 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-25 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-08-25 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-08-25 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-08-25 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-25 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-08-25 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-08-25 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-08-25T05:32:08+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

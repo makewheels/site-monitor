@@ -1,0 +1,181 @@
+{
+ "date": "2026-10-10",
+ "report_id": "2026-10-10-1539ca6a4f",
+ "created_at": "2026-10-10T05:33:51",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-10-10\n\n# 🔥 GitHub Trending\n\n2026-10-10\n\n发现 1 个新项目（共 5 个项目）:\n\n**morluto/rea**\n  用智能体搞定从应用到二进制的逆向工程\n  🔗 https://github.com/morluto/rea\n\n---\n**boykopovar/AnyPS5**\n  自动把PS5程序移植到Linux和Windows\n  🔗 https://github.com/boykopovar/AnyPS5\n\n---\n**mattpocock/skills**\n  分享作者私藏的硬核智能体工程实战技能\n  🔗 https://github.com/mattpocock/skills\n\n---\n**cathrynlavery/diagram-design**\n  给AI编程助手用的42种极简纯HTML图表设计\n  🔗 https://github.com/cathrynlavery/diagram-design\n\n---\n**🆕 alibaba/open-code-review**\n  阿里开源的混合架构代码审查工具，精准到行级\n  🔗 https://github.com/alibaba/open-code-review\n\n## 2026-10-10 Anthropic Engineering\n\n今日无新文章\n\n## 2026-10-10 OpenAI News\n\n发现 6 篇新文章:\n\n**Sophos cuts threat investigation time by 96% with OpenAI Daybreak**\n📅 Fri, 09 Oc\n原文摘要：Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight.\n🔗 https://openai.com/index/sophos\n\n---\n\n**Asana cuts model costs 76x in browser tests with GPT-6.1 Sol**\n📅 Fri, 09 Oc\n原文摘要：Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models.\n🔗 https://openai.com/index/asana-browser-agent\n\n---\n\n**How Oracle turns days of work into minutes with ChatGPT and Codex**\n📅 Thu, 08 Oc\n原文摘要：Across recruiting, engineering, and operations, Oracle turns specialist knowledge into fast, repeatable workflows with ChatGPT Work and Codex.\n🔗 https://openai.com/index/oracle\n\n---\n\n**Pollo AI turns creative ideas into campaigns with OpenAI**\n📅 Thu, 08 Oc\n原文摘要：With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads.\n🔗 https://openai.com/index/pollo-ai\n\n---\n\n**LegalOn halves Codex costs while maintaining development speed**\n📅 Thu, 08 Oc\n原文摘要：LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically.\n🔗 https://openai.com/index/legalon-halves-codex-costs\n\n---\n\n**Disrupting AI-enabled “false front” operations**\n📅 Thu, 08 Oc\n原文摘要：OpenAI disrupted two AI-enabled influence operations that used false-front journalists and a think tank to spread geopolitical messaging.\n🔗 https://openai.com/index/disrupting-ai-enabled-false-front-operations\n\n## 2026-10-10 LangChain Blog\n\n发现 3 篇新文章:\n\n**How to build great out-of-the-box user experiences with Managed Deep Agents**\n📅 Fri, 09 Oc\n原文摘要：Managed Deep Agents includes a new API for managing reactions for your distributed agents, and a system to dynamically assign emoji responses with your instrument of choice. Learn more.\n🔗 https://www.langchain.com/blog/slack-sdk-managed-deep-agents\n\n---\n\n**How Snyk Turned an Internal Support Agent into a Customer Feature**\n📅 Fri, 09 Oc\n原文摘要：Discover how Snyk transformed an internal support agent into Snyk Assist, a customer-facing AI feature powered by LangChain, LangGraph, and LangSmith.\n🔗 https://www.langchain.com/blog/how-snyk-turned-an-internal-support-agent-into-a-customer-feature\n\n---\n\n**Agents that can pay: building Restock with Stripe's Link and Managed Deep Agents**\n📅 Thu, 08 Oc\n原文摘要：Build an agent that pays for real purchases. Restock runs in Slack on Managed Deep Agents and pays with Stripe's Link over the Machine Payments Protocol.\n🔗 https://www.langchain.com/blog/agents-that-can-pay-with-stripe-link\n\n## 2026-10-10 Hugging Face Blog\n\n发现 3 篇新文章:\n\n**Impactful scheduling for GPU clusters**\n📅 Fri, 09 Oc\n🔗 https://huggingface.co/blog/allenai/impactful-scheduling\n\n---\n\n**The model that didn't exist, so you made it yourself**\n📅 Thu, 08 Oc\n🔗 https://huggingface.co/blog/building-with-ml-intern\n\n---\n\n**Introducing Falcon ASR**\n📅 Wed, 07 Oc\n🔗 https://huggingface.co/blog/tiiuae/falcon-asr\n\n## 2026-10-10 Google Research\n\n今日无新文章(追踪 20 篇)\n\n## 2026-10-10 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-10-10 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-10-10 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-10-10 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 10,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-10-10 发现 1 个新项目（共 5 个项目）: morluto/rea 用智能体搞定从应用到二进制的逆向工程 🔗 https://githu...",
+   "body": "# 🔥 GitHub Trending\n\n2026-10-10\n\n发现 1 个新项目（共 5 个项目）:\n\n**morluto/rea**\n  用智能体搞定从应用到二进制的逆向工程\n  🔗 https://github.com/morluto/rea\n\n---\n**boykopovar/AnyPS5**\n  自动把PS5程序移植到Linux和Windows\n  🔗 https://github.com/boykopovar/AnyPS5\n\n---\n**mattpocock/skills**\n  分享作者私藏的硬核智能体工程实战技能\n  🔗 https://github.com/mattpocock/skills\n\n---\n**cathrynlavery/diagram-design**\n  给AI编程助手用的42种极简纯HTML图表设计\n  🔗 https://github.com/cathrynlavery/diagram-design\n\n---\n**🆕 alibaba/open-code-review**\n  阿里开源的混合架构代码审查工具，精准到行级\n  🔗 https://github.com/alibaba/open-code-review",
+   "links": [
+    {
+     "title": "morluto/rea",
+     "url": "https://github.com/morluto/rea"
+    },
+    {
+     "title": "boykopovar/AnyPS5",
+     "url": "https://github.com/boykopovar/AnyPS5"
+    },
+    {
+     "title": "mattpocock/skills",
+     "url": "https://github.com/mattpocock/skills"
+    },
+    {
+     "title": "cathrynlavery/diagram-design",
+     "url": "https://github.com/cathrynlavery/diagram-design"
+    },
+    {
+     "title": "alibaba/open-code-review",
+     "url": "https://github.com/alibaba/open-code-review"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-10-10 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-10-10 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-10-10 OpenAI News 发现 6 篇新文章: Sophos cuts threat investigation time by 96% with OpenAI Dayb...",
+   "body": "## 2026-10-10 OpenAI News\n\n发现 6 篇新文章:\n\n**Sophos cuts threat investigation time by 96% with OpenAI Daybreak**\n📅 Fri, 09 Oc\n原文摘要：Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight.\n🔗 https://openai.com/index/sophos\n\n---\n\n**Asana cuts model costs 76x in browser tests with GPT-6.1 Sol**\n📅 Fri, 09 Oc\n原文摘要：Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models.\n🔗 https://openai.com/index/asana-browser-agent\n\n---\n\n**How Oracle turns days of work into minutes with ChatGPT and Codex**\n📅 Thu, 08 Oc\n原文摘要：Across recruiting, engineering, and operations, Oracle turns specialist knowledge into fast, repeatable workflows with ChatGPT Work and Codex.\n🔗 https://openai.com/index/oracle\n\n---\n\n**Pollo AI turns creative ideas into campaigns with OpenAI**\n📅 Thu, 08 Oc\n原文摘要：With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads.\n🔗 https://openai.com/index/pollo-ai\n\n---\n\n**LegalOn halves Codex costs while maintaining development speed**\n📅 Thu, 08 Oc\n原文摘要：LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically.\n🔗 https://openai.com/index/legalon-halves-codex-costs\n\n---\n\n**Disrupting AI-enabled “false front” operations**\n📅 Thu, 08 Oc\n原文摘要：OpenAI disrupted two AI-enabled influence operations that used false-front journalists and a think tank to spread geopolitical messaging.\n🔗 https://openai.com/index/disrupting-ai-enabled-false-front-operations",
+   "links": [
+    {
+     "title": "https://openai.com/index/sophos",
+     "url": "https://openai.com/index/sophos"
+    },
+    {
+     "title": "https://openai.com/index/asana-browser-agent",
+     "url": "https://openai.com/index/asana-browser-agent"
+    },
+    {
+     "title": "https://openai.com/index/oracle",
+     "url": "https://openai.com/index/oracle"
+    },
+    {
+     "title": "https://openai.com/index/pollo-ai",
+     "url": "https://openai.com/index/pollo-ai"
+    },
+    {
+     "title": "https://openai.com/index/legalon-halves-codex-costs",
+     "url": "https://openai.com/index/legalon-halves-codex-costs"
+    },
+    {
+     "title": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
+     "url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "content",
+   "summary": "2026-10-10 LangChain Blog 发现 3 篇新文章: How to build great out-of-the-box user experiences with Ma...",
+   "body": "## 2026-10-10 LangChain Blog\n\n发现 3 篇新文章:\n\n**How to build great out-of-the-box user experiences with Managed Deep Agents**\n📅 Fri, 09 Oc\n原文摘要：Managed Deep Agents includes a new API for managing reactions for your distributed agents, and a system to dynamically assign emoji responses with your instrument of choice. Learn more.\n🔗 https://www.langchain.com/blog/slack-sdk-managed-deep-agents\n\n---\n\n**How Snyk Turned an Internal Support Agent into a Customer Feature**\n📅 Fri, 09 Oc\n原文摘要：Discover how Snyk transformed an internal support agent into Snyk Assist, a customer-facing AI feature powered by LangChain, LangGraph, and LangSmith.\n🔗 https://www.langchain.com/blog/how-snyk-turned-an-internal-support-agent-into-a-customer-feature\n\n---\n\n**Agents that can pay: building Restock with Stripe's Link and Managed Deep Agents**\n📅 Thu, 08 Oc\n原文摘要：Build an agent that pays for real purchases. Restock runs in Slack on Managed Deep Agents and pays with Stripe's Link over the Machine Payments Protocol.\n🔗 https://www.langchain.com/blog/agents-that-can-pay-with-stripe-link",
+   "links": [
+    {
+     "title": "https://www.langchain.com/blog/slack-sdk-managed-deep-agents",
+     "url": "https://www.langchain.com/blog/slack-sdk-managed-deep-agents"
+    },
+    {
+     "title": "https://www.langchain.com/blog/how-snyk-turned-an-internal-support-agent-into-a-customer-feature",
+     "url": "https://www.langchain.com/blog/how-snyk-turned-an-internal-support-agent-into-a-customer-feature"
+    },
+    {
+     "title": "https://www.langchain.com/blog/agents-that-can-pay-with-stripe-link",
+     "url": "https://www.langchain.com/blog/agents-that-can-pay-with-stripe-link"
+    }
+   ]
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "content",
+   "summary": "2026-10-10 Hugging Face Blog 发现 3 篇新文章: Impactful scheduling for GPU clusters 📅 Fri, 09 Oc 🔗 ht...",
+   "body": "## 2026-10-10 Hugging Face Blog\n\n发现 3 篇新文章:\n\n**Impactful scheduling for GPU clusters**\n📅 Fri, 09 Oc\n🔗 https://huggingface.co/blog/allenai/impactful-scheduling\n\n---\n\n**The model that didn't exist, so you made it yourself**\n📅 Thu, 08 Oc\n🔗 https://huggingface.co/blog/building-with-ml-intern\n\n---\n\n**Introducing Falcon ASR**\n📅 Wed, 07 Oc\n🔗 https://huggingface.co/blog/tiiuae/falcon-asr",
+   "links": [
+    {
+     "title": "https://huggingface.co/blog/allenai/impactful-scheduling",
+     "url": "https://huggingface.co/blog/allenai/impactful-scheduling"
+    },
+    {
+     "title": "https://huggingface.co/blog/building-with-ml-intern",
+     "url": "https://huggingface.co/blog/building-with-ml-intern"
+    },
+    {
+     "title": "https://huggingface.co/blog/tiiuae/falcon-asr",
+     "url": "https://huggingface.co/blog/tiiuae/falcon-asr"
+    }
+   ]
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "no_update",
+   "summary": "2026-10-10 Google Research 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-10-10 Google Research\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-10-10 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-10-10 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-10-10 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-10-10 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-10-10 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-10-10 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-10-10 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-10-10 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-10-10T05:33:55+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

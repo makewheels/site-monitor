@@ -1,0 +1,151 @@
+{
+ "date": "2026-07-24",
+ "report_id": "2026-07-24-8b121bcb33",
+ "created_at": "2026-07-24T06:30:14",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-07-24\n\n# 🔥 GitHub Trending\n\n2026-07-24\n\n发现 4 个新项目（共 5 个项目）:\n\n**🆕 block/buzz**\n  群体智能协作沟通平台，让多人高效协同决策。\n  🔗 https://github.com/block/buzz\n\n---\n**koala73/worldmonitor**\n  AI驱动的实时全球情报仪表盘，整合新闻、地缘与基建监控。\n  🔗 https://github.com/koala73/worldmonitor\n\n---\n**🆕 shiyu-coder/Kronos**\n  金融市场语言基础模型，专为金融时序数据设计。\n  🔗 https://github.com/shiyu-coder/Kronos\n\n---\n**🆕 Pumpkin-MC/Pumpkin**\n  高性能轻量级Minecraft服务端，人人都能快速搭建。\n  🔗 https://github.com/Pumpkin-MC/Pumpkin\n\n---\n**🆕 citrolabs/ego-lite**\n  人机并行浏览器，让你和AI智能体同时高效工作。\n  🔗 https://github.com/citrolabs/ego-lite\n\n## 2026-07-24 Anthropic Engineering\n\n今日无新文章\n\n## 2026-07-24 OpenAI News\n\n发现 1 篇新文章:\n\n**Launching Health in ChatGPT**\n📅 Thu, 23 Ju\n原文摘要：Health in ChatGPT now lets eligible U.S. users securely connect medical records and Apple Health to get more personalized insights and better understand their health.\n🔗 https://openai.com/index/health-in-chatgpt\n\n## 2026-07-24 LangChain Blog\n\n发现 2 篇新文章:\n\n**July 2026: LangChain Newsletter — NemoClaw Blueprint, OpenWiki Brains, and More**\n📅 Thu, 23 Ju\n原文摘要：NemoClaw Deep Agents blueprint, LangSmith Sandboxes free trial, Fleet Slack integration, voice tracing, OpenWiki Brains, and RLMs in Deep Agents. See what's new at LangChain\n🔗 https://www.langchain.com/blog/july-2026-langchain-newsletter\n\n---\n\n**How We Benchmark Deep Agents**\n📅 Thu, 23 Ju\n原文摘要：We revamped how we benchmark Deep Agents. Here's the eval setup we run in Harbor across coding, conversation, and retrieval, and how we use it to ship changes.\n🔗 https://www.langchain.com/blog/how-we-benchmark-deep-agents\n\n## 2026-07-24 GitHub Copilot CLI\n\n## 1.0.74 - 2026-07-23\n\n- Typing `?` while the /search bar is open enters it as text instead of opening quick help\n- Add support for Open Plugin Spec v1 plugin manifests and mcp.json configuration\n- IDE integration reconnects reliably when the CLI reloads MCP servers or changes directory\n- Multi-turn subagent timelines show every prompt and response in the correct order after reopening /tasks\n- Subagent timelines identify whether prompts came from the main agent or another subagent\n- Show a first-run splash to opt into the default sandbox\n- Adding support for gemini-3.6-flash\n- The `/mcp add` and `/mcp edit` wizard now preserves `=` characters in environment variable values (such as base64 padding), so secrets and tokens are stored correctly.\n- Remote session uploads stop retrying permanent Mission Control 400/404 responses\n- Show Tab in /settings footer to switch scope tabs\n- Downscale oversized tool-result images so CAPI Responses requests continue\n- When multiplexing sessions, a session's open dialog no longer leaks into another session; eligible pickers reopen when you switch back\n- The `$` interactive shell shortcut now opens a shell even while the agent is working\n- Fully honor the skill disable-model-invocation flag\n- Warn when a participating language server reports a different symbol than the one requested\n- Steering interrupts shell output waits without stopping the running command\n- Increase the Responses request size limit\n- Plan mode now allows session-folder planning artifacts while still blocking clear file mutations outside the session folder.\n- Add `/model plan` (or `/model --plan`) to pick a model used while in plan mode; pass a model id, `off` to clear, or no id to open the picker. Reverts to the session model when you leave plan mode.\n- Resume search matches session titles even when whitespace differs\n\n## 2026-07-24 Hugging Face Blog\n\n发现 1 篇新文章:\n\n**Bringing Nunchaku 4-bit Diffusion Inference to Diffusers**\n📅 Thu, 23 Ju\n🔗 https://huggingface.co/blog/nunchaku-diffusers\n\n## 2026-07-24 Google Research\n\n今日无新文章(追踪 20 篇)\n\n## 2026-07-24 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-07-24 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-07-24 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-07-24 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 11,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-07-24 发现 4 个新项目（共 5 个项目）: 🆕 block/buzz 群体智能协作沟通平台，让多人高效协同决策。 🔗 https://g...",
+   "body": "# 🔥 GitHub Trending\n\n2026-07-24\n\n发现 4 个新项目（共 5 个项目）:\n\n**🆕 block/buzz**\n  群体智能协作沟通平台，让多人高效协同决策。\n  🔗 https://github.com/block/buzz\n\n---\n**koala73/worldmonitor**\n  AI驱动的实时全球情报仪表盘，整合新闻、地缘与基建监控。\n  🔗 https://github.com/koala73/worldmonitor\n\n---\n**🆕 shiyu-coder/Kronos**\n  金融市场语言基础模型，专为金融时序数据设计。\n  🔗 https://github.com/shiyu-coder/Kronos\n\n---\n**🆕 Pumpkin-MC/Pumpkin**\n  高性能轻量级Minecraft服务端，人人都能快速搭建。\n  🔗 https://github.com/Pumpkin-MC/Pumpkin\n\n---\n**🆕 citrolabs/ego-lite**\n  人机并行浏览器，让你和AI智能体同时高效工作。\n  🔗 https://github.com/citrolabs/ego-lite",
+   "links": [
+    {
+     "title": "https://github.com/block/buzz",
+     "url": "https://github.com/block/buzz"
+    },
+    {
+     "title": "https://github.com/koala73/worldmonitor",
+     "url": "https://github.com/koala73/worldmonitor"
+    },
+    {
+     "title": "https://github.com/shiyu-coder/Kronos",
+     "url": "https://github.com/shiyu-coder/Kronos"
+    },
+    {
+     "title": "https://github.com/Pumpkin-MC/Pumpkin",
+     "url": "https://github.com/Pumpkin-MC/Pumpkin"
+    },
+    {
+     "title": "https://github.com/citrolabs/ego-lite",
+     "url": "https://github.com/citrolabs/ego-lite"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-07-24 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-07-24 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-07-24 OpenAI News 发现 1 篇新文章: Launching Health in ChatGPT 📅 Thu, 23 Ju 原文摘要：Health in ChatG...",
+   "body": "## 2026-07-24 OpenAI News\n\n发现 1 篇新文章:\n\n**Launching Health in ChatGPT**\n📅 Thu, 23 Ju\n原文摘要：Health in ChatGPT now lets eligible U.S. users securely connect medical records and Apple Health to get more personalized insights and better understand their health.\n🔗 https://openai.com/index/health-in-chatgpt",
+   "links": [
+    {
+     "title": "https://openai.com/index/health-in-chatgpt",
+     "url": "https://openai.com/index/health-in-chatgpt"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "content",
+   "summary": "2026-07-24 LangChain Blog 发现 2 篇新文章: July 2026: LangChain Newsletter — NemoClaw Blueprint, Open...",
+   "body": "## 2026-07-24 LangChain Blog\n\n发现 2 篇新文章:\n\n**July 2026: LangChain Newsletter — NemoClaw Blueprint, OpenWiki Brains, and More**\n📅 Thu, 23 Ju\n原文摘要：NemoClaw Deep Agents blueprint, LangSmith Sandboxes free trial, Fleet Slack integration, voice tracing, OpenWiki Brains, and RLMs in Deep Agents. See what's new at LangChain\n🔗 https://www.langchain.com/blog/july-2026-langchain-newsletter\n\n---\n\n**How We Benchmark Deep Agents**\n📅 Thu, 23 Ju\n原文摘要：We revamped how we benchmark Deep Agents. Here's the eval setup we run in Harbor across coding, conversation, and retrieval, and how we use it to ship changes.\n🔗 https://www.langchain.com/blog/how-we-benchmark-deep-agents",
+   "links": [
+    {
+     "title": "https://www.langchain.com/blog/july-2026-langchain-newsletter",
+     "url": "https://www.langchain.com/blog/july-2026-langchain-newsletter"
+    },
+    {
+     "title": "https://www.langchain.com/blog/how-we-benchmark-deep-agents",
+     "url": "https://www.langchain.com/blog/how-we-benchmark-deep-agents"
+    }
+   ]
+  },
+  {
+   "topic": "github_copilot_cli",
+   "topic_name": "GitHub Copilot CLI",
+   "title": "GitHub Copilot CLI",
+   "status": "note",
+   "summary": "2026-07-24 GitHub Copilot CLI 1.0.74 - 2026-07-23 Typing `?` while the /search bar is open ente...",
+   "body": "## 2026-07-24 GitHub Copilot CLI\n\n## 1.0.74 - 2026-07-23\n\n- Typing `?` while the /search bar is open enters it as text instead of opening quick help\n- Add support for Open Plugin Spec v1 plugin manifests and mcp.json configuration\n- IDE integration reconnects reliably when the CLI reloads MCP servers or changes directory\n- Multi-turn subagent timelines show every prompt and response in the correct order after reopening /tasks\n- Subagent timelines identify whether prompts came from the main agent or another subagent\n- Show a first-run splash to opt into the default sandbox\n- Adding support for gemini-3.6-flash\n- The `/mcp add` and `/mcp edit` wizard now preserves `=` characters in environment variable values (such as base64 padding), so secrets and tokens are stored correctly.\n- Remote session uploads stop retrying permanent Mission Control 400/404 responses\n- Show Tab in /settings footer to switch scope tabs\n- Downscale oversized tool-result images so CAPI Responses requests continue\n- When multiplexing sessions, a session's open dialog no longer leaks into another session; eligible pickers reopen when you switch back\n- The `$` interactive shell shortcut now opens a shell even while the agent is working\n- Fully honor the skill disable-model-invocation flag\n- Warn when a participating language server reports a different symbol than the one requested\n- Steering interrupts shell output waits without stopping the running command\n- Increase the Responses request size limit\n- Plan mode now allows session-folder planning artifacts while still blocking clear file mutations outside the session folder.\n- Add `/model plan` (or `/model --plan`) to pick a model used while in plan mode; pass a model id, `off` to clear, or no id to open the picker. Reverts to the session model when you leave plan mode.\n- Resume search matches session titles even when whitespace differs",
+   "links": []
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "content",
+   "summary": "2026-07-24 Hugging Face Blog 发现 1 篇新文章: Bringing Nunchaku 4-bit Diffusion Inference to Diffuser...",
+   "body": "## 2026-07-24 Hugging Face Blog\n\n发现 1 篇新文章:\n\n**Bringing Nunchaku 4-bit Diffusion Inference to Diffusers**\n📅 Thu, 23 Ju\n🔗 https://huggingface.co/blog/nunchaku-diffusers",
+   "links": [
+    {
+     "title": "https://huggingface.co/blog/nunchaku-diffusers",
+     "url": "https://huggingface.co/blog/nunchaku-diffusers"
+    }
+   ]
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "no_update",
+   "summary": "2026-07-24 Google Research 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-07-24 Google Research\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-07-24 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-07-24 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-07-24 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-07-24 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-07-24 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-07-24 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-07-24 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-07-24 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": []
+}

@@ -1,0 +1,149 @@
+{
+ "date": "2026-10-01",
+ "report_id": "2026-10-01-3c3e968bbb",
+ "created_at": "2026-10-01T05:32:19",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-10-01\n\n# 🔥 GitHub Trending\n\n2026-10-01\n\n发现 3 个新项目（共 5 个项目）:\n\n**NVIDIA/OpenShell**\n  给自主AI智能体提供安全私密的运行环境。\n  🔗 https://github.com/NVIDIA/OpenShell\n\n---\n**debpalash/VoiceStudio**\n  本地开源语音克隆配音工具，平替ElevenLabs。\n  🔗 https://github.com/debpalash/VoiceStudio\n\n---\n**🆕 mvschwarz/openrig**\n  多智能体框架，让Claude Code和Codex协同工作。\n  🔗 https://github.com/mvschwarz/openrig\n\n---\n**🆕 mksglu/context-mode**\n  优化AI编程上下文，大幅压缩输出并持久化记忆。\n  🔗 https://github.com/mksglu/context-mode\n\n---\n**🆕 DietrichGebert/ponytail**\n  让AI像最懒的资深开发一样思考，能不写代码就不写。\n  🔗 https://github.com/DietrichGebert/ponytail\n\n## 2026-10-01 Anthropic Engineering\n\n今日无新文章\n\n## 2026-10-01 OpenAI News\n\n发现 2 篇新文章:\n\n**Disrupting a coordinated model-distillation campaign**\n📅 Wed, 30 Se\n原文摘要：Learn how OpenAI disrupted a campaign to extract protected model reasoning and is strengthening defenses against adversarial distillation.\n🔗 https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign\n\n---\n\n**Helping small businesses put AI to work**\n📅 Wed, 30 Se\n原文摘要：OpenAI is partnering with America’s SBDC to expand hands-on AI training and local support for small businesses, alongside a new report on how small teams are using AI.\n🔗 https://openai.com/index/helping-small-businesses-put-ai-to-work\n\n## 2026-10-01 LangChain Blog\n\n今日无新文章（追踪 20 篇）\n\n## 2026-10-01 Hugging Face Blog\n\n发现 1 篇新文章:\n\n**Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning**\n📅 Wed, 30 Se\n🔗 https://huggingface.co/blog/open-tts-leaderboard\n\n## 2026-10-01 Google Research\n\n今日无新文章(追踪 20 篇)\n\n## 2026-10-01 METR\n\n发现 1 篇新文章:\n\n**Chris Painter's testimony to the U.S. Senate on AI agent incidents**\n📅 Wed, 30 Se\n原文摘要：On September 30, 2026, METR President Chris Painter testified before the U.S. Senate Committee on Homeland Security & Governmental Affairs’ Subcommittee on Disaster Management, District of Columbia, and Census, at a hearing titled “Rogue AI: Securing the Homeland Against AI Agent Attacks” . The written testimony is published in full below, and is also available as a PDF . Introduction Chairman Hawley, Ranking Member Kim, and members of the subcommittee, thank you for inviting me to testify today. My name is Chris Painter and I am the President of METR. It is a great honor to be speaking before you, especially on the topic of AI agent incidents. With the recent rise in interest (and concern) around where AI development is headed I think it is critical that policymakers are armed with reliable, factual information about what we have actually observed from AI systems. METR, 1 which stands for Model Evaluation & Threat Research, is a nonprofit research organization that aims to share high-quality technical evidence about AI advances so the public can make informed decisions about this technology. 2 Our work has primarily focused on running tests that measure the capabilities of the most advanced, autonomous systems (or frontier AI agents ) and publishing our results. These measurements were intended to provide an early warning signal as to when frontier AI agents are capable enough that they might steer towards pursuing goals no human intended for them to pursue. 3 Over the years, METR has worked to gather evidence about these frontier AI agents with access provided 4 by America’s leading AI developers such as OpenAI, Anthropic, Google, Meta, SpaceXAI, and Amazon. The participation of these AI developers is voluntary, 5 and METR is not paid or funded 6 by them. Today, I am here to speak about one particular voluntary engagement, in which OpenAI allowed a handful of my colleagues 7 inside its walls to conduct a brief investigation into how its agents behaved, reasoned, a\n🔗 https://metr.org/blog/2026-09-30-chris-painter-senate-testimony/\n\n## 2026-10-01 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-10-01 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-10-01 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 10,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-10-01 发现 3 个新项目（共 5 个项目）: NVIDIA/OpenShell 给自主AI智能体提供安全私密的运行环境。 🔗 https:...",
+   "body": "# 🔥 GitHub Trending\n\n2026-10-01\n\n发现 3 个新项目（共 5 个项目）:\n\n**NVIDIA/OpenShell**\n  给自主AI智能体提供安全私密的运行环境。\n  🔗 https://github.com/NVIDIA/OpenShell\n\n---\n**debpalash/VoiceStudio**\n  本地开源语音克隆配音工具，平替ElevenLabs。\n  🔗 https://github.com/debpalash/VoiceStudio\n\n---\n**🆕 mvschwarz/openrig**\n  多智能体框架，让Claude Code和Codex协同工作。\n  🔗 https://github.com/mvschwarz/openrig\n\n---\n**🆕 mksglu/context-mode**\n  优化AI编程上下文，大幅压缩输出并持久化记忆。\n  🔗 https://github.com/mksglu/context-mode\n\n---\n**🆕 DietrichGebert/ponytail**\n  让AI像最懒的资深开发一样思考，能不写代码就不写。\n  🔗 https://github.com/DietrichGebert/ponytail",
+   "links": [
+    {
+     "title": "NVIDIA/OpenShell",
+     "url": "https://github.com/NVIDIA/OpenShell"
+    },
+    {
+     "title": "debpalash/VoiceStudio",
+     "url": "https://github.com/debpalash/VoiceStudio"
+    },
+    {
+     "title": "mvschwarz/openrig",
+     "url": "https://github.com/mvschwarz/openrig"
+    },
+    {
+     "title": "mksglu/context-mode",
+     "url": "https://github.com/mksglu/context-mode"
+    },
+    {
+     "title": "DietrichGebert/ponytail",
+     "url": "https://github.com/DietrichGebert/ponytail"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-10-01 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-10-01 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-10-01 OpenAI News 发现 2 篇新文章: Disrupting a coordinated model-distillation campaign 📅 Wed, 3...",
+   "body": "## 2026-10-01 OpenAI News\n\n发现 2 篇新文章:\n\n**Disrupting a coordinated model-distillation campaign**\n📅 Wed, 30 Se\n原文摘要：Learn how OpenAI disrupted a campaign to extract protected model reasoning and is strengthening defenses against adversarial distillation.\n🔗 https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign\n\n---\n\n**Helping small businesses put AI to work**\n📅 Wed, 30 Se\n原文摘要：OpenAI is partnering with America’s SBDC to expand hands-on AI training and local support for small businesses, alongside a new report on how small teams are using AI.\n🔗 https://openai.com/index/helping-small-businesses-put-ai-to-work",
+   "links": [
+    {
+     "title": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
+     "url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign"
+    },
+    {
+     "title": "https://openai.com/index/helping-small-businesses-put-ai-to-work",
+     "url": "https://openai.com/index/helping-small-businesses-put-ai-to-work"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "no_update",
+   "summary": "2026-10-01 LangChain Blog 今日无新文章（追踪 20 篇）",
+   "body": "## 2026-10-01 LangChain Blog\n\n今日无新文章（追踪 20 篇）",
+   "links": []
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "content",
+   "summary": "2026-10-01 Hugging Face Blog 发现 1 篇新文章: Open TTS Leaderboard: Scalable Evaluation for Multiling...",
+   "body": "## 2026-10-01 Hugging Face Blog\n\n发现 1 篇新文章:\n\n**Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning**\n📅 Wed, 30 Se\n🔗 https://huggingface.co/blog/open-tts-leaderboard",
+   "links": [
+    {
+     "title": "https://huggingface.co/blog/open-tts-leaderboard",
+     "url": "https://huggingface.co/blog/open-tts-leaderboard"
+    }
+   ]
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "no_update",
+   "summary": "2026-10-01 Google Research 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-10-01 Google Research\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "content",
+   "summary": "2026-10-01 METR 发现 1 篇新文章: Chris Painter's testimony to the U.S. Senate on AI agent incidents 📅...",
+   "body": "## 2026-10-01 METR\n\n发现 1 篇新文章:\n\n**Chris Painter's testimony to the U.S. Senate on AI agent incidents**\n📅 Wed, 30 Se\n原文摘要：On September 30, 2026, METR President Chris Painter testified before the U.S. Senate Committee on Homeland Security & Governmental Affairs’ Subcommittee on Disaster Management, District of Columbia, and Census, at a hearing titled “Rogue AI: Securing the Homeland Against AI Agent Attacks” . The written testimony is published in full below, and is also available as a PDF . Introduction Chairman Hawley, Ranking Member Kim, and members of the subcommittee, thank you for inviting me to testify today. My name is Chris Painter and I am the President of METR. It is a great honor to be speaking before you, especially on the topic of AI agent incidents. With the recent rise in interest (and concern) around where AI development is headed I think it is critical that policymakers are armed with reliable, factual information about what we have actually observed from AI systems. METR, 1 which stands for Model Evaluation & Threat Research, is a nonprofit research organization that aims to share high-quality technical evidence about AI advances so the public can make informed decisions about this technology. 2 Our work has primarily focused on running tests that measure the capabilities of the most advanced, autonomous systems (or frontier AI agents ) and publishing our results. These measurements were intended to provide an early warning signal as to when frontier AI agents are capable enough that they might steer towards pursuing goals no human intended for them to pursue. 3 Over the years, METR has worked to gather evidence about these frontier AI agents with access provided 4 by America’s leading AI developers such as OpenAI, Anthropic, Google, Meta, SpaceXAI, and Amazon. The participation of these AI developers is voluntary, 5 and METR is not paid or funded 6 by them. Today, I am here to speak about one particular voluntary engagement, in which OpenAI allowed a handful of my colleagues 7 inside its walls to conduct a brief investigation into how its agents behaved, reasoned, a\n🔗 https://metr.org/blog/2026-09-30-chris-painter-senate-testimony/",
+   "links": [
+    {
+     "title": "https://metr.org/blog/2026-09-30-chris-painter-senate-testimony/",
+     "url": "https://metr.org/blog/2026-09-30-chris-painter-senate-testimony/"
+    }
+   ]
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-10-01 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-10-01 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-10-01 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-10-01 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-10-01 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-10-01 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-10-01T05:32:22+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

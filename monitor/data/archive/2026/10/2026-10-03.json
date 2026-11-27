@@ -1,0 +1,158 @@
+{
+ "date": "2026-10-03",
+ "report_id": "2026-10-03-f3b68e801a",
+ "created_at": "2026-10-03T05:33:12",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-10-03\n\n# 🔥 GitHub Trending\n\n2026-10-03\n\n发现 4 个新项目（共 5 个项目）:\n\n**🆕 Panniantong/Agent-Reach**\n  让智能体用一条命令行免费搜索阅读全网各大平台。\n  🔗 https://github.com/Panniantong/Agent-Reach\n\n---\n**🆕 JuliusBrussee/caveman**\n  让编程智能体学原始人说话，直接砍掉大半的token消耗。\n  🔗 https://github.com/JuliusBrussee/caveman\n\n---\n**🆕 obra/superpowers**\n  一套真正落地的智能体技能框架与软件开发方法论。\n  🔗 https://github.com/obra/superpowers\n\n---\n**DietrichGebert/ponytail**\n  让智能体像最懒的资深开发一样思考，能不写代码就绝不写。\n  🔗 https://github.com/DietrichGebert/ponytail\n\n---\n**🆕 pbakaus/impeccable**\n  一套能让智能体做设计更拿手的设计语言。\n  🔗 https://github.com/pbakaus/impeccable\n\n## 2026-10-03 Anthropic Engineering\n\n今日无新文章\n\n## 2026-10-03 OpenAI News\n\n发现 2 篇新文章:\n\n**A model guide for the GPT-6 family**\n📅 Fri, 02 Oc\n原文摘要：Learn how startups can choose GPT-6 models, tune reasoning effort, improve prompts and skills, coordinate tools, and prepare workflows for production.\n🔗 https://openai.com/index/practical-guide-building-gpt-6\n\n---\n\n**Chatham scales its capital markets expertise with OpenAI**\n📅 Fri, 02 Oc\n原文摘要：Chatham Financial uses Codex and GPT-5.6 to build technology and redesign workflows, cutting trade validation from 30 minutes to under 4.\n🔗 https://openai.com/index/chatham-financial\n\n## 2026-10-03 LangChain Blog\n\n今日无新文章（追踪 20 篇）\n\n## 2026-10-03 Hugging Face Blog\n\n发现 2 篇新文章:\n\n**Open-sourcing AstaBrief, the fast report-generation model in Asta**\n📅 Fri, 02 Oc\n🔗 https://huggingface.co/blog/allenai/astabrief\n\n---\n\n**AutoSynthData: Generating Training Data for Enterprise Agents**\n📅 Fri, 02 Oc\n🔗 https://huggingface.co/blog/ServiceNow-AI/autosynthdata\n\n## 2026-10-03 Google Research\n\n发现 1 篇新文章:\n\n**Toward provably private learning from federated data**\n📅 Fri, 02 Oc\n原文摘要：Mobile Systems\n🔗 https://research.google/blog/toward-provably-private-learning-from-federated-data/\n\n## 2026-10-03 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-10-03 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-10-03 Trail of Bits\n\n发现 1 篇新文章:\n\n**SequenceHash: multihashing for the rest of us**\n📅 Fri, 02 Oc\n原文摘要：Multihashing is one of those cryptographic tasks that’s easy not to think about too much. This is unfortunate, because multihashing is a common stumbling point when cryptographers try to use hashes. As part of our goal to “fix software, not bugs,” Trail of Bits is introducing SequenceHash and its sister function SequenceMAC , a pair of related hash constructions that bring secure multihashing to developers using hash functions other than Keccak. We hope SequenceHash and SequenceMAC will help cryptographers avoid attacks that take advantage of ambiguous input encodings. The specification is open source, and is now a part of the Community Cryptography Specification Project (C2SP). SequenceHash and SequenceMAC behave similarly to NIST’s TupleHash , but have the advantage of not being tied to a single hash function. They also don’t require developers to implement fiddly computations that aren’t byte-aligned. Instead, SequenceHash and SequenceMAC work out of the box with nearly any secure cryptographic hash function you care to use, including SHA256/384/512, BLAKE, and RIPEMD. SequenceMAC supports keys 32 bytes or longer (up to the ridiculous limit of ${2}^{128}-1$ bytes). (It’s worth noting: SequenceHash and SequenceMAC rely on the security of the underlying hash for their own security. SequenceHash and SequenceMAC can’t magically make MD4 or SHA0 secure again. For the purposes of this document, it’s assumed that you have chosen a reasonable hash function like SHA256, not CRC32.) To make SequenceHash and SequenceMAC easy to use, we’re releasing three initial implementations of SequenceHash and SequenceMAC: one each in Rust, Go, and Python. We’re also releasing a large set of test vectors that cover multiple hash functions and include intermediate values to help developers debug and verify their implementations. Wait, “multihashing”? Yeah, it’s a weird term, but the idea is pretty simple. “Multihashing” means “hashing a bunch of values together.” If you’ve ever read a cr\n🔗 https://blog.trailofbits.com/2026/10/02/sequencehash-multihashing-for-the-rest-of-us/\n\n## 2026-10-03 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 10,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-10-03 发现 4 个新项目（共 5 个项目）: 🆕 Panniantong/Agent-Reach 让智能体用一条命令行免费搜索阅读全网各大...",
+   "body": "# 🔥 GitHub Trending\n\n2026-10-03\n\n发现 4 个新项目（共 5 个项目）:\n\n**🆕 Panniantong/Agent-Reach**\n  让智能体用一条命令行免费搜索阅读全网各大平台。\n  🔗 https://github.com/Panniantong/Agent-Reach\n\n---\n**🆕 JuliusBrussee/caveman**\n  让编程智能体学原始人说话，直接砍掉大半的token消耗。\n  🔗 https://github.com/JuliusBrussee/caveman\n\n---\n**🆕 obra/superpowers**\n  一套真正落地的智能体技能框架与软件开发方法论。\n  🔗 https://github.com/obra/superpowers\n\n---\n**DietrichGebert/ponytail**\n  让智能体像最懒的资深开发一样思考，能不写代码就绝不写。\n  🔗 https://github.com/DietrichGebert/ponytail\n\n---\n**🆕 pbakaus/impeccable**\n  一套能让智能体做设计更拿手的设计语言。\n  🔗 https://github.com/pbakaus/impeccable",
+   "links": [
+    {
+     "title": "Panniantong/Agent-Reach",
+     "url": "https://github.com/Panniantong/Agent-Reach"
+    },
+    {
+     "title": "JuliusBrussee/caveman",
+     "url": "https://github.com/JuliusBrussee/caveman"
+    },
+    {
+     "title": "obra/superpowers",
+     "url": "https://github.com/obra/superpowers"
+    },
+    {
+     "title": "DietrichGebert/ponytail",
+     "url": "https://github.com/DietrichGebert/ponytail"
+    },
+    {
+     "title": "pbakaus/impeccable",
+     "url": "https://github.com/pbakaus/impeccable"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-10-03 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-10-03 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-10-03 OpenAI News 发现 2 篇新文章: A model guide for the GPT-6 family 📅 Fri, 02 Oc 原文摘要：Learn ho...",
+   "body": "## 2026-10-03 OpenAI News\n\n发现 2 篇新文章:\n\n**A model guide for the GPT-6 family**\n📅 Fri, 02 Oc\n原文摘要：Learn how startups can choose GPT-6 models, tune reasoning effort, improve prompts and skills, coordinate tools, and prepare workflows for production.\n🔗 https://openai.com/index/practical-guide-building-gpt-6\n\n---\n\n**Chatham scales its capital markets expertise with OpenAI**\n📅 Fri, 02 Oc\n原文摘要：Chatham Financial uses Codex and GPT-5.6 to build technology and redesign workflows, cutting trade validation from 30 minutes to under 4.\n🔗 https://openai.com/index/chatham-financial",
+   "links": [
+    {
+     "title": "https://openai.com/index/practical-guide-building-gpt-6",
+     "url": "https://openai.com/index/practical-guide-building-gpt-6"
+    },
+    {
+     "title": "https://openai.com/index/chatham-financial",
+     "url": "https://openai.com/index/chatham-financial"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "no_update",
+   "summary": "2026-10-03 LangChain Blog 今日无新文章（追踪 20 篇）",
+   "body": "## 2026-10-03 LangChain Blog\n\n今日无新文章（追踪 20 篇）",
+   "links": []
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "content",
+   "summary": "2026-10-03 Hugging Face Blog 发现 2 篇新文章: Open-sourcing AstaBrief, the fast report-generation mod...",
+   "body": "## 2026-10-03 Hugging Face Blog\n\n发现 2 篇新文章:\n\n**Open-sourcing AstaBrief, the fast report-generation model in Asta**\n📅 Fri, 02 Oc\n🔗 https://huggingface.co/blog/allenai/astabrief\n\n---\n\n**AutoSynthData: Generating Training Data for Enterprise Agents**\n📅 Fri, 02 Oc\n🔗 https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
+   "links": [
+    {
+     "title": "https://huggingface.co/blog/allenai/astabrief",
+     "url": "https://huggingface.co/blog/allenai/astabrief"
+    },
+    {
+     "title": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
+     "url": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata"
+    }
+   ]
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "content",
+   "summary": "2026-10-03 Google Research 发现 1 篇新文章: Toward provably private learning from federated data 📅 Fr...",
+   "body": "## 2026-10-03 Google Research\n\n发现 1 篇新文章:\n\n**Toward provably private learning from federated data**\n📅 Fri, 02 Oc\n原文摘要：Mobile Systems\n🔗 https://research.google/blog/toward-provably-private-learning-from-federated-data/",
+   "links": [
+    {
+     "title": "https://research.google/blog/toward-provably-private-learning-from-federated-data/",
+     "url": "https://research.google/blog/toward-provably-private-learning-from-federated-data/"
+    }
+   ]
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-10-03 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-10-03 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-10-03 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-10-03 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "content",
+   "summary": "2026-10-03 Trail of Bits 发现 1 篇新文章: SequenceHash: multihashing for the rest of us 📅 Fri, 02 Oc...",
+   "body": "## 2026-10-03 Trail of Bits\n\n发现 1 篇新文章:\n\n**SequenceHash: multihashing for the rest of us**\n📅 Fri, 02 Oc\n原文摘要：Multihashing is one of those cryptographic tasks that’s easy not to think about too much. This is unfortunate, because multihashing is a common stumbling point when cryptographers try to use hashes. As part of our goal to “fix software, not bugs,” Trail of Bits is introducing SequenceHash and its sister function SequenceMAC , a pair of related hash constructions that bring secure multihashing to developers using hash functions other than Keccak. We hope SequenceHash and SequenceMAC will help cryptographers avoid attacks that take advantage of ambiguous input encodings. The specification is open source, and is now a part of the Community Cryptography Specification Project (C2SP). SequenceHash and SequenceMAC behave similarly to NIST’s TupleHash , but have the advantage of not being tied to a single hash function. They also don’t require developers to implement fiddly computations that aren’t byte-aligned. Instead, SequenceHash and SequenceMAC work out of the box with nearly any secure cryptographic hash function you care to use, including SHA256/384/512, BLAKE, and RIPEMD. SequenceMAC supports keys 32 bytes or longer (up to the ridiculous limit of ${2}^{128}-1$ bytes). (It’s worth noting: SequenceHash and SequenceMAC rely on the security of the underlying hash for their own security. SequenceHash and SequenceMAC can’t magically make MD4 or SHA0 secure again. For the purposes of this document, it’s assumed that you have chosen a reasonable hash function like SHA256, not CRC32.) To make SequenceHash and SequenceMAC easy to use, we’re releasing three initial implementations of SequenceHash and SequenceMAC: one each in Rust, Go, and Python. We’re also releasing a large set of test vectors that cover multiple hash functions and include intermediate values to help developers debug and verify their implementations. Wait, “multihashing”? Yeah, it’s a weird term, but the idea is pretty simple. “Multihashing” means “hashing a bunch of values together.” If you’ve ever read a cr\n🔗 https://blog.trailofbits.com/2026/10/02/sequencehash-multihashing-for-the-rest-of-us/",
+   "links": [
+    {
+     "title": "https://blog.trailofbits.com/2026/10/02/sequencehash-multihashing-for-the-rest-of-us/",
+     "url": "https://blog.trailofbits.com/2026/10/02/sequencehash-multihashing-for-the-rest-of-us/"
+    }
+   ]
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-10-03 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-10-03 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-10-03T05:33:16+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

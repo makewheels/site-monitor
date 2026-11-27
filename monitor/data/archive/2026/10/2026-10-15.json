@@ -1,0 +1,175 @@
+{
+ "date": "2026-10-15",
+ "report_id": "2026-10-15-1f2271be55",
+ "created_at": "2026-10-15T05:33:33",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-10-15\n\n# 🔥 GitHub Trending\n\n2026-10-15\n\n发现 2 个新项目（共 5 个项目）:\n\n**morluto/rea**\n  用智能体逆向一切，从应用行为直达底层二进制。\n  🔗 https://github.com/morluto/rea\n\n---\n**debpalash/VoiceStudio**\n  完全本地化的开源语音神器，克隆、配音、转录全搞定。\n  🔗 https://github.com/debpalash/VoiceStudio\n\n---\n**mksglu/context-mode**\n  优化AI编程上下文，大幅压缩工具输出并持久化会话记忆。\n  🔗 https://github.com/mksglu/context-mode\n\n---\n**🆕 nvm-sh/nvm**\n  轻松管理多个Node.js版本，一键切换的必备脚本。\n  🔗 https://github.com/nvm-sh/nvm\n\n---\n**🆕 K-Dense-AI/scientific-agent-skills**\n  让智能体变身AI科学家，内置上百个科研专属技能包。\n  🔗 https://github.com/K-Dense-AI/scientific-agent-skills\n\n## 2026-10-15 Anthropic Engineering\n\n今日无新文章\n\n## 2026-10-15 OpenAI News\n\n发现 4 篇新文章:\n\n**Amp puts AI agents to work beyond code with OpenAI models**\n📅 Wed, 14 Oc\n原文摘要：See how Amp pushes the frontier of what agents can do with GPT-6 Astra, Ultrafast, GPT-Live-1, and Sign in with ChatGPT.\n🔗 https://openai.com/index/amp-beyond-coding\n\n---\n\n**SentinelOne cuts malware analysis from weeks to hours**\n📅 Wed, 14 Oc\n原文摘要：With OpenAI Daybreak, SentinelOne cuts weeks of malware analysis to hours, creating capacity to investigate more threats.\n🔗 https://openai.com/index/sentinelone\n\n---\n\n**How Third Moment Research runs 10,000 agents for 36+ hours**\n📅 Wed, 14 Oc\n原文摘要：With GPT-6 Astra and GPT-6.1 Sol, Codex, and Daybreak for cybersecurity, this AI lab builds agents that focus for days and improve with use.\n🔗 https://openai.com/index/third-moment-research\n\n---\n\n**The EU’s next chapter in AI is agentic**\n📅 Wed, 14 Oc\n原文摘要：New analysis shows how agentic AI adoption is growing across EU enterprises and small businesses—and where deeper use could unlock more value.\n🔗 https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic\n\n## 2026-10-15 LangChain Blog\n\n发现 1 篇新文章:\n\n**Context Engineering with Deep Agents: How To Remember Without Keeping Everything In Context**\n📅 Wed, 14 Oc\n原文摘要：Long-running agents degrade as context piles up. Learn how offloading, summarization, skills, subagents, and memory keep your agent's context window focused.\n🔗 https://www.langchain.com/blog/context-engineering-deep-agents-remember\n\n## 2026-10-15 Hugging Face Blog\n\n发现 1 篇新文章:\n\n**HiRO-ACEv2: Simulating extreme weather at 3 km resolution for a fraction of the cost**\n📅 Wed, 14 Oc\n🔗 https://huggingface.co/blog/allenai/hiro-acev2\n\n## 2026-10-15 Google Research\n\n发现 3 篇新文章:\n\n**Research@ 2026: 10 ways we're amplifying human ingenuity**\n📅 Wed, 14 Oc\n原文摘要：General Science\n🔗 https://research.google/blog/research-2026-10-ways-were-amplifying-human-ingenuity/\n\n---\n\n**Putting Earth AI to work: Geospatial agents for our planet's biggest challenges**\n📅 Wed, 14 Oc\n原文摘要：Earth AI\n🔗 https://research.google/blog/putting-earth-ai-to-work-geospatial-agents-for-our-planets-biggest-challenges/\n\n---\n\n**Analyzing technical documents with Deep Review**\n📅 Wed, 14 Oc\n原文摘要：General Science\n🔗 https://research.google/blog/analyzing-technical-documents-with-deep-review/\n\n## 2026-10-15 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-10-15 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-10-15 Trail of Bits\n\n发现 1 篇新文章:\n\n**Package managers have an integrity problem**\n📅 Wed, 14 Oc\n原文摘要：I tested 25 of the most popular package managers to check whether they detect a compromised package repository injecting malicious code into legitimate packages. This code integrity problem could be solved using cryptographic hashes or signatures, but many package managers are still vulnerable to this threat. Of the 25 package managers reviewed 1 , fewer than half used lockfiles that checked for tampering by default, and only two verified the integrity of every package they downloaded. Supply-chain attacks caused by developer compromise are a common story, but imagine what happens if ongoing mitigation attempts, including work by Trail of Bits 2 , are successful. If developers of popular packages are no longer the easiest targets, attackers will shift their focus to the next weakest link in the system: the package repositories that serve the code. The cryptographic answers to this problem are more subtle than they appear, and many implementations fall short due to deliberate design choices, resource prioritization, or the complexity of developer-friendly solutions. One natural answer is to include a cryptographic hash of a package’s contents in a lockfile and compare hashes after downloading the package. This automatic verification was the default behavior in about half of the package managers I tested, but others required extra configuration to include or verify these hashes, used hashes in a cryptographically insecure way, or lacked hashes entirely. This is summarized in the following table. Verifies integrity Go, vcpkg Verifies if lockfile is present Bun, Bundler, Cargo, npm, pnpm, Poetry, SwiftPM, uv, Yarn Verifies with lockfile + extra steps Conda, Gradle, Pip, NuGet, Pub Does not verify with lockfile or N/A CocoaPods, Composer, Conan, cpanminus, Gem, Maven, PowerShellGet, PSResourceGet, R Table 1: Lockfile-based security of a package manager fetching dependencies from a malicious repository, categorized by how much work it takes a developer to achieve integrit\n🔗 https://blog.trailofbits.com/2026/10/14/package-managers-have-an-integrity-problem/\n\n## 2026-10-15 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 10,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-10-15 发现 2 个新项目（共 5 个项目）: morluto/rea 用智能体逆向一切，从应用行为直达底层二进制。 🔗 https://g...",
+   "body": "# 🔥 GitHub Trending\n\n2026-10-15\n\n发现 2 个新项目（共 5 个项目）:\n\n**morluto/rea**\n  用智能体逆向一切，从应用行为直达底层二进制。\n  🔗 https://github.com/morluto/rea\n\n---\n**debpalash/VoiceStudio**\n  完全本地化的开源语音神器，克隆、配音、转录全搞定。\n  🔗 https://github.com/debpalash/VoiceStudio\n\n---\n**mksglu/context-mode**\n  优化AI编程上下文，大幅压缩工具输出并持久化会话记忆。\n  🔗 https://github.com/mksglu/context-mode\n\n---\n**🆕 nvm-sh/nvm**\n  轻松管理多个Node.js版本，一键切换的必备脚本。\n  🔗 https://github.com/nvm-sh/nvm\n\n---\n**🆕 K-Dense-AI/scientific-agent-skills**\n  让智能体变身AI科学家，内置上百个科研专属技能包。\n  🔗 https://github.com/K-Dense-AI/scientific-agent-skills",
+   "links": [
+    {
+     "title": "morluto/rea",
+     "url": "https://github.com/morluto/rea"
+    },
+    {
+     "title": "debpalash/VoiceStudio",
+     "url": "https://github.com/debpalash/VoiceStudio"
+    },
+    {
+     "title": "mksglu/context-mode",
+     "url": "https://github.com/mksglu/context-mode"
+    },
+    {
+     "title": "nvm-sh/nvm",
+     "url": "https://github.com/nvm-sh/nvm"
+    },
+    {
+     "title": "K-Dense-AI/scientific-agent-skills",
+     "url": "https://github.com/K-Dense-AI/scientific-agent-skills"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-10-15 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-10-15 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-10-15 OpenAI News 发现 4 篇新文章: Amp puts AI agents to work beyond code with OpenAI models 📅 W...",
+   "body": "## 2026-10-15 OpenAI News\n\n发现 4 篇新文章:\n\n**Amp puts AI agents to work beyond code with OpenAI models**\n📅 Wed, 14 Oc\n原文摘要：See how Amp pushes the frontier of what agents can do with GPT-6 Astra, Ultrafast, GPT-Live-1, and Sign in with ChatGPT.\n🔗 https://openai.com/index/amp-beyond-coding\n\n---\n\n**SentinelOne cuts malware analysis from weeks to hours**\n📅 Wed, 14 Oc\n原文摘要：With OpenAI Daybreak, SentinelOne cuts weeks of malware analysis to hours, creating capacity to investigate more threats.\n🔗 https://openai.com/index/sentinelone\n\n---\n\n**How Third Moment Research runs 10,000 agents for 36+ hours**\n📅 Wed, 14 Oc\n原文摘要：With GPT-6 Astra and GPT-6.1 Sol, Codex, and Daybreak for cybersecurity, this AI lab builds agents that focus for days and improve with use.\n🔗 https://openai.com/index/third-moment-research\n\n---\n\n**The EU’s next chapter in AI is agentic**\n📅 Wed, 14 Oc\n原文摘要：New analysis shows how agentic AI adoption is growing across EU enterprises and small businesses—and where deeper use could unlock more value.\n🔗 https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic",
+   "links": [
+    {
+     "title": "https://openai.com/index/amp-beyond-coding",
+     "url": "https://openai.com/index/amp-beyond-coding"
+    },
+    {
+     "title": "https://openai.com/index/sentinelone",
+     "url": "https://openai.com/index/sentinelone"
+    },
+    {
+     "title": "https://openai.com/index/third-moment-research",
+     "url": "https://openai.com/index/third-moment-research"
+    },
+    {
+     "title": "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic",
+     "url": "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "content",
+   "summary": "2026-10-15 LangChain Blog 发现 1 篇新文章: Context Engineering with Deep Agents: How To Remember With...",
+   "body": "## 2026-10-15 LangChain Blog\n\n发现 1 篇新文章:\n\n**Context Engineering with Deep Agents: How To Remember Without Keeping Everything In Context**\n📅 Wed, 14 Oc\n原文摘要：Long-running agents degrade as context piles up. Learn how offloading, summarization, skills, subagents, and memory keep your agent's context window focused.\n🔗 https://www.langchain.com/blog/context-engineering-deep-agents-remember",
+   "links": [
+    {
+     "title": "https://www.langchain.com/blog/context-engineering-deep-agents-remember",
+     "url": "https://www.langchain.com/blog/context-engineering-deep-agents-remember"
+    }
+   ]
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "content",
+   "summary": "2026-10-15 Hugging Face Blog 发现 1 篇新文章: HiRO-ACEv2: Simulating extreme weather at 3 km resoluti...",
+   "body": "## 2026-10-15 Hugging Face Blog\n\n发现 1 篇新文章:\n\n**HiRO-ACEv2: Simulating extreme weather at 3 km resolution for a fraction of the cost**\n📅 Wed, 14 Oc\n🔗 https://huggingface.co/blog/allenai/hiro-acev2",
+   "links": [
+    {
+     "title": "https://huggingface.co/blog/allenai/hiro-acev2",
+     "url": "https://huggingface.co/blog/allenai/hiro-acev2"
+    }
+   ]
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "content",
+   "summary": "2026-10-15 Google Research 发现 3 篇新文章: Research@ 2026: 10 ways we're amplifying human ingenuity...",
+   "body": "## 2026-10-15 Google Research\n\n发现 3 篇新文章:\n\n**Research@ 2026: 10 ways we're amplifying human ingenuity**\n📅 Wed, 14 Oc\n原文摘要：General Science\n🔗 https://research.google/blog/research-2026-10-ways-were-amplifying-human-ingenuity/\n\n---\n\n**Putting Earth AI to work: Geospatial agents for our planet's biggest challenges**\n📅 Wed, 14 Oc\n原文摘要：Earth AI\n🔗 https://research.google/blog/putting-earth-ai-to-work-geospatial-agents-for-our-planets-biggest-challenges/\n\n---\n\n**Analyzing technical documents with Deep Review**\n📅 Wed, 14 Oc\n原文摘要：General Science\n🔗 https://research.google/blog/analyzing-technical-documents-with-deep-review/",
+   "links": [
+    {
+     "title": "https://research.google/blog/research-2026-10-ways-were-amplifying-human-ingenuity/",
+     "url": "https://research.google/blog/research-2026-10-ways-were-amplifying-human-ingenuity/"
+    },
+    {
+     "title": "https://research.google/blog/putting-earth-ai-to-work-geospatial-agents-for-our-planets-biggest-challenges/",
+     "url": "https://research.google/blog/putting-earth-ai-to-work-geospatial-agents-for-our-planets-biggest-challenges/"
+    },
+    {
+     "title": "https://research.google/blog/analyzing-technical-documents-with-deep-review/",
+     "url": "https://research.google/blog/analyzing-technical-documents-with-deep-review/"
+    }
+   ]
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-10-15 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-10-15 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-10-15 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-10-15 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "content",
+   "summary": "2026-10-15 Trail of Bits 发现 1 篇新文章: Package managers have an integrity problem 📅 Wed, 14 Oc 原文摘...",
+   "body": "## 2026-10-15 Trail of Bits\n\n发现 1 篇新文章:\n\n**Package managers have an integrity problem**\n📅 Wed, 14 Oc\n原文摘要：I tested 25 of the most popular package managers to check whether they detect a compromised package repository injecting malicious code into legitimate packages. This code integrity problem could be solved using cryptographic hashes or signatures, but many package managers are still vulnerable to this threat. Of the 25 package managers reviewed 1 , fewer than half used lockfiles that checked for tampering by default, and only two verified the integrity of every package they downloaded. Supply-chain attacks caused by developer compromise are a common story, but imagine what happens if ongoing mitigation attempts, including work by Trail of Bits 2 , are successful. If developers of popular packages are no longer the easiest targets, attackers will shift their focus to the next weakest link in the system: the package repositories that serve the code. The cryptographic answers to this problem are more subtle than they appear, and many implementations fall short due to deliberate design choices, resource prioritization, or the complexity of developer-friendly solutions. One natural answer is to include a cryptographic hash of a package’s contents in a lockfile and compare hashes after downloading the package. This automatic verification was the default behavior in about half of the package managers I tested, but others required extra configuration to include or verify these hashes, used hashes in a cryptographically insecure way, or lacked hashes entirely. This is summarized in the following table. Verifies integrity Go, vcpkg Verifies if lockfile is present Bun, Bundler, Cargo, npm, pnpm, Poetry, SwiftPM, uv, Yarn Verifies with lockfile + extra steps Conda, Gradle, Pip, NuGet, Pub Does not verify with lockfile or N/A CocoaPods, Composer, Conan, cpanminus, Gem, Maven, PowerShellGet, PSResourceGet, R Table 1: Lockfile-based security of a package manager fetching dependencies from a malicious repository, categorized by how much work it takes a developer to achieve integrit\n🔗 https://blog.trailofbits.com/2026/10/14/package-managers-have-an-integrity-problem/",
+   "links": [
+    {
+     "title": "https://blog.trailofbits.com/2026/10/14/package-managers-have-an-integrity-problem/",
+     "url": "https://blog.trailofbits.com/2026/10/14/package-managers-have-an-integrity-problem/"
+    }
+   ]
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-10-15 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-10-15 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-10-15T05:33:38+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

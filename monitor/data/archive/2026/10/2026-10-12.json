@@ -1,0 +1,130 @@
+{
+ "date": "2026-10-12",
+ "report_id": "2026-10-12-93280b8c55",
+ "created_at": "2026-10-12T05:31:24",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-10-12\n\n# 🔥 GitHub Trending\n\n2026-10-12\n\n发现 1 个新项目（共 5 个项目）:\n\n**morluto/rea**\n  用AI智能体搞定从应用到二进制的逆向工程。\n  🔗 https://github.com/morluto/rea\n\n---\n**boykopovar/AnyPS5**\n  自动把PS5程序移植到Linux和Windows。\n  🔗 https://github.com/boykopovar/AnyPS5\n\n---\n**storytold/artcraft**\n  专为艺术家、设计师和影视创作者打造的创意制作引擎。\n  🔗 https://github.com/storytold/artcraft\n\n---\n**cathrynlavery/diagram-design**\n  给AI编程助手配的44种无阴影图表，纯HTML加SVG。\n  🔗 https://github.com/cathrynlavery/diagram-design\n\n---\n**🆕 bilawalsidhu/gods-eye-view**\n  浏览器里的真实间谍卫星模拟器，能在逼真3D地球实时看情报。\n  🔗 https://github.com/bilawalsidhu/gods-eye-view\n\n## 2026-10-12 Anthropic Engineering\n\n今日无新文章\n\n## 2026-10-12 OpenAI News\n\n今日无新文章(追踪 20 篇)\n\n## 2026-10-12 LangChain Blog\n\n今日无新文章（追踪 20 篇）\n\n## 2026-10-12 Hugging Face Blog\n\n今日无新文章(追踪 20 篇)\n\n## 2026-10-12 Google Research\n\n今日无新文章(追踪 20 篇)\n\n## 2026-10-12 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-10-12 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-10-12 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-10-12 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 10,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-10-12 发现 1 个新项目（共 5 个项目）: morluto/rea 用AI智能体搞定从应用到二进制的逆向工程。 🔗 https://gi...",
+   "body": "# 🔥 GitHub Trending\n\n2026-10-12\n\n发现 1 个新项目（共 5 个项目）:\n\n**morluto/rea**\n  用AI智能体搞定从应用到二进制的逆向工程。\n  🔗 https://github.com/morluto/rea\n\n---\n**boykopovar/AnyPS5**\n  自动把PS5程序移植到Linux和Windows。\n  🔗 https://github.com/boykopovar/AnyPS5\n\n---\n**storytold/artcraft**\n  专为艺术家、设计师和影视创作者打造的创意制作引擎。\n  🔗 https://github.com/storytold/artcraft\n\n---\n**cathrynlavery/diagram-design**\n  给AI编程助手配的44种无阴影图表，纯HTML加SVG。\n  🔗 https://github.com/cathrynlavery/diagram-design\n\n---\n**🆕 bilawalsidhu/gods-eye-view**\n  浏览器里的真实间谍卫星模拟器，能在逼真3D地球实时看情报。\n  🔗 https://github.com/bilawalsidhu/gods-eye-view",
+   "links": [
+    {
+     "title": "morluto/rea",
+     "url": "https://github.com/morluto/rea"
+    },
+    {
+     "title": "boykopovar/AnyPS5",
+     "url": "https://github.com/boykopovar/AnyPS5"
+    },
+    {
+     "title": "storytold/artcraft",
+     "url": "https://github.com/storytold/artcraft"
+    },
+    {
+     "title": "cathrynlavery/diagram-design",
+     "url": "https://github.com/cathrynlavery/diagram-design"
+    },
+    {
+     "title": "bilawalsidhu/gods-eye-view",
+     "url": "https://github.com/bilawalsidhu/gods-eye-view"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-10-12 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-10-12 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "no_update",
+   "summary": "2026-10-12 OpenAI News 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-10-12 OpenAI News\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "no_update",
+   "summary": "2026-10-12 LangChain Blog 今日无新文章（追踪 20 篇）",
+   "body": "## 2026-10-12 LangChain Blog\n\n今日无新文章（追踪 20 篇）",
+   "links": []
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "no_update",
+   "summary": "2026-10-12 Hugging Face Blog 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-10-12 Hugging Face Blog\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "no_update",
+   "summary": "2026-10-12 Google Research 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-10-12 Google Research\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-10-12 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-10-12 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-10-12 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-10-12 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-10-12 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-10-12 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-10-12 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-10-12 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-10-12T05:31:29+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

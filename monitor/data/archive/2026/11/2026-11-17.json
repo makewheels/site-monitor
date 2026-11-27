@@ -1,0 +1,58 @@
+{
+ "date": "2026-11-17",
+ "report_id": "2026-11-17-5e21ca630c",
+ "created_at": "2026-11-17T05:30:37",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-11-17\n\n# 🔥 GitHub Trending\n\n2026-11-17\n\n发现 2 个新项目（共 5 个项目）:\n\n**ag-ui-protocol/ag-ui**\n  让智能体接入前端应用的交互协议\n  🔗 https://github.com/ag-ui-protocol/ag-ui\n\n---\n**backnotprop/plannotator**\n  和智能体协作的工作台，可规划、标注、审代码并把反馈回传\n  🔗 https://github.com/backnotprop/plannotator\n\n---\n**dream-num/univer**\n  用 SDK 在自家产品里搭 AI 办公，支持编辑、计算与协作\n  🔗 https://github.com/dream-num/univer\n\n---\n**🆕 tradermonty/claude-trading-skills**\n  给投资者和交易者的技能集，覆盖行情分析、技术图表与选股\n  🔗 https://github.com/tradermonty/claude-trading-skills\n\n---\n**🆕 elementalsouls/Claude-BugHunter**\n  漏洞挖掘与红队技能包，含 82 项技能和公开报告模式\n  🔗 https://github.com/elementalsouls/Claude-BugHunter\n\n## 2026-11-17 Anthropic Engineering\n\n今日无新文章",
+ "item_count": 2,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-11-17 发现 2 个新项目（共 5 个项目）: ag-ui-protocol/ag-ui 让智能体接入前端应用的交互协议 🔗 https:/...",
+   "body": "# 🔥 GitHub Trending\n\n2026-11-17\n\n发现 2 个新项目（共 5 个项目）:\n\n**ag-ui-protocol/ag-ui**\n  让智能体接入前端应用的交互协议\n  🔗 https://github.com/ag-ui-protocol/ag-ui\n\n---\n**backnotprop/plannotator**\n  和智能体协作的工作台，可规划、标注、审代码并把反馈回传\n  🔗 https://github.com/backnotprop/plannotator\n\n---\n**dream-num/univer**\n  用 SDK 在自家产品里搭 AI 办公，支持编辑、计算与协作\n  🔗 https://github.com/dream-num/univer\n\n---\n**🆕 tradermonty/claude-trading-skills**\n  给投资者和交易者的技能集，覆盖行情分析、技术图表与选股\n  🔗 https://github.com/tradermonty/claude-trading-skills\n\n---\n**🆕 elementalsouls/Claude-BugHunter**\n  漏洞挖掘与红队技能包，含 82 项技能和公开报告模式\n  🔗 https://github.com/elementalsouls/Claude-BugHunter",
+   "links": [
+    {
+     "title": "ag-ui-protocol/ag-ui",
+     "url": "https://github.com/ag-ui-protocol/ag-ui"
+    },
+    {
+     "title": "backnotprop/plannotator",
+     "url": "https://github.com/backnotprop/plannotator"
+    },
+    {
+     "title": "dream-num/univer",
+     "url": "https://github.com/dream-num/univer"
+    },
+    {
+     "title": "tradermonty/claude-trading-skills",
+     "url": "https://github.com/tradermonty/claude-trading-skills"
+    },
+    {
+     "title": "elementalsouls/Claude-BugHunter",
+     "url": "https://github.com/elementalsouls/Claude-BugHunter"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-11-17 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-11-17 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-11-17T05:30:39+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

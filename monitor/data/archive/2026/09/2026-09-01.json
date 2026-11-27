@@ -1,0 +1,145 @@
+{
+ "date": "2026-09-01",
+ "report_id": "2026-09-01-99931ef238",
+ "created_at": "2026-09-01T05:31:49",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-09-01\n\n# 🔥 GitHub Trending\n\n2026-09-01\n\n发现 2 个新项目（共 5 个项目）:\n\n**THU-MAIC/OpenMAIC**\n  一键启动多智能体沉浸式互动课堂体验\n  🔗 https://github.com/THU-MAIC/OpenMAIC\n\n---\n**tt-a1i/archify**\n  让AI画出带动效的精美架构图，自带HTML输出\n  🔗 https://github.com/tt-a1i/archify\n\n---\n**K-Dense-AI/scientific-agent-skills**\n  把AI变成科研助手，内含165个即用型科学技能\n  🔗 https://github.com/K-Dense-AI/scientific-agent-skills\n\n---\n**🆕 k1tbyte/Wand-Enhancer**\n  WeMod魔改增强插件，提升UX和兼容性\n  🔗 https://github.com/k1tbyte/Wand-Enhancer\n\n---\n**🆕 majd/ipatool**\n  命令行工具，直接从App Store搜索下载ipa安装包\n  🔗 https://github.com/majd/ipatool\n\n## 2026-09-01 Anthropic Engineering\n\n今日无新文章\n\n## 2026-09-01 OpenAI News\n\n发现 1 篇新文章:\n\n**A milestone in expanding access to AI**\n📅 Mon, 31 Au\n原文摘要：ChatGPT Ads reaches $1 billion in annualized revenue run rate and expands globally, supporting broader access to AI through free and affordable options.\n🔗 https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads\n\n## 2026-09-01 LangChain Blog\n\n今日无新文章（追踪 20 篇）\n\n## 2026-09-01 Hugging Face Blog\n\n今日无新文章(追踪 20 篇)\n\n## 2026-09-01 Google Research\n\n发现 1 篇新文章:\n\n**TimesFM-3: A zero-shot foundation model for multivariate forecasting**\n📅 Mon, 31 Au\n原文摘要：Data Management\n🔗 https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting/\n\n## 2026-09-01 METR\n\n发现 1 篇新文章:\n\n**Breve investigación independiente sobre el comportamiento, el razonamiento y la colaboración de los agentes en el incidente de hackeo de OpenAI / Hugging Face**\n📅 Wed, 26 Au\n原文摘要：>> > > <> <> <> <> <><> <> <> <> <> <><><> <> <><><> <> <> <><> >><> >><> <> <> <> <><> <> <> <> <> <> > <> <><> <><><><> <><><> <><><> ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ <> ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ < ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ <> ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩\n🔗 https://metr.org/es/blog/2026-08-26-openai-hugging-face-incident-investigation/\n\n## 2026-09-01 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-09-01 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-09-01 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 10,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-09-01 发现 2 个新项目（共 5 个项目）: THU-MAIC/OpenMAIC 一键启动多智能体沉浸式互动课堂体验 🔗 https://...",
+   "body": "# 🔥 GitHub Trending\n\n2026-09-01\n\n发现 2 个新项目（共 5 个项目）:\n\n**THU-MAIC/OpenMAIC**\n  一键启动多智能体沉浸式互动课堂体验\n  🔗 https://github.com/THU-MAIC/OpenMAIC\n\n---\n**tt-a1i/archify**\n  让AI画出带动效的精美架构图，自带HTML输出\n  🔗 https://github.com/tt-a1i/archify\n\n---\n**K-Dense-AI/scientific-agent-skills**\n  把AI变成科研助手，内含165个即用型科学技能\n  🔗 https://github.com/K-Dense-AI/scientific-agent-skills\n\n---\n**🆕 k1tbyte/Wand-Enhancer**\n  WeMod魔改增强插件，提升UX和兼容性\n  🔗 https://github.com/k1tbyte/Wand-Enhancer\n\n---\n**🆕 majd/ipatool**\n  命令行工具，直接从App Store搜索下载ipa安装包\n  🔗 https://github.com/majd/ipatool",
+   "links": [
+    {
+     "title": "THU-MAIC/OpenMAIC",
+     "url": "https://github.com/THU-MAIC/OpenMAIC"
+    },
+    {
+     "title": "tt-a1i/archify",
+     "url": "https://github.com/tt-a1i/archify"
+    },
+    {
+     "title": "K-Dense-AI/scientific-agent-skills",
+     "url": "https://github.com/K-Dense-AI/scientific-agent-skills"
+    },
+    {
+     "title": "k1tbyte/Wand-Enhancer",
+     "url": "https://github.com/k1tbyte/Wand-Enhancer"
+    },
+    {
+     "title": "majd/ipatool",
+     "url": "https://github.com/majd/ipatool"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-09-01 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-09-01 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-09-01 OpenAI News 发现 1 篇新文章: A milestone in expanding access to AI 📅 Mon, 31 Au 原文摘要：ChatG...",
+   "body": "## 2026-09-01 OpenAI News\n\n发现 1 篇新文章:\n\n**A milestone in expanding access to AI**\n📅 Mon, 31 Au\n原文摘要：ChatGPT Ads reaches $1 billion in annualized revenue run rate and expands globally, supporting broader access to AI through free and affordable options.\n🔗 https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads",
+   "links": [
+    {
+     "title": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads",
+     "url": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "no_update",
+   "summary": "2026-09-01 LangChain Blog 今日无新文章（追踪 20 篇）",
+   "body": "## 2026-09-01 LangChain Blog\n\n今日无新文章（追踪 20 篇）",
+   "links": []
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "no_update",
+   "summary": "2026-09-01 Hugging Face Blog 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-09-01 Hugging Face Blog\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "content",
+   "summary": "2026-09-01 Google Research 发现 1 篇新文章: TimesFM-3: A zero-shot foundation model for multivariate...",
+   "body": "## 2026-09-01 Google Research\n\n发现 1 篇新文章:\n\n**TimesFM-3: A zero-shot foundation model for multivariate forecasting**\n📅 Mon, 31 Au\n原文摘要：Data Management\n🔗 https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting/",
+   "links": [
+    {
+     "title": "https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting/",
+     "url": "https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting/"
+    }
+   ]
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "content",
+   "summary": "2026-09-01 METR 发现 1 篇新文章: Breve investigación independiente sobre el comportamiento, el razona...",
+   "body": "## 2026-09-01 METR\n\n发现 1 篇新文章:\n\n**Breve investigación independiente sobre el comportamiento, el razonamiento y la colaboración de los agentes en el incidente de hackeo de OpenAI / Hugging Face**\n📅 Wed, 26 Au\n原文摘要：>> > > <> <> <> <> <><> <> <> <> <> <><><> <> <><><> <> <> <><> >><> >><> <> <> <> <><> <> <> <> <> <> > <> <><> <><><><> <><><> <><><> ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ <> ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ < ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ <> ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩\n🔗 https://metr.org/es/blog/2026-08-26-openai-hugging-face-incident-investigation/",
+   "links": [
+    {
+     "title": "https://metr.org/es/blog/2026-08-26-openai-hugging-face-incident-investigation/",
+     "url": "https://metr.org/es/blog/2026-08-26-openai-hugging-face-incident-investigation/"
+    }
+   ]
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-09-01 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-09-01 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-09-01 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-09-01 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-09-01 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-09-01 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-09-01T05:31:53+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

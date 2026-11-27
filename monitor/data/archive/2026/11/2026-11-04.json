@@ -1,0 +1,222 @@
+{
+ "date": "2026-11-04",
+ "report_id": "2026-11-04-d58bf3bb02",
+ "created_at": "2026-11-04T05:35:39",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-11-04\n\n# 🔥 GitHub Trending\n\n2026-11-04\n\n发现 4 个新项目（共 5 个项目）:\n\n**thedotmack/claude-mem**\n  让智能体跨会话记住事儿，自动压缩并注入上下文。\n  🔗 https://github.com/thedotmack/claude-mem\n\n---\n**🆕 vercel-labs/agent-desktop**\n  让AI直接上手操作电脑的命令行工具。\n  🔗 https://github.com/vercel-labs/agent-desktop\n\n---\n**🆕 max-sixty/worktrunk**\n  专为AI并行干活设计的Git工作树管理工具。\n  🔗 https://github.com/max-sixty/worktrunk\n\n---\n**🆕 JustVugg/colibri**\n  MoE分层推理引擎，按冷热把专家塞进显存内存和硬盘。\n  🔗 https://github.com/JustVugg/colibri\n\n---\n**🆕 mattpocock/skills**\n  作者私藏的AI技能包，专为干实事的工程师打造。\n  🔗 https://github.com/mattpocock/skills\n\n## 2026-11-04 Anthropic Engineering\n\n今日无新文章\n\n## 2026-11-04 OpenAI News\n\n发现 11 篇新文章:\n\n**Accelerating engineering for the physical world**\n📅 Tue, 03 No\n原文摘要：Discover how ChatGPT and Codex are helping engineers accelerate CAD, PCB design, simulation, and other workflows across the physical world.\n🔗 https://openai.com/index/accelerating-engineering-for-the-physical-world\n\n---\n\n**How Cisco defends at machine speed with OpenAI**\n📅 Tue, 03 No\n原文摘要：Cisco combines network intelligence with OpenAI models to strengthen enterprise security. Learn how it is building more adaptive defenses.\n🔗 https://openai.com/index/cisco-cyber\n\n---\n\n**Heimstaden is changing residential real estate management with AI**\n📅 Tue, 03 No\n原文摘要：Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe.\n🔗 https://openai.com/index/heimstaden\n\n---\n\n**OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer**\n📅 Tue, 03 No\n原文摘要：Jill Hazelbaker will join OpenAI as Chief Corporate Affairs Officer, leading the company’s global communications and corporate positioning.\n🔗 https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer\n\n---\n\n**Scaling Git at OpenAI**\n📅 Mon, 02 No\n原文摘要：How OpenAI built Pando, a Git-compatible backend designed for the scale of development that Codex makes possible.\n🔗 https://openai.com/index/scaling-git-at-openai\n\n---\n\n**Introducing the Grid Protectors Program**\n📅 Mon, 02 No\n原文摘要：OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer electricity costs.\n🔗 https://openai.com/index/grid-protectors-program\n\n---\n\n**Rewarding defenders with bigger bug bounties**\n📅 Mon, 02 No\n原文摘要：OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers.\n🔗 https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties\n\n---\n\n**Preparing our next security sprint to harden OpenAI**\n📅 Mon, 02 No\n原文摘要：OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI.\n🔗 https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai\n\n---\n\n**LifeVal**\n📅 Mon, 02 No\n原文摘要：Introducing LifeVal, a benchmark measuring how well AI helps people complete everyday tasks, from finding childcare to managing finances and government paperwork.\n🔗 https://openai.com/index/lifeval\n\n---\n\n**OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization**\n📅 Mon, 02 No\n原文摘要：OpenAI appoints Dan Driscoll to advise on responsible AI for national security modernization, cyber resilience, and collaboration with U.S. allies.\n🔗 https://openai.com/index/dan-driscoll-joins-openai\n\n---\n\n**Qodo builds context into AI code review with Codex**\n📅 Mon, 02 No\n原文摘要：Qodo brings company knowledge and coding standards into Codex, helping developers catch P0 issues across repositories before opening a pull request.\n🔗 https://openai.com/index/qodo-codex-plugin\n\n## 2026-11-04 LangChain Blog\n\n发现 5 篇新文章:\n\n**Why human insight is a strategic advantage for building better agents**\n📅 Tue, 03 No\n原文摘要：Explore 3 principles for effective human-in-the-loop workflows and how human-review is a strategic imperative for production-ready agents.\n🔗 https://www.langchain.com/blog/human-insight-strategic-advantage-agents\n\n---\n\n**LangSmith BYOC is now available on AWS, Azure, and Google Cloud**\n📅 Tue, 03 No\n原文摘要：LangSmith BYOC now runs on AWS (GA), Azure and Google Cloud (Beta). Your traces, evals, and agent deployments stay in your cloud account while LangChain runs it.\n🔗 https://www.langchain.com/blog/langsmith-byoc-aws-gc-azure\n\n---\n\n**How We Optimized Browser Use for Deep Agents**\n📅 Tue, 03 No\n原文摘要：We compared seven browser toolsets for Deep Agents, picked Stagehand from Browserbase, and tuned it with LangSmith traces and evals. Here's what we learned.\n🔗 https://www.langchain.com/blog/how-we-optimized-browser-use-for-deep-agents\n\n---\n\n**Managed Deep Agents: the fastest way to ship a production deep agent**\n📅 Mon, 02 No\n原文摘要：Run deep agents in production with durable execution, sandboxes, tool access, and LangSmith observability, without building the runtime yourself. Now in private beta\n🔗 https://www.langchain.com/blog/introducing-managed-deep-agents\n\n---\n\n**New context engineering challenges in late 2026**\n📅 Mon, 02 No\n原文摘要：LangChain CEO Harrison Chase shares insights into the biggest harness engineering challenges with the emergence of proactive agents.\n🔗 https://www.langchain.com/blog/context-engineering-challenges-late-2026\n\n## 2026-11-04 Hugging Face Blog\n\n发现 4 篇新文章:\n\n**StateBench: Testing how language models track state changes over long documents**\n📅 Tue, 03 No\n🔗 https://huggingface.co/blog/allenai/statebench\n\n---\n\n**Palette: teaching a small model to build decks in your design language**\n📅 Tue, 03 No\n🔗 https://huggingface.co/blog/ibm-research/palette-deck-building\n\n---\n\n**CWE-bench v2: More coverage, quality, and transparency**\n📅 Tue, 03 No\n🔗 https://huggingface.co/blog/cwe-bench\n\n---\n\n**Transformers Model Integration Contracts**\n📅 Tue, 03 No\n🔗 https://huggingface.co/blog/transformers-mic\n\n## 2026-11-04 Google Research\n\n今日无新文章(追踪 20 篇)\n\n## 2026-11-04 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-11-04 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-11-04 Trail of Bits\n\n发现 2 篇新文章:\n\n**The cryptography behind electronic voting (and why paper ballots are still essential)**\n📅 Tue, 03 No\n原文摘要：As millions of Americans vote in today’s U.S. midterms, most will use paper ballots, which are protected by strict chain-of-custody protocols and, in some cases, statistical audits. You may wonder why we still use paper for our elections and voting systems when tasks like banking, tax filing, and document signing have moved away from paper-based legacy systems and become fully electronic. The short answer: security. That may come as a surprise to some. After all, cryptography and other security advancements have enabled secure electronic systems for many applications. In fact, cryptography can be used to provide two essential safeguards in elections: keeping (1) individual votes secret while (2) making the final tally independently verifiable. This is exactly the approach of cryptographic protocols like Helios and ElectionGuard . However, Helios intentionally targets lower-risk and lower-coercion settings rather than high-stakes public elections. ElectionGuard, by contrast, is intended for public elections, but not as a replacement for a paper-based system; it is used as a cryptographic layer integrated with traditional voting infrastructure. In this blog post, we’ll explain how cryptographic techniques can help protect ballot secrecy and prevent manipulation in electronic voting systems, and explore the limitations of these systems. Although cryptography can strengthen election verifiability and have other strong security properties, it cannot fully replace the security and trust of existing paper ballot systems in general elections. The challenges of electronic voting The National Academy of Sciences’ excellent 2018 report on election security concludes that electronic ballot return (also known as online voting or internet voting) should not be used in general elections , since “no known technology guarantees the secrecy, security, and verifiability of a marked ballot transmitted over the Internet.” The difficulty of this problem makes sense when you consider the\n🔗 https://blog.trailofbits.com/2026/11/03/the-cryptography-behind-electronic-voting-and-why-paper-ballots-are-still-essential/\n\n---\n\n**Backporting security fixes at scale with Codex**\n📅 Mon, 02 No\n原文摘要：Stable Linux releases lack existing security fixes because backporting them is time-consuming and often thankless work. We’re using Codex to reduce the backporting process time from days to hours per fix, empowering human patch reviewers to rapidly submit fixes for critical software like Ubuntu Long Term Support, Fedora, and the Linux kernel. By October 29, our project helped deliver fixes for 149 distinct CVEs into stable Linux kernel releases, and several fixes to Fedora and Ubuntu packages. Deploying fixes to older software requires multiple steps, including adapting fixes to older code, checking dependencies, and ensuring the fix did not introduce new bugs. A single task (like tracking down a bug in a bad commit) can take a week or more of effort that no one sees or appreciates. Our Codex workflow has reduced the human effort required to prepare and review fixes. Excluding project-specific initial setup, preparing and reviewing a straightforward backport takes about 30 minutes of human attention; a more involved case can take around three hours. The workflow’s approach is twofold: agents perform activities like identifying missing fixes, adapting patches, assembling validation evidence, running tests, and preparing submission packets, while engineers review the patches and submit them to maintainers. Those estimates only cover patch preparation and review; regression testing and maintainer acceptance remain essential. But the reduced human commitment makes a substantial class of neglected security work practical to undertake. The patch backlog is large, but we now have a practical way to work through it. Do we have to decide between stability and security? Software has bugs, and we try to fix them when we can. The first place the fix happens is in the latest version of the software. Unfortunately, that’s often the only place where the fix happens. Backporting is the process of getting a fix from the latest source code to older versions. Fixes for big-name, criti\n🔗 https://blog.trailofbits.com/2026/11/02/backporting-security-fixes-at-scale-with-codex/\n\n## 2026-11-04 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 10,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-11-04 发现 4 个新项目（共 5 个项目）: thedotmack/claude-mem 让智能体跨会话记住事儿，自动压缩并注入上下文。...",
+   "body": "# 🔥 GitHub Trending\n\n2026-11-04\n\n发现 4 个新项目（共 5 个项目）:\n\n**thedotmack/claude-mem**\n  让智能体跨会话记住事儿，自动压缩并注入上下文。\n  🔗 https://github.com/thedotmack/claude-mem\n\n---\n**🆕 vercel-labs/agent-desktop**\n  让AI直接上手操作电脑的命令行工具。\n  🔗 https://github.com/vercel-labs/agent-desktop\n\n---\n**🆕 max-sixty/worktrunk**\n  专为AI并行干活设计的Git工作树管理工具。\n  🔗 https://github.com/max-sixty/worktrunk\n\n---\n**🆕 JustVugg/colibri**\n  MoE分层推理引擎，按冷热把专家塞进显存内存和硬盘。\n  🔗 https://github.com/JustVugg/colibri\n\n---\n**🆕 mattpocock/skills**\n  作者私藏的AI技能包，专为干实事的工程师打造。\n  🔗 https://github.com/mattpocock/skills",
+   "links": [
+    {
+     "title": "thedotmack/claude-mem",
+     "url": "https://github.com/thedotmack/claude-mem"
+    },
+    {
+     "title": "vercel-labs/agent-desktop",
+     "url": "https://github.com/vercel-labs/agent-desktop"
+    },
+    {
+     "title": "max-sixty/worktrunk",
+     "url": "https://github.com/max-sixty/worktrunk"
+    },
+    {
+     "title": "JustVugg/colibri",
+     "url": "https://github.com/JustVugg/colibri"
+    },
+    {
+     "title": "mattpocock/skills",
+     "url": "https://github.com/mattpocock/skills"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-11-04 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-11-04 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-11-04 OpenAI News 发现 11 篇新文章: Accelerating engineering for the physical world 📅 Tue, 03 No...",
+   "body": "## 2026-11-04 OpenAI News\n\n发现 11 篇新文章:\n\n**Accelerating engineering for the physical world**\n📅 Tue, 03 No\n原文摘要：Discover how ChatGPT and Codex are helping engineers accelerate CAD, PCB design, simulation, and other workflows across the physical world.\n🔗 https://openai.com/index/accelerating-engineering-for-the-physical-world\n\n---\n\n**How Cisco defends at machine speed with OpenAI**\n📅 Tue, 03 No\n原文摘要：Cisco combines network intelligence with OpenAI models to strengthen enterprise security. Learn how it is building more adaptive defenses.\n🔗 https://openai.com/index/cisco-cyber\n\n---\n\n**Heimstaden is changing residential real estate management with AI**\n📅 Tue, 03 No\n原文摘要：Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe.\n🔗 https://openai.com/index/heimstaden\n\n---\n\n**OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer**\n📅 Tue, 03 No\n原文摘要：Jill Hazelbaker will join OpenAI as Chief Corporate Affairs Officer, leading the company’s global communications and corporate positioning.\n🔗 https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer\n\n---\n\n**Scaling Git at OpenAI**\n📅 Mon, 02 No\n原文摘要：How OpenAI built Pando, a Git-compatible backend designed for the scale of development that Codex makes possible.\n🔗 https://openai.com/index/scaling-git-at-openai\n\n---\n\n**Introducing the Grid Protectors Program**\n📅 Mon, 02 No\n原文摘要：OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer electricity costs.\n🔗 https://openai.com/index/grid-protectors-program\n\n---\n\n**Rewarding defenders with bigger bug bounties**\n📅 Mon, 02 No\n原文摘要：OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers.\n🔗 https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties\n\n---\n\n**Preparing our next security sprint to harden OpenAI**\n📅 Mon, 02 No\n原文摘要：OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI.\n🔗 https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai\n\n---\n\n**LifeVal**\n📅 Mon, 02 No\n原文摘要：Introducing LifeVal, a benchmark measuring how well AI helps people complete everyday tasks, from finding childcare to managing finances and government paperwork.\n🔗 https://openai.com/index/lifeval\n\n---\n\n**OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization**\n📅 Mon, 02 No\n原文摘要：OpenAI appoints Dan Driscoll to advise on responsible AI for national security modernization, cyber resilience, and collaboration with U.S. allies.\n🔗 https://openai.com/index/dan-driscoll-joins-openai\n\n---\n\n**Qodo builds context into AI code review with Codex**\n📅 Mon, 02 No\n原文摘要：Qodo brings company knowledge and coding standards into Codex, helping developers catch P0 issues across repositories before opening a pull request.\n🔗 https://openai.com/index/qodo-codex-plugin",
+   "links": [
+    {
+     "title": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
+     "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world"
+    },
+    {
+     "title": "https://openai.com/index/cisco-cyber",
+     "url": "https://openai.com/index/cisco-cyber"
+    },
+    {
+     "title": "https://openai.com/index/heimstaden",
+     "url": "https://openai.com/index/heimstaden"
+    },
+    {
+     "title": "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer",
+     "url": "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer"
+    },
+    {
+     "title": "https://openai.com/index/scaling-git-at-openai",
+     "url": "https://openai.com/index/scaling-git-at-openai"
+    },
+    {
+     "title": "https://openai.com/index/grid-protectors-program",
+     "url": "https://openai.com/index/grid-protectors-program"
+    },
+    {
+     "title": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
+     "url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties"
+    },
+    {
+     "title": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
+     "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai"
+    },
+    {
+     "title": "https://openai.com/index/lifeval",
+     "url": "https://openai.com/index/lifeval"
+    },
+    {
+     "title": "https://openai.com/index/dan-driscoll-joins-openai",
+     "url": "https://openai.com/index/dan-driscoll-joins-openai"
+    },
+    {
+     "title": "https://openai.com/index/qodo-codex-plugin",
+     "url": "https://openai.com/index/qodo-codex-plugin"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "content",
+   "summary": "2026-11-04 LangChain Blog 发现 5 篇新文章: Why human insight is a strategic advantage for building be...",
+   "body": "## 2026-11-04 LangChain Blog\n\n发现 5 篇新文章:\n\n**Why human insight is a strategic advantage for building better agents**\n📅 Tue, 03 No\n原文摘要：Explore 3 principles for effective human-in-the-loop workflows and how human-review is a strategic imperative for production-ready agents.\n🔗 https://www.langchain.com/blog/human-insight-strategic-advantage-agents\n\n---\n\n**LangSmith BYOC is now available on AWS, Azure, and Google Cloud**\n📅 Tue, 03 No\n原文摘要：LangSmith BYOC now runs on AWS (GA), Azure and Google Cloud (Beta). Your traces, evals, and agent deployments stay in your cloud account while LangChain runs it.\n🔗 https://www.langchain.com/blog/langsmith-byoc-aws-gc-azure\n\n---\n\n**How We Optimized Browser Use for Deep Agents**\n📅 Tue, 03 No\n原文摘要：We compared seven browser toolsets for Deep Agents, picked Stagehand from Browserbase, and tuned it with LangSmith traces and evals. Here's what we learned.\n🔗 https://www.langchain.com/blog/how-we-optimized-browser-use-for-deep-agents\n\n---\n\n**Managed Deep Agents: the fastest way to ship a production deep agent**\n📅 Mon, 02 No\n原文摘要：Run deep agents in production with durable execution, sandboxes, tool access, and LangSmith observability, without building the runtime yourself. Now in private beta\n🔗 https://www.langchain.com/blog/introducing-managed-deep-agents\n\n---\n\n**New context engineering challenges in late 2026**\n📅 Mon, 02 No\n原文摘要：LangChain CEO Harrison Chase shares insights into the biggest harness engineering challenges with the emergence of proactive agents.\n🔗 https://www.langchain.com/blog/context-engineering-challenges-late-2026",
+   "links": [
+    {
+     "title": "https://www.langchain.com/blog/human-insight-strategic-advantage-agents",
+     "url": "https://www.langchain.com/blog/human-insight-strategic-advantage-agents"
+    },
+    {
+     "title": "https://www.langchain.com/blog/langsmith-byoc-aws-gc-azure",
+     "url": "https://www.langchain.com/blog/langsmith-byoc-aws-gc-azure"
+    },
+    {
+     "title": "https://www.langchain.com/blog/how-we-optimized-browser-use-for-deep-agents",
+     "url": "https://www.langchain.com/blog/how-we-optimized-browser-use-for-deep-agents"
+    },
+    {
+     "title": "https://www.langchain.com/blog/introducing-managed-deep-agents",
+     "url": "https://www.langchain.com/blog/introducing-managed-deep-agents"
+    },
+    {
+     "title": "https://www.langchain.com/blog/context-engineering-challenges-late-2026",
+     "url": "https://www.langchain.com/blog/context-engineering-challenges-late-2026"
+    }
+   ]
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "content",
+   "summary": "2026-11-04 Hugging Face Blog 发现 4 篇新文章: StateBench: Testing how language models track state cha...",
+   "body": "## 2026-11-04 Hugging Face Blog\n\n发现 4 篇新文章:\n\n**StateBench: Testing how language models track state changes over long documents**\n📅 Tue, 03 No\n🔗 https://huggingface.co/blog/allenai/statebench\n\n---\n\n**Palette: teaching a small model to build decks in your design language**\n📅 Tue, 03 No\n🔗 https://huggingface.co/blog/ibm-research/palette-deck-building\n\n---\n\n**CWE-bench v2: More coverage, quality, and transparency**\n📅 Tue, 03 No\n🔗 https://huggingface.co/blog/cwe-bench\n\n---\n\n**Transformers Model Integration Contracts**\n📅 Tue, 03 No\n🔗 https://huggingface.co/blog/transformers-mic",
+   "links": [
+    {
+     "title": "https://huggingface.co/blog/allenai/statebench",
+     "url": "https://huggingface.co/blog/allenai/statebench"
+    },
+    {
+     "title": "https://huggingface.co/blog/ibm-research/palette-deck-building",
+     "url": "https://huggingface.co/blog/ibm-research/palette-deck-building"
+    },
+    {
+     "title": "https://huggingface.co/blog/cwe-bench",
+     "url": "https://huggingface.co/blog/cwe-bench"
+    },
+    {
+     "title": "https://huggingface.co/blog/transformers-mic",
+     "url": "https://huggingface.co/blog/transformers-mic"
+    }
+   ]
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "no_update",
+   "summary": "2026-11-04 Google Research 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-11-04 Google Research\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-11-04 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-11-04 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-11-04 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-11-04 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "content",
+   "summary": "2026-11-04 Trail of Bits 发现 2 篇新文章: The cryptography behind electronic voting (and why paper ba...",
+   "body": "## 2026-11-04 Trail of Bits\n\n发现 2 篇新文章:\n\n**The cryptography behind electronic voting (and why paper ballots are still essential)**\n📅 Tue, 03 No\n原文摘要：As millions of Americans vote in today’s U.S. midterms, most will use paper ballots, which are protected by strict chain-of-custody protocols and, in some cases, statistical audits. You may wonder why we still use paper for our elections and voting systems when tasks like banking, tax filing, and document signing have moved away from paper-based legacy systems and become fully electronic. The short answer: security. That may come as a surprise to some. After all, cryptography and other security advancements have enabled secure electronic systems for many applications. In fact, cryptography can be used to provide two essential safeguards in elections: keeping (1) individual votes secret while (2) making the final tally independently verifiable. This is exactly the approach of cryptographic protocols like Helios and ElectionGuard . However, Helios intentionally targets lower-risk and lower-coercion settings rather than high-stakes public elections. ElectionGuard, by contrast, is intended for public elections, but not as a replacement for a paper-based system; it is used as a cryptographic layer integrated with traditional voting infrastructure. In this blog post, we’ll explain how cryptographic techniques can help protect ballot secrecy and prevent manipulation in electronic voting systems, and explore the limitations of these systems. Although cryptography can strengthen election verifiability and have other strong security properties, it cannot fully replace the security and trust of existing paper ballot systems in general elections. The challenges of electronic voting The National Academy of Sciences’ excellent 2018 report on election security concludes that electronic ballot return (also known as online voting or internet voting) should not be used in general elections , since “no known technology guarantees the secrecy, security, and verifiability of a marked ballot transmitted over the Internet.” The difficulty of this problem makes sense when you consider the\n🔗 https://blog.trailofbits.com/2026/11/03/the-cryptography-behind-electronic-voting-and-why-paper-ballots-are-still-essential/\n\n---\n\n**Backporting security fixes at scale with Codex**\n📅 Mon, 02 No\n原文摘要：Stable Linux releases lack existing security fixes because backporting them is time-consuming and often thankless work. We’re using Codex to reduce the backporting process time from days to hours per fix, empowering human patch reviewers to rapidly submit fixes for critical software like Ubuntu Long Term Support, Fedora, and the Linux kernel. By October 29, our project helped deliver fixes for 149 distinct CVEs into stable Linux kernel releases, and several fixes to Fedora and Ubuntu packages. Deploying fixes to older software requires multiple steps, including adapting fixes to older code, checking dependencies, and ensuring the fix did not introduce new bugs. A single task (like tracking down a bug in a bad commit) can take a week or more of effort that no one sees or appreciates. Our Codex workflow has reduced the human effort required to prepare and review fixes. Excluding project-specific initial setup, preparing and reviewing a straightforward backport takes about 30 minutes of human attention; a more involved case can take around three hours. The workflow’s approach is twofold: agents perform activities like identifying missing fixes, adapting patches, assembling validation evidence, running tests, and preparing submission packets, while engineers review the patches and submit them to maintainers. Those estimates only cover patch preparation and review; regression testing and maintainer acceptance remain essential. But the reduced human commitment makes a substantial class of neglected security work practical to undertake. The patch backlog is large, but we now have a practical way to work through it. Do we have to decide between stability and security? Software has bugs, and we try to fix them when we can. The first place the fix happens is in the latest version of the software. Unfortunately, that’s often the only place where the fix happens. Backporting is the process of getting a fix from the latest source code to older versions. Fixes for big-name, criti\n🔗 https://blog.trailofbits.com/2026/11/02/backporting-security-fixes-at-scale-with-codex/",
+   "links": [
+    {
+     "title": "https://blog.trailofbits.com/2026/11/03/the-cryptography-behind-electronic-voting-and-why-paper-ballots-are-still-essential/",
+     "url": "https://blog.trailofbits.com/2026/11/03/the-cryptography-behind-electronic-voting-and-why-paper-ballots-are-still-essential/"
+    },
+    {
+     "title": "https://blog.trailofbits.com/2026/11/02/backporting-security-fixes-at-scale-with-codex/",
+     "url": "https://blog.trailofbits.com/2026/11/02/backporting-security-fixes-at-scale-with-codex/"
+    }
+   ]
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-11-04 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-11-04 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-11-04T05:35:44+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

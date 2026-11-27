@@ -1,0 +1,130 @@
+{
+ "date": "2026-08-24",
+ "report_id": "2026-08-24-6a6737a1aa",
+ "created_at": "2026-08-24T05:31:12",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-08-24\n\n# 🔥 GitHub Trending\n\n2026-08-24\n\n发现 3 个新项目（共 5 个项目）:\n\n**openai/codex**\n  轻量级终端编程代理，在命令行里直接帮你写代码。\n  🔗 https://github.com/openai/codex\n\n---\n**🆕 freestylefly/awesome-gpt-image-2**\n  工业级图像提示词引擎，470+案例逆向+20+套模板，持续更新。\n  🔗 https://github.com/freestylefly/awesome-gpt-image-2\n\n---\n**mattpocock/skills**\n  实战工程师的Agent技能库，直接来自作者的.agents目录。\n  🔗 https://github.com/mattpocock/skills\n\n---\n**🆕 basecamp/omarchy**\n  美观现代且有态度的Linux发行版。\n  🔗 https://github.com/basecamp/omarchy\n\n---\n**🆕 AprilNEA/OpenLogi**\n  Rust写的Logitech Options+本地替代品，免登录无遥测，原生改键调DPI。\n  🔗 https://github.com/AprilNEA/OpenLogi\n\n## 2026-08-24 Anthropic Engineering\n\n今日无新文章\n\n## 2026-08-24 OpenAI News\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-24 LangChain Blog\n\n今日无新文章（追踪 20 篇）\n\n## 2026-08-24 Hugging Face Blog\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-24 Google Research\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-24 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-24 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-08-24 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-24 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 10,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-08-24 发现 3 个新项目（共 5 个项目）: openai/codex 轻量级终端编程代理，在命令行里直接帮你写代码。 🔗 https:/...",
+   "body": "# 🔥 GitHub Trending\n\n2026-08-24\n\n发现 3 个新项目（共 5 个项目）:\n\n**openai/codex**\n  轻量级终端编程代理，在命令行里直接帮你写代码。\n  🔗 https://github.com/openai/codex\n\n---\n**🆕 freestylefly/awesome-gpt-image-2**\n  工业级图像提示词引擎，470+案例逆向+20+套模板，持续更新。\n  🔗 https://github.com/freestylefly/awesome-gpt-image-2\n\n---\n**mattpocock/skills**\n  实战工程师的Agent技能库，直接来自作者的.agents目录。\n  🔗 https://github.com/mattpocock/skills\n\n---\n**🆕 basecamp/omarchy**\n  美观现代且有态度的Linux发行版。\n  🔗 https://github.com/basecamp/omarchy\n\n---\n**🆕 AprilNEA/OpenLogi**\n  Rust写的Logitech Options+本地替代品，免登录无遥测，原生改键调DPI。\n  🔗 https://github.com/AprilNEA/OpenLogi",
+   "links": [
+    {
+     "title": "openai/codex",
+     "url": "https://github.com/openai/codex"
+    },
+    {
+     "title": "freestylefly/awesome-gpt-image-2",
+     "url": "https://github.com/freestylefly/awesome-gpt-image-2"
+    },
+    {
+     "title": "mattpocock/skills",
+     "url": "https://github.com/mattpocock/skills"
+    },
+    {
+     "title": "basecamp/omarchy",
+     "url": "https://github.com/basecamp/omarchy"
+    },
+    {
+     "title": "AprilNEA/OpenLogi",
+     "url": "https://github.com/AprilNEA/OpenLogi"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-08-24 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-08-24 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "no_update",
+   "summary": "2026-08-24 OpenAI News 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-24 OpenAI News\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "no_update",
+   "summary": "2026-08-24 LangChain Blog 今日无新文章（追踪 20 篇）",
+   "body": "## 2026-08-24 LangChain Blog\n\n今日无新文章（追踪 20 篇）",
+   "links": []
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "no_update",
+   "summary": "2026-08-24 Hugging Face Blog 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-24 Hugging Face Blog\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "no_update",
+   "summary": "2026-08-24 Google Research 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-24 Google Research\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-08-24 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-24 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-08-24 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-08-24 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-08-24 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-24 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-08-24 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-08-24 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-08-24T05:31:16+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

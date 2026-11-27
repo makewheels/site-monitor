@@ -1,0 +1,150 @@
+{
+ "date": "2026-09-16",
+ "report_id": "2026-09-16-22f7851cd3",
+ "created_at": "2026-09-16T05:32:00",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-09-16\n\n# 🔥 GitHub Trending\n\n2026-09-16\n\n发现 2 个新项目（共 5 个项目）:\n\n**alibaba/open-code-review**\n  混合架构代码审查工具，确定性流水线加LLM智能体，精准到行级评论\n  🔗 https://github.com/alibaba/open-code-review\n\n---\n**JustVugg/colibri**\n  纯C零依赖，本地硬件流畅运行前沿MoE大模型，专家模块磁盘流式加载\n  🔗 https://github.com/JustVugg/colibri\n\n---\n**🆕 ever-co/ever-gauzy**\n  开源企业全栈管理平台，集成ERP、CRM、HRM、ATS和项目管理于一体\n  🔗 https://github.com/ever-co/ever-gauzy\n\n---\n**debpalash/VoiceStudio**\n  完全本地运行的开源ElevenLabs替代品，支持声音克隆、配音、转录和有声书生成\n  🔗 https://github.com/debpalash/VoiceStudio\n\n---\n**🆕 Homebrew/BrewUI**\n  Homebrew官方macOS图形界面客户端，让包管理操作更直观便捷\n  🔗 https://github.com/Homebrew/BrewUI\n\n## 2026-09-16 Anthropic Engineering\n\n今日无新文章\n\n## 2026-09-16 OpenAI News\n\n今日无新文章(追踪 20 篇)\n\n## 2026-09-16 LangChain Blog\n\n发现 1 篇新文章:\n\n**Scaling Agents in Healthcare & Life Sciences: Lessons from Madrigal Pharmaceuticals, Abridge, and Vizient**\n📅 Tue, 15 Se\n原文摘要：Agent programs in healthcare and life sciences are being built under a different set of constraints than those in most industries. There’s plenty of upside if the constraints can be resolved. Success can mean hours of manual review compressed into minutes, data spread across a dozen systems finally queryable in one place, and clinicians getting time back from documentation. At the same time, the cost of a wrong answer can be higher here than almost anywhere else, which changes how teams build.\n🔗 https://www.langchain.com/blog/scaling-agents-in-healthcare-life-sciences-lessons-from-madrigal-pharmaceuticals-abridge-and-vizient\n\n## 2026-09-16 Hugging Face Blog\n\n发现 1 篇新文章:\n\n**Your Agent Aced the Task. Will It Do It Again?**\n📅 Tue, 15 Se\n🔗 https://huggingface.co/blog/ibm-research/altk-evolve-consistency\n\n## 2026-09-16 Google Research\n\n发现 1 篇新文章:\n\n**Bypassing inference bottlenecks: Accelerating complex AI search with Retrieve-for-Train**\n📅 Tue, 15 Se\n原文摘要：Algorithms & Theory\n🔗 https://research.google/blog/bypassing-inference-bottlenecks-accelerating-complex-ai-search-with-retrieve-for-train/\n\n## 2026-09-16 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-09-16 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-09-16 Trail of Bits\n\n发现 1 篇新文章:\n\n**1Password's AI patching benchmark is misleading**\n📅 Tue, 15 Se\n原文摘要：1Password’s FLAWED report , published on August 6, 2026, gives defenders a misleading picture of AI patching. Its headline says models produced clean fixes only 26% of the time. That figure includes experiments that deliberately instructed agents to apply the wrong fix, along with experiments in which agents could not compile or test their patches. The report risks making defenders less effective by discouraging them from using technology that could help them fix more vulnerabilities. Teams that take its headline at face value may leave repairable vulnerabilities unaddressed. We want our work to help defenders fix more vulnerabilities. This post shares real-world data on human and agent patch quality from our consulting projects and Patch the Planet. We’re also releasing two agent skills: post-patch-validation to help agents test fixes, and review-walkthrough to help engineers review them. How the experiment produces a misleading headline Our review of 1Password’s code and data found four choices that make its 26% clean-fix rate a misleading guide to ordinary patching work. 1 The sample was selected for difficult fixes. The authors chose six vulnerabilities because their fixes were complex. Clean-fix rates ranged from 3% to 60% across those bugs, so the average depends heavily on which vulnerabilities made the list. 2 Two prompts tell agents to apply the wrong fix. Those prompts account for 22% of the data. Combining them with ordinary repair attempts makes the reported rate depend partly on how often the researchers chose to give agents bad advice. More than a third of the trials prohibit testing. One evaluation mode prevents agents from building or running code and accounts for 36% of the data. The headline combines those trials with experiments in which agents could test their patches and act on the results. The models ran at different reasoning settings. GPT-5.5 ran at medium effort and Opus 4.8 at high. These were the tools’ defaults. Neither model was tested a\n🔗 https://blog.trailofbits.com/2026/09/15/1passwords-ai-patching-benchmark-is-misleading/\n\n## 2026-09-16 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 10,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-09-16 发现 2 个新项目（共 5 个项目）: alibaba/open-code-review 混合架构代码审查工具，确定性流水线加LLM...",
+   "body": "# 🔥 GitHub Trending\n\n2026-09-16\n\n发现 2 个新项目（共 5 个项目）:\n\n**alibaba/open-code-review**\n  混合架构代码审查工具，确定性流水线加LLM智能体，精准到行级评论\n  🔗 https://github.com/alibaba/open-code-review\n\n---\n**JustVugg/colibri**\n  纯C零依赖，本地硬件流畅运行前沿MoE大模型，专家模块磁盘流式加载\n  🔗 https://github.com/JustVugg/colibri\n\n---\n**🆕 ever-co/ever-gauzy**\n  开源企业全栈管理平台，集成ERP、CRM、HRM、ATS和项目管理于一体\n  🔗 https://github.com/ever-co/ever-gauzy\n\n---\n**debpalash/VoiceStudio**\n  完全本地运行的开源ElevenLabs替代品，支持声音克隆、配音、转录和有声书生成\n  🔗 https://github.com/debpalash/VoiceStudio\n\n---\n**🆕 Homebrew/BrewUI**\n  Homebrew官方macOS图形界面客户端，让包管理操作更直观便捷\n  🔗 https://github.com/Homebrew/BrewUI",
+   "links": [
+    {
+     "title": "alibaba/open-code-review",
+     "url": "https://github.com/alibaba/open-code-review"
+    },
+    {
+     "title": "JustVugg/colibri",
+     "url": "https://github.com/JustVugg/colibri"
+    },
+    {
+     "title": "ever-co/ever-gauzy",
+     "url": "https://github.com/ever-co/ever-gauzy"
+    },
+    {
+     "title": "debpalash/VoiceStudio",
+     "url": "https://github.com/debpalash/VoiceStudio"
+    },
+    {
+     "title": "Homebrew/BrewUI",
+     "url": "https://github.com/Homebrew/BrewUI"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-09-16 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-09-16 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "no_update",
+   "summary": "2026-09-16 OpenAI News 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-09-16 OpenAI News\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "content",
+   "summary": "2026-09-16 LangChain Blog 发现 1 篇新文章: Scaling Agents in Healthcare & Life Sciences: Lessons from...",
+   "body": "## 2026-09-16 LangChain Blog\n\n发现 1 篇新文章:\n\n**Scaling Agents in Healthcare & Life Sciences: Lessons from Madrigal Pharmaceuticals, Abridge, and Vizient**\n📅 Tue, 15 Se\n原文摘要：Agent programs in healthcare and life sciences are being built under a different set of constraints than those in most industries. There’s plenty of upside if the constraints can be resolved. Success can mean hours of manual review compressed into minutes, data spread across a dozen systems finally queryable in one place, and clinicians getting time back from documentation. At the same time, the cost of a wrong answer can be higher here than almost anywhere else, which changes how teams build.\n🔗 https://www.langchain.com/blog/scaling-agents-in-healthcare-life-sciences-lessons-from-madrigal-pharmaceuticals-abridge-and-vizient",
+   "links": [
+    {
+     "title": "https://www.langchain.com/blog/scaling-agents-in-healthcare-life-sciences-lessons-from-madrigal-pharmaceuticals-abridge-and-vizient",
+     "url": "https://www.langchain.com/blog/scaling-agents-in-healthcare-life-sciences-lessons-from-madrigal-pharmaceuticals-abridge-and-vizient"
+    }
+   ]
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "content",
+   "summary": "2026-09-16 Hugging Face Blog 发现 1 篇新文章: Your Agent Aced the Task. Will It Do It Again? 📅 Tue, 1...",
+   "body": "## 2026-09-16 Hugging Face Blog\n\n发现 1 篇新文章:\n\n**Your Agent Aced the Task. Will It Do It Again?**\n📅 Tue, 15 Se\n🔗 https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
+   "links": [
+    {
+     "title": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
+     "url": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency"
+    }
+   ]
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "content",
+   "summary": "2026-09-16 Google Research 发现 1 篇新文章: Bypassing inference bottlenecks: Accelerating complex AI...",
+   "body": "## 2026-09-16 Google Research\n\n发现 1 篇新文章:\n\n**Bypassing inference bottlenecks: Accelerating complex AI search with Retrieve-for-Train**\n📅 Tue, 15 Se\n原文摘要：Algorithms & Theory\n🔗 https://research.google/blog/bypassing-inference-bottlenecks-accelerating-complex-ai-search-with-retrieve-for-train/",
+   "links": [
+    {
+     "title": "https://research.google/blog/bypassing-inference-bottlenecks-accelerating-complex-ai-search-with-retrieve-for-train/",
+     "url": "https://research.google/blog/bypassing-inference-bottlenecks-accelerating-complex-ai-search-with-retrieve-for-train/"
+    }
+   ]
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-09-16 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-09-16 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-09-16 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-09-16 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "content",
+   "summary": "2026-09-16 Trail of Bits 发现 1 篇新文章: 1Password's AI patching benchmark is misleading 📅 Tue, 15 S...",
+   "body": "## 2026-09-16 Trail of Bits\n\n发现 1 篇新文章:\n\n**1Password's AI patching benchmark is misleading**\n📅 Tue, 15 Se\n原文摘要：1Password’s FLAWED report , published on August 6, 2026, gives defenders a misleading picture of AI patching. Its headline says models produced clean fixes only 26% of the time. That figure includes experiments that deliberately instructed agents to apply the wrong fix, along with experiments in which agents could not compile or test their patches. The report risks making defenders less effective by discouraging them from using technology that could help them fix more vulnerabilities. Teams that take its headline at face value may leave repairable vulnerabilities unaddressed. We want our work to help defenders fix more vulnerabilities. This post shares real-world data on human and agent patch quality from our consulting projects and Patch the Planet. We’re also releasing two agent skills: post-patch-validation to help agents test fixes, and review-walkthrough to help engineers review them. How the experiment produces a misleading headline Our review of 1Password’s code and data found four choices that make its 26% clean-fix rate a misleading guide to ordinary patching work. 1 The sample was selected for difficult fixes. The authors chose six vulnerabilities because their fixes were complex. Clean-fix rates ranged from 3% to 60% across those bugs, so the average depends heavily on which vulnerabilities made the list. 2 Two prompts tell agents to apply the wrong fix. Those prompts account for 22% of the data. Combining them with ordinary repair attempts makes the reported rate depend partly on how often the researchers chose to give agents bad advice. More than a third of the trials prohibit testing. One evaluation mode prevents agents from building or running code and accounts for 36% of the data. The headline combines those trials with experiments in which agents could test their patches and act on the results. The models ran at different reasoning settings. GPT-5.5 ran at medium effort and Opus 4.8 at high. These were the tools’ defaults. Neither model was tested a\n🔗 https://blog.trailofbits.com/2026/09/15/1passwords-ai-patching-benchmark-is-misleading/",
+   "links": [
+    {
+     "title": "https://blog.trailofbits.com/2026/09/15/1passwords-ai-patching-benchmark-is-misleading/",
+     "url": "https://blog.trailofbits.com/2026/09/15/1passwords-ai-patching-benchmark-is-misleading/"
+    }
+   ]
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-09-16 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-09-16 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-09-16T05:32:05+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

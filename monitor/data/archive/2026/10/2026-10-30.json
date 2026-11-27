@@ -1,0 +1,173 @@
+{
+ "date": "2026-10-30",
+ "report_id": "2026-10-30-9f3f65d6c8",
+ "created_at": "2026-10-30T05:32:36",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-10-30\n\n# 🔥 GitHub Trending\n\n2026-10-30\n\n发现 2 个新项目（共 5 个项目）:\n\n**HKUDS/DeepTutor**\n  一个陪你终身学习、提供个性化辅导的AI家教。\n  🔗 https://github.com/HKUDS/DeepTutor\n\n---\n**obra/superpowers**\n  一套真正好用的智能体技能框架与开发方法论。\n  🔗 https://github.com/obra/superpowers\n\n---\n**🆕 pbakaus/impeccable**\n  编程智能体的设计指南，帮你揪出AI生成的烂代码。\n  🔗 https://github.com/pbakaus/impeccable\n\n---\n**JetBrains/thinkrail**\n  能按你习惯自动定制的轻量级IDE，主打氛围编程。\n  🔗 https://github.com/JetBrains/thinkrail\n\n---\n**🆕 milind-soni/OpenMausBot**\n  开源的Grok平替，自带虚拟机让机器人直接干活。\n  🔗 https://github.com/milind-soni/OpenMausBot\n\n## 2026-10-30 Anthropic Engineering\n\n今日无新文章\n\n## 2026-10-30 OpenAI News\n\n发现 3 篇新文章:\n\n**An updated Model Spec for more capable and beneficial AI**\n📅 Thu, 29 Oc\n原文摘要：OpenAI’s updated Model Spec outlines five core values to guide more capable AI toward sound judgment, human agency, and faithfulness to human intent.\n🔗 https://openai.com/index/updated-model-spec\n\n---\n\n**How we detect frontier model misalignment**\n📅 Thu, 29 Oc\n原文摘要：OpenAI uses layered monitoring to detect frontier model misalignment and unauthorized agent behavior so responders can intervene before incidents escalate.\n🔗 https://openai.com/index/how-we-detect-frontier-model-misalignment\n\n---\n\n**How Ropes & Gray is developing AI for transactional diligence**\n📅 Thu, 29 Oc\n原文摘要：Ropes & Gray is developing AI for transactional diligence with OpenAI. Lawyers review grouped documents, summaries, and reports before advising clients.\n🔗 https://openai.com/index/ropes-gray-ai-diligence\n\n## 2026-10-30 LangChain Blog\n\n发现 3 篇新文章:\n\n**Managed Deep Agents v0.10: Browser Use and Async Subagents**\n📅 Thu, 29 Oc\n原文摘要：Managed Deep Agents v0.10 adds browser use, so agents can work on sites with no API and hand you the window to sign in, and async subagents for background work.\n🔗 https://www.langchain.com/blog/managed-deep-agents-browser-use-and-asynchronous-subagents\n\n---\n\n**Browser Use in Managed Deep Agents**\n📅 Thu, 29 Oc\n原文摘要：Managed Deep Agents now runs a browser for your agent, with tools tuned for context-efficient browser use and a handoff so you can sign in yourself.\n🔗 https://www.langchain.com/blog/browser-use-in-managed-deep-agents\n\n---\n\n**How We Built LangChain’s Paid Media Agent**\n📅 Thu, 29 Oc\n原文摘要：How LangChain built a paid media agent to analyze campaign performance, optimize ads, propose changes, and turn marketing data into action.\n🔗 https://www.langchain.com/blog/paid-media-agent\n\n## 2026-10-30 Hugging Face Blog\n\n发现 4 篇新文章:\n\n**Granite Switch 4.1.1 — Update models like you update software**\n📅 Thu, 29 Oc\n🔗 https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1\n\n---\n\n**Announcing Project ProtoStar: Making Publicly Funded Science AI-Ready**\n📅 Thu, 29 Oc\n🔗 https://huggingface.co/blog/announcing-project-protostar\n\n---\n\n**Welcome Le Chonk: Mistral Large 4 on Hugging Face**\n📅 Thu, 29 Oc\n🔗 https://huggingface.co/blog/mistral-large4\n\n---\n\n**Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms**\n📅 Thu, 29 Oc\n🔗 https://huggingface.co/blog/anydecisionmodel\n\n## 2026-10-30 Google Research\n\n今日无新文章(追踪 20 篇)\n\n## 2026-10-30 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-10-30 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-10-30 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-10-30 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 10,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-10-30 发现 2 个新项目（共 5 个项目）: HKUDS/DeepTutor 一个陪你终身学习、提供个性化辅导的AI家教。 🔗 https...",
+   "body": "# 🔥 GitHub Trending\n\n2026-10-30\n\n发现 2 个新项目（共 5 个项目）:\n\n**HKUDS/DeepTutor**\n  一个陪你终身学习、提供个性化辅导的AI家教。\n  🔗 https://github.com/HKUDS/DeepTutor\n\n---\n**obra/superpowers**\n  一套真正好用的智能体技能框架与开发方法论。\n  🔗 https://github.com/obra/superpowers\n\n---\n**🆕 pbakaus/impeccable**\n  编程智能体的设计指南，帮你揪出AI生成的烂代码。\n  🔗 https://github.com/pbakaus/impeccable\n\n---\n**JetBrains/thinkrail**\n  能按你习惯自动定制的轻量级IDE，主打氛围编程。\n  🔗 https://github.com/JetBrains/thinkrail\n\n---\n**🆕 milind-soni/OpenMausBot**\n  开源的Grok平替，自带虚拟机让机器人直接干活。\n  🔗 https://github.com/milind-soni/OpenMausBot",
+   "links": [
+    {
+     "title": "HKUDS/DeepTutor",
+     "url": "https://github.com/HKUDS/DeepTutor"
+    },
+    {
+     "title": "obra/superpowers",
+     "url": "https://github.com/obra/superpowers"
+    },
+    {
+     "title": "pbakaus/impeccable",
+     "url": "https://github.com/pbakaus/impeccable"
+    },
+    {
+     "title": "JetBrains/thinkrail",
+     "url": "https://github.com/JetBrains/thinkrail"
+    },
+    {
+     "title": "milind-soni/OpenMausBot",
+     "url": "https://github.com/milind-soni/OpenMausBot"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-10-30 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-10-30 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-10-30 OpenAI News 发现 3 篇新文章: An updated Model Spec for more capable and beneficial AI 📅 Th...",
+   "body": "## 2026-10-30 OpenAI News\n\n发现 3 篇新文章:\n\n**An updated Model Spec for more capable and beneficial AI**\n📅 Thu, 29 Oc\n原文摘要：OpenAI’s updated Model Spec outlines five core values to guide more capable AI toward sound judgment, human agency, and faithfulness to human intent.\n🔗 https://openai.com/index/updated-model-spec\n\n---\n\n**How we detect frontier model misalignment**\n📅 Thu, 29 Oc\n原文摘要：OpenAI uses layered monitoring to detect frontier model misalignment and unauthorized agent behavior so responders can intervene before incidents escalate.\n🔗 https://openai.com/index/how-we-detect-frontier-model-misalignment\n\n---\n\n**How Ropes & Gray is developing AI for transactional diligence**\n📅 Thu, 29 Oc\n原文摘要：Ropes & Gray is developing AI for transactional diligence with OpenAI. Lawyers review grouped documents, summaries, and reports before advising clients.\n🔗 https://openai.com/index/ropes-gray-ai-diligence",
+   "links": [
+    {
+     "title": "https://openai.com/index/updated-model-spec",
+     "url": "https://openai.com/index/updated-model-spec"
+    },
+    {
+     "title": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
+     "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment"
+    },
+    {
+     "title": "https://openai.com/index/ropes-gray-ai-diligence",
+     "url": "https://openai.com/index/ropes-gray-ai-diligence"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "content",
+   "summary": "2026-10-30 LangChain Blog 发现 3 篇新文章: Managed Deep Agents v0.10: Browser Use and Async Subagents...",
+   "body": "## 2026-10-30 LangChain Blog\n\n发现 3 篇新文章:\n\n**Managed Deep Agents v0.10: Browser Use and Async Subagents**\n📅 Thu, 29 Oc\n原文摘要：Managed Deep Agents v0.10 adds browser use, so agents can work on sites with no API and hand you the window to sign in, and async subagents for background work.\n🔗 https://www.langchain.com/blog/managed-deep-agents-browser-use-and-asynchronous-subagents\n\n---\n\n**Browser Use in Managed Deep Agents**\n📅 Thu, 29 Oc\n原文摘要：Managed Deep Agents now runs a browser for your agent, with tools tuned for context-efficient browser use and a handoff so you can sign in yourself.\n🔗 https://www.langchain.com/blog/browser-use-in-managed-deep-agents\n\n---\n\n**How We Built LangChain’s Paid Media Agent**\n📅 Thu, 29 Oc\n原文摘要：How LangChain built a paid media agent to analyze campaign performance, optimize ads, propose changes, and turn marketing data into action.\n🔗 https://www.langchain.com/blog/paid-media-agent",
+   "links": [
+    {
+     "title": "https://www.langchain.com/blog/managed-deep-agents-browser-use-and-asynchronous-subagents",
+     "url": "https://www.langchain.com/blog/managed-deep-agents-browser-use-and-asynchronous-subagents"
+    },
+    {
+     "title": "https://www.langchain.com/blog/browser-use-in-managed-deep-agents",
+     "url": "https://www.langchain.com/blog/browser-use-in-managed-deep-agents"
+    },
+    {
+     "title": "https://www.langchain.com/blog/paid-media-agent",
+     "url": "https://www.langchain.com/blog/paid-media-agent"
+    }
+   ]
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "content",
+   "summary": "2026-10-30 Hugging Face Blog 发现 4 篇新文章: Granite Switch 4.1.1 — Update models like you update so...",
+   "body": "## 2026-10-30 Hugging Face Blog\n\n发现 4 篇新文章:\n\n**Granite Switch 4.1.1 — Update models like you update software**\n📅 Thu, 29 Oc\n🔗 https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1\n\n---\n\n**Announcing Project ProtoStar: Making Publicly Funded Science AI-Ready**\n📅 Thu, 29 Oc\n🔗 https://huggingface.co/blog/announcing-project-protostar\n\n---\n\n**Welcome Le Chonk: Mistral Large 4 on Hugging Face**\n📅 Thu, 29 Oc\n🔗 https://huggingface.co/blog/mistral-large4\n\n---\n\n**Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms**\n📅 Thu, 29 Oc\n🔗 https://huggingface.co/blog/anydecisionmodel",
+   "links": [
+    {
+     "title": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1",
+     "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1"
+    },
+    {
+     "title": "https://huggingface.co/blog/announcing-project-protostar",
+     "url": "https://huggingface.co/blog/announcing-project-protostar"
+    },
+    {
+     "title": "https://huggingface.co/blog/mistral-large4",
+     "url": "https://huggingface.co/blog/mistral-large4"
+    },
+    {
+     "title": "https://huggingface.co/blog/anydecisionmodel",
+     "url": "https://huggingface.co/blog/anydecisionmodel"
+    }
+   ]
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "no_update",
+   "summary": "2026-10-30 Google Research 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-10-30 Google Research\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-10-30 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-10-30 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-10-30 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-10-30 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-10-30 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-10-30 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-10-30 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-10-30 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-10-30T05:32:41+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

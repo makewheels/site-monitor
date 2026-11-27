@@ -1,0 +1,156 @@
+{
+ "date": "2026-10-18",
+ "report_id": "2026-10-18-761a9056cc",
+ "created_at": "2026-10-18T05:32:46",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-10-18\n\n# 🔥 GitHub Trending\n\n2026-10-18\n\n发现 1 个新项目（共 5 个项目）:\n\n**anthropics/claude-plugins-official**\n  官方维护的高质量 Claude Code 插件库\n  🔗 https://github.com/anthropics/claude-plugins-official\n\n---\n**🆕 MadsLorentzen/ai-job-search**\n  本地跑的 AI 求职助手，自动评估岗位、改简历写求职信\n  🔗 https://github.com/MadsLorentzen/ai-job-search\n\n---\n**affaan-m/ECC**\n  给代码助手加技能、记忆与安全的 Agent 优化系统\n  🔗 https://github.com/affaan-m/ECC\n\n---\n**HKUDS/CLI-Anything**\n  让所有软件都能被 AI Agent 用命令行原生调用的神器\n  🔗 https://github.com/HKUDS/CLI-Anything\n\n---\n**K-Dense-AI/scientific-agent-skills**\n  让 AI 变科学家的技能库，提供上百个验证过的科研技能\n  🔗 https://github.com/K-Dense-AI/scientific-agent-skills\n\n## 2026-10-18 Anthropic Engineering\n\n今日无新文章\n\n## 2026-10-18 OpenAI News\n\n发现 2 篇新文章:\n\n**How Itaú is building generative AI for its entire customer base**\n📅 Fri, 16 Oc\n原文摘要：With ia.i, a conversational interface, and the IARA governance platform, Itaú is applying its AI First strategy to customers and employees — in one of Brazil’s most regulated sectors.\n🔗 https://openai.com/index/itau-generative-ai\n\n---\n\n**Benefit Street Partners answers questions faster with Codex**\n📅 Fri, 16 Oc\n原文摘要：Anant Kumar builds tools to compare loan valuations and analyze credit agreements, using Codex for code review and faster follow-ups.\n🔗 https://openai.com/index/benefit-street-partners\n\n## 2026-10-18 LangChain Blog\n\n今日无新文章（追踪 20 篇）\n\n## 2026-10-18 Hugging Face Blog\n\n今日无新文章(追踪 20 篇)\n\n## 2026-10-18 Google Research\n\n今日无新文章(追踪 20 篇)\n\n## 2026-10-18 METR\n\n发现 4 篇新文章:\n\n**Expenditure Horizon: Measuring Optimization Ability, with an Application to NanoGPT**\n📅 Tue, 21 Ju\n原文摘要：We propose a measure of an AI agent’s optimization ability with an “expenditure horizon.” We give an empirical illustration from the NanoGPT speedrun. One difficulty in measuring AI’s ability to accelerate AI R&D is accounting for token cost, experiment compute cost and human labor cost. If we can estimate performance as a function of cost for both humans and agents, we can measure the “expenditure horizon” as the point at which those curves cross: the budget at which humans become more cost-effective than AIs. We illustrate our method with data from the NanoGPT speedrun. We first estimate the returns to human effort in optimizing NanoGPT: on the margin, each 1% improvement costs very roughly \\$2,500 in human labor. We also report the status of preliminary agentic optimization runs against NanoGPT: after more than \\$10K of expenditure we estimate expenditure horizons of \\$0-\\$3K. Introduction A critical question is the degree to which AI will accelerate its own progress. Over the last year there have been many credible claims that AI has begun accelerating algorithmic progress but it is hard to tell by how much, and what to expect in the future. 1 We have many imperfect sources of evidence on AI’s acceleration of AI R&D: AI R&D benchmarks. There are a few high-quality benchmarks which test agents on their ability to optimize AI training algorithms. However most do not report any human baseline, or only a baseline score at 8 hours or 40 hours. Additionally, the benchmark problems are often not reflective of frontier-level AI R&D. It seems plausible that agents can get good solutions to many “textbook” or “toy” problems without being able to contribute to highly-optimized frontier algorithms. Researcher-uplift studies. Ideally we would compare researcher productivity with and without AI help, but it is very difficult to run an experiment that estimates the effect accurately (discussion in Becker et al., 2026 ). We do have some self-reported estimates of productivity i\n🔗 https://metr.org/blog/2026-07-21-expenditure-horizon/\n\n---\n\n**Because 8 ≈ e², Anthropic's researcher uplift is plausibly >2x**\n📅 Wed, 08 Ju\n原文摘要：Note: the modeling assumptions and conclusion are Thomas Kwa’s opinion, and others at METR disagree. 1 Also, the math was checked by Claude but not a second human. Introduction Anthropic’s RSI blog post reported that in Q2 2026, Anthropic contributors merged 8× as much code per day as in the 2021-2024 period. What does this imply about the factor by which a researcher’s total effective output increased — the (serial) researcher uplift 2 ? Of course, 8× more code doesn’t mean 8× more research, as coding is only part of the job. However, if we assume each line of code (LoC) has equivalent quality and verbosity to pre-2025 code and make standard economic modeling assumptions, we can conclude a surprising amount: all models predict researcher uplift at Anthropic from coding agents alone is >2×. (Researcher uplift could be even higher, because these numbers assume no uplift on non-code tasks.) Cobb-Douglas predicts that if pre-AI time spent coding is \\(\\beta=50\\%\\) and code output increases by a factor \\(M=8\\), then researcher uplift is \\(M^\\beta = 2.83\\). CES (constant elasticity of substitution) production functions, due to a fun mathematical coincidence, infer a narrow range of about \\([2.75, 2.91]\\) if code is homogeneous. If code is CES but non-homogeneous, such that AI speeds up low-stakes code more than high-stakes code, we obtain a range of \\([2.33, 2.66]\\), lower but still over 2x. However, there are several reasons new code may not be equivalent to old code, which would be at least partially resolvable with internal Anthropic data. Verbosity: \\(M\\) substantially overstates true quality-adjusted code output (e.g. perhaps AI code is >2x more verbose than human code for the same functionality). Barely-useful code: AIs are speeding up people enormously (>20x) on low-stakes code that would never have been written pre-AI, but is only 5%-20% as valuable as normal code. Researcher irrationality: Anthropic researchers are producing code that doesn’t contribute to resear\n🔗 https://metr.org/notes/2026-07-08-anthropic-researcher-uplift/\n\n---\n\n**Summary of METR's predeployment evaluation of GPT-5.6 Sol**\n📅 Fri, 26 Ju\n原文摘要：Note on independence: This evaluation was conducted under a standard NDA. Due to the sensitive information shared with METR as part of this evaluation, OpenAI’s comms and legal team required review and approval of this post. 1 Summary We conducted an independent external evaluation of GPT-5.6 Sol. For this evaluation, OpenAI provided: Access to GPT-5.6 Sol, both the final checkpoint and a ‘railfree’ version, via API Access to GPT-5.6 Sol with raw chain-of-thought via API A “Codex harness setup guide for third-party assessors” Updated answers to key claims from our pilot Frontier Risk Report questionnaire We initiated an evaluation of GPT-5.6 Sol on our Time Horizon 1.1 suite of software tasks. However, the resulting measurement depends heavily on our detection and treatment of cheating attempts by the model, and GPT-5.6 Sol’s detected cheating rate was higher than any public model we have evaluated on our ReAct agent harness. For our task suite, we define “cheating” as behavior where the model improves evaluation performance by exploiting bugs in the evaluation environment or by adopting strategies disallowed by the task, rather than solving the task within the expected evaluation constraints. Some examples we saw when evaluating GPT-5.6 Sol included the model packaging exploits in its intermediate submissions to reveal information about a task’s hidden test suite and, in another task, extracting hidden source code detailing the expected answer. In addition to a model’s own propensities, we believe that observed cheating rates can also be influenced by the prompts used in the evaluation scaffold and the exact wordings of task instructions. With the data we collected for GPT-5.6 Sol, if we follow our standard methodology of marking cheating attempts as failures, we arrive at a 50%-Time Horizon point estimate of around 11.3hrs (95% CI: 5hrs - 40hrs), but if we count the cheating attempts as legitimate successes, the point estimate jumps beyond 270hrs – well beyond the\n🔗 https://metr.org/blog/2026-06-26-gpt-5-6-sol/\n\n---\n\n**Frontier Risk Report (February to March 2026)**\n📅 Tue, 19 Ma\n原文摘要：Assessment Window: Feb 16, 2026 – Mar 16, 2026 Download PDF Redaction summary statement: Except where explicitly noted in the report, there was no additional redacted information that was important to our conclusions from any of the participating companies. Executive summary and guide to the report Starting in February 2026, METR conducted a pilot exercise to assess misalignment risks from AI agents used inside frontier AI developers, with participation from Anthropic, Google, Meta, and OpenAI. We make three main contributions in this report, each detailed in a separate section. First, we motivate and outline the process we followed for this exercise. 1 Each participant provided: Access to their most capable internal model(s) at the time of assessment, including raw chains of thought. A wide range of non-public information about the capabilities of the shared model(s), how AI was used and monitored internally, and trends in the pace of progress. METR then prepared private reports for each participant, participants approved what non-public information could be disclosed, and METR wrote this public report. This exercise is entity-based rather than model-specific, and is designed to be repeated periodically rather than tied to public releases. Second, we present six key facts that inform our assessment, drawing on evaluations we conducted on the models that participants shared, 2 evaluations we conducted on public models, information shared by participants, 3 findings from a recent embedded red-teaming exercise , 4 system cards, and other public literature. We organize facts into means (what harmful actions agents could take), motive (whether they might attempt harmful actions) and opportunity (whether attempts could succeed, given safeguards). Finally, we provide an assessment of whether internal AI agents in Feb–Mar 2026 had the means, motive , and opportunity to start a “ rogue deployment ” — a set of agents running autonomously without human knowledge or permission\n🔗 https://metr.org/blog/2026-05-19-frontier-risk-report/\n\n## 2026-10-18 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-10-18 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-10-18 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 10,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-10-18 发现 1 个新项目（共 5 个项目）: anthropics/claude-plugins-official 官方维护的高质量 Cl...",
+   "body": "# 🔥 GitHub Trending\n\n2026-10-18\n\n发现 1 个新项目（共 5 个项目）:\n\n**anthropics/claude-plugins-official**\n  官方维护的高质量 Claude Code 插件库\n  🔗 https://github.com/anthropics/claude-plugins-official\n\n---\n**🆕 MadsLorentzen/ai-job-search**\n  本地跑的 AI 求职助手，自动评估岗位、改简历写求职信\n  🔗 https://github.com/MadsLorentzen/ai-job-search\n\n---\n**affaan-m/ECC**\n  给代码助手加技能、记忆与安全的 Agent 优化系统\n  🔗 https://github.com/affaan-m/ECC\n\n---\n**HKUDS/CLI-Anything**\n  让所有软件都能被 AI Agent 用命令行原生调用的神器\n  🔗 https://github.com/HKUDS/CLI-Anything\n\n---\n**K-Dense-AI/scientific-agent-skills**\n  让 AI 变科学家的技能库，提供上百个验证过的科研技能\n  🔗 https://github.com/K-Dense-AI/scientific-agent-skills",
+   "links": [
+    {
+     "title": "anthropics/claude-plugins-official",
+     "url": "https://github.com/anthropics/claude-plugins-official"
+    },
+    {
+     "title": "MadsLorentzen/ai-job-search",
+     "url": "https://github.com/MadsLorentzen/ai-job-search"
+    },
+    {
+     "title": "affaan-m/ECC",
+     "url": "https://github.com/affaan-m/ECC"
+    },
+    {
+     "title": "HKUDS/CLI-Anything",
+     "url": "https://github.com/HKUDS/CLI-Anything"
+    },
+    {
+     "title": "K-Dense-AI/scientific-agent-skills",
+     "url": "https://github.com/K-Dense-AI/scientific-agent-skills"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-10-18 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-10-18 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-10-18 OpenAI News 发现 2 篇新文章: How Itaú is building generative AI for its entire customer ba...",
+   "body": "## 2026-10-18 OpenAI News\n\n发现 2 篇新文章:\n\n**How Itaú is building generative AI for its entire customer base**\n📅 Fri, 16 Oc\n原文摘要：With ia.i, a conversational interface, and the IARA governance platform, Itaú is applying its AI First strategy to customers and employees — in one of Brazil’s most regulated sectors.\n🔗 https://openai.com/index/itau-generative-ai\n\n---\n\n**Benefit Street Partners answers questions faster with Codex**\n📅 Fri, 16 Oc\n原文摘要：Anant Kumar builds tools to compare loan valuations and analyze credit agreements, using Codex for code review and faster follow-ups.\n🔗 https://openai.com/index/benefit-street-partners",
+   "links": [
+    {
+     "title": "https://openai.com/index/itau-generative-ai",
+     "url": "https://openai.com/index/itau-generative-ai"
+    },
+    {
+     "title": "https://openai.com/index/benefit-street-partners",
+     "url": "https://openai.com/index/benefit-street-partners"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "no_update",
+   "summary": "2026-10-18 LangChain Blog 今日无新文章（追踪 20 篇）",
+   "body": "## 2026-10-18 LangChain Blog\n\n今日无新文章（追踪 20 篇）",
+   "links": []
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "no_update",
+   "summary": "2026-10-18 Hugging Face Blog 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-10-18 Hugging Face Blog\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "no_update",
+   "summary": "2026-10-18 Google Research 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-10-18 Google Research\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "content",
+   "summary": "2026-10-18 METR 发现 4 篇新文章: Expenditure Horizon: Measuring Optimization Ability, with an Applica...",
+   "body": "## 2026-10-18 METR\n\n发现 4 篇新文章:\n\n**Expenditure Horizon: Measuring Optimization Ability, with an Application to NanoGPT**\n📅 Tue, 21 Ju\n原文摘要：We propose a measure of an AI agent’s optimization ability with an “expenditure horizon.” We give an empirical illustration from the NanoGPT speedrun. One difficulty in measuring AI’s ability to accelerate AI R&D is accounting for token cost, experiment compute cost and human labor cost. If we can estimate performance as a function of cost for both humans and agents, we can measure the “expenditure horizon” as the point at which those curves cross: the budget at which humans become more cost-effective than AIs. We illustrate our method with data from the NanoGPT speedrun. We first estimate the returns to human effort in optimizing NanoGPT: on the margin, each 1% improvement costs very roughly \\$2,500 in human labor. We also report the status of preliminary agentic optimization runs against NanoGPT: after more than \\$10K of expenditure we estimate expenditure horizons of \\$0-\\$3K. Introduction A critical question is the degree to which AI will accelerate its own progress. Over the last year there have been many credible claims that AI has begun accelerating algorithmic progress but it is hard to tell by how much, and what to expect in the future. 1 We have many imperfect sources of evidence on AI’s acceleration of AI R&D: AI R&D benchmarks. There are a few high-quality benchmarks which test agents on their ability to optimize AI training algorithms. However most do not report any human baseline, or only a baseline score at 8 hours or 40 hours. Additionally, the benchmark problems are often not reflective of frontier-level AI R&D. It seems plausible that agents can get good solutions to many “textbook” or “toy” problems without being able to contribute to highly-optimized frontier algorithms. Researcher-uplift studies. Ideally we would compare researcher productivity with and without AI help, but it is very difficult to run an experiment that estimates the effect accurately (discussion in Becker et al., 2026 ). We do have some self-reported estimates of productivity i\n🔗 https://metr.org/blog/2026-07-21-expenditure-horizon/\n\n---\n\n**Because 8 ≈ e², Anthropic's researcher uplift is plausibly >2x**\n📅 Wed, 08 Ju\n原文摘要：Note: the modeling assumptions and conclusion are Thomas Kwa’s opinion, and others at METR disagree. 1 Also, the math was checked by Claude but not a second human. Introduction Anthropic’s RSI blog post reported that in Q2 2026, Anthropic contributors merged 8× as much code per day as in the 2021-2024 period. What does this imply about the factor by which a researcher’s total effective output increased — the (serial) researcher uplift 2 ? Of course, 8× more code doesn’t mean 8× more research, as coding is only part of the job. However, if we assume each line of code (LoC) has equivalent quality and verbosity to pre-2025 code and make standard economic modeling assumptions, we can conclude a surprising amount: all models predict researcher uplift at Anthropic from coding agents alone is >2×. (Researcher uplift could be even higher, because these numbers assume no uplift on non-code tasks.) Cobb-Douglas predicts that if pre-AI time spent coding is \\(\\beta=50\\%\\) and code output increases by a factor \\(M=8\\), then researcher uplift is \\(M^\\beta = 2.83\\). CES (constant elasticity of substitution) production functions, due to a fun mathematical coincidence, infer a narrow range of about \\([2.75, 2.91]\\) if code is homogeneous. If code is CES but non-homogeneous, such that AI speeds up low-stakes code more than high-stakes code, we obtain a range of \\([2.33, 2.66]\\), lower but still over 2x. However, there are several reasons new code may not be equivalent to old code, which would be at least partially resolvable with internal Anthropic data. Verbosity: \\(M\\) substantially overstates true quality-adjusted code output (e.g. perhaps AI code is >2x more verbose than human code for the same functionality). Barely-useful code: AIs are speeding up people enormously (>20x) on low-stakes code that would never have been written pre-AI, but is only 5%-20% as valuable as normal code. Researcher irrationality: Anthropic researchers are producing code that doesn’t contribute to resear\n🔗 https://metr.org/notes/2026-07-08-anthropic-researcher-uplift/\n\n---\n\n**Summary of METR's predeployment evaluation of GPT-5.6 Sol**\n📅 Fri, 26 Ju\n原文摘要：Note on independence: This evaluation was conducted under a standard NDA. Due to the sensitive information shared with METR as part of this evaluation, OpenAI’s comms and legal team required review and approval of this post. 1 Summary We conducted an independent external evaluation of GPT-5.6 Sol. For this evaluation, OpenAI provided: Access to GPT-5.6 Sol, both the final checkpoint and a ‘railfree’ version, via API Access to GPT-5.6 Sol with raw chain-of-thought via API A “Codex harness setup guide for third-party assessors” Updated answers to key claims from our pilot Frontier Risk Report questionnaire We initiated an evaluation of GPT-5.6 Sol on our Time Horizon 1.1 suite of software tasks. However, the resulting measurement depends heavily on our detection and treatment of cheating attempts by the model, and GPT-5.6 Sol’s detected cheating rate was higher than any public model we have evaluated on our ReAct agent harness. For our task suite, we define “cheating” as behavior where the model improves evaluation performance by exploiting bugs in the evaluation environment or by adopting strategies disallowed by the task, rather than solving the task within the expected evaluation constraints. Some examples we saw when evaluating GPT-5.6 Sol included the model packaging exploits in its intermediate submissions to reveal information about a task’s hidden test suite and, in another task, extracting hidden source code detailing the expected answer. In addition to a model’s own propensities, we believe that observed cheating rates can also be influenced by the prompts used in the evaluation scaffold and the exact wordings of task instructions. With the data we collected for GPT-5.6 Sol, if we follow our standard methodology of marking cheating attempts as failures, we arrive at a 50%-Time Horizon point estimate of around 11.3hrs (95% CI: 5hrs - 40hrs), but if we count the cheating attempts as legitimate successes, the point estimate jumps beyond 270hrs – well beyond the\n🔗 https://metr.org/blog/2026-06-26-gpt-5-6-sol/\n\n---\n\n**Frontier Risk Report (February to March 2026)**\n📅 Tue, 19 Ma\n原文摘要：Assessment Window: Feb 16, 2026 – Mar 16, 2026 Download PDF Redaction summary statement: Except where explicitly noted in the report, there was no additional redacted information that was important to our conclusions from any of the participating companies. Executive summary and guide to the report Starting in February 2026, METR conducted a pilot exercise to assess misalignment risks from AI agents used inside frontier AI developers, with participation from Anthropic, Google, Meta, and OpenAI. We make three main contributions in this report, each detailed in a separate section. First, we motivate and outline the process we followed for this exercise. 1 Each participant provided: Access to their most capable internal model(s) at the time of assessment, including raw chains of thought. A wide range of non-public information about the capabilities of the shared model(s), how AI was used and monitored internally, and trends in the pace of progress. METR then prepared private reports for each participant, participants approved what non-public information could be disclosed, and METR wrote this public report. This exercise is entity-based rather than model-specific, and is designed to be repeated periodically rather than tied to public releases. Second, we present six key facts that inform our assessment, drawing on evaluations we conducted on the models that participants shared, 2 evaluations we conducted on public models, information shared by participants, 3 findings from a recent embedded red-teaming exercise , 4 system cards, and other public literature. We organize facts into means (what harmful actions agents could take), motive (whether they might attempt harmful actions) and opportunity (whether attempts could succeed, given safeguards). Finally, we provide an assessment of whether internal AI agents in Feb–Mar 2026 had the means, motive , and opportunity to start a “ rogue deployment ” — a set of agents running autonomously without human knowledge or permission\n🔗 https://metr.org/blog/2026-05-19-frontier-risk-report/",
+   "links": [
+    {
+     "title": "https://metr.org/blog/2026-07-21-expenditure-horizon/",
+     "url": "https://metr.org/blog/2026-07-21-expenditure-horizon/"
+    },
+    {
+     "title": "https://metr.org/notes/2026-07-08-anthropic-researcher-uplift/",
+     "url": "https://metr.org/notes/2026-07-08-anthropic-researcher-uplift/"
+    },
+    {
+     "title": "https://metr.org/blog/2026-06-26-gpt-5-6-sol/",
+     "url": "https://metr.org/blog/2026-06-26-gpt-5-6-sol/"
+    },
+    {
+     "title": "https://metr.org/blog/2026-05-19-frontier-risk-report/",
+     "url": "https://metr.org/blog/2026-05-19-frontier-risk-report/"
+    }
+   ]
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-10-18 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-10-18 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-10-18 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-10-18 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-10-18 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-10-18 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-10-18T05:32:52+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

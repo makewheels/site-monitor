@@ -1,0 +1,58 @@
+{
+ "date": "2026-11-16",
+ "report_id": "2026-11-16-9897193470",
+ "created_at": "2026-11-16T05:30:39",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-11-16\n\n# 🔥 GitHub Trending\n\n2026-11-16\n\n发现 3 个新项目（共 5 个项目）:\n\n**🆕 dream-num/univer**\n  用SDK把AI办公能力塞进自家产品，编辑、计算、协作、文件处理全包\n  🔗 https://github.com/dream-num/univer\n\n---\n**🆕 ag-ui-protocol/ag-ui**\n  把AI智能体接进前端应用的交互协议\n  🔗 https://github.com/ag-ui-protocol/ag-ui\n\n---\n**🆕 google-labs-code/stitch-skills**\n  一批给编码智能体用的技能库，配Stitch MCP服务器，遵循开放标准\n  🔗 https://github.com/google-labs-code/stitch-skills\n\n---\n**backnotprop/plannotator**\n  盯着智能体干活的工作台，规划、批注、评审代码并把反馈回传\n  🔗 https://github.com/backnotprop/plannotator\n\n---\n**ChromeDevTools/chrome-devtools-mcp**\n  把Chrome开发者工具开放给编码智能体调用\n  🔗 https://github.com/ChromeDevTools/chrome-devtools-mcp\n\n## 2026-11-16 Anthropic Engineering\n\n今日无新文章",
+ "item_count": 2,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-11-16 发现 3 个新项目（共 5 个项目）: 🆕 dream-num/univer 用SDK把AI办公能力塞进自家产品，编辑、计算、协作、...",
+   "body": "# 🔥 GitHub Trending\n\n2026-11-16\n\n发现 3 个新项目（共 5 个项目）:\n\n**🆕 dream-num/univer**\n  用SDK把AI办公能力塞进自家产品，编辑、计算、协作、文件处理全包\n  🔗 https://github.com/dream-num/univer\n\n---\n**🆕 ag-ui-protocol/ag-ui**\n  把AI智能体接进前端应用的交互协议\n  🔗 https://github.com/ag-ui-protocol/ag-ui\n\n---\n**🆕 google-labs-code/stitch-skills**\n  一批给编码智能体用的技能库，配Stitch MCP服务器，遵循开放标准\n  🔗 https://github.com/google-labs-code/stitch-skills\n\n---\n**backnotprop/plannotator**\n  盯着智能体干活的工作台，规划、批注、评审代码并把反馈回传\n  🔗 https://github.com/backnotprop/plannotator\n\n---\n**ChromeDevTools/chrome-devtools-mcp**\n  把Chrome开发者工具开放给编码智能体调用\n  🔗 https://github.com/ChromeDevTools/chrome-devtools-mcp",
+   "links": [
+    {
+     "title": "dream-num/univer",
+     "url": "https://github.com/dream-num/univer"
+    },
+    {
+     "title": "ag-ui-protocol/ag-ui",
+     "url": "https://github.com/ag-ui-protocol/ag-ui"
+    },
+    {
+     "title": "google-labs-code/stitch-skills",
+     "url": "https://github.com/google-labs-code/stitch-skills"
+    },
+    {
+     "title": "backnotprop/plannotator",
+     "url": "https://github.com/backnotprop/plannotator"
+    },
+    {
+     "title": "ChromeDevTools/chrome-devtools-mcp",
+     "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-11-16 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-11-16 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-11-16T05:30:41+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

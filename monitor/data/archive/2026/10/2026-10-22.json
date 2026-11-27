@@ -1,0 +1,190 @@
+{
+ "date": "2026-10-22",
+ "report_id": "2026-10-22-53e4516b82",
+ "created_at": "2026-10-22T05:34:07",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-10-22\n\n# 🔥 GitHub Trending\n\n2026-10-22\n\n发现 2 个新项目（共 5 个项目）:\n\n**cloudflare/security-audit-skill**\n  教代码智能体分阶段做安全审计，输出机器可读的验证结果。\n  🔗 https://github.com/cloudflare/security-audit-skill\n\n---\n**🆕 vllm-project/vllm**\n  大模型推理和部署引擎，主打高吞吐和极致省显存。\n  🔗 https://github.com/vllm-project/vllm\n\n---\n**stablyai/orca**\n  用你自己的订阅跑各种代码智能体，轻松管理一群智能体。\n  🔗 https://github.com/stablyai/orca\n\n---\n**🆕 headroomlabs-ai/headroom**\n  喂大模型前先压缩日志和文件，大幅省字数还不掉点。\n  🔗 https://github.com/headroomlabs-ai/headroom\n\n---\n**DietrichGebert/ponytail**\n  让AI像最懒的资深开发一样思考，能少写代码就少写。\n  🔗 https://github.com/DietrichGebert/ponytail\n\n## 2026-10-22 Anthropic Engineering\n\n今日无新文章\n\n## 2026-10-22 OpenAI News\n\n发现 8 篇新文章:\n\n**How AT&T is rethinking in-house legal work with OpenAI**\n📅 Wed, 21 Oc\n原文摘要：AT&T is working with OpenAI to make legal knowledge easier to access. Learn how its LegalEdge team is rethinking intake and scaling legal judgment.\n🔗 https://openai.com/index/att-legal\n\n---\n\n**OpenAI models are coming to Google Cloud**\n📅 Wed, 21 Oc\n原文摘要：OpenAI and Google Cloud are bringing frontier models and Codex workflows to Gemini’s Model Garden, available through Google Cloud Marketplace.\n🔗 https://openai.com/index/openai-models-google-cloud\n\n---\n\n**Patch the Planet: global response coordination as agents uncover critical vulnerabilities**\n📅 Wed, 21 Oc\n原文摘要：Patch the Planet connects security researchers, maintainers, and incident responders to help address critical vulnerabilities across open source.\n🔗 https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities\n\n---\n\n**ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform**\n📅 Wed, 21 Oc\n原文摘要：From local businesses to global brands, more advertisers can now reach people as they explore, compare and decide what to buy in ChatGPT.\n🔗 https://openai.com/index/chatgpt-ads-expands-26-new-countries\n\n---\n\n**Using thousands of AI agents to uncover new leads in biological data**\n📅 Wed, 21 Oc\n原文摘要：See how OpenAI, PerturbAI, and Scripps Research used distributed AI agents to uncover promising research leads in data from millions of brain cells.\n🔗 https://openai.com/index/scaling-ai-research-for-complex-biological-data\n\n---\n\n**How we built ChatGPT’s novel ad stack for user trust and relevance**\n📅 Wed, 21 Oc\n原文摘要：Learn how OpenAI built ChatGPT’s LLM-powered ad stack to understand conversational intent, keep ads separate from answers, and deliver relevant ads at scale.\n🔗 https://openai.com/index/building-chatgpt-ad-stack\n\n---\n\n**Democratic governance of frontier AI, part II: Empowering cyber defenders**\n📅 Wed, 21 Oc\n原文摘要：OpenAI outlines a blueprint for empowering cyber defenders with frontier AI, stronger safeguards, modernized cybersecurity, and more resilient public institutions.\n🔗 https://openai.com/index/empowering-cyber-defenders\n\n---\n\n**Terminal X matches senior investor judgment 88.6% with GPT-6.1**\n📅 Tue, 20 Oc\n原文摘要：Terminal X’s Eval Agent grades outputs against a 54-criterion rubric, catching 25% more deviances from a fund’s mandate with GPT-6.1 Sol.\n🔗 https://openai.com/index/terminal-x\n\n## 2026-10-22 LangChain Blog\n\n今日无新文章（追踪 20 篇）\n\n## 2026-10-22 Hugging Face Blog\n\n发现 4 篇新文章:\n\n**NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required**\n📅 Wed, 21 Oc\n🔗 https://huggingface.co/blog/nvidia/kumo-relational\n\n---\n\n**How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications**\n📅 Wed, 21 Oc\n🔗 https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization\n\n---\n\n**Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.**\n📅 Wed, 21 Oc\n🔗 https://huggingface.co/blog/amazon/profiling-torchneuron-part-1\n\n---\n\n**Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster**\n📅 Wed, 21 Oc\n🔗 https://huggingface.co/blog/ibm-granite/granite-speech-5\n\n## 2026-10-22 Google Research\n\n发现 1 篇新文章:\n\n**Empowering frontline maternal care with AI-assisted ultrasound**\n📅 Wed, 21 Oc\n原文摘要：Health & Bioscience\n🔗 https://research.google/blog/empowering-frontline-maternal-care-with-ai-assisted-ultrasound/\n\n## 2026-10-22 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-10-22 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-10-22 Trail of Bits\n\n发现 1 篇新文章:\n\n**Your AI agent fixed the bug, but what else did it change?**\n📅 Wed, 21 Oc\n原文摘要：Today we’re publishing patching-bugs and regression-hunt , two plugins that let engineers delegate patch development and regression checks to agents. Our patching-bugs plugin reproduces reported bugs, develops fixes, and tests them. The regression-hunt plugin checks whether any changes break previously working and supported behavior. Engineers can direct the work and review their results; maintainers can supply their own security assumptions and patching requirements, so the agents work within the project’s rules. We built patching-bugs and regression-hunt through Patch the Planet , our joint initiative with OpenAI, where we’ve co-authored hundreds of security patches for widely used open-source projects. Motivated by our major successes on projects like Scapy , our plugins draw on our analysis of merged patches and thousands of our engineers’ Codex sessions. The plugins provide maintainers with a structured workflow, evidence, independent checks, and best practices to improve their patching hygiene. In our preliminary evaluations, regression-hunt produces 25% fewer false-positive findings than a baseline Codex agent prompted to “review the PR for regressions.” Standardizing the patching process Our September post reported regressions introduced by some of our Patch the Planet patches. Since then, we’ve reviewed every patch that a Trail of Bits engineer authored and maintainers merged upstream. The review confirmed 21 regressions from over 130 PRs merged: 16 functional, one performance, and four build/test. None broke a security protection. (“Regression” refers to a new defect introduced by a change that breaks previously correct and supported behavior along a path a real user or attacker can reach.) For each patch, an agent looked for potential regressions, confirmed each one with a proof-of-concept (PoC) run before and after the change, and then passed the results to an engineer for review. The review was noisy: today’s bug disclosures arrive at an unprecedented s\n🔗 https://blog.trailofbits.com/2026/10/21/your-ai-agent-fixed-the-bug-but-what-else-did-it-change/\n\n## 2026-10-22 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 10,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-10-22 发现 2 个新项目（共 5 个项目）: cloudflare/security-audit-skill 教代码智能体分阶段做安全审计...",
+   "body": "# 🔥 GitHub Trending\n\n2026-10-22\n\n发现 2 个新项目（共 5 个项目）:\n\n**cloudflare/security-audit-skill**\n  教代码智能体分阶段做安全审计，输出机器可读的验证结果。\n  🔗 https://github.com/cloudflare/security-audit-skill\n\n---\n**🆕 vllm-project/vllm**\n  大模型推理和部署引擎，主打高吞吐和极致省显存。\n  🔗 https://github.com/vllm-project/vllm\n\n---\n**stablyai/orca**\n  用你自己的订阅跑各种代码智能体，轻松管理一群智能体。\n  🔗 https://github.com/stablyai/orca\n\n---\n**🆕 headroomlabs-ai/headroom**\n  喂大模型前先压缩日志和文件，大幅省字数还不掉点。\n  🔗 https://github.com/headroomlabs-ai/headroom\n\n---\n**DietrichGebert/ponytail**\n  让AI像最懒的资深开发一样思考，能少写代码就少写。\n  🔗 https://github.com/DietrichGebert/ponytail",
+   "links": [
+    {
+     "title": "cloudflare/security-audit-skill",
+     "url": "https://github.com/cloudflare/security-audit-skill"
+    },
+    {
+     "title": "vllm-project/vllm",
+     "url": "https://github.com/vllm-project/vllm"
+    },
+    {
+     "title": "stablyai/orca",
+     "url": "https://github.com/stablyai/orca"
+    },
+    {
+     "title": "headroomlabs-ai/headroom",
+     "url": "https://github.com/headroomlabs-ai/headroom"
+    },
+    {
+     "title": "DietrichGebert/ponytail",
+     "url": "https://github.com/DietrichGebert/ponytail"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-10-22 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-10-22 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-10-22 OpenAI News 发现 8 篇新文章: How AT&T is rethinking in-house legal work with OpenAI 📅 Wed,...",
+   "body": "## 2026-10-22 OpenAI News\n\n发现 8 篇新文章:\n\n**How AT&T is rethinking in-house legal work with OpenAI**\n📅 Wed, 21 Oc\n原文摘要：AT&T is working with OpenAI to make legal knowledge easier to access. Learn how its LegalEdge team is rethinking intake and scaling legal judgment.\n🔗 https://openai.com/index/att-legal\n\n---\n\n**OpenAI models are coming to Google Cloud**\n📅 Wed, 21 Oc\n原文摘要：OpenAI and Google Cloud are bringing frontier models and Codex workflows to Gemini’s Model Garden, available through Google Cloud Marketplace.\n🔗 https://openai.com/index/openai-models-google-cloud\n\n---\n\n**Patch the Planet: global response coordination as agents uncover critical vulnerabilities**\n📅 Wed, 21 Oc\n原文摘要：Patch the Planet connects security researchers, maintainers, and incident responders to help address critical vulnerabilities across open source.\n🔗 https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities\n\n---\n\n**ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform**\n📅 Wed, 21 Oc\n原文摘要：From local businesses to global brands, more advertisers can now reach people as they explore, compare and decide what to buy in ChatGPT.\n🔗 https://openai.com/index/chatgpt-ads-expands-26-new-countries\n\n---\n\n**Using thousands of AI agents to uncover new leads in biological data**\n📅 Wed, 21 Oc\n原文摘要：See how OpenAI, PerturbAI, and Scripps Research used distributed AI agents to uncover promising research leads in data from millions of brain cells.\n🔗 https://openai.com/index/scaling-ai-research-for-complex-biological-data\n\n---\n\n**How we built ChatGPT’s novel ad stack for user trust and relevance**\n📅 Wed, 21 Oc\n原文摘要：Learn how OpenAI built ChatGPT’s LLM-powered ad stack to understand conversational intent, keep ads separate from answers, and deliver relevant ads at scale.\n🔗 https://openai.com/index/building-chatgpt-ad-stack\n\n---\n\n**Democratic governance of frontier AI, part II: Empowering cyber defenders**\n📅 Wed, 21 Oc\n原文摘要：OpenAI outlines a blueprint for empowering cyber defenders with frontier AI, stronger safeguards, modernized cybersecurity, and more resilient public institutions.\n🔗 https://openai.com/index/empowering-cyber-defenders\n\n---\n\n**Terminal X matches senior investor judgment 88.6% with GPT-6.1**\n📅 Tue, 20 Oc\n原文摘要：Terminal X’s Eval Agent grades outputs against a 54-criterion rubric, catching 25% more deviances from a fund’s mandate with GPT-6.1 Sol.\n🔗 https://openai.com/index/terminal-x",
+   "links": [
+    {
+     "title": "https://openai.com/index/att-legal",
+     "url": "https://openai.com/index/att-legal"
+    },
+    {
+     "title": "https://openai.com/index/openai-models-google-cloud",
+     "url": "https://openai.com/index/openai-models-google-cloud"
+    },
+    {
+     "title": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
+     "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities"
+    },
+    {
+     "title": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+     "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries"
+    },
+    {
+     "title": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
+     "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data"
+    },
+    {
+     "title": "https://openai.com/index/building-chatgpt-ad-stack",
+     "url": "https://openai.com/index/building-chatgpt-ad-stack"
+    },
+    {
+     "title": "https://openai.com/index/empowering-cyber-defenders",
+     "url": "https://openai.com/index/empowering-cyber-defenders"
+    },
+    {
+     "title": "https://openai.com/index/terminal-x",
+     "url": "https://openai.com/index/terminal-x"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "no_update",
+   "summary": "2026-10-22 LangChain Blog 今日无新文章（追踪 20 篇）",
+   "body": "## 2026-10-22 LangChain Blog\n\n今日无新文章（追踪 20 篇）",
+   "links": []
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "content",
+   "summary": "2026-10-22 Hugging Face Blog 发现 4 篇新文章: NVIDIA Kumo Relational Outperforms Supervised Machine L...",
+   "body": "## 2026-10-22 Hugging Face Blog\n\n发现 4 篇新文章:\n\n**NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required**\n📅 Wed, 21 Oc\n🔗 https://huggingface.co/blog/nvidia/kumo-relational\n\n---\n\n**How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications**\n📅 Wed, 21 Oc\n🔗 https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization\n\n---\n\n**Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.**\n📅 Wed, 21 Oc\n🔗 https://huggingface.co/blog/amazon/profiling-torchneuron-part-1\n\n---\n\n**Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster**\n📅 Wed, 21 Oc\n🔗 https://huggingface.co/blog/ibm-granite/granite-speech-5",
+   "links": [
+    {
+     "title": "https://huggingface.co/blog/nvidia/kumo-relational",
+     "url": "https://huggingface.co/blog/nvidia/kumo-relational"
+    },
+    {
+     "title": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
+     "url": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization"
+    },
+    {
+     "title": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
+     "url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1"
+    },
+    {
+     "title": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
+     "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5"
+    }
+   ]
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "content",
+   "summary": "2026-10-22 Google Research 发现 1 篇新文章: Empowering frontline maternal care with AI-assisted ultra...",
+   "body": "## 2026-10-22 Google Research\n\n发现 1 篇新文章:\n\n**Empowering frontline maternal care with AI-assisted ultrasound**\n📅 Wed, 21 Oc\n原文摘要：Health & Bioscience\n🔗 https://research.google/blog/empowering-frontline-maternal-care-with-ai-assisted-ultrasound/",
+   "links": [
+    {
+     "title": "https://research.google/blog/empowering-frontline-maternal-care-with-ai-assisted-ultrasound/",
+     "url": "https://research.google/blog/empowering-frontline-maternal-care-with-ai-assisted-ultrasound/"
+    }
+   ]
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-10-22 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-10-22 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-10-22 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-10-22 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "content",
+   "summary": "2026-10-22 Trail of Bits 发现 1 篇新文章: Your AI agent fixed the bug, but what else did it change? 📅...",
+   "body": "## 2026-10-22 Trail of Bits\n\n发现 1 篇新文章:\n\n**Your AI agent fixed the bug, but what else did it change?**\n📅 Wed, 21 Oc\n原文摘要：Today we’re publishing patching-bugs and regression-hunt , two plugins that let engineers delegate patch development and regression checks to agents. Our patching-bugs plugin reproduces reported bugs, develops fixes, and tests them. The regression-hunt plugin checks whether any changes break previously working and supported behavior. Engineers can direct the work and review their results; maintainers can supply their own security assumptions and patching requirements, so the agents work within the project’s rules. We built patching-bugs and regression-hunt through Patch the Planet , our joint initiative with OpenAI, where we’ve co-authored hundreds of security patches for widely used open-source projects. Motivated by our major successes on projects like Scapy , our plugins draw on our analysis of merged patches and thousands of our engineers’ Codex sessions. The plugins provide maintainers with a structured workflow, evidence, independent checks, and best practices to improve their patching hygiene. In our preliminary evaluations, regression-hunt produces 25% fewer false-positive findings than a baseline Codex agent prompted to “review the PR for regressions.” Standardizing the patching process Our September post reported regressions introduced by some of our Patch the Planet patches. Since then, we’ve reviewed every patch that a Trail of Bits engineer authored and maintainers merged upstream. The review confirmed 21 regressions from over 130 PRs merged: 16 functional, one performance, and four build/test. None broke a security protection. (“Regression” refers to a new defect introduced by a change that breaks previously correct and supported behavior along a path a real user or attacker can reach.) For each patch, an agent looked for potential regressions, confirmed each one with a proof-of-concept (PoC) run before and after the change, and then passed the results to an engineer for review. The review was noisy: today’s bug disclosures arrive at an unprecedented s\n🔗 https://blog.trailofbits.com/2026/10/21/your-ai-agent-fixed-the-bug-but-what-else-did-it-change/",
+   "links": [
+    {
+     "title": "https://blog.trailofbits.com/2026/10/21/your-ai-agent-fixed-the-bug-but-what-else-did-it-change/",
+     "url": "https://blog.trailofbits.com/2026/10/21/your-ai-agent-fixed-the-bug-but-what-else-did-it-change/"
+    }
+   ]
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-10-22 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-10-22 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-10-22T05:34:13+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

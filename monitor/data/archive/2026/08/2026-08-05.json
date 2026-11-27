@@ -1,0 +1,177 @@
+{
+ "date": "2026-08-05",
+ "report_id": "2026-08-05-4924a7824b",
+ "created_at": "2026-08-05T06:37:12",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-08-05\n\n# 🔥 GitHub Trending\n\n2026-08-05\n\n发现 2 个新项目（共 5 个项目）:\n\n**TencentCloud/TencentDB-Agent-Memory**\n  团队级AI智能体记忆中枢，将对话、文档和代码转化为四类可复用记忆资产\n  🔗 https://github.com/TencentCloud/TencentDB-Agent-Memory\n\n---\n**zhaoxuya520/reverse-skill**\n  逆向工程与安全研究技能路由器，AI驱动路由加按需工具链引导\n  🔗 https://github.com/zhaoxuya520/reverse-skill\n\n---\n**firecrawl/pdf-inspector**\n  Rust编写的PDF检测分类与文本提取库，智能区分扫描件与文本PDF\n  🔗 https://github.com/firecrawl/pdf-inspector\n\n---\n**🆕 uber/ADR**\n  企业级AI智能体安全框架，提供可观测性、安全基准测试和威胁检测\n  🔗 https://github.com/uber/ADR\n\n---\n**🆕 obra/superpowers**\n  一套真正好用的智能体技能框架与软件开发方法论\n  🔗 https://github.com/obra/superpowers\n\n## 2026-08-05 Anthropic Engineering\n\n今日无新文章\n\n## 2026-08-05 OpenAI News\n\n发现 4 篇新文章:\n\n**Third-party cyber evaluations involving OpenAI models**\n📅 Tue, 04 Au\n原文摘要：OpenAI explains recent third-party cybersecurity evaluation incidents and outlines new safeguards to strengthen AI model testing and evaluation.\n🔗 https://openai.com/index/third-party-cyber-evaluations-involving-openai-models\n\n---\n\n**New ways to learn and teach with ChatGPT Work and Codex**\n📅 Tue, 04 Au\n原文摘要：Explore new education plugins for ChatGPT Work and Codex that help K–12 teachers, college educators, and students learn, teach, research, and build.\n🔗 https://openai.com/index/learn-teach-chatgpt-work-codex\n\n---\n\n**Apple is getting this wrong**\n📅 Mon, 03 Au\n原文摘要：OpenAI addresses Apple’s baseless lawsuit, corrects claims about its employees, and shares messages documenting what happened.\n🔗 https://openai.com/index/apple-is-getting-this-wrong\n\n---\n\n**Circles powers telco personalization with OpenAI technology**\n📅 Mon, 03 Au\n原文摘要：Circles uses the OpenAI API and Codex to power AI-native telco experiences, increasing ARPU by 22%, reducing churn by 9%, and improving development efficiency.\n🔗 https://openai.com/index/circles\n\n## 2026-08-05 LangChain Blog\n\n发现 2 篇新文章:\n\n**How to Evaluate Voice Agents with LangSmith**\n📅 Tue, 04 Au\n原文摘要：Learn how to evaluate voice agents across execution, outcomes, and caller experience using LangSmith traces, code evaluators, LLM judges, and human review.\n🔗 https://www.langchain.com/blog/how-to-evaluate-voice-agents-execution-outcomes-and-experience\n\n---\n\n**Customer Experience (CX) Agents in Production: Lessons from Lyft, Vodafone, and LATAM Airlines**\n📅 Tue, 04 Au\n原文摘要：Customer Experience (CX) Agents in Production: Lessons from Lyft, Vodafone, and LATAM Airlines\n🔗 https://www.langchain.com/blog/customer-experience-cx-agents-in-production-lessons-from-lyft-vodafone-and-latam-airlines\n\n## 2026-08-05 Claude Code\n\n🆕 **Claude Code 功能更新**: `v2.1.221`\n🔗 https://code.claude.com/docs/en/changelog#2-1-221\n发布时间: Mon, 03 Au\n\n### 功能更新\n- [VSCode] Added Focus view: a chat-menu toggle that hides tool activity behind an expandable per-turn summary with a live running-tool indicator, toggled with Ctrl+Alt+F or the “Claude Code: Toggle Focus view” command\n- Added mode: \"mask\" for sandbox credential files on Linux and WSL — sandboxed commands read a sentinel copy (the whole file, or just the spans captured by an extract regex) while the sandbox proxy substitutes the real value on egress; on macOS file masking falls back to deny\n- Added warnings to claude plugin validate when a marketplace or plugin name would be rejected by Claude Desktop’s managed marketplace sync\n- Added a prompt-audit subcommand to the claude-api skill for auditing prompts and tool descriptions for patterns written for older models\n- Fixed a Bash tool permission-check bypass where zsh could execute hidden commands in [[ ]] regex conditionals; affected commands now prompt for permission\n- Fixed PowerShell permission checks mishandling paths containing quote characters on Windows; such paths now prompt for approval\n- Improved tool search on Google Vertex AI: re-enabled for Claude 4.5-generation and newer models\n- Improved auto mode: permission checks for parallel tool calls are now cache-efficient, and switching modes while a check is pending reliably prompts instead of applying the stale result\n\n## 2026-08-05 GitHub Copilot CLI\n\n## 1.0.78 - 2026-08-03\n\n- Timeline headers show how long each tool call took, right-aligned and ticking live while it runs (for calls of at least 5 seconds). On by default — disable with `/settings showToolDurations`.\n- First-party plugins automatically update to the latest version at session start\n- Add the experimental /new-worktree command to create a new worktree and start a new conversation in it\n- Copilot login now defaults to the browser flow for local desktop subprocesses without a TTY, including IDE integrations, while remote and headless environments continue using device code\n- Interactive shell shortcut now launches on Enter and shows an inline hint when \"$\" is armed\n- Extension slash commands run their handler exactly once per invocation when several extensions are loaded\n- Inline images no longer render with their first row repeated down the whole picture after the timeline scrolls\n- A run whose prompt is piped over stdin now treats its `sessionEnd` hook the same way `-p` does: the hook fires once per completed agent turn with `reason` `complete` (or `error` if the turn failed), instead of once at shutdown with `user_exit`. As with `-p`, a piped run that exits before completing a turn fires no `sessionEnd` hook\n- Split-view sidebar: the red close confirmation now reads `x again to close` (or `x again to exit CLI` on the last session) instead of `x close`, so a second press is clearly what closes\n- Expose token usage in ACP prompt results and live usage_update notifications\n- Added a forceRemoteSettingsRefresh managed setting that requires a fresh managed-settings fetch on startup\n- Disabling the sandbox from a bypass prompt applies only to that session; new sessions start sandboxed again\n- Managed settings now fall back to the persistent cache whenever a server-managed settings fetch fails for any reason (network error, a non-success HTTP status, or a malformed/unparseable response), and fail open — starting without the unconfirmed server restriction rather than the prior fail-closed behavior — when no usable cached policy is available\n- When the sandbox blocks a shell command and bypass is allowed, CLI offers to re-run it outside the sandbox without asking the model\n- /rewind no longer requires git and restores only the files Copilot changed, skipping any file whose contents no longer match what Copilot last wrote, with a conversation-only or conversation + files choice\n- Add /permissions to switch between approval modes.\n- ACP mode supports closing sessions with the closeSession request.\n- Ctrl+Q now enqueues the highlighted mid-text skill completion instead of the partial token\n- Switching sessions no longer restarts MCP servers or rebuilds hook state, so a turn running in another session is never halted with a stale-hook error\n- Refresh deferred MCP tools after OAuth authentication\n- New sandbox setting `allowDevToolCaches` (on by default): grants sandboxed builds access to toolchain caches, registries, and installs so builds work without extra setup. Set false to opt out.\n- Honor explicit GitHub MCP toolset/tool config: keep gh-overlap tools and stop steering to the gh CLI when you opt in\n- Warn on startup about unknown top-level keys in user settings.json (e.g. a misspelled setting) instead of silently ignoring them\n- Shell completion for --model now suggests auto and supported model names\n- Render long session transcripts progressively to keep scrolling responsive\n- Resuming a long session is dramatically faster and far lighter on memory, because its history is now read once at startup (in parallel, across CPU cores) instead of being re-read in full for every check the CLI runs before it can paint. In our benchmark a 230MB, 74k-event transcript came back in well under a second instead of about ten, at roughly a quarter of the peak memory; the exact gain depends on your machine's core count and disk\n- The /allow-all auto safety-judge model is no longer user-configurable; the judge model is now selected automatically.\n\n## 2026-08-05 Hugging Face Blog\n\n发现 1 篇新文章:\n\n**Deploy local agents everywhere with LFM2.5-2.6B**\n📅 Tue, 04 Au\n🔗 https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b\n\n## 2026-08-05 Google Research\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-05 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-05 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-08-05 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-05 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 12,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-08-05 发现 2 个新项目（共 5 个项目）: TencentCloud/TencentDB-Agent-Memory 团队级AI智能体记忆...",
+   "body": "# 🔥 GitHub Trending\n\n2026-08-05\n\n发现 2 个新项目（共 5 个项目）:\n\n**TencentCloud/TencentDB-Agent-Memory**\n  团队级AI智能体记忆中枢，将对话、文档和代码转化为四类可复用记忆资产\n  🔗 https://github.com/TencentCloud/TencentDB-Agent-Memory\n\n---\n**zhaoxuya520/reverse-skill**\n  逆向工程与安全研究技能路由器，AI驱动路由加按需工具链引导\n  🔗 https://github.com/zhaoxuya520/reverse-skill\n\n---\n**firecrawl/pdf-inspector**\n  Rust编写的PDF检测分类与文本提取库，智能区分扫描件与文本PDF\n  🔗 https://github.com/firecrawl/pdf-inspector\n\n---\n**🆕 uber/ADR**\n  企业级AI智能体安全框架，提供可观测性、安全基准测试和威胁检测\n  🔗 https://github.com/uber/ADR\n\n---\n**🆕 obra/superpowers**\n  一套真正好用的智能体技能框架与软件开发方法论\n  🔗 https://github.com/obra/superpowers",
+   "links": [
+    {
+     "title": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+     "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory"
+    },
+    {
+     "title": "https://github.com/zhaoxuya520/reverse-skill",
+     "url": "https://github.com/zhaoxuya520/reverse-skill"
+    },
+    {
+     "title": "https://github.com/firecrawl/pdf-inspector",
+     "url": "https://github.com/firecrawl/pdf-inspector"
+    },
+    {
+     "title": "https://github.com/uber/ADR",
+     "url": "https://github.com/uber/ADR"
+    },
+    {
+     "title": "https://github.com/obra/superpowers",
+     "url": "https://github.com/obra/superpowers"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-08-05 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-08-05 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-08-05 OpenAI News 发现 4 篇新文章: Third-party cyber evaluations involving OpenAI models 📅 Tue,...",
+   "body": "## 2026-08-05 OpenAI News\n\n发现 4 篇新文章:\n\n**Third-party cyber evaluations involving OpenAI models**\n📅 Tue, 04 Au\n原文摘要：OpenAI explains recent third-party cybersecurity evaluation incidents and outlines new safeguards to strengthen AI model testing and evaluation.\n🔗 https://openai.com/index/third-party-cyber-evaluations-involving-openai-models\n\n---\n\n**New ways to learn and teach with ChatGPT Work and Codex**\n📅 Tue, 04 Au\n原文摘要：Explore new education plugins for ChatGPT Work and Codex that help K–12 teachers, college educators, and students learn, teach, research, and build.\n🔗 https://openai.com/index/learn-teach-chatgpt-work-codex\n\n---\n\n**Apple is getting this wrong**\n📅 Mon, 03 Au\n原文摘要：OpenAI addresses Apple’s baseless lawsuit, corrects claims about its employees, and shares messages documenting what happened.\n🔗 https://openai.com/index/apple-is-getting-this-wrong\n\n---\n\n**Circles powers telco personalization with OpenAI technology**\n📅 Mon, 03 Au\n原文摘要：Circles uses the OpenAI API and Codex to power AI-native telco experiences, increasing ARPU by 22%, reducing churn by 9%, and improving development efficiency.\n🔗 https://openai.com/index/circles",
+   "links": [
+    {
+     "title": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models",
+     "url": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models"
+    },
+    {
+     "title": "https://openai.com/index/learn-teach-chatgpt-work-codex",
+     "url": "https://openai.com/index/learn-teach-chatgpt-work-codex"
+    },
+    {
+     "title": "https://openai.com/index/apple-is-getting-this-wrong",
+     "url": "https://openai.com/index/apple-is-getting-this-wrong"
+    },
+    {
+     "title": "https://openai.com/index/circles",
+     "url": "https://openai.com/index/circles"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "content",
+   "summary": "2026-08-05 LangChain Blog 发现 2 篇新文章: How to Evaluate Voice Agents with LangSmith 📅 Tue, 04 Au 原...",
+   "body": "## 2026-08-05 LangChain Blog\n\n发现 2 篇新文章:\n\n**How to Evaluate Voice Agents with LangSmith**\n📅 Tue, 04 Au\n原文摘要：Learn how to evaluate voice agents across execution, outcomes, and caller experience using LangSmith traces, code evaluators, LLM judges, and human review.\n🔗 https://www.langchain.com/blog/how-to-evaluate-voice-agents-execution-outcomes-and-experience\n\n---\n\n**Customer Experience (CX) Agents in Production: Lessons from Lyft, Vodafone, and LATAM Airlines**\n📅 Tue, 04 Au\n原文摘要：Customer Experience (CX) Agents in Production: Lessons from Lyft, Vodafone, and LATAM Airlines\n🔗 https://www.langchain.com/blog/customer-experience-cx-agents-in-production-lessons-from-lyft-vodafone-and-latam-airlines",
+   "links": [
+    {
+     "title": "https://www.langchain.com/blog/how-to-evaluate-voice-agents-execution-outcomes-and-experience",
+     "url": "https://www.langchain.com/blog/how-to-evaluate-voice-agents-execution-outcomes-and-experience"
+    },
+    {
+     "title": "https://www.langchain.com/blog/customer-experience-cx-agents-in-production-lessons-from-lyft-vodafone-and-latam-airlines",
+     "url": "https://www.langchain.com/blog/customer-experience-cx-agents-in-production-lessons-from-lyft-vodafone-and-latam-airlines"
+    }
+   ]
+  },
+  {
+   "topic": "claude_code",
+   "topic_name": "Claude Code",
+   "title": "Claude Code",
+   "status": "content",
+   "summary": "2026-08-05 Claude Code 🆕 **Claude Code 功能更新**: `v2.1.221` 🔗 https://code.claude.com/docs/en/cha...",
+   "body": "## 2026-08-05 Claude Code\n\n🆕 **Claude Code 功能更新**: `v2.1.221`\n🔗 https://code.claude.com/docs/en/changelog#2-1-221\n发布时间: Mon, 03 Au\n\n### 功能更新\n- [VSCode] Added Focus view: a chat-menu toggle that hides tool activity behind an expandable per-turn summary with a live running-tool indicator, toggled with Ctrl+Alt+F or the “Claude Code: Toggle Focus view” command\n- Added mode: \"mask\" for sandbox credential files on Linux and WSL — sandboxed commands read a sentinel copy (the whole file, or just the spans captured by an extract regex) while the sandbox proxy substitutes the real value on egress; on macOS file masking falls back to deny\n- Added warnings to claude plugin validate when a marketplace or plugin name would be rejected by Claude Desktop’s managed marketplace sync\n- Added a prompt-audit subcommand to the claude-api skill for auditing prompts and tool descriptions for patterns written for older models\n- Fixed a Bash tool permission-check bypass where zsh could execute hidden commands in [[ ]] regex conditionals; affected commands now prompt for permission\n- Fixed PowerShell permission checks mishandling paths containing quote characters on Windows; such paths now prompt for approval\n- Improved tool search on Google Vertex AI: re-enabled for Claude 4.5-generation and newer models\n- Improved auto mode: permission checks for parallel tool calls are now cache-efficient, and switching modes while a check is pending reliably prompts instead of applying the stale result",
+   "links": [
+    {
+     "title": "https://code.claude.com/docs/en/changelog#2-1-221",
+     "url": "https://code.claude.com/docs/en/changelog#2-1-221"
+    }
+   ]
+  },
+  {
+   "topic": "github_copilot_cli",
+   "topic_name": "GitHub Copilot CLI",
+   "title": "GitHub Copilot CLI",
+   "status": "note",
+   "summary": "2026-08-05 GitHub Copilot CLI 1.0.78 - 2026-08-03 Timeline headers show how long each tool call...",
+   "body": "## 2026-08-05 GitHub Copilot CLI\n\n## 1.0.78 - 2026-08-03\n\n- Timeline headers show how long each tool call took, right-aligned and ticking live while it runs (for calls of at least 5 seconds). On by default — disable with `/settings showToolDurations`.\n- First-party plugins automatically update to the latest version at session start\n- Add the experimental /new-worktree command to create a new worktree and start a new conversation in it\n- Copilot login now defaults to the browser flow for local desktop subprocesses without a TTY, including IDE integrations, while remote and headless environments continue using device code\n- Interactive shell shortcut now launches on Enter and shows an inline hint when \"$\" is armed\n- Extension slash commands run their handler exactly once per invocation when several extensions are loaded\n- Inline images no longer render with their first row repeated down the whole picture after the timeline scrolls\n- A run whose prompt is piped over stdin now treats its `sessionEnd` hook the same way `-p` does: the hook fires once per completed agent turn with `reason` `complete` (or `error` if the turn failed), instead of once at shutdown with `user_exit`. As with `-p`, a piped run that exits before completing a turn fires no `sessionEnd` hook\n- Split-view sidebar: the red close confirmation now reads `x again to close` (or `x again to exit CLI` on the last session) instead of `x close`, so a second press is clearly what closes\n- Expose token usage in ACP prompt results and live usage_update notifications\n- Added a forceRemoteSettingsRefresh managed setting that requires a fresh managed-settings fetch on startup\n- Disabling the sandbox from a bypass prompt applies only to that session; new sessions start sandboxed again\n- Managed settings now fall back to the persistent cache whenever a server-managed settings fetch fails for any reason (network error, a non-success HTTP status, or a malformed/unparseable response), and fail open — starting without the unconfirmed server restriction rather than the prior fail-closed behavior — when no usable cached policy is available\n- When the sandbox blocks a shell command and bypass is allowed, CLI offers to re-run it outside the sandbox without asking the model\n- /rewind no longer requires git and restores only the files Copilot changed, skipping any file whose contents no longer match what Copilot last wrote, with a conversation-only or conversation + files choice\n- Add /permissions to switch between approval modes.\n- ACP mode supports closing sessions with the closeSession request.\n- Ctrl+Q now enqueues the highlighted mid-text skill completion instead of the partial token\n- Switching sessions no longer restarts MCP servers or rebuilds hook state, so a turn running in another session is never halted with a stale-hook error\n- Refresh deferred MCP tools after OAuth authentication\n- New sandbox setting `allowDevToolCaches` (on by default): grants sandboxed builds access to toolchain caches, registries, and installs so builds work without extra setup. Set false to opt out.\n- Honor explicit GitHub MCP toolset/tool config: keep gh-overlap tools and stop steering to the gh CLI when you opt in\n- Warn on startup about unknown top-level keys in user settings.json (e.g. a misspelled setting) instead of silently ignoring them\n- Shell completion for --model now suggests auto and supported model names\n- Render long session transcripts progressively to keep scrolling responsive\n- Resuming a long session is dramatically faster and far lighter on memory, because its history is now read once at startup (in parallel, across CPU cores) instead of being re-read in full for every check the CLI runs before it can paint. In our benchmark a 230MB, 74k-event transcript came back in well under a second instead of about ten, at roughly a quarter of the peak memory; the exact gain depends on your machine's core count and disk\n- The /allow-all auto safety-judge model is no longer user-configurable; the judge model is now selected automatically.",
+   "links": []
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "content",
+   "summary": "2026-08-05 Hugging Face Blog 发现 1 篇新文章: Deploy local agents everywhere with LFM2.5-2.6B 📅 Tue,...",
+   "body": "## 2026-08-05 Hugging Face Blog\n\n发现 1 篇新文章:\n\n**Deploy local agents everywhere with LFM2.5-2.6B**\n📅 Tue, 04 Au\n🔗 https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b",
+   "links": [
+    {
+     "title": "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b",
+     "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b"
+    }
+   ]
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "no_update",
+   "summary": "2026-08-05 Google Research 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-05 Google Research\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-08-05 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-05 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-08-05 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-08-05 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-08-05 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-05 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-08-05 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-08-05 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": []
+}

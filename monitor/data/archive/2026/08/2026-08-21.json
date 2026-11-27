@@ -1,0 +1,153 @@
+{
+ "date": "2026-08-21",
+ "report_id": "2026-08-21-54e05ac6f7",
+ "created_at": "2026-08-21T05:32:27",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-08-21\n\n# 🔥 GitHub Trending\n\n2026-08-21\n\n发现 5 个新项目（共 5 个项目）:\n\n**🆕 modular/modular**\n  集成MAX和Mojo的AI开发平台，统一模型训练与部署\n  🔗 https://github.com/modular/modular\n\n---\n**🆕 mattpocock/skills**\n  实战工程师技能集合，直接来自作者的智能体配置目录\n  🔗 https://github.com/mattpocock/skills\n\n---\n**🆕 AprilNEA/OpenLogi**\n  Rust编写的本地优先罗技鼠标替代方案，无需账户和遥测\n  🔗 https://github.com/AprilNEA/OpenLogi\n\n---\n**🆕 obra/superpowers**\n  智能体技能框架与软件开发方法论，真正有效的实践指南\n  🔗 https://github.com/obra/superpowers\n\n---\n**🆕 cursor/plugins**\n  Cursor编辑器插件规范及官方插件集合\n  🔗 https://github.com/cursor/plugins\n\n## 2026-08-21 Anthropic Engineering\n\n今日无新文章\n\n## 2026-08-21 OpenAI News\n\n发现 2 篇新文章:\n\n**Introducing AI Futures**\n📅 Thu, 20 Au\n原文摘要：Introducing AI Futures, a new OpenAI blog exploring how transformative AI could reshape power, governance, the economy, and individual freedom.\n🔗 https://openai.com/index/introducing-ai-futures\n\n---\n\n**How ChatGPT Work helps Stampli move ideas to market**\n📅 Thu, 20 Au\n原文摘要：With a fixed deadline and design resources committed elsewhere, Stampli used Codex and ChatGPT Work to compress weeks of launch production into days.\n🔗 https://openai.com/index/stampli\n\n## 2026-08-21 LangChain Blog\n\n发现 1 篇新文章:\n\n**Test Agent Changes with LangSmith Preview Builds**\n📅 Thu, 20 Au\n原文摘要：Preview Builds let teams test pull request branches in temporary, production-like LangSmith deployments before merging agent changes.\n🔗 https://www.langchain.com/blog/langsmith-preview-builds-test-agent-changes-before-production\n\n## 2026-08-21 Hugging Face Blog\n\n发现 2 篇新文章:\n\n**Up to 3.2x Faster Inference with LFM2.5-DSpark**\n📅 Thu, 20 Au\n🔗 https://huggingface.co/blog/LiquidAI/lfm25-dspark\n\n---\n\n**Thinking of ACE? We Can Do It with Fewer Tokens**\n📅 Tue, 11 Au\n🔗 https://huggingface.co/blog/ibm-research/altk-evolve-sldd\n\n## 2026-08-21 Google Research\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-21 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-21 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-08-21 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-21 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 10,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-08-21 发现 5 个新项目（共 5 个项目）: 🆕 modular/modular 集成MAX和Mojo的AI开发平台，统一模型训练与部署...",
+   "body": "# 🔥 GitHub Trending\n\n2026-08-21\n\n发现 5 个新项目（共 5 个项目）:\n\n**🆕 modular/modular**\n  集成MAX和Mojo的AI开发平台，统一模型训练与部署\n  🔗 https://github.com/modular/modular\n\n---\n**🆕 mattpocock/skills**\n  实战工程师技能集合，直接来自作者的智能体配置目录\n  🔗 https://github.com/mattpocock/skills\n\n---\n**🆕 AprilNEA/OpenLogi**\n  Rust编写的本地优先罗技鼠标替代方案，无需账户和遥测\n  🔗 https://github.com/AprilNEA/OpenLogi\n\n---\n**🆕 obra/superpowers**\n  智能体技能框架与软件开发方法论，真正有效的实践指南\n  🔗 https://github.com/obra/superpowers\n\n---\n**🆕 cursor/plugins**\n  Cursor编辑器插件规范及官方插件集合\n  🔗 https://github.com/cursor/plugins",
+   "links": [
+    {
+     "title": "modular/modular",
+     "url": "https://github.com/modular/modular"
+    },
+    {
+     "title": "mattpocock/skills",
+     "url": "https://github.com/mattpocock/skills"
+    },
+    {
+     "title": "AprilNEA/OpenLogi",
+     "url": "https://github.com/AprilNEA/OpenLogi"
+    },
+    {
+     "title": "obra/superpowers",
+     "url": "https://github.com/obra/superpowers"
+    },
+    {
+     "title": "cursor/plugins",
+     "url": "https://github.com/cursor/plugins"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-08-21 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-08-21 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-08-21 OpenAI News 发现 2 篇新文章: Introducing AI Futures 📅 Thu, 20 Au 原文摘要：Introducing AI Futur...",
+   "body": "## 2026-08-21 OpenAI News\n\n发现 2 篇新文章:\n\n**Introducing AI Futures**\n📅 Thu, 20 Au\n原文摘要：Introducing AI Futures, a new OpenAI blog exploring how transformative AI could reshape power, governance, the economy, and individual freedom.\n🔗 https://openai.com/index/introducing-ai-futures\n\n---\n\n**How ChatGPT Work helps Stampli move ideas to market**\n📅 Thu, 20 Au\n原文摘要：With a fixed deadline and design resources committed elsewhere, Stampli used Codex and ChatGPT Work to compress weeks of launch production into days.\n🔗 https://openai.com/index/stampli",
+   "links": [
+    {
+     "title": "https://openai.com/index/introducing-ai-futures",
+     "url": "https://openai.com/index/introducing-ai-futures"
+    },
+    {
+     "title": "https://openai.com/index/stampli",
+     "url": "https://openai.com/index/stampli"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "content",
+   "summary": "2026-08-21 LangChain Blog 发现 1 篇新文章: Test Agent Changes with LangSmith Preview Builds 📅 Thu, 20...",
+   "body": "## 2026-08-21 LangChain Blog\n\n发现 1 篇新文章:\n\n**Test Agent Changes with LangSmith Preview Builds**\n📅 Thu, 20 Au\n原文摘要：Preview Builds let teams test pull request branches in temporary, production-like LangSmith deployments before merging agent changes.\n🔗 https://www.langchain.com/blog/langsmith-preview-builds-test-agent-changes-before-production",
+   "links": [
+    {
+     "title": "https://www.langchain.com/blog/langsmith-preview-builds-test-agent-changes-before-production",
+     "url": "https://www.langchain.com/blog/langsmith-preview-builds-test-agent-changes-before-production"
+    }
+   ]
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "content",
+   "summary": "2026-08-21 Hugging Face Blog 发现 2 篇新文章: Up to 3.2x Faster Inference with LFM2.5-DSpark 📅 Thu, 2...",
+   "body": "## 2026-08-21 Hugging Face Blog\n\n发现 2 篇新文章:\n\n**Up to 3.2x Faster Inference with LFM2.5-DSpark**\n📅 Thu, 20 Au\n🔗 https://huggingface.co/blog/LiquidAI/lfm25-dspark\n\n---\n\n**Thinking of ACE? We Can Do It with Fewer Tokens**\n📅 Tue, 11 Au\n🔗 https://huggingface.co/blog/ibm-research/altk-evolve-sldd",
+   "links": [
+    {
+     "title": "https://huggingface.co/blog/LiquidAI/lfm25-dspark",
+     "url": "https://huggingface.co/blog/LiquidAI/lfm25-dspark"
+    },
+    {
+     "title": "https://huggingface.co/blog/ibm-research/altk-evolve-sldd",
+     "url": "https://huggingface.co/blog/ibm-research/altk-evolve-sldd"
+    }
+   ]
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "no_update",
+   "summary": "2026-08-21 Google Research 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-21 Google Research\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-08-21 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-21 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-08-21 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-08-21 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-08-21 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-21 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-08-21 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-08-21 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-08-21T05:32:32+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

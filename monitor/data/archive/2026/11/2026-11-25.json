@@ -1,0 +1,51 @@
+{
+ "date": "2026-11-25",
+ "report_id": "2026-11-25-aaaa465424",
+ "created_at": "2026-11-25T05:30:35",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-11-25\n\n# 🔥 GitHub Trending\n\n2026-11-25\n\n今日 trending 共 5 个项目:\n\n**elementalsouls/Claude-BugHunter**\n  含84技能、15命令的漏洞挖掘红队技能包\n  🔗 https://github.com/elementalsouls/Claude-BugHunter\n\n---\n**obra/superpowers**\n  一套可落地的智能体技能框架与开发方法论\n  🔗 https://github.com/obra/superpowers\n\n---\n**HKUDS/CLI-Anything**\n  让所有软件都能被智能体原生调用的CLI枢纽\n  🔗 https://github.com/HKUDS/CLI-Anything\n\n---\n**jingyaogong/minimind**\n  两小时从零训出64M小模型\n  🔗 https://github.com/jingyaogong/minimind\n\n---\n**cursor/plugins**\n  Cursor插件规范与官方插件集合\n  🔗 https://github.com/cursor/plugins\n\n## 2026-11-25 Anthropic Engineering\n\n今日无新文章",
+ "item_count": 2,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-11-25 今日 trending 共 5 个项目: elementalsouls/Claude-BugHunter 含84技能、15命令的漏洞...",
+   "body": "# 🔥 GitHub Trending\n\n2026-11-25\n\n今日 trending 共 5 个项目:\n\n**elementalsouls/Claude-BugHunter**\n  含84技能、15命令的漏洞挖掘红队技能包\n  🔗 https://github.com/elementalsouls/Claude-BugHunter\n\n---\n**obra/superpowers**\n  一套可落地的智能体技能框架与开发方法论\n  🔗 https://github.com/obra/superpowers\n\n---\n**HKUDS/CLI-Anything**\n  让所有软件都能被智能体原生调用的CLI枢纽\n  🔗 https://github.com/HKUDS/CLI-Anything\n\n---\n**jingyaogong/minimind**\n  两小时从零训出64M小模型\n  🔗 https://github.com/jingyaogong/minimind\n\n---\n**cursor/plugins**\n  Cursor插件规范与官方插件集合\n  🔗 https://github.com/cursor/plugins",
+   "links": [
+    {
+     "title": "elementalsouls/Claude-BugHunter",
+     "url": "https://github.com/elementalsouls/Claude-BugHunter"
+    },
+    {
+     "title": "obra/superpowers",
+     "url": "https://github.com/obra/superpowers"
+    },
+    {
+     "title": "HKUDS/CLI-Anything",
+     "url": "https://github.com/HKUDS/CLI-Anything"
+    },
+    {
+     "title": "jingyaogong/minimind",
+     "url": "https://github.com/jingyaogong/minimind"
+    },
+    {
+     "title": "cursor/plugins",
+     "url": "https://github.com/cursor/plugins"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-11-25 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-11-25 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  }
+ ],
+ "deliveries": []
+}

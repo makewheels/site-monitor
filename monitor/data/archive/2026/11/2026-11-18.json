@@ -1,0 +1,58 @@
+{
+ "date": "2026-11-18",
+ "report_id": "2026-11-18-6010d1441a",
+ "created_at": "2026-11-18T05:30:49",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-11-18\n\n# 🔥 GitHub Trending\n\n2026-11-18\n\n发现 3 个新项目（共 5 个项目）:\n\n**elementalsouls/Claude-BugHunter**\n  给 Claude Code 加漏洞狩猎与红队技能包，内置大量披露报告模式\n  🔗 https://github.com/elementalsouls/Claude-BugHunter\n\n---\n**🆕 mvanhorn/last30days-skill**\n  让 AI 代理跨 Reddit、X、YouTube 等平台调研话题并生成有依据总结\n  🔗 https://github.com/mvanhorn/last30days-skill\n\n---\n**🆕 alibaba/open-code-review**\n  阿里开源的代码审查工具，用确定性流水线加 LLM Agent 做精准行级审查\n  🔗 https://github.com/alibaba/open-code-review\n\n---\n**🆕 Tencent/LoopForge**\n  自托管编排 CodeBuddy、Codex、Claude Code 的编码代理工作流，带人工审批关卡\n  🔗 https://github.com/Tencent/LoopForge\n\n---\n**dream-num/univer**\n  用 Office SDK 把表格编辑、计算、协作和文件处理嵌进产品，支持人与 AI 代理\n  🔗 https://github.com/dream-num/univer\n\n## 2026-11-18 Anthropic Engineering\n\n今日无新文章",
+ "item_count": 2,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-11-18 发现 3 个新项目（共 5 个项目）: elementalsouls/Claude-BugHunter 给 Claude Code...",
+   "body": "# 🔥 GitHub Trending\n\n2026-11-18\n\n发现 3 个新项目（共 5 个项目）:\n\n**elementalsouls/Claude-BugHunter**\n  给 Claude Code 加漏洞狩猎与红队技能包，内置大量披露报告模式\n  🔗 https://github.com/elementalsouls/Claude-BugHunter\n\n---\n**🆕 mvanhorn/last30days-skill**\n  让 AI 代理跨 Reddit、X、YouTube 等平台调研话题并生成有依据总结\n  🔗 https://github.com/mvanhorn/last30days-skill\n\n---\n**🆕 alibaba/open-code-review**\n  阿里开源的代码审查工具，用确定性流水线加 LLM Agent 做精准行级审查\n  🔗 https://github.com/alibaba/open-code-review\n\n---\n**🆕 Tencent/LoopForge**\n  自托管编排 CodeBuddy、Codex、Claude Code 的编码代理工作流，带人工审批关卡\n  🔗 https://github.com/Tencent/LoopForge\n\n---\n**dream-num/univer**\n  用 Office SDK 把表格编辑、计算、协作和文件处理嵌进产品，支持人与 AI 代理\n  🔗 https://github.com/dream-num/univer",
+   "links": [
+    {
+     "title": "elementalsouls/Claude-BugHunter",
+     "url": "https://github.com/elementalsouls/Claude-BugHunter"
+    },
+    {
+     "title": "mvanhorn/last30days-skill",
+     "url": "https://github.com/mvanhorn/last30days-skill"
+    },
+    {
+     "title": "alibaba/open-code-review",
+     "url": "https://github.com/alibaba/open-code-review"
+    },
+    {
+     "title": "Tencent/LoopForge",
+     "url": "https://github.com/Tencent/LoopForge"
+    },
+    {
+     "title": "dream-num/univer",
+     "url": "https://github.com/dream-num/univer"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-11-18 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-11-18 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-11-18T05:30:52+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

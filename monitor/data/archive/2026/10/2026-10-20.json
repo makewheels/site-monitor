@@ -1,0 +1,144 @@
+{
+ "date": "2026-10-20",
+ "report_id": "2026-10-20-ecdd3ae5c0",
+ "created_at": "2026-10-20T05:32:14",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-10-20\n\n# 🔥 GitHub Trending\n\n2026-10-20\n\n发现 2 个新项目（共 5 个项目）:\n\n**MadsLorentzen/ai-job-search**\n  本地AI求职神器，自动评估岗位、定制简历并写求职信。\n  🔗 https://github.com/MadsLorentzen/ai-job-search\n\n---\n**anomalyco/opencode**\n  好用的开源编程代理工具。\n  🔗 https://github.com/anomalyco/opencode\n\n---\n**🆕 akitaonrails/ai-memory**\n  为编程智能体提供长期记忆，支持跨智能体无缝交接任务。\n  🔗 https://github.com/akitaonrails/ai-memory\n\n---\n**🆕 Comfy-Org/ComfyUI**\n  最强节点式AI绘画工具，自带全球最快的本地推理引擎。\n  🔗 https://github.com/Comfy-Org/ComfyUI\n\n---\n**ruvnet/ruflo**\n  老牌智能体框架，能部署多智能体集群并协调自动化工作流。\n  🔗 https://github.com/ruvnet/ruflo\n\n## 2026-10-20 Anthropic Engineering\n\n今日无新文章\n\n## 2026-10-20 OpenAI News\n\n今日无新文章(追踪 20 篇)\n\n## 2026-10-20 LangChain Blog\n\n发现 1 篇新文章:\n\n**How Numan Built an Eval-First AI Health Coach with LangGraph and LangSmith**\n📅 Mon, 19 Oc\n原文摘要：How Numan built Nu, an AI health coach, on LangGraph and LangSmith with per-category evals, simulated conversations, and safety gates on a regulatory line.\n🔗 https://www.langchain.com/blog/how-numan-built-an-eval-first-ai-health-coach-with-langgraph-and-langsmith\n\n## 2026-10-20 Hugging Face Blog\n\n发现 2 篇新文章:\n\n**TorchNeuron: running HF models on AWS Trainium is easier than ever**\n📅 Mon, 19 Oc\n🔗 https://huggingface.co/blog/hf-torchneuron\n\n---\n\n**Apertus 1.5 Release Notes**\n📅 Thu, 15 Oc\n🔗 https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes\n\n## 2026-10-20 Google Research\n\n今日无新文章(追踪 20 篇)\n\n## 2026-10-20 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-10-20 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-10-20 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-10-20 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 10,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-10-20 发现 2 个新项目（共 5 个项目）: MadsLorentzen/ai-job-search 本地AI求职神器，自动评估岗位、定制...",
+   "body": "# 🔥 GitHub Trending\n\n2026-10-20\n\n发现 2 个新项目（共 5 个项目）:\n\n**MadsLorentzen/ai-job-search**\n  本地AI求职神器，自动评估岗位、定制简历并写求职信。\n  🔗 https://github.com/MadsLorentzen/ai-job-search\n\n---\n**anomalyco/opencode**\n  好用的开源编程代理工具。\n  🔗 https://github.com/anomalyco/opencode\n\n---\n**🆕 akitaonrails/ai-memory**\n  为编程智能体提供长期记忆，支持跨智能体无缝交接任务。\n  🔗 https://github.com/akitaonrails/ai-memory\n\n---\n**🆕 Comfy-Org/ComfyUI**\n  最强节点式AI绘画工具，自带全球最快的本地推理引擎。\n  🔗 https://github.com/Comfy-Org/ComfyUI\n\n---\n**ruvnet/ruflo**\n  老牌智能体框架，能部署多智能体集群并协调自动化工作流。\n  🔗 https://github.com/ruvnet/ruflo",
+   "links": [
+    {
+     "title": "MadsLorentzen/ai-job-search",
+     "url": "https://github.com/MadsLorentzen/ai-job-search"
+    },
+    {
+     "title": "anomalyco/opencode",
+     "url": "https://github.com/anomalyco/opencode"
+    },
+    {
+     "title": "akitaonrails/ai-memory",
+     "url": "https://github.com/akitaonrails/ai-memory"
+    },
+    {
+     "title": "Comfy-Org/ComfyUI",
+     "url": "https://github.com/Comfy-Org/ComfyUI"
+    },
+    {
+     "title": "ruvnet/ruflo",
+     "url": "https://github.com/ruvnet/ruflo"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-10-20 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-10-20 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "no_update",
+   "summary": "2026-10-20 OpenAI News 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-10-20 OpenAI News\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "content",
+   "summary": "2026-10-20 LangChain Blog 发现 1 篇新文章: How Numan Built an Eval-First AI Health Coach with LangGra...",
+   "body": "## 2026-10-20 LangChain Blog\n\n发现 1 篇新文章:\n\n**How Numan Built an Eval-First AI Health Coach with LangGraph and LangSmith**\n📅 Mon, 19 Oc\n原文摘要：How Numan built Nu, an AI health coach, on LangGraph and LangSmith with per-category evals, simulated conversations, and safety gates on a regulatory line.\n🔗 https://www.langchain.com/blog/how-numan-built-an-eval-first-ai-health-coach-with-langgraph-and-langsmith",
+   "links": [
+    {
+     "title": "https://www.langchain.com/blog/how-numan-built-an-eval-first-ai-health-coach-with-langgraph-and-langsmith",
+     "url": "https://www.langchain.com/blog/how-numan-built-an-eval-first-ai-health-coach-with-langgraph-and-langsmith"
+    }
+   ]
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "content",
+   "summary": "2026-10-20 Hugging Face Blog 发现 2 篇新文章: TorchNeuron: running HF models on AWS Trainium is easie...",
+   "body": "## 2026-10-20 Hugging Face Blog\n\n发现 2 篇新文章:\n\n**TorchNeuron: running HF models on AWS Trainium is easier than ever**\n📅 Mon, 19 Oc\n🔗 https://huggingface.co/blog/hf-torchneuron\n\n---\n\n**Apertus 1.5 Release Notes**\n📅 Thu, 15 Oc\n🔗 https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes",
+   "links": [
+    {
+     "title": "https://huggingface.co/blog/hf-torchneuron",
+     "url": "https://huggingface.co/blog/hf-torchneuron"
+    },
+    {
+     "title": "https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes",
+     "url": "https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes"
+    }
+   ]
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "no_update",
+   "summary": "2026-10-20 Google Research 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-10-20 Google Research\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-10-20 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-10-20 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-10-20 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-10-20 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-10-20 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-10-20 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-10-20 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-10-20 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-10-20T05:32:18+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

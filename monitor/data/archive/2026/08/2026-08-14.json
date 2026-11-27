@@ -1,0 +1,161 @@
+{
+ "date": "2026-08-14",
+ "report_id": "2026-08-14-8ecd3d4236",
+ "created_at": "2026-08-14T05:34:49",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-08-14\n\n# 🔥 GitHub Trending\n\n2026-08-14\n\n发现 3 个新项目（共 5 个项目）:\n\n**cathrynlavery/diagram-design**\n  29种纯HTML+SVG编辑图表模板，无阴影无Mermaid味\n  🔗 https://github.com/cathrynlavery/diagram-design\n\n---\n**semantica-agi/semantica**\n  面向上下文与可问责AI系统的图原生基础设施\n  🔗 https://github.com/semantica-agi/semantica\n\n---\n**🆕 anthropics/skills**\n  Anthropic官方公开的Agent技能集合\n  🔗 https://github.com/anthropics/skills\n\n---\n**🆕 cactus-compute/needle**\n  仅14MB的基础模型，专攻手机穿戴等微型设备\n  🔗 https://github.com/cactus-compute/needle\n\n---\n**🆕 altic-dev/FluidVoice**\n  macOS本地离线语音输入工具，自带AI增强，Wispr Flow平替\n  🔗 https://github.com/altic-dev/FluidVoice\n\n## 2026-08-14 Anthropic Engineering\n\n今日无新文章\n\n## 2026-08-14 OpenAI News\n\n发现 4 篇新文章:\n\n**The builder’s guide to GPT‑5.6**\n📅 Thu, 13 Au\n原文摘要：Learn how startups use GPT-5.6 to build faster, more cost-efficient AI agents with smarter model selection and new Responses API capabilities.\n🔗 https://openai.com/index/builders-guide-to-gpt-5-6\n\n---\n\n**Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed**\n📅 Thu, 13 Au\n原文摘要：Preview Ultrafast, a new OpenAI API service tier that runs GPT-5.6 Sol up to 14× faster. Powered by Cerebras, it delivers up to 750 output tokens per second.\n🔗 https://openai.com/index/previewing-ultrafast\n\n---\n\n**OpenAI appoints Dali Rajic as Chief Revenue Officer**\n📅 Thu, 13 Au\n原文摘要：OpenAI appoints Dali Rajic as Chief Revenue Officer to lead its global revenue organization and help businesses realize the full value of AI.\n🔗 https://openai.com/index/dali-rajic-chief-revenue-officer\n\n---\n\n**How RingCentral builds AI-native work from engineering to ops**\n📅 Wed, 12 Au\n原文摘要：See how RingCentral uses ChatGPT Work and Codex to accelerate AI product development and centralize operational intelligence across engineering and operations.\n🔗 https://openai.com/index/ringcentral\n\n## 2026-08-14 LangChain Blog\n\n发现 1 篇新文章:\n\n**Why managed agents are the next big thing in agent building**\n📅 Thu, 13 Au\n原文摘要：Managed Deep Agents gives developers a managed way to build, run, and deploy Deep Agents with built-in runtime, streaming, sandboxes, evals, memory, and auth.\n🔗 https://www.langchain.com/blog/why-managed-agents-are-the-next-big-thing-in-agent-building\n\n## 2026-08-14 Hugging Face Blog\n\n发现 2 篇新文章:\n\n**Record, train, and deploy from one place with Strands Agents, LeRobot, and Hugging Face Storage Buckets**\n📅 Thu, 13 Au\n🔗 https://huggingface.co/blog/amazon/strands-lerobot-streaming-data-loop\n\n---\n\n**What We Learned by Reproducing 2,200 papers from ICML**\n📅 Thu, 13 Au\n🔗 https://huggingface.co/blog/icml-2026-open-reproductions\n\n## 2026-08-14 Google Research\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-14 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-14 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-08-14 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-14 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 10,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-08-14 发现 3 个新项目（共 5 个项目）: cathrynlavery/diagram-design 29种纯HTML+SVG编辑图表模...",
+   "body": "# 🔥 GitHub Trending\n\n2026-08-14\n\n发现 3 个新项目（共 5 个项目）:\n\n**cathrynlavery/diagram-design**\n  29种纯HTML+SVG编辑图表模板，无阴影无Mermaid味\n  🔗 https://github.com/cathrynlavery/diagram-design\n\n---\n**semantica-agi/semantica**\n  面向上下文与可问责AI系统的图原生基础设施\n  🔗 https://github.com/semantica-agi/semantica\n\n---\n**🆕 anthropics/skills**\n  Anthropic官方公开的Agent技能集合\n  🔗 https://github.com/anthropics/skills\n\n---\n**🆕 cactus-compute/needle**\n  仅14MB的基础模型，专攻手机穿戴等微型设备\n  🔗 https://github.com/cactus-compute/needle\n\n---\n**🆕 altic-dev/FluidVoice**\n  macOS本地离线语音输入工具，自带AI增强，Wispr Flow平替\n  🔗 https://github.com/altic-dev/FluidVoice",
+   "links": [
+    {
+     "title": "cathrynlavery/diagram-design",
+     "url": "https://github.com/cathrynlavery/diagram-design"
+    },
+    {
+     "title": "semantica-agi/semantica",
+     "url": "https://github.com/semantica-agi/semantica"
+    },
+    {
+     "title": "anthropics/skills",
+     "url": "https://github.com/anthropics/skills"
+    },
+    {
+     "title": "cactus-compute/needle",
+     "url": "https://github.com/cactus-compute/needle"
+    },
+    {
+     "title": "altic-dev/FluidVoice",
+     "url": "https://github.com/altic-dev/FluidVoice"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-08-14 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-08-14 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-08-14 OpenAI News 发现 4 篇新文章: The builder’s guide to GPT‑5.6 📅 Thu, 13 Au 原文摘要：Learn how st...",
+   "body": "## 2026-08-14 OpenAI News\n\n发现 4 篇新文章:\n\n**The builder’s guide to GPT‑5.6**\n📅 Thu, 13 Au\n原文摘要：Learn how startups use GPT-5.6 to build faster, more cost-efficient AI agents with smarter model selection and new Responses API capabilities.\n🔗 https://openai.com/index/builders-guide-to-gpt-5-6\n\n---\n\n**Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed**\n📅 Thu, 13 Au\n原文摘要：Preview Ultrafast, a new OpenAI API service tier that runs GPT-5.6 Sol up to 14× faster. Powered by Cerebras, it delivers up to 750 output tokens per second.\n🔗 https://openai.com/index/previewing-ultrafast\n\n---\n\n**OpenAI appoints Dali Rajic as Chief Revenue Officer**\n📅 Thu, 13 Au\n原文摘要：OpenAI appoints Dali Rajic as Chief Revenue Officer to lead its global revenue organization and help businesses realize the full value of AI.\n🔗 https://openai.com/index/dali-rajic-chief-revenue-officer\n\n---\n\n**How RingCentral builds AI-native work from engineering to ops**\n📅 Wed, 12 Au\n原文摘要：See how RingCentral uses ChatGPT Work and Codex to accelerate AI product development and centralize operational intelligence across engineering and operations.\n🔗 https://openai.com/index/ringcentral",
+   "links": [
+    {
+     "title": "https://openai.com/index/builders-guide-to-gpt-5-6",
+     "url": "https://openai.com/index/builders-guide-to-gpt-5-6"
+    },
+    {
+     "title": "https://openai.com/index/previewing-ultrafast",
+     "url": "https://openai.com/index/previewing-ultrafast"
+    },
+    {
+     "title": "https://openai.com/index/dali-rajic-chief-revenue-officer",
+     "url": "https://openai.com/index/dali-rajic-chief-revenue-officer"
+    },
+    {
+     "title": "https://openai.com/index/ringcentral",
+     "url": "https://openai.com/index/ringcentral"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "content",
+   "summary": "2026-08-14 LangChain Blog 发现 1 篇新文章: Why managed agents are the next big thing in agent buildin...",
+   "body": "## 2026-08-14 LangChain Blog\n\n发现 1 篇新文章:\n\n**Why managed agents are the next big thing in agent building**\n📅 Thu, 13 Au\n原文摘要：Managed Deep Agents gives developers a managed way to build, run, and deploy Deep Agents with built-in runtime, streaming, sandboxes, evals, memory, and auth.\n🔗 https://www.langchain.com/blog/why-managed-agents-are-the-next-big-thing-in-agent-building",
+   "links": [
+    {
+     "title": "https://www.langchain.com/blog/why-managed-agents-are-the-next-big-thing-in-agent-building",
+     "url": "https://www.langchain.com/blog/why-managed-agents-are-the-next-big-thing-in-agent-building"
+    }
+   ]
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "content",
+   "summary": "2026-08-14 Hugging Face Blog 发现 2 篇新文章: Record, train, and deploy from one place with Strands A...",
+   "body": "## 2026-08-14 Hugging Face Blog\n\n发现 2 篇新文章:\n\n**Record, train, and deploy from one place with Strands Agents, LeRobot, and Hugging Face Storage Buckets**\n📅 Thu, 13 Au\n🔗 https://huggingface.co/blog/amazon/strands-lerobot-streaming-data-loop\n\n---\n\n**What We Learned by Reproducing 2,200 papers from ICML**\n📅 Thu, 13 Au\n🔗 https://huggingface.co/blog/icml-2026-open-reproductions",
+   "links": [
+    {
+     "title": "https://huggingface.co/blog/amazon/strands-lerobot-streaming-data-loop",
+     "url": "https://huggingface.co/blog/amazon/strands-lerobot-streaming-data-loop"
+    },
+    {
+     "title": "https://huggingface.co/blog/icml-2026-open-reproductions",
+     "url": "https://huggingface.co/blog/icml-2026-open-reproductions"
+    }
+   ]
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "no_update",
+   "summary": "2026-08-14 Google Research 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-14 Google Research\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-08-14 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-14 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-08-14 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-08-14 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-08-14 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-14 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-08-14 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-08-14 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-08-14T05:34:54+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

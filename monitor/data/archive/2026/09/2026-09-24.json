@@ -1,0 +1,210 @@
+{
+ "date": "2026-09-24",
+ "report_id": "2026-09-24-b1a836ce21",
+ "created_at": "2026-09-24T05:33:13",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-09-24\n\n# 🔥 GitHub Trending\n\n2026-09-24\n\n发现 4 个新项目（共 5 个项目）:\n\n**🆕 anthropics/financial-services**\n  看看大模型怎么在金融行业落地，提供最佳实践。\n  🔗 https://github.com/anthropics/financial-services\n\n---\n**🆕 google/ax**\n  谷歌开源的智能体编排和运行环境。\n  🔗 https://github.com/google/ax\n\n---\n**🆕 davila7/claude-code-templates**\n  用命令行轻松配置和监控 Claude Code。\n  🔗 https://github.com/davila7/claude-code-templates\n\n---\n**BuilderIO/agent-native**\n  专门用来开发智能体应用的框架。\n  🔗 https://github.com/BuilderIO/agent-native\n\n---\n**🆕 obra/superpowers**\n  一套超好用的智能体技能框架和开发方法论。\n  🔗 https://github.com/obra/superpowers\n\n## 2026-09-24 Anthropic Engineering\n\n今日无新文章\n\n## 2026-09-24 OpenAI News\n\n发现 13 篇新文章:\n\n**Two years of OpenAI Academy**\n📅 Wed, 23 Se\n原文摘要：Marking two years of OpenAI Academy and bringing AI skills to even more communities.\n🔗 https://openai.com/index/two-years-of-openai-academy\n\n---\n\n**OpenAI extends cyber access to Ukraine for civilian defense**\n📅 Wed, 23 Se\n原文摘要：OpenAI is extending access to its Daybreak program to the Government of Ukraine to support the cyber defense of civilian infrastructure.\n🔗 https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense\n\n---\n\n**Sam Altman’s remarks at the United Nations Security Council**\n📅 Wed, 23 Se\n原文摘要：OpenAI CEO Sam Altman discusses AI safety, human control, and international cooperation in remarks to the United Nations Security Council.\n🔗 https://openai.com/index/sam-altman-un-security-council-remarks\n\n---\n\n**Harvey turns legal context into stronger drafts with GPT-6 Astra**\n📅 Wed, 23 Se\n原文摘要：GPT-6 Astra produces more structured, context-aware legal documents, freeing lawyers to focus on strategy.\n🔗 https://openai.com/index/harvey-from-context-to-confidence-with-astra\n\n---\n\n**How invideo improves color grading 3x with GPT‑6 Astra**\n📅 Wed, 23 Se\n原文摘要：With GPT‑6 Astra, invideo plans edits with greater precision, improves color correction and grading threefold, and produces 50 custom effects in one day.\n🔗 https://openai.com/index/invideo-builds-with-gpt-6-astra\n\n---\n\n**Ringg’s AI agents resolve up to 65% of customer calls with OpenAI**\n📅 Wed, 23 Se\n原文摘要：Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1.\n🔗 https://openai.com/index/ringg\n\n---\n\n**Introducing MentalHealthBench**\n📅 Wed, 23 Se\n原文摘要：MentalHealthBench is an expert-informed benchmark for evaluating helpful and safe AI responses across realistic mental health conversations.\n🔗 https://openai.com/index/introducing-mentalhealthbench\n\n---\n\n**Airbnb widens access to GPT-6 Astra and OpenAI frontier models**\n📅 Wed, 23 Se\n原文摘要：Learn how Airbnb is expanding access to GPT-6 Astra and OpenAI frontier models to help engineering teams solve bugs, design systems, and ship faster.\n🔗 https://openai.com/index/airbnb-gpt-6-astra\n\n---\n\n**Grab and OpenAI bring practical AI skills to Southeast Asia**\n📅 Wed, 23 Se\n原文摘要：OpenAI and Grab launch GO Forward with AI, a regional programme helping 30,000 partners build practical AI skills across Southeast Asia.\n🔗 https://openai.com/index/grab-openai-ai-skills-southeast-asia\n\n---\n\n**Better prompt caching for GPT-6**\n📅 Tue, 22 Se\n原文摘要：Learn how GPT-6 improves prompt caching with higher cache hit rates, new diagnostics, explicit breakpoints, and controls that reduce latency and costs.\n🔗 https://openai.com/index/better-prompt-caching-for-gpt-6\n\n---\n\n**Introducing GPT-6 Sol and Luna**\n📅 Tue, 22 Se\n原文摘要：Meet GPT-6 Sol and Luna, two models that bring frontier intelligence to everyday work with different balances of capability and cost.\n🔗 https://openai.com/index/introducing-gpt-6-sol-and-luna\n\n---\n\n**Parallel cut research time and cost in half with GPT‑6 Astra**\n📅 Tue, 22 Se\n原文摘要：GPT‑6 Astra allowed Parallel’s agents to research and synthesize labor-market data in half the time and at half the cost vs. prior models.\n🔗 https://openai.com/index/parallel-cuts-time-and-cost-with-astra\n\n---\n\n**Priorities and principles for effective third party assessments**\n📅 Tue, 22 Se\n原文摘要：OpenAI outlines priorities and principles for rigorous, secure, and independent third-party AI safety assessments of frontier models and safeguards.\n🔗 https://openai.com/index/priorities-principles-third-party-assessments\n\n## 2026-09-24 LangChain Blog\n\n发现 1 篇新文章:\n\n**The Reliability Layer for Healthcare AI: Common LangSmith Use Cases**\n📅 Tue, 22 Se\n原文摘要：See how LangSmith helps healthcare AI teams turn clinical review into reusable evaluators, datasets, and release gates for safer AI in production.\n🔗 https://www.langchain.com/blog/reliability-healthcare-ai-langsmith-use-cases\n\n## 2026-09-24 Hugging Face Blog\n\n发现 4 篇新文章:\n\n**How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows**\n📅 Wed, 23 Se\n🔗 https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp\n\n---\n\n**How UK AISI and EvalEval Are Making Benchmark Results Reproducible**\n📅 Tue, 22 Se\n🔗 https://huggingface.co/blog/evaleval-aisi\n\n---\n\n**Transformers now runs llama.cpp quants**\n📅 Tue, 22 Se\n🔗 https://huggingface.co/blog/transformers-llama-cpp-quants\n\n---\n\n**Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community**\n📅 Tue, 22 Se\n🔗 https://huggingface.co/blog/omlx\n\n## 2026-09-24 Google Research\n\n今日无新文章(追踪 20 篇)\n\n## 2026-09-24 METR\n\n发现 1 篇新文章:\n\n**Summary of METR's predeployment evaluation of Claude Opus 5.5**\n📅 Tue, 22 Se\n原文摘要：Note on independence: This evaluation was conducted under an unpaid agreement for AI R&D assessment. 1 We drafted the initial summary, and then Anthropic had the opportunity to review and edit the text. We signed off on this final text from the Claude Opus 5.5 system card . Our preliminary evaluation focused on how Claude Opus 5.5 might impact AI R&D, mainly based on its capabilities on difficult, long-horizon tasks. The main claims we attempt to assess in this report are: (A) would AI R&D at Anthropic now be dramatically accelerated by using Claude Opus 5.5; and (B) was AI R&D at Anthropic already dramatically accelerated due to AI during the development of Claude Opus 5.5. Note that our work was oriented around collecting evidence related to AI R&D capabilities but was not meant to verify claims about compliance with any specific threshold from Anthropic’s policies. This report summary also does not attempt to assess whether Claude Opus 5.5 has or does not have particular alignment properties. Summary of evidence We conducted a preliminary evaluation of Claude Opus 5.5 informed by: Capability testing, conducted via API access granted over a period of 10 business days. We used five tasks for this testing: Budget NanoGPT Speedrun , a constrained version of the popular NanoGPT Speedrun competition for AI R&D. Language Model Conceptual Argumentation (LMCA) , a conceptual reasoning dataset described in A dataset of rated conceptual arguments (Cooper et al., 2026). Train a Program , a task measuring an agent’s ability to train a machine learning model that replicates the behavior of a piece of software; Gaming Bot , a task where an agent has to write a Python program capable of playing a video game, given a non-visual API to control the game. Sunlight , a task measuring an agent’s ability to conduct open-ended research and write a corresponding report. Background information about trends and capabilities of previous models, especially as reported in our recent Frontier\n🔗 https://metr.org/blog/2026-09-22-claude-opus-5-5/\n\n## 2026-09-24 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-09-24 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-09-24 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 10,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-09-24 发现 4 个新项目（共 5 个项目）: 🆕 anthropics/financial-services 看看大模型怎么在金融行业落地...",
+   "body": "# 🔥 GitHub Trending\n\n2026-09-24\n\n发现 4 个新项目（共 5 个项目）:\n\n**🆕 anthropics/financial-services**\n  看看大模型怎么在金融行业落地，提供最佳实践。\n  🔗 https://github.com/anthropics/financial-services\n\n---\n**🆕 google/ax**\n  谷歌开源的智能体编排和运行环境。\n  🔗 https://github.com/google/ax\n\n---\n**🆕 davila7/claude-code-templates**\n  用命令行轻松配置和监控 Claude Code。\n  🔗 https://github.com/davila7/claude-code-templates\n\n---\n**BuilderIO/agent-native**\n  专门用来开发智能体应用的框架。\n  🔗 https://github.com/BuilderIO/agent-native\n\n---\n**🆕 obra/superpowers**\n  一套超好用的智能体技能框架和开发方法论。\n  🔗 https://github.com/obra/superpowers",
+   "links": [
+    {
+     "title": "anthropics/financial-services",
+     "url": "https://github.com/anthropics/financial-services"
+    },
+    {
+     "title": "google/ax",
+     "url": "https://github.com/google/ax"
+    },
+    {
+     "title": "davila7/claude-code-templates",
+     "url": "https://github.com/davila7/claude-code-templates"
+    },
+    {
+     "title": "BuilderIO/agent-native",
+     "url": "https://github.com/BuilderIO/agent-native"
+    },
+    {
+     "title": "obra/superpowers",
+     "url": "https://github.com/obra/superpowers"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-09-24 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-09-24 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-09-24 OpenAI News 发现 13 篇新文章: Two years of OpenAI Academy 📅 Wed, 23 Se 原文摘要：Marking two ye...",
+   "body": "## 2026-09-24 OpenAI News\n\n发现 13 篇新文章:\n\n**Two years of OpenAI Academy**\n📅 Wed, 23 Se\n原文摘要：Marking two years of OpenAI Academy and bringing AI skills to even more communities.\n🔗 https://openai.com/index/two-years-of-openai-academy\n\n---\n\n**OpenAI extends cyber access to Ukraine for civilian defense**\n📅 Wed, 23 Se\n原文摘要：OpenAI is extending access to its Daybreak program to the Government of Ukraine to support the cyber defense of civilian infrastructure.\n🔗 https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense\n\n---\n\n**Sam Altman’s remarks at the United Nations Security Council**\n📅 Wed, 23 Se\n原文摘要：OpenAI CEO Sam Altman discusses AI safety, human control, and international cooperation in remarks to the United Nations Security Council.\n🔗 https://openai.com/index/sam-altman-un-security-council-remarks\n\n---\n\n**Harvey turns legal context into stronger drafts with GPT-6 Astra**\n📅 Wed, 23 Se\n原文摘要：GPT-6 Astra produces more structured, context-aware legal documents, freeing lawyers to focus on strategy.\n🔗 https://openai.com/index/harvey-from-context-to-confidence-with-astra\n\n---\n\n**How invideo improves color grading 3x with GPT‑6 Astra**\n📅 Wed, 23 Se\n原文摘要：With GPT‑6 Astra, invideo plans edits with greater precision, improves color correction and grading threefold, and produces 50 custom effects in one day.\n🔗 https://openai.com/index/invideo-builds-with-gpt-6-astra\n\n---\n\n**Ringg’s AI agents resolve up to 65% of customer calls with OpenAI**\n📅 Wed, 23 Se\n原文摘要：Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1.\n🔗 https://openai.com/index/ringg\n\n---\n\n**Introducing MentalHealthBench**\n📅 Wed, 23 Se\n原文摘要：MentalHealthBench is an expert-informed benchmark for evaluating helpful and safe AI responses across realistic mental health conversations.\n🔗 https://openai.com/index/introducing-mentalhealthbench\n\n---\n\n**Airbnb widens access to GPT-6 Astra and OpenAI frontier models**\n📅 Wed, 23 Se\n原文摘要：Learn how Airbnb is expanding access to GPT-6 Astra and OpenAI frontier models to help engineering teams solve bugs, design systems, and ship faster.\n🔗 https://openai.com/index/airbnb-gpt-6-astra\n\n---\n\n**Grab and OpenAI bring practical AI skills to Southeast Asia**\n📅 Wed, 23 Se\n原文摘要：OpenAI and Grab launch GO Forward with AI, a regional programme helping 30,000 partners build practical AI skills across Southeast Asia.\n🔗 https://openai.com/index/grab-openai-ai-skills-southeast-asia\n\n---\n\n**Better prompt caching for GPT-6**\n📅 Tue, 22 Se\n原文摘要：Learn how GPT-6 improves prompt caching with higher cache hit rates, new diagnostics, explicit breakpoints, and controls that reduce latency and costs.\n🔗 https://openai.com/index/better-prompt-caching-for-gpt-6\n\n---\n\n**Introducing GPT-6 Sol and Luna**\n📅 Tue, 22 Se\n原文摘要：Meet GPT-6 Sol and Luna, two models that bring frontier intelligence to everyday work with different balances of capability and cost.\n🔗 https://openai.com/index/introducing-gpt-6-sol-and-luna\n\n---\n\n**Parallel cut research time and cost in half with GPT‑6 Astra**\n📅 Tue, 22 Se\n原文摘要：GPT‑6 Astra allowed Parallel’s agents to research and synthesize labor-market data in half the time and at half the cost vs. prior models.\n🔗 https://openai.com/index/parallel-cuts-time-and-cost-with-astra\n\n---\n\n**Priorities and principles for effective third party assessments**\n📅 Tue, 22 Se\n原文摘要：OpenAI outlines priorities and principles for rigorous, secure, and independent third-party AI safety assessments of frontier models and safeguards.\n🔗 https://openai.com/index/priorities-principles-third-party-assessments",
+   "links": [
+    {
+     "title": "https://openai.com/index/two-years-of-openai-academy",
+     "url": "https://openai.com/index/two-years-of-openai-academy"
+    },
+    {
+     "title": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
+     "url": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense"
+    },
+    {
+     "title": "https://openai.com/index/sam-altman-un-security-council-remarks",
+     "url": "https://openai.com/index/sam-altman-un-security-council-remarks"
+    },
+    {
+     "title": "https://openai.com/index/harvey-from-context-to-confidence-with-astra",
+     "url": "https://openai.com/index/harvey-from-context-to-confidence-with-astra"
+    },
+    {
+     "title": "https://openai.com/index/invideo-builds-with-gpt-6-astra",
+     "url": "https://openai.com/index/invideo-builds-with-gpt-6-astra"
+    },
+    {
+     "title": "https://openai.com/index/ringg",
+     "url": "https://openai.com/index/ringg"
+    },
+    {
+     "title": "https://openai.com/index/introducing-mentalhealthbench",
+     "url": "https://openai.com/index/introducing-mentalhealthbench"
+    },
+    {
+     "title": "https://openai.com/index/airbnb-gpt-6-astra",
+     "url": "https://openai.com/index/airbnb-gpt-6-astra"
+    },
+    {
+     "title": "https://openai.com/index/grab-openai-ai-skills-southeast-asia",
+     "url": "https://openai.com/index/grab-openai-ai-skills-southeast-asia"
+    },
+    {
+     "title": "https://openai.com/index/better-prompt-caching-for-gpt-6",
+     "url": "https://openai.com/index/better-prompt-caching-for-gpt-6"
+    },
+    {
+     "title": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+     "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna"
+    },
+    {
+     "title": "https://openai.com/index/parallel-cuts-time-and-cost-with-astra",
+     "url": "https://openai.com/index/parallel-cuts-time-and-cost-with-astra"
+    },
+    {
+     "title": "https://openai.com/index/priorities-principles-third-party-assessments",
+     "url": "https://openai.com/index/priorities-principles-third-party-assessments"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "content",
+   "summary": "2026-09-24 LangChain Blog 发现 1 篇新文章: The Reliability Layer for Healthcare AI: Common LangSmith...",
+   "body": "## 2026-09-24 LangChain Blog\n\n发现 1 篇新文章:\n\n**The Reliability Layer for Healthcare AI: Common LangSmith Use Cases**\n📅 Tue, 22 Se\n原文摘要：See how LangSmith helps healthcare AI teams turn clinical review into reusable evaluators, datasets, and release gates for safer AI in production.\n🔗 https://www.langchain.com/blog/reliability-healthcare-ai-langsmith-use-cases",
+   "links": [
+    {
+     "title": "https://www.langchain.com/blog/reliability-healthcare-ai-langsmith-use-cases",
+     "url": "https://www.langchain.com/blog/reliability-healthcare-ai-langsmith-use-cases"
+    }
+   ]
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "content",
+   "summary": "2026-09-24 Hugging Face Blog 发现 4 篇新文章: How to Use NVIDIA Warp and MjWarp to Accelerate Robotic...",
+   "body": "## 2026-09-24 Hugging Face Blog\n\n发现 4 篇新文章:\n\n**How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows**\n📅 Wed, 23 Se\n🔗 https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp\n\n---\n\n**How UK AISI and EvalEval Are Making Benchmark Results Reproducible**\n📅 Tue, 22 Se\n🔗 https://huggingface.co/blog/evaleval-aisi\n\n---\n\n**Transformers now runs llama.cpp quants**\n📅 Tue, 22 Se\n🔗 https://huggingface.co/blog/transformers-llama-cpp-quants\n\n---\n\n**Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community**\n📅 Tue, 22 Se\n🔗 https://huggingface.co/blog/omlx",
+   "links": [
+    {
+     "title": "https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp",
+     "url": "https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp"
+    },
+    {
+     "title": "https://huggingface.co/blog/evaleval-aisi",
+     "url": "https://huggingface.co/blog/evaleval-aisi"
+    },
+    {
+     "title": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+     "url": "https://huggingface.co/blog/transformers-llama-cpp-quants"
+    },
+    {
+     "title": "https://huggingface.co/blog/omlx",
+     "url": "https://huggingface.co/blog/omlx"
+    }
+   ]
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "no_update",
+   "summary": "2026-09-24 Google Research 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-09-24 Google Research\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "content",
+   "summary": "2026-09-24 METR 发现 1 篇新文章: Summary of METR's predeployment evaluation of Claude Opus 5.5 📅 Tue,...",
+   "body": "## 2026-09-24 METR\n\n发现 1 篇新文章:\n\n**Summary of METR's predeployment evaluation of Claude Opus 5.5**\n📅 Tue, 22 Se\n原文摘要：Note on independence: This evaluation was conducted under an unpaid agreement for AI R&D assessment. 1 We drafted the initial summary, and then Anthropic had the opportunity to review and edit the text. We signed off on this final text from the Claude Opus 5.5 system card . Our preliminary evaluation focused on how Claude Opus 5.5 might impact AI R&D, mainly based on its capabilities on difficult, long-horizon tasks. The main claims we attempt to assess in this report are: (A) would AI R&D at Anthropic now be dramatically accelerated by using Claude Opus 5.5; and (B) was AI R&D at Anthropic already dramatically accelerated due to AI during the development of Claude Opus 5.5. Note that our work was oriented around collecting evidence related to AI R&D capabilities but was not meant to verify claims about compliance with any specific threshold from Anthropic’s policies. This report summary also does not attempt to assess whether Claude Opus 5.5 has or does not have particular alignment properties. Summary of evidence We conducted a preliminary evaluation of Claude Opus 5.5 informed by: Capability testing, conducted via API access granted over a period of 10 business days. We used five tasks for this testing: Budget NanoGPT Speedrun , a constrained version of the popular NanoGPT Speedrun competition for AI R&D. Language Model Conceptual Argumentation (LMCA) , a conceptual reasoning dataset described in A dataset of rated conceptual arguments (Cooper et al., 2026). Train a Program , a task measuring an agent’s ability to train a machine learning model that replicates the behavior of a piece of software; Gaming Bot , a task where an agent has to write a Python program capable of playing a video game, given a non-visual API to control the game. Sunlight , a task measuring an agent’s ability to conduct open-ended research and write a corresponding report. Background information about trends and capabilities of previous models, especially as reported in our recent Frontier\n🔗 https://metr.org/blog/2026-09-22-claude-opus-5-5/",
+   "links": [
+    {
+     "title": "https://metr.org/blog/2026-09-22-claude-opus-5-5/",
+     "url": "https://metr.org/blog/2026-09-22-claude-opus-5-5/"
+    }
+   ]
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-09-24 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-09-24 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-09-24 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-09-24 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-09-24 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-09-24 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-09-24T05:33:16+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

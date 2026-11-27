@@ -1,0 +1,58 @@
+{
+ "date": "2026-11-11",
+ "report_id": "2026-11-11-352905c47d",
+ "created_at": "2026-11-11T05:30:54",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-11-11\n\n# 🔥 GitHub Trending\n\n2026-11-11\n\n发现 1 个新项目（共 5 个项目）:\n\n**meta/astryx**\n  高度可定制且支持智能体的开源设计系统\n  🔗 https://github.com/meta/astryx\n\n---\n**anthropics/skills**\n  官方放出的智能体技能开源代码库\n  🔗 https://github.com/anthropics/skills\n\n---\n**🆕 addyosmani/agent-skills**\n  给AI编程智能体用的生产级工程技能\n  🔗 https://github.com/addyosmani/agent-skills\n\n---\n**anthropics/claude-quickstarts**\n  帮开发者用Claude API快速搭应用的示例集\n  🔗 https://github.com/anthropics/claude-quickstarts\n\n---\n**google-deepmind/mujoco**\n  带接触动力学的通用多关节物理仿真器\n  🔗 https://github.com/google-deepmind/mujoco\n\n## 2026-11-11 Anthropic Engineering\n\n今日无新文章",
+ "item_count": 2,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-11-11 发现 1 个新项目（共 5 个项目）: meta/astryx 高度可定制且支持智能体的开源设计系统 🔗 https://githu...",
+   "body": "# 🔥 GitHub Trending\n\n2026-11-11\n\n发现 1 个新项目（共 5 个项目）:\n\n**meta/astryx**\n  高度可定制且支持智能体的开源设计系统\n  🔗 https://github.com/meta/astryx\n\n---\n**anthropics/skills**\n  官方放出的智能体技能开源代码库\n  🔗 https://github.com/anthropics/skills\n\n---\n**🆕 addyosmani/agent-skills**\n  给AI编程智能体用的生产级工程技能\n  🔗 https://github.com/addyosmani/agent-skills\n\n---\n**anthropics/claude-quickstarts**\n  帮开发者用Claude API快速搭应用的示例集\n  🔗 https://github.com/anthropics/claude-quickstarts\n\n---\n**google-deepmind/mujoco**\n  带接触动力学的通用多关节物理仿真器\n  🔗 https://github.com/google-deepmind/mujoco",
+   "links": [
+    {
+     "title": "meta/astryx",
+     "url": "https://github.com/meta/astryx"
+    },
+    {
+     "title": "anthropics/skills",
+     "url": "https://github.com/anthropics/skills"
+    },
+    {
+     "title": "addyosmani/agent-skills",
+     "url": "https://github.com/addyosmani/agent-skills"
+    },
+    {
+     "title": "anthropics/claude-quickstarts",
+     "url": "https://github.com/anthropics/claude-quickstarts"
+    },
+    {
+     "title": "google-deepmind/mujoco",
+     "url": "https://github.com/google-deepmind/mujoco"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-11-11 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-11-11 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-11-11T05:30:57+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

@@ -1,0 +1,148 @@
+{
+ "date": "2026-09-14",
+ "report_id": "2026-09-14-130eccdcc8",
+ "created_at": "2026-09-14T05:31:46",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-09-14\n\n# 🔥 GitHub Trending\n\n2026-09-14\n\n发现 4 个新项目（共 5 个项目）:\n\n**🆕 JustVugg/colibri**\n  纯C零依赖，本地硬盘流式跑大模型\n  🔗 https://github.com/JustVugg/colibri\n\n---\n**🆕 ever-co/ever-gauzy**\n  开源企业全栈管理平台，覆盖ERP到项目管理\n  🔗 https://github.com/ever-co/ever-gauzy\n\n---\n**bilawalsidhu/gods-eye-view**\n  浏览器里的真实卫星视角，3D地球上实时开源情报\n  🔗 https://github.com/bilawalsidhu/gods-eye-view\n\n---\n**🆕 tech-leads-club/agent-skills**\n  给AI编程助手用的安全可信技能注册中心\n  🔗 https://github.com/tech-leads-club/agent-skills\n\n---\n**🆕 melgarafael/DeskcommCRM**\n  开源自托管AI销售系统，原生集成WhatsApp\n  🔗 https://github.com/melgarafael/DeskcommCRM\n\n## 2026-09-14 Anthropic Engineering\n\n今日无新文章\n\n## 2026-09-14 OpenAI News\n\n发现 3 篇新文章:\n\n**Perplexity trusts GPT-6 Astra with end-to-end systems**\n📅 Mon, 14 Se\n原文摘要：Perplexity uses Astra to write communications, change software, and monitor production systems, and checks in much less frequently than with earlier models.\n🔗 https://openai.com/index/perplexity-improving-accuracy-with-astra\n\n---\n\n**Rapidly scaling online storage to serve over 1 billion ChatGPT users**\n📅 Fri, 11 Se\n原文摘要：Learn how OpenAI evolved Habitat from a Python library into a globally distributed storage platform serving 1 billion ChatGPT users and 22M requests per second.\n🔗 https://openai.com/index/scaling-storage-one-billion-users-part-one\n\n---\n\n**Cognition helps Devin test its own work with GPT‑6 Astra**\n📅 Fri, 11 Se\n原文摘要：GPT‑6 Astra improves Devin’s ability to test software and show that it works, with the goal of helping engineers review less code and ship more.\n🔗 https://openai.com/index/cognition-devin-testing-with-astra\n\n## 2026-09-14 LangChain Blog\n\n今日无新文章（追踪 20 篇）\n\n## 2026-09-14 Hugging Face Blog\n\n今日无新文章(追踪 20 篇)\n\n## 2026-09-14 Google Research\n\n发现 1 篇新文章:\n\n**ToolGrad: Efficient tool-use dataset generation with textual \"gradients\"**\n📅 Thu, 10 Se\n原文摘要：Machine Intelligence\n🔗 https://research.google/blog/toolgrad-efficient-tool-use-dataset-generation-with-textual-gradients/\n\n## 2026-09-14 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-09-14 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-09-14 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-09-14 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 10,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-09-14 发现 4 个新项目（共 5 个项目）: 🆕 JustVugg/colibri 纯C零依赖，本地硬盘流式跑大模型 🔗 https://...",
+   "body": "# 🔥 GitHub Trending\n\n2026-09-14\n\n发现 4 个新项目（共 5 个项目）:\n\n**🆕 JustVugg/colibri**\n  纯C零依赖，本地硬盘流式跑大模型\n  🔗 https://github.com/JustVugg/colibri\n\n---\n**🆕 ever-co/ever-gauzy**\n  开源企业全栈管理平台，覆盖ERP到项目管理\n  🔗 https://github.com/ever-co/ever-gauzy\n\n---\n**bilawalsidhu/gods-eye-view**\n  浏览器里的真实卫星视角，3D地球上实时开源情报\n  🔗 https://github.com/bilawalsidhu/gods-eye-view\n\n---\n**🆕 tech-leads-club/agent-skills**\n  给AI编程助手用的安全可信技能注册中心\n  🔗 https://github.com/tech-leads-club/agent-skills\n\n---\n**🆕 melgarafael/DeskcommCRM**\n  开源自托管AI销售系统，原生集成WhatsApp\n  🔗 https://github.com/melgarafael/DeskcommCRM",
+   "links": [
+    {
+     "title": "JustVugg/colibri",
+     "url": "https://github.com/JustVugg/colibri"
+    },
+    {
+     "title": "ever-co/ever-gauzy",
+     "url": "https://github.com/ever-co/ever-gauzy"
+    },
+    {
+     "title": "bilawalsidhu/gods-eye-view",
+     "url": "https://github.com/bilawalsidhu/gods-eye-view"
+    },
+    {
+     "title": "tech-leads-club/agent-skills",
+     "url": "https://github.com/tech-leads-club/agent-skills"
+    },
+    {
+     "title": "melgarafael/DeskcommCRM",
+     "url": "https://github.com/melgarafael/DeskcommCRM"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-09-14 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-09-14 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-09-14 OpenAI News 发现 3 篇新文章: Perplexity trusts GPT-6 Astra with end-to-end systems 📅 Mon,...",
+   "body": "## 2026-09-14 OpenAI News\n\n发现 3 篇新文章:\n\n**Perplexity trusts GPT-6 Astra with end-to-end systems**\n📅 Mon, 14 Se\n原文摘要：Perplexity uses Astra to write communications, change software, and monitor production systems, and checks in much less frequently than with earlier models.\n🔗 https://openai.com/index/perplexity-improving-accuracy-with-astra\n\n---\n\n**Rapidly scaling online storage to serve over 1 billion ChatGPT users**\n📅 Fri, 11 Se\n原文摘要：Learn how OpenAI evolved Habitat from a Python library into a globally distributed storage platform serving 1 billion ChatGPT users and 22M requests per second.\n🔗 https://openai.com/index/scaling-storage-one-billion-users-part-one\n\n---\n\n**Cognition helps Devin test its own work with GPT‑6 Astra**\n📅 Fri, 11 Se\n原文摘要：GPT‑6 Astra improves Devin’s ability to test software and show that it works, with the goal of helping engineers review less code and ship more.\n🔗 https://openai.com/index/cognition-devin-testing-with-astra",
+   "links": [
+    {
+     "title": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
+     "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra"
+    },
+    {
+     "title": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
+     "url": "https://openai.com/index/scaling-storage-one-billion-users-part-one"
+    },
+    {
+     "title": "https://openai.com/index/cognition-devin-testing-with-astra",
+     "url": "https://openai.com/index/cognition-devin-testing-with-astra"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "no_update",
+   "summary": "2026-09-14 LangChain Blog 今日无新文章（追踪 20 篇）",
+   "body": "## 2026-09-14 LangChain Blog\n\n今日无新文章（追踪 20 篇）",
+   "links": []
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "no_update",
+   "summary": "2026-09-14 Hugging Face Blog 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-09-14 Hugging Face Blog\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "content",
+   "summary": "2026-09-14 Google Research 发现 1 篇新文章: ToolGrad: Efficient tool-use dataset generation with text...",
+   "body": "## 2026-09-14 Google Research\n\n发现 1 篇新文章:\n\n**ToolGrad: Efficient tool-use dataset generation with textual \"gradients\"**\n📅 Thu, 10 Se\n原文摘要：Machine Intelligence\n🔗 https://research.google/blog/toolgrad-efficient-tool-use-dataset-generation-with-textual-gradients/",
+   "links": [
+    {
+     "title": "https://research.google/blog/toolgrad-efficient-tool-use-dataset-generation-with-textual-gradients/",
+     "url": "https://research.google/blog/toolgrad-efficient-tool-use-dataset-generation-with-textual-gradients/"
+    }
+   ]
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-09-14 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-09-14 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-09-14 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-09-14 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-09-14 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-09-14 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-09-14 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-09-14 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-09-14T05:31:50+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

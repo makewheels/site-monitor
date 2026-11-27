@@ -1,0 +1,160 @@
+{
+ "date": "2026-07-29",
+ "report_id": "2026-07-29-5dca4ac940",
+ "created_at": "2026-07-29T06:32:33",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-07-29\n\n# 🔥 GitHub Trending\n\n2026-07-29\n\n发现 4 个新项目（共 5 个项目）:\n\n**🆕 pascalorg/editor**\n  创建并分享3D建筑项目的在线编辑器\n  🔗 https://github.com/pascalorg/editor\n\n---\n**🆕 jenkinsci/jenkins**\n  老牌持续集成自动化服务器，插件生态极其丰富\n  🔗 https://github.com/jenkinsci/jenkins\n\n---\n**moeru-ai/airi**\n  自托管AI伴侣，把二次元老婆装进容器带到现实世界\n  🔗 https://github.com/moeru-ai/airi\n\n---\n**🆕 andrewyng/aisuite**\n  一套接口统一调用多家生成式AI的轻量SDK\n  🔗 https://github.com/andrewyng/aisuite\n\n---\n**🆕 affaan-m/ECC**\n  为Claude Code等编程智能体打造的技能与记忆优化系统\n  🔗 https://github.com/affaan-m/ECC\n\n## 2026-07-29 Anthropic Engineering\n\n今日无新文章\n\n## 2026-07-29 OpenAI News\n\n发现 1 篇新文章:\n\n**Scientific computing in the age of agentic AI**\n📅 Tue, 28 Ju\n原文摘要：A new field report shows how scientists use AI coding agents to modernize scientific computing, accelerating software development and discovery in genomics and beyond.\n🔗 https://openai.com/index/scientific-computing-agentic-ai\n\n## 2026-07-29 LangChain Blog\n\n发现 1 篇新文章:\n\n**How LangChain Built an Agent-First Data Stack**\n📅 Tue, 28 Ju\n原文摘要：Learn how LangChain used Hex, dbt, semantic models, and observability to build a trusted data agent and scale self-service analysis by 40x.\n🔗 https://www.langchain.com/blog/agent-data-stack\n\n## 2026-07-29 GitHub Copilot CLI\n\n无更新，当前版本: 1.0.75\n\n## 2026-07-29 Hugging Face Blog\n\n发现 3 篇新文章:\n\n**The OlmoEarth Platform: Geospatial inference at planetary scale**\n📅 Tue, 28 Ju\n🔗 https://huggingface.co/blog/allenai/olmoearth-infrastructure\n\n---\n\n**LFM2.5-Encoders for Fast Long-Context Inference on CPU**\n📅 Tue, 28 Ju\n🔗 https://huggingface.co/blog/LiquidAI/lfm2-5-encoders\n\n---\n\n**Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident**\n📅 Mon, 27 Ju\n🔗 https://huggingface.co/blog/agent-intrusion-technical-timeline\n\n## 2026-07-29 Google Research\n\n今日无新文章(追踪 20 篇)\n\n## 2026-07-29 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-07-29 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-07-29 Trail of Bits\n\n发现 1 篇新文章:\n\n**How we use /goal to find bugs in Patch the Planet**\n📅 Tue, 28 Ju\n原文摘要：Codex’s /goal feature amplifies bug hunting, but getting good results requires the right prompt, the right scope, and the right number of outcomes per run. For Patch the Planet , our joint initiative with OpenAI to find and fix bugs in open-source software, we pointed Codex at some of the most widely used, heavily audited codebases in the world, like Rust, curl, and zlib. One tool came up again and again in our internal bug-report channels: /goal , which hands Codex an open-ended objective and lets it work independently toward a success condition. Here are a few highlights: /goal found every Rust bug we submitted, including a soundness hole and a miscompilation now patched in Rust 1.98, from a single variant-analysis pipeline. It turned every project’s past CVEs into Semgrep rules that had to fire on the vulnerable version and stay silent on the patched one, then flagged 11 variant hits across multiple projects. It uncovered two potential high-severity privilege-escalation bugs in Keycloak’s SAML component during a discovery run. Over the first few weeks of Patch the Planet, our engineers independently converged on three techniques for using /goal . We found that getting the most out of /goal means treating the prompt as a set of specific success criteria, not a set of instructions. (Note that this blog post uses /goal to refer to goal-based prompting in general. Codex can also set goals for itself through a tool call, and that’s how we recommend everyone use it; we rarely type the slash command ourselves.) 1. Let Codex write the goal The art of using /goal is prompt design, and we found that Codex knows Codex the best. Internally, our single most repeated /goal tip was to use Codex to help write each /goal prompt. We hand Codex threat model files and the context about what we’re looking for, and then tell it to write the goal prompt. As mentioned before, /goal is a tool Codex can invoke on itself, and a few engineers stopped typing goals by hand entirely. $goal-pro\n🔗 https://blog.trailofbits.com/2026/07/28/how-we-use-goal-to-find-bugs-in-patch-the-planet/\n\n## 2026-07-29 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 11,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-07-29 发现 4 个新项目（共 5 个项目）: 🆕 pascalorg/editor 创建并分享3D建筑项目的在线编辑器 🔗 https:/...",
+   "body": "# 🔥 GitHub Trending\n\n2026-07-29\n\n发现 4 个新项目（共 5 个项目）:\n\n**🆕 pascalorg/editor**\n  创建并分享3D建筑项目的在线编辑器\n  🔗 https://github.com/pascalorg/editor\n\n---\n**🆕 jenkinsci/jenkins**\n  老牌持续集成自动化服务器，插件生态极其丰富\n  🔗 https://github.com/jenkinsci/jenkins\n\n---\n**moeru-ai/airi**\n  自托管AI伴侣，把二次元老婆装进容器带到现实世界\n  🔗 https://github.com/moeru-ai/airi\n\n---\n**🆕 andrewyng/aisuite**\n  一套接口统一调用多家生成式AI的轻量SDK\n  🔗 https://github.com/andrewyng/aisuite\n\n---\n**🆕 affaan-m/ECC**\n  为Claude Code等编程智能体打造的技能与记忆优化系统\n  🔗 https://github.com/affaan-m/ECC",
+   "links": [
+    {
+     "title": "https://github.com/pascalorg/editor",
+     "url": "https://github.com/pascalorg/editor"
+    },
+    {
+     "title": "https://github.com/jenkinsci/jenkins",
+     "url": "https://github.com/jenkinsci/jenkins"
+    },
+    {
+     "title": "https://github.com/moeru-ai/airi",
+     "url": "https://github.com/moeru-ai/airi"
+    },
+    {
+     "title": "https://github.com/andrewyng/aisuite",
+     "url": "https://github.com/andrewyng/aisuite"
+    },
+    {
+     "title": "https://github.com/affaan-m/ECC",
+     "url": "https://github.com/affaan-m/ECC"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-07-29 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-07-29 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-07-29 OpenAI News 发现 1 篇新文章: Scientific computing in the age of agentic AI 📅 Tue, 28 Ju 原文...",
+   "body": "## 2026-07-29 OpenAI News\n\n发现 1 篇新文章:\n\n**Scientific computing in the age of agentic AI**\n📅 Tue, 28 Ju\n原文摘要：A new field report shows how scientists use AI coding agents to modernize scientific computing, accelerating software development and discovery in genomics and beyond.\n🔗 https://openai.com/index/scientific-computing-agentic-ai",
+   "links": [
+    {
+     "title": "https://openai.com/index/scientific-computing-agentic-ai",
+     "url": "https://openai.com/index/scientific-computing-agentic-ai"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "content",
+   "summary": "2026-07-29 LangChain Blog 发现 1 篇新文章: How LangChain Built an Agent-First Data Stack 📅 Tue, 28 Ju...",
+   "body": "## 2026-07-29 LangChain Blog\n\n发现 1 篇新文章:\n\n**How LangChain Built an Agent-First Data Stack**\n📅 Tue, 28 Ju\n原文摘要：Learn how LangChain used Hex, dbt, semantic models, and observability to build a trusted data agent and scale self-service analysis by 40x.\n🔗 https://www.langchain.com/blog/agent-data-stack",
+   "links": [
+    {
+     "title": "https://www.langchain.com/blog/agent-data-stack",
+     "url": "https://www.langchain.com/blog/agent-data-stack"
+    }
+   ]
+  },
+  {
+   "topic": "github_copilot_cli",
+   "topic_name": "GitHub Copilot CLI",
+   "title": "GitHub Copilot CLI",
+   "status": "no_update",
+   "summary": "2026-07-29 GitHub Copilot CLI 无更新，当前版本: 1.0.75",
+   "body": "## 2026-07-29 GitHub Copilot CLI\n\n无更新，当前版本: 1.0.75",
+   "links": []
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "content",
+   "summary": "2026-07-29 Hugging Face Blog 发现 3 篇新文章: The OlmoEarth Platform: Geospatial inference at planeta...",
+   "body": "## 2026-07-29 Hugging Face Blog\n\n发现 3 篇新文章:\n\n**The OlmoEarth Platform: Geospatial inference at planetary scale**\n📅 Tue, 28 Ju\n🔗 https://huggingface.co/blog/allenai/olmoearth-infrastructure\n\n---\n\n**LFM2.5-Encoders for Fast Long-Context Inference on CPU**\n📅 Tue, 28 Ju\n🔗 https://huggingface.co/blog/LiquidAI/lfm2-5-encoders\n\n---\n\n**Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident**\n📅 Mon, 27 Ju\n🔗 https://huggingface.co/blog/agent-intrusion-technical-timeline",
+   "links": [
+    {
+     "title": "https://huggingface.co/blog/allenai/olmoearth-infrastructure",
+     "url": "https://huggingface.co/blog/allenai/olmoearth-infrastructure"
+    },
+    {
+     "title": "https://huggingface.co/blog/LiquidAI/lfm2-5-encoders",
+     "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-encoders"
+    },
+    {
+     "title": "https://huggingface.co/blog/agent-intrusion-technical-timeline",
+     "url": "https://huggingface.co/blog/agent-intrusion-technical-timeline"
+    }
+   ]
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "no_update",
+   "summary": "2026-07-29 Google Research 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-07-29 Google Research\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-07-29 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-07-29 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-07-29 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-07-29 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "content",
+   "summary": "2026-07-29 Trail of Bits 发现 1 篇新文章: How we use /goal to find bugs in Patch the Planet 📅 Tue, 28...",
+   "body": "## 2026-07-29 Trail of Bits\n\n发现 1 篇新文章:\n\n**How we use /goal to find bugs in Patch the Planet**\n📅 Tue, 28 Ju\n原文摘要：Codex’s /goal feature amplifies bug hunting, but getting good results requires the right prompt, the right scope, and the right number of outcomes per run. For Patch the Planet , our joint initiative with OpenAI to find and fix bugs in open-source software, we pointed Codex at some of the most widely used, heavily audited codebases in the world, like Rust, curl, and zlib. One tool came up again and again in our internal bug-report channels: /goal , which hands Codex an open-ended objective and lets it work independently toward a success condition. Here are a few highlights: /goal found every Rust bug we submitted, including a soundness hole and a miscompilation now patched in Rust 1.98, from a single variant-analysis pipeline. It turned every project’s past CVEs into Semgrep rules that had to fire on the vulnerable version and stay silent on the patched one, then flagged 11 variant hits across multiple projects. It uncovered two potential high-severity privilege-escalation bugs in Keycloak’s SAML component during a discovery run. Over the first few weeks of Patch the Planet, our engineers independently converged on three techniques for using /goal . We found that getting the most out of /goal means treating the prompt as a set of specific success criteria, not a set of instructions. (Note that this blog post uses /goal to refer to goal-based prompting in general. Codex can also set goals for itself through a tool call, and that’s how we recommend everyone use it; we rarely type the slash command ourselves.) 1. Let Codex write the goal The art of using /goal is prompt design, and we found that Codex knows Codex the best. Internally, our single most repeated /goal tip was to use Codex to help write each /goal prompt. We hand Codex threat model files and the context about what we’re looking for, and then tell it to write the goal prompt. As mentioned before, /goal is a tool Codex can invoke on itself, and a few engineers stopped typing goals by hand entirely. $goal-pro\n🔗 https://blog.trailofbits.com/2026/07/28/how-we-use-goal-to-find-bugs-in-patch-the-planet/",
+   "links": [
+    {
+     "title": "https://blog.trailofbits.com/2026/07/28/how-we-use-goal-to-find-bugs-in-patch-the-planet/",
+     "url": "https://blog.trailofbits.com/2026/07/28/how-we-use-goal-to-find-bugs-in-patch-the-planet/"
+    }
+   ]
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-07-29 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-07-29 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": []
+}

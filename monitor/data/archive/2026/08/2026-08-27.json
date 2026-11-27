@@ -1,0 +1,284 @@
+{
+ "date": "2026-08-27",
+ "report_id": "2026-08-27-10d0810ea5",
+ "created_at": "2026-08-27T05:40:25",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-08-27\n\n# 🔥 GitHub Trending\n\n2026-08-27\n\n发现 3 个新项目（共 5 个项目）:\n\n**🆕 tt-a1i/archify**\n  用AI生成带交互动效的架构图、流程图，输出自包含HTML\n  🔗 https://github.com/tt-a1i/archify\n\n---\n**🆕 freestylefly/awesome-gpt-image-2**\n  GPT图像生成工业级提示词引擎，530+逆向案例与20+模板\n  🔗 https://github.com/freestylefly/awesome-gpt-image-2\n\n---\n**🆕 anthropics/claude-plugins-official**\n  Anthropic官方维护的高质量Claude Code插件目录\n  🔗 https://github.com/anthropics/claude-plugins-official\n\n---\n**Alishahryar1/free-claude-code**\n  终端/IDE免费调用Claude Code等模型，支持语音，13亿+免费额度\n  🔗 https://github.com/Alishahryar1/free-claude-code\n\n---\n**MadsLorentzen/ai-job-search**\n  基于Claude Code的本地AI求职框架，自动评估岗位、定制简历与求职信\n  🔗 https://github.com/MadsLorentzen/ai-job-search\n\n## 2026-08-27 Anthropic Engineering\n\n今日无新文章\n\n## 2026-08-27 OpenAI News\n\n发现 8 篇新文章:\n\n**Bringing ChatGPT for Teachers to more U.S. school districts**\n📅 Wed, 26 Au\n原文摘要：ChatGPT for Teachers is expanding to 55 U.S. school systems, bringing secure AI tools, training, and support to over 100,000 more educators and staff.\n🔗 https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts\n\n---\n\n**Learning never stops: How AI makes learning continuous**\n📅 Wed, 26 Au\n原文摘要：OpenAI’s new report explores how students and educators use ChatGPT to make learning more continuous, with support that extends beyond the classroom.\n🔗 https://openai.com/index/learning-never-stops\n\n---\n\n**The Hugging Face incident and the road ahead**\n📅 Wed, 26 Au\n原文摘要：OpenAI shares findings from the Hugging Face security incident and the steps we’re taking to strengthen AI model security, monitoring, and alignment.\n🔗 https://openai.com/index/hugging-face-incident-and-the-road-ahead\n\n---\n\n**How loveholidays is making everyone a builder with Codex**\n📅 Wed, 26 Au\n原文摘要：Discover how loveholidays uses OpenAI Codex to make software development accessible across the business, helping teams turn ideas into products faster.\n🔗 https://openai.com/index/loveholidays\n\n---\n\n**The full stack behind abundant intelligence**\n📅 Tue, 25 Au\n原文摘要：OpenAI CFO Sarah Friar explains how advances across chips, compute, models, and products compound to deliver more useful intelligence at greater scale and lower cost.\n🔗 https://openai.com/index/the-full-stack-behind-abundant-intelligence\n\n---\n\n**Jalapeño’s first results show industry-leading speed and efficiency in AI inference**\n📅 Tue, 25 Au\n原文摘要：Jalapeño is a custom inference chip from OpenAI that delivers faster, more power-efficient AI inference, with higher throughput and lower latency for modern models.\n🔗 https://openai.com/index/jalapeno-first-results\n\n---\n\n**Disrupting a new covert influence campaign from Russia**\n📅 Tue, 25 Au\n原文摘要：OpenAI banned Russia-origin accounts using AI to promote a fake Israel-based think tank and a “sovereignty” index praising Russia and criticizing the West.\n🔗 https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia\n\n---\n\n**Introducing the Admin plugin for ChatGPT Work and Codex**\n📅 Tue, 25 Au\n原文摘要：Use the Admin plugin for ChatGPT Work and Codex to analyze workspace usage, manage members and permissions, adjust limits, and act on admin requests.\n🔗 https://openai.com/index/introducing-admin-plugin\n\n## 2026-08-27 LangChain Blog\n\n发现 19 篇新文章:\n\n**August 2026: LangChain Newsletter — Managed Deep Agents, LLM Gateway, and More**\n📅 Wed, 26 Au\n原文摘要：Managed Deep Agents and LLM Gateway hit public beta, plus Deep Agents v0.7, Tuned Evaluators, Bring Your Own Cloud on AWS, and LangSmith Engine upgrades.\n🔗 https://www.langchain.com/blog/august-2026-langchain-newsletter\n\n---\n\n**How LangSmith and LangChain OSS Help You Meet EU AI Act Requirements**\n📅 Wed, 26 Au\n原文摘要：The EU AI Act compliance deadline is August 2, 2026. Learn what the EU AI Act requires, and how LangSmith and LangChain OSS products help you meet each requirement.\n🔗 https://www.langchain.com/blog/langsmith-langchain-oss-eu-ai-act\n\n---\n\n**How Factory used LangSmith to automate their feedback loop and improve iteration speed by 2x**\n📅 Wed, 26 Au\n原文摘要：How Factory AI uses LangSmith to debug issues and close the product feedback loop, resulting in a 2x improvement in iteration speed.\n🔗 https://www.langchain.com/blog/customers-factory\n\n---\n\n**Aligning LLM-as-a-Judge with Human Preferences**\n📅 Wed, 26 Au\n原文摘要：Deep dive into self-improving evaluators in LangSmith, motivated by the rise of LLM-as-a-Judge evaluators plus research on few-shot learning and aligning human preferences.\n🔗 https://www.langchain.com/blog/aligning-llm-as-a-judge-with-human-preferences\n\n---\n\n**Announcing LangGraph v0.1 & LangGraph Cloud: Running agents at scale, reliably**\n📅 Wed, 26 Au\n原文摘要：Our new infrastructure for running agents at scale, LangGraph Cloud, is available in beta. We also have a new stable release of LangGraph.\n🔗 https://www.langchain.com/blog/langgraph-cloud\n\n---\n\n**How Podium optimized agent behavior and reduced engineering intervention by 90% with LangSmith**\n📅 Wed, 26 Au\n原文摘要：See how Podium tests across the lifecycle development of their AI employee agent, using LangSmith for dataset curation and finetuning. They improved agent F1 response quality to 98% and reduced the need for engineering intervention by 90%.\n🔗 https://www.langchain.com/blog/customers-podium\n\n---\n\n**Pushing LangSmith to new limits with Replit Agent's complex workflows**\n📅 Wed, 26 Au\n原文摘要：See how Replit built their agents atop LangGraph and integrated LangSmith to pinpoint issues, improve the performance of their agents, and enable human-in-the-loop workflows.\n🔗 https://www.langchain.com/blog/customers-replit\n\n---\n\n**LangChain's Second Birthday**\n📅 Wed, 26 Au\n原文摘要：Reflections on how LangChain has evolved — including our products, ecosystem, and community — over the past two years, and where we're headed next.\n🔗 https://www.langchain.com/blog/langchain-second-birthday\n\n---\n\n**LangSmith: Redesigned product homepage and Resource Tags for better organization**\n📅 Wed, 26 Au\n原文摘要：LangSmith's homepage is now organized into Observability, Evaluation, and Prompt Engineering. Learn why we organized the homepage like this. Plus, see our latest Resource Tags updates.\n🔗 https://www.langchain.com/blog/langsmith-homepage-redesign-and-resource-tags\n\n---\n\n**LangChain State of AI 2024 Report**\n📅 Wed, 26 Au\n原文摘要：Dive into LangSmith product usage patterns that show how the AI ecosystem and the way people are building LLM apps is evolving.\n🔗 https://www.langchain.com/blog/langchain-state-of-ai-2024\n\n---\n\n**Introducing Interrupt: The AI Agent Conference by LangChain**\n📅 Wed, 26 Au\n原文摘要：Join us this May at Interrupt, LangChain’s inaugural conference where the future of AI agents takes center stage.\n🔗 https://www.langchain.com/blog/introducing-interrupt-langchain-conference\n\n---\n\n**Reflections on Three Years of Building LangChain**\n📅 Wed, 26 Au\n原文摘要：Harrison Chase on LangChain's 3-year journey from open source to $1.25B company, announcing LangChain 1.0, LangSmith expansion, and $125M funding.\n🔗 https://www.langchain.com/blog/three-years-langchain\n\n---\n\n**Why We Rebuilt LangChain’s Chatbot and What We Learned**\n📅 Wed, 26 Au\n原文摘要：Learn how LangChain rebuilt their chatbot using Deep Agents and subgraphs for sub-15-second responses with precise citations—and what you can apply.\n🔗 https://www.langchain.com/blog/rebuilding-chat-langchain\n\n---\n\n**January 2026: LangChain Newsletter**\n📅 Wed, 26 Au\n原文摘要：Read about the latest product updates, events, and content from the LangChain team\n🔗 https://www.langchain.com/blog/january-2026-langchain-newsletter\n\n---\n\n**Evaluating OpenWiki with WikiBench**\n📅 Wed, 26 Au\n原文摘要：We built WikiBench to test whether generated wikis help coding agents. Pairing a wiki with source code scored higher than source alone, at lower cost.\n🔗 https://www.langchain.com/blog/evaluating-openwiki-with-wikibench\n\n---\n\n**LangChain and NVIDIA Launch NemoClaw Deep Agents Blueprint**\n📅 Wed, 26 Au\n原文摘要：LangChain and NVIDIA launch the NemoClaw Deep Agents blueprint, combining Deep Agents Code, Nemotron 3 Ultra, and OpenShell for open, governed enterprise agents.\n🔗 https://www.langchain.com/blog/langchain-and-nvidia-launch-the-nemoclaw-deep-agents-blueprint\n\n---\n\n**AI Agent Latency 101: How do I speed up my AI agent?**\n📅 Wed, 26 Au\n原文摘要：Learn proven strategies to speed up your AI agent: reduce latency, optimize LLM calls, enable parallelism, and improve UX. Expert tips from LangChain.\n🔗 https://www.langchain.com/blog/how-do-i-speed-up-my-agent\n\n---\n\n**LangGraph Platform is now Generally Available: Deploy & manage long-running, stateful Agents**\n📅 Wed, 26 Au\n原文摘要：LangGraph Platform, our infrastructure for deploying and managing agents at scale, is now generally available. Learn how to deploy\n🔗 https://www.langchain.com/blog/langgraph-platform-ga\n\n---\n\n**LangChain raises $125M to build the platform for agent engineering**\n📅 Wed, 26 Au\n原文摘要：We raised $125M at a $1.25B valuation to build the platform for agent engineering.\n🔗 https://www.langchain.com/blog/series-b\n\n## 2026-08-27 Hugging Face Blog\n\n发现 5 篇新文章:\n\n**Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers**\n📅 Wed, 26 Au\n🔗 https://huggingface.co/blog/train-multi-vector-encoder\n\n---\n\n**Granite 4.2 LLMs: How They're Built**\n📅 Tue, 25 Au\n🔗 https://huggingface.co/blog/ibm-granite/granite-4-2\n\n---\n\n**Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original**\n📅 Tue, 25 Au\n🔗 https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing\n\n---\n\n**Wire It, Run It, Deploy It: AI Workflows in Gradio**\n📅 Tue, 25 Au\n🔗 https://huggingface.co/blog/gradio-workflow-guide\n\n---\n\n**How Hugging Face Inference Endpoints, Jobs, and Buckets Power Search on Papers with Code**\n📅 Fri, 21 Au\n🔗 https://huggingface.co/blog/pwc-search\n\n## 2026-08-27 Google Research\n\n发现 2 篇新文章:\n\n**GlucoFM: Foundation model for continuous glucose monitoring**\n📅 Wed, 26 Au\n原文摘要：Health & Bioscience\n🔗 https://research.google/blog/glucofm-foundation-model-for-continuous-glucose-monitoring/\n\n---\n\n**AgentHands: Generating interactive hand gestures for spatially grounded agent conversations in XR**\n📅 Tue, 25 Au\n原文摘要：Human-Computer Interaction and Visualization\n🔗 https://research.google/blog/agenthands-generating-interactive-hand-gestures-for-spatially-grounded-agent-conversations-in-xr/\n\n## 2026-08-27 METR\n\n发现 1 篇新文章:\n\n**Brief independent investigation of agents’ behavior, reasoning and collaboration in the OpenAI / Hugging Face hacking incident**\n📅 Wed, 26 Au\n原文摘要：>&> > > & & <> & <> <> & & <> <><> <> <> <> <> <><><> <> <> <><> >><> <> & <> <> <><> <> <> <> <> <> & > <> <><> <><><><> <><><> <><><> ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ <> ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ < ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ <> ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩\n🔗 https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/\n\n## 2026-08-27 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-08-27 Trail of Bits\n\n发现 2 篇新文章:\n\n**VMs won't contain cyber-capable agents**\n📅 Wed, 26 Au\n原文摘要：As part of Patch the Planet , we received preview access to GPT 5.6-Cyber with a simple task: evaluate its cyber capabilities. Recent events inspired me to give it a challenge to work through: escape the VM I’d normally use for sandboxing. The target was a QEMU/KVM VM on my Linux dev machine (Debian Linux 12, AMD Zen3). It escaped the VM three different times. First, it used recently disclosed bugs in my host kernel. When I fully updated, it used disclosed bugs that had not yet reached package maintainers or were not classified as security bugs. When I rebuilt QEMU and dependencies from the latest upstream source, it found several 0-days. It operated autonomously for hours, backtracked from approaches that didn’t work, pulled code and research papers, wrote oracles, made its own minimal examples, and aimed for a reusable, reliable exploit, all with minimal handholding and prompting. My main job was to physically reboot the machine when it hardlocked the host kernel. If it wasn’t clear before, I will state it plainly: you can no longer assume a mere VM will contain a sufficiently advanced AI agent. To use a 2010s term of art, you should treat such agents as an advanced persistent threat. Advancing cybersecurity capabilities Let’s imagine a common situation: you want to run an AI agent, but need its full capabilities, including the ability to download, build and debug software; do research; sift through dependencies; set up fuzzers; triage vulnerabilities; and stand up services under different configurations. The generally accepted solution is to set up a VM that serves as a safety perimeter and isolated prison for the agent: this virtual environment contains nothing of value, is separate from the host, and can be immediately deactivated or snapshotted for later investigation. This setup allows the agent to roam free, while isolating your computer from its consequences. There is, of course, a tiny wrinkle. To be useful, the virtual environment must share resources wit\n🔗 https://blog.trailofbits.com/2026/08/26/vms-wont-contain-cyber-capable-agents/\n\n---\n\n**State divergence enables unauthorized access**\n📅 Tue, 25 Au\n原文摘要：We found and reported a bug in Provenance Blockchain, a public proof-of-stake chain built on Cosmos SDK , that lets any user grant themselves admin control over marker accounts without holding a single token. Provenance covers a range of financial services, including on-chain tokenized loans, private equity tokens, bridged assets, and asset registries. Our bug affected 82 markers representing live financial assets on mainnet. We found the bug, which affects versions before 1.28.0, in March 2026, and reported it to Provenance on April 1. It was mitigated in PR #2627 (commit c81fd65 ), which shipped in v1.28.0 on May 1, 2026, and fixed in PR #2734 , which shipped in v1.29.0 on June 8, 2026. What is a marker? The marker module is Provenance’s core primitive for fungible tokens. Chain participants can issue a new asset on Provenance by submitting a MsgAddMarkerRequest transaction; the chain creates a dedicated account for that asset, called a marker. Each marker is a special account type that controls: A denomination (e.g., uusd.trading , cusd.deposit , cguaranteedrateomni ) An access control list governing who can mint, burn, withdraw, deposit, or administer the token A supply field recording the canonical token count An escrow balance (the marker account can hold any asset, not just its own denomination) Markers are either supply_fixed (the supply field is enforced as a hard cap) or non-fixed (the bank module is the source of truth; the supply field is informational). This distinction is central to the bug. The bug: An access check anyone can pass AddAccess is the Cosmos SDK message handler that processes requests to modify a marker’s access control list. It checks whether the caller is authorized using three conditions, any one of which is sufficient: The caller is the marker’s designated manager and the marker is in Finalized state. The caller already holds ACCESS_ADMIN on the marker. The caller controls 100% of the marker’s circulating supply. case types . StatusFi\n🔗 https://blog.trailofbits.com/2026/08/25/state-divergence-enables-unauthorized-access/\n\n## 2026-08-27 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 10,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-08-27 发现 3 个新项目（共 5 个项目）: 🆕 tt-a1i/archify 用AI生成带交互动效的架构图、流程图，输出自包含HTML...",
+   "body": "# 🔥 GitHub Trending\n\n2026-08-27\n\n发现 3 个新项目（共 5 个项目）:\n\n**🆕 tt-a1i/archify**\n  用AI生成带交互动效的架构图、流程图，输出自包含HTML\n  🔗 https://github.com/tt-a1i/archify\n\n---\n**🆕 freestylefly/awesome-gpt-image-2**\n  GPT图像生成工业级提示词引擎，530+逆向案例与20+模板\n  🔗 https://github.com/freestylefly/awesome-gpt-image-2\n\n---\n**🆕 anthropics/claude-plugins-official**\n  Anthropic官方维护的高质量Claude Code插件目录\n  🔗 https://github.com/anthropics/claude-plugins-official\n\n---\n**Alishahryar1/free-claude-code**\n  终端/IDE免费调用Claude Code等模型，支持语音，13亿+免费额度\n  🔗 https://github.com/Alishahryar1/free-claude-code\n\n---\n**MadsLorentzen/ai-job-search**\n  基于Claude Code的本地AI求职框架，自动评估岗位、定制简历与求职信\n  🔗 https://github.com/MadsLorentzen/ai-job-search",
+   "links": [
+    {
+     "title": "tt-a1i/archify",
+     "url": "https://github.com/tt-a1i/archify"
+    },
+    {
+     "title": "freestylefly/awesome-gpt-image-2",
+     "url": "https://github.com/freestylefly/awesome-gpt-image-2"
+    },
+    {
+     "title": "anthropics/claude-plugins-official",
+     "url": "https://github.com/anthropics/claude-plugins-official"
+    },
+    {
+     "title": "Alishahryar1/free-claude-code",
+     "url": "https://github.com/Alishahryar1/free-claude-code"
+    },
+    {
+     "title": "MadsLorentzen/ai-job-search",
+     "url": "https://github.com/MadsLorentzen/ai-job-search"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-08-27 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-08-27 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-08-27 OpenAI News 发现 8 篇新文章: Bringing ChatGPT for Teachers to more U.S. school districts 📅...",
+   "body": "## 2026-08-27 OpenAI News\n\n发现 8 篇新文章:\n\n**Bringing ChatGPT for Teachers to more U.S. school districts**\n📅 Wed, 26 Au\n原文摘要：ChatGPT for Teachers is expanding to 55 U.S. school systems, bringing secure AI tools, training, and support to over 100,000 more educators and staff.\n🔗 https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts\n\n---\n\n**Learning never stops: How AI makes learning continuous**\n📅 Wed, 26 Au\n原文摘要：OpenAI’s new report explores how students and educators use ChatGPT to make learning more continuous, with support that extends beyond the classroom.\n🔗 https://openai.com/index/learning-never-stops\n\n---\n\n**The Hugging Face incident and the road ahead**\n📅 Wed, 26 Au\n原文摘要：OpenAI shares findings from the Hugging Face security incident and the steps we’re taking to strengthen AI model security, monitoring, and alignment.\n🔗 https://openai.com/index/hugging-face-incident-and-the-road-ahead\n\n---\n\n**How loveholidays is making everyone a builder with Codex**\n📅 Wed, 26 Au\n原文摘要：Discover how loveholidays uses OpenAI Codex to make software development accessible across the business, helping teams turn ideas into products faster.\n🔗 https://openai.com/index/loveholidays\n\n---\n\n**The full stack behind abundant intelligence**\n📅 Tue, 25 Au\n原文摘要：OpenAI CFO Sarah Friar explains how advances across chips, compute, models, and products compound to deliver more useful intelligence at greater scale and lower cost.\n🔗 https://openai.com/index/the-full-stack-behind-abundant-intelligence\n\n---\n\n**Jalapeño’s first results show industry-leading speed and efficiency in AI inference**\n📅 Tue, 25 Au\n原文摘要：Jalapeño is a custom inference chip from OpenAI that delivers faster, more power-efficient AI inference, with higher throughput and lower latency for modern models.\n🔗 https://openai.com/index/jalapeno-first-results\n\n---\n\n**Disrupting a new covert influence campaign from Russia**\n📅 Tue, 25 Au\n原文摘要：OpenAI banned Russia-origin accounts using AI to promote a fake Israel-based think tank and a “sovereignty” index praising Russia and criticizing the West.\n🔗 https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia\n\n---\n\n**Introducing the Admin plugin for ChatGPT Work and Codex**\n📅 Tue, 25 Au\n原文摘要：Use the Admin plugin for ChatGPT Work and Codex to analyze workspace usage, manage members and permissions, adjust limits, and act on admin requests.\n🔗 https://openai.com/index/introducing-admin-plugin",
+   "links": [
+    {
+     "title": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts",
+     "url": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts"
+    },
+    {
+     "title": "https://openai.com/index/learning-never-stops",
+     "url": "https://openai.com/index/learning-never-stops"
+    },
+    {
+     "title": "https://openai.com/index/hugging-face-incident-and-the-road-ahead",
+     "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead"
+    },
+    {
+     "title": "https://openai.com/index/loveholidays",
+     "url": "https://openai.com/index/loveholidays"
+    },
+    {
+     "title": "https://openai.com/index/the-full-stack-behind-abundant-intelligence",
+     "url": "https://openai.com/index/the-full-stack-behind-abundant-intelligence"
+    },
+    {
+     "title": "https://openai.com/index/jalapeno-first-results",
+     "url": "https://openai.com/index/jalapeno-first-results"
+    },
+    {
+     "title": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia",
+     "url": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia"
+    },
+    {
+     "title": "https://openai.com/index/introducing-admin-plugin",
+     "url": "https://openai.com/index/introducing-admin-plugin"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "content",
+   "summary": "2026-08-27 LangChain Blog 发现 19 篇新文章: August 2026: LangChain Newsletter — Managed Deep Agents,...",
+   "body": "## 2026-08-27 LangChain Blog\n\n发现 19 篇新文章:\n\n**August 2026: LangChain Newsletter — Managed Deep Agents, LLM Gateway, and More**\n📅 Wed, 26 Au\n原文摘要：Managed Deep Agents and LLM Gateway hit public beta, plus Deep Agents v0.7, Tuned Evaluators, Bring Your Own Cloud on AWS, and LangSmith Engine upgrades.\n🔗 https://www.langchain.com/blog/august-2026-langchain-newsletter\n\n---\n\n**How LangSmith and LangChain OSS Help You Meet EU AI Act Requirements**\n📅 Wed, 26 Au\n原文摘要：The EU AI Act compliance deadline is August 2, 2026. Learn what the EU AI Act requires, and how LangSmith and LangChain OSS products help you meet each requirement.\n🔗 https://www.langchain.com/blog/langsmith-langchain-oss-eu-ai-act\n\n---\n\n**How Factory used LangSmith to automate their feedback loop and improve iteration speed by 2x**\n📅 Wed, 26 Au\n原文摘要：How Factory AI uses LangSmith to debug issues and close the product feedback loop, resulting in a 2x improvement in iteration speed.\n🔗 https://www.langchain.com/blog/customers-factory\n\n---\n\n**Aligning LLM-as-a-Judge with Human Preferences**\n📅 Wed, 26 Au\n原文摘要：Deep dive into self-improving evaluators in LangSmith, motivated by the rise of LLM-as-a-Judge evaluators plus research on few-shot learning and aligning human preferences.\n🔗 https://www.langchain.com/blog/aligning-llm-as-a-judge-with-human-preferences\n\n---\n\n**Announcing LangGraph v0.1 & LangGraph Cloud: Running agents at scale, reliably**\n📅 Wed, 26 Au\n原文摘要：Our new infrastructure for running agents at scale, LangGraph Cloud, is available in beta. We also have a new stable release of LangGraph.\n🔗 https://www.langchain.com/blog/langgraph-cloud\n\n---\n\n**How Podium optimized agent behavior and reduced engineering intervention by 90% with LangSmith**\n📅 Wed, 26 Au\n原文摘要：See how Podium tests across the lifecycle development of their AI employee agent, using LangSmith for dataset curation and finetuning. They improved agent F1 response quality to 98% and reduced the need for engineering intervention by 90%.\n🔗 https://www.langchain.com/blog/customers-podium\n\n---\n\n**Pushing LangSmith to new limits with Replit Agent's complex workflows**\n📅 Wed, 26 Au\n原文摘要：See how Replit built their agents atop LangGraph and integrated LangSmith to pinpoint issues, improve the performance of their agents, and enable human-in-the-loop workflows.\n🔗 https://www.langchain.com/blog/customers-replit\n\n---\n\n**LangChain's Second Birthday**\n📅 Wed, 26 Au\n原文摘要：Reflections on how LangChain has evolved — including our products, ecosystem, and community — over the past two years, and where we're headed next.\n🔗 https://www.langchain.com/blog/langchain-second-birthday\n\n---\n\n**LangSmith: Redesigned product homepage and Resource Tags for better organization**\n📅 Wed, 26 Au\n原文摘要：LangSmith's homepage is now organized into Observability, Evaluation, and Prompt Engineering. Learn why we organized the homepage like this. Plus, see our latest Resource Tags updates.\n🔗 https://www.langchain.com/blog/langsmith-homepage-redesign-and-resource-tags\n\n---\n\n**LangChain State of AI 2024 Report**\n📅 Wed, 26 Au\n原文摘要：Dive into LangSmith product usage patterns that show how the AI ecosystem and the way people are building LLM apps is evolving.\n🔗 https://www.langchain.com/blog/langchain-state-of-ai-2024\n\n---\n\n**Introducing Interrupt: The AI Agent Conference by LangChain**\n📅 Wed, 26 Au\n原文摘要：Join us this May at Interrupt, LangChain’s inaugural conference where the future of AI agents takes center stage.\n🔗 https://www.langchain.com/blog/introducing-interrupt-langchain-conference\n\n---\n\n**Reflections on Three Years of Building LangChain**\n📅 Wed, 26 Au\n原文摘要：Harrison Chase on LangChain's 3-year journey from open source to $1.25B company, announcing LangChain 1.0, LangSmith expansion, and $125M funding.\n🔗 https://www.langchain.com/blog/three-years-langchain\n\n---\n\n**Why We Rebuilt LangChain’s Chatbot and What We Learned**\n📅 Wed, 26 Au\n原文摘要：Learn how LangChain rebuilt their chatbot using Deep Agents and subgraphs for sub-15-second responses with precise citations—and what you can apply.\n🔗 https://www.langchain.com/blog/rebuilding-chat-langchain\n\n---\n\n**January 2026: LangChain Newsletter**\n📅 Wed, 26 Au\n原文摘要：Read about the latest product updates, events, and content from the LangChain team\n🔗 https://www.langchain.com/blog/january-2026-langchain-newsletter\n\n---\n\n**Evaluating OpenWiki with WikiBench**\n📅 Wed, 26 Au\n原文摘要：We built WikiBench to test whether generated wikis help coding agents. Pairing a wiki with source code scored higher than source alone, at lower cost.\n🔗 https://www.langchain.com/blog/evaluating-openwiki-with-wikibench\n\n---\n\n**LangChain and NVIDIA Launch NemoClaw Deep Agents Blueprint**\n📅 Wed, 26 Au\n原文摘要：LangChain and NVIDIA launch the NemoClaw Deep Agents blueprint, combining Deep Agents Code, Nemotron 3 Ultra, and OpenShell for open, governed enterprise agents.\n🔗 https://www.langchain.com/blog/langchain-and-nvidia-launch-the-nemoclaw-deep-agents-blueprint\n\n---\n\n**AI Agent Latency 101: How do I speed up my AI agent?**\n📅 Wed, 26 Au\n原文摘要：Learn proven strategies to speed up your AI agent: reduce latency, optimize LLM calls, enable parallelism, and improve UX. Expert tips from LangChain.\n🔗 https://www.langchain.com/blog/how-do-i-speed-up-my-agent\n\n---\n\n**LangGraph Platform is now Generally Available: Deploy & manage long-running, stateful Agents**\n📅 Wed, 26 Au\n原文摘要：LangGraph Platform, our infrastructure for deploying and managing agents at scale, is now generally available. Learn how to deploy\n🔗 https://www.langchain.com/blog/langgraph-platform-ga\n\n---\n\n**LangChain raises $125M to build the platform for agent engineering**\n📅 Wed, 26 Au\n原文摘要：We raised $125M at a $1.25B valuation to build the platform for agent engineering.\n🔗 https://www.langchain.com/blog/series-b",
+   "links": [
+    {
+     "title": "https://www.langchain.com/blog/august-2026-langchain-newsletter",
+     "url": "https://www.langchain.com/blog/august-2026-langchain-newsletter"
+    },
+    {
+     "title": "https://www.langchain.com/blog/langsmith-langchain-oss-eu-ai-act",
+     "url": "https://www.langchain.com/blog/langsmith-langchain-oss-eu-ai-act"
+    },
+    {
+     "title": "https://www.langchain.com/blog/customers-factory",
+     "url": "https://www.langchain.com/blog/customers-factory"
+    },
+    {
+     "title": "https://www.langchain.com/blog/aligning-llm-as-a-judge-with-human-preferences",
+     "url": "https://www.langchain.com/blog/aligning-llm-as-a-judge-with-human-preferences"
+    },
+    {
+     "title": "https://www.langchain.com/blog/langgraph-cloud",
+     "url": "https://www.langchain.com/blog/langgraph-cloud"
+    },
+    {
+     "title": "https://www.langchain.com/blog/customers-podium",
+     "url": "https://www.langchain.com/blog/customers-podium"
+    },
+    {
+     "title": "https://www.langchain.com/blog/customers-replit",
+     "url": "https://www.langchain.com/blog/customers-replit"
+    },
+    {
+     "title": "https://www.langchain.com/blog/langchain-second-birthday",
+     "url": "https://www.langchain.com/blog/langchain-second-birthday"
+    },
+    {
+     "title": "https://www.langchain.com/blog/langsmith-homepage-redesign-and-resource-tags",
+     "url": "https://www.langchain.com/blog/langsmith-homepage-redesign-and-resource-tags"
+    },
+    {
+     "title": "https://www.langchain.com/blog/langchain-state-of-ai-2024",
+     "url": "https://www.langchain.com/blog/langchain-state-of-ai-2024"
+    },
+    {
+     "title": "https://www.langchain.com/blog/introducing-interrupt-langchain-conference",
+     "url": "https://www.langchain.com/blog/introducing-interrupt-langchain-conference"
+    },
+    {
+     "title": "https://www.langchain.com/blog/three-years-langchain",
+     "url": "https://www.langchain.com/blog/three-years-langchain"
+    },
+    {
+     "title": "https://www.langchain.com/blog/rebuilding-chat-langchain",
+     "url": "https://www.langchain.com/blog/rebuilding-chat-langchain"
+    },
+    {
+     "title": "https://www.langchain.com/blog/january-2026-langchain-newsletter",
+     "url": "https://www.langchain.com/blog/january-2026-langchain-newsletter"
+    },
+    {
+     "title": "https://www.langchain.com/blog/evaluating-openwiki-with-wikibench",
+     "url": "https://www.langchain.com/blog/evaluating-openwiki-with-wikibench"
+    },
+    {
+     "title": "https://www.langchain.com/blog/langchain-and-nvidia-launch-the-nemoclaw-deep-agents-blueprint",
+     "url": "https://www.langchain.com/blog/langchain-and-nvidia-launch-the-nemoclaw-deep-agents-blueprint"
+    },
+    {
+     "title": "https://www.langchain.com/blog/how-do-i-speed-up-my-agent",
+     "url": "https://www.langchain.com/blog/how-do-i-speed-up-my-agent"
+    },
+    {
+     "title": "https://www.langchain.com/blog/langgraph-platform-ga",
+     "url": "https://www.langchain.com/blog/langgraph-platform-ga"
+    },
+    {
+     "title": "https://www.langchain.com/blog/series-b",
+     "url": "https://www.langchain.com/blog/series-b"
+    }
+   ]
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "content",
+   "summary": "2026-08-27 Hugging Face Blog 发现 5 篇新文章: Training and Finetuning Multi-Vector Embedding Models w...",
+   "body": "## 2026-08-27 Hugging Face Blog\n\n发现 5 篇新文章:\n\n**Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers**\n📅 Wed, 26 Au\n🔗 https://huggingface.co/blog/train-multi-vector-encoder\n\n---\n\n**Granite 4.2 LLMs: How They're Built**\n📅 Tue, 25 Au\n🔗 https://huggingface.co/blog/ibm-granite/granite-4-2\n\n---\n\n**Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original**\n📅 Tue, 25 Au\n🔗 https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing\n\n---\n\n**Wire It, Run It, Deploy It: AI Workflows in Gradio**\n📅 Tue, 25 Au\n🔗 https://huggingface.co/blog/gradio-workflow-guide\n\n---\n\n**How Hugging Face Inference Endpoints, Jobs, and Buckets Power Search on Papers with Code**\n📅 Fri, 21 Au\n🔗 https://huggingface.co/blog/pwc-search",
+   "links": [
+    {
+     "title": "https://huggingface.co/blog/train-multi-vector-encoder",
+     "url": "https://huggingface.co/blog/train-multi-vector-encoder"
+    },
+    {
+     "title": "https://huggingface.co/blog/ibm-granite/granite-4-2",
+     "url": "https://huggingface.co/blog/ibm-granite/granite-4-2"
+    },
+    {
+     "title": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing",
+     "url": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing"
+    },
+    {
+     "title": "https://huggingface.co/blog/gradio-workflow-guide",
+     "url": "https://huggingface.co/blog/gradio-workflow-guide"
+    },
+    {
+     "title": "https://huggingface.co/blog/pwc-search",
+     "url": "https://huggingface.co/blog/pwc-search"
+    }
+   ]
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "content",
+   "summary": "2026-08-27 Google Research 发现 2 篇新文章: GlucoFM: Foundation model for continuous glucose monitori...",
+   "body": "## 2026-08-27 Google Research\n\n发现 2 篇新文章:\n\n**GlucoFM: Foundation model for continuous glucose monitoring**\n📅 Wed, 26 Au\n原文摘要：Health & Bioscience\n🔗 https://research.google/blog/glucofm-foundation-model-for-continuous-glucose-monitoring/\n\n---\n\n**AgentHands: Generating interactive hand gestures for spatially grounded agent conversations in XR**\n📅 Tue, 25 Au\n原文摘要：Human-Computer Interaction and Visualization\n🔗 https://research.google/blog/agenthands-generating-interactive-hand-gestures-for-spatially-grounded-agent-conversations-in-xr/",
+   "links": [
+    {
+     "title": "https://research.google/blog/glucofm-foundation-model-for-continuous-glucose-monitoring/",
+     "url": "https://research.google/blog/glucofm-foundation-model-for-continuous-glucose-monitoring/"
+    },
+    {
+     "title": "https://research.google/blog/agenthands-generating-interactive-hand-gestures-for-spatially-grounded-agent-conversations-in-xr/",
+     "url": "https://research.google/blog/agenthands-generating-interactive-hand-gestures-for-spatially-grounded-agent-conversations-in-xr/"
+    }
+   ]
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "content",
+   "summary": "2026-08-27 METR 发现 1 篇新文章: Brief independent investigation of agents’ behavior, reasoning and c...",
+   "body": "## 2026-08-27 METR\n\n发现 1 篇新文章:\n\n**Brief independent investigation of agents’ behavior, reasoning and collaboration in the OpenAI / Hugging Face hacking incident**\n📅 Wed, 26 Au\n原文摘要：>&> > > & & <> & <> <> & & <> <><> <> <> <> <> <><><> <> <> <><> >><> <> & <> <> <><> <> <> <> <> <> & > <> <><> <><><><> <><><> <><><> ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ <> ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ < ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ <> ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩ ↩\n🔗 https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/",
+   "links": [
+    {
+     "title": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/",
+     "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/"
+    }
+   ]
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-08-27 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-08-27 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "content",
+   "summary": "2026-08-27 Trail of Bits 发现 2 篇新文章: VMs won't contain cyber-capable agents 📅 Wed, 26 Au 原文摘要：As...",
+   "body": "## 2026-08-27 Trail of Bits\n\n发现 2 篇新文章:\n\n**VMs won't contain cyber-capable agents**\n📅 Wed, 26 Au\n原文摘要：As part of Patch the Planet , we received preview access to GPT 5.6-Cyber with a simple task: evaluate its cyber capabilities. Recent events inspired me to give it a challenge to work through: escape the VM I’d normally use for sandboxing. The target was a QEMU/KVM VM on my Linux dev machine (Debian Linux 12, AMD Zen3). It escaped the VM three different times. First, it used recently disclosed bugs in my host kernel. When I fully updated, it used disclosed bugs that had not yet reached package maintainers or were not classified as security bugs. When I rebuilt QEMU and dependencies from the latest upstream source, it found several 0-days. It operated autonomously for hours, backtracked from approaches that didn’t work, pulled code and research papers, wrote oracles, made its own minimal examples, and aimed for a reusable, reliable exploit, all with minimal handholding and prompting. My main job was to physically reboot the machine when it hardlocked the host kernel. If it wasn’t clear before, I will state it plainly: you can no longer assume a mere VM will contain a sufficiently advanced AI agent. To use a 2010s term of art, you should treat such agents as an advanced persistent threat. Advancing cybersecurity capabilities Let’s imagine a common situation: you want to run an AI agent, but need its full capabilities, including the ability to download, build and debug software; do research; sift through dependencies; set up fuzzers; triage vulnerabilities; and stand up services under different configurations. The generally accepted solution is to set up a VM that serves as a safety perimeter and isolated prison for the agent: this virtual environment contains nothing of value, is separate from the host, and can be immediately deactivated or snapshotted for later investigation. This setup allows the agent to roam free, while isolating your computer from its consequences. There is, of course, a tiny wrinkle. To be useful, the virtual environment must share resources wit\n🔗 https://blog.trailofbits.com/2026/08/26/vms-wont-contain-cyber-capable-agents/\n\n---\n\n**State divergence enables unauthorized access**\n📅 Tue, 25 Au\n原文摘要：We found and reported a bug in Provenance Blockchain, a public proof-of-stake chain built on Cosmos SDK , that lets any user grant themselves admin control over marker accounts without holding a single token. Provenance covers a range of financial services, including on-chain tokenized loans, private equity tokens, bridged assets, and asset registries. Our bug affected 82 markers representing live financial assets on mainnet. We found the bug, which affects versions before 1.28.0, in March 2026, and reported it to Provenance on April 1. It was mitigated in PR #2627 (commit c81fd65 ), which shipped in v1.28.0 on May 1, 2026, and fixed in PR #2734 , which shipped in v1.29.0 on June 8, 2026. What is a marker? The marker module is Provenance’s core primitive for fungible tokens. Chain participants can issue a new asset on Provenance by submitting a MsgAddMarkerRequest transaction; the chain creates a dedicated account for that asset, called a marker. Each marker is a special account type that controls: A denomination (e.g., uusd.trading , cusd.deposit , cguaranteedrateomni ) An access control list governing who can mint, burn, withdraw, deposit, or administer the token A supply field recording the canonical token count An escrow balance (the marker account can hold any asset, not just its own denomination) Markers are either supply_fixed (the supply field is enforced as a hard cap) or non-fixed (the bank module is the source of truth; the supply field is informational). This distinction is central to the bug. The bug: An access check anyone can pass AddAccess is the Cosmos SDK message handler that processes requests to modify a marker’s access control list. It checks whether the caller is authorized using three conditions, any one of which is sufficient: The caller is the marker’s designated manager and the marker is in Finalized state. The caller already holds ACCESS_ADMIN on the marker. The caller controls 100% of the marker’s circulating supply. case types . StatusFi\n🔗 https://blog.trailofbits.com/2026/08/25/state-divergence-enables-unauthorized-access/",
+   "links": [
+    {
+     "title": "https://blog.trailofbits.com/2026/08/26/vms-wont-contain-cyber-capable-agents/",
+     "url": "https://blog.trailofbits.com/2026/08/26/vms-wont-contain-cyber-capable-agents/"
+    },
+    {
+     "title": "https://blog.trailofbits.com/2026/08/25/state-divergence-enables-unauthorized-access/",
+     "url": "https://blog.trailofbits.com/2026/08/25/state-divergence-enables-unauthorized-access/"
+    }
+   ]
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-08-27 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-08-27 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-08-27T05:40:30+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

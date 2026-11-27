@@ -1,0 +1,169 @@
+{
+ "date": "2026-08-08",
+ "report_id": "2026-08-08-bb6ddea487",
+ "created_at": "2026-08-08T06:03:49",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-08-08\n\n# 🔥 GitHub Trending\n\n2026-08-08\n\n发现 2 个新项目（共 5 个项目）:\n\n**🆕 PrimeIntellect-ai/prime-agent**\n  能自我进化的编程智能体，擅长长任务自主执行\n  🔗 https://github.com/PrimeIntellect-ai/prime-agent\n\n---\n**addyosmani/agent-skills**\n  面向生产环境的AI编程代理工程技能集\n  🔗 https://github.com/addyosmani/agent-skills\n\n---\n**cloudflare/computer**\n  给AI代理一台云电脑，让它真正动手干活\n  🔗 https://github.com/cloudflare/computer\n\n---\n**mattpocock/skills**\n  实战派工程师私藏的AI代理技能配置\n  🔗 https://github.com/mattpocock/skills\n\n---\n**🆕 obra/superpowers**\n  一套真正能落地的代理技能框架与开发方法论\n  🔗 https://github.com/obra/superpowers\n\n## 2026-08-08 Anthropic Engineering\n\n今日无新文章\n\n## 2026-08-08 OpenAI News\n\n发现 2 篇新文章:\n\n**Responding to the next frontier of critical cyber capabilities**\n📅 Fri, 07 Au\n原文摘要：OpenAI is sharing preliminary cybersecurity evaluations for Astra and the steps we’re taking to strengthen safeguards and security controls.\n🔗 https://openai.com/index/responding-next-frontier-critical-cyber-capabilities\n\n---\n\n**How HSP GRUPPE builds AI capabilities for tax advisory**\n📅 Fri, 07 Au\n原文摘要：Discover how HSP GRUPPE uses ChatGPT Enterprise to boost productivity, improve work quality, and create more capacity for tax advisory and client service.\n🔗 https://openai.com/index/hsp-gruppe\n\n## 2026-08-08 LangChain Blog\n\n发现 2 篇新文章:\n\n**Managed Deep Agents: the fastest way to ship a production deep agent**\n📅 Fri, 07 Au\n原文摘要：Run deep agents in production with durable execution, sandboxes, tool access, and LangSmith observability, without building the runtime yourself. Now in private beta\n🔗 https://www.langchain.com/blog/introducing-managed-deep-agents\n\n---\n\n**Managed Deep Agents is now in public beta**\n📅 Fri, 07 Au\n原文摘要：Deploy Deep Agents to a managed LangSmith runtime with durable execution, memory, sandboxes, channels, evals, and production-ready infrastructure.\n🔗 https://www.langchain.com/blog/managed-deep-agents-is-now-in-public-beta\n\n## 2026-08-08 Claude Code\n\n🆕 **Claude Code 功能更新**: `v2.1.224`\n🔗 https://code.claude.com/docs/en/changelog#2-1-224\n发布时间: Thu, 06 Au\n\n### 功能更新\n- Added self-hosted environments: claude self-hosted-runner turns your own machines or containers into a place Claude Code web, mobile, and desktop sessions can run, on Team and Enterprise plans\n- Added archive plugin source: install plugins from a zip over HTTPS without git or npm, with optional SHA-256 pinning\n- Added a cancel-and-confirm step when removing an unavailable paste changes a command’s text\n- Added ANTHROPIC_BEDROCK_REGION_PREFIX env var for Bedrock to prefer a specific cross-region inference profile over the AWS_REGION-derived one\n- Added crossSessionInbound and dialogExpiry settings: cross-session messages sent to a session running with bypassed permissions are held for your approval, and messages to other sessions auto-deliver\n- Added sandbox credential-masking options: extract and onExtractNoMatch for structured env values, decode: \"jwt\" with maskClaims for JWT-aware masking, and awsPairs/sigv4 for AWS SigV4 re-signing; these need network.tlsTerminate and are honored only from user, managed, or --settings settings\n- Added cross-session SendMessage: Claude Code sessions can now message each other, on any of your machines, with ListAgents to discover them (macOS and Linux)\n- Removed the 200-subagent-per-session spawn cap; long-running sessions no longer refuse new agents (concurrency and depth limits still apply)\n\n## 2026-08-08 GitHub Copilot CLI\n\n无更新，当前版本: 1.0.78\n\n## 2026-08-08 Hugging Face Blog\n\n发现 1 篇新文章:\n\n**TutorMoments: Do AI tutors know when to help and when to hold back?**\n📅 Fri, 07 Au\n🔗 https://huggingface.co/blog/allenai/tutormoments\n\n## 2026-08-08 Google Research\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-08 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-08 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-08-08 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-08 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 12,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-08-08 发现 2 个新项目（共 5 个项目）: 🆕 PrimeIntellect-ai/prime-agent 能自我进化的编程智能体，擅长...",
+   "body": "# 🔥 GitHub Trending\n\n2026-08-08\n\n发现 2 个新项目（共 5 个项目）:\n\n**🆕 PrimeIntellect-ai/prime-agent**\n  能自我进化的编程智能体，擅长长任务自主执行\n  🔗 https://github.com/PrimeIntellect-ai/prime-agent\n\n---\n**addyosmani/agent-skills**\n  面向生产环境的AI编程代理工程技能集\n  🔗 https://github.com/addyosmani/agent-skills\n\n---\n**cloudflare/computer**\n  给AI代理一台云电脑，让它真正动手干活\n  🔗 https://github.com/cloudflare/computer\n\n---\n**mattpocock/skills**\n  实战派工程师私藏的AI代理技能配置\n  🔗 https://github.com/mattpocock/skills\n\n---\n**🆕 obra/superpowers**\n  一套真正能落地的代理技能框架与开发方法论\n  🔗 https://github.com/obra/superpowers",
+   "links": [
+    {
+     "title": "https://github.com/PrimeIntellect-ai/prime-agent",
+     "url": "https://github.com/PrimeIntellect-ai/prime-agent"
+    },
+    {
+     "title": "https://github.com/addyosmani/agent-skills",
+     "url": "https://github.com/addyosmani/agent-skills"
+    },
+    {
+     "title": "https://github.com/cloudflare/computer",
+     "url": "https://github.com/cloudflare/computer"
+    },
+    {
+     "title": "https://github.com/mattpocock/skills",
+     "url": "https://github.com/mattpocock/skills"
+    },
+    {
+     "title": "https://github.com/obra/superpowers",
+     "url": "https://github.com/obra/superpowers"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-08-08 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-08-08 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-08-08 OpenAI News 发现 2 篇新文章: Responding to the next frontier of critical cyber capabilitie...",
+   "body": "## 2026-08-08 OpenAI News\n\n发现 2 篇新文章:\n\n**Responding to the next frontier of critical cyber capabilities**\n📅 Fri, 07 Au\n原文摘要：OpenAI is sharing preliminary cybersecurity evaluations for Astra and the steps we’re taking to strengthen safeguards and security controls.\n🔗 https://openai.com/index/responding-next-frontier-critical-cyber-capabilities\n\n---\n\n**How HSP GRUPPE builds AI capabilities for tax advisory**\n📅 Fri, 07 Au\n原文摘要：Discover how HSP GRUPPE uses ChatGPT Enterprise to boost productivity, improve work quality, and create more capacity for tax advisory and client service.\n🔗 https://openai.com/index/hsp-gruppe",
+   "links": [
+    {
+     "title": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities",
+     "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities"
+    },
+    {
+     "title": "https://openai.com/index/hsp-gruppe",
+     "url": "https://openai.com/index/hsp-gruppe"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "content",
+   "summary": "2026-08-08 LangChain Blog 发现 2 篇新文章: Managed Deep Agents: the fastest way to ship a production...",
+   "body": "## 2026-08-08 LangChain Blog\n\n发现 2 篇新文章:\n\n**Managed Deep Agents: the fastest way to ship a production deep agent**\n📅 Fri, 07 Au\n原文摘要：Run deep agents in production with durable execution, sandboxes, tool access, and LangSmith observability, without building the runtime yourself. Now in private beta\n🔗 https://www.langchain.com/blog/introducing-managed-deep-agents\n\n---\n\n**Managed Deep Agents is now in public beta**\n📅 Fri, 07 Au\n原文摘要：Deploy Deep Agents to a managed LangSmith runtime with durable execution, memory, sandboxes, channels, evals, and production-ready infrastructure.\n🔗 https://www.langchain.com/blog/managed-deep-agents-is-now-in-public-beta",
+   "links": [
+    {
+     "title": "https://www.langchain.com/blog/introducing-managed-deep-agents",
+     "url": "https://www.langchain.com/blog/introducing-managed-deep-agents"
+    },
+    {
+     "title": "https://www.langchain.com/blog/managed-deep-agents-is-now-in-public-beta",
+     "url": "https://www.langchain.com/blog/managed-deep-agents-is-now-in-public-beta"
+    }
+   ]
+  },
+  {
+   "topic": "claude_code",
+   "topic_name": "Claude Code",
+   "title": "Claude Code",
+   "status": "content",
+   "summary": "2026-08-08 Claude Code 🆕 **Claude Code 功能更新**: `v2.1.224` 🔗 https://code.claude.com/docs/en/cha...",
+   "body": "## 2026-08-08 Claude Code\n\n🆕 **Claude Code 功能更新**: `v2.1.224`\n🔗 https://code.claude.com/docs/en/changelog#2-1-224\n发布时间: Thu, 06 Au\n\n### 功能更新\n- Added self-hosted environments: claude self-hosted-runner turns your own machines or containers into a place Claude Code web, mobile, and desktop sessions can run, on Team and Enterprise plans\n- Added archive plugin source: install plugins from a zip over HTTPS without git or npm, with optional SHA-256 pinning\n- Added a cancel-and-confirm step when removing an unavailable paste changes a command’s text\n- Added ANTHROPIC_BEDROCK_REGION_PREFIX env var for Bedrock to prefer a specific cross-region inference profile over the AWS_REGION-derived one\n- Added crossSessionInbound and dialogExpiry settings: cross-session messages sent to a session running with bypassed permissions are held for your approval, and messages to other sessions auto-deliver\n- Added sandbox credential-masking options: extract and onExtractNoMatch for structured env values, decode: \"jwt\" with maskClaims for JWT-aware masking, and awsPairs/sigv4 for AWS SigV4 re-signing; these need network.tlsTerminate and are honored only from user, managed, or --settings settings\n- Added cross-session SendMessage: Claude Code sessions can now message each other, on any of your machines, with ListAgents to discover them (macOS and Linux)\n- Removed the 200-subagent-per-session spawn cap; long-running sessions no longer refuse new agents (concurrency and depth limits still apply)",
+   "links": [
+    {
+     "title": "https://code.claude.com/docs/en/changelog#2-1-224",
+     "url": "https://code.claude.com/docs/en/changelog#2-1-224"
+    }
+   ]
+  },
+  {
+   "topic": "github_copilot_cli",
+   "topic_name": "GitHub Copilot CLI",
+   "title": "GitHub Copilot CLI",
+   "status": "no_update",
+   "summary": "2026-08-08 GitHub Copilot CLI 无更新，当前版本: 1.0.78",
+   "body": "## 2026-08-08 GitHub Copilot CLI\n\n无更新，当前版本: 1.0.78",
+   "links": []
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "content",
+   "summary": "2026-08-08 Hugging Face Blog 发现 1 篇新文章: TutorMoments: Do AI tutors know when to help and when t...",
+   "body": "## 2026-08-08 Hugging Face Blog\n\n发现 1 篇新文章:\n\n**TutorMoments: Do AI tutors know when to help and when to hold back?**\n📅 Fri, 07 Au\n🔗 https://huggingface.co/blog/allenai/tutormoments",
+   "links": [
+    {
+     "title": "https://huggingface.co/blog/allenai/tutormoments",
+     "url": "https://huggingface.co/blog/allenai/tutormoments"
+    }
+   ]
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "no_update",
+   "summary": "2026-08-08 Google Research 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-08 Google Research\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-08-08 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-08 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-08-08 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-08-08 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-08-08 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-08 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-08-08 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-08-08 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": []
+}

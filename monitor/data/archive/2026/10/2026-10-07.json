@@ -1,0 +1,174 @@
+{
+ "date": "2026-10-07",
+ "report_id": "2026-10-07-7935ba39b7",
+ "created_at": "2026-10-07T05:33:36",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-10-07\n\n# 🔥 GitHub Trending\n\n2026-10-07\n\n发现 2 个新项目（共 5 个项目）:\n\n**tester-army/e2e**\n  搞定Web和移动端的下一代端到端测试框架。\n  🔗 https://github.com/tester-army/e2e\n\n---\n**🆕 mattpocock/skills**\n  作者私藏的实战工程师智能体技能包。\n  🔗 https://github.com/mattpocock/skills\n\n---\n**earthtojake/text-to-cad**\n  让你的智能体瞬间拥有CAD建模超能力。\n  🔗 https://github.com/earthtojake/text-to-cad\n\n---\n**🆕 boykopovar/AnyPS5**\n  自动把PS5程序移植到Linux和Win。\n  🔗 https://github.com/boykopovar/AnyPS5\n\n---\n**pbakaus/impeccable**\n  让AI做设计更拿手的一套设计语言。\n  🔗 https://github.com/pbakaus/impeccable\n\n## 2026-10-07 Anthropic Engineering\n\n今日无新文章\n\n## 2026-10-07 OpenAI News\n\n发现 4 篇新文章:\n\n**Advancing computer use with Ironclad**\n📅 Tue, 06 Oc\n原文摘要：Learn how OpenAI and Ironclad are training and evaluating AI agents on complex contracting workflows to advance computer use for professional work.\n🔗 https://openai.com/index/advancing-computer-use-with-ironclad\n\n---\n\n**Atlassian and OpenAI expand partnership to turn enterprise knowledge into action**\n📅 Tue, 06 Oc\n原文摘要：Atlassian and OpenAI are expanding their partnership to connect frontier models with enterprise knowledge and help teams plan, build, and deliver work.\n🔗 https://openai.com/index/atlassian-partnership\n\n---\n\n**Our approach to EU text provenance rules**\n📅 Mon, 05 Oc\n原文摘要：How OpenAI is approaching text watermarking under EU rules. Learn where watermarks apply, how detection works, and why access starts with researchers.\n🔗 https://openai.com/index/eu-text-provenance\n\n---\n\n**Building advertising for the way people use AI**\n📅 Mon, 05 Oc\n原文摘要：OpenAI introduces a new visual ad format in ChatGPT and expands measurement tools, attribution partnerships, and brand suitability for advertisers.\n🔗 https://openai.com/index/new-chatgpt-ads-format-and-measurement\n\n## 2026-10-07 LangChain Blog\n\n今日无新文章（追踪 20 篇）\n\n## 2026-10-07 Hugging Face Blog\n\n发现 2 篇新文章:\n\n**Falcon-Emirati: When an LLM Learns the Dialect, the Culture, and the Nuance**\n📅 Tue, 06 Oc\n🔗 https://huggingface.co/blog/tiiuae/falcon-emirati\n\n---\n\n**Welcome RL Environments to the hub**\n📅 Mon, 28 Se\n🔗 https://huggingface.co/blog/rl-environments\n\n## 2026-10-07 Google Research\n\n发现 2 篇新文章:\n\n**Unlocking Earth AI’s planetary geospatial foundation models for global public health**\n📅 Tue, 06 Oc\n原文摘要：Earth AI\n🔗 https://research.google/blog/earth-ais-planetary-geospatial-foundation-models-for-global-public-health/\n\n---\n\n**Open and Emergent Problems in Agentic Privacy and Security: A Contextual Angle**\n📅 Mon, 05 Oc\n原文摘要：Generative AI\n🔗 https://research.google/blog/open-and-emergent-problems-in-agentic-privacy-and-security-a-contextual-angle/\n\n## 2026-10-07 METR\n\n发现 1 篇新文章:\n\n**AI systems could cover up misbehavior**\n📅 Tue, 06 Oc\n原文摘要：Recent AI misalignment incidents have shown AI systems capably pursuing goals their human supervisors would not approve of, like hacking other companies. Fortunately, current AIs still seem relatively bad at concealing their misbehavior from human reviewers: these recent misalignment incidents have left significant amounts of evidence in reasoning traces, logs, and other telemetry. 1 This has made it much easier to notice when they misbehave. However, observability against an adversarial agent only helps if the agent can’t subvert that observability. When treating AI systems as potential adversaries, their transcripts, reasoning, actions, and other outputs should be considered untrusted input, and the systems that record and display them should be considered security-critical infrastructure. Given the rapid rate of progress in AI capabilities 2 we expect future systems will have excellent situational awareness and strong cyber capabilities, and we’ve already seen agents attempting (and succeeding at) tampering with logging and monitoring. If AI systems can reliably conceal what they are doing, we won’t be able to detect and respond to increasingly serious misaligned behavior. What would it look like in practice for AI systems to cover up evidence of misbehavior? One possibility is that they subvert the tools humans use to review their actions. Inspect , a framework widely used in the safety evaluations ecosystem, includes a transcript viewer that researchers use to step through what an agent did during an evaluation. An example Inspect transcript. Source: https://inspect.aisi.org.uk/ Earlier this year, we tested whether an agent running inside an Inspect evaluation would be able to modify the transcript that humans see through the Inspect viewer, allowing it to conceal its own misbehavior. 3 With help from an AI agent, a researcher found a vulnerability in about 10 minutes that could have allowed an agent to arbitrarily modify what the reviewer sees. This includes c\n🔗 https://metr.org/blog/2026-10-06-ai-systems-could-cover-up-misbehavior/\n\n## 2026-10-07 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-10-07 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-10-07 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 10,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-10-07 发现 2 个新项目（共 5 个项目）: tester-army/e2e 搞定Web和移动端的下一代端到端测试框架。 🔗 https:...",
+   "body": "# 🔥 GitHub Trending\n\n2026-10-07\n\n发现 2 个新项目（共 5 个项目）:\n\n**tester-army/e2e**\n  搞定Web和移动端的下一代端到端测试框架。\n  🔗 https://github.com/tester-army/e2e\n\n---\n**🆕 mattpocock/skills**\n  作者私藏的实战工程师智能体技能包。\n  🔗 https://github.com/mattpocock/skills\n\n---\n**earthtojake/text-to-cad**\n  让你的智能体瞬间拥有CAD建模超能力。\n  🔗 https://github.com/earthtojake/text-to-cad\n\n---\n**🆕 boykopovar/AnyPS5**\n  自动把PS5程序移植到Linux和Win。\n  🔗 https://github.com/boykopovar/AnyPS5\n\n---\n**pbakaus/impeccable**\n  让AI做设计更拿手的一套设计语言。\n  🔗 https://github.com/pbakaus/impeccable",
+   "links": [
+    {
+     "title": "tester-army/e2e",
+     "url": "https://github.com/tester-army/e2e"
+    },
+    {
+     "title": "mattpocock/skills",
+     "url": "https://github.com/mattpocock/skills"
+    },
+    {
+     "title": "earthtojake/text-to-cad",
+     "url": "https://github.com/earthtojake/text-to-cad"
+    },
+    {
+     "title": "boykopovar/AnyPS5",
+     "url": "https://github.com/boykopovar/AnyPS5"
+    },
+    {
+     "title": "pbakaus/impeccable",
+     "url": "https://github.com/pbakaus/impeccable"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-10-07 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-10-07 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-10-07 OpenAI News 发现 4 篇新文章: Advancing computer use with Ironclad 📅 Tue, 06 Oc 原文摘要：Learn...",
+   "body": "## 2026-10-07 OpenAI News\n\n发现 4 篇新文章:\n\n**Advancing computer use with Ironclad**\n📅 Tue, 06 Oc\n原文摘要：Learn how OpenAI and Ironclad are training and evaluating AI agents on complex contracting workflows to advance computer use for professional work.\n🔗 https://openai.com/index/advancing-computer-use-with-ironclad\n\n---\n\n**Atlassian and OpenAI expand partnership to turn enterprise knowledge into action**\n📅 Tue, 06 Oc\n原文摘要：Atlassian and OpenAI are expanding their partnership to connect frontier models with enterprise knowledge and help teams plan, build, and deliver work.\n🔗 https://openai.com/index/atlassian-partnership\n\n---\n\n**Our approach to EU text provenance rules**\n📅 Mon, 05 Oc\n原文摘要：How OpenAI is approaching text watermarking under EU rules. Learn where watermarks apply, how detection works, and why access starts with researchers.\n🔗 https://openai.com/index/eu-text-provenance\n\n---\n\n**Building advertising for the way people use AI**\n📅 Mon, 05 Oc\n原文摘要：OpenAI introduces a new visual ad format in ChatGPT and expands measurement tools, attribution partnerships, and brand suitability for advertisers.\n🔗 https://openai.com/index/new-chatgpt-ads-format-and-measurement",
+   "links": [
+    {
+     "title": "https://openai.com/index/advancing-computer-use-with-ironclad",
+     "url": "https://openai.com/index/advancing-computer-use-with-ironclad"
+    },
+    {
+     "title": "https://openai.com/index/atlassian-partnership",
+     "url": "https://openai.com/index/atlassian-partnership"
+    },
+    {
+     "title": "https://openai.com/index/eu-text-provenance",
+     "url": "https://openai.com/index/eu-text-provenance"
+    },
+    {
+     "title": "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
+     "url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "no_update",
+   "summary": "2026-10-07 LangChain Blog 今日无新文章（追踪 20 篇）",
+   "body": "## 2026-10-07 LangChain Blog\n\n今日无新文章（追踪 20 篇）",
+   "links": []
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "content",
+   "summary": "2026-10-07 Hugging Face Blog 发现 2 篇新文章: Falcon-Emirati: When an LLM Learns the Dialect, the Cul...",
+   "body": "## 2026-10-07 Hugging Face Blog\n\n发现 2 篇新文章:\n\n**Falcon-Emirati: When an LLM Learns the Dialect, the Culture, and the Nuance**\n📅 Tue, 06 Oc\n🔗 https://huggingface.co/blog/tiiuae/falcon-emirati\n\n---\n\n**Welcome RL Environments to the hub**\n📅 Mon, 28 Se\n🔗 https://huggingface.co/blog/rl-environments",
+   "links": [
+    {
+     "title": "https://huggingface.co/blog/tiiuae/falcon-emirati",
+     "url": "https://huggingface.co/blog/tiiuae/falcon-emirati"
+    },
+    {
+     "title": "https://huggingface.co/blog/rl-environments",
+     "url": "https://huggingface.co/blog/rl-environments"
+    }
+   ]
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "content",
+   "summary": "2026-10-07 Google Research 发现 2 篇新文章: Unlocking Earth AI’s planetary geospatial foundation mode...",
+   "body": "## 2026-10-07 Google Research\n\n发现 2 篇新文章:\n\n**Unlocking Earth AI’s planetary geospatial foundation models for global public health**\n📅 Tue, 06 Oc\n原文摘要：Earth AI\n🔗 https://research.google/blog/earth-ais-planetary-geospatial-foundation-models-for-global-public-health/\n\n---\n\n**Open and Emergent Problems in Agentic Privacy and Security: A Contextual Angle**\n📅 Mon, 05 Oc\n原文摘要：Generative AI\n🔗 https://research.google/blog/open-and-emergent-problems-in-agentic-privacy-and-security-a-contextual-angle/",
+   "links": [
+    {
+     "title": "https://research.google/blog/earth-ais-planetary-geospatial-foundation-models-for-global-public-health/",
+     "url": "https://research.google/blog/earth-ais-planetary-geospatial-foundation-models-for-global-public-health/"
+    },
+    {
+     "title": "https://research.google/blog/open-and-emergent-problems-in-agentic-privacy-and-security-a-contextual-angle/",
+     "url": "https://research.google/blog/open-and-emergent-problems-in-agentic-privacy-and-security-a-contextual-angle/"
+    }
+   ]
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "content",
+   "summary": "2026-10-07 METR 发现 1 篇新文章: AI systems could cover up misbehavior 📅 Tue, 06 Oc 原文摘要：Recent AI mi...",
+   "body": "## 2026-10-07 METR\n\n发现 1 篇新文章:\n\n**AI systems could cover up misbehavior**\n📅 Tue, 06 Oc\n原文摘要：Recent AI misalignment incidents have shown AI systems capably pursuing goals their human supervisors would not approve of, like hacking other companies. Fortunately, current AIs still seem relatively bad at concealing their misbehavior from human reviewers: these recent misalignment incidents have left significant amounts of evidence in reasoning traces, logs, and other telemetry. 1 This has made it much easier to notice when they misbehave. However, observability against an adversarial agent only helps if the agent can’t subvert that observability. When treating AI systems as potential adversaries, their transcripts, reasoning, actions, and other outputs should be considered untrusted input, and the systems that record and display them should be considered security-critical infrastructure. Given the rapid rate of progress in AI capabilities 2 we expect future systems will have excellent situational awareness and strong cyber capabilities, and we’ve already seen agents attempting (and succeeding at) tampering with logging and monitoring. If AI systems can reliably conceal what they are doing, we won’t be able to detect and respond to increasingly serious misaligned behavior. What would it look like in practice for AI systems to cover up evidence of misbehavior? One possibility is that they subvert the tools humans use to review their actions. Inspect , a framework widely used in the safety evaluations ecosystem, includes a transcript viewer that researchers use to step through what an agent did during an evaluation. An example Inspect transcript. Source: https://inspect.aisi.org.uk/ Earlier this year, we tested whether an agent running inside an Inspect evaluation would be able to modify the transcript that humans see through the Inspect viewer, allowing it to conceal its own misbehavior. 3 With help from an AI agent, a researcher found a vulnerability in about 10 minutes that could have allowed an agent to arbitrarily modify what the reviewer sees. This includes c\n🔗 https://metr.org/blog/2026-10-06-ai-systems-could-cover-up-misbehavior/",
+   "links": [
+    {
+     "title": "https://inspect.aisi.org.uk/",
+     "url": "https://inspect.aisi.org.uk/"
+    },
+    {
+     "title": "https://metr.org/blog/2026-10-06-ai-systems-could-cover-up-misbehavior/",
+     "url": "https://metr.org/blog/2026-10-06-ai-systems-could-cover-up-misbehavior/"
+    }
+   ]
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-10-07 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-10-07 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-10-07 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-10-07 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-10-07 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-10-07 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-10-07T05:33:40+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

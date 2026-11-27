@@ -1,0 +1,163 @@
+{
+ "date": "2026-08-18",
+ "report_id": "2026-08-18-317ddcbe89",
+ "created_at": "2026-08-18T05:32:31",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-08-18\n\n# 🔥 GitHub Trending\n\n2026-08-18\n\n发现 5 个新项目（共 5 个项目）:\n\n**🆕 harry0703/MoneyPrinterTurbo**\n  AI一键生成高清短视频，自动化工作流超省心\n  🔗 https://github.com/harry0703/MoneyPrinterTurbo\n\n---\n**🆕 usestrix/strix**\n  开源AI渗透测试工具，自动发现并修复应用漏洞\n  🔗 https://github.com/usestrix/strix\n\n---\n**🆕 nautechsystems/nautilus_trader**\n  Rust原生生产级交易引擎，确定性事件驱动架构\n  🔗 https://github.com/nautechsystems/nautilus_trader\n\n---\n**🆕 akitaonrails/ai-memory**\n  为AI编程助手提供长期记忆，支持跨厂商智能体交接\n  🔗 https://github.com/akitaonrails/ai-memory\n\n---\n**🆕 mukul975/Anthropic-Cybersecurity-Skills**\n  817项AI安全技能，映射六大主流网络安全框架\n  🔗 https://github.com/mukul975/Anthropic-Cybersecurity-Skills\n\n## 2026-08-18 Anthropic Engineering\n\n今日无新文章\n\n## 2026-08-18 OpenAI News\n\n发现 3 篇新文章:\n\n**The Defender’s Window**\n📅 Mon, 17 Au\n原文摘要：AI is reshaping cybersecurity for attackers and defenders alike. Learn how OpenAI is strengthening its defenses and what security teams can do now.\n🔗 https://openai.com/index/the-defenders-window\n\n---\n\n**OpenAI joins PORTS-Pike project**\n📅 Mon, 17 Au\n原文摘要：OpenAI joins PORTS-Pike project, expanding community investment and supporting thousands of Southern Ohio jobs\n🔗 https://openai.com/index/openai-joins-ports-pike-project\n\n---\n\n**New policy ideas for the Intelligence Age**\n📅 Mon, 17 Au\n原文摘要：OpenAI funds 14 independent projects exploring new AI policy ideas to expand economic opportunity and strengthen societal resilience in the Intelligence Age.\n🔗 https://openai.com/index/new-policy-ideas-for-the-intelligence-age\n\n## 2026-08-18 LangChain Blog\n\n发现 1 篇新文章:\n\n**AgentCore Payments middleware for LangChain agents**\n📅 Mon, 17 Au\n原文摘要：Let your LangChain agents pay for APIs with deterministic session budgets. AgentCore Payments middleware signs x402 payments; LangSmith traces every one.\n🔗 https://www.langchain.com/blog/langchain-agentcore-payments\n\n## 2026-08-18 Hugging Face Blog\n\n发现 1 篇新文章:\n\n**Same Cluster, 33 Points More Utilization: What Changed Was the Order**\n📅 Mon, 17 Au\n🔗 https://huggingface.co/blog/Dharma-AI/gpu-management-pt2\n\n## 2026-08-18 Google Research\n\n发现 1 篇新文章:\n\n**Seeing beyond BMI: Estimating cardiometabolic risk with smartphone imagery**\n📅 Mon, 17 Au\n原文摘要：General Science\n🔗 https://research.google/blog/seeing-beyond-bmi-estimating-cardiometabolic-risk-with-smartphone-imagery/\n\n## 2026-08-18 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-18 SWE-bench\n\n发现 1 篇新文章:\n\n**v5.0.0**\n📅 2026-08-17\n原文摘要：Release 5.0.0\n🔗 https://github.com/SWE-bench/SWE-bench/releases/tag/v5.0.0\n\n## 2026-08-18 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-18 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 10,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-08-18 发现 5 个新项目（共 5 个项目）: 🆕 harry0703/MoneyPrinterTurbo AI一键生成高清短视频，自动化工...",
+   "body": "# 🔥 GitHub Trending\n\n2026-08-18\n\n发现 5 个新项目（共 5 个项目）:\n\n**🆕 harry0703/MoneyPrinterTurbo**\n  AI一键生成高清短视频，自动化工作流超省心\n  🔗 https://github.com/harry0703/MoneyPrinterTurbo\n\n---\n**🆕 usestrix/strix**\n  开源AI渗透测试工具，自动发现并修复应用漏洞\n  🔗 https://github.com/usestrix/strix\n\n---\n**🆕 nautechsystems/nautilus_trader**\n  Rust原生生产级交易引擎，确定性事件驱动架构\n  🔗 https://github.com/nautechsystems/nautilus_trader\n\n---\n**🆕 akitaonrails/ai-memory**\n  为AI编程助手提供长期记忆，支持跨厂商智能体交接\n  🔗 https://github.com/akitaonrails/ai-memory\n\n---\n**🆕 mukul975/Anthropic-Cybersecurity-Skills**\n  817项AI安全技能，映射六大主流网络安全框架\n  🔗 https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+   "links": [
+    {
+     "title": "harry0703/MoneyPrinterTurbo",
+     "url": "https://github.com/harry0703/MoneyPrinterTurbo"
+    },
+    {
+     "title": "usestrix/strix",
+     "url": "https://github.com/usestrix/strix"
+    },
+    {
+     "title": "nautechsystems/nautilus_trader",
+     "url": "https://github.com/nautechsystems/nautilus_trader"
+    },
+    {
+     "title": "akitaonrails/ai-memory",
+     "url": "https://github.com/akitaonrails/ai-memory"
+    },
+    {
+     "title": "mukul975/Anthropic-Cybersecurity-Skills",
+     "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-08-18 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-08-18 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-08-18 OpenAI News 发现 3 篇新文章: The Defender’s Window 📅 Mon, 17 Au 原文摘要：AI is reshaping cyber...",
+   "body": "## 2026-08-18 OpenAI News\n\n发现 3 篇新文章:\n\n**The Defender’s Window**\n📅 Mon, 17 Au\n原文摘要：AI is reshaping cybersecurity for attackers and defenders alike. Learn how OpenAI is strengthening its defenses and what security teams can do now.\n🔗 https://openai.com/index/the-defenders-window\n\n---\n\n**OpenAI joins PORTS-Pike project**\n📅 Mon, 17 Au\n原文摘要：OpenAI joins PORTS-Pike project, expanding community investment and supporting thousands of Southern Ohio jobs\n🔗 https://openai.com/index/openai-joins-ports-pike-project\n\n---\n\n**New policy ideas for the Intelligence Age**\n📅 Mon, 17 Au\n原文摘要：OpenAI funds 14 independent projects exploring new AI policy ideas to expand economic opportunity and strengthen societal resilience in the Intelligence Age.\n🔗 https://openai.com/index/new-policy-ideas-for-the-intelligence-age",
+   "links": [
+    {
+     "title": "https://openai.com/index/the-defenders-window",
+     "url": "https://openai.com/index/the-defenders-window"
+    },
+    {
+     "title": "https://openai.com/index/openai-joins-ports-pike-project",
+     "url": "https://openai.com/index/openai-joins-ports-pike-project"
+    },
+    {
+     "title": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age",
+     "url": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "content",
+   "summary": "2026-08-18 LangChain Blog 发现 1 篇新文章: AgentCore Payments middleware for LangChain agents 📅 Mon,...",
+   "body": "## 2026-08-18 LangChain Blog\n\n发现 1 篇新文章:\n\n**AgentCore Payments middleware for LangChain agents**\n📅 Mon, 17 Au\n原文摘要：Let your LangChain agents pay for APIs with deterministic session budgets. AgentCore Payments middleware signs x402 payments; LangSmith traces every one.\n🔗 https://www.langchain.com/blog/langchain-agentcore-payments",
+   "links": [
+    {
+     "title": "https://www.langchain.com/blog/langchain-agentcore-payments",
+     "url": "https://www.langchain.com/blog/langchain-agentcore-payments"
+    }
+   ]
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "content",
+   "summary": "2026-08-18 Hugging Face Blog 发现 1 篇新文章: Same Cluster, 33 Points More Utilization: What Changed...",
+   "body": "## 2026-08-18 Hugging Face Blog\n\n发现 1 篇新文章:\n\n**Same Cluster, 33 Points More Utilization: What Changed Was the Order**\n📅 Mon, 17 Au\n🔗 https://huggingface.co/blog/Dharma-AI/gpu-management-pt2",
+   "links": [
+    {
+     "title": "https://huggingface.co/blog/Dharma-AI/gpu-management-pt2",
+     "url": "https://huggingface.co/blog/Dharma-AI/gpu-management-pt2"
+    }
+   ]
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "content",
+   "summary": "2026-08-18 Google Research 发现 1 篇新文章: Seeing beyond BMI: Estimating cardiometabolic risk with s...",
+   "body": "## 2026-08-18 Google Research\n\n发现 1 篇新文章:\n\n**Seeing beyond BMI: Estimating cardiometabolic risk with smartphone imagery**\n📅 Mon, 17 Au\n原文摘要：General Science\n🔗 https://research.google/blog/seeing-beyond-bmi-estimating-cardiometabolic-risk-with-smartphone-imagery/",
+   "links": [
+    {
+     "title": "https://research.google/blog/seeing-beyond-bmi-estimating-cardiometabolic-risk-with-smartphone-imagery/",
+     "url": "https://research.google/blog/seeing-beyond-bmi-estimating-cardiometabolic-risk-with-smartphone-imagery/"
+    }
+   ]
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-08-18 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-18 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "content",
+   "summary": "2026-08-18 SWE-bench 发现 1 篇新文章: v5.0.0 📅 2026-08-17 原文摘要：Release 5.0.0 🔗 https://github.com/SWE...",
+   "body": "## 2026-08-18 SWE-bench\n\n发现 1 篇新文章:\n\n**v5.0.0**\n📅 2026-08-17\n原文摘要：Release 5.0.0\n🔗 https://github.com/SWE-bench/SWE-bench/releases/tag/v5.0.0",
+   "links": [
+    {
+     "title": "https://github.com/SWE-bench/SWE-bench/releases/tag/v5.0.0",
+     "url": "https://github.com/SWE-bench/SWE-bench/releases/tag/v5.0.0"
+    }
+   ]
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-08-18 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-18 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-08-18 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-08-18 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-08-18T05:32:35+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

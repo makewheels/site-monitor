@@ -1,0 +1,165 @@
+{
+ "date": "2026-09-30",
+ "report_id": "2026-09-30-a7fcd6fd1b",
+ "created_at": "2026-09-30T05:32:21",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-09-30\n\n# 🔥 GitHub Trending\n\n2026-09-30\n\n发现 2 个新项目（共 5 个项目）:\n\n**debpalash/VoiceStudio**\n  开源本地语音克隆与配音神器，完美平替ElevenLabs。\n  🔗 https://github.com/debpalash/VoiceStudio\n\n---\n**🆕 NVIDIA/OpenShell**\n  专为自主AI智能体打造的安全私密运行环境。\n  🔗 https://github.com/NVIDIA/OpenShell\n\n---\n**vectorize-io/hindsight**\n  能让AI智能体从经验中不断学习的超强记忆系统。\n  🔗 https://github.com/vectorize-io/hindsight\n\n---\n**paperclipai/paperclip**\n  打工人都在用的开源AI智能体日常管理神器。\n  🔗 https://github.com/paperclipai/paperclip\n\n---\n**🆕 t8y2/dbx**\n  仅25MB的轻量跨平台数据库客户端，支持上百种库。\n  🔗 https://github.com/t8y2/dbx\n\n## 2026-09-30 Anthropic Engineering\n\n今日无新文章\n\n## 2026-09-30 OpenAI News\n\n发现 5 篇新文章:\n\n**Introducing GPT-6.1 Sol**\n📅 Tue, 29 Se\n原文摘要：Meet GPT-6.1 Sol: near-Astra intelligence for coding, computer use, and professional work at one-fifth of Astra’s standard API input and output token prices.\n🔗 https://openai.com/index/introducing-gpt-6-1-sol\n\n---\n\n**DevDay 2026 Recap**\n📅 Tue, 29 Se\n原文摘要：Explore more than 20 announcements from OpenAI DevDay 2026, including GPT-6 Astra, ChatGPT, Codex, APIs, security, and new tools for builders.\n🔗 https://openai.com/index/devday-2026-recap\n\n---\n\n**Introducing dots**\n📅 Tue, 29 Se\n原文摘要：Dots by OpenAI are a proactive assistant that can keep working across complex projects and everyday tasks. Learn how dots help you stay in control while work moves forward.\n🔗 https://openai.com/index/introducing-dots\n\n---\n\n**How we will do better for Australia**\n📅 Mon, 28 Se\n原文摘要：OpenAI apologises for incidents involving Australian government websites and outlines stronger safeguards and support to strengthen Australia’s cyber defences.\n🔗 https://openai.com/index/how-we-will-do-better-for-australia\n\n---\n\n**Towards safety cases for frontier AI training**\n📅 Mon, 28 Se\n原文摘要：Our early guidelines for safety cases in frontier AI training cover technical safeguards, operational practices, and investigating misalignment incidents\n🔗 https://openai.com/index/towards-safety-cases-for-frontier-ai-training\n\n## 2026-09-30 LangChain Blog\n\n今日无新文章（追踪 20 篇）\n\n## 2026-09-30 Hugging Face Blog\n\n发现 2 篇新文章:\n\n**NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction**\n📅 Tue, 29 Se\n🔗 https://huggingface.co/blog/nvidia/kumo-tabular\n\n---\n\n**Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents**\n📅 Tue, 29 Se\n🔗 https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source\n\n## 2026-09-30 Google Research\n\n发现 1 篇新文章:\n\n**How Diffusion Controller unifies and simplifies AI image generation**\n📅 Tue, 29 Se\n原文摘要：Algorithms & Theory\n🔗 https://research.google/blog/how-diffusion-controller-unifies-and-simplifies-ai-image-generation/\n\n## 2026-09-30 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-09-30 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-09-30 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-09-30 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 10,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-09-30 发现 2 个新项目（共 5 个项目）: debpalash/VoiceStudio 开源本地语音克隆与配音神器，完美平替Eleven...",
+   "body": "# 🔥 GitHub Trending\n\n2026-09-30\n\n发现 2 个新项目（共 5 个项目）:\n\n**debpalash/VoiceStudio**\n  开源本地语音克隆与配音神器，完美平替ElevenLabs。\n  🔗 https://github.com/debpalash/VoiceStudio\n\n---\n**🆕 NVIDIA/OpenShell**\n  专为自主AI智能体打造的安全私密运行环境。\n  🔗 https://github.com/NVIDIA/OpenShell\n\n---\n**vectorize-io/hindsight**\n  能让AI智能体从经验中不断学习的超强记忆系统。\n  🔗 https://github.com/vectorize-io/hindsight\n\n---\n**paperclipai/paperclip**\n  打工人都在用的开源AI智能体日常管理神器。\n  🔗 https://github.com/paperclipai/paperclip\n\n---\n**🆕 t8y2/dbx**\n  仅25MB的轻量跨平台数据库客户端，支持上百种库。\n  🔗 https://github.com/t8y2/dbx",
+   "links": [
+    {
+     "title": "debpalash/VoiceStudio",
+     "url": "https://github.com/debpalash/VoiceStudio"
+    },
+    {
+     "title": "NVIDIA/OpenShell",
+     "url": "https://github.com/NVIDIA/OpenShell"
+    },
+    {
+     "title": "vectorize-io/hindsight",
+     "url": "https://github.com/vectorize-io/hindsight"
+    },
+    {
+     "title": "paperclipai/paperclip",
+     "url": "https://github.com/paperclipai/paperclip"
+    },
+    {
+     "title": "t8y2/dbx",
+     "url": "https://github.com/t8y2/dbx"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-09-30 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-09-30 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-09-30 OpenAI News 发现 5 篇新文章: Introducing GPT-6.1 Sol 📅 Tue, 29 Se 原文摘要：Meet GPT-6.1 Sol: n...",
+   "body": "## 2026-09-30 OpenAI News\n\n发现 5 篇新文章:\n\n**Introducing GPT-6.1 Sol**\n📅 Tue, 29 Se\n原文摘要：Meet GPT-6.1 Sol: near-Astra intelligence for coding, computer use, and professional work at one-fifth of Astra’s standard API input and output token prices.\n🔗 https://openai.com/index/introducing-gpt-6-1-sol\n\n---\n\n**DevDay 2026 Recap**\n📅 Tue, 29 Se\n原文摘要：Explore more than 20 announcements from OpenAI DevDay 2026, including GPT-6 Astra, ChatGPT, Codex, APIs, security, and new tools for builders.\n🔗 https://openai.com/index/devday-2026-recap\n\n---\n\n**Introducing dots**\n📅 Tue, 29 Se\n原文摘要：Dots by OpenAI are a proactive assistant that can keep working across complex projects and everyday tasks. Learn how dots help you stay in control while work moves forward.\n🔗 https://openai.com/index/introducing-dots\n\n---\n\n**How we will do better for Australia**\n📅 Mon, 28 Se\n原文摘要：OpenAI apologises for incidents involving Australian government websites and outlines stronger safeguards and support to strengthen Australia’s cyber defences.\n🔗 https://openai.com/index/how-we-will-do-better-for-australia\n\n---\n\n**Towards safety cases for frontier AI training**\n📅 Mon, 28 Se\n原文摘要：Our early guidelines for safety cases in frontier AI training cover technical safeguards, operational practices, and investigating misalignment incidents\n🔗 https://openai.com/index/towards-safety-cases-for-frontier-ai-training",
+   "links": [
+    {
+     "title": "https://openai.com/index/introducing-gpt-6-1-sol",
+     "url": "https://openai.com/index/introducing-gpt-6-1-sol"
+    },
+    {
+     "title": "https://openai.com/index/devday-2026-recap",
+     "url": "https://openai.com/index/devday-2026-recap"
+    },
+    {
+     "title": "https://openai.com/index/introducing-dots",
+     "url": "https://openai.com/index/introducing-dots"
+    },
+    {
+     "title": "https://openai.com/index/how-we-will-do-better-for-australia",
+     "url": "https://openai.com/index/how-we-will-do-better-for-australia"
+    },
+    {
+     "title": "https://openai.com/index/towards-safety-cases-for-frontier-ai-training",
+     "url": "https://openai.com/index/towards-safety-cases-for-frontier-ai-training"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "no_update",
+   "summary": "2026-09-30 LangChain Blog 今日无新文章（追踪 20 篇）",
+   "body": "## 2026-09-30 LangChain Blog\n\n今日无新文章（追踪 20 篇）",
+   "links": []
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "content",
+   "summary": "2026-09-30 Hugging Face Blog 发现 2 篇新文章: NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Fron...",
+   "body": "## 2026-09-30 Hugging Face Blog\n\n发现 2 篇新文章:\n\n**NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction**\n📅 Tue, 29 Se\n🔗 https://huggingface.co/blog/nvidia/kumo-tabular\n\n---\n\n**Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents**\n📅 Tue, 29 Se\n🔗 https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
+   "links": [
+    {
+     "title": "https://huggingface.co/blog/nvidia/kumo-tabular",
+     "url": "https://huggingface.co/blog/nvidia/kumo-tabular"
+    },
+    {
+     "title": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
+     "url": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source"
+    }
+   ]
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "content",
+   "summary": "2026-09-30 Google Research 发现 1 篇新文章: How Diffusion Controller unifies and simplifies AI image...",
+   "body": "## 2026-09-30 Google Research\n\n发现 1 篇新文章:\n\n**How Diffusion Controller unifies and simplifies AI image generation**\n📅 Tue, 29 Se\n原文摘要：Algorithms & Theory\n🔗 https://research.google/blog/how-diffusion-controller-unifies-and-simplifies-ai-image-generation/",
+   "links": [
+    {
+     "title": "https://research.google/blog/how-diffusion-controller-unifies-and-simplifies-ai-image-generation/",
+     "url": "https://research.google/blog/how-diffusion-controller-unifies-and-simplifies-ai-image-generation/"
+    }
+   ]
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-09-30 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-09-30 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-09-30 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-09-30 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-09-30 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-09-30 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-09-30 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-09-30 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-09-30T05:32:26+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

@@ -64,11 +64,12 @@ jobs:
           trap cleanup EXIT HUP INT TERM
           uv run python daily_summary.py 2>&1 | tee "$log_file"
           grep -Eq '发送成功 [(]feishu[)]|^发送跳过: trending_off_day$' "$log_file"
+          uv run python scripts/export_daily_json.py --date "$(date +%F)"
           cd "$GITHUB_WORKSPACE"
           if ! git diff --quiet -- monitor/data/; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add -f monitor/data/*.json
+            git add -f monitor/data/
             git commit -m "更新监控去重状态"
             git push
           fi

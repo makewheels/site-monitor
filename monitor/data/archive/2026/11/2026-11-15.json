@@ -1,0 +1,58 @@
+{
+ "date": "2026-11-15",
+ "report_id": "2026-11-15-2265b0e237",
+ "created_at": "2026-11-15T05:30:36",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-11-15\n\n# 🔥 GitHub Trending\n\n2026-11-15\n\n发现 3 个新项目（共 5 个项目）:\n\n**🆕 backnotprop/plannotator**\n  给智能体用的协作工作台，支持标注、审阅代码并回传反馈\n  🔗 https://github.com/backnotprop/plannotator\n\n---\n**GoogleChrome/modern-web-guidance-src**\n  让编程助手实时掌握最新 Web 开发最佳实践\n  🔗 https://github.com/GoogleChrome/modern-web-guidance-src\n\n---\n**🆕 tradermonty/claude-trading-skills**\n  面向股票投资者的 Claude 技能集，涵盖行情分析、看图与选股\n  🔗 https://github.com/tradermonty/claude-trading-skills\n\n---\n**🆕 ChromeDevTools/chrome-devtools-mcp**\n  把 Chrome 开发者工具接入编程智能体，方便调试网页\n  🔗 https://github.com/ChromeDevTools/chrome-devtools-mcp\n\n---\n**alibaba/open-code-review**\n  阿里大规模实战的混合架构代码审查，规则流水线加 LLM 精准定位\n  🔗 https://github.com/alibaba/open-code-review\n\n## 2026-11-15 Anthropic Engineering\n\n今日无新文章",
+ "item_count": 2,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-11-15 发现 3 个新项目（共 5 个项目）: 🆕 backnotprop/plannotator 给智能体用的协作工作台，支持标注、审阅代...",
+   "body": "# 🔥 GitHub Trending\n\n2026-11-15\n\n发现 3 个新项目（共 5 个项目）:\n\n**🆕 backnotprop/plannotator**\n  给智能体用的协作工作台，支持标注、审阅代码并回传反馈\n  🔗 https://github.com/backnotprop/plannotator\n\n---\n**GoogleChrome/modern-web-guidance-src**\n  让编程助手实时掌握最新 Web 开发最佳实践\n  🔗 https://github.com/GoogleChrome/modern-web-guidance-src\n\n---\n**🆕 tradermonty/claude-trading-skills**\n  面向股票投资者的 Claude 技能集，涵盖行情分析、看图与选股\n  🔗 https://github.com/tradermonty/claude-trading-skills\n\n---\n**🆕 ChromeDevTools/chrome-devtools-mcp**\n  把 Chrome 开发者工具接入编程智能体，方便调试网页\n  🔗 https://github.com/ChromeDevTools/chrome-devtools-mcp\n\n---\n**alibaba/open-code-review**\n  阿里大规模实战的混合架构代码审查，规则流水线加 LLM 精准定位\n  🔗 https://github.com/alibaba/open-code-review",
+   "links": [
+    {
+     "title": "backnotprop/plannotator",
+     "url": "https://github.com/backnotprop/plannotator"
+    },
+    {
+     "title": "GoogleChrome/modern-web-guidance-src",
+     "url": "https://github.com/GoogleChrome/modern-web-guidance-src"
+    },
+    {
+     "title": "tradermonty/claude-trading-skills",
+     "url": "https://github.com/tradermonty/claude-trading-skills"
+    },
+    {
+     "title": "ChromeDevTools/chrome-devtools-mcp",
+     "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
+    },
+    {
+     "title": "alibaba/open-code-review",
+     "url": "https://github.com/alibaba/open-code-review"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-11-15 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-11-15 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-11-15T05:30:39+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

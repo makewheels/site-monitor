@@ -1,0 +1,142 @@
+{
+ "date": "2026-07-14",
+ "report_id": "2026-07-14-ee4a8b865a",
+ "created_at": "2026-07-14T07:57:01",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-07-14\n\n# 🔥 GitHub Trending\n\n2026-07-14\n\n发现 3 个新项目（共 5 个项目）:\n\n**🆕 OpenCut-app/OpenCut**\n  开源版剪映，功能对标CapCut的视频剪辑工具\n  🔗 https://github.com/OpenCut-app/OpenCut\n\n---\n**HKUDS/Vibe-Trading**\n  AI驱动的个人交易代理，帮你自动化操盘\n  🔗 https://github.com/HKUDS/Vibe-Trading\n\n---\n**🆕 moeru-ai/airi**\n  自托管的AI伴侣，把二次元老婆带进现实\n  🔗 https://github.com/moeru-ai/airi\n\n---\n**Shubhamsaboo/awesome-llm-apps**\n  一百多个能直接跑的大模型应用合集，拿来就用\n  🔗 https://github.com/Shubhamsaboo/awesome-llm-apps\n\n---\n**🆕 Nutlope/hallmark**\n  给Claude Code等AI编程工具的反AI味设计技能\n  🔗 https://github.com/Nutlope/hallmark\n\n## 2026-07-14 Anthropic Engineering\n\n今日无新文章\n\n## 2026-07-14 OpenAI News\n\n发现 1 篇新文章:\n\n**Getting started with ChatGPT**\n📅 Fri, 10 Ju\n原文摘要：Learn how to use ChatGPT, start your first conversation, and discover simple ways to write, brainstorm, and solve problems with AI.\n🔗 https://openai.com/academy/getting-started\n\n## 2026-07-14 LangChain Blog\n\n今日无新文章（追踪 20 篇）\n\n## 2026-07-14 GitHub Copilot CLI\n\n无更新，当前版本: 1.0.70\n\n## 2026-07-14 Hugging Face Blog\n\n今日无新文章(追踪 20 篇)\n\n## 2026-07-14 Google Research\n\n今日无新文章(追踪 20 篇)\n\n## 2026-07-14 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-07-14 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-07-14 Trail of Bits\n\n发现 1 篇新文章:\n\n**Rust-proof your code with our new Testing Handbook chapter**\n📅 Mon, 13 Ju\n原文摘要：We’ve added a new chapter to our Testing Handbook : a comprehensive guide to security testing Rust programs. This chapter covers the tools and techniques we use at Trail of Bits to validate the security of Rust programs and systems. fn main () {( | f: & dyn Fn ( u128 )-> Box < dyn Iterator < Item = char >+ 'static >| f( * [ & ( 0x7B736D70683F73 u128 << 64 | 0x7A6A6D7C3F7A667D ), & ( 0x7B736D u128 << 64 | 0x70683F7073737A77 )][((std::hint:: black_box ( 0.0 f64 ) / 0.0 ).to_bits() >> 63 ) as usize ]) .for_each( | c | print! ( \" {c} \" )))( Box ::leak( Box ::new( | n: u128 | Box ::new(std::iter::successors( Some (n), |& n | Some (n >> 8 ) ).take_while( |& n | n > 0 ).map( | n | ((n as u8 ) ^ 0x1F ) as char )) as _)))} What’s in the chapter The chapter starts with a security overview of what Rust’s guarantees do and don’t cover, including underappreciated issues like unwind safety, nondeterminism, and arithmetic errors. This leads into an overview of dynamic analysis, which covers a range of boosters for unit tests, how to use Miri to detect undefined behavior, property testing with proptest , coverage measurement, and mutation testing. The static analysis section then covers Clippy in depth, including a list of our favorite lints. Beyond tooling, the chapter also covers what we’ve learned from auditing Rust codebases directly. Our gotchas and footguns checklist is a great reference for manual code reviews, and will help you find subtle issues like a & b == c having different operator precedence than in C. The memory zeroization section offers three solutions to the tricky problem of guaranteeing that secrets are erased from memory. Finally, the specialized testing sections cover tools like Kani (a model checker), and the supply chain section covers the full toolchain for vetting dependencies. Still oxidizing We’ve also released rust-review , a Claude Code plugin for automated Rust security reviews. Co-built with Aptos Labs, it targets over a dozen bug classes, from memo\n🔗 https://blog.trailofbits.com/2026/07/13/rust-proof-your-code-with-our-new-testing-handbook-chapter/\n\n## 2026-07-14 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 11,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-07-14 发现 3 个新项目（共 5 个项目）: 🆕 OpenCut-app/OpenCut 开源版剪映，功能对标CapCut的视频剪辑工具...",
+   "body": "# 🔥 GitHub Trending\n\n2026-07-14\n\n发现 3 个新项目（共 5 个项目）:\n\n**🆕 OpenCut-app/OpenCut**\n  开源版剪映，功能对标CapCut的视频剪辑工具\n  🔗 https://github.com/OpenCut-app/OpenCut\n\n---\n**HKUDS/Vibe-Trading**\n  AI驱动的个人交易代理，帮你自动化操盘\n  🔗 https://github.com/HKUDS/Vibe-Trading\n\n---\n**🆕 moeru-ai/airi**\n  自托管的AI伴侣，把二次元老婆带进现实\n  🔗 https://github.com/moeru-ai/airi\n\n---\n**Shubhamsaboo/awesome-llm-apps**\n  一百多个能直接跑的大模型应用合集，拿来就用\n  🔗 https://github.com/Shubhamsaboo/awesome-llm-apps\n\n---\n**🆕 Nutlope/hallmark**\n  给Claude Code等AI编程工具的反AI味设计技能\n  🔗 https://github.com/Nutlope/hallmark",
+   "links": [
+    {
+     "title": "https://github.com/OpenCut-app/OpenCut",
+     "url": "https://github.com/OpenCut-app/OpenCut"
+    },
+    {
+     "title": "https://github.com/HKUDS/Vibe-Trading",
+     "url": "https://github.com/HKUDS/Vibe-Trading"
+    },
+    {
+     "title": "https://github.com/moeru-ai/airi",
+     "url": "https://github.com/moeru-ai/airi"
+    },
+    {
+     "title": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+     "url": "https://github.com/Shubhamsaboo/awesome-llm-apps"
+    },
+    {
+     "title": "https://github.com/Nutlope/hallmark",
+     "url": "https://github.com/Nutlope/hallmark"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-07-14 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-07-14 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-07-14 OpenAI News 发现 1 篇新文章: Getting started with ChatGPT 📅 Fri, 10 Ju 原文摘要：Learn how to u...",
+   "body": "## 2026-07-14 OpenAI News\n\n发现 1 篇新文章:\n\n**Getting started with ChatGPT**\n📅 Fri, 10 Ju\n原文摘要：Learn how to use ChatGPT, start your first conversation, and discover simple ways to write, brainstorm, and solve problems with AI.\n🔗 https://openai.com/academy/getting-started",
+   "links": [
+    {
+     "title": "https://openai.com/academy/getting-started",
+     "url": "https://openai.com/academy/getting-started"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "no_update",
+   "summary": "2026-07-14 LangChain Blog 今日无新文章（追踪 20 篇）",
+   "body": "## 2026-07-14 LangChain Blog\n\n今日无新文章（追踪 20 篇）",
+   "links": []
+  },
+  {
+   "topic": "github_copilot_cli",
+   "topic_name": "GitHub Copilot CLI",
+   "title": "GitHub Copilot CLI",
+   "status": "no_update",
+   "summary": "2026-07-14 GitHub Copilot CLI 无更新，当前版本: 1.0.70",
+   "body": "## 2026-07-14 GitHub Copilot CLI\n\n无更新，当前版本: 1.0.70",
+   "links": []
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "no_update",
+   "summary": "2026-07-14 Hugging Face Blog 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-07-14 Hugging Face Blog\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "no_update",
+   "summary": "2026-07-14 Google Research 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-07-14 Google Research\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-07-14 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-07-14 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-07-14 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-07-14 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "content",
+   "summary": "2026-07-14 Trail of Bits 发现 1 篇新文章: Rust-proof your code with our new Testing Handbook chapter...",
+   "body": "## 2026-07-14 Trail of Bits\n\n发现 1 篇新文章:\n\n**Rust-proof your code with our new Testing Handbook chapter**\n📅 Mon, 13 Ju\n原文摘要：We’ve added a new chapter to our Testing Handbook : a comprehensive guide to security testing Rust programs. This chapter covers the tools and techniques we use at Trail of Bits to validate the security of Rust programs and systems. fn main () {( | f: & dyn Fn ( u128 )-> Box < dyn Iterator < Item = char >+ 'static >| f( * [ & ( 0x7B736D70683F73 u128 << 64 | 0x7A6A6D7C3F7A667D ), & ( 0x7B736D u128 << 64 | 0x70683F7073737A77 )][((std::hint:: black_box ( 0.0 f64 ) / 0.0 ).to_bits() >> 63 ) as usize ]) .for_each( | c | print! ( \" {c} \" )))( Box ::leak( Box ::new( | n: u128 | Box ::new(std::iter::successors( Some (n), |& n | Some (n >> 8 ) ).take_while( |& n | n > 0 ).map( | n | ((n as u8 ) ^ 0x1F ) as char )) as _)))} What’s in the chapter The chapter starts with a security overview of what Rust’s guarantees do and don’t cover, including underappreciated issues like unwind safety, nondeterminism, and arithmetic errors. This leads into an overview of dynamic analysis, which covers a range of boosters for unit tests, how to use Miri to detect undefined behavior, property testing with proptest , coverage measurement, and mutation testing. The static analysis section then covers Clippy in depth, including a list of our favorite lints. Beyond tooling, the chapter also covers what we’ve learned from auditing Rust codebases directly. Our gotchas and footguns checklist is a great reference for manual code reviews, and will help you find subtle issues like a & b == c having different operator precedence than in C. The memory zeroization section offers three solutions to the tricky problem of guaranteeing that secrets are erased from memory. Finally, the specialized testing sections cover tools like Kani (a model checker), and the supply chain section covers the full toolchain for vetting dependencies. Still oxidizing We’ve also released rust-review , a Claude Code plugin for automated Rust security reviews. Co-built with Aptos Labs, it targets over a dozen bug classes, from memo\n🔗 https://blog.trailofbits.com/2026/07/13/rust-proof-your-code-with-our-new-testing-handbook-chapter/",
+   "links": [
+    {
+     "title": "https://blog.trailofbits.com/2026/07/13/rust-proof-your-code-with-our-new-testing-handbook-chapter/",
+     "url": "https://blog.trailofbits.com/2026/07/13/rust-proof-your-code-with-our-new-testing-handbook-chapter/"
+    }
+   ]
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-07-14 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-07-14 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": []
+}

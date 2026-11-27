@@ -1,0 +1,147 @@
+{
+ "date": "2026-09-17",
+ "report_id": "2026-09-17-b913a45a96",
+ "created_at": "2026-09-17T05:31:54",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-09-17\n\n# 🔥 GitHub Trending\n\n2026-09-17\n\n发现 3 个新项目（共 5 个项目）:\n\n**alibaba/open-code-review**\n  阿里出品高效代码审查工具，结合流水线与大模型，精准到行级。\n  🔗 https://github.com/alibaba/open-code-review\n\n---\n**🆕 cloudflare/security-audit-skill**\n  给编程智能体用的安全审计技能，多阶段审计，结果机器可读。\n  🔗 https://github.com/cloudflare/security-audit-skill\n\n---\n**JustVugg/colibri**\n  纯C无依赖的轻量引擎，硬盘流式加载，本地就能跑混合专家模型。\n  🔗 https://github.com/JustVugg/colibri\n\n---\n**🆕 abue-ammar/tinycast**\n  超轻量的原生苹果系统启动器，自带快捷键和剪贴板历史记录。\n  🔗 https://github.com/abue-ammar/tinycast\n\n---\n**🆕 jamiepine/voicebox**\n  开源的AI语音工作室，能克隆声音、语音听写，还能搞创作。\n  🔗 https://github.com/jamiepine/voicebox\n\n## 2026-09-17 Anthropic Engineering\n\n今日无新文章\n\n## 2026-09-17 OpenAI News\n\n发现 4 篇新文章:\n\n**Helping older adults use AI in everyday life**\n📅 Wed, 16 Se\n原文摘要：OpenAI and AARP are bringing free, hands-on ChatGPT workshops to 1,000 older adults across 10 U.S. cities to build practical AI skills safely.\n🔗 https://openai.com/index/helping-older-adults-use-ai-in-everyday-life\n\n---\n\n**Reimagining advertising with AI**\n📅 Wed, 16 Se\n原文摘要：Explore new AI-powered advertising experiences from OpenAI, including Sponsored Agents, tools for marketers, and integrations with HubSpot and Shopify.\n🔗 https://openai.com/index/reimagining-advertising-with-ai\n\n---\n\n**How to connect AI usage to business value**\n📅 Wed, 16 Se\n原文摘要：Learn how ChatGPT Work and Codex analytics help teams understand AI usage and spend, identify training needs, and connect adoption to business outcomes.\n🔗 https://openai.com/index/how-to-connect-ai-usage-to-business-value\n\n---\n\n**How workers are unlocking new ways of working**\n📅 Wed, 16 Se\n原文摘要：New OpenAI Economic Research shows how workers use AI beyond traditional roles and which new activities become recurring parts of their work.\n🔗 https://openai.com/index/unlocking-new-ways-of-working\n\n## 2026-09-17 LangChain Blog\n\n今日无新文章（追踪 20 篇）\n\n## 2026-09-17 Hugging Face Blog\n\n今日无新文章(追踪 20 篇)\n\n## 2026-09-17 Google Research\n\n今日无新文章(追踪 20 篇)\n\n## 2026-09-17 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-09-17 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-09-17 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-09-17 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 10,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-09-17 发现 3 个新项目（共 5 个项目）: alibaba/open-code-review 阿里出品高效代码审查工具，结合流水线与大模...",
+   "body": "# 🔥 GitHub Trending\n\n2026-09-17\n\n发现 3 个新项目（共 5 个项目）:\n\n**alibaba/open-code-review**\n  阿里出品高效代码审查工具，结合流水线与大模型，精准到行级。\n  🔗 https://github.com/alibaba/open-code-review\n\n---\n**🆕 cloudflare/security-audit-skill**\n  给编程智能体用的安全审计技能，多阶段审计，结果机器可读。\n  🔗 https://github.com/cloudflare/security-audit-skill\n\n---\n**JustVugg/colibri**\n  纯C无依赖的轻量引擎，硬盘流式加载，本地就能跑混合专家模型。\n  🔗 https://github.com/JustVugg/colibri\n\n---\n**🆕 abue-ammar/tinycast**\n  超轻量的原生苹果系统启动器，自带快捷键和剪贴板历史记录。\n  🔗 https://github.com/abue-ammar/tinycast\n\n---\n**🆕 jamiepine/voicebox**\n  开源的AI语音工作室，能克隆声音、语音听写，还能搞创作。\n  🔗 https://github.com/jamiepine/voicebox",
+   "links": [
+    {
+     "title": "alibaba/open-code-review",
+     "url": "https://github.com/alibaba/open-code-review"
+    },
+    {
+     "title": "cloudflare/security-audit-skill",
+     "url": "https://github.com/cloudflare/security-audit-skill"
+    },
+    {
+     "title": "JustVugg/colibri",
+     "url": "https://github.com/JustVugg/colibri"
+    },
+    {
+     "title": "abue-ammar/tinycast",
+     "url": "https://github.com/abue-ammar/tinycast"
+    },
+    {
+     "title": "jamiepine/voicebox",
+     "url": "https://github.com/jamiepine/voicebox"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-09-17 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-09-17 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-09-17 OpenAI News 发现 4 篇新文章: Helping older adults use AI in everyday life 📅 Wed, 16 Se 原文摘...",
+   "body": "## 2026-09-17 OpenAI News\n\n发现 4 篇新文章:\n\n**Helping older adults use AI in everyday life**\n📅 Wed, 16 Se\n原文摘要：OpenAI and AARP are bringing free, hands-on ChatGPT workshops to 1,000 older adults across 10 U.S. cities to build practical AI skills safely.\n🔗 https://openai.com/index/helping-older-adults-use-ai-in-everyday-life\n\n---\n\n**Reimagining advertising with AI**\n📅 Wed, 16 Se\n原文摘要：Explore new AI-powered advertising experiences from OpenAI, including Sponsored Agents, tools for marketers, and integrations with HubSpot and Shopify.\n🔗 https://openai.com/index/reimagining-advertising-with-ai\n\n---\n\n**How to connect AI usage to business value**\n📅 Wed, 16 Se\n原文摘要：Learn how ChatGPT Work and Codex analytics help teams understand AI usage and spend, identify training needs, and connect adoption to business outcomes.\n🔗 https://openai.com/index/how-to-connect-ai-usage-to-business-value\n\n---\n\n**How workers are unlocking new ways of working**\n📅 Wed, 16 Se\n原文摘要：New OpenAI Economic Research shows how workers use AI beyond traditional roles and which new activities become recurring parts of their work.\n🔗 https://openai.com/index/unlocking-new-ways-of-working",
+   "links": [
+    {
+     "title": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life",
+     "url": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life"
+    },
+    {
+     "title": "https://openai.com/index/reimagining-advertising-with-ai",
+     "url": "https://openai.com/index/reimagining-advertising-with-ai"
+    },
+    {
+     "title": "https://openai.com/index/how-to-connect-ai-usage-to-business-value",
+     "url": "https://openai.com/index/how-to-connect-ai-usage-to-business-value"
+    },
+    {
+     "title": "https://openai.com/index/unlocking-new-ways-of-working",
+     "url": "https://openai.com/index/unlocking-new-ways-of-working"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "no_update",
+   "summary": "2026-09-17 LangChain Blog 今日无新文章（追踪 20 篇）",
+   "body": "## 2026-09-17 LangChain Blog\n\n今日无新文章（追踪 20 篇）",
+   "links": []
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "no_update",
+   "summary": "2026-09-17 Hugging Face Blog 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-09-17 Hugging Face Blog\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "no_update",
+   "summary": "2026-09-17 Google Research 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-09-17 Google Research\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-09-17 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-09-17 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-09-17 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-09-17 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-09-17 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-09-17 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-09-17 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-09-17 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-09-17T05:32:00+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

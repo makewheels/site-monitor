@@ -1,0 +1,162 @@
+{
+ "date": "2026-08-01",
+ "report_id": "2026-08-01-633d6f9a90",
+ "created_at": "2026-08-01T06:31:57",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-08-01\n\n# 🔥 GitHub Trending\n\n2026-08-01\n\n发现 2 个新项目（共 5 个项目）:\n\n**🆕 zhaoxuya520/reverse-skill**\n  AI驱动的逆向工程技能路由，按需启动工具链\n  🔗 https://github.com/zhaoxuya520/reverse-skill\n\n---\n**different-ai/openwork**\n  开源版Claude Cowork，基于opencode构建\n  🔗 https://github.com/different-ai/openwork\n\n---\n**🆕 mvanhorn/last30days-skill**\n  AI代理跨平台研究任意话题并生成摘要\n  🔗 https://github.com/mvanhorn/last30days-skill\n\n---\n**paperswithbacktest/awesome-systematic-trading**\n  系统化交易资源合集，含策略、库、教程等\n  🔗 https://github.com/paperswithbacktest/awesome-systematic-trading\n\n---\n**microsoft/AI-For-Beginners**\n  微软出品，12周24课零基础学AI\n  🔗 https://github.com/microsoft/AI-For-Beginners\n\n## 2026-08-01 Anthropic Engineering\n\n今日无新文章\n\n## 2026-08-01 OpenAI News\n\n发现 5 篇新文章:\n\n**Advancing responsible AI across Europe**\n📅 Fri, 31 Ju\n原文摘要：OpenAI shares how its safety, security, transparency, and provenance practices support responsible AI governance in Europe. The work will continue as the EU AI Act advances.\n🔗 https://openai.com/index/advancing-responsible-ai-across-europe\n\n---\n\n**Building abundant intelligence**\n📅 Fri, 31 Ju\n原文摘要：A full-stack approach to making advanced AI more capable, more affordable, and more widely useful.\n🔗 https://openai.com/index/building-abundant-intelligence\n\n---\n\n**Univé builds an AI-ready workforce**\n📅 Fri, 31 Ju\n原文摘要：See how Univé built an AI-ready workforce with ChatGPT Enterprise by combining leadership, responsible governance, and employee-led innovation to transform work at scale.\n🔗 https://openai.com/index/unive\n\n---\n\n**Disrupting a Criminal Scam Operation**\n📅 Fri, 31 Ju\n原文摘要：OpenAI disrupted a Cambodia-based scam operation using ChatGPT to support investment, romance, gambling, and impersonation schemes.\n🔗 https://openai.com/index/disrupting-malicious-uses-of-ai-criminal-scam-operation\n\n---\n\n**How avatarin built a 24/7 retail agent with GPT-Realtime**\n📅 Thu, 30 Ju\n原文摘要：avatarin uses OpenAI’s GPT-Realtime to give Yamada Denki shoppers 24/7 multilingual support. In two weeks, 30,000 people used the agent and 92% of survey responses were positive.\n🔗 https://openai.com/index/avatarin\n\n## 2026-08-01 LangChain Blog\n\n发现 2 篇新文章:\n\n**Evaluating code review agents with ReviewBench**\n📅 Fri, 31 Ju\n原文摘要：Learn how LangChain built ReviewBench, a benchmark for evaluating code review agents against real PR feedback from trusted reviewers.\n🔗 https://www.langchain.com/blog/evaluating-code-review-agents-with-reviewbench\n\n---\n\n**Introducing Align Evals: Streamlining LLM Application Evaluation**\n📅 Thu, 30 Ju\n原文摘要：Align Evals is a new feature in LangSmith that helps you calibrate your evaluators to better match human preferences.\n🔗 https://www.langchain.com/blog/introducing-align-evals\n\n## 2026-08-01 GitHub Copilot CLI\n\n## 1.0.77 - 2026-07-30\n\n- Unconditional autopilot approval now disables sandbox for the current session when bypass is allowed\n- Ctrl+G opens your editor to edit ask_user freeform answers without closing the prompt\n- Add a browser-based (web) OAuth login flow, now the default for `copilot login` on local interactive terminals (device code remains the default on remote/headless terminals). Use `--web-flow`/`--device-code` to force a mode, or pick one in the interactive `/login` command\n- Support enforcing managed sandbox policy via macOS and Windows native MDM settings\n- Allow reasoning effort to be omitted so the server can select the default\n\n## 2026-08-01 Hugging Face Blog\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-01 Google Research\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-01 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-01 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-08-01 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-08-01 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 11,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-08-01 发现 2 个新项目（共 5 个项目）: 🆕 zhaoxuya520/reverse-skill AI驱动的逆向工程技能路由，按需启动...",
+   "body": "# 🔥 GitHub Trending\n\n2026-08-01\n\n发现 2 个新项目（共 5 个项目）:\n\n**🆕 zhaoxuya520/reverse-skill**\n  AI驱动的逆向工程技能路由，按需启动工具链\n  🔗 https://github.com/zhaoxuya520/reverse-skill\n\n---\n**different-ai/openwork**\n  开源版Claude Cowork，基于opencode构建\n  🔗 https://github.com/different-ai/openwork\n\n---\n**🆕 mvanhorn/last30days-skill**\n  AI代理跨平台研究任意话题并生成摘要\n  🔗 https://github.com/mvanhorn/last30days-skill\n\n---\n**paperswithbacktest/awesome-systematic-trading**\n  系统化交易资源合集，含策略、库、教程等\n  🔗 https://github.com/paperswithbacktest/awesome-systematic-trading\n\n---\n**microsoft/AI-For-Beginners**\n  微软出品，12周24课零基础学AI\n  🔗 https://github.com/microsoft/AI-For-Beginners",
+   "links": [
+    {
+     "title": "https://github.com/zhaoxuya520/reverse-skill",
+     "url": "https://github.com/zhaoxuya520/reverse-skill"
+    },
+    {
+     "title": "https://github.com/different-ai/openwork",
+     "url": "https://github.com/different-ai/openwork"
+    },
+    {
+     "title": "https://github.com/mvanhorn/last30days-skill",
+     "url": "https://github.com/mvanhorn/last30days-skill"
+    },
+    {
+     "title": "https://github.com/paperswithbacktest/awesome-systematic-trading",
+     "url": "https://github.com/paperswithbacktest/awesome-systematic-trading"
+    },
+    {
+     "title": "https://github.com/microsoft/AI-For-Beginners",
+     "url": "https://github.com/microsoft/AI-For-Beginners"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-08-01 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-08-01 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-08-01 OpenAI News 发现 5 篇新文章: Advancing responsible AI across Europe 📅 Fri, 31 Ju 原文摘要：Open...",
+   "body": "## 2026-08-01 OpenAI News\n\n发现 5 篇新文章:\n\n**Advancing responsible AI across Europe**\n📅 Fri, 31 Ju\n原文摘要：OpenAI shares how its safety, security, transparency, and provenance practices support responsible AI governance in Europe. The work will continue as the EU AI Act advances.\n🔗 https://openai.com/index/advancing-responsible-ai-across-europe\n\n---\n\n**Building abundant intelligence**\n📅 Fri, 31 Ju\n原文摘要：A full-stack approach to making advanced AI more capable, more affordable, and more widely useful.\n🔗 https://openai.com/index/building-abundant-intelligence\n\n---\n\n**Univé builds an AI-ready workforce**\n📅 Fri, 31 Ju\n原文摘要：See how Univé built an AI-ready workforce with ChatGPT Enterprise by combining leadership, responsible governance, and employee-led innovation to transform work at scale.\n🔗 https://openai.com/index/unive\n\n---\n\n**Disrupting a Criminal Scam Operation**\n📅 Fri, 31 Ju\n原文摘要：OpenAI disrupted a Cambodia-based scam operation using ChatGPT to support investment, romance, gambling, and impersonation schemes.\n🔗 https://openai.com/index/disrupting-malicious-uses-of-ai-criminal-scam-operation\n\n---\n\n**How avatarin built a 24/7 retail agent with GPT-Realtime**\n📅 Thu, 30 Ju\n原文摘要：avatarin uses OpenAI’s GPT-Realtime to give Yamada Denki shoppers 24/7 multilingual support. In two weeks, 30,000 people used the agent and 92% of survey responses were positive.\n🔗 https://openai.com/index/avatarin",
+   "links": [
+    {
+     "title": "https://openai.com/index/advancing-responsible-ai-across-europe",
+     "url": "https://openai.com/index/advancing-responsible-ai-across-europe"
+    },
+    {
+     "title": "https://openai.com/index/building-abundant-intelligence",
+     "url": "https://openai.com/index/building-abundant-intelligence"
+    },
+    {
+     "title": "https://openai.com/index/unive",
+     "url": "https://openai.com/index/unive"
+    },
+    {
+     "title": "https://openai.com/index/disrupting-malicious-uses-of-ai-criminal-scam-operation",
+     "url": "https://openai.com/index/disrupting-malicious-uses-of-ai-criminal-scam-operation"
+    },
+    {
+     "title": "https://openai.com/index/avatarin",
+     "url": "https://openai.com/index/avatarin"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "content",
+   "summary": "2026-08-01 LangChain Blog 发现 2 篇新文章: Evaluating code review agents with ReviewBench 📅 Fri, 31 J...",
+   "body": "## 2026-08-01 LangChain Blog\n\n发现 2 篇新文章:\n\n**Evaluating code review agents with ReviewBench**\n📅 Fri, 31 Ju\n原文摘要：Learn how LangChain built ReviewBench, a benchmark for evaluating code review agents against real PR feedback from trusted reviewers.\n🔗 https://www.langchain.com/blog/evaluating-code-review-agents-with-reviewbench\n\n---\n\n**Introducing Align Evals: Streamlining LLM Application Evaluation**\n📅 Thu, 30 Ju\n原文摘要：Align Evals is a new feature in LangSmith that helps you calibrate your evaluators to better match human preferences.\n🔗 https://www.langchain.com/blog/introducing-align-evals",
+   "links": [
+    {
+     "title": "https://www.langchain.com/blog/evaluating-code-review-agents-with-reviewbench",
+     "url": "https://www.langchain.com/blog/evaluating-code-review-agents-with-reviewbench"
+    },
+    {
+     "title": "https://www.langchain.com/blog/introducing-align-evals",
+     "url": "https://www.langchain.com/blog/introducing-align-evals"
+    }
+   ]
+  },
+  {
+   "topic": "github_copilot_cli",
+   "topic_name": "GitHub Copilot CLI",
+   "title": "GitHub Copilot CLI",
+   "status": "note",
+   "summary": "2026-08-01 GitHub Copilot CLI 1.0.77 - 2026-07-30 Unconditional autopilot approval now disables...",
+   "body": "## 2026-08-01 GitHub Copilot CLI\n\n## 1.0.77 - 2026-07-30\n\n- Unconditional autopilot approval now disables sandbox for the current session when bypass is allowed\n- Ctrl+G opens your editor to edit ask_user freeform answers without closing the prompt\n- Add a browser-based (web) OAuth login flow, now the default for `copilot login` on local interactive terminals (device code remains the default on remote/headless terminals). Use `--web-flow`/`--device-code` to force a mode, or pick one in the interactive `/login` command\n- Support enforcing managed sandbox policy via macOS and Windows native MDM settings\n- Allow reasoning effort to be omitted so the server can select the default",
+   "links": []
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "no_update",
+   "summary": "2026-08-01 Hugging Face Blog 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-01 Hugging Face Blog\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "no_update",
+   "summary": "2026-08-01 Google Research 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-01 Google Research\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-08-01 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-01 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-08-01 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-08-01 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-08-01 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-08-01 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-08-01 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-08-01 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": []
+}

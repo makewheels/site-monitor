@@ -1,0 +1,58 @@
+{
+ "date": "2026-11-13",
+ "report_id": "2026-11-13-6909134f2f",
+ "created_at": "2026-11-13T05:31:08",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-11-13\n\n# 🔥 GitHub Trending\n\n2026-11-13\n\n发现 4 个新项目（共 5 个项目）:\n\n**GoogleChrome/modern-web-guidance-src**\n  帮编程智能体随时掌握最新Web开发规范\n  🔗 https://github.com/GoogleChrome/modern-web-guidance-src\n\n---\n**🆕 openai/codex-security**\n  帮你自动发现、验证并修复代码安全漏洞的利器\n  🔗 https://github.com/openai/codex-security\n\n---\n**🆕 nvm-sh/nvm**\n  轻松管理和切换多个Node.js版本的脚本工具\n  🔗 https://github.com/nvm-sh/nvm\n\n---\n**🆕 pookjw/HermesEnabler**\n  让任意苹果手表都能用上爱马仕专属表盘\n  🔗 https://github.com/pookjw/HermesEnabler\n\n---\n**🆕 we-promise/sure**\n  一款人人参与开发的个人财务管理应用\n  🔗 https://github.com/we-promise/sure\n\n## 2026-11-13 Anthropic Engineering\n\n今日无新文章",
+ "item_count": 2,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-11-13 发现 4 个新项目（共 5 个项目）: GoogleChrome/modern-web-guidance-src 帮编程智能体随时掌...",
+   "body": "# 🔥 GitHub Trending\n\n2026-11-13\n\n发现 4 个新项目（共 5 个项目）:\n\n**GoogleChrome/modern-web-guidance-src**\n  帮编程智能体随时掌握最新Web开发规范\n  🔗 https://github.com/GoogleChrome/modern-web-guidance-src\n\n---\n**🆕 openai/codex-security**\n  帮你自动发现、验证并修复代码安全漏洞的利器\n  🔗 https://github.com/openai/codex-security\n\n---\n**🆕 nvm-sh/nvm**\n  轻松管理和切换多个Node.js版本的脚本工具\n  🔗 https://github.com/nvm-sh/nvm\n\n---\n**🆕 pookjw/HermesEnabler**\n  让任意苹果手表都能用上爱马仕专属表盘\n  🔗 https://github.com/pookjw/HermesEnabler\n\n---\n**🆕 we-promise/sure**\n  一款人人参与开发的个人财务管理应用\n  🔗 https://github.com/we-promise/sure",
+   "links": [
+    {
+     "title": "GoogleChrome/modern-web-guidance-src",
+     "url": "https://github.com/GoogleChrome/modern-web-guidance-src"
+    },
+    {
+     "title": "openai/codex-security",
+     "url": "https://github.com/openai/codex-security"
+    },
+    {
+     "title": "nvm-sh/nvm",
+     "url": "https://github.com/nvm-sh/nvm"
+    },
+    {
+     "title": "pookjw/HermesEnabler",
+     "url": "https://github.com/pookjw/HermesEnabler"
+    },
+    {
+     "title": "we-promise/sure",
+     "url": "https://github.com/we-promise/sure"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-11-13 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-11-13 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-11-13T05:31:11+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

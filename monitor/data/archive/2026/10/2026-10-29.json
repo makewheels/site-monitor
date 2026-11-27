@@ -1,0 +1,165 @@
+{
+ "date": "2026-10-29",
+ "report_id": "2026-10-29-dc14d4b81f",
+ "created_at": "2026-10-29T05:33:13",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-10-29\n\n# 🔥 GitHub Trending\n\n2026-10-29\n\n发现 3 个新项目（共 5 个项目）:\n\n**🆕 JetBrains/thinkrail**\n  轻量级IDE，能根据工作习惯自动定制，主打沉浸式编程。\n  🔗 https://github.com/JetBrains/thinkrail\n\n---\n**elayadesign/ai-design-skills**\n  专门收集和分享AI设计相关技能与提示词的资源库。\n  🔗 https://github.com/elayadesign/ai-design-skills\n\n---\n**obra/superpowers**\n  一套真正好用的智能体技能框架和软件开发方法论。\n  🔗 https://github.com/obra/superpowers\n\n---\n**🆕 HKUDS/DeepTutor**\n  港大开源的终身个性化AI辅导系统，能为你量身定制学习方案。\n  🔗 https://github.com/HKUDS/DeepTutor\n\n---\n**🆕 macro-inc/macro**\n  团队统一工作台，打通邮件文档和任务，还能共享AI记忆。\n  🔗 https://github.com/macro-inc/macro\n\n## 2026-10-29 Anthropic Engineering\n\n今日无新文章\n\n## 2026-10-29 OpenAI News\n\n发现 4 篇新文章:\n\n**OpenAI and ServiceNow expand partnership across enterprise workflows**\n📅 Wed, 28 Oc\n原文摘要：OpenAI and ServiceNow expand their partnership to bring OpenAI models and agents into ServiceNow and ServiceNow workflows into ChatGPT and Codex.\n🔗 https://openai.com/index/openai-servicenow-partnership-expansion\n\n---\n\n**The future of the firm**\n📅 Wed, 28 Oc\n原文摘要：How AI might enter the org chart—beneath, beside, and between us.\n🔗 https://openai.com/index/the-future-of-the-firm\n\n---\n\n**Legora is building the agentic operating system for legal work**\n📅 Wed, 28 Oc\n原文摘要：See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on higher-value work.\n🔗 https://openai.com/index/legora\n\n---\n\n**Retell uses OpenAI models to help power 100M monthly calls**\n📅 Tue, 27 Oc\n原文摘要：GPT-6 Astra tops Retell’s voice agent benchmark, while Codex helps it reach a $1.6M annual revenue run rate per employee.\n🔗 https://openai.com/index/retell-ai\n\n## 2026-10-29 LangChain Blog\n\n发现 3 篇新文章:\n\n**The Art of Loop Engineering**\n📅 Wed, 28 Oc\n原文摘要：Agents automate real-world work, but reliable performance requires more than a good model, it requires a carefully designed harness built for specific tasks. This post explores the core agent loop, how stacking and extending loops builds more effective agents, and how to instrument each level with LangChain primitives.\n🔗 https://www.langchain.com/blog/the-art-of-loop-engineering\n\n---\n\n**How to Build Proactive, Always-On Agents with the Schedules SDK in Managed Deep Agents**\n📅 Wed, 28 Oc\n原文摘要：Most proactive agents run on a simple cron. Learn what scheduled runs unlock, from memory to smart triage, and how to add them to Managed Deep Agents.\n🔗 https://www.langchain.com/blog/proactive-agents\n\n---\n\n**How to build evidence-grounded agent memory with OpenWiki and Graphs**\n📅 Wed, 28 Oc\n原文摘要：LangChain used OpenWiki, its open-source wiki compiler, and an evidence graph to build a persistent memory layer that preserves knowledge for agents to reuse across tasks. Learn how.\n🔗 https://www.langchain.com/blog/building-agent-memory-openwiki-graphs\n\n## 2026-10-29 Hugging Face Blog\n\n发现 1 篇新文章:\n\n**NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt**\n📅 Wed, 28 Oc\n🔗 https://huggingface.co/blog/nvidia/nemotron-transcribe-granary\n\n## 2026-10-29 Google Research\n\n今日无新文章(追踪 20 篇)\n\n## 2026-10-29 METR\n\n今日无新文章(追踪 20 篇)\n\n## 2026-10-29 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-10-29 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-10-29 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 10,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-10-29 发现 3 个新项目（共 5 个项目）: 🆕 JetBrains/thinkrail 轻量级IDE，能根据工作习惯自动定制，主打沉浸式...",
+   "body": "# 🔥 GitHub Trending\n\n2026-10-29\n\n发现 3 个新项目（共 5 个项目）:\n\n**🆕 JetBrains/thinkrail**\n  轻量级IDE，能根据工作习惯自动定制，主打沉浸式编程。\n  🔗 https://github.com/JetBrains/thinkrail\n\n---\n**elayadesign/ai-design-skills**\n  专门收集和分享AI设计相关技能与提示词的资源库。\n  🔗 https://github.com/elayadesign/ai-design-skills\n\n---\n**obra/superpowers**\n  一套真正好用的智能体技能框架和软件开发方法论。\n  🔗 https://github.com/obra/superpowers\n\n---\n**🆕 HKUDS/DeepTutor**\n  港大开源的终身个性化AI辅导系统，能为你量身定制学习方案。\n  🔗 https://github.com/HKUDS/DeepTutor\n\n---\n**🆕 macro-inc/macro**\n  团队统一工作台，打通邮件文档和任务，还能共享AI记忆。\n  🔗 https://github.com/macro-inc/macro",
+   "links": [
+    {
+     "title": "JetBrains/thinkrail",
+     "url": "https://github.com/JetBrains/thinkrail"
+    },
+    {
+     "title": "elayadesign/ai-design-skills",
+     "url": "https://github.com/elayadesign/ai-design-skills"
+    },
+    {
+     "title": "obra/superpowers",
+     "url": "https://github.com/obra/superpowers"
+    },
+    {
+     "title": "HKUDS/DeepTutor",
+     "url": "https://github.com/HKUDS/DeepTutor"
+    },
+    {
+     "title": "macro-inc/macro",
+     "url": "https://github.com/macro-inc/macro"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-10-29 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-10-29 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-10-29 OpenAI News 发现 4 篇新文章: OpenAI and ServiceNow expand partnership across enterprise wo...",
+   "body": "## 2026-10-29 OpenAI News\n\n发现 4 篇新文章:\n\n**OpenAI and ServiceNow expand partnership across enterprise workflows**\n📅 Wed, 28 Oc\n原文摘要：OpenAI and ServiceNow expand their partnership to bring OpenAI models and agents into ServiceNow and ServiceNow workflows into ChatGPT and Codex.\n🔗 https://openai.com/index/openai-servicenow-partnership-expansion\n\n---\n\n**The future of the firm**\n📅 Wed, 28 Oc\n原文摘要：How AI might enter the org chart—beneath, beside, and between us.\n🔗 https://openai.com/index/the-future-of-the-firm\n\n---\n\n**Legora is building the agentic operating system for legal work**\n📅 Wed, 28 Oc\n原文摘要：See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on higher-value work.\n🔗 https://openai.com/index/legora\n\n---\n\n**Retell uses OpenAI models to help power 100M monthly calls**\n📅 Tue, 27 Oc\n原文摘要：GPT-6 Astra tops Retell’s voice agent benchmark, while Codex helps it reach a $1.6M annual revenue run rate per employee.\n🔗 https://openai.com/index/retell-ai",
+   "links": [
+    {
+     "title": "https://openai.com/index/openai-servicenow-partnership-expansion",
+     "url": "https://openai.com/index/openai-servicenow-partnership-expansion"
+    },
+    {
+     "title": "https://openai.com/index/the-future-of-the-firm",
+     "url": "https://openai.com/index/the-future-of-the-firm"
+    },
+    {
+     "title": "https://openai.com/index/legora",
+     "url": "https://openai.com/index/legora"
+    },
+    {
+     "title": "https://openai.com/index/retell-ai",
+     "url": "https://openai.com/index/retell-ai"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "content",
+   "summary": "2026-10-29 LangChain Blog 发现 3 篇新文章: The Art of Loop Engineering 📅 Wed, 28 Oc 原文摘要：Agents autom...",
+   "body": "## 2026-10-29 LangChain Blog\n\n发现 3 篇新文章:\n\n**The Art of Loop Engineering**\n📅 Wed, 28 Oc\n原文摘要：Agents automate real-world work, but reliable performance requires more than a good model, it requires a carefully designed harness built for specific tasks. This post explores the core agent loop, how stacking and extending loops builds more effective agents, and how to instrument each level with LangChain primitives.\n🔗 https://www.langchain.com/blog/the-art-of-loop-engineering\n\n---\n\n**How to Build Proactive, Always-On Agents with the Schedules SDK in Managed Deep Agents**\n📅 Wed, 28 Oc\n原文摘要：Most proactive agents run on a simple cron. Learn what scheduled runs unlock, from memory to smart triage, and how to add them to Managed Deep Agents.\n🔗 https://www.langchain.com/blog/proactive-agents\n\n---\n\n**How to build evidence-grounded agent memory with OpenWiki and Graphs**\n📅 Wed, 28 Oc\n原文摘要：LangChain used OpenWiki, its open-source wiki compiler, and an evidence graph to build a persistent memory layer that preserves knowledge for agents to reuse across tasks. Learn how.\n🔗 https://www.langchain.com/blog/building-agent-memory-openwiki-graphs",
+   "links": [
+    {
+     "title": "https://www.langchain.com/blog/the-art-of-loop-engineering",
+     "url": "https://www.langchain.com/blog/the-art-of-loop-engineering"
+    },
+    {
+     "title": "https://www.langchain.com/blog/proactive-agents",
+     "url": "https://www.langchain.com/blog/proactive-agents"
+    },
+    {
+     "title": "https://www.langchain.com/blog/building-agent-memory-openwiki-graphs",
+     "url": "https://www.langchain.com/blog/building-agent-memory-openwiki-graphs"
+    }
+   ]
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "content",
+   "summary": "2026-10-29 Hugging Face Blog 发现 1 篇新文章: NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intellig...",
+   "body": "## 2026-10-29 Hugging Face Blog\n\n发现 1 篇新文章:\n\n**NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt**\n📅 Wed, 28 Oc\n🔗 https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+   "links": [
+    {
+     "title": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+     "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
+    }
+   ]
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "no_update",
+   "summary": "2026-10-29 Google Research 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-10-29 Google Research\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "no_update",
+   "summary": "2026-10-29 METR 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-10-29 METR\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-10-29 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-10-29 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-10-29 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-10-29 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-10-29 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-10-29 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-10-29T05:33:17+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

@@ -1,0 +1,58 @@
+{
+ "date": "2026-11-19",
+ "report_id": "2026-11-19-bb57926969",
+ "created_at": "2026-11-19T05:30:37",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-11-19\n\n# 🔥 GitHub Trending\n\n2026-11-19\n\n发现 3 个新项目（共 5 个项目）:\n\n**elementalsouls/Claude-BugHunter**\n  Claude Code skill bundle for bug hunting、external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24\n  🔗 https://github.com/elementalsouls/Claude-BugHunter\n\n---\n**🆕 cursor/plugins**\n  Cursor 插件规范和官方插件集合，方便给编辑器扩展功能\n  🔗 https://github.com/cursor/plugins\n\n---\n**🆕 HKUDS/CLI-Anything**\n  \"CLI-Anything: Making ALL Software 智能体-Native\" -- CLI-Hub:https://clianything.cc/\n  🔗 https://github.com/HKUDS/CLI-Anything\n\n---\n**mvanhorn/last30days-skill**\n  AI 智能体 skill that researches any topic across Reddit, X, YouTube, HN, Polymarket、the web - then synthesizes a grounded summary\n  🔗 https://github.com/mvanhorn/last30days-skill\n\n---\n**🆕 getarcaneapp/arcane**\n  现代化 Docker Management, Designed for Everyone\n  🔗 https://github.com/getarcaneapp/arcane\n\n## 2026-11-19 Anthropic Engineering\n\n今日无新文章",
+ "item_count": 2,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-11-19 发现 3 个新项目（共 5 个项目）: elementalsouls/Claude-BugHunter Claude Code sk...",
+   "body": "# 🔥 GitHub Trending\n\n2026-11-19\n\n发现 3 个新项目（共 5 个项目）:\n\n**elementalsouls/Claude-BugHunter**\n  Claude Code skill bundle for bug hunting、external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24\n  🔗 https://github.com/elementalsouls/Claude-BugHunter\n\n---\n**🆕 cursor/plugins**\n  Cursor 插件规范和官方插件集合，方便给编辑器扩展功能\n  🔗 https://github.com/cursor/plugins\n\n---\n**🆕 HKUDS/CLI-Anything**\n  \"CLI-Anything: Making ALL Software 智能体-Native\" -- CLI-Hub:https://clianything.cc/\n  🔗 https://github.com/HKUDS/CLI-Anything\n\n---\n**mvanhorn/last30days-skill**\n  AI 智能体 skill that researches any topic across Reddit, X, YouTube, HN, Polymarket、the web - then synthesizes a grounded summary\n  🔗 https://github.com/mvanhorn/last30days-skill\n\n---\n**🆕 getarcaneapp/arcane**\n  现代化 Docker Management, Designed for Everyone\n  🔗 https://github.com/getarcaneapp/arcane",
+   "links": [
+    {
+     "title": "elementalsouls/Claude-BugHunter",
+     "url": "https://github.com/elementalsouls/Claude-BugHunter"
+    },
+    {
+     "title": "cursor/plugins",
+     "url": "https://github.com/cursor/plugins"
+    },
+    {
+     "title": "HKUDS/CLI-Anything",
+     "url": "https://github.com/HKUDS/CLI-Anything"
+    },
+    {
+     "title": "mvanhorn/last30days-skill",
+     "url": "https://github.com/mvanhorn/last30days-skill"
+    },
+    {
+     "title": "getarcaneapp/arcane",
+     "url": "https://github.com/getarcaneapp/arcane"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-11-19 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-11-19 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-11-19T05:30:39+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}

@@ -1,0 +1,186 @@
+{
+ "date": "2026-10-16",
+ "report_id": "2026-10-16-6ec2011ac6",
+ "created_at": "2026-10-16T05:34:08",
+ "exported_at": "2026-11-28T07:50:01+0800",
+ "full_text": "📊 **每日 AI 监控汇总** — 2026-10-16\n\n# 🔥 GitHub Trending\n\n2026-10-16\n\n发现 2 个新项目（共 5 个项目）:\n\n**morluto/rea**\n  用智能体搞定从应用到二进制的各类逆向工程。\n  🔗 https://github.com/morluto/rea\n\n---\n**🆕 anthropics/claude-plugins-official**\n  官方亲自维护的高质量 Claude Code 插件库。\n  🔗 https://github.com/anthropics/claude-plugins-official\n\n---\n**K-Dense-AI/scientific-agent-skills**\n  让智能体秒变科学家的技能库，全球超25万人在用。\n  🔗 https://github.com/K-Dense-AI/scientific-agent-skills\n\n---\n**🆕 JuliusBrussee/caveman**\n  让编程智能体学原始人说话，狂省65%的token。\n  🔗 https://github.com/JuliusBrussee/caveman\n\n---\n**debpalash/VoiceStudio**\n  完全开源本地的 ElevenLabs 平替，克隆配音全搞定。\n  🔗 https://github.com/debpalash/VoiceStudio\n\n## 2026-10-16 Anthropic Engineering\n\n今日无新文章\n\n## 2026-10-16 OpenAI News\n\n发现 2 篇新文章:\n\n**Teaching students to think and learn through questions**\n📅 Thu, 15 Oc\n原文摘要：Celebrate Teachers’ Day with AI for Educators in Brazilian Portuguese and see how Study Mode can help teachers support active, step-by-step learning.\n🔗 https://openai.com/index/teaching-students-to-think-and-learn-through-questions\n\n---\n\n**How Block is building AI-powered security with OpenAI technology**\n📅 Wed, 14 Oc\n原文摘要：Block is building AI-powered security with OpenAI. Its security team investigates threats faster and proposes patches in minutes.\n🔗 https://openai.com/index/block-ai-powered-security\n\n## 2026-10-16 LangChain Blog\n\n发现 2 篇新文章:\n\n**October 2026 LangChain Newsletter: Everything we shipped at Interrupt NYC & London**\n📅 Thu, 15 Oc\n原文摘要：What we shipped at Interrupt NYC and London: LangSmith AI Search, Engine v2, Trajectories, Custom Apps, Fine-Tuning, and Managed Deep Agents v0.9.\n🔗 https://www.langchain.com/blog/october-2026-langchain-newsletter\n\n---\n\n**The Most Common Questions About Agent Evals, Answered**\n📅 Thu, 15 Oc\n原文摘要：Where to start with agent evals, offline vs online evals, evaluator types, LLM judges, benchmarks with Harbor, multi-turn evals, and keeping costs down.\n🔗 https://www.langchain.com/blog/common-questions-about-agent-evals\n\n## 2026-10-16 Hugging Face Blog\n\n发现 4 篇新文章:\n\n**Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint**\n📅 Thu, 15 Oc\n🔗 https://huggingface.co/blog/ibm-granite/granite-switch-4-1\n\n---\n\n**Apertus 1.5 Release Notes**\n📅 Thu, 15 Oc\n🔗 https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes\n\n---\n\n**Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta**\n📅 Thu, 15 Oc\n🔗 https://huggingface.co/blog/meta-muse-spark-open\n\n---\n\n**Welcome FLUX.3 Image Klein in Diffusers**\n📅 Thu, 15 Oc\n🔗 https://huggingface.co/blog/flux-3\n\n## 2026-10-16 Google Research\n\n今日无新文章(追踪 20 篇)\n\n## 2026-10-16 METR\n\n发现 5 篇新文章:\n\n**Our approach to working with AI companies**\n📅 Wed, 14 Oc\n原文摘要：This blog post explains how we approach working with AI companies on projects that the public might rely on to understand risks. It was published on Oct 14, 2026, and we expect to update it over time. At METR, we gather and publish evidence about whether humans could lose control of AI agents on a large scale. We work with AI companies to conduct evaluations, assessments, and investigations, 1 and to share this evidence publicly. As we have seen increasing expectations for these kinds of voluntary engagements to provide external ‘safety assurance’, we want to explain our perspective. In this post, we clarify our overall goals for this work, our approach , and what our approach looks like in practice . Our motivations Our goal is to give the public accurate, timely, and independent evidence about AI loss-of-control risk, so that they (along with policymakers and developers) can make their own informed decisions . Our primary approach is collecting high-quality, concrete evidence and publishing what we find. Beyond this, we may also work with companies or regulators to share our comments on unpublished sensitive information, 2 to review risk reports, or to provide an independent judgment on claims about risk. However, many of the relevant claims involve open scientific questions so can’t be straightforwardly verified. We see it as our role to collect evidence for the public; we do not intend to decide how companies should develop or deploy their agents. Decisions about frontier AI will likely be messy, high-stakes judgment calls relying on uncertain science, which should not be made behind closed doors, much less within any one organization. On the contrary, we think that the current situation requires open discussion about both what the risk levels are given the evidence and what risk levels are acceptable. Our approach To correctly interpret our outputs, the public needs to understand the processes, constraints, and incentives that produced those outputs. For instan\n🔗 https://metr.org/blog/2026-10-14-our-approach-to-risk-assessment/\n\n---\n\n**How an assessor could investigate control and monitoring of internal AI agents**\n📅 Wed, 14 Oc\n原文摘要：Control assessments study whether AI developers’ agents could get away with serious harm without being stopped by the developer’s security and oversight measures. Currently, developers rely heavily on monitors to catch potentially harmful AI behaviors. Here, we discuss how an assessor could collect evidence about the reliability of monitoring. We currently consider five core sub-questions: 1 Monitor coverage : What fraction of internal agentic inference is (and should be) monitored? Monitor system vulnerabilities : Can internal AI agents prevent trajectories from being monitored, e.g. by breaking or compromising the monitoring system’s infrastructure? Monitor evasion : If monitoring is active, how easily can AI agents sneak misbehavior past monitors? Response, including human evasion : Where needed, do flagged incidents get reviewed by humans promptly? Is it easy to sneak misbehavior past the human reviewers, even when this misbehavior is flagged by LLM-based monitors? Impact : Broadly, what is the worst misbehavior agents could conduct without getting caught? How easily could they evade other observability and security instruments? What level of persistence could they achieve internally or externally? We will update these sub-questions as new capabilities and misaligned behaviors emerge. Why focus on assessing monitors? The proposal focuses primarily on LLM-based monitoring of AI agents. When AI agents only need to take a limited, known set of actions, standard cybersecurity approaches (like limiting an agent’s permissions to only what its task requires, e.g. via sandboxing) may be adequate. However, the permissions AI agents need are often very broad. For example, an AI agent that needs internet access to do its task can take an enormous array of actions, 2 and noticing when those actions are harmful often requires understanding the action in its broader context. Monitoring AI agents with an LLM which is able to make sense of what those agents are doing is therefo\n🔗 https://metr.org/blog/2026-10-14-control-assessment-proposal/\n\n---\n\n**A proposal for better informing the public about loss-of-control risks from frontier AI development**\n📅 Wed, 14 Oc\n原文摘要：At METR, we aim to give the public evidence about whether frontier AI developers could come to lose control of their internal AI systems. Recent incidents across several AI developers, 1 2 3 4 5 6 7 8 like the hundreds of rogue agents that broke containment and hacked Hugging Face to hide evidence of cheating from their grader , have raised concerns about the ability of frontier developers to understand and control their internal models, especially as they rapidly become more capable. 9 The public currently lacks the visibility into the internal development of frontier AI systems to tell if these concerns are being addressed, or whether much worse incidents could happen in the near future. We believe closing this public evidence gap is an urgent priority, to allow the public to notice and respond if risks from further development become acute. In this post, we describe a vision for how independent assessors could improve public visibility into whether AI developers might lose control of their AI systems. We describe key questions about internal development that we think the public needs more evidence about (see Figure 1), and give a concrete proposal for how developers could work with METR to produce and share more of the relevant evidence. Figure 1: Core questions we think assessments of loss-of-control risk should address. This proposal will not provide confident assurance about whether development is safe, since the science is not mature enough to reach consensus conclusions, and there are no standards for safe development to audit compliance with. We instead aim to get new independent evidence out to the public so that company staff, boards, external scientists, and policymakers are able to arrive at their own conclusions. We describe our general approach to transparency and independence in more detail in an accompanying post . METR has been prototyping assessment exercises focused on loss of control from internal AI development (rather than only covering extern\n🔗 https://metr.org/blog/2026-10-14-better-informing-the-public-about-loss-of-control-risks/\n\n---\n\n**How an assessor could investigate alignment of unreleased AI models**\n📅 Wed, 14 Oc\n原文摘要：AI developers and the public want to know whether AI agents would pursue very harmful actions, like unsanctioned cyberattacks. An alignment assessment would attempt to understand the worst misaligned actions a developer’s agents might pursue in plausible future situations. This would involve: A review of serious misaligned behaviors from all near-frontier internal models observed across training, evaluation, and internal use. An assessment of reasons why the observed behaviors might not be representative of the worst misaligned actions the developer’s agents would take in plausible future situations. This would include: An assessment of whether alignment evals and counterfactual simulations indicate the developer’s agents might take much worse actions under plausible alternative circumstances (although evaluation awareness will likely limit how much the assessor can rely on this evidence). An assessment of whether the developer’s training process might incentivize agents to game evaluations or otherwise deliberately hide misalignment, or might otherwise be overfit to the assessor’s detection methods. This assessment would primarily require the ability to query a relatively comprehensive set of internal transcripts (including from training) and sampling access to internal model checkpoints. More on access below . Scope An alignment assessment would study the propensities of the developer’s near-frontier models toward serious misaligned behaviors, such as: Taking actions that would be criminal if undertaken by humans (e.g. hacking an external party). Attempting to tamper with logs or telemetry, or otherwise covering up evidence of misbehavior. Attempting to seriously deceive human operators. Colluding in a way that undermines oversight (e.g. monitors intentionally not flagging misbehavior). Seriously compromising internal infrastructure. Setting up rogue deployments internally or externally (including exfiltrating weights). Sabotaging safety and security efforts. Unde\n🔗 https://metr.org/blog/2026-10-14-alignment-assessment-proposal/\n\n---\n\n**How an assessor could investigate evidence of acceleration from the automation of AI R&D**\n📅 Wed, 14 Oc\n原文摘要：This article discusses how an assessor could study whether capabilities progress could accelerate dramatically due to AI-driven acceleration of AI R&D. Such an assessment would answer: Capabilities Progress : How fast are internal capabilities improving, and how much has this progress accelerated recently? Acceleration from AI : If there is an acceleration, how much was it driven by AI automation versus other factors? Bottlenecks to Future Growth : Are there important bottlenecks that could slow growth or limit acceleration in the near term? Limitations : Would these methods reliably identify much more dramatic acceleration if it had occurred? Assessing this would involve analyzing capabilities of unreleased models, understanding the growth of key AI R&D inputs (labor, compute, data, and algorithms), and talking openly with relevant researchers about how AI is impacting their work. More details on access below . Scope Capabilities Progress To understand whether capabilities progress has accelerated, the assessor must obtain data on internal model capabilities across time. Since AI capabilities cannot be understood through any single approach, 1 the assessor must gather data via multiple methods, including: Benchmarks: How much has progress on a variety of capability benchmarks (and aggregate measures like ECI ) accelerated? Intermediates: How much has progress in key intermediate measures or leading indicators (e.g. pretraining loss ) accelerated? Perceptions: Are researchers who use internal models experiencing an acceleration in model capabilities, as measured by interviews or surveys ? Other: Are there other proxies that are crucial for understanding the pace of capabilities progress, and what trends do they show? Acceleration from AI To understand whether capabilities acceleration is driven by AI, the assessor would need to study the inputs that seem most likely to be affected by AI automation. This means assessing: How much of this acceleration in capabilities\n🔗 https://metr.org/blog/2026-10-14-ai-rd-acceleration-assessment-proposal/\n\n## 2026-10-16 SWE-bench\n\n今日无新文章(追踪 10 篇)\n\n## 2026-10-16 Trail of Bits\n\n今日无新文章(追踪 20 篇)\n\n## 2026-10-16 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+ "item_count": 10,
+ "same_day_reports": [],
+ "items": [
+  {
+   "topic": "github_trending",
+   "topic_name": "GitHub Trending",
+   "title": "GitHub Trending",
+   "status": "content",
+   "summary": "🔥 GitHub Trending 2026-10-16 发现 2 个新项目（共 5 个项目）: morluto/rea 用智能体搞定从应用到二进制的各类逆向工程。 🔗 https://gi...",
+   "body": "# 🔥 GitHub Trending\n\n2026-10-16\n\n发现 2 个新项目（共 5 个项目）:\n\n**morluto/rea**\n  用智能体搞定从应用到二进制的各类逆向工程。\n  🔗 https://github.com/morluto/rea\n\n---\n**🆕 anthropics/claude-plugins-official**\n  官方亲自维护的高质量 Claude Code 插件库。\n  🔗 https://github.com/anthropics/claude-plugins-official\n\n---\n**K-Dense-AI/scientific-agent-skills**\n  让智能体秒变科学家的技能库，全球超25万人在用。\n  🔗 https://github.com/K-Dense-AI/scientific-agent-skills\n\n---\n**🆕 JuliusBrussee/caveman**\n  让编程智能体学原始人说话，狂省65%的token。\n  🔗 https://github.com/JuliusBrussee/caveman\n\n---\n**debpalash/VoiceStudio**\n  完全开源本地的 ElevenLabs 平替，克隆配音全搞定。\n  🔗 https://github.com/debpalash/VoiceStudio",
+   "links": [
+    {
+     "title": "morluto/rea",
+     "url": "https://github.com/morluto/rea"
+    },
+    {
+     "title": "anthropics/claude-plugins-official",
+     "url": "https://github.com/anthropics/claude-plugins-official"
+    },
+    {
+     "title": "K-Dense-AI/scientific-agent-skills",
+     "url": "https://github.com/K-Dense-AI/scientific-agent-skills"
+    },
+    {
+     "title": "JuliusBrussee/caveman",
+     "url": "https://github.com/JuliusBrussee/caveman"
+    },
+    {
+     "title": "debpalash/VoiceStudio",
+     "url": "https://github.com/debpalash/VoiceStudio"
+    }
+   ]
+  },
+  {
+   "topic": "anthropic_engineering",
+   "topic_name": "Anthropic Engineering",
+   "title": "Anthropic Engineering",
+   "status": "no_update",
+   "summary": "2026-10-16 Anthropic Engineering 今日无新文章",
+   "body": "## 2026-10-16 Anthropic Engineering\n\n今日无新文章",
+   "links": []
+  },
+  {
+   "topic": "openai_news",
+   "topic_name": "OpenAI News",
+   "title": "OpenAI News",
+   "status": "content",
+   "summary": "2026-10-16 OpenAI News 发现 2 篇新文章: Teaching students to think and learn through questions 📅 Thu,...",
+   "body": "## 2026-10-16 OpenAI News\n\n发现 2 篇新文章:\n\n**Teaching students to think and learn through questions**\n📅 Thu, 15 Oc\n原文摘要：Celebrate Teachers’ Day with AI for Educators in Brazilian Portuguese and see how Study Mode can help teachers support active, step-by-step learning.\n🔗 https://openai.com/index/teaching-students-to-think-and-learn-through-questions\n\n---\n\n**How Block is building AI-powered security with OpenAI technology**\n📅 Wed, 14 Oc\n原文摘要：Block is building AI-powered security with OpenAI. Its security team investigates threats faster and proposes patches in minutes.\n🔗 https://openai.com/index/block-ai-powered-security",
+   "links": [
+    {
+     "title": "https://openai.com/index/teaching-students-to-think-and-learn-through-questions",
+     "url": "https://openai.com/index/teaching-students-to-think-and-learn-through-questions"
+    },
+    {
+     "title": "https://openai.com/index/block-ai-powered-security",
+     "url": "https://openai.com/index/block-ai-powered-security"
+    }
+   ]
+  },
+  {
+   "topic": "langchain_blog",
+   "topic_name": "LangChain Blog",
+   "title": "LangChain Blog",
+   "status": "content",
+   "summary": "2026-10-16 LangChain Blog 发现 2 篇新文章: October 2026 LangChain Newsletter: Everything we shipped a...",
+   "body": "## 2026-10-16 LangChain Blog\n\n发现 2 篇新文章:\n\n**October 2026 LangChain Newsletter: Everything we shipped at Interrupt NYC & London**\n📅 Thu, 15 Oc\n原文摘要：What we shipped at Interrupt NYC and London: LangSmith AI Search, Engine v2, Trajectories, Custom Apps, Fine-Tuning, and Managed Deep Agents v0.9.\n🔗 https://www.langchain.com/blog/october-2026-langchain-newsletter\n\n---\n\n**The Most Common Questions About Agent Evals, Answered**\n📅 Thu, 15 Oc\n原文摘要：Where to start with agent evals, offline vs online evals, evaluator types, LLM judges, benchmarks with Harbor, multi-turn evals, and keeping costs down.\n🔗 https://www.langchain.com/blog/common-questions-about-agent-evals",
+   "links": [
+    {
+     "title": "https://www.langchain.com/blog/october-2026-langchain-newsletter",
+     "url": "https://www.langchain.com/blog/october-2026-langchain-newsletter"
+    },
+    {
+     "title": "https://www.langchain.com/blog/common-questions-about-agent-evals",
+     "url": "https://www.langchain.com/blog/common-questions-about-agent-evals"
+    }
+   ]
+  },
+  {
+   "topic": "huggingface_blog",
+   "topic_name": "Hugging Face Blog",
+   "title": "Hugging Face Blog",
+   "status": "content",
+   "summary": "2026-10-16 Hugging Face Blog 发现 4 篇新文章: Granite Switch 4.1: Chat, Decisions, and Speech from On...",
+   "body": "## 2026-10-16 Hugging Face Blog\n\n发现 4 篇新文章:\n\n**Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint**\n📅 Thu, 15 Oc\n🔗 https://huggingface.co/blog/ibm-granite/granite-switch-4-1\n\n---\n\n**Apertus 1.5 Release Notes**\n📅 Thu, 15 Oc\n🔗 https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes\n\n---\n\n**Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta**\n📅 Thu, 15 Oc\n🔗 https://huggingface.co/blog/meta-muse-spark-open\n\n---\n\n**Welcome FLUX.3 Image Klein in Diffusers**\n📅 Thu, 15 Oc\n🔗 https://huggingface.co/blog/flux-3",
+   "links": [
+    {
+     "title": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
+     "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1"
+    },
+    {
+     "title": "https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes",
+     "url": "https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes"
+    },
+    {
+     "title": "https://huggingface.co/blog/meta-muse-spark-open",
+     "url": "https://huggingface.co/blog/meta-muse-spark-open"
+    },
+    {
+     "title": "https://huggingface.co/blog/flux-3",
+     "url": "https://huggingface.co/blog/flux-3"
+    }
+   ]
+  },
+  {
+   "topic": "google_research",
+   "topic_name": "Google Research",
+   "title": "Google Research",
+   "status": "no_update",
+   "summary": "2026-10-16 Google Research 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-10-16 Google Research\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "metr",
+   "topic_name": "METR",
+   "title": "METR",
+   "status": "content",
+   "summary": "2026-10-16 METR 发现 5 篇新文章: Our approach to working with AI companies 📅 Wed, 14 Oc 原文摘要：This blo...",
+   "body": "## 2026-10-16 METR\n\n发现 5 篇新文章:\n\n**Our approach to working with AI companies**\n📅 Wed, 14 Oc\n原文摘要：This blog post explains how we approach working with AI companies on projects that the public might rely on to understand risks. It was published on Oct 14, 2026, and we expect to update it over time. At METR, we gather and publish evidence about whether humans could lose control of AI agents on a large scale. We work with AI companies to conduct evaluations, assessments, and investigations, 1 and to share this evidence publicly. As we have seen increasing expectations for these kinds of voluntary engagements to provide external ‘safety assurance’, we want to explain our perspective. In this post, we clarify our overall goals for this work, our approach , and what our approach looks like in practice . Our motivations Our goal is to give the public accurate, timely, and independent evidence about AI loss-of-control risk, so that they (along with policymakers and developers) can make their own informed decisions . Our primary approach is collecting high-quality, concrete evidence and publishing what we find. Beyond this, we may also work with companies or regulators to share our comments on unpublished sensitive information, 2 to review risk reports, or to provide an independent judgment on claims about risk. However, many of the relevant claims involve open scientific questions so can’t be straightforwardly verified. We see it as our role to collect evidence for the public; we do not intend to decide how companies should develop or deploy their agents. Decisions about frontier AI will likely be messy, high-stakes judgment calls relying on uncertain science, which should not be made behind closed doors, much less within any one organization. On the contrary, we think that the current situation requires open discussion about both what the risk levels are given the evidence and what risk levels are acceptable. Our approach To correctly interpret our outputs, the public needs to understand the processes, constraints, and incentives that produced those outputs. For instan\n🔗 https://metr.org/blog/2026-10-14-our-approach-to-risk-assessment/\n\n---\n\n**How an assessor could investigate control and monitoring of internal AI agents**\n📅 Wed, 14 Oc\n原文摘要：Control assessments study whether AI developers’ agents could get away with serious harm without being stopped by the developer’s security and oversight measures. Currently, developers rely heavily on monitors to catch potentially harmful AI behaviors. Here, we discuss how an assessor could collect evidence about the reliability of monitoring. We currently consider five core sub-questions: 1 Monitor coverage : What fraction of internal agentic inference is (and should be) monitored? Monitor system vulnerabilities : Can internal AI agents prevent trajectories from being monitored, e.g. by breaking or compromising the monitoring system’s infrastructure? Monitor evasion : If monitoring is active, how easily can AI agents sneak misbehavior past monitors? Response, including human evasion : Where needed, do flagged incidents get reviewed by humans promptly? Is it easy to sneak misbehavior past the human reviewers, even when this misbehavior is flagged by LLM-based monitors? Impact : Broadly, what is the worst misbehavior agents could conduct without getting caught? How easily could they evade other observability and security instruments? What level of persistence could they achieve internally or externally? We will update these sub-questions as new capabilities and misaligned behaviors emerge. Why focus on assessing monitors? The proposal focuses primarily on LLM-based monitoring of AI agents. When AI agents only need to take a limited, known set of actions, standard cybersecurity approaches (like limiting an agent’s permissions to only what its task requires, e.g. via sandboxing) may be adequate. However, the permissions AI agents need are often very broad. For example, an AI agent that needs internet access to do its task can take an enormous array of actions, 2 and noticing when those actions are harmful often requires understanding the action in its broader context. Monitoring AI agents with an LLM which is able to make sense of what those agents are doing is therefo\n🔗 https://metr.org/blog/2026-10-14-control-assessment-proposal/\n\n---\n\n**A proposal for better informing the public about loss-of-control risks from frontier AI development**\n📅 Wed, 14 Oc\n原文摘要：At METR, we aim to give the public evidence about whether frontier AI developers could come to lose control of their internal AI systems. Recent incidents across several AI developers, 1 2 3 4 5 6 7 8 like the hundreds of rogue agents that broke containment and hacked Hugging Face to hide evidence of cheating from their grader , have raised concerns about the ability of frontier developers to understand and control their internal models, especially as they rapidly become more capable. 9 The public currently lacks the visibility into the internal development of frontier AI systems to tell if these concerns are being addressed, or whether much worse incidents could happen in the near future. We believe closing this public evidence gap is an urgent priority, to allow the public to notice and respond if risks from further development become acute. In this post, we describe a vision for how independent assessors could improve public visibility into whether AI developers might lose control of their AI systems. We describe key questions about internal development that we think the public needs more evidence about (see Figure 1), and give a concrete proposal for how developers could work with METR to produce and share more of the relevant evidence. Figure 1: Core questions we think assessments of loss-of-control risk should address. This proposal will not provide confident assurance about whether development is safe, since the science is not mature enough to reach consensus conclusions, and there are no standards for safe development to audit compliance with. We instead aim to get new independent evidence out to the public so that company staff, boards, external scientists, and policymakers are able to arrive at their own conclusions. We describe our general approach to transparency and independence in more detail in an accompanying post . METR has been prototyping assessment exercises focused on loss of control from internal AI development (rather than only covering extern\n🔗 https://metr.org/blog/2026-10-14-better-informing-the-public-about-loss-of-control-risks/\n\n---\n\n**How an assessor could investigate alignment of unreleased AI models**\n📅 Wed, 14 Oc\n原文摘要：AI developers and the public want to know whether AI agents would pursue very harmful actions, like unsanctioned cyberattacks. An alignment assessment would attempt to understand the worst misaligned actions a developer’s agents might pursue in plausible future situations. This would involve: A review of serious misaligned behaviors from all near-frontier internal models observed across training, evaluation, and internal use. An assessment of reasons why the observed behaviors might not be representative of the worst misaligned actions the developer’s agents would take in plausible future situations. This would include: An assessment of whether alignment evals and counterfactual simulations indicate the developer’s agents might take much worse actions under plausible alternative circumstances (although evaluation awareness will likely limit how much the assessor can rely on this evidence). An assessment of whether the developer’s training process might incentivize agents to game evaluations or otherwise deliberately hide misalignment, or might otherwise be overfit to the assessor’s detection methods. This assessment would primarily require the ability to query a relatively comprehensive set of internal transcripts (including from training) and sampling access to internal model checkpoints. More on access below . Scope An alignment assessment would study the propensities of the developer’s near-frontier models toward serious misaligned behaviors, such as: Taking actions that would be criminal if undertaken by humans (e.g. hacking an external party). Attempting to tamper with logs or telemetry, or otherwise covering up evidence of misbehavior. Attempting to seriously deceive human operators. Colluding in a way that undermines oversight (e.g. monitors intentionally not flagging misbehavior). Seriously compromising internal infrastructure. Setting up rogue deployments internally or externally (including exfiltrating weights). Sabotaging safety and security efforts. Unde\n🔗 https://metr.org/blog/2026-10-14-alignment-assessment-proposal/\n\n---\n\n**How an assessor could investigate evidence of acceleration from the automation of AI R&D**\n📅 Wed, 14 Oc\n原文摘要：This article discusses how an assessor could study whether capabilities progress could accelerate dramatically due to AI-driven acceleration of AI R&D. Such an assessment would answer: Capabilities Progress : How fast are internal capabilities improving, and how much has this progress accelerated recently? Acceleration from AI : If there is an acceleration, how much was it driven by AI automation versus other factors? Bottlenecks to Future Growth : Are there important bottlenecks that could slow growth or limit acceleration in the near term? Limitations : Would these methods reliably identify much more dramatic acceleration if it had occurred? Assessing this would involve analyzing capabilities of unreleased models, understanding the growth of key AI R&D inputs (labor, compute, data, and algorithms), and talking openly with relevant researchers about how AI is impacting their work. More details on access below . Scope Capabilities Progress To understand whether capabilities progress has accelerated, the assessor must obtain data on internal model capabilities across time. Since AI capabilities cannot be understood through any single approach, 1 the assessor must gather data via multiple methods, including: Benchmarks: How much has progress on a variety of capability benchmarks (and aggregate measures like ECI ) accelerated? Intermediates: How much has progress in key intermediate measures or leading indicators (e.g. pretraining loss ) accelerated? Perceptions: Are researchers who use internal models experiencing an acceleration in model capabilities, as measured by interviews or surveys ? Other: Are there other proxies that are crucial for understanding the pace of capabilities progress, and what trends do they show? Acceleration from AI To understand whether capabilities acceleration is driven by AI, the assessor would need to study the inputs that seem most likely to be affected by AI automation. This means assessing: How much of this acceleration in capabilities\n🔗 https://metr.org/blog/2026-10-14-ai-rd-acceleration-assessment-proposal/",
+   "links": [
+    {
+     "title": "https://metr.org/blog/2026-10-14-our-approach-to-risk-assessment/",
+     "url": "https://metr.org/blog/2026-10-14-our-approach-to-risk-assessment/"
+    },
+    {
+     "title": "https://metr.org/blog/2026-10-14-control-assessment-proposal/",
+     "url": "https://metr.org/blog/2026-10-14-control-assessment-proposal/"
+    },
+    {
+     "title": "https://metr.org/blog/2026-10-14-better-informing-the-public-about-loss-of-control-risks/",
+     "url": "https://metr.org/blog/2026-10-14-better-informing-the-public-about-loss-of-control-risks/"
+    },
+    {
+     "title": "https://metr.org/blog/2026-10-14-alignment-assessment-proposal/",
+     "url": "https://metr.org/blog/2026-10-14-alignment-assessment-proposal/"
+    },
+    {
+     "title": "https://metr.org/blog/2026-10-14-ai-rd-acceleration-assessment-proposal/",
+     "url": "https://metr.org/blog/2026-10-14-ai-rd-acceleration-assessment-proposal/"
+    }
+   ]
+  },
+  {
+   "topic": "swe_bench",
+   "topic_name": "SWE-bench",
+   "title": "SWE-bench",
+   "status": "no_update",
+   "summary": "2026-10-16 SWE-bench 今日无新文章(追踪 10 篇)",
+   "body": "## 2026-10-16 SWE-bench\n\n今日无新文章(追踪 10 篇)",
+   "links": []
+  },
+  {
+   "topic": "trail_of_bits",
+   "topic_name": "Trail of Bits",
+   "title": "Trail of Bits",
+   "status": "no_update",
+   "summary": "2026-10-16 Trail of Bits 今日无新文章(追踪 20 篇)",
+   "body": "## 2026-10-16 Trail of Bits\n\n今日无新文章(追踪 20 篇)",
+   "links": []
+  },
+  {
+   "topic": "owasp_llm_top10",
+   "topic_name": "OWASP LLM Top 10",
+   "title": "OWASP LLM Top 10",
+   "status": "no_update",
+   "summary": "2026-10-16 OWASP LLM Top 10 今日无新文章(追踪 3 篇)",
+   "body": "## 2026-10-16 OWASP LLM Top 10\n\n今日无新文章(追踪 3 篇)",
+   "links": []
+  }
+ ],
+ "deliveries": [
+  {
+   "delivered_at": "2026-10-16T05:34:12+08:00",
+   "provider": "feishu",
+   "status": "success",
+   "message_count": 1
+  }
+ ]
+}
