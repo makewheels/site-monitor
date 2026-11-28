@@ -1913,5 +1913,18 @@
     "message_count": 1,
     "item_count": 2,
     "entry_count": 5
+  },
+  {
+    "event_id": "49c0037f-7255-493c-935c-f5147bf55411",
+    "batch_id": "0a8f62fc-58c3-4be7-a575-966db1569d20",
+    "delivered_at": "2026-11-28T09:00:42+08:00",
+    "source": "weekly_trending",
+    "report_id": "weekly-2026-W48",
+    "report_date": "2026-11-28",
+    "provider": "feishu",
+    "status": "success",
+    "message_count": 1,
+    "item_count": 1,
+    "entry_count": 10
   }
 ]
